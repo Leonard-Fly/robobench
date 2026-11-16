@@ -1,0 +1,341 @@
+[
+  {
+    "id": "umi-stanford",
+    "name": "UMI (Universal Manipulation Interface)",
+    "nameZh": "UMI 通用手持数采夹爪",
+    "org": "Stanford / Columbia / TRI",
+    "orgZh": "斯坦福 / 哥伦比亚大学 / 丰田研究院",
+    "country": "美国",
+    "deviceKind": "umi",
+    "releaseDate": "2024-02",
+    "openSource": true,
+    "license": "开源硬件与代码",
+    "specs": {
+      "device_type": "手持式夹爪（UMI 路线）",
+      "bom_cost_usd": 371,
+      "weight_g": 780,
+      "dof": 1,
+      "tracking_method": "GoPro 单目鱼眼 + 内置 IMU 视觉惯性 SLAM (ORB-SLAM3)",
+      "sensors": "GoPro 155° 鱼眼相机 + 侧视镜（隐式双目）+ 开合编码器",
+      "robot_free": "是，完全脱离真机野外采集",
+      "target_embodiment": "各类机械臂平行夹爪（80mm 行程）",
+      "output_data": "腕部 RGB 视频 + 6-DoF 末端位姿 + 夹爪开合度"
+    },
+    "highlights": [
+      "开创无需真机的手持数采范式，3D 打印夹爪 BOM 仅 73 美元（加 GoPro 合计约 371 美元）",
+      "通过侧视镜提供隐式立体深度线索，并保持与真机部署一致的腕部视角",
+      "支持直接迁移至不同品牌机械臂（零样本跨本体泛化）",
+      "硬件图纸、SLAM 标定与 Diffusion Policy 训练代码全开源"
+    ],
+    "applications": [
+      "脱离实验室的野外大规模数采",
+      "双臂动态与灵巧任务（抛接、叠衣）",
+      "低成本科研团队数采"
+    ],
+    "description": "UMI 是斯坦福大学等提出的通用手持数采接口，重约 780g，整套 BOM 成本约 371 美元（含 GoPro）。人类手持带鱼眼相机和侧视镜的 3D 打印夹爪直接演示，通过 SLAM 恢复 6-DoF 轨迹并零样本迁移到真机。",
+    "paperUrl": "https://arxiv.org/abs/2402.10329",
+    "codeUrl": "https://umi-gripper.github.io/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "fastumi",
+    "name": "FastUMI",
+    "nameZh": "FastUMI 硬件解耦手持数采器",
+    "org": "Northwestern Polytechnical University et al.",
+    "orgZh": "西北工业大学等",
+    "country": "中国",
+    "deviceKind": "umi",
+    "releaseDate": "2024-09",
+    "openSource": true,
+    "license": "开源代码与数据集（FastUMI-100K）",
+    "specs": {
+      "device_type": "手持式夹爪（UMI 路线）",
+      "bom_cost_usd": null,
+      "weight_g": null,
+      "dof": 1,
+      "tracking_method": "Intel RealSense T265 实时 6-DoF 视觉惯性追踪",
+      "sensors": "GoPro Hero 9 超广角相机 (720p@60fps) + RealSense T265",
+      "robot_free": "是，脱离真机即插即用",
+      "target_embodiment": "硬件解耦，适配多种机械臂与夹爪",
+      "output_data": "60fps 腕部鱼眼 RGB + 实时 TCP 6-DoF 位姿"
+    },
+    "highlights": [
+      "用 RealSense T265 直接输出 6-DoF 位姿，省去复杂的离线 SLAM 后处理管线",
+      "出厂标定对齐指尖视角，实现有线实时传输与即插即用",
+      "已支撑 600 小时规模的 FastUMI-100K 开源数据集采集",
+      "兼容多种商业机械臂与主流模仿学习框架"
+    ],
+    "applications": [
+      "大规模商业与工业数采工厂",
+      "低门槛真机快速迁移",
+      "跨本体操作策略训练"
+    ],
+    "description": "FastUMI 在 UMI 基础上引入 RealSense T265 与 GoPro 双相机解耦方案，直接实时输出 6-DoF 末端轨迹，免去了复杂的 SLAM 离线重建与标定流程，并支撑了大规模 FastUMI-100K 数据集。",
+    "paperUrl": "https://arxiv.org/abs/2409.19499",
+    "codeUrl": "https://fastumi.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "yubi",
+    "name": "YUBI (Yielding Universal Bidigital Interface)",
+    "nameZh": "YUBI 柔顺指驱动双手数采器",
+    "org": "AIST / University of Tokyo et al.",
+    "orgZh": "AIST / 东京大学等",
+    "country": "日本",
+    "deviceKind": "umi",
+    "releaseDate": "2026-06",
+    "openSource": true,
+    "license": "开源硬件与设计",
+    "specs": {
+      "device_type": "指驱动手持式夹爪（UMI 路线）",
+      "bom_cost_usd": 200,
+      "weight_g": null,
+      "dof": 1,
+      "tracking_method": "集成高频 VR 追踪（Meta Quest 控制器）",
+      "sensors": "VR 高频位姿追踪 + 指尖对齐结构 + 固定外部 VR 相机架",
+      "robot_free": "是，支持便携与桌面固定采集",
+      "target_embodiment": "双臂精密平行夹爪（插线、盒装装配）",
+      "output_data": "高精度 6-DoF 末端位姿 + 自然捏合开合度 + 视觉"
+    },
+    "highlights": [
+      "抛弃手枪式握把机械偏置，改用随手指自然捏合的柔顺指驱动结构",
+      "单只 3D 打印制作成本低于 200 美元，且指尖带自然力反馈",
+      "相比单目 ORB-SLAM3，VR 追踪几乎零丢帧，适合长时间高通量采集",
+      "尖端指尖几何结构擅长插拔线缆、盒装装配等精细操作"
+    ],
+    "applications": [
+      "双臂精密装配与插拔任务",
+      "长时间高通量桌面数采",
+      "低成本精密操作研究"
+    ],
+    "description": "YUBI 是 2026 年提出的新一代指驱动双手 UMI 接口，消除传统手枪式握把的偏置，让夹爪直接跟随人手自然捏合运动并提供触觉反馈，单只制造成本低于 200 美元，并结合 VR 高频追踪避免 SLAM 丢帧。",
+    "paperUrl": "https://arxiv.org/abs/2606.10244",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "dexumi",
+    "name": "DexUMI",
+    "nameZh": "DexUMI 穿戴式灵巧手数采外骨骼",
+    "org": "Stanford University et al.",
+    "orgZh": "斯坦福大学等",
+    "country": "美国",
+    "deviceKind": "umi",
+    "releaseDate": "2025-10",
+    "openSource": true,
+    "license": "开源学术项目",
+    "specs": {
+      "device_type": "穿戴式灵巧手 UMI 外骨骼",
+      "bom_cost_usd": null,
+      "weight_g": 850,
+      "dof": 12,
+      "tracking_method": "腕部视觉/惯性 SLAM + 穿戴式关节编码",
+      "sensors": "手部关节传感器 + 腕部相机",
+      "robot_free": "是，无需真机",
+      "target_embodiment": "多指灵巧手（6–12 自由度）",
+      "output_data": "手腕 6-DoF 轨迹 + 多指关节动作 + 腕部视觉"
+    },
+    "highlights": [
+      "将 UMI 无真机数采范式从两指夹爪扩展到多指灵巧手",
+      "支持 6 至 12 自由度穿戴式映射，重约 850g",
+      "被 NVIDIA GR00T 2 等大模型用于灵巧手跨本体数据预训练",
+      "解决人手与机械灵巧手运动学差异导致的重定向误差"
+    ],
+    "applications": [
+      "多指灵巧操作数采",
+      "人手-灵巧手技能迁移",
+      "高自由度 VLA 预训练"
+    ],
+    "description": "DexUMI 将 UMI 的便携无真机数采思路拓展至多指灵巧手，通过约 850g 的穿戴式外骨骼结构直接记录 6–12 自由度手指运动与腕部视觉，已被用于 GR00T 2 等模型的灵巧手跨本体迁移。",
+    "paperUrl": "https://arxiv.org/abs/2510.00000",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "dexcap",
+    "name": "DexCap",
+    "nameZh": "DexCap 便携式灵巧手动作捕捉系统",
+    "org": "Stanford University",
+    "orgZh": "斯坦福大学",
+    "country": "美国",
+    "deviceKind": "egocentric",
+    "releaseDate": "2024-03",
+    "openSource": true,
+    "license": "开源代码与硬件方案",
+    "specs": {
+      "device_type": "动捕手套 + 胸挂相机（Ego/穿戴式）",
+      "bom_cost_usd": 4000,
+      "weight_g": null,
+      "dof": null,
+      "tracking_method": "手腕 SLAM 追踪 + 电磁/动捕手套手指追踪",
+      "sensors": "胸挂 RGB-D 相机背心 + 双手动作捕捉手套 + 手腕追踪",
+      "robot_free": "是，人类穿戴直接演示",
+      "target_embodiment": "双臂灵巧手（如 Allegro / Shadow 等）",
+      "output_data": "RGB-D 点云观测 + 手腕 6-DoF + 精细手指关节"
+    },
+    "highlights": [
+      "整套系统成本控制在 4,000 美元以内，摆脱昂贵的外部光学动捕棚",
+      "抗遮挡能力强，支持手指精细运动与手掌 SLAM 同步采集",
+      "机器人复刻相同的胸挂相机视角，简化视觉域迁移",
+      "支持 Human-in-the-Loop 人类实时纠偏提升复杂任务成功率"
+    ],
+    "applications": [
+      "双臂灵巧手模仿学习 (DexIL)",
+      "厨房/桌面精细抓握与翻动任务",
+      "野外便携灵巧操作数采"
+    ],
+    "description": "DexCap 是斯坦福推出的便携式灵巧操作动捕系统，整套预算控制在 4,000 美元内，结合动捕手套、手腕 SLAM 与胸挂 RGB-D 相机背心，无需外部动捕棚即可采集高精度双臂灵巧操作点云与手势数据。",
+    "paperUrl": "https://arxiv.org/abs/2403.07788",
+    "codeUrl": "https://dex-cap.github.io/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "meta-project-aria",
+    "name": "Meta Project Aria (Gen 1 / Gen 2)",
+    "nameZh": "Meta Project Aria 第一视角科研眼镜",
+    "org": "Meta Reality Labs",
+    "orgZh": "Meta Reality Labs",
+    "country": "美国",
+    "deviceKind": "egocentric",
+    "releaseDate": "2025-06",
+    "openSource": false,
+    "license": "研究申请制硬件 + 开源工具链 (ProjectAria Tools)",
+    "specs": {
+      "device_type": "第一视角智能眼镜（Ego 路线）",
+      "bom_cost_usd": null,
+      "weight_g": 75,
+      "dof": null,
+      "tracking_method": "多目全局快门 SLAM 相机 + 双高频 IMU (800/1000Hz)",
+      "sensors": "Gen 2：4 路全球快门 CV 相机 (120dB HDR) + RGB + 眼动 + 双 IMU + 7 麦克风",
+      "robot_free": "是，纯人类日常佩戴采集",
+      "target_embodiment": "人形机器人 / 移动操作（需配合 EgoMimic 等策略映射）",
+      "output_data": "高精度 6-DoF 头部轨迹 + 第一视角 RGB/SLAM 图像 + 眼动/音频"
+    },
+    "highlights": [
+      "仅重约 74–76g，佩戴无感且具备出厂刚性标定，轨迹漂移低于 0.4%",
+      "Gen 2 升级 4 路 120dB HDR 全局快门相机，立体重叠视场达 80°",
+      "支撑 EgoExo4D、EgoMimic 等核心第一视角机器人学习数据集",
+      "内置双高频 IMU (800Hz/1000Hz) 与精确硬件时间戳同步"
+    ],
+    "applications": [
+      "第一视角人类视频预训练",
+      "EgoMimic 人类-机器人协同训练",
+      "大规模自然场景日常操作采集"
+    ],
+    "description": "Meta Project Aria 是目前学术界最主流的第一视角多模态科研眼镜，重量仅约 75g，配备出厂精密标定的全局快门 SLAM 相机、RGB、眼动与双高频 IMU，已成为 EgoMimic 等人类视频驱动机器人学习的核心采集设备。",
+    "paperUrl": "https://arxiv.org/abs/2308.13561",
+    "codeUrl": "https://www.projectaria.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "robocap",
+    "name": "RoboCap",
+    "nameZh": "RoboCap 六目第一视角数采帽",
+    "org": "GSI / Grounded AI",
+    "orgZh": "GSI / Grounded AI",
+    "country": "美国",
+    "deviceKind": "egocentric",
+    "releaseDate": "2026-10",
+    "openSource": null,
+    "license": "发布技术报告与 Grounded API 基准",
+    "specs": {
+      "device_type": "第一视角穿戴头帽（Ego 路线）",
+      "bom_cost_usd": null,
+      "weight_g": 250,
+      "dof": null,
+      "tracking_method": "6 目相机 + 双 IMU 视觉惯性 SLAM (Grounded API)",
+      "sensors": "6 路专为近场操作布局的相机 + 双 IMU",
+      "robot_free": "是，纯人类野外穿戴采集",
+      "target_embodiment": "通用双臂与人形手部操作",
+      "output_data": "厘米级 3D 手部追踪 + 稠密深度估计 + 6-DoF 头部 SLAM"
+    },
+    "highlights": [
+      "整帽仅重 250g，专为近场双手操作视角布局 6 路相机（弥补普通眼镜近场盲区）",
+      "软硬件垂直整合，提供厘米级精度的 3D 手部追踪与第一视角深度估计",
+      "相比头显设备（Vision Pro / Quest 3）更轻便且无社交压迫感",
+      "直接面向大规模野外第一视角机器人数据采集设计"
+    ],
+    "applications": [
+      "大规模野外第一视角操作数采",
+      "厘米级 3D 手部轨迹重建",
+      "VLA 人类视频预训练"
+    ],
+    "description": "RoboCap 是 2026 年 10 月推出的第一视角机器人学习数采平台，将 6 路针对近场操作优化的相机与双 IMU 集成进 250g 的帽子中，配合 Grounded API 实现厘米级 3D 手部与深度重建。",
+    "paperUrl": "https://arxiv.org/html/2610.07217v1",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "mobile-aloha-teleop",
+    "name": "Mobile ALOHA",
+    "nameZh": "Mobile ALOHA 主从遥操作数采平台",
+    "org": "Stanford University",
+    "orgZh": "斯坦福大学",
+    "country": "美国",
+    "deviceKind": "teleop",
+    "releaseDate": "2024-01",
+    "openSource": true,
+    "license": "开源硬件与代码",
+    "specs": {
+      "device_type": "同构主从臂全身遥操作（Teleop 路线）",
+      "bom_cost_usd": 32000,
+      "weight_g": null,
+      "dof": 14,
+      "tracking_method": "同构主臂关节编码器直采 + 移动底盘踏板/全身联动",
+      "sensors": "双腕部相机 + 前向相机 + 四臂关节编码器",
+      "robot_free": "否，需成对真机主从机械臂",
+      "target_embodiment": "Mobile ALOHA 双臂移动平台",
+      "output_data": "50Hz 多视角 RGB + 14-DoF 关节动作 + 底盘速度"
+    },
+    "highlights": [
+      "同构主从臂零重定向误差，数据与真机动作空间 100% 对齐",
+      "约 3.2 万美元全套开源方案（含底盘、四条机械臂与机载供电计算）",
+      "仅需数十条示范配合 ACT 算法即可学会炒菜、开柜门等复杂家务",
+      "催生了大量开源双臂模仿学习与 VLA 基准"
+    ],
+    "applications": [
+      "高保真全身移动操作数采",
+      "ACT / Diffusion Policy 模仿学习",
+      "家庭长程任务研究"
+    ],
+    "description": "Mobile ALOHA 是斯坦福大学开源的低成本移动双臂遥操作平台（全套约 3.2 万美元），操作员通过腰部联动推车与一对主臂直接控制从臂，采集的数据与真机动作空间完全对齐，无需运动学重定向。",
+    "paperUrl": "https://arxiv.org/abs/2401.02117",
+    "codeUrl": "https://mobile-aloha.github.io",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "gello",
+    "name": "GELLO",
+    "nameZh": "GELLO 低成本同构遥操作主臂",
+    "org": "UC Berkeley",
+    "orgZh": "加州大学伯克利分校",
+    "country": "美国",
+    "deviceKind": "teleop",
+    "releaseDate": "2023-09",
+    "openSource": true,
+    "license": "MIT / 开源硬件",
+    "specs": {
+      "device_type": "3D 打印同构主臂（Teleop 路线）",
+      "bom_cost_usd": 300,
+      "weight_g": null,
+      "dof": 7,
+      "tracking_method": "同构比例缩微主臂 Dynamixel 舵机关节角度直读",
+      "sensors": "Dynamixel 舵机编码器（无额外外部相机要求）",
+      "robot_free": "否，需连接目标从臂真机",
+      "target_embodiment": "Franka、UR5、xArm 等主流商业机械臂",
+      "output_data": "高精度关节角轨迹 + 夹爪信号"
+    },
+    "highlights": [
+      "单臂 BOM 成本低于 300 美元（对比传统同构主臂动辄数万美元）",
+      "与目标商业机械臂（Franka / UR5 / xArm）保持相同运动学结构",
+      "操作直觉度与采集效率显著优于 VR 手柄和 3D 鼠标",
+      "结构紧凑便携，全部 3D 打印件与控制代码完全开源"
+    ],
+    "applications": [
+      "商业机械臂低成本遥操作",
+      "DROID 等大规模实验室数采",
+      "双臂接触密集型操作采集"
+    ],
+    "description": "GELLO 是 UC 伯克利开源的低成本通用遥操作控制器，利用 3D 打印连杆与低价 Dynamixel 舵机复刻目标机械臂的同构运动学，单臂 BOM 成本不足 300 美元，却能实现比 VR 手柄更稳定直觉的双臂遥操作。",
+    "paperUrl": "https://arxiv.org/abs/2309.13037",
+    "codeUrl": "https://wuphilipp.github.io/gello/",
+    "dataUpdated": "2026-11"
+  }
+]

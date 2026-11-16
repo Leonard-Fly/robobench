@@ -51,3 +51,4 @@ export function countryLabel(t: (k: string) => string, country: string): string 
 
 /** 规格词典命名空间：分类 → spec.<ns>.<key> */
 export const MODEL_SPEC_NS = { vla: 'vla', 'world-model': 'wm' } as const;
+export const DATA_SPEC_NS = { dataset: 'dataset', device: 'device' } as const;

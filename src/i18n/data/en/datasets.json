@@ -1,0 +1,178 @@
+{
+  "open-x-embodiment": {
+    "description": "Open X-Embodiment is an open, large-scale manipulation dataset initiated by Google DeepMind with 34 global labs. It unifies 60 robotics datasets into RLDS format across 22 robot embodiments and 1M+ trajectories, serving as the foundational cross-embodiment pretraining corpus.",
+    "highlights": [
+      "First large-scale cross-embodiment open manipulation dataset with 1M+ trajectories",
+      "Integrates 60 datasets from 34 labs across 21 institutions",
+      "Permissive Apache-2.0 license, friendly to commercial use",
+      "Core pretraining foundation for RT-X, OpenVLA, Octo and more"
+    ],
+    "applications": [
+      "Cross-embodiment VLA pretraining",
+      "Generalist robot policy foundation",
+      "Academic baseline evaluation"
+    ],
+    "specs": {
+      "tasks_count": "160,266 tasks / 527 skills / 311 scenes",
+      "embodiments": "22 robot embodiments (single-arm, bimanual, quadruped, etc.)",
+      "modalities": "RGB images + robot proprioception + actions",
+      "annotations": "Natural language instructions and task labels",
+      "collection_method": "Aggregated 60 teleoperated and autonomous datasets",
+      "data_format": "RLDS (TFRecord)"
+    }
+  },
+  "agibot-world": {
+    "description": "AgiBot World is a million-scale real-world embodied dataset open-sourced by AgiBot. Collected via VR teleoperation in dedicated data factories with quality assurance, it spans 1M+ trajectories and ~2,976.4 hours across 217 real-world tasks.",
+    "highlights": [
+      "1M+ real-world bimanual trajectories totaling approx. 2,976.4 hours",
+      "Covers 5 major domains: home, catering, industrial, retail and office",
+      "Standardized QA pipeline ensuring high-quality long-horizon bimanual data",
+      "Open-sourced alongside the GO-1 embodied foundation model"
+    ],
+    "applications": [
+      "Bimanual VLA pretraining and fine-tuning",
+      "Long-horizon manipulation policy research",
+      "Commercial & industrial generalization"
+    ],
+    "specs": {
+      "tasks_count": "217 tasks (home, catering, industrial, retail, office)",
+      "embodiments": "AgiBot Genie G1 and wheeled bimanual platforms",
+      "modalities": "Multi-view RGB-D + tactile/force + proprioception",
+      "annotations": "Fine-grained subtasks and natural language action labels",
+      "collection_method": "Dedicated factory VR teleoperation with QA verification",
+      "data_format": "LeRobot / HDF5"
+    }
+  },
+  "robomind-2": {
+    "description": "RoboMIND 2.0 is a multimodal bimanual mobile manipulation dataset comprising 310K real trajectories (1,000+ hours) across 6 heterogeneous embodiments, plus 12K tactile-enriched episodes, 20K mobile manipulation trajectories, and digital-twin USD assets.",
+    "highlights": [
+      "310K dual-arm trajectories (1,000+ hours) across 6 heterogeneous robot embodiments",
+      "Includes 12K tactile-enriched sequences and 20K mobile manipulation episodes",
+      "Releases high-fidelity digital-twin USD assets and 20K aligned sim trajectories",
+      "Validated with π0, π0.5, HybridVLA and other mainstream VLAs"
+    ],
+    "applications": [
+      "Contact-rich tactile manipulation",
+      "Bimanual mobile manipulation",
+      "Sim-to-Real transfer"
+    ],
+    "specs": {
+      "tasks_count": "739 complex tasks (50% domestic / 50% industrial)",
+      "embodiments": "6 heterogeneous dual-arm / mobile manipulation embodiments",
+      "modalities": "Multi-view RGB + 12K tactile sequences + 20K mobile manipulation",
+      "annotations": "Fine-grained natural language descriptions and aligned states",
+      "collection_method": "Unified teleoperation pipeline + digital-twin USD sim (20K sim)",
+      "data_format": "Unified trajectory format + USD assets"
+    }
+  },
+  "droid": {
+    "description": "DROID (Distributed Robot Interaction Dataset) was collected across 13 institutions in North America, Europe and Asia using standardized Franka Panda 7-DoF arms, totaling 76,000 teleoperated trajectories (~350 hours) across 564 real scenes.",
+    "highlights": [
+      "High in-the-wild scene diversity across 564 real rooms and tabletops",
+      "Fully standardized hardware (Franka Panda + calibrated stereo cameras)",
+      "MIT license; widely used as a benchmark by OpenVLA, π0 and MolmoAct2",
+      "Full open-source hardware setup and calibration scripts provided"
+    ],
+    "applications": [
+      "In-the-wild single-arm generalization",
+      "VLA pretraining and zero-shot evaluation",
+      "Visuomotor language policy research"
+    ],
+    "specs": {
+      "tasks_count": "84 tasks / 564 real-world scenes",
+      "embodiments": "Standardized Franka Panda 7-DoF single arm",
+      "modalities": "Dual external stereo cameras + wrist RGB-D + proprioception",
+      "annotations": "Natural language task descriptions",
+      "collection_method": "50 collectors across 13 labs over 12 months via teleoperation",
+      "data_format": "RLDS / LeRobot"
+    }
+  },
+  "bridgedata-v2": {
+    "description": "BridgeData V2 is a classic open-source manipulation dataset from UC Berkeley and partners containing 60,096 WidowX 250 trajectories across 24 environments, supporting both language and goal-image conditioning under CC BY 4.0.",
+    "highlights": [
+      "One of the most widely used open datasets on low-cost WidowX arms",
+      "60,096 trajectories supporting language and goal-image conditioning",
+      "Rich kitchen/sink/tabletop scenes; standard benchmark for early VLAs",
+      "Permissive CC BY 4.0 license for commercial and academic use"
+    ],
+    "applications": [
+      "Low-cost tabletop manipulation",
+      "Offline RL and imitation learning",
+      "Classic OpenVLA / Octo fine-tuning benchmark"
+    ],
+    "specs": {
+      "tasks_count": "70+ tasks / 24 tabletop environments",
+      "embodiments": "WidowX 250 6-DoF tabletop robot arm",
+      "modalities": "Multi-view RGB-D + proprioception + actions",
+      "annotations": "Natural language instructions and goal images",
+      "collection_method": "50,365 teleoperated demos + 9,731 scripted policy rollouts",
+      "data_format": "RLDS / TFRecord"
+    }
+  },
+  "rh20t": {
+    "description": "RH20T is a multimodal manipulation dataset led by Shanghai Jiao Tong University with 110,000+ sequences (~40 TB), capturing multi-view RGB-D alongside 6-axis force/torque, tactile and audio signals paired with human demonstrations.",
+    "highlights": [
+      "110,000+ sequences totaling ~40 TB (5 TB RGB / 10 TB RGB-D extracted)",
+      "Rare multimodal coverage: vision, 6-axis F/T, tactile and audio",
+      "Every robot trajectory is paired with a corresponding human demonstration",
+      "Clear split between commercial (RH20T-C) and non-commercial (RH20T-NC) subsets"
+    ],
+    "applications": [
+      "Force-controlled and contact-rich manipulation",
+      "Human-to-robot skill transfer",
+      "Multimodal policy learning"
+    ],
+    "specs": {
+      "tasks_count": "140+ skills / multi-tabletop interaction scenes",
+      "embodiments": "Multiple arms (Franka, UR5, KUKA, Flexiv, etc.)",
+      "modalities": "Multi-view RGB-D + wrist 6-axis F/T + audio + tactile",
+      "annotations": "Paired human demo videos + language and skill labels",
+      "collection_method": "Human teleoperation + paired human demonstration videos",
+      "data_format": "HDF5 / Rosbag / RGB-D"
+    }
+  },
+  "molmoact2-bimanual-yam": {
+    "description": "MolmoAct2-BimanualYAM is a 720-hour teleoperated bimanual dataset released by Ai2 in May 2026 alongside MolmoAct2, providing unified language re-annotations and forming the largest fully open bimanual dataset to date.",
+    "highlights": [
+      "Largest fully open bimanual teleoperation dataset to date at 720 hours",
+      "Released together with MolmoAct2 weights, OpenFAST Tokenizer and curated DROID/SO-100 subsets",
+      "Optimized for accessible bimanual platforms to reproduce strong VLA baselines",
+      "Includes unified language re-annotation pipeline and training recipes"
+    ],
+    "applications": [
+      "Bimanual dexterous manipulation fine-tuning",
+      "Open VLA reproduction and ablation",
+      "Tabletop coordinated task research"
+    ],
+    "specs": {
+      "tasks_count": "Diverse real-world bimanual long-horizon tasks",
+      "embodiments": "Bimanual YAM robot arm platform",
+      "modalities": "Multi-view RGB + bimanual proprioception + continuous actions",
+      "annotations": "Fine-grained instructions via unified language re-annotation",
+      "collection_method": "Real-robot bimanual teleoperation",
+      "data_format": "LeRobot / Parquet"
+    }
+  },
+  "lerobot-community": {
+    "description": "LeRobot Community Datasets aggregate open manipulation trajectories on Hugging Face Hub from low-cost arms like SO-100/101 and ALOHA in the compact LeRobotDataset v3.0 (Parquet + MP4) format.",
+    "highlights": [
+      "Deeply integrated with Hugging Face Hub for one-line dataset loading",
+      "LeRobotDataset v3.0 uses compact, fast Parquet + MP4 storage",
+      "Entirely powers SmolVLA training (~23K public community trajectories)",
+      "Most active open data hub for low-cost SO-100/101 robot arms"
+    ],
+    "applications": [
+      "Low-cost tabletop arm fine-tuning",
+      "Education and indie developer onboarding",
+      "Lightweight VLA (SmolVLA / ACT / DP) training"
+    ],
+    "specs": {
+      "tasks_count": "Hundreds of community tabletop & mobile tasks",
+      "embodiments": "SO-100/101, ALOHA, Koch, LeKiwi low-cost open arms",
+      "modalities": "Multi-view MP4 video + joint states/actions",
+      "annotations": "Community task text annotations",
+      "collection_method": "Crowdsourced low-cost leader-follower teleoperation",
+      "data_format": "LeRobotDataset v3.0 (Parquet + MP4)"
+    }
+  }
+}

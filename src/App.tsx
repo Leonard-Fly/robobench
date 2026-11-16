@@ -9,6 +9,7 @@ import Robots from './pages/Robots';
 import RobotDetail from './pages/RobotDetail';
 import Compare from './pages/Compare';
 import Models from './pages/Models';
+import Datasets from './pages/Datasets';
 import Contact from './pages/Contact';
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
               <Route path="/robots/:id" element={<RobotDetail />} />
               <Route path="/compare" element={<Compare />} />
               <Route path="/models" element={<Models />} />
+              <Route path="/datasets" element={<Datasets />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<Home />} />
             </Routes>

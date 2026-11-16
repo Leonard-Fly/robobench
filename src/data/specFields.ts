@@ -172,3 +172,29 @@ export const STATUS_LABELS: Record<string, string> = {
   announced: '已发布',
   discontinued: '已停产',
 };
+
+/** 开源具身数据集 */
+export const DATASET_SPEC_FIELDS: SpecField[] = [
+  { key: 'trajectories_k', label: '轨迹数量', unit: 'K', group: '数据规模', better: 'higher', keySpec: true },
+  { key: 'hours', label: '总时长', unit: 'h', group: '数据规模', better: 'higher', keySpec: true },
+  { key: 'tasks_count', label: '任务/场景数', group: '数据规模', better: 'none', keySpec: true },
+  { key: 'storage_tb', label: '存储体积', unit: 'TB', group: '数据规模', better: 'none' },
+  { key: 'embodiments', label: '覆盖本体', group: '数据内容', better: 'none', keySpec: true },
+  { key: 'modalities', label: '模态与传感器', group: '数据内容', better: 'none' },
+  { key: 'annotations', label: '标注与语言描述', group: '数据内容', better: 'none' },
+  { key: 'collection_method', label: '采集方式', group: '采集与格式', better: 'none' },
+  { key: 'data_format', label: '数据格式', group: '采集与格式', better: 'none' },
+];
+
+/** 具身数据采集设备（Ego / UMI / 遥操作） */
+export const COLLECTION_DEVICE_SPEC_FIELDS: SpecField[] = [
+  { key: 'device_type', label: '设备路线', group: '设备规格', better: 'none', keySpec: true },
+  { key: 'bom_cost_usd', label: '参考 BOM 成本', unit: 'USD', group: '设备规格', better: 'lower', keySpec: true },
+  { key: 'weight_g', label: '重量', unit: 'g', group: '设备规格', better: 'lower', keySpec: true },
+  { key: 'dof', label: '自由度/追踪维度', group: '性能与传感', better: 'higher' },
+  { key: 'tracking_method', label: '位姿追踪方式', group: '性能与传感', better: 'none', keySpec: true },
+  { key: 'sensors', label: '传感器配置', group: '性能与传感', better: 'none' },
+  { key: 'robot_free', label: '无需真机采集', group: '采集与生态', better: 'none' },
+  { key: 'target_embodiment', label: '适配末端/本体', group: '采集与生态', better: 'none' },
+  { key: 'output_data', label: '输出数据模态', group: '采集与生态', better: 'none' },
+];

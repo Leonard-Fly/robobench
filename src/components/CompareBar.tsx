@@ -7,14 +7,20 @@ import { XIcon } from './Icons';
 
 export default function CompareBar() {
   const { locale, t } = useLocale();
-  const { getRobot, getModel } = useLocalData();
+  const { getRobot, getModel, getDataset, getDevice } = useLocalData();
   const { state, remove, clear } = useCompare();
   const nav = useNavigate();
   const { pathname } = useLocation();
   const n = state.ids.length;
   const hidden = n === 0 || pathname === '/compare';
   const go = () =>
-    nav(state.type === 'robot' ? `/compare?ids=${state.ids.join(',')}` : '/models');
+    nav(
+      state.type === 'robot'
+        ? `/compare?ids=${state.ids.join(',')}`
+        : state.type === 'model'
+          ? '/models'
+          : '/datasets',
+    );
   return (
     <div
       className={`fixed inset-x-0 bottom-0 z-50 px-3 pb-3 transition-all duration-300 sm:px-6 sm:pb-5 ${
@@ -25,7 +31,14 @@ export default function CompareBar() {
         <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2">
           <span className="text-xs text-slate-400">{t('bar.label')}</span>
           {state.ids.map((id) => {
-            const item = state.type === 'robot' ? getRobot(id) : getModel(id);
+            const item =
+              state.type === 'robot'
+                ? getRobot(id)
+                : state.type === 'model'
+                  ? getModel(id)
+                  : state.type === 'dataset'
+                    ? getDataset(id)
+                    : getDevice(id);
             const name = item ? displayName(item, locale) : undefined;
             return (
               <span key={id} className="inline-flex items-center gap-1 rounded-full border border-line bg-surface px-2.5 py-1 text-xs text-slate-200">

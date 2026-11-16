@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { AI_MODELS, CONTACT_EMAIL, DATA_VERSION, ROBOTS, SITE_NAME } from '../data';
+import { AI_MODELS, COLLECTION_DEVICES, CONTACT_EMAIL, DATA_VERSION, DATASETS, ROBOTS, SITE_NAME } from '../data';
 import { CATEGORY_ICONS } from '../data/specFields';
 import { CATEGORIES } from '../components/format';
 import { useLocalData } from '../components/useLocalData';
@@ -94,19 +94,33 @@ export default function Home() {
       )}
 
       <section className="mx-auto mt-16 max-w-7xl px-4 sm:px-6">
-        <div className="card relative overflow-hidden p-8 sm:p-10">
-          <div className="pointer-events-none absolute -right-16 -bottom-16 h-56 w-56 rounded-full bg-accent-2/15 blur-3xl" />
-          <h2 className="text-2xl font-bold text-white">{t('home.models.title')}</h2>
-          <p className="mt-3 max-w-2xl text-slate-400">
-            {t('home.models.desc')
-              .replace('{v}', String(AI_MODELS.filter((m) => m.kind === 'vla').length))
-              .replace('{vla}', t('kind.vla'))
-              .replace('{w}', String(AI_MODELS.filter((m) => m.kind === 'world-model').length))
-              .replace('{wm}', t('kind.world-model'))}
-          </p>
-          <Link to="/models" className="mt-6 inline-flex items-center gap-2 rounded-xl border border-accent/40 px-5 py-2.5 text-sm font-semibold text-accent transition-colors hover:bg-accent/10">
-            {t('home.models.enter')} <ArrowRightIcon />
-          </Link>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="card relative overflow-hidden p-8 sm:p-10">
+            <div className="pointer-events-none absolute -right-16 -bottom-16 h-56 w-56 rounded-full bg-accent-2/15 blur-3xl" />
+            <h2 className="text-2xl font-bold text-white">{t('home.models.title')}</h2>
+            <p className="mt-3 max-w-2xl text-slate-400">
+              {t('home.models.desc')
+                .replace('{v}', String(AI_MODELS.filter((m) => m.kind === 'vla').length))
+                .replace('{vla}', t('kind.vla'))
+                .replace('{w}', String(AI_MODELS.filter((m) => m.kind === 'world-model').length))
+                .replace('{wm}', t('kind.world-model'))}
+            </p>
+            <Link to="/models" className="mt-6 inline-flex items-center gap-2 rounded-xl border border-accent/40 px-5 py-2.5 text-sm font-semibold text-accent transition-colors hover:bg-accent/10">
+              {t('home.models.enter')} <ArrowRightIcon />
+            </Link>
+          </div>
+          <div className="card relative overflow-hidden p-8 sm:p-10">
+            <div className="pointer-events-none absolute -right-16 -bottom-16 h-56 w-56 rounded-full bg-accent/15 blur-3xl" />
+            <h2 className="text-2xl font-bold text-white">{t('home.datasets.title')}</h2>
+            <p className="mt-3 max-w-2xl text-slate-400">
+              {t('home.datasets.desc')
+                .replace('{d}', String(DATASETS.length))
+                .replace('{c}', String(COLLECTION_DEVICES.length))}
+            </p>
+            <Link to="/datasets" className="mt-6 inline-flex items-center gap-2 rounded-xl border border-accent/40 px-5 py-2.5 text-sm font-semibold text-accent transition-colors hover:bg-accent/10">
+              {t('home.datasets.enter')} <ArrowRightIcon />
+            </Link>
+          </div>
         </div>
       </section>
 

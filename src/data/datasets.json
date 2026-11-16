@@ -1,0 +1,298 @@
+[
+  {
+    "id": "open-x-embodiment",
+    "name": "Open X-Embodiment (OXE)",
+    "nameZh": "Open X-Embodiment (OXE)",
+    "org": "Google DeepMind & 34 Research Labs",
+    "orgZh": "谷歌 DeepMind 及 34 家科研机构",
+    "country": "美国",
+    "releaseDate": "2023-10",
+    "openSource": true,
+    "license": "Apache-2.0",
+    "specs": {
+      "trajectories_k": 1000,
+      "hours": null,
+      "tasks_count": "160,266 任务 / 527 技能 / 311 场景",
+      "storage_tb": null,
+      "embodiments": "22 种机器人本体（单臂、双臂、四足等）",
+      "modalities": "RGB 图像 + 机器人本体状态 + 动作",
+      "annotations": "自然语言指令与任务标签",
+      "collection_method": "整合 60 个现有遥操作与自主采集数据集",
+      "data_format": "RLDS (TFRecord)"
+    },
+    "highlights": [
+      "最早的大规模跨本体开源机器人操作数据集，包含超 100 万条轨迹",
+      "整合全球 21 家机构、34 个实验室的 60 个数据集",
+      "采用 Apache-2.0 宽松开源协议，商用友好",
+      "RT-X、OpenVLA、Octo 等主流 VLA 的核心预训练基石"
+    ],
+    "applications": [
+      "跨本体 VLA 预训练",
+      "通用机器人策略基座",
+      "学术基线评测"
+    ],
+    "description": "Open X-Embodiment 由谷歌 DeepMind 联合全球 34 家实验室发起，将 60 个机器人数据集统一为 RLDS 格式，覆盖 22 种机器人本体和超 100 万条轨迹，是目前跨本体预训练最基础的开源数据集。",
+    "paperUrl": "https://arxiv.org/abs/2310.08864",
+    "datasetUrl": "https://robotics-transformer-x.github.io/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "agibot-world",
+    "name": "AgiBot World",
+    "nameZh": "AgiBot World（智元开源数据集）",
+    "org": "AgiBot",
+    "orgZh": "智元机器人",
+    "country": "中国",
+    "releaseDate": "2025-01",
+    "openSource": true,
+    "license": "CC BY-NC-SA 4.0",
+    "specs": {
+      "trajectories_k": 1000,
+      "hours": 2976.4,
+      "tasks_count": "217 类任务（覆盖家居、餐饮、工业、零售、办公）",
+      "storage_tb": null,
+      "embodiments": "智元精灵 G1 等双臂轮式本体",
+      "modalities": "多视角 RGB-D 视觉 + 触觉/力觉 + 本体状态",
+      "annotations": "细粒度子任务与自然语言动作标注",
+      "collection_method": "自建数采工厂 VR 遥操作采集与人工质检",
+      "data_format": "LeRobot / HDF5"
+    },
+    "highlights": [
+      "超 100 万条真实世界双臂轨迹，总时长约 2,976.4 小时",
+      "覆盖家居、餐饮、工业、零售、办公五大真实场景",
+      "包含标准化质检流程，长程双臂操作质量高",
+      "配套 GO-1 具身基础模型开源"
+    ],
+    "applications": [
+      "双臂 VLA 预训练与微调",
+      "长程操作策略研究",
+      "商业/工业场景泛化"
+    ],
+    "description": "AgiBot World 是智元机器人开源的百万级真实世界具身数据集，通过自建数采工厂以 VR 遥操作采集了超 100 万条轨迹、近 3,000 小时数据，涵盖 217 项真实任务，是规模最大的开源双臂真实数据集之一。",
+    "paperUrl": "https://arxiv.org/abs/2503.06669",
+    "datasetUrl": "https://github.com/OpenDriveLab/AgiBot-World",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "robomind-2",
+    "name": "RoboMIND 2.0",
+    "nameZh": "RoboMIND 2.0",
+    "org": "BAAI / Peking University et al.",
+    "orgZh": "智源研究院 / 北大等",
+    "country": "中国",
+    "releaseDate": "2025-12",
+    "openSource": true,
+    "license": "开源（科研/社区开放）",
+    "specs": {
+      "trajectories_k": 310,
+      "hours": 1000,
+      "tasks_count": "739 项复杂任务（家庭与工业各半）",
+      "storage_tb": null,
+      "embodiments": "6 种异构双臂/移动操作本体",
+      "modalities": "多视角 RGB + 12K 触觉增强序列 + 20K 移动操作轨迹",
+      "annotations": "细粒度自然语言描述与状态对齐",
+      "collection_method": "统一遥操作管线 + 数字孪生 USD 仿真（含 20K 仿真轨迹）",
+      "data_format": "统一标准轨迹格式 + USD 资产"
+    },
+    "highlights": [
+      "31 万条双臂操作轨迹、总时长超 1,000 小时，覆盖 6 种异构本体",
+      "专门包含 1.2 万条触觉增强序列与 2 万条移动操作轨迹",
+      "同步开源高保真数字孪生 USD 资产与 2 万条对齐仿真轨迹",
+      "验证适配 π0、π0.5、HybridVLA 等多款主流 VLA"
+    ],
+    "applications": [
+      "多模态触觉操作研究",
+      "双臂移动操作",
+      "Sim-to-Real 虚实迁移"
+    ],
+    "description": "RoboMIND 2.0 是多模态双臂移动操作开源数据集，收录 6 种异构机器人的 31 万条真实轨迹（超 1,000 小时），额外提供 1.2 万条触觉序列及数字孪生 USD 仿真资产，兼顾接触密集型任务与长程移动操作。",
+    "paperUrl": "https://arxiv.org/abs/2512.24653",
+    "datasetUrl": "https://arxiv.org/html/2512.24653v3",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "droid",
+    "name": "DROID",
+    "nameZh": "DROID",
+    "org": "Stanford / UC Berkeley / TRI et al.",
+    "orgZh": "斯坦福 / 伯克利 / 丰田研究院等",
+    "country": "美国",
+    "releaseDate": "2024-03",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "trajectories_k": 76,
+      "hours": 350,
+      "tasks_count": "84 项任务 / 564 个真实场景",
+      "storage_tb": null,
+      "embodiments": "标准化 Franka Panda 7-DoF 单臂",
+      "modalities": "双外部立体相机 + 腕部相机 RGB-D + 本体状态",
+      "annotations": "自然语言任务描述",
+      "collection_method": "13 家机构 50 名采集员跨三大洲 12 个月实地遥操作",
+      "data_format": "RLDS / LeRobot"
+    },
+    "highlights": [
+      "高度多样化的野外真实场景（564 个真实房间与桌面）",
+      "硬件完全标准化（Franka Panda + 统一相机标定），迁移一致性高",
+      "MIT 开源协议，被 OpenVLA、π0、MolmoAct2 广泛用作基准",
+      "提供完整的硬件搭建与标定开源脚本"
+    ],
+    "applications": [
+      "开放场景单臂操作泛化",
+      "VLA 预训练与零样本评测",
+      "视觉-语言策略研究"
+    ],
+    "description": "DROID 是由北美、欧洲和亚洲 13 家机构联合采集的分布式机器人交互数据集，使用统一的 Franka Panda 7 自由度机械臂在 564 个真实场景中采集了 7.6 万条轨迹（约 350 小时），以场景多样性著称。",
+    "paperUrl": "https://arxiv.org/abs/2403.12945",
+    "datasetUrl": "https://droid-dataset.github.io/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "bridgedata-v2",
+    "name": "BridgeData V2",
+    "nameZh": "BridgeData V2",
+    "org": "UC Berkeley / Stanford / DeepMind / CMU",
+    "orgZh": "UC 伯克利 / 斯坦福 / DeepMind / CMU",
+    "country": "美国",
+    "releaseDate": "2023-09",
+    "openSource": true,
+    "license": "CC BY 4.0",
+    "specs": {
+      "trajectories_k": 60.1,
+      "hours": null,
+      "tasks_count": "70+ 任务 / 24 种桌面环境",
+      "storage_tb": null,
+      "embodiments": "WidowX 250 6-DoF 桌面机械臂",
+      "modalities": "多视角 RGB-D + 本体状态 + 动作",
+      "annotations": "自然语言指令与目标图像",
+      "collection_method": "50,365 条遥操作示范 + 9,731 条脚本策略自主采集",
+      "data_format": "RLDS / TFRecord"
+    },
+    "highlights": [
+      "低成本 WidowX 机械臂上最经典的开源操作数据集之一",
+      "共 60,096 条轨迹，支持语言与目标图像双条件训练",
+      "Kitchen/Sink/Tabletop 场景丰富，是早期 VLA 验证标配基准",
+      "CC BY 4.0 协议，可自由商用与二次分发"
+    ],
+    "applications": [
+      "桌面低成本机械臂操作",
+      "离线强化学习与模仿学习",
+      "OpenVLA / Octo 经典微调基准"
+    ],
+    "description": "BridgeData V2 由伯克利等机构发布，包含 60,096 条 WidowX 250 机械臂在 24 个环境中的操作轨迹（含遥操作与脚本采集），支持语言与目标图像条件学习，是学术界最常用的桌面操作基准之一。",
+    "paperUrl": "https://arxiv.org/abs/2308.12952",
+    "datasetUrl": "https://rail-berkeley.github.io/bridgedata/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "rh20t",
+    "name": "RH20T",
+    "nameZh": "RH20T",
+    "org": "Shanghai Jiao Tong University et al.",
+    "orgZh": "上海交通大学等",
+    "country": "中国",
+    "releaseDate": "2023-07",
+    "openSource": true,
+    "license": "CC BY-SA 4.0（RH20T-C 商用）/ CC BY-NC 4.0（RH20T-NC）",
+    "specs": {
+      "trajectories_k": 110,
+      "hours": null,
+      "tasks_count": "140+ 技能 / 多桌面交互场景",
+      "storage_tb": 40,
+      "embodiments": "多种主流机械臂（Franka、UR5、KUKA、Flexiv 等）",
+      "modalities": "多视角 RGB-D + 腕部六维力/力矩 + 音频 + 触觉",
+      "annotations": "人类示范对照视频 + 语言与技能标签",
+      "collection_method": "人类遥操作 + 配对人类第一视角/同场景示范",
+      "data_format": "HDF5 / Rosbag / RGB-D"
+    },
+    "highlights": [
+      "超 11 万条序列、总体积达 40 TB（解压后约 5TB RGB / 10TB RGBD）",
+      "同时包含视觉、六维力/力矩、触觉与音频等稀缺多模态信号",
+      "每条机器人轨迹均配对对应的人类操作示范",
+      "明确区分商用子集（RH20T-C）与非商用子集（RH20T-NC）"
+    ],
+    "applications": [
+      "力控与接触密集型操作",
+      "人类-机器人跨视角技能迁移",
+      "多模态策略研究"
+    ],
+    "description": "RH20T 由上海交通大学团队牵头发布，包含超 11 万条多模态操作序列，除多视角 RGB-D 外还采集了六维力/力矩、触觉与音频信号，并配对人类示范，是国内最早且模态最丰富的开源操作数据集之一。",
+    "paperUrl": "https://arxiv.org/abs/2307.00595",
+    "datasetUrl": "https://rh20t.github.io/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "molmoact2-bimanual-yam",
+    "name": "MolmoAct2-BimanualYAM",
+    "nameZh": "MolmoAct2-BimanualYAM",
+    "org": "Allen Institute for AI (Ai2)",
+    "orgZh": "艾伦人工智能研究所 (Ai2)",
+    "country": "美国",
+    "releaseDate": "2026-05",
+    "openSource": true,
+    "license": "全开源（随 MolmoAct2 发布）",
+    "specs": {
+      "trajectories_k": null,
+      "hours": 720,
+      "tasks_count": "多种真实双臂长程操作任务",
+      "storage_tb": null,
+      "embodiments": "双臂 YAM 机械臂平台",
+      "modalities": "多视角 RGB + 双臂本体状态 + 连续动作",
+      "annotations": "统一语言重标注管线生成精细指令",
+      "collection_method": "真机双臂遥操作采集",
+      "data_format": "LeRobot / Parquet"
+    },
+    "highlights": [
+      "目前规模最大的全开源双臂遥操作数据集之一，达 720 小时",
+      "与 MolmoAct2 模型、OpenFAST 分词器及精选 DROID/SO-100 子集同步开源",
+      "针对中低成本双臂平台优化，可直接用于复现强基线 VLA",
+      "配套完整的语言重标注与训练配方"
+    ],
+    "applications": [
+      "双臂灵巧操作微调",
+      "开源 VLA 复现与消融实验",
+      "桌面协同任务研究"
+    ],
+    "description": "MolmoAct2-BimanualYAM 是 Ai2 于 2026 年 5 月随 MolmoAct2 一同发布的大规模双臂遥操作数据集，包含 720 小时真机示范轨迹与统一语言标注，为开源社区提供了高质量的双臂训练基座数据。",
+    "paperUrl": "https://arxiv.org/abs/2605.02881",
+    "datasetUrl": "https://arxiv.org/html/2605.02881v1",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "lerobot-community",
+    "name": "LeRobot Community Datasets",
+    "nameZh": "LeRobot 社区开源数据集",
+    "org": "Hugging Face & Community",
+    "orgZh": "Hugging Face 及开源社区",
+    "country": "美国/法国",
+    "releaseDate": "2024-05",
+    "openSource": true,
+    "license": "Apache-2.0 / CC BY 4.0（依子集而定）",
+    "specs": {
+      "trajectories_k": 23,
+      "hours": null,
+      "tasks_count": "数百项社区桌面与移动操作任务",
+      "storage_tb": null,
+      "embodiments": "SO-100/101、ALOHA、Koch、LeKiwi 等低成本开源机械臂",
+      "modalities": "多视角 MP4 视频 + 关节状态/动作",
+      "annotations": "社区任务文本标注",
+      "collection_method": "低成本开源主从臂遥操作众包上传",
+      "data_format": "LeRobotDataset v3.0 (Parquet + MP4)"
+    },
+    "highlights": [
+      "与 Hugging Face Hub 深度集成，一行代码即可下载加载",
+      "LeRobotDataset v3.0 采用 Parquet + MP4 格式，存储紧凑且读写高效",
+      "SmolVLA 完全基于其中的约 2.3 万条社区公开轨迹训练",
+      "低成本机械臂（SO-100/101）生态最活跃的开源数据枢纽"
+    ],
+    "applications": [
+      "低成本桌面机械臂微调",
+      "教学与个人开发者入门",
+      "轻量级 VLA（SmolVLA / ACT / DP）训练"
+    ],
+    "description": "LeRobot 社区数据集依托 Hugging Face Hub 汇集了全球开发者使用 SO-100/101、ALOHA 等低成本平台采集的公开操作轨迹，采用高效的 Parquet + MP4 格式（v3.0），是轻量具身模型开发者的首选生态。",
+    "paperUrl": "https://arxiv.org/abs/2506.01844",
+    "datasetUrl": "https://github.com/huggingface/lerobot",
+    "dataUpdated": "2026-11"
+  }
+]

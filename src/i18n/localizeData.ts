@@ -1,7 +1,9 @@
-import type { AiModel, Robot } from '../types';
+import type { AiModel, CollectionDevice, EmbodiedDataset, Robot } from '../types';
 import type { Locale } from './config';
 import enRobots from './data/en/robots.json';
 import enModels from './data/en/models.json';
+import enDatasets from './data/en/datasets.json';
+import enDevices from './data/en/devices.json';
 import jaRobots from './data/ja/robots.json';
 import jaModels from './data/ja/models.json';
 import koRobots from './data/ko/robots.json';
@@ -14,7 +16,7 @@ import esRobots from './data/es/robots.json';
 import esModels from './data/es/models.json';
 
 // ============ 数据内容本地化 ============
-// src/i18n/data/<locale>/robots.json 与 models.json 按条目 id 存放译文覆盖。
+// src/i18n/data/<locale>/robots.json 与 models.json 等按条目 id 存放译文覆盖。
 // 回退链：当前语言 → 英文 → 中文原文（主数据 JSON）。
 
 /** 单条目译文覆盖（字段均可省略，省略则回退） */
@@ -48,7 +50,15 @@ const MODEL_OVERRIDES: Partial<Record<Locale, OverrideMap>> = {
   es: esModels as OverrideMap,
 };
 
-function applyOverride<T extends Robot | AiModel>(
+const DATASET_OVERRIDES: Partial<Record<Locale, OverrideMap>> = {
+  en: enDatasets as OverrideMap,
+};
+
+const DEVICE_OVERRIDES: Partial<Record<Locale, OverrideMap>> = {
+  en: enDevices as OverrideMap,
+};
+
+function applyOverride<T extends Robot | AiModel | EmbodiedDataset | CollectionDevice>(
   entry: T,
   locale: Locale,
   overrides: Partial<Record<Locale, OverrideMap>>,
@@ -79,6 +89,14 @@ export function localizeRobot(r: Robot, locale: Locale): Robot {
 
 export function localizeAiModel(m: AiModel, locale: Locale): AiModel {
   return applyOverride(m, locale, MODEL_OVERRIDES);
+}
+
+export function localizeDataset(d: EmbodiedDataset, locale: Locale): EmbodiedDataset {
+  return applyOverride(d, locale, DATASET_OVERRIDES);
+}
+
+export function localizeCollectionDevice(c: CollectionDevice, locale: Locale): CollectionDevice {
+  return applyOverride(c, locale, DEVICE_OVERRIDES);
 }
 
 /** 条目显示名：中文环境用 nameZh，其余用 name */

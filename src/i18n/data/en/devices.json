@@ -1,0 +1,200 @@
+{
+  "umi-stanford": {
+    "description": "UMI (Universal Manipulation Interface) from Stanford et al. is a 780 g handheld gripper with a ~$371 total BoM (including GoPro). Humans demonstrate directly with a 155° fisheye camera and side mirrors, recovering 6-DoF trajectories via SLAM for zero-shot robot transfer.",
+    "highlights": [
+      "Pioneered robot-free handheld capture; 3D-printed gripper BoM is $73 (~$371 with GoPro)",
+      "Side mirrors provide implicit stereo depth while matching wrist-camera views",
+      "Enables zero-shot cross-embodiment transfer across robot arm brands",
+      "Open-source CAD, SLAM calibration and Diffusion Policy training code"
+    ],
+    "applications": [
+      "In-the-wild large-scale data collection",
+      "Dynamic bimanual tasks (tossing, cloth folding)",
+      "Low-cost academic data collection"
+    ],
+    "specs": {
+      "device_type": "Handheld gripper (UMI)",
+      "tracking_method": "GoPro monocular fisheye + built-in IMU visual-inertial SLAM (ORB-SLAM3)",
+      "sensors": "GoPro 155° fisheye + side mirrors (implicit stereo) + gripper encoder",
+      "robot_free": "Yes, fully robot-free in-the-wild capture",
+      "target_embodiment": "Parallel-jaw grippers (80 mm stroke)",
+      "output_data": "Wrist RGB video + 6-DoF end-effector pose + gripper width"
+    }
+  },
+  "fastumi": {
+    "description": "FastUMI decouples pose tracking from scene capture using a RealSense T265 alongside a GoPro Hero 9, outputting real-time 6-DoF TCP trajectories without offline SLAM post-processing and powering the 600-hour FastUMI-100K dataset.",
+    "highlights": [
+      "RealSense T265 outputs 6-DoF pose directly, eliminating offline SLAM pipelines",
+      "Factory-calibrated fingertip alignment for wired real-time plug-and-play capture",
+      "Powered the 600-hour FastUMI-100K open-source dataset",
+      "Hardware-independent design compatible with diverse robot arms and grippers"
+    ],
+    "applications": [
+      "Large-scale commercial & industrial data factories",
+      "Low-barrier sim/real rapid deployment",
+      "Cross-embodiment manipulation training"
+    ],
+    "specs": {
+      "device_type": "Handheld gripper (UMI)",
+      "tracking_method": "Intel RealSense T265 real-time 6-DoF VIO tracking",
+      "sensors": "GoPro Hero 9 ultra-wide (720p@60fps) + RealSense T265",
+      "robot_free": "Yes, robot-free plug-and-play",
+      "target_embodiment": "Hardware-decoupled; diverse arms and grippers",
+      "output_data": "60 fps wrist fisheye RGB + real-time 6-DoF TCP pose"
+    }
+  },
+  "yubi": {
+    "description": "YUBI (2026) reinvents handheld UMI as a yielding, finger-aligned pinch interface under $200 USD per 3D-printed gripper, eliminating pistol-grip offsets and pairing with high-frequency VR tracking to avoid SLAM frame drops.",
+    "highlights": [
+      "Yielding finger-driven actuation follows natural pinch motion with haptic feedback",
+      "Fabricated for under $200 USD per gripper with 3D-printed parts",
+      "High-frequency VR tracking avoids monocular ORB-SLAM3 frame drops",
+      "Sharpened fingertip geometry excels at cable insertion and box assembly"
+    ],
+    "applications": [
+      "Bimanual precision assembly & insertion",
+      "Sustained high-throughput tabletop capture",
+      "Low-cost fine manipulation research"
+    ],
+    "specs": {
+      "device_type": "Finger-aligned handheld gripper (UMI)",
+      "tracking_method": "Integrated high-frequency VR tracking (Meta Quest controllers)",
+      "sensors": "VR pose tracking + finger-aligned mechanism + stationary VR camera rig",
+      "robot_free": "Yes, portable and stationary desktop modes",
+      "target_embodiment": "Bimanual precision parallel-jaw grippers",
+      "output_data": "High-precision 6-DoF pose + natural pinch aperture + vision"
+    }
+  },
+  "dexumi": {
+    "description": "DexUMI extends robot-free UMI collection to multi-finger dexterous hands via an ~850 g wearable exoskeleton recording 6–12 DoF finger motion and wrist vision, used in cross-embodiment pretraining for models like NVIDIA GR00T 2.",
+    "highlights": [
+      "Extends robot-free UMI capture from parallel grippers to dexterous hands",
+      "Supports 6 to 12 DoF wearable mapping at ~850 g weight",
+      "Used in NVIDIA GR00T 2 pretraining for dexterous hand skill transfer",
+      "Mitigates human-to-robot kinematic retargeting mismatch"
+    ],
+    "applications": [
+      "Multi-finger dexterous manipulation capture",
+      "Human-to-dexterous-hand skill transfer",
+      "High-DoF VLA pretraining"
+    ],
+    "specs": {
+      "device_type": "Wearable dexterous-hand UMI exoskeleton",
+      "tracking_method": "Wrist visual-inertial SLAM + wearable joint encoders",
+      "sensors": "Hand joint encoders + wrist camera",
+      "robot_free": "Yes, no robot required",
+      "target_embodiment": "Multi-finger dexterous hands (6–12 DoF)",
+      "output_data": "6-DoF wrist trajectory + multi-finger joint actions + wrist vision"
+    }
+  },
+  "dexcap": {
+    "description": "DexCap from Stanford is a portable dexterous mocap system kept under a $4,000 USD budget, combining mocap gloves, wrist SLAM and a chest-mounted RGB-D camera vest to capture 3D point clouds and finger motions without external MoCap studios.",
+    "highlights": [
+      "Total system cost kept under $4,000 USD without external optical MoCap",
+      "Occlusion-robust finger tracking synchronized with palm SLAM",
+      "Reuses the exact chest camera viewpoint on the robot to ease domain transfer",
+      "Supports human-in-the-loop correction to boost success on complex tasks"
+    ],
+    "applications": [
+      "Bimanual dexterous imitation learning (DexIL)",
+      "Kitchen/tabletop fine grasping and turning",
+      "Portable in-the-wild dexterous capture"
+    ],
+    "specs": {
+      "device_type": "Mocap gloves + chest camera vest (Egocentric)",
+      "tracking_method": "Wrist SLAM + electromagnetic/mocap glove finger tracking",
+      "sensors": "Chest RGB-D camera vest + bimanual mocap gloves + wrist tracking",
+      "robot_free": "Yes, wearable human demonstration",
+      "target_embodiment": "Bimanual dexterous hands (e.g., Allegro / Shadow)",
+      "output_data": "RGB-D point clouds + 6-DoF wrist pose + fine finger joints"
+    }
+  },
+  "meta-project-aria": {
+    "description": "Meta Project Aria is the leading egocentric multimodal research glasses platform (~75 g). Equipped with factory-calibrated global-shutter SLAM cameras, RGB, eye tracking and dual high-rate IMUs, it powers EgoExo4D and EgoMimic robot learning.",
+    "highlights": [
+      "Weighs ~74–76 g with rigid factory calibration and <0.4% open-loop trajectory drift",
+      "Gen 2 upgrades to 4 global-shutter 120dB HDR CV cameras with 80° stereo overlap",
+      "Powers foundational egocentric datasets including EgoExo4D and EgoMimic",
+      "Dual high-rate IMUs (800/1000 Hz) with hardware timestamp synchronization"
+    ],
+    "applications": [
+      "Egocentric human video pretraining",
+      "EgoMimic human-robot co-training",
+      "Large-scale natural daily manipulation capture"
+    ],
+    "specs": {
+      "device_type": "Egocentric research glasses (Ego)",
+      "tracking_method": "Multi-camera global-shutter SLAM + dual high-rate IMUs (800/1000 Hz)",
+      "sensors": "Gen 2: 4x global-shutter CV cameras (120dB HDR) + RGB + eye tracking + dual IMU + 7 mics",
+      "robot_free": "Yes, natural human wearable capture",
+      "target_embodiment": "Humanoids / mobile manipulators (via EgoMimic-style mapping)",
+      "output_data": "High-precision 6-DoF head pose + egocentric RGB/SLAM + gaze/audio"
+    }
+  },
+  "robocap": {
+    "description": "RoboCap (Oct 2026) is an egocentric robot-learning capture platform integrating 6 near-field cameras and dual IMUs into a 250 g hat, paired with the Grounded API for centimeter-accurate 3D hand tracking and depth estimation.",
+    "highlights": [
+      "250 g hat with 6 cameras arranged specifically for near-field bimanual manipulation",
+      "Vertically integrated hardware + Grounded API for cm-level 3D hand and depth tracking",
+      "Lighter and less socially intrusive than VR/MR headsets (Vision Pro / Quest 3)",
+      "Purpose-built for scalable in-the-wild egocentric robot data collection"
+    ],
+    "applications": [
+      "Large-scale in-the-wild egocentric capture",
+      "Centimeter-accurate 3D hand trajectory reconstruction",
+      "VLA human video pretraining"
+    ],
+    "specs": {
+      "device_type": "Egocentric wearable hat (Ego)",
+      "tracking_method": "6-camera + dual-IMU visual-inertial SLAM (Grounded API)",
+      "sensors": "6 near-field manipulation cameras + dual IMUs",
+      "robot_free": "Yes, in-the-wild human wearable capture",
+      "target_embodiment": "General bimanual and humanoid hand manipulation",
+      "output_data": "cm-level 3D hand tracking + dense depth + 6-DoF head SLAM"
+    }
+  },
+  "mobile-aloha-teleop": {
+    "description": "Mobile ALOHA is Stanford's open-source whole-body mobile bimanual teleoperation platform (~$32,000 full system). Operators drive a mobile base and twin leader arms to control identical follower arms, yielding 100% embodiment-matched data.",
+    "highlights": [
+      "Isomorphic leader-follower arms eliminate kinematic retargeting error",
+      "Full open-source system at ~$32,000 (mobile base, 4 arms, onboard compute/power)",
+      "Learns complex bimanual household tasks from dozens of demos with ACT",
+      "Catalyzed the open-source bimanual imitation learning ecosystem"
+    ],
+    "applications": [
+      "High-fidelity whole-body mobile manipulation capture",
+      "ACT / Diffusion Policy imitation learning",
+      "Long-horizon household task research"
+    ],
+    "specs": {
+      "device_type": "Isomorphic leader-follower whole-body teleop",
+      "tracking_method": "Isomorphic leader-arm joint encoders + mobile base linkage",
+      "sensors": "Dual wrist cameras + front camera + 4-arm joint encoders",
+      "robot_free": "No, requires paired leader-follower robots",
+      "target_embodiment": "Mobile ALOHA bimanual mobile platform",
+      "output_data": "50 Hz multi-view RGB + 14-DoF joint actions + base velocity"
+    }
+  },
+  "gello": {
+    "description": "GELLO from UC Berkeley is a low-cost (<$300 BoM) 3D-printed teleoperation controller using Dynamixel servos to match the exact kinematics of commercial arms like Franka, UR5 and xArm.",
+    "highlights": [
+      "Single-arm BoM under $300 USD compared to $30k+ robot-to-robot teleop",
+      "Matches exact kinematics of commercial arms (Franka, UR5, xArm)",
+      "Outperforms VR controllers and 3D spacemouses in operator intuition and speed",
+      "Compact, portable and fully open-source hardware and software"
+    ],
+    "applications": [
+      "Low-cost teleoperation of commercial robot arms",
+      "Large-scale lab capture (e.g., DROID)",
+      "Bimanual contact-rich manipulation capture"
+    ],
+    "specs": {
+      "device_type": "3D-printed isomorphic leader arm (Teleop)",
+      "tracking_method": "Direct joint-angle readout via scaled Dynamixel leader arm",
+      "sensors": "Dynamixel joint encoders (no external cameras required)",
+      "robot_free": "No, connected to target follower arm",
+      "target_embodiment": "Franka, UR5, xArm and other commercial arms",
+      "output_data": "High-precision joint angle trajectories + gripper command"
+    }
+  }
+}

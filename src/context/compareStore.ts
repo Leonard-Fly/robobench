@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-export type CompareType = 'robot' | 'model';
+export type CompareType = 'robot' | 'model' | 'dataset' | 'device';
 
 export interface CompareState {
   type: CompareType;

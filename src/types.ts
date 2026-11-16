@@ -121,3 +121,47 @@ export interface SpecField {
   /** 是否在卡片上展示为关键参数 */
   keySpec?: boolean;
 }
+
+/** 开源具身数据集条目 */
+export interface EmbodiedDataset {
+  id: string;
+  name: string;
+  nameZh?: string;
+  org: string;
+  orgZh: string;
+  country: string;
+  releaseDate: string; // "YYYY-MM"
+  openSource: boolean | null;
+  license: string | null;
+  specs: Record<string, SpecValue>;
+  highlights: string[];
+  applications: string[];
+  description: string;
+  paperUrl?: string;
+  datasetUrl?: string;
+  dataUpdated: string;
+}
+
+/** 数采设备路线分类 */
+export type CollectionDeviceKind = 'umi' | 'egocentric' | 'teleop';
+
+/** 具身数据采集设备条目 */
+export interface CollectionDevice {
+  id: string;
+  name: string;
+  nameZh?: string;
+  org: string;
+  orgZh: string;
+  country: string;
+  deviceKind: CollectionDeviceKind;
+  releaseDate: string; // "YYYY-MM"
+  openSource: boolean | null;
+  license: string | null;
+  specs: Record<string, SpecValue>;
+  highlights: string[];
+  applications: string[];
+  description: string;
+  paperUrl?: string;
+  codeUrl?: string;
+  dataUpdated: string;
+}

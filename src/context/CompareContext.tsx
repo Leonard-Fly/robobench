@@ -2,20 +2,27 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } fro
 import { CompareContext, type CompareState, type CompareType } from './compareStore';
 import { useLocale } from '../i18n/useLocale';
 import { MAX_COMPARE } from '../components/format';
-import { getAiModelById, getRobotById } from '../data';
+import { getAiModelById, getCollectionDeviceById, getDatasetById, getRobotById } from '../data';
 
 const KEY = 'robobench-compare-v1';
 const EMPTY: CompareState = { type: 'robot', group: '', ids: [] };
+
+const VALID_TYPES: CompareType[] = ['robot', 'model', 'dataset', 'device'];
+
+function isValidItem(type: CompareType, id: string): boolean {
+  if (type === 'robot') return !!getRobotById(id);
+  if (type === 'model') return !!getAiModelById(id);
+  if (type === 'dataset') return !!getDatasetById(id);
+  return !!getCollectionDeviceById(id);
+}
 
 function load(): CompareState {
   try {
     const raw = localStorage.getItem(KEY);
     if (!raw) return EMPTY;
     const s = JSON.parse(raw) as CompareState;
-    if ((s.type !== 'robot' && s.type !== 'model') || !Array.isArray(s.ids)) return EMPTY;
-    const ids = s.ids.filter((id) =>
-      typeof id === 'string' && (s.type === 'robot' ? getRobotById(id) : getAiModelById(id)),
-    );
+    if (!VALID_TYPES.includes(s.type) || !Array.isArray(s.ids)) return EMPTY;
+    const ids = s.ids.filter((id) => typeof id === 'string' && isValidItem(s.type, id));
     return ids.length ? { type: s.type, group: String(s.group), ids: ids.slice(0, MAX_COMPARE) } : EMPTY;
   } catch {
     return EMPTY;
@@ -23,7 +30,8 @@ function load(): CompareState {
 }
 
 function groupLabel(t: (k: string) => string, type: CompareType, group: string): string {
-  const key = `${type === 'model' ? 'kind' : 'cat'}.${group}`;
+  const prefix = type === 'model' ? 'kind' : type === 'dataset' || type === 'device' ? 'datakind' : 'cat';
+  const key = `${prefix}.${group}`;
   const v = t(key);
   return v === key ? group : v;
 }
