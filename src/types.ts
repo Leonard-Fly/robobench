@@ -43,6 +43,24 @@ export interface PriceInfo {
 /** 规格值：数字（用于排序/对比高亮）、字符串（描述型）、null（未公开） */
 export type SpecValue = number | string | null;
 
+/** 购买渠道类型 */
+export type PurchaseChannelType =
+  | 'official' // 官方商城/官网直售
+  | 'marketplace' // 电商平台旗舰店（京东/天猫/Amazon 等）
+  | 'distributor' // 授权经销商/代理商
+  | 'inquiry'; // 商务询价/联系销售
+
+/** 销售区域（UI 按语言环境翻译显示） */
+export type PurchaseRegion = 'cn' | 'global' | 'us' | 'eu' | 'jp' | 'kr';
+
+/** 购买渠道条目。name 用渠道原名（店铺名不翻译），不要放自由文本描述 */
+export interface PurchaseChannel {
+  type: PurchaseChannelType;
+  name: string; // 如 "Unitree 官方商城"、"宇树京东自营旗舰店"、"Unitree Online Store"
+  url: string;
+  regions: PurchaseRegion[];
+}
+
 /** 机器人 / 零部件条目 */
 export interface Robot {
   id: string; // 唯一 slug，如 "unitree-g1"
@@ -58,6 +76,8 @@ export interface Robot {
   price: PriceInfo;
   /** 规格参数，键必须来自 specFields.ts 中对应分类的字段注册表 */
   specs: Record<string, SpecValue>;
+  /** 购买渠道（可空；无公开渠道时 UI 引导通过官网联系厂商） */
+  purchaseChannels?: PurchaseChannel[];
   highlights: string[]; // 核心优势，3-5 条
   applications: string[]; // 主要应用场景
   description: string; // 一段简介（中文，80-150字）

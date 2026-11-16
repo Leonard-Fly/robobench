@@ -8,6 +8,7 @@ import PriceText from '../components/PriceText';
 import StatusBadge from '../components/StatusBadge';
 import CompareToggle from '../components/CompareToggle';
 import RobotCard from '../components/RobotCard';
+import PurchaseChannels from '../components/PurchaseChannels';
 import { ArrowLeftIcon, CheckIcon, ExternalIcon } from '../components/Icons';
 
 export default function RobotDetail() {
@@ -85,6 +86,13 @@ export default function RobotDetail() {
           <p className="mt-3 text-sm leading-relaxed text-slate-400">{robot.description}</p>
         </section>
       </div>
+
+      <section className="card mt-6 p-6">
+        <h2 className="font-semibold text-white">🛒 {t('buy.title')}</h2>
+        <div className="mt-4">
+          <PurchaseChannels channels={robot.purchaseChannels} officialUrl={robot.officialUrl} />
+        </div>
+      </section>
 
       <section className="mt-6 space-y-4">
         <h2 className="text-xl font-bold text-white">{t('detail.fullSpecs')}</h2>

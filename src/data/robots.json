@@ -32,6 +32,24 @@
       "sensors": "3D 激光雷达 + 深度相机 + 麦克风阵列",
       "sdk": "开放 SDK，支持 ROS2 / 强化学习仿真"
     },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "Unitree 官方商城",
+        "url": "https://shop.unitree.com/",
+        "regions": [
+          "global"
+        ]
+      },
+      {
+        "type": "official",
+        "name": "宇树官网",
+        "url": "https://www.unitree.com/cn/g1",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
     "highlights": [
       "9.9 万元起的价格大幅拉低人形机器人门槛",
       "关节性能强，可完成跑跳、翻身等高动态动作",
@@ -79,6 +97,24 @@
       "sensors": "4D 激光雷达 L1 + 深度相机",
       "sdk": "开放 SDK，支持 ROS / Python"
     },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "Unitree 官方商城",
+        "url": "https://shop.unitree.com/products/unitree-go2",
+        "regions": [
+          "global"
+        ]
+      },
+      {
+        "type": "official",
+        "name": "宇树官网",
+        "url": "https://www.unitree.com/cn/go2",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
     "highlights": [
       "万元级消费价格，出货量全球领先",
       "标配 4D 激光雷达，自主避障能力强",
@@ -125,6 +161,17 @@
       "interface": "RS485 / CAN",
       "sdk": "提供 SDK 与 ROS 驱动"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "因时机器人官网",
+        "url": "https://www.inspire-robots.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "国内出货量领先的商用灵巧手",
       "体积重量接近成人手掌，易于集成",
@@ -173,6 +220,17 @@
       "sensors": "3D 激光雷达 + 深度相机",
       "sdk": "开放 SDK，支持 ROS2 / 强化学习"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "宇树官网",
+        "url": "https://www.unitree.com/cn/h1",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "全尺寸 180cm 人形，关节扭矩大，适合高动态研究",
       "在 H1 基础上升级全身自由度，腿部与臂部更灵活",
@@ -222,6 +280,16 @@
       "sensors": "视觉感知为主，指尖带触觉传感器",
       "sdk": "未开放，内部使用"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Tesla 官网",
+        "url": "https://www.tesla.com/AI",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "整机较上一代减重约 10kg，行走速度更快",
       "全身约 28 个执行器，单手 11 自由度",
@@ -270,6 +338,16 @@
       "sensors": "6 个 RGB 摄像头 + 机载麦克风与扬声器",
       "sdk": "未开放，商业定向合作"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Figure AI 官网",
+        "url": "https://www.figure.ai",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "在宝马工厂开展试点部署",
       "单手 16 自由度，指尖负载能力强",
@@ -318,6 +396,16 @@
       "sensors": "头部与手掌摄像头 + 指尖触觉传感器",
       "sdk": "未开放，商业定向合作"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Figure AI 官网",
+        "url": "https://www.figure.ai",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "面向家庭与商业双场景设计，外观采用软质织物包覆",
       "手掌内置摄像头，指尖带触觉传感",
@@ -366,6 +454,16 @@
       "sensors": "头部多相机与深度感知",
       "sdk": "未开放"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Boston Dynamics 官网",
+        "url": "https://bostondynamics.com/atlas/",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "2024 年发布全电驱版本，取代液压 Atlas",
       "关节旋转范围大，可做出超人类的转体动作",
@@ -414,6 +512,17 @@
       "sensors": "激光雷达 + 多路深度相机",
       "sdk": "通过 Agility Arc 云平台集成"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Agility Robotics 官网",
+        "url": "https://www.agilityrobotics.com",
+        "regions": [
+          "us",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "全球较早实现商业部署的双足人形机器人",
       "在 GXO 等物流仓库参与实际作业",
@@ -462,6 +571,17 @@
       "sensors": "深度相机 + 触觉传感（以官方配置为准）",
       "sdk": "开放 SDK，面向具身智能研发"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "傅利叶官网",
+        "url": "https://www.fourierintelligence.com",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "全身自由度高达 53，手部 12 自由度",
       "关节峰值扭矩大，下肢动力充足",
@@ -511,6 +631,17 @@
       "sensors": "双目视觉 + 力觉感知（以官方配置为准）",
       "sdk": "面向工业客户定向合作"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "优必选官网",
+        "url": "https://www.ubtrobot.com",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "已进入蔚来、比亚迪等车企工厂开展实训",
       "全身 41 自由度，面向工业场景设计",
@@ -559,6 +690,17 @@
       "sensors": "多目视觉 + 激光雷达（以官方配置为准）",
       "sdk": "提供开发平台与 GO-1 具身模型支持"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "智元机器人官网",
+        "url": "https://www.zhiyuan-robot.com",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "智元远征系列面向商用的通用人形机器人",
       "配套 AgiBot World 数据集与 GO-1 模型",
@@ -607,6 +749,17 @@
       "sensors": "深度相机 + IMU",
       "sdk": "开放 SDK，面向科研与开发者"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "众擎机器人官网",
+        "url": "https://www.engineai.com.cn",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "约 8.8 万元起的科研级人形，价格亲民",
       "身高 138cm、重 40kg，便携易部署",
@@ -656,6 +809,16 @@
       "sensors": "摄像头 + 麦克风 + 触觉感知",
       "sdk": "未开放，家庭产品"
     },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "1X 官网",
+        "url": "https://www.1x.tech",
+        "regions": [
+          "us"
+        ]
+      }
+    ],
     "highlights": [
       "面向家庭设计的消费级人形，预订价 2 万美元",
       "整机约 30kg，柔软织物外观与肌腱驱动，运行安静",
@@ -702,6 +865,16 @@
       "sensors": "头部与腕部相机 + 激光雷达（以官方为准）",
       "sdk": "提供开发接口，支持具身大模型接入"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "银河通用官网",
+        "url": "https://www.galbot.com",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
     "highlights": [
       "轮式底盘 + 双臂 + 升降结构，适合货架作业",
       "依托大规模合成数据训练具身大模型",
@@ -748,6 +921,16 @@
       "sensors": "头部相机 + 腕部相机",
       "sdk": "定向合作，支持模仿学习"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "星尘智能官网",
+        "url": "https://www.astribot.com",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
     "highlights": [
       "双臂高速高灵活，演示中完成叠衣、倒茶等任务",
       "采用绳驱结构，拟人化操作响应快",
@@ -794,6 +977,17 @@
       "sensors": "头部与腕部相机，多模态感知",
       "sdk": "配套 AgiBot World 数采与 GO-1 模型"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "智元机器人官网",
+        "url": "https://www.zhiyuan-robot.com",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "轮式双臂构型，兼顾移动与双臂操作",
       "面向数据采集与具身模型训练设计",
@@ -840,6 +1034,16 @@
       "sensors": "腕部相机 + 前向相机",
       "sdk": "硬件与代码开源，配套 ACT 模仿学习"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Mobile ALOHA 项目主页",
+        "url": "https://mobile-aloha.github.io",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "低成本开源的移动双臂操作平台",
       "全身遥操作采集数据，配合 ACT 做模仿学习",
@@ -886,6 +1090,17 @@
       "sensors": "激光雷达 + 深度相机（以版本为准）",
       "sdk": "开放 SDK，支持 ROS / Python"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "宇树官网",
+        "url": "https://www.unitree.com/cn/b2",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "工业级四足，最高速度可达 6m/s",
       "行走持续负载约 40kg，静态承重更高",
@@ -933,6 +1148,16 @@
       "sensors": "5 组立体相机 + 可选云台相机与激光雷达载荷",
       "sdk": "提供 Spot SDK，支持 Python / ROS"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Boston Dynamics 官网",
+        "url": "https://bostondynamics.com/products/spot/",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "商业化时间最长、部署量最大的商用四足机器人之一",
       "可扩展载荷接口，支持热成像、气体检测等",
@@ -980,6 +1205,17 @@
       "sensors": "激光雷达 + 深度相机 + 热成像与声学检测",
       "sdk": "提供 ANYmal 软件与科研接口"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "ANYbotics 官网",
+        "url": "https://www.anybotics.com",
+        "regions": [
+          "eu",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "面向油气、化工等工业巡检，IP67 防护",
       "ANYmal X 版本取得防爆（ATEX）认证",
@@ -1026,6 +1262,17 @@
       "sensors": "激光雷达 + 深度相机（以官方配置为准）",
       "sdk": "提供二次开发接口"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "云深处科技官网",
+        "url": "https://www.deeprobotics.cn",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "国产工业级四足，面向电力与应急场景",
       "IP67 防护，适应复杂户外环境",
@@ -1073,6 +1320,17 @@
       "sensors": "可选配多种相机与雷达载荷",
       "sdk": "提供载荷接口与开发支持"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Ghost Robotics 官网",
+        "url": "https://www.ghostrobotics.io",
+        "regions": [
+          "us",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "面向军警与安防等严苛环境设计",
       "腿部直驱结构，机械简洁耐用",
@@ -1118,6 +1376,17 @@
       "interface": "EtherCAT / ROS",
       "sdk": "提供 ROS 驱动与仿真模型"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Shadow Robot Company 官网",
+        "url": "https://www.shadowrobot.com/dexterous-hand-series/",
+        "regions": [
+          "eu",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "拟人结构，24 自由度，20 个主动自由度",
       "科研领域长期使用的标杆灵巧手",
@@ -1163,6 +1432,17 @@
       "interface": null,
       "sdk": "配套 G1 EDU，提供 SDK"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "宇树官网",
+        "url": "https://www.unitree.com/cn/Dex3-1",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "三指 7 自由度，适配宇树 G1 人形机器人",
       "集成触觉传感阵列，支持力觉反馈",
@@ -1208,6 +1488,17 @@
       "interface": "CAN",
       "sdk": "提供 ROS 与仿真支持"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Wonik Robotics 官网",
+        "url": "https://www.wonikrobotics.com",
+        "regions": [
+          "kr",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "四指 16 自由度，全驱动结构",
       "科研界广泛使用的经典灵巧手",
@@ -1253,6 +1544,16 @@
       "interface": "USB / 串口总线",
       "sdk": "开源硬件与 Python / ROS 代码"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "LEAP Hand 项目主页",
+        "url": "https://leaphand.com",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "开源低成本灵巧手，整手成本约 2000 美元",
       "四指 16 自由度，结构开源易复现",
@@ -1299,6 +1600,16 @@
       "interface": null,
       "key_params": "各型号参数差异较大，请以官方选型手册为准"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "绿的谐波官网",
+        "url": "https://www.leaderdrive.com",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
     "highlights": [
       "国内谐波减速器龙头，机器人关节核心部件",
       "产品覆盖多个系列与减速比",
@@ -1345,6 +1656,17 @@
       "interface": "以太网",
       "key_params": "点频 20 万点/秒，内置 IMU，防护等级 IP67"
     },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "Livox 官网",
+        "url": "https://www.livoxtech.com/mid-360",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "360° 水平视场，适合移动机器人建图与避障",
       "体积小、重量约 265g，便于集成",
@@ -1391,6 +1713,24 @@
       "interface": "USB 3.1",
       "key_params": "全局快门深度传感器，内置 IMU，最高 90fps"
     },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "RealSense Store",
+        "url": "https://store.realsenseai.com/",
+        "regions": [
+          "global"
+        ]
+      },
+      {
+        "type": "official",
+        "name": "RealSense 官网",
+        "url": "https://www.intelrealsense.com/depth-camera-d435i/",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "全局快门深度传感，适合运动中的机器人",
       "内置 IMU，支持视觉惯性 SLAM",
@@ -1437,6 +1777,17 @@
       "interface": "Net F/T / DAQ 等（视选配）",
       "key_params": "外径约 45mm，应变片式六维测量，另有多种量程可选"
     },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "ATI Industrial Automation 官网",
+        "url": "https://www.ati-ia.com",
+        "regions": [
+          "us",
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "六维力传感领域的行业标杆品牌",
       "体积小重量约 92g，易集成于腕部",
@@ -1483,6 +1834,16 @@
       "interface": "PCIe / 以太网 / USB / CAN 等",
       "key_params": "最高约 275 TOPS（64GB 版），12 核 Arm CPU，Ampere GPU，功耗约 15-60W"
     },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "NVIDIA Jetson 官网",
+        "url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
     "highlights": [
       "64GB 版最高约 275 TOPS 的边缘 AI 算力",
       "支持 JetPack、Isaac 与 ROS 完整生态",

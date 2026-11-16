@@ -11,6 +11,23 @@ export function robotBasicRows(items: Robot[], locale: Locale, t: (k: string) =>
     { label: t('row.year'), cells: items.map((r) => <span key={r.id} className="font-mono">{r.releaseYear ?? '—'}</span>) },
     { label: t('row.status'), cells: items.map((r) => <StatusBadge key={r.id} status={r.status} />) },
     {
+      label: t('buy.title'),
+      cells: items.map((r) => {
+        const ch = r.purchaseChannels ?? [];
+        if (ch.length === 0) return <span key={r.id} className="text-slate-600">—</span>;
+        return (
+          <div key={r.id} className="flex flex-col gap-1 text-xs">
+            {ch.slice(0, 2).map((c) => (
+              <a key={c.url} href={c.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                {c.name} ↗
+              </a>
+            ))}
+            {ch.length > 2 && <span className="text-slate-500">+{ch.length - 2}</span>}
+          </div>
+        );
+      }),
+    },
+    {
       label: t('row.price'),
       cells: items.map((r) => (
         <div key={r.id}>
