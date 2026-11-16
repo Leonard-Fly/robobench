@@ -1705,5 +1705,166 @@
       "key_params": "Built-in ACE Ego Matrix (spatial/body/timing alignment) & Kairos world model for one-brain-many-forms generalization"
     },
     "priceNote": "Not disclosed / quote on request (commercial integration)"
+  },
+  "wuji-glove": {
+    "description": "Wuji Glove from Wuji Technology is a tactile and pose motion-capture glove weighing just 67.5 g. Its palm integrates a 24x31 piezoresistive pressure matrix (526 active taxels, 0–20 N, 120 FPS) fused with five 6-DOF fingertip EMF modules and an 800 Hz wrist IMU.",
+    "highlights": [
+      "Full-palm 24x31 pressure matrix (526 active taxels) streaming normalized pressure at 120 FPS",
+      "Combines five 6-DOF fingertip EMF receivers (≤2 mm RMS accuracy) with an 800 Hz 6-axis IMU",
+      "Weighs 67.5 g net (192.6 g with cable) with ≤10 ms motion-to-data latency",
+      "Rated for ≥100,000 press/bend cycles; ships with Wuji CLI & Python SDK"
+    ],
+    "applications": [
+      "Dexterous hand teleoperation & tactile data collection",
+      "Human grasp force distribution & pose modeling",
+      "Visuotactile VLA imitation learning"
+    ],
+    "specs": {
+      "component_type": "Piezoresistive tactile matrix + EMF motion-capture glove",
+      "model_series": "Wuji Glove",
+      "precision": "4 mm spatial resolution, 0.1 N force resolution, ≤2 mm RMS position accuracy",
+      "range_note": "0–20 N pressure range (24x31 matrix, 526 active taxels, full palm)",
+      "interface": "RJ45 (100BASE-TX) / USB Type-C power",
+      "key_params": "120 FPS tactile & 5x6-DOF EMF, 800 Hz IMU, ≤10 ms latency, ≥100K cycle life, Python SDK"
+    },
+    "priceNote": "Not disclosed / quote on request (pairable with Wuji Hand)"
+  },
+  "xense-elf": {
+    "description": "Xense Elf from Xense Robotics is an ultra-compact bionic fingertip visuotactile sensor (22.2x15.4x14.2 mm, 0.3 W) offering 0.04 mm spatial resolution, 0.03 N resultant force accuracy, and 30–150 Hz sampling for dexterous hand integration.",
+    "highlights": [
+      "Miniaturized fingertip form factor (22.2x15.4x14.2 mm, 0.3 W) for multi-fingered dexterous hands",
+      "0.04 mm spatial resolution, 0.08 mm deformation field accuracy, and 0.03 N force accuracy at 30–150 Hz",
+      "Outputs 3D geometry, texture, 6-DOF resultant force, 3D distributed force, and slip detection",
+      "Built-in self-calibration achieves >97% cross-sensor consistency across a full hand"
+    ],
+    "applications": [
+      "Humanoid dexterous hand fingertip sensing",
+      "Precision insertion, assembly & slip prevention",
+      "Multimodal tactile dataset capture (TacVerse)"
+    ],
+    "specs": {
+      "component_type": "Bionic fingertip multimodal visuotactile sensor",
+      "model_series": "Elf",
+      "precision": "0.04 mm spatial resolution, 0.08 mm deformation field, 0.03 N force accuracy",
+      "range_note": "15(H)x18(V) mm sensing area, 125 markers/cm², 2–5 mm elastomer layer",
+      "interface": "UVC (5 V, 0.3 W)",
+      "key_params": "22.2x15.4x14.2 mm, 30–150 Hz, self-calibration, 6-DOF force, 3D geometry & slip"
+    },
+    "priceNote": "Not disclosed / quote on request (supports dexterous hand customization)"
+  },
+  "xense-photon": {
+    "description": "Xense Photon from Xense Robotics is a wedge-shaped planar visuotactile sensor for grippers (52.8x27x22 mm) delivering 0.03 mm spatial resolution, 0.06 mm deformation accuracy, and 0.02 N force accuracy over plug-and-play UVC.",
+    "highlights": [
+      "Wedge planar design tailored for parallel grippers and Xense_Sim tactile simulation",
+      "0.03 mm spatial resolution, 0.06 mm deformation field accuracy, and 0.02 N force accuracy",
+      "30–150 Hz sampling over standard driver-free 5 V / 0.6 W UVC",
+      "Part of Xense's lineup alongside curved Quark N1/W1, Aurora Lite gripper & XTAC UMI G1"
+    ],
+    "applications": [
+      "Industrial precision assembly & deformable object grasping",
+      "Adaptive force-controlled parallel grippers",
+      "Visuotactile UMI data collection & simulation"
+    ],
+    "specs": {
+      "component_type": "Wedge planar gripper visuotactile sensor",
+      "model_series": "Photon",
+      "precision": "0.03 mm spatial resolution, 0.06 mm deformation field, 0.02 N force accuracy",
+      "range_note": "17.5(H)x29.5(V) mm sensing area, 120 markers/cm², 2–5 mm elastomer layer",
+      "interface": "UVC (5 V, 0.6 W)",
+      "key_params": "52.8x27x22 mm, 30–150 Hz, 3D geometry, 6-DOF force, 3D distributed force & slip"
+    },
+    "priceNote": "Not disclosed / quote on request (Quark N1/W1 & GS-PS also available)"
+  },
+  "tashan-e10a": {
+    "description": "Emerald E10A from TaShan Technology (2026) is the world's first dynamic tactile perception chip and sensing architecture. Combining Analog-to-Spike Conversion (ASC) and SNN edge processing, it achieves >300 kHz sampling, 0.9 μA standby current, microsecond latency, and 1 cm+ proximity wake-up.",
+    "highlights": [
+      "World's first dynamic tactile chip using ASC and SNN to cut latency from milliseconds to microseconds",
+      ">300 kHz measurement frequency with 0.9 μA standby current (<10 μA standby power) for full-body skins",
+      "1 cm+ proximity wake-up enables pre-collision detection and dynamic transient grasping",
+      "TaShan holds >80% share in humanoid tactile sensors and integrates with NVIDIA Isaac Sim & DexUMI"
+    ],
+    "applications": [
+      "Humanoid dexterous hand & whole-body electronic skin",
+      "High-dynamic transient slip prevention & pre-collision response",
+      "3C & optical transceiver precision insertion lines"
+    ],
+    "specs": {
+      "component_type": "Mixed-signal neuromorphic dynamic tactile chip & sensor architecture",
+      "model_series": "Emerald E10A (and TS-F dexterous hand series)",
+      "precision": "Microsecond temporal resolution, 0.01 N minimum trigger & force resolution",
+      "range_note": "1 cm+ proximity wake-up + normal, shear & material multimodal sensing",
+      "interface": "Asynchronous spike event stream (ASC + SNN edge architecture)",
+      "key_params": ">300 kHz sampling, 0.9 μA standby current (<10 μA), supports hands, arms, torso & feet"
+    },
+    "priceNote": "Not disclosed / quote on request (chips, modules & line solutions)"
+  },
+  "tashan-ts-echo": {
+    "description": "TaShan TS-ECHO (wearable tactile fingertip sleeve, <100 g) and TS-F series provide 0.01 N force resolution and 1 cm+ proximity sensing for VTLA data capture and dexterous hands, and are listed in NVIDIA's DexUMI hardware BoM (12 tactile nodes).",
+    "highlights": [
+      "0.01 N minimum trigger force and resolution with 1 cm+ proximity sensing across approach-to-release",
+      "TS-ECHO weighs under 100 g without shifting hand center-of-mass, syncing with vision, action & language",
+      "Million-cycle durability; adopted across 12 tactile points in NVIDIA's public DexUMI hardware BoM",
+      "TS-F series offers direct integration modules for mainstream 5-finger dexterous hands"
+    ],
+    "applications": [
+      "VTLA (Vision-Touch-Language-Action) human demonstration capture",
+      "Dexterous hand fingertip precision force & slip control",
+      "Wearable exoskeleton integration (e.g., DexUMI)"
+    ],
+    "specs": {
+      "component_type": "Multidimensional capacitive dexterous tactile sensor / capture sleeve",
+      "model_series": "TS-ECHO / TS-F-B / TS-F-L",
+      "precision": "0.01 N minimum trigger force and force resolution",
+      "range_note": "1 cm+ proximity + full approach, contact, pressure, slip & release force capture",
+      "interface": "Multimodal sync with vision, action & language streams",
+      "key_params": "<100 g wearable sleeve, 1M-cycle durability, selected for NVIDIA DexUMI (12 nodes)"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "vitai-vt-gf220": {
+    "description": "ViTai VT-GF220 from ViTai Robotics (founded by MIT GelSight co-creator Dr. Rui Li) is a high-resolution visuotactile sensor with 300x200 taxels (10,000/cm²), 0.01 N minimum force, 20 N max normal/shear force, IP54 protection, and 5M-cycle durability.",
+    "highlights": [
+      "10,000 effective tactile points/cm² (300x200 array, ~100 μm spatial resolution) over 30x21 mm",
+      "0.01 N minimum detectable force for 0.1 g micro-parts up to 20 N normal and shear force",
+      "5-million-cycle durability, IP54 protection, and -25°C to 80°C operating range",
+      "47% smaller volume than previous generation with standard USB 2.0 interface"
+    ],
+    "applications": [
+      "0.1 g-class micro-device & chip precision handling",
+      "Adaptive gripper force control & deformable object grasping",
+      "Industrial inspection & cross-embodiment tactile data capture"
+    ],
+    "specs": {
+      "component_type": "Ultra-high-resolution visuotactile sensor",
+      "model_series": "VT-GF220",
+      "precision": "~100 μm spatial resolution (10,000 taxels/cm²), 0.01 N min force",
+      "range_note": "20 N max normal/shear force, 30x21 mm sensing area (300x200 taxels)",
+      "interface": "USB 2.0",
+      "key_params": "23x27x66 mm, 30 Hz (standard), IP54, -25°C~80°C, 5M-cycle durability"
+    },
+    "priceNote": "Not disclosed / quote on request (GF225, grippers & UMI also available)"
+  },
+  "vitai-vt-gf515": {
+    "description": "ViTai VT-GF515 (2026) is a 120 Hz fingertip visuotactile sensor built for mainstream dexterous hands, offering universal thumb (27x20x18 mm) and finger (27x15.5x15 mm) packages with 240x240 taxels (10,000/cm²), 0.01 N sensitivity, and 5M-cycle durability.",
+    "highlights": [
+      "Compact thumb (27x20x18 mm) and 4-finger (27x15.5x15 mm) packages compatible with mainstream hands",
+      "240x240 tactile array (10,000 points/cm², 0.08–0.1 mm resolution) resolves chip pins & micro-textures",
+      "Up to 120 Hz sampling rate with 0.01 N minimum force and 20 N max normal/shear force",
+      "5-million-cycle durability over driver-free 5 V UVC protocol"
+    ],
+    "applications": [
+      "5-finger dexterous hand fingertip integration",
+      "120 Hz high-frequency insertion & precision assembly",
+      "Micro-texture recognition & WhiteTiger-VTouch data capture"
+    ],
+    "specs": {
+      "component_type": "Dexterous hand fingertip visuotactile sensor",
+      "model_series": "VT-GF515 (Thumb / Other 4 Fingers)",
+      "precision": "0.08 mm (thumb) / 0.1 mm (fingers) spatial resolution, 0.01 N min force",
+      "range_note": "20 N max normal/shear; 20x22.5 mm (thumb) / 15x23.5 mm (fingers), 240x240 taxels",
+      "interface": "UVC (5 V)",
+      "key_params": "27x20x18 mm / 27x15.5x15 mm, up to 120 Hz, 0–50°C, 5M-cycle durability"
+    },
+    "priceNote": "Not disclosed / quote on request (Thumb & 4-finger editions)"
   }
 }
