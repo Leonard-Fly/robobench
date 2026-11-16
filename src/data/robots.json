@@ -4800,5 +4800,404 @@
     "description": "具身超级大脑模组 A1 是大晓机器人推出的「一脑多形」端侧计算与感知模组，通过 ACE Ego Matrix 与 URDF 统一空间坐标、本体构型与动作时序，并集成 360° 全景视觉与开悟世界模型，已搭载于智元机器狗演示电力巡检与智慧城市等任务。",
     "officialUrl": "https://www.ithome.com/1/025/658.htm",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "wuji-glove",
+    "name": "Wuji Glove",
+    "nameZh": "舞肌 Wuji Glove 触觉与姿态动捕手套",
+    "manufacturer": "Wuji Technology",
+    "manufacturerZh": "舞肌科技",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "sensor-tactile",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（支持与 Wuji Hand 配套采购）"
+    },
+    "specs": {
+      "component_type": "压阻矩阵触觉 + EMF 电磁动捕数据手套",
+      "model_series": "Wuji Glove",
+      "weight_g": 67.5,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "空间分辨率 4mm，压力分辨率 0.1N，位置精度 ≤2mm RMS",
+      "range_note": "压力量程 0–20 N（24×31 矩阵共 526 有效触点，掌侧全覆盖）",
+      "voltage_v": 5,
+      "interface": "RJ45 (100BASE-TX) / USB Type-C 供电",
+      "key_params": "120 FPS 触觉与 5×6DOF EMF 输出，800Hz 6 轴 IMU，延迟 ≤10ms，按压/折弯寿命 ≥10 万次，提供 Wuji CLI & Python SDK"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "舞肌科技官网",
+        "url": "https://www.wuji.tech/zh/glove",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "24×31 高密度压力传感矩阵（526 个有效触点）掌侧全覆盖，以 120 FPS 输出压力分布",
+      "融合五指指尖 5 颗 6-DOF 电磁接收模块（≤2mm 位置精度）与手背 800Hz 6 轴 IMU",
+      "手套本体仅重 67.5g（含线缆 192.6g），运动到数据延迟 ≤10ms",
+      "按压与折弯寿命均 ≥10 万次，提供 Wuji CLI 与 Python SDK 助力灵巧手同构数采"
+    ],
+    "applications": [
+      "灵巧手遥操作与触觉数据采集",
+      "人手抓握力分布与姿态建模",
+      "视触觉 VLA 模仿学习训练"
+    ],
+    "description": "Wuji Glove 是舞肌科技推出的触觉与姿态融合动捕手套，手套净重 67.5g，掌侧集成 24×31 高密度压力传感矩阵（526 个有效触点，0–20N 量程、120 FPS）并融合 5 组 6-DOF EMF 模块与 800Hz IMU。",
+    "officialUrl": "https://www.wuji.tech/zh/glove",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "xense-elf",
+    "name": "Xense Elf Tactile Sensor",
+    "nameZh": "千觉 精灵 (Elf) 指尖视触觉传感器",
+    "manufacturer": "Xense Robotics",
+    "manufacturerZh": "千觉机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "sensor-tactile",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（支持灵巧手集成与定制）"
+    },
+    "specs": {
+      "component_type": "仿生指尖型多模态视触觉传感器",
+      "model_series": "精灵 (Elf)",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "空间分辨率 0.04mm，变形场精度 0.08mm，合力精度 0.03N",
+      "range_note": "传感面积 15(H)×18(V) mm，标记点密度 125 个/cm²，柔性层厚度 2–5mm",
+      "voltage_v": 5,
+      "interface": "UVC（5V 供电，功耗 0.3W）",
+      "key_params": "外形尺寸 22.2×15.4×14.2mm，采样频率 30–150Hz，全系带自标定算法，支持三维形貌、六维合力、三维分布力与滑移检测"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "千觉机器人官网",
+        "url": "https://www.xenserobotics.com/zh/product/368222/detail/13",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "超紧凑仿生指尖设计（22.2×15.4×14.2mm），功耗仅 0.3W，易于集成各类五指灵巧手",
+      "空间分辨率达 0.04mm、变形场精度 0.08mm、合力精度 0.03N，支持 30–150Hz 采样",
+      "可同步输出三维形貌、纹理识别、六维合力、三维分布力、滑移检测与运动追踪",
+      "全系搭载自标定算法，整手跨传感器一致性超过 97%"
+    ],
+    "applications": [
+      "人形机器人灵巧手指尖感知",
+      "精密插拔、装配与滑移抑制",
+      "多模态触觉数据集采集（TacVerse）"
+    ],
+    "description": "千觉精灵（Elf）是千觉机器人推出的仿生指尖型多模态视触觉传感器，尺寸仅 22.2×15.4×14.2mm、功耗 0.3W，具备 0.04mm 空间分辨率与 0.03N 合力精度，可输出三维形貌、六维合力、分布力与滑移信息。",
+    "officialUrl": "https://www.xenserobotics.com/zh/product/368222/detail/13",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "xense-photon",
+    "name": "Xense Photon Tactile Sensor",
+    "nameZh": "千觉 光子 (Photon) 夹爪视触觉传感器",
+    "manufacturer": "Xense Robotics",
+    "manufacturerZh": "千觉机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "sensor-tactile",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（同系列另有仿生曲面夸克 N1/W1 与中子 GS-PS）"
+    },
+    "specs": {
+      "component_type": "楔形平面夹爪型视触觉传感器",
+      "model_series": "光子 (Photon)",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "空间分辨率 0.03mm，变形场精度 0.06mm，合力精度 0.02N",
+      "range_note": "传感面积 17.5(H)×29.5(V) mm，标记点密度 120 个/cm²，柔性层厚度 2–5mm",
+      "voltage_v": 5,
+      "interface": "UVC（5V 供电，功耗 0.6W）",
+      "key_params": "外形尺寸 52.8×27×22mm，采样频率 30–150Hz，支持三维形貌、纹理识别、六维合力、三维分布力与滑移检测"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "千觉机器人官网",
+        "url": "https://www.xenserobotics.com/zh/product/367/detail/9",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "楔形平面结构设计，适配工业与科研平行夹爪及 Xense_Sim 触觉仿真器",
+      "空间分辨率高达 0.03mm、变形场精度 0.06mm、合力精度达 0.02N",
+      "30–150Hz 动态采样频率，标准 UVC 免驱协议 5V/0.6W 即插即用",
+      "同系列延伸出仿生曲面夸克 N1/W1、极光 Lite 智能触觉夹爪与 XTAC UMI G1"
+    ],
+    "applications": [
+      "工业精密装配与柔性物体抓取",
+      "夹爪末端自适应力控",
+      "视触觉 UMI 数据采集与仿真"
+    ],
+    "description": "千觉光子（Photon）是千觉机器人推出的楔形平面夹爪型视触觉传感器，尺寸 52.8×27×22mm、传感面积 17.5×29.5mm，具备 0.03mm 空间分辨率与 0.02N 合力精度，广泛用于夹爪精密抓取与柔性操作。",
+    "officialUrl": "https://www.xenserobotics.com/zh/product/367/detail/9",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "tashan-e10a",
+    "name": "TaShan Emerald E10A Tactile Chip & Sensor",
+    "nameZh": "他山科技 绿宝石 E10A 动态触觉感知芯片方案",
+    "manufacturer": "TaShan Technology",
+    "manufacturerZh": "他山科技",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "sensor-tactile",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（提供芯片、指尖/手掌/全身触觉模组与产线方案）"
+    },
+    "specs": {
+      "component_type": "数模混合类脑动态触觉感知芯片及多维传感方案",
+      "model_series": "绿宝石 E10A（衍生 TS-F 灵巧手系列）",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "微秒级时间分辨率，最小触发力与测力分辨率可达 0.01N",
+      "range_note": "支持 1cm+ 接近觉唤醒与法向/切向/材质多维触觉感知",
+      "voltage_v": null,
+      "interface": "异步脉冲数据流（ASC + SNN 边缘计算架构）",
+      "key_params": "测量频率 >300kHz，待机电流仅 0.9μA（待机功耗 <10μA），支持灵巧手、机械臂、躯干与足底全身触觉覆盖"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "他山科技 WAIC 2026 发布报道",
+        "url": "https://www.leaderobot.com/news/8535",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "全球首款动态触觉感知芯片：采用 ASC 模拟脉冲转换与 SNN 类脑架构，将响应延迟从毫秒级降至微秒级",
+      "测量频率突破 300kHz，待机电流低至 0.9μA（功耗 <10μA），大幅降低全身触觉布线与功耗压力",
+      "具备 1cm 以上「接近唤醒」能力，在碰撞发生前即可触发预响应与动态瞬态抓握",
+      "他山科技在人形机器人触觉传感器细分赛道市占率超 80%，并已接入英伟达 Isaac Sim 与 DexUMI"
+    ],
+    "applications": [
+      "人形机器人灵巧手与全身电子皮肤覆盖",
+      "高动态瞬态防滑抓取与碰撞预响应",
+      "3C/光模块产线视触融合精密插拔"
+    ],
+    "description": "绿宝石 E10A 是他山科技于 2026 年发布的全球首款动态触觉感知芯片及传感方案，采用 ASC 模拟脉冲转换与 SNN 架构，测量频率超 300kHz、待机电流仅 0.9μA，支持微秒级响应与 1cm+ 接近唤醒感知。",
+    "officialUrl": "https://www.leaderobot.com/news/8535",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "tashan-ts-echo",
+    "name": "TaShan TS-ECHO / TS-F Tactile Sensor",
+    "nameZh": "他山科技 TS-ECHO 触觉指套与 TS-F 灵巧手传感器",
+    "manufacturer": "TaShan Technology",
+    "manufacturerZh": "他山科技",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "sensor-tactile",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（TS-F 系列与 TS-ECHO 均已商业供货）"
+    },
+    "specs": {
+      "component_type": "多维电容式灵巧手触觉传感器 / 触觉数采指套",
+      "model_series": "TS-ECHO / TS-F-B / TS-F-L",
+      "weight_g": 100,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "最小触发力与测力分辨率 0.01N",
+      "range_note": "1cm+ 接近觉 + 接触/施压/滑移/脱离全过程多维力感知",
+      "voltage_v": null,
+      "interface": "支持视觉/动作/语言多模态精准时间同步",
+      "key_params": "TS-ECHO 整套轻量化指套重 <100g，经过百万次耐久测试，获英伟达 DexUMI（12 颗触觉点位）硬件清单采用"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "新京报 / 他山科技发布信息",
+        "url": "https://www.bjnews.com.cn/detail/1794320456129670.html",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "基于他山多维电容触觉技术，最小触发力与测力分辨率均达到 0.01N 并支持 1cm 以上接近觉",
+      "TS-ECHO 触觉感知指套重 <100g，不改变人手重心，支持同构数据与 VTLA 多模态同步采集",
+      "经过百万次工业级耐久测试，片间一致性领先，已被英伟达 DexUMI 外骨骼（12 颗点位）列入 BOM",
+      "TS-F 系列针对主流五指灵巧手指尖与指腹提供直接集成模块"
+    ],
+    "applications": [
+      "VTLA（视觉-触觉-语言-动作）人类示范数采",
+      "五指灵巧手指尖精细力控与防滑",
+      "DexUMI 等穿戴式数采外骨骼集成"
+    ],
+    "description": "TS-ECHO 与 TS-F 系列是他山科技面向触觉数采与灵巧手集成的多维触觉传感方案，最小触发力与分辨率达 0.01N 且具备 1cm+ 接近觉，TS-ECHO 整套重 <100g 并获英伟达 DexUMI 硬件物料清单采用。",
+    "officialUrl": "https://www.bjnews.com.cn/detail/1794320456129670.html",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "vitai-vt-gf220",
+    "name": "ViTai VT-GF220",
+    "nameZh": "纬钛机器人 VT-GF220 视触觉传感器",
+    "manufacturer": "ViTai Robotics",
+    "manufacturerZh": "纬钛机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "sensor-tactile",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（同系列另有 GF225 夹爪与 UMI 方案）"
+    },
+    "specs": {
+      "component_type": "超高分辨率视触觉传感器",
+      "model_series": "VT-GF220",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "空间分辨率约 100μm（每平方厘米 10,000 个有效触觉点），最小识别力 0.01N",
+      "range_note": "最大法向力与切向力 20N，传感面积 30×21mm（300×200 触觉点阵）",
+      "voltage_v": null,
+      "interface": "USB 2.0",
+      "key_params": "外形尺寸 23×27×66mm，采样频率 30Hz（标准版），IP54 防护，工作温度 -25°C~80°C，500 万次耐久测试"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "纬钛机器人官网",
+        "url": "https://vit.ai/product/vt-gf220",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "由 MIT GelSight 核心创始人之一李瑞博士创立，每平方厘米高达 10,000 个有效触觉信息点（300×200）",
+      "最小识别力低至 0.01N，可稳定支持 0.1g 级微型器件抓取与最大 20N 法向/切向力测量",
+      "通过 500 万次耐久性测试，支持 IP54 防护与 -25°C ~ 80°C 宽温工业环境",
+      "标准 USB 2.0 接口，体积较上一代缩小 47%"
+    ],
+    "applications": [
+      "0.1g 级微型器件与芯片精密操作",
+      "夹爪自适应力控与柔性物体抓取",
+      "工业质检与跨本体触觉数据采集"
+    ],
+    "description": "VT-GF220 是纬钛机器人推出的高分辨率视触觉传感器，传感面积 30×21mm、具备 300×200 触觉信息点（10,000 点/cm²）与 0.01N 最小识别力，最大法向/切向力 20N，通过 500 万次耐久测试与 IP54 认证。",
+    "officialUrl": "https://vit.ai/product/vt-gf220",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "vitai-vt-gf515",
+    "name": "ViTai VT-GF515",
+    "nameZh": "纬钛机器人 VT-GF515 灵巧手视触觉传感器",
+    "manufacturer": "ViTai Robotics",
+    "manufacturerZh": "纬钛机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "sensor-tactile",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（分通用大拇指与通用其余四指款）"
+    },
+    "specs": {
+      "component_type": "灵巧手专用指尖视触觉传感器",
+      "model_series": "VT-GF515（大拇指版 / 其余四指版）",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "空间分辨率 0.08mm（拇指）/ 0.1mm（四指），最小识别力 0.01N",
+      "range_note": "最大法向/切向力 20N；面积 20×22.5mm（拇指）/ 15×23.5mm（四指），240×240 点阵",
+      "voltage_v": 5,
+      "interface": "UVC（5V 供电）",
+      "key_params": "尺寸 27×20×18mm（拇指）/ 27×15.5×15mm（四指），最高采样频率 120Hz，工作温度 0–50°C，500 万次耐久测试"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "纬钛机器人官网",
+        "url": "https://vit.ai/product/vt-gf515",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "专为五指灵巧手指尖打造，区分通用大拇指（27×20×18mm）与其余四指（27×15.5×15mm）紧凑封装",
+      "240×240 触觉信息点阵实现每平方厘米 10,000 个有效点，可识别芯片引脚与微米级纹理",
+      "最高采样频率提升至 120Hz，兼顾 0.01N 微力识别与 20N 法向/切向力",
+      "通过 500 万次耐久性测试并采用标准 5V UVC 协议，全面兼容主流灵巧手架构"
+    ],
+    "applications": [
+      "五指灵巧手指尖集成",
+      "120Hz 高频精细插拔与装配",
+      "微米级表面纹理识别与白虎-VTouch 数采"
+    ],
+    "description": "VT-GF515 是纬钛机器人面向灵巧手指尖推出的 120Hz 高频视触觉传感器，提供大拇指与其余四指两种紧凑封装，具备 240×240 触觉点阵（10,000 点/cm²）、0.01N 最小识别力与 500 万次耐久寿命。",
+    "officialUrl": "https://vit.ai/product/vt-gf515",
+    "dataUpdated": "2026-11"
   }
 ]
