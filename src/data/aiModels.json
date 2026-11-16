@@ -738,5 +738,226 @@
     ],
     "description": "Genie 3 是谷歌 DeepMind 于 2026 年推出的实时交互式世界模型，基于隐空间动作建模，首次实现以 24fps 实时生成持久且物理连贯的可探索 3D 环境，目前以闭源方式提供能力。",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "openvla-oft",
+    "name": "OpenVLA-OFT",
+    "kind": "vla",
+    "org": "Stanford / UC Berkeley / TRI 等",
+    "orgZh": "斯坦福/伯克利/丰田研究院等",
+    "country": "美国",
+    "releaseDate": "2025-02",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "params_b": 7,
+      "architecture": "视觉语言主干 + 并行解码、动作分块与连续动作回归（L1 回归）",
+      "backbone": "Llama 2 7B + DINOv2 + SigLIP",
+      "action_head": "并行解码连续动作块（L1 回归）",
+      "control_freq_hz": null,
+      "training_data": "在 OpenVLA 预训练基础上采用优化微调（OFT）配方适配下游双臂与桌面任务",
+      "embodiments": "单臂、双臂 ALOHA 等多类机械臂",
+      "cross_embodiment": "强，支持快速微调迁移至双臂与高动态平台",
+      "benchmark_note": "LIBERO 四大套件平均成功率由 OpenVLA 的 76.5% 提升至 97.1%，双臂 ALOHA 任务最高领先微调后 π0 与 RDT-1B 达 15 个百分点",
+      "deploy_note": "动作生成吞吐量较原始 OpenVLA 提升 26 倍，开源代码与预训练权重"
+    },
+    "highlights": [
+      "提出面向 VLA 的优化微调（OFT）配方，用并行解码与连续动作替代自回归离散 token",
+      "LIBERO 四大套件平均成功率从 76.5% 跃升至 97.1%",
+      "动作生成吞吐量较 OpenVLA 提升 26 倍，显著改善真机控制流畅度",
+      "双臂 ALOHA 灵巧任务最高领先 π0 与 RDT-1B 达 15 个百分点"
+    ],
+    "applications": [
+      "双臂高频率灵巧操作",
+      "VLA 高效微调与加速推理",
+      "学术研究强基线"
+    ],
+    "description": "OpenVLA-OFT 是斯坦福团队在 OpenVLA 基础上提出的优化微调方案，通过并行解码、动作分块与 L1 连续动作回归，将 LIBERO 平均成功率由 76.5% 提升至 97.1%，动作吞吐量提升 26 倍并超越同期 π0 与 RDT-1B。",
+    "paperUrl": "https://arxiv.org/abs/2502.19645",
+    "codeUrl": "https://openvla-oft.github.io/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "wall-oss-0-5",
+    "name": "Wall-OSS-0.5",
+    "kind": "vla",
+    "org": "X Square Robot",
+    "orgZh": "自变量机器人",
+    "country": "中国",
+    "releaseDate": "2026-05",
+    "openSource": true,
+    "license": "开源（GitHub wall-x 仓库）",
+    "specs": {
+      "params_b": 4,
+      "architecture": "Mixture-of-Transformers (MoT) 路由主干 + 梯度桥接共训",
+      "backbone": "Qwen2.5-VL-3B-Instruct",
+      "action_head": "Flow Matching 连续动作 + 视觉对齐 RVQ 动作分词器",
+      "control_freq_hz": 15,
+      "training_data": "自采高质量操作数据 + 开源多本体数据集 + 多模态语料混合预训练",
+      "embodiments": "通用单臂、双臂及移动操作平台",
+      "cross_embodiment": "强，主打面向直接部署的预训练零样本泛化",
+      "benchmark_note": "在 17 项真机零样本任务套件上直接评估预训练权重，无需任务微调即可执行",
+      "deploy_note": "高分辨率输入下推理速度达 15 Hz，支持 Wall-X 1.1.0 运行时与 DMuon 训练"
+    },
+    "highlights": [
+      "4B 参数开源 VLA（基于 3B Qwen2.5-VL 主干与 MoT 路由架构）",
+      "首创「梯度桥接共训」配方，联合多模态 CE、动作 token CE 与流匹配目标",
+      "主打「预训练即部署」：在 17 项真机零样本任务上无需微调即可直接评测",
+      "高分辨率下可达 15 Hz 实时控制，配套开源 Wall-X 训练推理栈"
+    ],
+    "applications": [
+      "真机零样本直接部署",
+      "长程操作与具身多模态理解",
+      "国产开源 VLA 预训练基座"
+    ],
+    "description": "Wall-OSS-0.5 是自变量机器人于 2026 年 5 月发布的 4B 开源 VLA 模型，基于 Qwen2.5-VL-3B 与 MoT 路由架构，通过梯度桥接共训实现 15 Hz 高分辨率实时推理与 17 项真机零样本开箱即用。",
+    "paperUrl": "https://arxiv.org/abs/2605.30877",
+    "codeUrl": "https://github.com/X-Square-Robot/wall-x",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "lingbot-vla",
+    "name": "LingBot-VLA",
+    "kind": "vla",
+    "org": "Robbyant (Ant Group)",
+    "orgZh": "蚂蚁灵波科技（蚂蚁集团）",
+    "country": "中国",
+    "releaseDate": "2026-01",
+    "openSource": true,
+    "license": "开源（开放代码、基础模型与评测数据）",
+    "specs": {
+      "params_b": null,
+      "architecture": "工业级务实 VLA 基础模型（配套高吞吐分布式训练框架）",
+      "backbone": "多模态 VLM 主干",
+      "action_head": "连续双臂动作策略",
+      "control_freq_hz": null,
+      "training_data": "约 20,000 小时真实世界数据（覆盖 9 种主流双臂机器人构型）",
+      "embodiments": "9 种主流双臂机器人构型",
+      "cross_embodiment": "强，在 3 种机器人平台各 100 项任务（每任务 130 条后训练轨迹）系统评测中全面领先",
+      "benchmark_note": "与触觉模型 LingBot-Touch 结合时在 26 项真机灵巧任务上平均成功率再提 13.9+ 个百分点",
+      "deploy_note": "8-GPU 训练吞吐达 261 samples/s/GPU，较现有 VLA 代码库提速 1.5~2.8 倍"
+    },
+    "highlights": [
+      "基于约 20,000 小时真实双臂数据预训练，覆盖 9 种主流双臂构型",
+      "3 大真机平台各 100 项任务系统性评测全面超越同期基线",
+      "自研高效代码库实现 261 samples/s/GPU 训练吞吐（1.5~2.8x 提速）",
+      "开放代码、基础模型与基准数据，并持续演进至 LingBot-VLA 2.0 与触觉生态"
+    ],
+    "applications": [
+      "工业级双臂操作与泛化",
+      "跨本体大规模预训练",
+      "高吞吐 VLA 训练与真机落地"
+    ],
+    "description": "LingBot-VLA 是蚂蚁灵波科技于 2026 年 1 月开源的工业级务实 VLA 基础模型，基于覆盖 9 种双臂构型的约 2 万小时真实数据预训练，在 3 大平台 300 项任务评测中表现领先且训练吞吐达 261 samples/s/GPU。",
+    "paperUrl": "https://arxiv.org/abs/2601.18692",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "v-jepa-2",
+    "name": "V-JEPA 2 / V-JEPA 2-AC",
+    "kind": "world-model",
+    "org": "Meta FAIR",
+    "orgZh": "Meta FAIR",
+    "country": "美国",
+    "releaseDate": "2025",
+    "openSource": true,
+    "license": "开源开放权重",
+    "specs": {
+      "params_b": 0.3,
+      "architecture": "自监督联合嵌入预测架构（JEPA）视频世界模型 + 动作条件后训练（AC）",
+      "modality": "潜空间物理表征预测与动作条件规划",
+      "resolution": null,
+      "horizon": "支持图像目标条件下的多步动作规划",
+      "action_conditioned": "V-JEPA 2-AC 基于不足 62 小时 DROID 视频后训练，支持 Franka 机械臂零样本抓取规划",
+      "training_data": "大规模自监督视频预训练 + 不足 62 小时 DROID 动作视频后训练",
+      "use_case": "无像素重建的物理世界理解、零样本机器人抓取与动作规划",
+      "benchmark_note": "V-JEPA 2.1 在真实机器人抓取任务上较 V-JEPA 2-AC 进一步提升 20 个百分点"
+    },
+    "highlights": [
+      "Yann LeCun 主导的 JEPA 路线代表作，在潜空间而非像素空间预测物理世界动态",
+      "0.3B 级轻量基础模型开放权重，推理与表征学习效率极高",
+      "V-JEPA 2-AC 仅用不到 62 小时 DROID 数据后训练即可在 Franka 臂实现零样本抓放规划",
+      "后续 V-JEPA 2.1 在真机抓取上再提 20 个百分点"
+    ],
+    "applications": [
+      "零样本机器人动作规划",
+      "物理表征学习与视频理解",
+      "低样本动作条件世界模型研究"
+    ],
+    "description": "V-JEPA 2 是 Meta FAIR 开源的自监督视频世界模型，在抽象潜空间而非像素空间预测物理动态；其动作条件版本 V-JEPA 2-AC 仅经不足 62 小时 DROID 视频后训练，即可在 Franka 机械臂上实现零样本抓放规划。",
+    "codeUrl": "https://www.roboticscenter.ai/institutions/models/meta-fair",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "world-labs-marble",
+    "name": "World Labs Marble",
+    "kind": "world-model",
+    "org": "World Labs",
+    "orgZh": "World Labs（李飞飞团队）",
+    "country": "美国",
+    "releaseDate": "2025-11",
+    "openSource": false,
+    "license": "商业闭源（网页端 & World API）",
+    "specs": {
+      "params_b": null,
+      "architecture": "空间智能多模态 3D 世界生成模型",
+      "modality": "文本/图像/全景/视频生成持久化、可导出的 3D 世界",
+      "resolution": "支持高保真 3D 高斯泼溅（Gaussian Splats）与 Mesh 导出",
+      "horizon": "持久化、可自由探索与编辑的 3D 场景",
+      "action_conditioned": "支持视角漫游、场景交互编辑与 Unreal/3D 管线导出",
+      "training_data": "大规模多模态空间与 3D 数据",
+      "use_case": "持久化 3D 仿真环境生成、具身智能虚拟场景构建与空间智能",
+      "benchmark_note": "2025 年 11 月公开发布，2026 年 1 月开放开发者 World API 并迭代至 Marble 1.1 / 1.1 Plus"
+    },
+    "highlights": [
+      "李飞飞领衔 World Labs 推出的首款商业化多模态空间世界模型",
+      "区别于纯视频帧预测，直接生成持久化、可导出为 Gaussian Splats 与 Mesh 的 3D 环境",
+      "支持从单图、全景图、视频或文本生成完整可漫游 3D 空间并对接 Unreal",
+      "2026 年开放 World API，与后续 Atlas 模型共同支撑空间智能应用"
+    ],
+    "applications": [
+      "具身智能高保真 3D 场景资产生成",
+      "仿真环境快速构建",
+      "空间智能与 XR 内容创作"
+    ],
+    "description": "Marble 是李飞飞团队 World Labs 于 2025 年 11 月发布的首款商业多模态世界模型，可将文本、图像或视频生成持久化、可探索且可导出为高斯泼溅与 Mesh 的 3D 虚拟世界，并开放 World API。",
+    "paperUrl": "https://worldlabs.ai/blog/marble-world-model",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "ace-kaiwu-3",
+    "name": "Kaiwu World Model 3.0",
+    "kind": "world-model",
+    "org": "ACE Robotics",
+    "orgZh": "大晓机器人",
+    "country": "中国",
+    "releaseDate": "2025-12",
+    "openSource": true,
+    "license": "开源（全球首个开源商业落地世界模型）",
+    "specs": {
+      "params_b": null,
+      "architecture": "多模态理解-生成-预测一体化架构 + Puffin 视角空间感知",
+      "modality": "3D 空间视角感知、动态物理交互模拟与力学信息输入",
+      "resolution": null,
+      "horizon": "支持动态交互与物理常识模拟",
+      "action_conditioned": "支持直接输入力学信息并分离静态/动态物体交互",
+      "training_data": "联合 ACE 环境数据引擎（Ambient Capture）采集的真实物理交互数据",
+      "use_case": "具身智能物理模拟、虚拟试错训练与商业机器人世界模型闭环",
+      "benchmark_note": "联合南洋理工大学等提出 Puffin 技术，解决传统视频模型缺乏相机空间视角感的问题"
+    },
+    "highlights": [
+      "商汤联合创始人王晓刚领衔的大晓机器人发布，定位开源可商业落地世界模型",
+      "采用「多模态理解-生成-预测」一体化架构，直接引入力学信息与动静分离",
+      "集成与南洋理工大学联合研发的 Puffin 技术，赋予模型相机视角与 3D 空间感",
+      "与大晓环境式数采引擎、机器人本体形成「看-想-做」数据闭环"
+    ],
+    "applications": [
+      "具身智能物理常识学习与虚拟训练",
+      "真实环境数据闭环增强",
+      "商业机器人与四足/通用本体决策"
+    ],
+    "description": "开悟世界模型 3.0 是大晓机器人推出的开源商业落地具身世界模型，采用多模态理解-生成-预测一体化架构，支持力学信息输入与 Puffin 空间视角感知，并与环境数采引擎共同构成具身智能数据闭环。",
+    "paperUrl": "https://hub.baai.ac.cn/view/50923",
+    "dataUpdated": "2026-11"
   }
 ]

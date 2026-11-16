@@ -4286,5 +4286,61 @@
     "description": "奥比中光 Gemini 335 是面向具身智能与移动机器人的旗舰级主被动双目 3D 相机，仅重 97g，内置自研 MX6800 深度芯片与 IMU，可在不占用主控算力的情况下输出 1280×800@30fps 深度点云并支持多机硬件同步。",
     "officialUrl": "https://store.orbbec.com/products/gemini-335",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "psyonic-ability-hand",
+    "name": "PSYONIC Ability Hand",
+    "nameZh": "PSYONIC Ability Hand 仿生灵巧手",
+    "manufacturer": "PSYONIC",
+    "manufacturerZh": "PSYONIC",
+    "country": "美国",
+    "category": "hand",
+    "releaseYear": 2022,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 20000,
+      "note": "机器人科研与商用渠道参考价约 20,000 美元，具体配置需询价"
+    },
+    "specs": {
+      "dof_total": 6,
+      "doa": 6,
+      "fingers": 5,
+      "weight_g": 490,
+      "payload_kg": 45.4,
+      "fingertip_force_n": 8,
+      "grip_force_n": 78,
+      "speed_note": "手指闭合约 0.2 秒（手指 462°/s，拇指 1848°/s）",
+      "drive_type": "6 颗无刷直流电机 + 拇指电动/手动反向驱动旋转",
+      "tactile": "指尖集成 30 路压力传感器，支持触觉反馈",
+      "tactile_points": 30,
+      "interface": "BLE / I2C / UART / RS485 / USB",
+      "sdk": "开放 API，支持 Python、C++、ROS 2 与 NVIDIA Isaac Lab"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "PSYONIC 机器人合作官网",
+        "url": "https://www.psyonic.io/robots",
+        "regions": [
+          "us",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "整手仅重 490g（轻于成年人手掌），具备 IP64 防尘防泼溅与抗冲击柔顺手指",
+      "6 颗无刷电机实现 0.2 秒极速闭合，强力抓握力达 78N、轴向静态承载 45.4kg",
+      "内置 30 路指尖压力传感器与 6 路编码器高速回传，采用分布式架构实现亚毫秒级延迟",
+      "已与 Apptronik、Meta、NASA、Universal Robots Gen 7 及 NVIDIA Isaac Lab 深度集成"
+    ],
+    "applications": [
+      "人形与协作机器人末端（如 UR Gen 7）",
+      "遥操作（如 MANUS Metagloves Pro + ROS 2）",
+      "触觉操作与仿生假肢科研"
+    ],
+    "description": "PSYONIC Ability Hand 是美国 PSYONIC 推出的高速触觉仿生五指灵巧手，重约 490g、具备 IP64 防护与抗冲击柔顺手指，6 颗无刷电机支持 0.2 秒闭合与 78N 握力，集成 30 路触觉传感并开放 ROS 2 与 Isaac Lab 接口。",
+    "officialUrl": "https://www.psyonic.io/robots",
+    "dataUpdated": "2026-11"
   }
 ]

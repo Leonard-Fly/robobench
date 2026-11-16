@@ -468,5 +468,147 @@
       "use_case": "Real-time interactive agent training and embodied environment simulation",
       "benchmark_note": "First world model to generate persistent interactive 3D environments at 24 fps in real time"
     }
+  },
+  "openvla-oft": {
+    "description": "OpenVLA-OFT (Optimized Fine-Tuning) upgrades OpenVLA with parallel decoding, action chunking, and continuous L1 regression, lifting average success on four LIBERO suites from 76.5% to 97.1% with 26x higher action throughput and beating fine-tuned π0 and RDT-1B on bimanual ALOHA.",
+    "highlights": [
+      "Replaces autoregressive discrete tokens with parallel decoding and continuous action chunking",
+      "Boosts OpenVLA's LIBERO average success rate from 76.5% to 97.1%",
+      "Increases action generation throughput by 26x for smoother real-robot control",
+      "Outperforms fine-tuned π0 and RDT-1B by up to 15% absolute on bimanual ALOHA tasks"
+    ],
+    "applications": [
+      "High-frequency bimanual manipulation",
+      "Efficient VLA fine-tuning & accelerated inference",
+      "Strong academic research baseline"
+    ],
+    "specs": {
+      "architecture": "VLM backbone + parallel decoding, action chunking & continuous L1 regression",
+      "backbone": "Llama 2 7B + DINOv2 + SigLIP",
+      "action_head": "Parallel-decoded continuous action chunks (L1 regression)",
+      "training_data": "Optimized fine-tuning recipe on OpenVLA pretraining for bimanual & tabletop tasks",
+      "embodiments": "Single-arm and bimanual ALOHA manipulators",
+      "cross_embodiment": "Strong; adapts rapidly via OFT recipe to bimanual platforms",
+      "benchmark_note": "97.1% avg on LIBERO (vs 76.5% OpenVLA); up to +15% over π0/RDT-1B on ALOHA",
+      "deploy_note": "26x higher throughput than OpenVLA; open-source code and pretrained checkpoints"
+    }
+  },
+  "wall-oss-0-5": {
+    "description": "Wall-OSS-0.5 is an open-source 4B VLA model from X Square Robot built on Qwen2.5-VL-3B and a Mixture-of-Transformers (MoT) backbone, achieving 15 Hz high-resolution inference and zero-shot real-robot execution across a 17-task suite via gradient-bridged pretraining.",
+    "highlights": [
+      "Open-source 4B VLA built on a 3B Qwen2.5-VL backbone with MoT routing",
+      "Gradient-bridged co-training unifies multimodal CE, action-token CE and flow matching",
+      "Deployment-oriented pretraining evaluated zero-shot across 17 real-robot tasks",
+      "15 Hz high-res inference supported by the open-source Wall-X 1.1.0 runtime"
+    ],
+    "applications": [
+      "Zero-shot real-robot deployment",
+      "Long-horizon manipulation & embodied reasoning",
+      "Open-source VLA pretraining foundation"
+    ],
+    "specs": {
+      "architecture": "Mixture-of-Transformers (MoT) routing backbone + gradient-bridged co-training",
+      "backbone": "Qwen2.5-VL-3B-Instruct",
+      "action_head": "Flow Matching continuous actions + Vision-Aligned RVQ Action Tokenizer",
+      "training_data": "Self-collected manipulation data + open multi-embodiment datasets + multimodal corpora",
+      "embodiments": "Single-arm, bimanual and mobile manipulation platforms",
+      "cross_embodiment": "Strong; focused on deployment-oriented zero-shot pretraining",
+      "benchmark_note": "Evaluated directly on a 17-task real-robot zero-shot suite prior to task fine-tuning",
+      "deploy_note": "15 Hz inference at high input resolution; Wall-X 1.1.0 runtime & DMuon support"
+    }
+  },
+  "lingbot-vla": {
+    "description": "LingBot-VLA is an open-source pragmatic VLA foundation model from Robbyant (Ant Group), pre-trained on ~20,000 hours of real-world data across 9 bimanual configurations and delivering 261 samples/s/GPU training throughput.",
+    "highlights": [
+      "Pre-trained on ~20,000 hours of real-world data from 9 popular dual-arm configurations",
+      "Outperforms baselines across 3 robot platforms × 100 tasks (130 episodes/task)",
+      "Efficient codebase achieves 261 samples/s/GPU on 8-GPU setups (1.5–2.8x speedup)",
+      "Open access to code, base model and benchmarks; paired with LingBot-Touch ecosystem"
+    ],
+    "applications": [
+      "Industrial bimanual manipulation & generalization",
+      "Large-scale cross-embodiment pretraining",
+      "High-throughput VLA training & deployment"
+    ],
+    "specs": {
+      "architecture": "Pragmatic industrial VLA foundation model with high-throughput distributed training",
+      "backbone": "Multimodal VLM backbone",
+      "action_head": "Continuous bimanual action policy",
+      "training_data": "~20,000 hours of real-world data across 9 dual-arm robot configurations",
+      "embodiments": "9 dual-arm robot configurations",
+      "cross_embodiment": "Strong; validated across 3 embodiments × 100 tasks",
+      "benchmark_note": "Combining with LingBot-Touch adds +13.9% mean success on 26 dexterous hand tasks",
+      "deploy_note": "261 samples/s/GPU training throughput (1.5–2.8x faster than existing VLA codebases)"
+    }
+  },
+  "v-jepa-2": {
+    "description": "V-JEPA 2 is Meta FAIR's open-weights self-supervised video world model predicting physical dynamics in latent space. Post-trained on <62 hours of DROID video, its action-conditioned V-JEPA 2-AC plans zero-shot pick-and-place on Franka arms from image goals.",
+    "highlights": [
+      "Flagship JEPA world model predicting world dynamics in latent space rather than pixels",
+      "Lightweight 0.3B open-weights base model with high representation efficiency",
+      "V-JEPA 2-AC post-trains on <62 h DROID video for zero-shot Franka pick-and-place",
+      "V-JEPA 2.1 adds +20 points on real-robot grasping over V-JEPA 2-AC"
+    ],
+    "applications": [
+      "Zero-shot robot action planning",
+      "Physical representation learning & video understanding",
+      "Sample-efficient action-conditioned world models"
+    ],
+    "specs": {
+      "architecture": "Self-supervised Joint-Embedding Predictive Architecture (JEPA) + action-conditioned (AC)",
+      "modality": "Latent physical representation prediction & action-conditioned planning",
+      "horizon": "Multi-step action planning conditioned on image goals",
+      "action_conditioned": "V-JEPA 2-AC post-trained on <62h DROID video for zero-shot Franka manipulation",
+      "training_data": "Large-scale self-supervised video + <62h DROID action video",
+      "use_case": "Pixel-free physical understanding, zero-shot grasping and action planning",
+      "benchmark_note": "V-JEPA 2.1 improves real-robot grasping by +20 points over V-JEPA 2-AC"
+    }
+  },
+  "world-labs-marble": {
+    "description": "World Labs Marble, launched in Nov 2025, is World Labs' first commercial multimodal world model. It turns text, images, panoramas or video into persistent, explorable 3D worlds exportable as Gaussian splats or meshes, with a developer World API opened in Jan 2026.",
+    "highlights": [
+      "First commercial multimodal spatial world model from Fei-Fei Li's World Labs",
+      "Generates persistent 3D environments exportable as Gaussian splats and meshes (unlike 2D video)",
+      "Converts text, photos, panoramas or video into navigable 3D scenes for Unreal & simulation",
+      "Developer World API opened in Jan 2026 alongside Marble 1.1 / 1.1 Plus iterations"
+    ],
+    "applications": [
+      "High-fidelity 3D scene asset generation for robotics",
+      "Rapid simulation environment creation",
+      "Spatial intelligence & XR content creation"
+    ],
+    "specs": {
+      "architecture": "Multimodal spatial intelligence 3D world generation model",
+      "modality": "Persistent, exportable 3D worlds from text/image/panorama/video",
+      "resolution": "Exportable Gaussian splats and 3D meshes",
+      "horizon": "Persistent, freely explorable & editable 3D scenes",
+      "action_conditioned": "Supports interactive camera exploration, editing & Unreal pipeline export",
+      "training_data": "Large-scale multimodal spatial & 3D data",
+      "use_case": "Persistent 3D simulation environment generation and spatial intelligence",
+      "benchmark_note": "Publicly launched Nov 2025; World API opened Jan 2026; iterated to Marble 1.1 Plus"
+    }
+  },
+  "ace-kaiwu-3": {
+    "description": "Kaiwu World Model 3.0 from ACE Robotics is an open-source, commercially deployed embodied world model featuring a unified multimodal understanding-generation-prediction architecture, direct force-mechanics input, and Puffin camera-aware 3D spatial perception.",
+    "highlights": [
+      "Developed by ACE Robotics (led by SenseTime co-founder Xiaogang Wang) as an open commercial world model",
+      "Unified multimodal understanding-generation-prediction architecture with mechanics input & static/dynamic separation",
+      "Integrates Puffin technology (with NTU) to solve missing 3D camera-pose awareness in video models",
+      "Forms a closed 'See-Think-Act' data loop with ACE Ambient Capture and embodied robots"
+    ],
+    "applications": [
+      "Physical commonsense learning & virtual robot training",
+      "Real-world embodied data closed-loop augmentation",
+      "Commercial quadruped & general robot decision-making"
+    ],
+    "specs": {
+      "architecture": "Unified multimodal understanding-generation-prediction + Puffin spatial perception",
+      "modality": "3D spatial view perception, dynamic physical interaction & mechanics input",
+      "horizon": "Dynamic physical interaction & commonsense simulation",
+      "action_conditioned": "Supports direct mechanics input and static/dynamic object separation",
+      "training_data": "Real-world physical interaction data via ACE Ambient Capture engine",
+      "use_case": "Embodied physical simulation, virtual trial-and-error & commercial closed loop",
+      "benchmark_note": "Co-developed Puffin with NTU to give world models 3D camera spatial awareness"
+    }
   }
 }

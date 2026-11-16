@@ -218,5 +218,115 @@
       "collection_method": "Standardized multi-embodiment medical robotics aggregation",
       "data_format": "LeRobotDataset"
     }
+  },
+  "robotwin-2": {
+    "description": "RoboTwin 2.0 Dataset is a scalable open-source bimanual manipulation benchmark comprising 100,000+ pre-collected trajectories (~79.6 GB) across 50 tasks and 731 objects, natively packaged in LeRobot v3.0 format under Apache-2.0.",
+    "highlights": [
+      "100,000+ trajectories (~79.6 GB) covering 50 bimanual tasks and 731 objects",
+      "Natively formatted in LeRobot v3.0 under a permissive Apache-2.0 license",
+      "Combines LLM-guided expert synthesis with domain randomization in cluttered scenes",
+      "Accepted at ICML 2026; widely used for bimanual VLA evaluation and fine-tuning"
+    ],
+    "applications": [
+      "Bimanual VLA pretraining & ablation",
+      "Direct training in the LeRobot ecosystem",
+      "Multi-object generalization & domain randomization"
+    ],
+    "specs": {
+      "tasks_count": "50 tasks / 731 objects",
+      "embodiments": "Bimanual robot benchmarks (Aloha-AgileX and multi-embodiment)",
+      "modalities": "Multi-view video observations + action labels",
+      "annotations": "Task instructions and subtask labels",
+      "collection_method": "Automated expert synthesis pipeline + domain-randomized simulation",
+      "data_format": "LeRobot v3.0"
+    }
+  },
+  "robocoin": {
+    "description": "RoboCOIN is an open-source multi-embodiment bimanual manipulation dataset released in Nov 2025, featuring 180,000+ real-world demonstrations across 15 robotic platforms to advance cross-embodiment bimanual generalization.",
+    "highlights": [
+      "180,000+ real-world demonstrations spanning 15 distinct bimanual robot platforms",
+      "Focuses on cross-embodiment action representation across heterogeneous dual-arm setups",
+      "Open-sourced in Nov 2025 as a large real-world corpus for bimanual VLAs",
+      "Covers collaborative grasping, tidying and assembly in domestic and industrial settings"
+    ],
+    "applications": [
+      "Cross-embodiment bimanual VLA pretraining",
+      "Heterogeneous dual-arm policy transfer",
+      "Generalist bimanual manipulation benchmarking"
+    ],
+    "specs": {
+      "tasks_count": "Diverse collaborative bimanual manipulation tasks",
+      "embodiments": "15 mainstream bimanual robot platforms",
+      "modalities": "Multi-view RGB vision + bimanual proprioception & actions",
+      "annotations": "Fine-grained action instructions & unified cross-embodiment labels",
+      "collection_method": "Coordinated real-robot capture across 15 bimanual platforms",
+      "data_format": "Unified open multi-embodiment trajectory format"
+    }
+  },
+  "egodex": {
+    "description": "EgoDex is Apple's large-scale egocentric dexterous manipulation dataset containing 829 hours of 1080p@30Hz Apple Vision Pro video (~338,000 episodes) across 194 tabletop tasks, paired with 68-joint 3D hand and upper-body tracking under CC BY-NC-ND.",
+    "highlights": [
+      "Apple's massive egocentric dexterous dataset: 829 hours, 338K episodes, 194 tabletop tasks",
+      "1080p@30Hz Apple Vision Pro video paired with 68-joint 3D hand, head & upper-body poses",
+      "Purpose-built for learning dexterous 5-finger manipulation from human video",
+      "Key human-video pretraining source for humanoids and dexterous hands in 2025–2026"
+    ],
+    "applications": [
+      "5-finger dexterous hand imitation learning & retargeting",
+      "Egocentric human-video VLA pretraining",
+      "3D hand-object interaction pose estimation"
+    ],
+    "specs": {
+      "tasks_count": "194 tabletop dexterous manipulation tasks",
+      "embodiments": "Human egocentric + 68-joint 3D hand/upper-body poses (for humanoid/hand transfer)",
+      "modalities": "1080p@30Hz egocentric RGB (~90M frames) + 3D hand/head/body tracking + intrinsics",
+      "annotations": "Natural language task descriptions & per-frame 68-joint 3D poses",
+      "collection_method": "Apple Vision Pro ARKit on-device SLAM capture",
+      "data_format": "Standard video + 3D kinematic joint annotations"
+    }
+  },
+  "ego-exo4d": {
+    "description": "Ego-Exo4D, released by Meta AI and 12 research labs, provides 1,286 hours (5,035 takes) of time-synchronized egocentric (Project Aria) and 4-view exocentric video across 43 skilled tasks and 123 scenes, paired with 6-DoF pose and 3D hand annotations.",
+    "highlights": [
+      "1,286 hours (5,035 takes) of synchronized Aria egocentric + 4 exocentric camera views",
+      "Covers 43 skilled tasks and 689 keysteps across 123 scenes in 13 global cities",
+      "Includes 6-DoF pose, 3D hand tracking and cross-view alignment benchmarks",
+      "Foundational dataset for cross-view human-to-robot skill transfer"
+    ],
+    "applications": [
+      "Ego-to-exo cross-view policy transfer",
+      "Long-horizon keystep decomposition & reasoning",
+      "Ego4D / Aria embodied pretraining"
+    ],
+    "specs": {
+      "tasks_count": "43 skilled tasks / 689 keysteps / 123 scenes",
+      "embodiments": "Human multi-view skill demonstrations (Project Aria + 4 exocentric views)",
+      "modalities": "1 egocentric + 4 synchronized exocentric views + 6-DoF, hand pose & 3D point clouds",
+      "annotations": "689 fine-grained keysteps, expert commentary & proficiency labels",
+      "collection_method": "Synchronized capture across 12 labs & 740 wearers in 13 cities",
+      "data_format": "Multi-view synchronized video + 3D annotations"
+    }
+  },
+  "behavior-1k": {
+    "description": "BEHAVIOR-1K from Stanford University is a large-scale embodied simulation benchmark and dataset built on OmniGibson, defining 1,000 long-horizon household activities across 50 interactive scenes alongside 20,000 human VR teleoperation trajectories covering 100 tasks.",
+    "highlights": [
+      "1,000 human-grounded, long-horizon household activities in OmniGibson",
+      "50 interactive 3D scenes with 9,000+ rigid, deformable and articulated objects",
+      "Includes 20,000 human VR teleoperation trajectories across 100 tasks for imitation learning",
+      "Supports complex physics including fluids, cloth and thermodynamics"
+    ],
+    "applications": [
+      "Long-horizon mobile manipulation benchmarking",
+      "Household service robot simulation training",
+      "Complex physics (fluids/deformables) policy research"
+    ],
+    "specs": {
+      "tasks_count": "1,000 household activities (incl. 20K teleop trajectories over 100 tasks)",
+      "embodiments": "Mobile manipulators (Fetch / R1 and sim embodiments)",
+      "modalities": "High-fidelity sim RGB-D + physical state + teleoperation trajectories",
+      "annotations": "BDDL goal states & human teleoperation demos",
+      "collection_method": "OmniGibson physics simulation + human VR teleoperation",
+      "data_format": "OmniGibson / HDF5"
+    }
   }
 }

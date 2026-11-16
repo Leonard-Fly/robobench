@@ -1513,5 +1513,27 @@
       "key_params": "Built-in MX6800 depth ASIC, built-in IMU, <3W power, multi-camera hardware trigger sync"
     },
     "priceNote": "Official store reference approx. 369–400 USD; 335L (IP65) and 335Lg (GMSL2) also available"
+  },
+  "psyonic-ability-hand": {
+    "description": "PSYONIC Ability Hand is a high-speed, touch-sensing 5-finger bionic dexterous hand weighing 490 g with IP64 protection and impact-resistant compliant fingers. Powered by 6 brushless DC motors (0.2 s closing, 78 N power grasp), it streams 30 touch sensors and 6 encoders via an open API for ROS 2 and NVIDIA Isaac Lab.",
+    "highlights": [
+      "Weighs just 490 g (lighter than an average adult human hand) with IP64 splash resistance and compliant fingers",
+      "6 brushless DC motors achieve 0.2 s closing speed, 78 N power grasp and 45.4 kg axial load capacity",
+      "Streams 30 fingertip pressure sensors and 6 encoders with decentralized sub-millisecond latency",
+      "Integrated with Apptronik, Meta, NASA, Universal Robots Gen 7 and NVIDIA Isaac Lab"
+    ],
+    "applications": [
+      "Humanoid & cobot end effector (e.g., UR Gen 7)",
+      "Teleoperation (e.g., MANUS Metagloves Pro + ROS 2)",
+      "Tactile manipulation & bionic prosthetics research"
+    ],
+    "specs": {
+      "speed_note": "0.2 s finger closing (462 °/s fingers, 1,848 °/s thumb)",
+      "drive_type": "6 brushless DC motors + powered/manual back-drivable thumb rotation",
+      "tactile": "30 integrated fingertip pressure sensors for tactile feedback",
+      "interface": "BLE / I2C / UART / RS485 / USB",
+      "sdk": "Open API supporting Python, C++, ROS 2 and NVIDIA Isaac Lab"
+    },
+    "priceNote": "Approx. 20,000 USD in robotics channels; quote on request"
   }
 }
