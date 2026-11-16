@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { CATEGORY_ICONS, SPEC_FIELDS_BY_CATEGORY } from '../data/specFields';
 import { countryLabel, formatSpec, groupFields } from '../components/format';
@@ -15,6 +16,7 @@ export default function RobotDetail() {
   const { id } = useParams();
   const { locale, t } = useLocale();
   const { robots, getRobot } = useLocalData();
+  const [imgError, setImgError] = useState(false);
   const robot = id ? getRobot(id) : undefined;
   if (!robot) {
     return (
@@ -28,6 +30,7 @@ export default function RobotDetail() {
   const similar = robots.filter((r) => r.category === robot.category && r.id !== robot.id)
     .sort((a, b) => Number(b.subcategory === robot.subcategory) - Number(a.subcategory === robot.subcategory))
     .slice(0, 3);
+  const showImage = Boolean(robot.imageUrl) && !imgError;
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
@@ -35,32 +38,44 @@ export default function RobotDetail() {
         <ArrowLeftIcon /> {t('detail.back').replace('{cat}', t(`cat.${robot.category}`))}
       </Link>
 
-      <div className="card mt-5 p-6 sm:p-8">
-        <div className="flex flex-wrap items-center gap-3">
-          <span className="text-3xl">{CATEGORY_ICONS[robot.category]}</span>
-          <StatusBadge status={robot.status} />
-          <span className="text-sm text-slate-500">
-            {t(`cat.${robot.category}`)}
-            {robot.subcategory ? ` · ${t(`subcat.${robot.subcategory}`)}` : ''}
-          </span>
+      <div className={`card mt-5 p-6 sm:p-8 ${showImage ? 'grid gap-6 md:grid-cols-[1fr_320px] md:items-center' : ''}`}>
+        <div>
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="text-3xl">{CATEGORY_ICONS[robot.category]}</span>
+            <StatusBadge status={robot.status} />
+            <span className="text-sm text-slate-500">
+              {t(`cat.${robot.category}`)}
+              {robot.subcategory ? ` · ${t(`subcat.${robot.subcategory}`)}` : ''}
+            </span>
+          </div>
+          <h1 className="mt-4 text-3xl font-bold text-white">{displayName(robot, locale)}</h1>
+          {displayName(robot, locale) !== robot.name && <p className="text-slate-500">{robot.name}</p>}
+          <p className="mt-3 text-sm text-slate-400">
+            {displayManufacturer(robot, locale)}
+            {displayManufacturer(robot, locale) !== robot.manufacturer ? `（${robot.manufacturer}）` : ''} · {countryLabel(t, robot.country)}
+            {robot.releaseYear ? <span className="font-mono"> · {t('detail.released').replace('{y}', String(robot.releaseYear))}</span> : null}
+          </p>
+          <PriceText price={robot.price} className="mt-4 block font-mono text-3xl font-bold text-accent" />
+          {robot.price.note && <p className="mt-1 text-xs text-slate-500">{robot.price.note}</p>}
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            {robot.officialUrl && (
+              <a href={robot.officialUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-accent to-accent-2 px-4 py-2 text-sm font-semibold text-bg hover:opacity-90">
+                {t('detail.official')} <ExternalIcon />
+              </a>
+            )}
+            <CompareToggle type="robot" group={robot.category} id={robot.id} className="py-2 text-sm" />
+          </div>
         </div>
-        <h1 className="mt-4 text-3xl font-bold text-white">{displayName(robot, locale)}</h1>
-        {displayName(robot, locale) !== robot.name && <p className="text-slate-500">{robot.name}</p>}
-        <p className="mt-3 text-sm text-slate-400">
-          {displayManufacturer(robot, locale)}
-          {displayManufacturer(robot, locale) !== robot.manufacturer ? `（${robot.manufacturer}）` : ''} · {countryLabel(t, robot.country)}
-          {robot.releaseYear ? <span className="font-mono"> · {t('detail.released').replace('{y}', String(robot.releaseYear))}</span> : null}
-        </p>
-        <PriceText price={robot.price} className="mt-4 block font-mono text-3xl font-bold text-accent" />
-        {robot.price.note && <p className="mt-1 text-xs text-slate-500">{robot.price.note}</p>}
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          {robot.officialUrl && (
-            <a href={robot.officialUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-accent to-accent-2 px-4 py-2 text-sm font-semibold text-bg hover:opacity-90">
-              {t('detail.official')} <ExternalIcon />
-            </a>
-          )}
-          <CompareToggle type="robot" group={robot.category} id={robot.id} className="py-2 text-sm" />
-        </div>
+        {showImage && (
+          <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl border border-line bg-surface-2/60 p-4">
+            <img
+              src={robot.imageUrl}
+              alt={displayName(robot, locale)}
+              onError={() => setImgError(true)}
+              className="max-h-64 w-full object-contain"
+            />
+          </div>
+        )}
       </div>
 
       <div className="mt-6 grid gap-6 md:grid-cols-2">

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Robot } from '../types';
 import { CATEGORY_ICONS, SPEC_FIELDS_BY_CATEGORY } from '../data/specFields';
@@ -11,18 +12,36 @@ import CompareToggle from './CompareToggle';
 /** robot 需已经过 localizeRobot */
 export default function RobotCard({ robot }: { robot: Robot }) {
   const { locale, t } = useLocale();
+  const [imgError, setImgError] = useState(false);
   const specs = keySpecs(SPEC_FIELDS_BY_CATEGORY[robot.category], robot.specs, 4);
   const sub = robot.subcategory ? t(`subcat.${robot.subcategory}`) : null;
   const title = displayName(robot, locale);
+  const showImage = Boolean(robot.imageUrl) && !imgError;
+
   return (
     <Link to={`/robots/${robot.id}`} className="card group flex flex-col p-5 hover:-translate-y-0.5">
-      <div className="flex items-start justify-between gap-3">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-surface-2 text-2xl">
-          {CATEGORY_ICONS[robot.category]}
-        </span>
-        <StatusBadge status={robot.status} />
-      </div>
-      <h3 className="mt-4 text-lg font-semibold text-white transition-colors group-hover:text-accent">
+      {showImage ? (
+        <div className="relative mb-4 flex h-44 w-full items-center justify-center overflow-hidden rounded-xl border border-line/60 bg-surface-2/80 p-2">
+          <img
+            src={robot.imageUrl}
+            alt={title}
+            loading="lazy"
+            onError={() => setImgError(true)}
+            className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
+          />
+          <div className="absolute top-2.5 right-2.5">
+            <StatusBadge status={robot.status} />
+          </div>
+        </div>
+      ) : (
+        <div className="flex items-start justify-between gap-3">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-surface-2 text-2xl">
+            {CATEGORY_ICONS[robot.category]}
+          </span>
+          <StatusBadge status={robot.status} />
+        </div>
+      )}
+      <h3 className={`${showImage ? '' : 'mt-4 '}text-lg font-semibold text-white transition-colors group-hover:text-accent`}>
         {title}
       </h3>
       {title !== robot.name && <p className="text-sm text-slate-500">{robot.name}</p>}
