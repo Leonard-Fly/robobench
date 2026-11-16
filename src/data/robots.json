@@ -3016,5 +3016,173 @@
     "description": "NVIDIA Jetson AGX Thor（T5000 模组）是英伟达基于 Blackwell 架构的旗舰物理 AI 计算平台，提供最高 2070 TFLOPS (FP4) 算力与 128GB 统一内存，可在机器人端侧直接高速运行 GR00T N1.7 等大模型。",
     "officialUrl": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "xynova-flex-1",
+    "name": "Xynova Flex 1",
+    "nameZh": "曦诺未来 Xynova Flex 1",
+    "manufacturer": "Xynova",
+    "manufacturerZh": "曦诺未来",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "dof_total": 25,
+      "doa": null,
+      "fingers": 5,
+      "weight_g": 380,
+      "payload_kg": 30,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": "完整开合约 0.6 秒",
+      "drive_type": "腱绳传动",
+      "tactile": null,
+      "tactile_points": null,
+      "interface": null,
+      "sdk": "支持人形机器人末端集成与开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "曦诺未来官网",
+        "url": "https://www.xynova.com.cn/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "单手 25 自由度高拟人腱绳传动灵巧手",
+      "整手仅重 380g，轻量低惯量",
+      "标称最大负载 >30kg，完整开合仅需 0.6 秒",
+      "高自由度紧凑布局，面向人形机器人精细操作"
+    ],
+    "applications": [
+      "人形机器人精细末端",
+      "高自由度灵巧操作科研",
+      "消费与商业服务探索"
+    ],
+    "description": "Xynova Flex 1 是曦诺未来推出的第一代 25 自由度腱绳传动五指灵巧手，整手仅重 380g，标称最大负载超过 30kg、完整开合时间约 0.6 秒，兼顾高拟人自由度与低惯量。",
+    "officialUrl": "https://www.xynova.com.cn/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "xynova-flex-2",
+    "name": "Xynova Flex 2",
+    "nameZh": "曦诺未来 Xynova Flex 2",
+    "manufacturer": "Xynova",
+    "manufacturerZh": "曦诺未来",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "dof_total": 23,
+      "doa": null,
+      "fingers": 5,
+      "weight_g": 400,
+      "payload_kg": 12,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "混合驱动（连杆 + 腱绳）",
+      "tactile": "支持触觉感知选配",
+      "tactile_points": null,
+      "interface": null,
+      "sdk": "提供面向开发者的感知与控制栈"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "曦诺未来官网",
+        "url": "https://www.xynova.com.cn/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "2026 年推出的二代混合驱动灵巧手，23 自由度、整重约 400g",
+      "最大手部负载 12kg，持续通用负载 4kg",
+      "混合驱动架构在灵活性与工程可靠性之间取得平衡",
+      "围绕执行器、关节模组、感知与控制打造全栈手部生态"
+    ],
+    "applications": [
+      "通用人形机器人末端",
+      "工业与商业灵巧作业",
+      "具身操作数据采集与部署"
+    ],
+    "description": "Xynova Flex 2 是曦诺未来于 2026 年发布的第二代轻量化混合驱动五指灵巧手，具备 23 个自由度、手部重量约 400g，最大负载 12kg（持续通用负载 4kg），面向人形机器人量产落地。",
+    "officialUrl": "https://www.xynova.com.cn/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "xynova-prima-1",
+    "name": "Xynova Prima 1",
+    "nameZh": "曦诺未来 Xynova Prima 1",
+    "manufacturer": "Xynova",
+    "manufacturerZh": "曦诺未来",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 15000,
+      "note": "海外参考价约 15,000 美元，具体配置以官方询价为准"
+    },
+    "specs": {
+      "dof_total": 22,
+      "doa": 22,
+      "fingers": 5,
+      "weight_g": 650,
+      "payload_kg": 20,
+      "fingertip_force_n": 15,
+      "grip_force_n": null,
+      "speed_note": "单次开合约 0.08 秒，1kHz 控制带宽",
+      "drive_type": "全关节无刷直驱（零背隙，原生力位混合控制）",
+      "tactile": "五指视触觉 + 指尖/掌心/手背 300+ 分布式力传感单元",
+      "tactile_points": 300,
+      "interface": "高速工业控制总线",
+      "sdk": "支持原生力位混合控制与防夹手安全响应"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "曦诺未来官网",
+        "url": "https://www.xynova.com.cn/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "22 主动自由度全直驱五指手，1:1 仿人手尺寸、重约 650g",
+      "全关节零背隙直驱，单次开合仅 0.08 秒、具备 1kHz 响应带宽",
+      "指尖力 15N、举升负载达 20kg，兼顾工业级强度与力透明控制",
+      "集成五指视触觉与指尖/掌心/手背 300+ 分布式力传感单元"
+    ],
+    "applications": [
+      "工业级精密力控装配",
+      "高带宽灵巧操作科研",
+      "触觉-视觉融合 VLA 真机部署"
+    ],
+    "description": "Xynova Prima 1 是曦诺未来于 2026 年发布的全直驱 22 自由度五指灵巧手，重约 650g、负载达 20kg、指尖力 15N，具备 0.08 秒极速开合与 1kHz 控制带宽，并集成五指视触觉及 300+ 分布式力传感单元。",
+    "officialUrl": "https://www.xynova.com.cn/",
+    "dataUpdated": "2026-11"
   }
 ]

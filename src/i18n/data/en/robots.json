@@ -1068,5 +1068,67 @@
       "key_params": "Up to 2,070 TFLOPS (FP4 sparse), 2560-core Blackwell GPU, 128GB LPDDR5X (273 GB/s), 70-130W"
     },
     "priceNote": "Developer kit approx. 5,499 USD; T5000 module approx. 4,999 USD; T4000 approx. 2,999 USD"
+  },
+  "xynova-flex-1": {
+    "description": "Xynova Flex 1 is Xynova's first-generation 25-DOF tendon-driven 5-finger dexterous hand. Weighing only 380 g, it boasts a rated >30 kg max load and ~0.6 s full open/close cycle, combining high anthropomorphic dexterity with low inertia.",
+    "highlights": [
+      "25-DOF anthropomorphic tendon-driven dexterous hand",
+      "Only 380 g hand weight with low rotational inertia",
+      "Rated >30 kg max load with ~0.6 s full open/close cycle",
+      "Compact high-DOF layout built for fine humanoid manipulation"
+    ],
+    "applications": [
+      "Fine humanoid robot end effector",
+      "High-DOF dexterous manipulation research",
+      "Consumer and commercial service exploration"
+    ],
+    "specs": {
+      "speed_note": "Full open/close in approx. 0.6 s",
+      "drive_type": "Tendon-driven transmission",
+      "sdk": "Supports humanoid robot end-effector integration and development"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "xynova-flex-2": {
+    "description": "Xynova Flex 2 (2026) is Xynova's second-generation lightweight hybrid-drive 5-finger dexterous hand featuring 23 DOF, ~400 g weight, 12 kg max load and 4 kg continuous load for mass-produced humanoid robots.",
+    "highlights": [
+      "2026 second-gen hybrid-drive hand with 23 DOF and ~400 g weight",
+      "12 kg max hand load and 4 kg continuous general-purpose load",
+      "Hybrid drive architecture balancing dexterity and engineering reliability",
+      "Part of Xynova's full-stack hand ecosystem covering actuators, sensing and control"
+    ],
+    "applications": [
+      "General-purpose humanoid end effector",
+      "Industrial and commercial dexterous tasks",
+      "Embodied manipulation data collection and deployment"
+    ],
+    "specs": {
+      "drive_type": "Hybrid drive (linkage + tendon)",
+      "tactile": "Optional tactile sensing",
+      "sdk": "Developer-oriented perception and control stack provided"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "xynova-prima-1": {
+    "description": "Xynova Prima 1 (2026) is a 22-DOF, fully direct-drive 5-finger dexterous hand weighing 650 g with a 20 kg lifting payload and 15 N fingertip force. It features a 0.08 s open/close cycle, 1 kHz bandwidth, five-finger visuo-tactile sensing and 300+ distributed force taxels.",
+    "highlights": [
+      "22 active DOF fully direct-drive 5-finger hand in 1:1 human proportions (~650 g)",
+      "Zero-backlash direct drive with 0.08 s open/close cycle and 1 kHz control bandwidth",
+      "15 N fingertip force and 20 kg lifting payload for industrial-grade force-transparent control",
+      "Five-finger visuo-tactile sensing plus 300+ force taxels across fingertips, palm and back of hand"
+    ],
+    "applications": [
+      "Industrial precision force-controlled assembly",
+      "High-bandwidth dexterous manipulation research",
+      "Visuotactile VLA real-robot deployment"
+    ],
+    "specs": {
+      "speed_note": "0.08 s single open/close cycle, 1 kHz control bandwidth",
+      "drive_type": "Fully direct-drive at every joint (zero backlash, native hybrid force-position control)",
+      "tactile": "Five-finger visuo-tactile + 300+ distributed force taxels (fingertips, palm, back)",
+      "interface": "High-speed industrial control bus",
+      "sdk": "Native hybrid force-position control and anti-pinch safety response"
+    },
+    "priceNote": "Overseas reference approx. 15,000 USD; quote on request"
   }
 }
