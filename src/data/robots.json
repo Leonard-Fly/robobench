@@ -3184,5 +3184,408 @@
     "description": "Xynova Prima 1 是曦诺未来于 2026 年发布的全直驱 22 自由度五指灵巧手，重约 650g、负载达 20kg、指尖力 15N，具备 0.08 秒极速开合与 1kHz 控制带宽，并集成五指视触觉及 300+ 分布式力传感单元。",
     "officialUrl": "https://www.xynova.com.cn/",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "qiyuan-q1",
+    "name": "Qiyuan Q1",
+    "nameZh": "上纬启元 Q1（个人机器人）",
+    "manufacturer": "Qiyuan Robotics (Swancor / AgiBot)",
+    "manufacturerZh": "上纬启元（上纬新材）",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": 19999,
+      "usd": null,
+      "note": "官方发布起售价 19,999 元人民币（个人机器人探索者版等）"
+    },
+    "specs": {
+      "height_cm": null,
+      "weight_kg": null,
+      "dof_total": null,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "多模态交互感知（视觉与语音）",
+      "sdk": "开源开放个人机器人开发平台，支持角色交互与具身开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "启元机器人官方渠道",
+        "url": "https://www.qiyuanrobot.com/",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
+    "highlights": [
+      "全球首款小尺寸全身力控个人人形机器人，起售价 19,999 元",
+      "智元机器人入主上纬新材后推出的消费级 C 端主力机型",
+      "2026 年 11 月已实现个人机器人万台下线",
+      "获得国际 A' Design 设计金奖，主打亲和交互、科技潮玩与具身开发"
+    ],
+    "applications": [
+      "消费级个人陪伴",
+      "科技潮玩与交互展示",
+      "个人开发者具身实验"
+    ],
+    "description": "启元 Q1 是上纬新材旗下启元机器人推出的全球首款小尺寸全身力控个人人形机器人，起售价 19,999 元，面向家庭陪伴、科技潮玩与个人具身开发，2026 年 11 月已实现万台下线。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "qiyuan-t1",
+    "name": "Qiyuan T1",
+    "nameZh": "上纬启元 T1（变形个人机器人）",
+    "manufacturer": "Qiyuan Robotics (Swancor / AgiBot)",
+    "manufacturerZh": "上纬启元（上纬新材）",
+    "country": "中国",
+    "category": "wheeled",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "约两万元价位段（以官方商城实时定价为准）"
+    },
+    "specs": {
+      "height_cm": null,
+      "weight_kg": null,
+      "dof_total": null,
+      "dof_hand": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_reach_cm": null,
+      "lift_range_cm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "视觉随行 + 可外挂 Insta360 等全景运动相机",
+      "sdk": "支持个人智能体互动与跟随扩展"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "启元机器人官方渠道",
+        "url": "https://www.qiyuanrobot.com/",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
+    "highlights": [
+      "跨形态一体架构，支持轮足人形与四足两种形态切换",
+      "面向家庭陪伴与户外出行场景，支持牵手随行",
+      "支持外挂 Insta360 运动相机记录户外视角",
+      "上纬启元 2026 年消费级个人机器人双旗舰之一"
+    ],
+    "applications": [
+      "家庭陪伴与互动",
+      "户外牵手随行与拍摄",
+      "个人智能移动终端"
+    ],
+    "description": "启元 T1 是上纬新材旗下启元机器人推出的可变形个人机器人，采用跨形态一体架构，可在轮足人形与四足形态间切换，支持牵手随行与外挂运动相机，主打家庭陪伴与户外随行。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "dobot-atom",
+    "name": "DOBOT Atom",
+    "nameZh": "越疆 DOBOT Atom",
+    "manufacturer": "DOBOT Robotics",
+    "manufacturerZh": "越疆科技",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": 199000,
+      "usd": 27500,
+      "note": "官方公布起售价 19.9 万元起（海外约 27,500 美元）；另有 Atom Max（约 6.8 万美元）与轮式 Atom-W"
+    },
+    "specs": {
+      "height_cm": 153,
+      "weight_kg": 62,
+      "dof_total": 41,
+      "dof_hand": null,
+      "walk_speed_ms": 1.5,
+      "max_speed_ms": 1.5,
+      "payload_kg": 7,
+      "arm_payload_kg": 3.5,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 2,
+      "swappable_battery": null,
+      "compute_tops": 1500,
+      "compute_platform": "搭载 ROM-1 机器人操作模型与 NDS 神经驱动灵巧系统（Max 版 1500 TOPS）",
+      "sensors": "集成 3D 相机系统 + 激光雷达",
+      "sdk": "支持工业 ±0.05mm 级精密操作与二次开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "越疆科技官网",
+        "url": "https://www.dobot.cn/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "全球首款「灵巧操作 + 直膝行走」全尺寸人形机器人，19.9 万元起",
+      "双臂工业级精密操作能力，单臂负载 3.5kg、重复定位精度达 ±0.05mm",
+      "提供 Atom（双足）、Atom Max（科研高算力版）及 Atom-W（轮式版）完整矩阵",
+      "1 小时快充、续航约 2 小时，已面向车厂、3C 与新零售交付"
+    ],
+    "applications": [
+      "汽车与 3C 产线精密装配",
+      "饮品制作与新零售服务",
+      "药房分拣与科研开发"
+    ],
+    "description": "DOBOT Atom 是越疆科技推出的全尺寸具身人形机器人，起售价 19.9 万元，采用直膝行走与神经驱动灵巧系统，体重约 62kg、双臂负载 7kg，面向汽车装配、3C、新零售及科研场景，并衍生出 Atom Max 与轮式 Atom-W。",
+    "officialUrl": "https://www.dobot.cn/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "vbot-datou-bobo",
+    "name": "Vbot Super Dog (Datou BoBo)",
+    "nameZh": "维他动力 Vbot 超能机器狗（大头 BoBo）",
+    "manufacturer": "Vbot (Vita Dynamics)",
+    "manufacturerZh": "维他动力",
+    "country": "中国",
+    "category": "quadruped",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "消费级万元档位（含大头 BoBo Pro 与 EDU 二次开发版，以官方商城为准）"
+    },
+    "specs": {
+      "length_cm": null,
+      "weight_kg": 16,
+      "dof_total": 14,
+      "max_speed_ms": 1.11,
+      "payload_kg": null,
+      "max_payload_kg": null,
+      "climb_deg": null,
+      "stair_cm": null,
+      "ip_rating": null,
+      "battery_wh": null,
+      "runtime_h": 4.5,
+      "compute_tops": null,
+      "sensors": "双目深度视觉 + 16 线激光雷达 + 语音交互阵列",
+      "sdk": "支持免遥控 AI 随行与 EDU 版二次开发编程"
+    },
+    "purchaseChannels": [
+      {
+        "type": "marketplace",
+        "name": "维他动力京东自营/官方渠道",
+        "url": "https://item.m.jd.com/product/100291645079.html",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
+    "highlights": [
+      "主打「无需遥控器」的三层智能（本体/空间/Agent 智能）家用四足机器狗",
+      "重约 16kg、14 自由度，实测综合续航可达 4–5 小时",
+      "标配双目深度视觉与 16 线激光雷达，支持自然语言指令与自主跟随",
+      "提供面向高校科研与编程教育的 EDU 模块化扩展版"
+    ],
+    "applications": [
+      "家庭智能陪伴与户外随行",
+      "语音交互与空间记忆服务",
+      "高校编程教育与二次开发"
+    ],
+    "description": "Vbot 超能机器狗（大头 BoBo）是维他动力推出的免遥控具身智能四足机器人，重约 16kg、具备 14 自由度，搭载双目深度视觉与 16 线激光雷达，标称续航 4–5 小时，主打家庭随行陪伴与 EDU 二次开发。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "hexagon-aeon",
+    "name": "Hexagon AEON",
+    "nameZh": "Hexagon AEON 工业人形机器人",
+    "manufacturer": "Hexagon Robotics",
+    "manufacturerZh": "Hexagon Robotics（海克斯康）",
+    "country": "瑞士",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "limited",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（商业定向交付，已签约宝马莱比锡工厂与舍弗勒）"
+    },
+    "specs": {
+      "height_cm": 165,
+      "weight_kg": 60,
+      "dof_total": 34,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": 2.4,
+      "payload_kg": 15,
+      "arm_payload_kg": 8,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 5,
+      "swappable_battery": "支持约 1 分钟全自动自主换电（24/7 连续作业）",
+      "compute_tops": null,
+      "compute_platform": "NVIDIA Jetson Orin + IGX Thor 安全计算（GR00T 合作伙伴）",
+      "sensors": "22 颗海克斯康计量级高精度传感器与视觉感知",
+      "sdk": "面向工业客户定向集成"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Hexagon Robotics 官网",
+        "url": "https://robotics.hexagon.com/product/",
+        "regions": [
+          "eu",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "轮式/双足混合高效移动底盘，最高移动速度达 2.4m/s，34 自由度",
+      "单次充电续航 5 小时，支持约 1 分钟全自动换电实现 7×24 连续作业",
+      "集成 22 颗海克斯康工业计量级传感器，短时峰值负载 15kg（持续 8kg）",
+      "已部署宝马莱比锡工厂试点，并获舍弗勒千台级商业合作订单"
+    ],
+    "applications": [
+      "汽车制造与工业质检巡检",
+      "工厂物料搬运与产线上下料",
+      "24/7 工业自动化作业"
+    ],
+    "description": "AEON 是瑞士 Hexagon Robotics 联合英伟达打造的工业级人形机器人，身高 165cm、重 60kg、34 自由度，最高速度 2.4m/s，单次续航 5 小时且支持 1 分钟自动换电，已进入宝马工厂与舍弗勒商业部署。",
+    "officialUrl": "https://robotics.hexagon.com/product/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "engineai-t800",
+    "name": "EngineAI T800",
+    "nameZh": "众擎 T800",
+    "manufacturer": "EngineAI Robotics",
+    "manufacturerZh": "众擎机器人",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": 180000,
+      "usd": 69000,
+      "note": "国内发布起售价 18 万元人民币（分 Basic / Dev / Pro / Max 版本；海外渠道约 6.9 万美元）"
+    },
+    "specs": {
+      "height_cm": 173,
+      "weight_kg": 75,
+      "dof_total": 43,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": 275,
+      "compute_platform": "NVIDIA Jetson AGX Orin 64GB（海外高配版）",
+      "sensors": "激光雷达 + 多目视觉感知",
+      "sdk": "提供 Dev / Pro / Max 开发者版本支持二次开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "众擎机器人官网",
+        "url": "https://www.engineai.com.cn",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "173cm 全尺寸高动态通用人形机器人，国内起售价 18 万元",
+      "高爆发关节支持回旋踢、格斗等极限高动态全身运动",
+      "高配版集成 43 自由度、激光雷达与 Jetson AGX Orin 64GB",
+      "提供 Basic / Dev / Pro / Max 四个梯度版本覆盖商用与科研"
+    ],
+    "applications": [
+      "高动态全身运动控制科研",
+      "商用服务与工业场景探索",
+      "特种与高爆发性能展示"
+    ],
+    "description": "众擎 T800 是众擎机器人于 2025 年 12 月发布的全尺寸高动态通用人形机器人，身高 173cm、体重 75kg，国内起售价 18 万元，具备强悍的高爆发动态性能，提供 Basic 至 Max 多档配置。",
+    "officialUrl": "https://www.engineai.com.cn",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "engineai-se01",
+    "name": "EngineAI SE01",
+    "nameZh": "众擎 SE01",
+    "manufacturer": "EngineAI Robotics",
+    "manufacturerZh": "众擎机器人",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 170,
+      "weight_kg": null,
+      "dof_total": 32,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "视觉与惯性感知",
+      "sdk": "支持通用具身科研与商业合作"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "众擎机器人官网",
+        "url": "https://www.engineai.com.cn",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "以高度拟人化的自然直膝步态走红的全尺寸通用人形机器人",
+      "身高 170cm，全身 32 个自由度",
+      "端到端神经网络步态控制，行走姿态流畅自然",
+      "众擎全尺寸工业与通用场景主力平台之一"
+    ],
+    "applications": [
+      "工业搬运与通用场景",
+      "拟人步态与强化学习研究",
+      "商业展演与接待"
+    ],
+    "description": "众擎 SE01 是众擎机器人推出的 170cm 全尺寸通用人形机器人，全身具备 32 个自由度，凭借高度拟人化的自然步态控制受到行业广泛关注，面向工业与通用服务场景。",
+    "officialUrl": "https://www.engineai.com.cn",
+    "dataUpdated": "2026-11"
   }
 ]

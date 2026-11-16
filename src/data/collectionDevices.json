@@ -337,5 +337,153 @@
     "paperUrl": "https://arxiv.org/abs/2309.13037",
     "codeUrl": "https://wuphilipp.github.io/gello/",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "genrobot-das-gripper",
+    "name": "GenRobot DAS Gripper (DAS 2.0)",
+    "nameZh": "简智机器人 DAS Gripper (DAS 2.0)",
+    "org": "GenRobot.ai",
+    "orgZh": "简智机器人",
+    "country": "中国",
+    "deviceKind": "umi",
+    "releaseDate": "2025-11",
+    "openSource": false,
+    "license": "商业硬件（开放 SDK 与 ROS / MCAP 文档）",
+    "specs": {
+      "device_type": "手持式多模态数采夹爪（UMI 路线）",
+      "bom_cost_usd": null,
+      "weight_g": 520,
+      "dof": 1,
+      "tracking_method": "三目全局快门视觉 + 6 轴 IMU (200Hz) 亚厘米级轨迹重建",
+      "sensors": "三目 1600×1300@30Hz 全局快门（含 180° 鱼眼）+ 1×1mm 触觉 + 200Hz 6 轴 IMU",
+      "robot_free": "是，无线离线/Type-C 脱离真机采集",
+      "target_embodiment": "通用两指平行夹爪（100mm 开合，最大夹持力 2kg，3 种可换指头）",
+      "output_data": "MCAP（鱼眼 RGB + 双目立体 RGB + 触觉 + 6 轴 IMU + 夹爪开合度）"
+    },
+    "highlights": [
+      "整重约 520g、续航 3 小时、内置 64GB TF 卡与 Wi-Fi/Type-C 传输",
+      "集成 1×1mm 分辨率触觉传感与 180° 鱼眼+双目视觉，亚厘米级轨迹精度",
+      "2026 年 11 月 CoRL 展出新一代 DAS 2.0 矩阵（含 DAS Ego 350g 与 DAS Controller）",
+      "直接输出标准化 MCAP 文件，配套开放 SDK 与 ROS 支持"
+    ],
+    "applications": [
+      "无真机大规模商业数采",
+      "力触觉-视觉融合 VLA 训练",
+      "跨本体操作技能采集"
+    ],
+    "description": "GenRobot DAS Gripper 是简智机器人推出的商业化多模态 UMI 数采夹爪，重约 520g、续航 3 小时，集成三目全局快门相机、200Hz 六轴 IMU 与 1×1mm 触觉传感，输出标准化 MCAP 数据；同系还有 DAS Ego 与 DAS Controller。",
+    "codeUrl": "https://docs.genrobot.ai/zh/products/das-gripper",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "maniformer-mego-gripper",
+    "name": "Maniformer MEgo Gripper",
+    "nameZh": "觅蜂科技 MEgo 无本体数采夹爪",
+    "org": "Maniformer (AgiBot)",
+    "orgZh": "觅蜂科技（智元旗下）",
+    "country": "中国",
+    "deviceKind": "umi",
+    "releaseDate": "2026-04",
+    "openSource": false,
+    "license": "商业硬件 + 觅蜂数据平台/觅蜂派众包生态",
+    "specs": {
+      "device_type": "无本体手持夹爪 + 头戴双视角（UMI/Ego 融合）",
+      "bom_cost_usd": null,
+      "weight_g": 540,
+      "dof": 1,
+      "tracking_method": "视觉惯性融合毫米级末端轨迹重建 + 亚毫秒级多设备无线同步",
+      "sensors": "三目全局快门 RGB (2M@60fps, 200° 鱼眼) + 深度 + 车规级 9 轴 1000Hz IMU + 1.6mm/0.05N 3D 触觉指尖",
+      "robot_free": "是，彻底脱离机器人本体采集",
+      "target_embodiment": "通用二指夹爪（可选快换 3D 触觉指尖）",
+      "output_data": "三目 RGB + 深度 + 3D 触觉 + 1000Hz IMU + 空间轨迹 + 音频 + 夹爪角度/开合"
+    },
+    "highlights": [
+      "标准版 540g / Ultra 版 587g，支持与头戴设备亚毫秒级无线时间同步",
+      "配备 200° 鱼眼、60fps 全局快门与车规级 1000Hz 九轴 IMU，实现毫米级精度",
+      "支持快换 3D 触觉指尖（1.6mm 空间分辨率、0.05N 力分辨率）",
+      "深度接入智元旗下觅蜂派众包平台与 MEgo Engine 数据治理平台"
+    ],
+    "applications": [
+      "千万小时级无本体众包数采",
+      "预训练通用物理世界表征学习",
+      "跨本体高精度触觉操作"
+    ],
+    "description": "MEgo Gripper 是智元旗下觅蜂科技于 2026 年 4 月发布的无本体数采硬件，重 540g（Ultra 587g），集成 200° 鱼眼三目 60fps 相机、1000Hz 车规 IMU 与 0.05N 3D 触觉指尖，支持亚毫秒级多机无线同步。",
+    "codeUrl": "https://www.maniformer.net/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "ace-robotics-ambient-capture",
+    "name": "ACE Robotics Ambient Capture 2.0",
+    "nameZh": "大晓机器人 环境式数据采集系统 2.0",
+    "org": "ACE Robotics",
+    "orgZh": "大晓机器人",
+    "country": "中国",
+    "deviceKind": "egocentric",
+    "releaseDate": "2025-12",
+    "openSource": false,
+    "license": "商业方案（配套开源开悟世界模型 3.0）",
+    "specs": {
+      "device_type": "环境式第一视角可穿戴采集（Ego 路线）",
+      "bom_cost_usd": null,
+      "weight_g": null,
+      "dof": null,
+      "tracking_method": "以人为中心的轻量化全景穿戴三维轨迹重建",
+      "sensors": "轻量化全景可穿戴视觉相机 + 力触觉/三维轨迹对齐（联合奥比中光）",
+      "robot_free": "是，普通人在真实生产/生活场景佩戴采集",
+      "target_embodiment": "跨本体具身大脑与世界模型（开悟世界模型 3.0）",
+      "output_data": "全景第一视角视觉 + 3D 轨迹 + 力触觉对齐数据与自动标注片段"
+    },
+    "highlights": [
+      "首创「以人为中心（Human-centric）」的 ACE 环境式数据采集范式",
+      "无需复杂遥操作台，普通人佩戴轻量化全景设备即可在生产生活现场采集",
+      "与奥比中光达成战略合作，推进大规模「眼脑协同」三维视觉数采",
+      "采集数据直接反哺国内开源商业化「开悟世界模型 3.0」"
+    ],
+    "applications": [
+      "零售、酒店与开放场景大规模人类操作采集",
+      "世界模型与具身大脑预训练",
+      "低门槛真实生产环境数采"
+    ],
+    "description": "大晓机器人环境式数据采集系统 2.0 基于「以人为中心」的 ACE 范式，让采集员佩戴轻量化全景可穿戴设备直接在真实生活与生产现场采集带力触觉与三维轨迹的数据，并直接服务于开悟世界模型 3.0。",
+    "codeUrl": "https://www.acerobotics.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "lightwheel-capture",
+    "name": "Lightwheel Ego & Teleop Capture",
+    "nameZh": "光轮智能 第一视角与遥操数采系统",
+    "org": "Lightwheel",
+    "orgZh": "光轮智能",
+    "country": "中国",
+    "deviceKind": "teleop",
+    "releaseDate": "2025-12",
+    "openSource": false,
+    "license": "商业数据/仿真基础设施（配套 LW-BenchHub）",
+    "specs": {
+      "device_type": "VR/外骨骼第一视角 + 遥操工厂 + 仿真合成闭环",
+      "bom_cost_usd": null,
+      "weight_g": null,
+      "dof": null,
+      "tracking_method": "VR 与外骨骼穿戴动捕 + 真机遥操对齐",
+      "sensors": "VR 头显/外骨骼穿戴传感 + 兼容 Wuji Hand / 触觉手套等多模态外设",
+      "robot_free": "支持真机遥操与穿戴式人类示范双路径",
+      "target_embodiment": "跨本体人形、机械臂与多指灵巧手",
+      "output_data": "第一视角视觉 + 全身/手部动作轨迹 + 物理仿真对齐合成数据"
+    },
+    "highlights": [
+      "打通「仿真生成—评测验证—少量真实对齐」闭环，显著压缩产线开发周期",
+      "自研仿真 GPU 求解器与虚实对标物理测量工厂，兼顾大规模遥操数采",
+      "支持 VR 及外骨骼第一视角人类示范采集，并与舞肌科技等硬件伙伴深度协同",
+      "配套开源评测/训练平台 LW-BenchHub 与 RoboFinals"
+    ],
+    "applications": [
+      "汽车工厂与家居长程任务数采",
+      "Sim-to-Real 合成与真实数据混合训练",
+      "跨本体 VLA 评测与交付"
+    ],
+    "description": "光轮智能数采体系结合了大规模真机遥操工厂、VR/外骨骼第一视角人类示范采集与自研物理仿真合成闭环，可在少样本真机对齐下实现高保真跨本体数据生成与 LW-BenchHub 评测。",
+    "codeUrl": "https://theroboradar.com/companies/lightwheel",
+    "dataUpdated": "2026-11"
   }
 ]

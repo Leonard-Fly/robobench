@@ -196,5 +196,93 @@
       "target_embodiment": "Franka, UR5, xArm and other commercial arms",
       "output_data": "High-precision joint angle trajectories + gripper command"
     }
+  },
+  "genrobot-das-gripper": {
+    "description": "GenRobot DAS Gripper is a commercial multimodal UMI data collection gripper (~520 g, 3 h battery). It integrates triple global-shutter cameras, a 200 Hz 6-axis IMU and 1x1 mm tactile sensing, outputting standardized MCAP logs alongside the DAS Ego and DAS Controller lineup.",
+    "highlights": [
+      "520 g weight, 3 h battery life, 64 GB TF card with Wi-Fi and Type-C transfer",
+      "1x1 mm tactile sensing + 180° fisheye/stereo vision for sub-centimeter trajectory accuracy",
+      "DAS 2.0 product matrix showcased at CoRL 2026 (with DAS Ego 350 g and DAS Controller)",
+      "Outputs standardized MCAP files with open SDK and ROS support"
+    ],
+    "applications": [
+      "Robot-free large-scale commercial data capture",
+      "Visuotactile VLA training",
+      "Cross-embodiment manipulation skill capture"
+    ],
+    "specs": {
+      "device_type": "Handheld multimodal gripper (UMI)",
+      "tracking_method": "Triple global-shutter vision + 6-axis IMU (200 Hz) sub-cm trajectory reconstruction",
+      "sensors": "Triple 1600x1300@30Hz global-shutter cameras (180° fisheye) + 1x1mm tactile + 200Hz IMU",
+      "robot_free": "Yes, wireless offline / Type-C robot-free capture",
+      "target_embodiment": "Parallel-jaw grippers (100 mm stroke, 2 kg force, 3 swappable tips)",
+      "output_data": "MCAP (fisheye RGB + stereo RGB + tactile + 6-axis IMU + gripper width)"
+    }
+  },
+  "maniformer-mego-gripper": {
+    "description": "MEgo Gripper from Maniformer (backed by AgiBot, Apr 2026) is a robot-free data collection gripper (540 g / 587 g Ultra) integrating a 200° fisheye 60 fps camera, 1000 Hz automotive-grade 9-axis IMU and 0.05 N 3D tactile fingertips with sub-ms wireless sync.",
+    "highlights": [
+      "540 g Standard / 587 g Ultra with sub-millisecond wireless sync to head-mounted rigs",
+      "200° fisheye 60 fps global shutter + 1000 Hz 9-axis IMU for mm-level precision",
+      "Optional quick-change 3D tactile fingertips (1.6 mm spatial, 0.05 N force resolution)",
+      "Deeply integrated with Maniformer's crowdsourced capture platform and MEgo Engine"
+    ],
+    "applications": [
+      "Multi-million-hour robot-free crowdsourced capture",
+      "Generalist physical world pretraining",
+      "High-precision tactile cross-embodiment manipulation"
+    ],
+    "specs": {
+      "device_type": "Robot-free handheld gripper + head rig (UMI/Ego)",
+      "tracking_method": "Visual-inertial fusion mm-level pose + sub-ms multi-device wireless sync",
+      "sensors": "Triple 60fps global-shutter RGB (200° fisheye) + depth + 1000Hz 9-axis IMU + 3D tactile",
+      "robot_free": "Yes, fully embodiment-free capture",
+      "target_embodiment": "Two-finger parallel grippers (optional 3D tactile tips)",
+      "output_data": "Triple RGB + depth + 3D tactile + 1000Hz IMU + spatial trajectory + audio + gripper"
+    }
+  },
+  "ace-robotics-ambient-capture": {
+    "description": "ACE Robotics Ambient Capture 2.0 follows a human-centric ACE paradigm, enabling everyday operators wearing lightweight panoramic rigs to collect 3D trajectory and visuotactile-aligned data in real production and home environments for Kaiwu World Model 3.0.",
+    "highlights": [
+      "Pioneered the human-centric ACE ambient data collection paradigm",
+      "Lightweight panoramic wearables capture directly in real production/living scenes",
+      "Strategic partnership with Orbbec for large-scale 3D eye-brain data capture",
+      "Directly powers China's open-source commercial Kaiwu World Model 3.0"
+    ],
+    "applications": [
+      "Retail, hospitality & open-world human manipulation capture",
+      "World model and embodied brain pretraining",
+      "Low-barrier real-world production capture"
+    ],
+    "specs": {
+      "device_type": "Ambient egocentric wearable capture (Ego)",
+      "tracking_method": "Human-centric lightweight panoramic 3D trajectory reconstruction",
+      "sensors": "Lightweight panoramic wearable cameras + force/tactile & 3D trajectory alignment",
+      "robot_free": "Yes, human wearable capture in real-world scenes",
+      "target_embodiment": "Cross-embodiment embodied brain & world models (Kaiwu 3.0)",
+      "output_data": "Panoramic egocentric vision + 3D trajectories + aligned force/tactile clips"
+    }
+  },
+  "lightwheel-capture": {
+    "description": "Lightwheel's capture stack combines large-scale teleoperation factories, VR/exoskeleton egocentric human demonstration capture, and a GPU-accelerated physics simulation loop to achieve high-fidelity cross-embodiment data with minimal real-robot alignment.",
+    "highlights": [
+      "Closes the sim-gen, eval and real-alignment loop, sharply cutting deployment cycles",
+      "In-house GPU physics solver paired with real-to-sim physical measurement factory",
+      "Supports VR/exoskeleton egocentric human demos and partners like Wuji Hand",
+      "Integrated with LW-BenchHub and RoboFinals evaluation platforms"
+    ],
+    "applications": [
+      "Automotive factory & long-horizon household data capture",
+      "Sim-to-Real synthetic + real hybrid training",
+      "Cross-embodiment VLA evaluation and delivery"
+    ],
+    "specs": {
+      "device_type": "VR/Exoskeleton Ego + Teleop Factory + Sim Loop",
+      "tracking_method": "VR & exoskeleton wearable mocap + real-robot teleop alignment",
+      "sensors": "VR headsets / exoskeletons + compatible with Wuji Hand & tactile gloves",
+      "robot_free": "Supports both real teleop and wearable human demonstration",
+      "target_embodiment": "Cross-embodiment humanoids, arms and dexterous hands",
+      "output_data": "Egocentric vision + whole-body/hand trajectories + physics-aligned synthetic data"
+    }
   }
 }
