@@ -284,5 +284,49 @@
       "target_embodiment": "Cross-embodiment humanoids, arms and dexterous hands",
       "output_data": "Egocentric vision + whole-body/hand trajectories + physics-aligned synthetic data"
     }
+  },
+  "agilex-pika-sense": {
+    "description": "AgileX PiKA is a commercial UMI-style data collection suite featuring the 550 g handheld PiKA Sense (±1.5 mm @ 120 Hz accuracy, 90 fps depth + 200° fisheye camera, 9-axis IMU), paired with a sensor-identical 690 g robot-mounted PiKA Gripper and head-mounted PiKA Ego.",
+    "highlights": [
+      "Handheld PiKA Sense (550 g) and robot-mounted PiKA Gripper (690 g) share identical depth + fisheye sensors for zero visual domain gap",
+      "±1.5 mm spatial accuracy at 120 Hz with 90 fps depth and 200° fisheye cameras",
+      "Optional head-mounted PiKA Ego (720p@90fps RGB-D + 9-axis IMU) for hand-eye capture",
+      "Commercially in stock (~$1,600 tier) with native ROS2 and AgileX PiPER/NERO support"
+    ],
+    "applications": [
+      "Zero-domain-gap handheld-to-robot policy transfer",
+      "Scalable academic and industrial data capture stations",
+      "Bimanual mobile manipulation (with Cobot Magic / PiPER)"
+    ],
+    "specs": {
+      "device_type": "Handheld PiKA Sense + Isomorphic PiKA Gripper + PiKA Ego",
+      "tracking_method": "High-precision spatial positioner (±1.5 mm @ 120 Hz) + 9-axis IMU (100 Hz)",
+      "sensors": "Depth camera (87°x58° FOV, 90fps) + 200° fisheye (90fps) + 9-axis IMU",
+      "robot_free": "Yes, PiKA Sense supports fully robot-free handheld capture",
+      "target_embodiment": "Mirrors sensor-identical PiKA Gripper (690 g, universal flange / PiPER / NERO)",
+      "output_data": "90fps depth + 90fps 200° fisheye RGB + 120Hz ±1.5mm 6-DoF pose + gripper width"
+    }
+  },
+  "paxini-pxcap-pro": {
+    "description": "PaXini PXCapPro (2026) is a wearable multi-dimensional tactile data capture glove integrating 4th-gen 6D Hall-array tactile sensors with 0.005 N minimum force resolution to record human contact forces and hand trajectories.",
+    "highlights": [
+      "Debuted at WRC 2026 with 4th-gen PX6AX GEN4 6-axis tactile sensor arrays",
+      "0.005 N minimum force resolution captures normal/shear forces missed by vision-only rigs",
+      "Shares the same tactile sensor architecture as PaXini DexH13 hands to minimize domain gap",
+      "Deployed across PaXini's 150-unit Tianjin data capture base"
+    ],
+    "applications": [
+      "Contact-rich precision assembly capture",
+      "Fragile and deformable object force-controlled grasping",
+      "Tactile-Vision-Language-Action (TVLA) pretraining"
+    ],
+    "specs": {
+      "device_type": "Wearable high-precision multi-axis tactile capture glove",
+      "tracking_method": "Full finger joint tracking + spatial pose tracking",
+      "sensors": "4th-gen 6D Hall-array tactile sensors (0.005 N minimum force resolution)",
+      "robot_free": "Yes, wearable human interaction force & motion capture",
+      "target_embodiment": "PaXini DexH13 hand, TORA-ONE and tactile dexterous hands",
+      "output_data": "0.005N-grade 6D force/slip/texture tactile streams + finger joint trajectories"
+    }
   }
 }

@@ -1267,5 +1267,251 @@
       "sdk": "Supports embodied AI research and commercial partnerships"
     },
     "priceNote": "Not disclosed / quote on request"
+  },
+  "robotera-l7": {
+    "description": "RobotEra L7 is a full-size bipedal humanoid robot from Tsinghua-incubated RobotEra. Standing 171 cm tall with 55 DOF, 4 m/s top running speed and 20 kg payload, it pairs with the in-house XHAND1 dexterous hand for both high-dynamic locomotion and fine manipulation.",
+    "highlights": [
+      "Incubated from Tsinghua IIIS; 171 cm tall with up to 55 DOF across the body",
+      "Reaches 4 m/s top running speed alongside agile jumping and manipulation",
+      "20 kg payload paired with XHAND1 hands for bartending, sorting, scanning and assembly",
+      "Joined by the 44-DOF wheeled service humanoid RobotEra Q5"
+    ],
+    "applications": [
+      "Logistics sorting & industrial assembly",
+      "Commercial bartending & reception",
+      "High-dynamic whole-body control & VLA research"
+    ],
+    "specs": {
+      "compute_platform": "Native end-to-end embodied foundation model control",
+      "sensors": "Multi-camera vision + whole-body proprioception and force sensing",
+      "sdk": "Paired with in-house XHAND1 direct-drive hand and developer platform"
+    },
+    "priceNote": "Not disclosed / quote on request (wheeled Q5 also available)"
+  },
+  "limx-oli": {
+    "description": "LimX Oli is a full-size general-purpose bipedal humanoid from LimX Dynamics (165 cm, ≤55 kg with battery) offering 31–33 active DOF (7-DOF dual arms, 3-DOF waist, 6-DOF legs) across Lite, EDU and Super tiers.",
+    "highlights": [
+      "165 cm tall and ≤55 kg with battery, with 31 (Lite/EDU) to 33 (Super) active DOF",
+      "7-DOF dual arms + 3-DOF waist + 6-DOF legs built for whole-body mobile manipulation",
+      "~5 km/h (1.39 m/s) walking speed; Super edition features NVIDIA Orin NX (157 TOPS)",
+      "Available in Lite / EDU / Super configurations with open simulation & teleop stack"
+    ],
+    "applications": [
+      "University embodied AI & whole-body control research",
+      "Teleoperation & mobile manipulation data capture",
+      "General humanoid algorithm validation"
+    ],
+    "specs": {
+      "compute_platform": "NVIDIA Jetson Orin NX (157 TOPS on Super edition)",
+      "sensors": "Multi-sensor depth vision and proprioception",
+      "sdk": "Open developer interfaces supporting simulation, teleop and mobile manipulation"
+    },
+    "priceNote": "Overseas reference: Lite ~$37,895, EDU ~$52,875, Super ~$77,185"
+  },
+  "limx-tron-1": {
+    "description": "LimX TRON 1 is a multi-modal research biped from LimX Dynamics (84.5 cm, 20 kg, 10 kg payload) featuring quick-swap 3-in-1 foot ends (point-foot, sole, and wheel-leg up to 3 m/s) with full Sim2Real RL support.",
+    "highlights": [
+      "3-in-1 modular foot ends: quick-swap between point-foot, flat sole and wheel-leg",
+      "20 kg weight, 84.5 cm height, 10 kg payload and up to 3 m/s in wheel mode",
+      "Traverses 20 cm obstacles and 30° slopes with ~2 h swappable battery",
+      "Out-of-the-box Sim2Real RL support for Isaac Gym / Isaac Lab / MuJoCo"
+    ],
+    "applications": [
+      "Bipedal & wheel-legged RL locomotion research",
+      "University control engineering teaching",
+      "Multi-terrain locomotion validation"
+    ],
+    "specs": {
+      "swappable_battery": "Quick-swap battery (46.8V 4.5Ah, 1.5 h full charge)",
+      "sensors": "IMU + expandable vision/LiDAR peripheral mounts",
+      "sdk": "Open RL (Isaac Gym / Isaac Lab / MuJoCo) and Python/C++ SDK"
+    },
+    "priceNote": "Available in Standard and EDU editions via official store and global distributors"
+  },
+  "leju-kuavo-4pro": {
+    "description": "KUAVO 4 Pro / 5 is Leju Robotics' full-size OpenHarmony humanoid robot (166 cm, 55 kg, 40–41 DOF, 10 kg payload, ~2 h runtime), widely deployed in automaker factory pilots, data collection and university research.",
+    "highlights": [
+      "China's first jumping, multi-terrain full-size OpenHarmony humanoid robot",
+      "KUAVO 4 Pro: 166 cm, 55 kg, 40 DOF (KUAVO 5 upgrades to 41 DOF & up to 2,070 TOPS)",
+      "10 kg payload and ~2 h runtime; piloted in automotive factories and logistics",
+      "Deeply integrated with OpenHarmony and Huawei Pangu embodied ecosystem"
+    ],
+    "applications": [
+      "Automotive factory & industrial training",
+      "OpenHarmony embodied AI research",
+      "Commercial guidance & data collection"
+    ],
+    "specs": {
+      "compute_platform": "OpenHarmony + 100 to 2,070 TOPS configurable compute (KUAVO 5)",
+      "sensors": "Multi-camera depth vision + LiDAR + 6-axis force sensors",
+      "sdk": "OpenHarmony ecosystem, ROS2 and embodied data collection support"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "galaxea-r1-pro": {
+    "description": "Galaxea R1 Pro is a 170 cm full-size wheeled dual-arm humanoid from Galaxea AI featuring 26 DOF, dual 7-axis force-controlled arms (64 cm reach, 10 kg bimanual payload) and a 360° omnidirectional base.",
+    "highlights": [
+      "170 cm wheeled bimanual humanoid (24 DOF on R1 / 26 DOF on R1 Pro)",
+      "Dual 7-axis force-controlled arms with 64 cm reach and 10 kg bimanual payload",
+      "360° omnidirectional chassis with folding torso lift for floor-to-shelf workspace",
+      "Joined by the 128 cm R1 Lite (23 DOF) and open-source OpenGalaxea G0.5 VLA"
+    ],
+    "applications": [
+      "Real-robot embodied AI data collection",
+      "Hotel, retail and household tidying services",
+      "Warehouse picking and industrial assistance"
+    ],
+    "specs": {
+      "compute_platform": "Paired with Galaxea end-to-end VLA (OpenGalaxea G0.5)",
+      "sensors": "360° stereo vision + wrist cameras + omnidirectional wheeled base",
+      "sdk": "Open layered software stack and VR/isomorphic teleoperation interfaces"
+    },
+    "priceNote": "Not disclosed / quote on request (R1, R1 Pro and R1 Lite available)"
+  },
+  "ti5-t170a": {
+    "description": "Ti5 Robot T170A is a lightweight 170 cm full-size humanoid weighing only 48 kg with 44 DOF, 490 N·m peak hip torque, 5 kg single-arm payload and NVIDIA Jetson AGX Orin 64GB.",
+    "highlights": [
+      "170 cm full-size humanoid weighing just 48 kg via lightweight in-house actuators",
+      "44 total DOF with up to 490 N·m peak hip torque and 5 kg single-hand payload",
+      "Equipped with NVIDIA Jetson AGX Orin 64GB (275 TOPS), LiDAR and stereo vision",
+      "Full-stack supplier of integrated joints, dexterous hands and humanoid ODM"
+    ],
+    "applications": [
+      "Industrial and power inspection",
+      "University research & custom development",
+      "Humanoid ODM and actuator customization"
+    ],
+    "specs": {
+      "compute_platform": "NVIDIA Jetson AGX Orin 64GB (275 TOPS)",
+      "sensors": "LiDAR + stereo camera system",
+      "sdk": "Open actuator, hand and whole-body development support"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "apptronik-apollo": {
+    "description": "Apptronik Apollo is a flagship US commercial humanoid robot (173 cm, 73 kg, 30 DOF) capable of lifting 25 kg with a 4-hour hot-swappable battery, piloted at Mercedes-Benz and GXO Logistics and partnered with Google DeepMind Gemini Robotics.",
+    "highlights": [
+      "Leading US commercial humanoid: 173 cm tall, 73 kg weight and 25 kg payload",
+      "4-hour runtime per hot-swappable battery pack; modular bipedal/wheeled/stationary mounting",
+      "Commercial pilots with Mercedes-Benz and GXO Logistics",
+      "Official hardware partner for Google DeepMind Gemini Robotics"
+    ],
+    "applications": [
+      "Automotive line material handling & tending",
+      "Warehouse tote sorting",
+      "Gemini Robotics VLA deployment"
+    ],
+    "specs": {
+      "swappable_battery": "Hot-swappable battery packs (~4 h per pack) + tethered power option",
+      "compute_platform": "Onboard AIROS system (Google DeepMind Gemini Robotics partner)",
+      "sensors": "Multimodal head/torso vision + force-controlled safety zone sensing",
+      "sdk": "Available to commercial and research partners"
+    },
+    "priceNote": "Not disclosed / quote on request (commercial pilots & RaaS; Apollo 2 announced)"
+  },
+  "deeprobotics-lynx": {
+    "description": "DEEP Robotics Lynx is an all-terrain wheel-legged quadruped robot weighing 30 kg with a 12 kg payload, 5 m/s top speed, ~3 h runtime with hot-swappable dual batteries, and the ability to climb 80 cm platforms.",
+    "highlights": [
+      "Combines wheeled speed (up to 5 m/s) with legged obstacle climbing",
+      "30 kg weight, 12 kg payload and climbs up to 80 cm platforms",
+      "Hot-swappable dual batteries for ~3 hours / 15 km range",
+      "Lineup also includes lightweight Lynx S10 (<20 kg) and industrial M20"
+    ],
+    "applications": [
+      "All-terrain rapid outdoor inspection",
+      "Emergency recon & mountain search and rescue",
+      "Wheel-legged locomotion research"
+    ],
+    "specs": {
+      "ip_rating": "IP54 / all-terrain outdoor protection",
+      "sensors": "Bi-directional vision + optional LiDAR",
+      "sdk": "Supports secondary development and payload expansion"
+    },
+    "priceNote": "Overseas reference approx. 17,999 USD; S10 and M20 variants also available"
+  },
+  "paxini-dexh13": {
+    "description": "PaXini DexH13 is a 4-finger, 13-active-DOF (16 total DOF) visuotactile dexterous hand with 5 kg payload, integrating nearly 1,000 6D Hall-array tactile sensing units (0.005 N sensitivity) and a palm camera.",
+    "highlights": [
+      "4 fingers with 13 active DOF (16 total DOF) and 5 kg payload",
+      "In-house 6D Hall-array tactile sensors (1,000 Hz sampling of 6-axis force, texture & temp)",
+      "Built-in palm camera for dual-modal visuotactile fusion",
+      "Powers PaXini's TORA-ONE humanoid and 150-unit tactile data capture base"
+    ],
+    "applications": [
+      "Precision assembly & medical assistance",
+      "Multimodal tactile foundation model capture",
+      "Humanoid & bimanual force-tactile end effector"
+    ],
+    "specs": {
+      "drive_type": "Multi-joint high-DOF electromechanical drive",
+      "tactile": "6D Hall-array tactile sensing (~1,000 taxels, 0.005N sensitivity) + palm vision",
+      "interface": "High-speed industrial bus / ROS",
+      "sdk": "Multimodal visuotactile closed-loop SDK"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "sharpa-wave": {
+    "description": "Sharpa Wave, created by Hesai Technology's co-founders, is a 1:1 human-sized 22-active-DOF direct-drive 5-finger hand featuring 240x240-pixel fingertip visuo-tactile camera arrays, selected for NVIDIA's reference GR00T humanoid (H2 Plus).",
+    "highlights": [
+      "Founded by Hesai co-founders; chosen for NVIDIA's first Isaac GR00T reference humanoid (H2 Plus)",
+      "22 active DOF with 1-to-1 motor direct drive in 1:1 human hand dimensions",
+      "240x240 pixel grid + micro-cameras inside fingertips for high-res visuotactile sensing",
+      "Also available in a developer-oriented Sharpa Wave SE edition"
+    ],
+    "applications": [
+      "Flagship humanoid end effector (e.g., Unitree H2 Plus)",
+      "High-res visuotactile VLA training and inference",
+      "Frontier dexterous manipulation research"
+    ],
+    "specs": {
+      "drive_type": "22-active-DOF 1-to-1 motor direct drive",
+      "tactile": "In-house high-res visuotactile fingertips (240x240 pixel grid + micro-cameras)",
+      "interface": "High-speed control bus",
+      "sdk": "Supports NVIDIA Isaac GR00T ecosystem and ROS2"
+    },
+    "priceNote": "Not disclosed / quote on request (Standard and SE editions)"
+  },
+  "dh-robotics-udh-3-7": {
+    "description": "DH-Robotics UDH-3-7 is an industrial 3-finger, 7-active-DOF dexterous hand delivering a 15 kg single-hand payload and up to 50 N fingertip force for high-reliability industrial grasping.",
+    "highlights": [
+      "Built by industrial gripper leader DH-Robotics with 3 fingers and 7 active DOF",
+      "15 kg single-hand payload and 50 N fingertip force for heavy-duty dexterous tasks",
+      "Bridges the gap between reliable 2-finger grippers and complex 5-finger hands",
+      "Industrial-grade durability proven across manufacturing lines"
+    ],
+    "applications": [
+      "Heavy irregular part grasping on factory lines",
+      "Humanoid and mobile manipulator industrial work",
+      "Automotive and 3C assembly handling"
+    ],
+    "specs": {
+      "drive_type": "Industrial high-rigidity multi-joint actuation",
+      "tactile": "Force control and tactile options supported",
+      "interface": "Industrial bus (RS485 / CAN / EtherCAT)",
+      "sdk": "Standard SDK for industrial arms and humanoids"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "orbbec-gemini-335": {
+    "description": "Orbbec Gemini 335 / 335L is a flagship active-passive stereo 3D depth camera (97 g, <3 W) with a built-in MX6800 depth ASIC and IMU, outputting up to 1280x800@30fps depth and point clouds with zero host compute load.",
+    "highlights": [
+      "Onboard MX6800 depth ASIC computes depth and point clouds directly on camera",
+      "Active-passive stereo fusion works from dark rooms to bright outdoor sunlight (IP65 on 335L)",
+      "Weighs 97 g at <3 W average power with built-in IMU and multi-camera hardware sync",
+      "Widely adopted across humanoids, AMRs and embodied data capture rigs"
+    ],
+    "applications": [
+      "Humanoid & bimanual wrist/head 3D vision",
+      "Indoor/outdoor AMR navigation and obstacle avoidance",
+      "Multi-camera synchronized embodied data capture"
+    ],
+    "specs": {
+      "component_type": "Active-passive stereo 3D depth camera (onboard ASIC + IMU)",
+      "model_series": "Gemini 335 (50mm baseline) / Gemini 335L (IP65 long baseline)",
+      "range_note": "0.10–20m+ range (optimal 0.26–3m), up to 1280x800@30fps depth, 90°x65° FOV",
+      "interface": "USB 3.0 Type-C (Ethernet on 335Le / GMSL2 on 335Lg)",
+      "key_params": "Built-in MX6800 depth ASIC, built-in IMU, <3W power, multi-camera hardware trigger sync"
+    },
+    "priceNote": "Official store reference approx. 369–400 USD; 335L (IP65) and 335Lg (GMSL2) also available"
   }
 }

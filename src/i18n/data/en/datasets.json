@@ -174,5 +174,49 @@
       "collection_method": "Crowdsourced low-cost leader-follower teleoperation",
       "data_format": "LeRobotDataset v3.0 (Parquet + MP4)"
     }
+  },
+  "fastumi-100k": {
+    "description": "FastUMI-100K is a large-scale open-source handheld UMI dataset containing 100,000 trajectories (~600 hours) collected with the hardware-independent FastUMI gripper, pairing 60 fps wrist fisheye video with real-time RealSense T265 6-DoF TCP trajectories.",
+    "highlights": [
+      "One of the largest open robot-free UMI datasets: 100K trajectories and ~600 hours",
+      "Real-time T265 6-DoF tracking avoids offline SLAM reconstruction failures",
+      "Consistent fingertip-aligned fisheye view enables cross-arm transfer",
+      "Open-sourced alongside FastUMI hardware designs and conversion tools"
+    ],
+    "applications": [
+      "Robot-free UMI policy pretraining",
+      "Zero/few-shot cross-arm transfer",
+      "Low-cost imitation learning benchmark"
+    ],
+    "specs": {
+      "tasks_count": "Diverse everyday and tabletop manipulation tasks",
+      "embodiments": "Hardware-decoupled (FastUMI handheld gripper, transferable to diverse arms)",
+      "modalities": "Wrist fisheye RGB (720p@60fps) + RealSense T265 6-DoF TCP pose + gripper width",
+      "annotations": "Natural language instructions and subtask labels",
+      "collection_method": "Robot-free human demonstration with FastUMI handheld gripper",
+      "data_format": "HDF5 / LeRobot / ROS"
+    }
+  },
+  "nvidia-open-h-embodiment": {
+    "description": "PhysicalAI-Robotics-Open-H-Embodiment is NVIDIA's open multi-embodiment healthcare robotics dataset collection on Hugging Face, uniting paired kinematics and video in LeRobot format for surgical robotics and autonomous ultrasound.",
+    "highlights": [
+      "First open multi-embodiment dataset collection tailored for surgical and ultrasound Physical AI",
+      "Standardized in LeRobot format with paired video and kinematics",
+      "Bridges the gap in sub-millimeter medical precision manipulation",
+      "Integrated with NVIDIA Isaac for Healthcare simulation and training pipelines"
+    ],
+    "applications": [
+      "Surgical robot autonomous subtask learning",
+      "Autonomous medical ultrasound manipulation",
+      "High-precision micro-manipulation VLA research"
+    ],
+    "specs": {
+      "tasks_count": "Surgical manipulation and ultrasound scanning tasks",
+      "embodiments": "Multiple surgical and medical robotic arm embodiments",
+      "modalities": "Paired endoscopic/ultrasound video + fine kinematic trajectories",
+      "annotations": "Surgical phase and action instruction annotations",
+      "collection_method": "Standardized multi-embodiment medical robotics aggregation",
+      "data_format": "LeRobotDataset"
+    }
   }
 }

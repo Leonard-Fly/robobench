@@ -485,5 +485,79 @@
     "description": "光轮智能数采体系结合了大规模真机遥操工厂、VR/外骨骼第一视角人类示范采集与自研物理仿真合成闭环，可在少样本真机对齐下实现高保真跨本体数据生成与 LW-BenchHub 评测。",
     "codeUrl": "https://theroboradar.com/companies/lightwheel",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "agilex-pika-sense",
+    "name": "AgileX PiKA Sense / Gripper / Ego",
+    "nameZh": "松灵机器人 PiKA 全栈数采套件",
+    "org": "AgileX Robotics",
+    "orgZh": "松灵机器人",
+    "country": "中国",
+    "deviceKind": "umi",
+    "releaseDate": "2025-05",
+    "openSource": false,
+    "license": "商业量产套件（开放 ROS2 SDK 与 LeRobot 对接）",
+    "specs": {
+      "device_type": "手持数采器 PiKA Sense + 同构机械臂夹爪 PiKA Gripper + 头戴 PiKA Ego",
+      "bom_cost_usd": 1600,
+      "weight_g": 550,
+      "dof": 1,
+      "tracking_method": "高精度空间定位器（±1.5mm @ 120Hz）+ 9 轴 IMU (100Hz)",
+      "sensors": "深度相机 (87°×58° FOV, 90fps) + 200° 超广角鱼眼相机 (90fps) + 9 轴 IMU",
+      "robot_free": "是，PiKA Sense 支持完全脱离真机手持采集",
+      "target_embodiment": "直接镜像挂载同款传感器的 PiKA Gripper（690g，适配 PiPER/NERO 及通用法兰）",
+      "output_data": "90fps 深度 + 90fps 200° 鱼眼 RGB + 120Hz ±1.5mm 6-DoF 轨迹 + 夹爪开合"
+    },
+    "highlights": [
+      "手持端 PiKA Sense（550g）与机械臂执行端 PiKA Gripper（690g）采用完全一致的深度+鱼眼传感器模组，实现零视觉域偏差迁移",
+      "120Hz 下空间定位精度高达 ±1.5mm，且深度与 200° 鱼眼均支持 90fps 高帧率采集",
+      "可选配头戴式 PiKA Ego（720p@90fps RGB-D + 9 轴 IMU）组成手眼协同采集包",
+      "量产现货供应（单件约 1,500–1,700 欧元/美元档位），原生支持 ROS2 与 PiPER/NERO 机械臂"
+    ],
+    "applications": [
+      "零视角偏差的手持到真机策略迁移",
+      "高校与企业规模化数采工位建设",
+      "双臂移动操作（搭配 Cobot Magic / PiPER）"
+    ],
+    "description": "松灵 PiKA 是目前商业化程度最高的量产 UMI 类数采套件之一，手持端 PiKA Sense 仅重 550g，具备 ±1.5mm@120Hz 定位精度与 90fps 深度+200° 鱼眼相机，并配有传感器完全同构的真机夹爪 PiKA Gripper 与头戴式 PiKA Ego。",
+    "codeUrl": "https://global.agilex.ai/products/pika-pro-embodied-ai-data-collection",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "paxini-pxcap-pro",
+    "name": "PaXini PXCapPro",
+    "nameZh": "帕西尼 PXCapPro 高精度多维触觉数采手套",
+    "org": "PaXini Tech",
+    "orgZh": "帕西尼感知科技",
+    "country": "中国",
+    "deviceKind": "egocentric",
+    "releaseDate": "2026-08",
+    "openSource": false,
+    "license": "商业数采硬件（配套帕西尼全模态触觉数据集生态）",
+    "specs": {
+      "device_type": "穿戴式高精度多维触觉数采手套（Ego/穿戴式）",
+      "bom_cost_usd": null,
+      "weight_g": null,
+      "dof": null,
+      "tracking_method": "手部全关节角度捕捉 + 空间位姿追踪",
+      "sensors": "帕西尼第四代 6D 霍尔阵列式多维触觉传感器（最小力识别精度 0.005N）",
+      "robot_free": "是，人类穿戴直接采集交互力与动作",
+      "target_embodiment": "帕西尼 DexH13 灵巧手、TORA-ONE 及多指触觉灵巧手",
+      "output_data": "0.005N 级六维力/摩擦力/材质触觉阵列流 + 手指关节轨迹"
+    },
+    "highlights": [
+      "2026 世界机器人大会全球首发，搭载第四代 PX6AX GEN4 六维力触觉传感器",
+      "最小力识别精度高达 0.005N，填补纯视觉数采无法记录接触力与切向滑移的空白",
+      "与帕西尼 DexH13 灵巧手共享同源触觉传感架构，大幅降低人手到机械手的触觉域差距",
+      "已部署于帕西尼天津 150 单元数采基地量产全模态触觉训练数据"
+    ],
+    "applications": [
+      "接触密集型精密装配数采",
+      "易碎物/柔性物力控抓取训练",
+      "触觉-视觉-动作（TVLA）大模型预训练"
+    ],
+    "description": "PXCapPro 是帕西尼感知于 2026 年推出的穿戴式高精度多维触觉数据采集手套，集成最小力识别达 0.005N 的第四代 6D 霍尔阵列触觉传感器，可在人类自然操作中同步记录高精度三维力与手指运动轨迹。",
+    "codeUrl": "https://www.paxini.com/",
+    "dataUpdated": "2026-11"
   }
 ]

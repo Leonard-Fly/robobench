@@ -3587,5 +3587,704 @@
     "description": "众擎 SE01 是众擎机器人推出的 170cm 全尺寸通用人形机器人，全身具备 32 个自由度，凭借高度拟人化的自然步态控制受到行业广泛关注，面向工业与通用服务场景。",
     "officialUrl": "https://www.engineai.com.cn",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "robotera-l7",
+    "name": "RobotEra STAR1 / L7",
+    "nameZh": "星动纪元 星动 L7",
+    "manufacturer": "RobotEra",
+    "manufacturerZh": "星动纪元",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（另有轮式人形星动 Q5）"
+    },
+    "specs": {
+      "height_cm": 171,
+      "weight_kg": null,
+      "dof_total": 55,
+      "dof_hand": 12,
+      "walk_speed_ms": null,
+      "max_speed_ms": 4,
+      "payload_kg": 20,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "原生端到端具身大模型控制",
+      "sensors": "多目视觉 + 全身本体与力觉感知",
+      "sdk": "配套自研 XHAND1 全直驱灵巧手与开发平台"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "星动纪元官网",
+        "url": "https://www.robotera.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "清华大学交叉信息院孵化，身高 171cm、全身高达 55 自由度",
+      "最高奔跑速度可达 4m/s，兼具高动态跑跳与灵巧操作能力",
+      "最大负载达 20kg，搭载自研 XHAND1 灵巧手完成调酒、分拣、扫码与装配",
+      "同系推出 44 自由度轮式服务人形机器人星动 Q5"
+    ],
+    "applications": [
+      "物流分拣与工业装配",
+      "商业调酒与接待服务",
+      "高动态全身控制与 VLA 科研"
+    ],
+    "description": "星动 L7 是清华大学持股孵化企业星动纪元推出的新一代全尺寸双足人形机器人，身高 171cm，全身拥有 55 个自由度，最高奔跑速度达 4m/s、负载 20kg，搭配自研 XHAND1 灵巧手兼顾跑跳与精细操作。",
+    "officialUrl": "https://www.robotera.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "limx-oli",
+    "name": "LimX Oli (Lite / EDU / Super)",
+    "nameZh": "逐际动力 Oli 全尺寸人形机器人",
+    "manufacturer": "LimX Dynamics",
+    "manufacturerZh": "逐际动力",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 37895,
+      "note": "海外参考价：Lite 版约 37,895 美元，EDU 版约 52,875 美元，Super 版约 77,185 美元"
+    },
+    "specs": {
+      "height_cm": 165,
+      "weight_kg": 55,
+      "dof_total": 33,
+      "dof_hand": null,
+      "walk_speed_ms": 1.39,
+      "max_speed_ms": 1.39,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 1.5,
+      "swappable_battery": null,
+      "compute_tops": 157,
+      "compute_platform": "NVIDIA Jetson Orin NX（157 TOPS，Super 版）",
+      "sensors": "多传感器深度视觉与本体感知",
+      "sdk": "开源/开放开发接口，支持仿真、遥操作与移动操作研究"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "逐际动力官网",
+        "url": "https://www.limxdynamics.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "165cm 身高、含电池 ≤55kg，具备 31（Lite/EDU）至 33（Super）主动自由度",
+      "7 自由度双臂 + 3 自由度腰部 + 6 自由度双腿，针对全身移动操作设计",
+      "行走速度约 5km/h（1.39m/s），Super 版搭载 Orin NX（157 TOPS）",
+      "提供 Lite / EDU / Super 三档配置并开放仿真与遥操作工具链"
+    ],
+    "applications": [
+      "高校具身智能与全身控制科研",
+      "遥操作与移动操作数据采集",
+      "通用人形算法验证"
+    ],
+    "description": "逐际动力 Oli 是面向具身智能研发与通用场景的全尺寸双足人形机器人，身高 165cm、含电池重 ≤55kg，提供 31 至 33 个主动自由度（含 7 自由度双臂与 3 自由度腰部），涵盖 Lite、EDU 与 Super 三个版本。",
+    "officialUrl": "https://www.limxdynamics.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "limx-tron-1",
+    "name": "LimX TRON 1",
+    "nameZh": "逐际动力 TRON 1 多形态双足机器人",
+    "manufacturer": "LimX Dynamics",
+    "manufacturerZh": "逐际动力",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "提供标准版与 EDU 教育版，官方商城与海外渠道在售"
+    },
+    "specs": {
+      "height_cm": 84.5,
+      "weight_kg": 20,
+      "dof_total": null,
+      "dof_hand": null,
+      "walk_speed_ms": 1,
+      "max_speed_ms": 3,
+      "payload_kg": 10,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": 210,
+      "runtime_h": 2,
+      "swappable_battery": "支持快换电池（46.8V 4.5Ah，1.5 小时充满）",
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "IMU + 可扩展视觉/雷达外设接口",
+      "sdk": "全开放强化学习（Isaac Gym / Isaac Lab / Mujoco）与 Python/C++ SDK"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "逐际动力官网",
+        "url": "https://www.limxdynamics.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "首创「三合一」模块化足端：支持点足、双足脚掌、双轮足三种形态快速切换",
+      "整机仅重 20kg、高 84.5cm，最大展载达 10kg，轮足模式最高速度 3m/s",
+      "可越过 20cm 障碍与 30° 斜坡，续航约 2 小时并支持换电",
+      "开箱即用支持主流强化学习仿真到真机（Sim2Real）一键部署"
+    ],
+    "applications": [
+      "双足与轮足强化学习研究",
+      "高校控制工程教学",
+      "多地形移动平台算法验证"
+    ],
+    "description": "逐际动力 TRON 1 是面向科研与教育的多形态双足机器人，高 84.5cm、重 20kg、负载 10kg，支持点足、脚掌与双轮足三种足端快换（轮足最高速度 3m/s），全面适配主流强化学习框架。",
+    "officialUrl": "https://www.limxdynamics.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "leju-kuavo-4pro",
+    "name": "Leju KUAVO 4 Pro / 5",
+    "nameZh": "乐聚 夸父 KUAVO 4 Pro / 5",
+    "manufacturer": "Leju Robotics",
+    "manufacturerZh": "乐聚机器人",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（已批量交付科研院所、车厂与展厅）"
+    },
+    "specs": {
+      "height_cm": 166,
+      "weight_kg": 55,
+      "dof_total": 40,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 10,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 2,
+      "swappable_battery": null,
+      "compute_tops": 2070,
+      "compute_platform": "开源鸿蒙 OpenHarmony + 100~2070 TOPS 可选算力配置（夸父 5）",
+      "sensors": "多目深度相机 + 激光雷达 + 六维力传感器",
+      "sdk": "支持开源鸿蒙生态、ROS2 与具身数据采集开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "乐聚机器人官网",
+        "url": "https://www.lejurobot.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "国内首款可跳跃、适应多地形行走的开源鸿蒙（OpenHarmony）全尺寸人形机器人",
+      "KUAVO 4 Pro 身高 166cm、体重 55kg、40 自由度（夸父 5 升级至 41 自由度、最高 2070 TOPS）",
+      "负载能力 10kg、续航约 2 小时，已在红旗等汽车工厂、物流与导览场景实训",
+      "深度融入华为盘古/开源鸿蒙与高校科研生态"
+    ],
+    "applications": [
+      "汽车工厂与工业制造实训",
+      "开源鸿蒙具身智能科研",
+      "商业导览与数据采集"
+    ],
+    "description": "夸父（KUAVO 4 Pro / 5）是乐聚机器人推出的全尺寸高动态开源鸿蒙人形机器人，身高约 166cm、重 55kg，拥有 40–41 个自由度与 10kg 负载，广泛用于工业产线实训、数据采集与高校科研。",
+    "officialUrl": "https://www.lejurobot.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "galaxea-r1-pro",
+    "name": "Galaxea R1 / R1 Pro",
+    "nameZh": "星海图 R1 / R1 Pro",
+    "manufacturer": "Galaxea AI",
+    "manufacturerZh": "星海图",
+    "country": "中国",
+    "category": "wheeled",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（提供 R1、R1 Pro 与轻量化 R1 Lite 版本）"
+    },
+    "specs": {
+      "height_cm": 170,
+      "weight_kg": null,
+      "dof_total": 26,
+      "dof_hand": null,
+      "max_speed_ms": null,
+      "payload_kg": 10,
+      "arm_reach_cm": 64,
+      "lift_range_cm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "compute_tops": null,
+      "compute_platform": "配套星海图端到端 VLA（OpenGalaxea G0.5）",
+      "sensors": "360° 立体视觉感知 + 腕部相机 + 全向轮式底盘",
+      "sdk": "开放分层软件栈与 VR/同构遥操作数采接口"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "星海图官网",
+        "url": "https://galaxea-ai.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "「一脑多形」代表作：170cm 轮式双臂人形（R1 24 自由度 / R1 Pro 26 自由度）",
+      "R1 Pro 搭载双七轴仿人力控机械臂，单臂长 64cm，双臂最大负载 10kg",
+      "360° 全向底盘配合折叠升降躯干，覆盖地面至高处操作空间",
+      "另有 128cm 轻量化数采与作业平台 R1 Lite（23 自由度）及开源模型 OpenGalaxea"
+    ],
+    "applications": [
+      "具身智能真机数据采集",
+      "酒店、商超与家庭整理服务",
+      "仓储拣选与工业辅助"
+    ],
+    "description": "星海图 R1 Pro 是星海图推出的 170cm 全尺寸轮式双臂具身机器人，全身 26 自由度，搭载双七轴力控机械臂（双臂最大负载 10kg）与全向移动底盘，广泛用于具身大模型真机数采与商业服务场景。",
+    "officialUrl": "https://galaxea-ai.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "ti5-t170a",
+    "name": "Ti5 Robot T170A",
+    "nameZh": "钛虎机器人 T170A（瑶光/墨翟）",
+    "manufacturer": "Ti5 Robot",
+    "manufacturerZh": "钛虎机器人",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（支持整机采购与核心关节/本体 ODM）"
+    },
+    "specs": {
+      "height_cm": 170,
+      "weight_kg": 48,
+      "dof_total": 44,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 10,
+      "arm_payload_kg": 5,
+      "joint_torque_nm": 490,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": 275,
+      "compute_platform": "NVIDIA Jetson AGX Orin 64GB（275 TOPS）",
+      "sensors": "激光雷达 + 双目视觉相机系统",
+      "sdk": "开放关节、灵巧手与整机二次开发支持"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "钛虎机器人官网",
+        "url": "https://www.ti5robot.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "170cm 全尺寸人形仅重 48kg，轻量化自研关节模组优势突出",
+      "全身 44 自由度，髋关节峰值扭矩高达 490 N·m，单手负载 5kg",
+      "标配 NVIDIA Jetson AGX Orin 64GB（275 TOPS）与激光雷达+双目视觉",
+      "具备从一体化关节、灵巧手到整机 ODM 的全套软硬件交付能力"
+    ],
+    "applications": [
+      "工业与电力巡检作业",
+      "高校科研与二次开发",
+      "人形本体与核心关节定制"
+    ],
+    "description": "钛虎 T170A 是钛虎机器人推出的第二代轻量化全尺寸人形机器人，身高 170cm 而自重仅 48kg，全身共 44 个自由度，髋关节峰值扭矩达 490 N·m、单手负载 5kg，搭载 Jetson AGX Orin 64GB。",
+    "officialUrl": "https://www.ti5robot.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "apptronik-apollo",
+    "name": "Apptronik Apollo",
+    "nameZh": "Apptronik Apollo",
+    "manufacturer": "Apptronik",
+    "manufacturerZh": "Apptronik",
+    "country": "美国",
+    "category": "humanoid",
+    "releaseYear": 2023,
+    "status": "limited",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（商业试点与 RaaS 合作，已迭代至 Apollo 2）"
+    },
+    "specs": {
+      "height_cm": 173,
+      "weight_kg": 73,
+      "dof_total": 30,
+      "dof_hand": null,
+      "walk_speed_ms": 0.8,
+      "max_speed_ms": 1.5,
+      "payload_kg": 25,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 4,
+      "swappable_battery": "支持热插拔快换电池包（每包续航约 4 小时）及有线供电",
+      "compute_tops": null,
+      "compute_platform": "机载 AIROS 系统（与 Google DeepMind Gemini Robotics 深度合作）",
+      "sensors": "头部与躯干多模态视觉 + 全身力控安全分区传感",
+      "sdk": "面向商业与科研合作伙伴（支持双足、轮式底盘或固定工位部署）"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Apptronik 官网",
+        "url": "https://apptronik.com/apollo",
+        "regions": [
+          "us",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "美国头部商用人形机器人代表，身高 173cm、重 73kg，最大搬运负载达 25kg",
+      "单块快换电池续航达 4 小时，且支持双足、轮式底盘与固定基座模块化部署",
+      "与梅赛德斯-奔驰、GXO Logistics 开展产线与仓储商业试点",
+      "Google DeepMind Gemini Robotics 官方核心硬件合作伙伴"
+    ],
+    "applications": [
+      "汽车产线物料搬运与上料",
+      "仓储物流周转箱分拣",
+      "Gemini Robotics 具身大模型部署"
+    ],
+    "description": "Apollo 是美国 Apptronik 推出的商用全尺寸人形机器人，身高 173cm、重约 73kg、30 自由度，可搬运 25kg 重物并通过快换电池实现 4 小时续航，已在奔驰与 GXO 开展试点并与 Google DeepMind 深度合作。",
+    "officialUrl": "https://apptronik.com/apollo",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "deeprobotics-lynx",
+    "name": "DEEP Robotics Lynx",
+    "nameZh": "云深处 山猫 LYNX 全地形轮足机器人",
+    "manufacturer": "DEEP Robotics",
+    "manufacturerZh": "云深处科技",
+    "country": "中国",
+    "category": "quadruped",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 17999,
+      "note": "海外渠道参考价约 17,999 美元（国内价格更优，另有轻量版山猫 S10 与工业版 M20）"
+    },
+    "specs": {
+      "length_cm": null,
+      "weight_kg": 30,
+      "dof_total": 16,
+      "max_speed_ms": 5,
+      "payload_kg": 12,
+      "max_payload_kg": null,
+      "climb_deg": 45,
+      "stair_cm": 80,
+      "ip_rating": "IP54 / 户外全地形防护",
+      "battery_wh": null,
+      "runtime_h": 3,
+      "compute_tops": null,
+      "sensors": "双向视觉 + 激光雷达选配",
+      "sdk": "支持二次开发与行业载荷扩展"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "云深处科技官网",
+        "url": "https://www.deeprobotics.cn",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "融合轮式高速与足式越障的全地形轮足机器狗，最高速度达 5m/s",
+      "整机重 30kg、负载 12kg，可攀爬高达 80cm 的高台与陡坎",
+      "支持热插拔双电池，综合续航约 3 小时（约 15km）",
+      "同系列延伸出 20kg 以内的轻量轮足 S10 与工业级 M20"
+    ],
+    "applications": [
+      "户外全地形快速巡检",
+      "应急侦察与山地搜救",
+      "轮足运动控制科研"
+    ],
+    "description": "云深处山猫 LYNX 是融合轮式速度与足式越障能力的全地形轮足四足机器人，重约 30kg、负载 12kg，最高移动速度达 5m/s，续航约 3 小时并支持热插拔换电，可攀爬 80cm 高台。",
+    "officialUrl": "https://www.deeprobotics.cn",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "paxini-dexh13",
+    "name": "PaXini DexH13",
+    "nameZh": "帕西尼 DexH13 多维触觉灵巧手",
+    "manufacturer": "PaXini Tech",
+    "manufacturerZh": "帕西尼感知科技",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "dof_total": 16,
+      "doa": 13,
+      "fingers": 4,
+      "weight_g": null,
+      "payload_kg": 5,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "多关节高自由度机电驱动",
+      "tactile": "6D 霍尔阵列多维触觉传感（近千触点，0.005N~0.01N 精度）+ 掌心视觉",
+      "tactile_points": 1000,
+      "interface": "高速工业总线 / ROS",
+      "sdk": "提供多模态触觉-视觉闭环开发接口"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "帕西尼感知科技官网",
+        "url": "https://www.paxini.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "四指 13 主动自由度（共 16 自由度），单手负载达 5kg",
+      "搭载自研 6D 霍尔阵列式多维触觉传感器，1000Hz 采样同步捕捉六维力、材质与温度",
+      "掌心内置相机实现「多维触觉 + 手眼视觉」双模态融合",
+      "配套帕西尼 TORA-ONE 人形机器人与天津 150 单元全模态触觉数采基地"
+    ],
+    "applications": [
+      "精密装配与医疗辅助",
+      "多维触觉大模型数据采集",
+      "人形与双臂机器人力触控末端"
+    ],
+    "description": "帕西尼 DexH13 是帕西尼感知推出的第二代视觉-触觉双模态四指灵巧手，具备 13 个主动自由度与 5kg 负载，集成高密度 6D 霍尔阵列式触觉传感器与掌心相机，擅长精细力控与触觉数采。",
+    "officialUrl": "https://www.paxini.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "sharpa-wave",
+    "name": "Sharpa Wave",
+    "nameZh": "Sharpa Wave 视触觉全直驱灵巧手",
+    "manufacturer": "Sharpa",
+    "manufacturerZh": "Sharpa",
+    "country": "中国/新加坡",
+    "category": "hand",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（含标准版与开发者特别版 Sharpa Wave SE）"
+    },
+    "specs": {
+      "dof_total": 22,
+      "doa": 22,
+      "fingers": 5,
+      "weight_g": null,
+      "payload_kg": null,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "22 主动自由度电机一对一全直驱",
+      "tactile": "指尖内壁 240×240 像素网格微型相机自研高分辨率视触觉阵列",
+      "tactile_points": null,
+      "interface": "高速总线接口",
+      "sdk": "支持 NVIDIA Isaac GR00T 生态与 ROS2"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Sharpa 官方渠道",
+        "url": "https://www.robotsinternational.com/Unitree-H2-PLUS-ULTIMATE-N.htm",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "由禾赛科技三位联合创始人创立，获选为 NVIDIA 首款 Isaac GR00T 参考人形（H2 Plus）标配手",
+      "人手 1:1 尺寸下实现 22 个主动自由度一对一全直驱",
+      "指尖内嵌 240×240 像素网格与微型摄像头，通过观察接触形变实现高分辨率视触觉融合",
+      "同步推出面向开发者与科研机构的 Sharpa Wave SE 特别版"
+    ],
+    "applications": [
+      "旗舰人形机器人（如 H2 Plus）标配末端",
+      "高分辨率视触觉 VLA 训练与推理",
+      "前沿灵巧操作科研"
+    ],
+    "description": "Sharpa Wave 是由禾赛科技联合创始人团队创立的 Sharpa 推出的 22 主动自由度全直驱五指灵巧手，指尖集成 240×240 像素网格高分辨率自研视触觉传感器，并被选为英伟达 Isaac GR00T 参考人形 H2 Plus 的标配灵巧手。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "dh-robotics-udh-3-7",
+    "name": "DH-Robotics UDH-3-7",
+    "nameZh": "大寰机器人 UDH-3-7 三指灵巧手",
+    "manufacturer": "DH-Robotics",
+    "manufacturerZh": "大寰机器人",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "dof_total": 7,
+      "doa": 7,
+      "fingers": 3,
+      "weight_g": null,
+      "payload_kg": 15,
+      "fingertip_force_n": 50,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "工业级高刚性多关节驱动",
+      "tactile": "支持力控与触觉配置",
+      "tactile_points": null,
+      "interface": "工业总线（RS485 / CAN / EtherCAT）",
+      "sdk": "工业机械臂与人形末端标准 SDK"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "大寰机器人官网",
+        "url": "https://www.dh-robotics.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "工业电动夹爪头部厂商大寰推出的高负载三指 7 主动自由度灵巧手",
+      "单手负载高达 15kg，指尖输出力可达 50N，专为工业级重载灵巧抓取打造",
+      "在两指夹爪的高可靠与五指手的灵活性之间取得工业落地的最佳平衡",
+      "继承大寰在工业自动化产线经过验证的寿命与稳定性"
+    ],
+    "applications": [
+      "工业产线重载异形件抓取",
+      "人形与复合机器人工业作业",
+      "汽车与 3C 装配搬运"
+    ],
+    "description": "UDH-3-7 是国内工业电动夹爪领军企业大寰机器人推出的三指高负载灵巧手，具备 7 个主动自由度、15kg 单手负载与高达 50N 的指尖力，专为工业场景的高可靠灵巧作业设计。",
+    "officialUrl": "https://www.dh-robotics.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "orbbec-gemini-335",
+    "name": "Orbbec Gemini 335 / 335L",
+    "nameZh": "奥比中光 Gemini 335 双目 3D 相机",
+    "manufacturer": "Orbbec",
+    "manufacturerZh": "奥比中光",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "camera",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 369,
+      "note": "官方商城参考价约 369–400 美元档位，另有长基线 IP65 版 Gemini 335L 与 GMSL2 版 335Lg"
+    },
+    "specs": {
+      "component_type": "主被动融合双目 3D 深度相机（内置深度芯片与 IMU）",
+      "model_series": "Gemini 335 (50mm 基线) / Gemini 335L (IP65 长基线)",
+      "weight_g": 97,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": "深度范围 0.10–20m+（最佳 0.26–3m），深度分辨率最高 1280×800@30fps，视场 90°×65°",
+      "voltage_v": 5,
+      "interface": "USB 3.0 Type-C（另有以太网 335Le / GMSL2 335Lg）",
+      "key_params": "内置自研 MX6800 深度引擎 ASIC 芯片（机内直接算深度不占主控算力），内置 IMU，功耗 <3W，支持多机硬件同步"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "Orbbec Store",
+        "url": "https://store.orbbec.com/products/gemini-335",
+        "regions": [
+          "global"
+        ]
+      },
+      {
+        "type": "official",
+        "name": "奥比中光官网",
+        "url": "https://www.orbbec.com.cn/",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
+    "highlights": [
+      "内置奥比自研 MX6800 ASIC 深度计算芯片，在相机端直接输出高精度深度与点云，不占用机器人主控算力",
+      "主被动双目融合技术，兼顾室内暗光与户外强光环境（335L 支持 IP65 防护）",
+      "仅重 97g、平均功耗低于 3W，内置 IMU 并支持多机微秒级硬件时间戳同步",
+      "已成为国内外人形机器人、AMR 与具身数采设备替代 RealSense 的主力 3D 相机"
+    ],
+    "applications": [
+      "人形与双臂机器人腕部/头部视觉",
+      "AMR 室内外导航避障",
+      "多相机同步具身数据采集"
+    ],
+    "description": "奥比中光 Gemini 335 是面向具身智能与移动机器人的旗舰级主被动双目 3D 相机，仅重 97g，内置自研 MX6800 深度芯片与 IMU，可在不占用主控算力的情况下输出 1280×800@30fps 深度点云并支持多机硬件同步。",
+    "officialUrl": "https://store.orbbec.com/products/gemini-335",
+    "dataUpdated": "2026-11"
   }
 ]

@@ -294,5 +294,78 @@
     "paperUrl": "https://arxiv.org/abs/2506.01844",
     "datasetUrl": "https://github.com/huggingface/lerobot",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "fastumi-100k",
+    "name": "FastUMI-100K",
+    "nameZh": "FastUMI-100K（手持无真机数采数据集）",
+    "org": "Northwestern Polytechnical University / FastUMI Team",
+    "orgZh": "西北工业大学 / FastUMI 团队",
+    "country": "中国",
+    "releaseDate": "2025-10",
+    "openSource": true,
+    "license": "开源（科研/社区开放）",
+    "specs": {
+      "trajectories_k": 100,
+      "hours": 600,
+      "tasks_count": "多样化日常与桌面精细操作任务",
+      "storage_tb": null,
+      "embodiments": "硬件解耦（FastUMI 手持夹爪，可迁移至多种机械臂）",
+      "modalities": "腕部第一视角鱼眼 RGB (720p@60fps) + RealSense T265 6-DoF TCP 轨迹 + 夹爪开合",
+      "annotations": "自然语言指令与多阶段任务标注",
+      "collection_method": "人类手持 FastUMI 设备脱离真机直接采集",
+      "data_format": "HDF5 / LeRobot / ROS"
+    },
+    "highlights": [
+      "目前规模最大的开源 UMI 类无真机手持数据集之一：10 万条轨迹、约 600 小时交互时长",
+      "采用 T265 实时 6-DoF 位姿追踪，轨迹连续性好、无离线 SLAM 建图失败丢帧",
+      "统一指尖对齐鱼眼视角，验证了无真机数据跨不同品牌机械臂的高效迁移",
+      "配套 FastUMI 硬件方案与转换脚本开源"
+    ],
+    "applications": [
+      "UMI 无真机策略预训练",
+      "跨机械臂零样本/少样本迁移",
+      "低成本模仿学习基准"
+    ],
+    "description": "FastUMI-100K 是基于 FastUMI 硬件解耦手持夹爪采集的大规模开源操作数据集，包含 10 万条真实人类手持操作轨迹（约 600 小时），结合 60fps 腕部鱼眼相机与 T265 实时 6-DoF 轨迹，适合跨本体 VLA 预训练。",
+    "paperUrl": "https://arxiv.org/abs/2510.08022",
+    "datasetUrl": "https://fastumi.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "nvidia-open-h-embodiment",
+    "name": "PhysicalAI-Robotics-Open-H-Embodiment",
+    "nameZh": "NVIDIA Open-H-Embodiment（医疗与手术具身数据集）",
+    "org": "NVIDIA & Healthcare Robotics Partners",
+    "orgZh": "英伟达及医疗机器人合作伙伴",
+    "country": "美国",
+    "releaseDate": "2026-06",
+    "openSource": true,
+    "license": "开源（Hugging Face 托管）",
+    "specs": {
+      "trajectories_k": null,
+      "hours": null,
+      "tasks_count": "外科手术操作与超声扫查等多类高精密医疗任务",
+      "storage_tb": null,
+      "embodiments": "多种手术机器人与医疗机械臂本体",
+      "modalities": "配对内窥镜/超声视频 + 精细运动学轨迹",
+      "annotations": "手术阶段与动作指令标注",
+      "collection_method": "多本体手术与超声操作轨迹标准化聚合",
+      "data_format": "LeRobotDataset"
+    },
+    "highlights": [
+      "首个面向手术机器人与自主超声等医疗物理 AI 的大规模多本体开源数据集集锦",
+      "全部统一转换为标准 LeRobot 数据集格式，包含配对视频与运动学数据",
+      "填补了通用家庭/工业数据集之外在亚毫米级医疗精密操作领域的空白",
+      "与 NVIDIA Isaac for Healthcare 仿真与模型管线打通"
+    ],
+    "applications": [
+      "手术机器人自主子任务学习",
+      "医疗超声机器人操作",
+      "高精度接触与微操作 VLA 研究"
+    ],
+    "description": "PhysicalAI-Robotics-Open-H-Embodiment 是英伟达联合医疗机器人社区在 Hugging Face 上开源的多本体医疗具身数据集，采用 LeRobot 标准格式汇总了手术机器人与自主超声的配对视频和运动学数据。",
+    "datasetUrl": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Open-H-Embodiment",
+    "dataUpdated": "2026-11"
   }
 ]
