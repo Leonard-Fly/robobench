@@ -10,6 +10,7 @@ import RobotDetail from './pages/RobotDetail';
 import Compare from './pages/Compare';
 import Models from './pages/Models';
 import Datasets from './pages/Datasets';
+import Deployments from './pages/Deployments';
 import News from './pages/News';
 import Contact from './pages/Contact';
 
@@ -28,6 +29,7 @@ export default function App() {
               <Route path="/compare" element={<Compare />} />
               <Route path="/models" element={<Models />} />
               <Route path="/datasets" element={<Datasets />} />
+              <Route path="/deployments" element={<Deployments />} />
               <Route path="/news" element={<News />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<Home />} />

@@ -1,16 +1,17 @@
 import { useMemo } from 'react';
-import { AI_MODELS, COLLECTION_DEVICES, DATASETS, NEWS, ROBOTS } from '../data';
+import { AI_MODELS, COLLECTION_DEVICES, DATASETS, DEPLOYMENTS, NEWS, ROBOTS } from '../data';
 import {
   localizeAiModel,
   localizeCollectionDevice,
   localizeDataset,
+  localizeDeploymentCase,
   localizeNewsItem,
   localizeRobot,
 } from '../i18n/localizeData';
 import { useLocale } from '../i18n/useLocale';
-import type { AiModel, CollectionDevice, EmbodiedDataset, NewsItem, Robot } from '../types';
+import type { AiModel, CollectionDevice, DeploymentCase, EmbodiedDataset, NewsItem, Robot } from '../types';
 
-/** 返回已按当前语言本地化的机器人 / 模型 / 数据集 / 数采设备 / 新闻数据 */
+/** 返回已按当前语言本地化的机器人 / 模型 / 数据集 / 数采设备 / 新闻 / 落地案例数据 */
 export function useLocalData() {
   const { locale } = useLocale();
   return useMemo(() => {
@@ -19,12 +20,14 @@ export function useLocalData() {
     const datasets: EmbodiedDataset[] = DATASETS.map((d) => localizeDataset(d, locale));
     const devices: CollectionDevice[] = COLLECTION_DEVICES.map((c) => localizeCollectionDevice(c, locale));
     const news: NewsItem[] = NEWS.map((n) => localizeNewsItem(n, locale));
+    const deployments: DeploymentCase[] = DEPLOYMENTS.map((d) => localizeDeploymentCase(d, locale));
     return {
       robots,
       models,
       datasets,
       devices,
       news,
+      deployments,
       getRobot: (id: string) => robots.find((r) => r.id === id),
       getModel: (id: string) => models.find((m) => m.id === id),
       getDataset: (id: string) => datasets.find((d) => d.id === id),

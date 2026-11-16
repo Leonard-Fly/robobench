@@ -1,10 +1,11 @@
-import type { AiModel, CollectionDevice, EmbodiedDataset, NewsItem, Robot } from '../types';
+import type { AiModel, CollectionDevice, DeploymentCase, EmbodiedDataset, NewsItem, Robot } from '../types';
 import type { Locale } from './config';
 import enRobots from './data/en/robots.json';
 import enModels from './data/en/models.json';
 import enDatasets from './data/en/datasets.json';
 import enDevices from './data/en/devices.json';
 import enNews from './data/en/news.json';
+import enDeployments from './data/en/deployments.json';
 import jaRobots from './data/ja/robots.json';
 import jaModels from './data/ja/models.json';
 import koRobots from './data/ko/robots.json';
@@ -119,6 +120,28 @@ export function localizeNewsItem(n: NewsItem, locale: Locale): NewsItem {
     title: ov.title ?? n.title,
     summary: ov.summary ?? n.summary,
     tags: ov.tags ?? n.tags,
+  };
+}
+
+export interface DeploymentOverride {
+  title?: string;
+  summary?: string;
+  metrics?: string[];
+}
+
+const DEPLOYMENT_OVERRIDES: Partial<Record<Locale, Record<string, DeploymentOverride>>> = {
+  en: enDeployments as Record<string, DeploymentOverride>,
+};
+
+export function localizeDeploymentCase(d: DeploymentCase, locale: Locale): DeploymentCase {
+  if (locale === 'zh') return d;
+  const ov = DEPLOYMENT_OVERRIDES[locale]?.[d.id] ?? DEPLOYMENT_OVERRIDES.en?.[d.id];
+  if (!ov) return d;
+  return {
+    ...d,
+    title: ov.title ?? d.title,
+    summary: ov.summary ?? d.summary,
+    metrics: ov.metrics ?? d.metrics,
   };
 }
 

@@ -185,3 +185,28 @@ export interface NewsItem {
   relatedRobotIds?: string[];
   dataUpdated: string; // "YYYY-MM"
 }
+
+/** 落地案例行业分类 */
+export type DeploymentSector = 'automotive' | 'logistics' | 'retail' | 'inspection';
+
+/** 落地成熟度阶段 */
+export type DeploymentStage = 'commercial' | 'pilot' | 'poc';
+
+/** 机器人 PoC 与商业落地案例条目 */
+export interface DeploymentCase {
+  id: string;
+  title: string;
+  summary: string;
+  client: string;
+  clientZh?: string;
+  robotName: string;
+  relatedRobotId?: string;
+  country: string;
+  sector: DeploymentSector;
+  stage: DeploymentStage;
+  date: string; // "YYYY-MM"
+  metrics: string[];
+  sourceName: string;
+  sourceUrl: string;
+  dataUpdated: string;
+}

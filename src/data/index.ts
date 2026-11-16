@@ -1,10 +1,11 @@
-import type { AiModel, CollectionDevice, EmbodiedDataset, NewsItem, Robot } from '../types';
+import type { AiModel, CollectionDevice, DeploymentCase, EmbodiedDataset, NewsItem, Robot } from '../types';
 import robotsJson from './robots.json';
 import robotImagesJson from './robotImages.json';
 import aiModelsJson from './aiModels.json';
 import datasetsJson from './datasets.json';
 import collectionDevicesJson from './collectionDevices.json';
 import newsJson from './news.json';
+import deploymentsJson from './deployments.json';
 
 // ============ 数据加载入口 ============
 // 机器人/模型/数据集每月更新，新闻模块每日更新：直接编辑 *.json，重新构建即可。
@@ -21,6 +22,9 @@ export const COLLECTION_DEVICES: CollectionDevice[] =
   collectionDevicesJson as unknown as CollectionDevice[];
 export const NEWS: NewsItem[] = [...(newsJson as unknown as NewsItem[])].sort((a, b) =>
   b.publishedAt.localeCompare(a.publishedAt),
+);
+export const DEPLOYMENTS: DeploymentCase[] = [...(deploymentsJson as unknown as DeploymentCase[])].sort((a, b) =>
+  b.date.localeCompare(a.date),
 );
 
 /** 全站数据版本（取所有条目中最新的 dataUpdated） */

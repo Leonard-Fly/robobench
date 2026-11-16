@@ -9,8 +9,9 @@ import { ArrowRightIcon } from '../components/Icons';
 
 export default function Home() {
   const { locale, t } = useLocale();
-  const { robots, news } = useLocalData();
+  const { robots, news, deployments } = useLocalData();
   const latestNews = news.slice(0, 3);
+  const featuredDeployments = deployments.slice(0, 3);
   const stats = [
     { label: t('home.stats.robots'), value: ROBOTS.length },
     { label: t('home.stats.models'), value: AI_MODELS.length },
@@ -155,6 +156,36 @@ export default function Home() {
                 {displayManufacturer({ manufacturer: item.company, manufacturerZh: item.companyZh }, locale)} · {item.sourceName}
               </p>
             </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto mt-16 max-w-7xl px-4 sm:px-6">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <h2 className="text-2xl font-bold text-white">{t('home.deployments.title')}</h2>
+          <Link to="/deployments" className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline">
+            {t('home.deployments.enter')} <ArrowRightIcon />
+          </Link>
+        </div>
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          {featuredDeployments.map((item) => (
+            <Link key={item.id} to="/deployments" className="card group flex flex-col justify-between p-5 hover:-translate-y-0.5">
+              <div>
+                <div className="flex items-center justify-between gap-2 text-xs text-slate-400">
+                  <span className="text-emerald-300">{t(`depstage.${item.stage}`)} · {t(`depsector.${item.sector}`)}</span>
+                  <span className="font-mono">{item.date}</span>
+                </div>
+                <h3 className="mt-2.5 line-clamp-2 font-semibold text-white transition-colors group-hover:text-accent">
+                  {item.title}
+                </h3>
+                <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-slate-400">{item.summary}</p>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {item.metrics.slice(0, 2).map((m) => (
+                  <span key={m} className="rounded bg-surface-2 px-2 py-0.5 font-mono text-xs text-slate-300">{m}</span>
+                ))}
+              </div>
+            </Link>
           ))}
         </div>
       </section>
