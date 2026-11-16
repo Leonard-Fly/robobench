@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* ============ RoboBench 设计系统 ============ */
+@theme {
+  /* 配色：深空科技风 */
+  --color-bg: #070b14;
+  --color-surface: #0d1424;
+  --color-surface-2: #131c30;
+  --color-line: rgba(148, 163, 184, 0.14);
+  --color-accent: #22d3ee;      /* 青色主强调 */
+  --color-accent-2: #818cf8;    /* 紫色次强调 */
+  --color-good: #34d399;        /* 对比中的"更优"高亮 */
+  --color-warn: #fbbf24;
+
+  --font-sans: "Inter", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #cbd5e1;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 渐变文字（站名/标题用） */
+.text-gradient {
+  background: linear-gradient(120deg, #22d3ee, #818cf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 玻璃拟态卡片 */
+.card {
+  background: linear-gradient(170deg, rgba(19, 28, 48, 0.85), rgba(13, 20, 36, 0.9));
+  border: 1px solid var(--color-line);
+  border-radius: 1rem;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  border-color: rgba(34, 211, 238, 0.35);
+  box-shadow: 0 8px 32px rgba(34, 211, 238, 0.06);
+}
+
+/* 细滚动条 */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.25); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(148, 163, 184, 0.4); }
