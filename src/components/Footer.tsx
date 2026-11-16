@@ -36,6 +36,14 @@ export default function Footer() {
       <div className="border-t border-line py-4 text-center text-xs text-slate-500">
         <span className="font-mono">{t('footer.version').replace('{v}', DATA_VERSION)}</span> · {t('footer.monthly')} · © {DATA_VERSION.slice(0, 4)} {SITE_NAME}
       </div>
+      <div className="flex items-center justify-center gap-4 text-xs text-slate-500 mt-2">
+        <span id="busuanzi_container_site_pv" style={{ display: 'none' }}>
+          总访问量 <span id="busuanzi_value_site_pv" className="font-medium text-slate-700" /> 次
+        </span>
+        <span id="busuanzi_container_site_uv" style={{ display: 'none' }}>
+          总访客数 <span id="busuanzi_value_site_uv" className="font-medium text-slate-700" /> 人
+        </span>
+      </div>
     </footer>
   );
 }
