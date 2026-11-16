@@ -656,5 +656,151 @@
       "key_params": "Up to approx. 275 TOPS (64GB version), 12-core Arm CPU, Ampere GPU, power approx. 15-60 W"
     },
     "priceNote": "Developer kit reference price approx. 1,999 USD; module pricing is separate"
+  },
+  "unitree-r1": {
+    "description": "Unitree R1 is an entry-level lightweight humanoid robot from Unitree Robotics. Standing approx. 123 cm tall and weighing approx. 29 kg with 26 DOF and dynamic motion capability, the R1 AIR starts at 4,900 USD while the EDU edition offers open development interfaces.",
+    "highlights": [
+      "R1 AIR starts at 4,900 USD, sharply lowering the entry barrier to bipedal humanoids",
+      "Approx. 123 cm tall and 29 kg with battery, compact and portable",
+      "26 DOF high-dynamic joints capable of running, cartwheels and handstands",
+      "R1 EDU edition supports research and secondary development"
+    ],
+    "applications": [
+      "University research and education",
+      "Motion control and RL validation",
+      "Human-robot interaction demos",
+      "Custom development"
+    ],
+    "specs": {
+      "swappable_battery": "Quick-swap battery supported",
+      "compute_platform": "Built-in multimodal LLM for voice and vision interaction",
+      "sensors": "Stereo vision + microphone array + dual 6-axis IMUs",
+      "sdk": "R1 EDU supports secondary development with open joint and sensor interfaces"
+    },
+    "priceNote": "R1 AIR starts at 4,900 USD, standard at 5,900 USD (approx. 39,999 RMB in China), EDU at approx. 10,500 USD"
+  },
+  "unitree-h2": {
+    "description": "Unitree H2 is Unitree Robotics' next-generation 182 cm full-size humanoid robot. Weighing approx. 70 kg with 31 DOF, up to 360 N·m knee torque, and 7 kg rated arm payload, higher-end configurations support NVIDIA Jetson Thor and optional 5-finger tactile dexterous hands.",
+    "highlights": [
+      "182 cm full-size humanoid with a bionic face for improved HRI",
+      "31 DOF across the body with up to 360 N·m peak knee torque",
+      "H2 EDU / H2 Plus supports optional NVIDIA Jetson Thor (2,070 TOPS)",
+      "972 Wh battery providing up to approx. 3 hours of runtime"
+    ],
+    "applications": [
+      "Frontier embodied AI research",
+      "Whole-body mobile manipulation",
+      "Commercial services and demonstrations",
+      "Custom development"
+    ],
+    "specs": {
+      "compute_platform": "Intel Core i5 / i7 + optional NVIDIA Jetson Thor (2,070 TOPS)",
+      "sensors": "Bionic face + multi-camera vision + LiDAR",
+      "sdk": "H2 EDU offers an open SDK with secondary development and optional dexterous hands"
+    },
+    "priceNote": "Official reference from 29,900 USD (commercial/EDU channels higher); H2 Plus with Jetson Thor approx. 100,000 USD"
+  },
+  "unitree-a2": {
+    "description": "Unitree A2 is Unitree Robotics' next-generation quadruped robot for industrial inspection and heavy payloads. Weighing approx. 37 kg with batteries, it reaches 5 m/s top speed, carries a 25 kg continuous payload with approx. 20 km range, and offers wheeled A2-W and Pro variants.",
+    "highlights": [
+      "Next-gen industrial quadruped with a top speed of 5 m/s",
+      "Approx. 25 kg continuous walking payload and up to 100 kg standing load",
+      "Hot-swappable dual batteries with approx. 20 km total range",
+      "Available in wheel-legged A2-W and Pro variants for diverse inspection needs"
+    ],
+    "applications": [
+      "Power and industrial inspection",
+      "Complex terrain mapping",
+      "Emergency rescue",
+      "Research and payload transport"
+    ],
+    "specs": {
+      "ip_rating": "IP56 / IP67 (varies by variant)",
+      "sensors": "LiDAR + depth camera (expandable on A2 Pro / A2-W)",
+      "sdk": "Open SDK supporting ROS and industrial custom development"
+    },
+    "priceNote": "Overseas reference: A2 approx. 31,800 USD, A2 Pro approx. 40,800 USD, wheel-legged A2-W from approx. 36,800 USD"
+  },
+  "booster-k1": {
+    "description": "Booster K1 is a compact humanoid robot for education, competitions and embodied AI entry. Standing approx. 95 cm tall and weighing 19.5 kg with 22 DOF, it offers three onboard compute tiers up to 200 TOPS and a complete simulation toolchain.",
+    "highlights": [
+      "95 cm tall and 19.5 kg, portable enough to carry with one hand",
+      "22 DOF built for education, RoboCup competitions and RL onboarding",
+      "Three onboard AI compute options up to 200 TOPS",
+      "Paired with Booster GYM 2.0 and open SDK"
+    ],
+    "applications": [
+      "University teaching and lab onboarding",
+      "Robotics competitions",
+      "RL locomotion control",
+      "Exhibitions and demos"
+    ],
+    "specs": {
+      "compute_platform": "Three onboard AI compute tiers: 48 / 117 / 200 TOPS",
+      "sensors": "Depth vision + microphone array",
+      "sdk": "Open API and Booster GYM 2.0, supporting ROS2 and simulation"
+    },
+    "priceNote": "Geek edition approx. 7,500 USD, EDU approx. 9,999 USD, Professional approx. 11,998-12,500 USD"
+  },
+  "booster-t2": {
+    "description": "Booster T2 is a flagship embodied development humanoid released in 2026. Standing 140 cm tall and weighing 42 kg with 31 DOF and full torque-controlled joints, the Pro edition features NVIDIA Jetson Thor (2,070 TOPS) for mobile manipulation and real-world VLA validation.",
+    "highlights": [
+      "140 cm tall with 31 DOF (7-DOF dual arms + 3-DOF waist)",
+      "Full torque-controlled joints, 3 m/s walking speed and 10 kg dual-arm payload",
+      "Pro edition powered by NVIDIA Jetson Thor T5000 (2,070 TOPS)",
+      "Supports grippers and multiple tactile dexterous hand options"
+    ],
+    "applications": [
+      "Mobile manipulation and embodied AI research",
+      "High-dynamic whole-body control",
+      "Dexterous hand and VLA real-robot validation",
+      "Custom development"
+    ],
+    "specs": {
+      "compute_platform": "Edu: ARM (375 TOPS) / Pro: NVIDIA Jetson Thor T5000 (2,070 TOPS)",
+      "sensors": "Depth camera + multi-sensor fusion",
+      "sdk": "Full joint torque control and low-level open SDK; supports grippers and dexterous hands"
+    },
+    "priceNote": "Edu from approx. 32,999-38,850 USD; Pro (with Jetson Thor) from approx. 37,999-48,999 USD"
+  },
+  "agibot-x2": {
+    "description": "AgiBot X2 is a compact, highly interactive humanoid robot from AgiBot. Standing approx. 131 cm tall and weighing approx. 35 kg (25 DOF standard, 30 DOF on Ultra), it focuses on expressive interaction and agile motion for exhibitions, research and education.",
+    "highlights": [
+      "Approx. 131 cm tall and 35 kg, balancing dynamic motion and expressive interaction",
+      "25 DOF on base model, expandable to 30 DOF on X2 Ultra",
+      "Approx. 2 hours runtime for reception, research and commercial interaction",
+      "Available in Neo / EDU / Ultra configurations"
+    ],
+    "applications": [
+      "Commercial reception and exhibitions",
+      "Embodied interaction research",
+      "University education",
+      "Custom development"
+    ],
+    "specs": {
+      "sensors": "Multi-camera vision + voice interaction module",
+      "sdk": "Developer documentation provided for interaction and motion control"
+    },
+    "priceNote": "X2 Neo official store reference approx. 25,600 USD (some channels from 27,999 USD); EDU and Ultra also available"
+  },
+  "tesla-optimus-gen3": {
+    "description": "Tesla Optimus Gen 3 advanced toward initial Fremont pilot production lines in 2026, upgrading to 22-DOF hands and Tesla's AI5 compute architecture. Full specifications and mass-production pricing remain undisclosed, with testing still focused on internal Tesla factories.",
+    "highlights": [
+      "Hands upgraded to 22 DOF for significantly finer manipulation",
+      "Initial production lines installed at Fremont factory in July 2026",
+      "Powered by Tesla's next-generation AI5 compute platform",
+      "Target 20 kg payload for factory lines and future home service"
+    ],
+    "applications": [
+      "Automotive factory line operations",
+      "Material handling and assembly",
+      "Long-term household service"
+    ],
+    "specs": {
+      "compute_platform": "Tesla in-house AI5 compute platform",
+      "sensors": "Vision-based perception + new 22-DOF hand tactile sensing",
+      "sdk": "Not open, internal production line deployment"
+    },
+    "priceNote": "Not disclosed; initial Fremont lines installed July 2026, long-term target 20,000-30,000 USD"
   }
 }

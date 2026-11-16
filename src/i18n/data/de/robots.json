@@ -656,5 +656,151 @@
       "key_params": "Bis zu ca. 275 TOPS (64-GB-Version), 12-Kern-Arm-CPU, Ampere-GPU, Leistungsaufnahme ca. 15-60 W"
     },
     "priceNote": "Richtpreis des Developer Kits ca. 1.999 USD, Module separat"
+  },
+  "unitree-r1": {
+    "description": "Unitree R1 ist ein leichter Einstiegs-Humanoide von Unitree Robotics. Mit ca. 123 cm Höhe, ca. 29 kg Gewicht, 26 Freiheitsgraden und hoher Dynamik startet der R1 AIR bei 4.900 USD, während die EDU-Edition offene Entwicklungsschnittstellen bietet.",
+    "highlights": [
+      "R1 AIR ab 4.900 USD senkt die Einstiegshürde für zweibeinige Humanoide erheblich",
+      "Ca. 123 cm groß und 29 kg inkl. Akku – kompakt und portabel",
+      "26 hochdynamische Freiheitsgrade für Laufen, Radschlag und Handstand",
+      "R1 EDU unterstützt Forschung und eigene Weiterentwicklung"
+    ],
+    "applications": [
+      "Universitätsforschung und Lehre",
+      "Bewegungssteuerung und RL-Validierung",
+      "HRI-Demonstrationen",
+      "Eigenentwicklung"
+    ],
+    "specs": {
+      "swappable_battery": "Schnellwechsel-Akku unterstützt",
+      "compute_platform": "Integriertes multimodales LLM für Sprach- und Bildinteraktion",
+      "sensors": "Stereokamera + Mikrofonarray + duale 6-Achsen-IMUs",
+      "sdk": "R1 EDU unterstützt Sekundärentwicklung mit offenen Gelenk- und Sensorschnittstellen"
+    },
+    "priceNote": "R1 AIR ab 4.900 USD, Standard 5.900 USD (ca. 39.999 RMB in China), EDU ca. 10.500 USD"
+  },
+  "unitree-h2": {
+    "description": "Unitree H2 ist der neue 182-cm-Full-Size-Humanoide von Unitree Robotics. Mit ca. 70 kg, 31 Freiheitsgraden, bis zu 360 N·m Kniedrehmoment und 7 kg Arm-Nennlast unterstützen höhere Varianten NVIDIA Jetson Thor sowie taktile 5-Finger-Hände.",
+    "highlights": [
+      "182 cm Full-Size-Humanoide mit bionischem Gesicht für bessere HRI",
+      "31 Freiheitsgrade am Gesamtkörper, bis zu 360 N·m Spitzen-Kniedrehmoment",
+      "H2 EDU / H2 Plus optional mit NVIDIA Jetson Thor (2.070 TOPS)",
+      "972-Wh-Akku für bis zu ca. 3 Stunden Laufzeit"
+    ],
+    "applications": [
+      "Spitzenforschung in Embodied AI",
+      "Ganzkörper-Mobile-Manipulation",
+      "Kommerzielle Dienste und Demos",
+      "Eigenentwicklung"
+    ],
+    "specs": {
+      "compute_platform": "Intel Core i5 / i7 + optional NVIDIA Jetson Thor (2.070 TOPS)",
+      "sensors": "Bionisches Gesicht + Mehrkamera-Vision + LiDAR",
+      "sdk": "H2 EDU bietet offenes SDK, Sekundärentwicklung und optionale geschickte Hände"
+    },
+    "priceNote": "Offizieller Richtpreis ab 29.900 USD (Commercial/EDU höher); H2 Plus mit Jetson Thor ca. 100.000 USD"
+  },
+  "unitree-a2": {
+    "description": "Unitree A2 ist der neue Industrie-Quadruped von Unitree Robotics für Inspektion und hohe Nutzlasten. Mit ca. 37 kg inkl. Akkus erreicht er 5 m/s, trägt 25 kg Dauerlast bei ca. 20 km Reichweite und bietet Rad-Bein- (A2-W) sowie Pro-Varianten.",
+    "highlights": [
+      "Industrie-Quadruped der nächsten Generation mit bis zu 5 m/s Spitze",
+      "Ca. 25 kg Dauer-Gehnutzlast und bis zu 100 kg Standlast",
+      "Hot-Swap-Doppelakkus für ca. 20 km Gesamtreichweite",
+      "Als Rad-Bein-Variante A2-W und Pro-Version verfügbar"
+    ],
+    "applications": [
+      "Energie- und Industrieinspektion",
+      "Kartierung in schwierigem Gelände",
+      "Rettungseinsätze",
+      "Forschung und Lastentransport"
+    ],
+    "specs": {
+      "ip_rating": "IP56 / IP67 (je nach Variante)",
+      "sensors": "LiDAR + Tiefenkamera (bei A2 Pro / A2-W erweiterbar)",
+      "sdk": "Offenes SDK mit ROS- und Industrie-Entwicklungsunterstützung"
+    },
+    "priceNote": "Auslands-Richtpreis: A2 ca. 31.800 USD, A2 Pro ca. 40.800 USD, Rad-Bein A2-W ab ca. 36.800 USD"
+  },
+  "booster-k1": {
+    "description": "Booster K1 ist ein kompakter Humanoide für Lehre, Wettbewerbe und den Einstieg in Embodied AI. Bei ca. 95 cm Höhe, 19,5 kg Gewicht und 22 Freiheitsgraden bietet er drei Onboard-Rechenstufen bis 200 TOPS und eine vollständige Simulations-Toolchain.",
+    "highlights": [
+      "95 cm groß und 19,5 kg leicht – mit einer Hand tragbar",
+      "22 Freiheitsgrade für Lehre, RoboCup und RL-Einstieg",
+      "Drei Onboard-KI-Rechenoptionen bis 200 TOPS",
+      "Kombiniert mit Booster GYM 2.0 und offenem SDK"
+    ],
+    "applications": [
+      "Hochschullehre und Labor-Einstieg",
+      "Robotik-Wettbewerbe",
+      "RL-Lokomotionssteuerung",
+      "Messen und Demos"
+    ],
+    "specs": {
+      "compute_platform": "Drei Onboard-KI-Rechenstufen: 48 / 117 / 200 TOPS",
+      "sensors": "Tiefenvision + Mikrofonarray",
+      "sdk": "Offene API und Booster GYM 2.0, ROS2- und Simulationssupport"
+    },
+    "priceNote": "Geek-Edition ca. 7.500 USD, EDU ca. 9.999 USD, Professional ca. 11.998-12.500 USD"
+  },
+  "booster-t2": {
+    "description": "Booster T2 ist ein 2026 veröffentlichter Flaggschiff-Humanoide für Embodied-AI-Entwicklung. Mit 140 cm, 42 kg, 31 Freiheitsgraden und voller Gelenkdrehmomentregelung nutzt die Pro-Version NVIDIA Jetson Thor (2.070 TOPS) für mobile Manipulation und VLA-Realtests.",
+    "highlights": [
+      "140 cm groß mit 31 Freiheitsgraden (7-DOF-Doppelarme + 3-DOF-Taille)",
+      "Volle Drehmomentregelung, 3 m/s Gehgeschwindigkeit und 10 kg Armlast",
+      "Pro-Version mit NVIDIA Jetson Thor T5000 (2.070 TOPS)",
+      "Unterstützt Greifer und verschiedene taktile geschickte Hände"
+    ],
+    "applications": [
+      "Mobile Manipulation und Embodied-AI-Forschung",
+      "Hochdynamische Ganzkörpersteuerung",
+      "Hardware-Validierung von Händen und VLA-Modellen",
+      "Eigenentwicklung"
+    ],
+    "specs": {
+      "compute_platform": "Edu: ARM (375 TOPS) / Pro: NVIDIA Jetson Thor T5000 (2.070 TOPS)",
+      "sensors": "Tiefenkamera + Multi-Sensor-Fusion",
+      "sdk": "Volle Drehmomentregelung und offenes Low-Level-SDK; Greifer und Hände optional"
+    },
+    "priceNote": "Edu ab ca. 32.999-38.850 USD; Pro (mit Jetson Thor) ab ca. 37.999-48.999 USD"
+  },
+  "agibot-x2": {
+    "description": "AgiBot X2 ist ein kompakter, interaktionsstarker Humanoide von AgiBot. Mit ca. 131 cm Höhe und ca. 35 kg Gewicht (25 DDL Standard, 30 DDL bei Ultra) verbindet er ausdrucksstarke Interaktion und agile Bewegung für Messen, Forschung und Lehre.",
+    "highlights": [
+      "Ca. 131 cm und 35 kg – Balance aus Dynamik und ausdrucksstarker Interaktion",
+      "25 Freiheitsgrade in der Basis, erweiterbar auf 30 beim X2 Ultra",
+      "Ca. 2 Stunden Laufzeit für Empfang, Forschung und kommerzielle Interaktion",
+      "In den Konfigurationen Neo / EDU / Ultra erhältlich"
+    ],
+    "applications": [
+      "Kommerzieller Empfang und Ausstellungen",
+      "Embodied-Interaction-Forschung",
+      "Hochschullehre",
+      "Eigenentwicklung"
+    ],
+    "specs": {
+      "sensors": "Mehrkamera-Vision + Sprachinteraktionsmodul",
+      "sdk": "Entwicklerdokumentation für Interaktion und Bewegungssteuerung"
+    },
+    "priceNote": "X2 Neo im offiziellen Store ca. 25.600 USD (einige Kanäle ab 27.999 USD); EDU und Ultra verfügbar"
+  },
+  "tesla-optimus-gen3": {
+    "description": "Tesla Optimus Gen 3 schritt 2026 zur Installation erster Pilotlinien in Fremont voran und erhielt auf 22 Freiheitsgrade aufgerüstete Hände sowie Teslas AI5-Chip-Architektur. Vollständige Spezifikationen und Serienpreise bleiben unveröffentlicht; Tests laufen primär werkseigen.",
+    "highlights": [
+      "Hände auf 22 Freiheitsgrade für deutlich feinere Manipulation aufgerüstet",
+      "Erste Produktionslinien im Juli 2026 im Werk Fremont installiert",
+      "Angetrieben von Teslas neuer AI5-Rechenplattform",
+      "Ziel-Nutzlast ca. 20 kg für Fabriklinien und künftige Haushaltsdienste"
+    ],
+    "applications": [
+      "Automobilwerk-Linienbetrieb",
+      "Materialtransport und Montage",
+      "Langfristige Haushaltsdienste"
+    ],
+    "specs": {
+      "compute_platform": "Teslas eigene AI5-Rechenplattform",
+      "sensors": "Visionsbasierte Wahrnehmung + neue taktile 22-DOF-Hand-Sensorik",
+      "sdk": "Nicht offen, interner Produktionseinsatz"
+    },
+    "priceNote": "Nicht veröffentlicht; erste Fremont-Linien Juli 2026 installiert, Langfristziel 20.000-30.000 USD"
   }
 }

@@ -375,5 +375,98 @@
       "use_case": "Interactive simulation for training policies, long-horizon planning and vision-language models",
       "benchmark_note": "Policies trained within it transfer to real robots, validating the feasibility of world models as simulators"
     }
+  },
+  "nvidia-gr00t-n1-7": {
+    "description": "NVIDIA Isaac GR00T N1.7 is an open 3B humanoid VLA model released by NVIDIA in 2026. Combining a Cosmos-Reason2-2B VLM backbone with a flow-matching action head and 20K hours of human video pre-training, it runs at ~28 Hz on Jetson Thor and is commercially usable.",
+    "highlights": [
+      "3B open humanoid foundation model for commercial use, reaching GA in Nov 2026",
+      "Pre-trained with 20K hours of EgoScale human video for stronger instruction following",
+      "Achieves ~28 Hz edge inference on Jetson AGX Thor",
+      "Full LeRobot dataset format and post-training workflow support"
+    ],
+    "applications": [
+      "General humanoid manipulation",
+      "Commercial deployment base model",
+      "Cross-embodiment post-training"
+    ],
+    "specs": {
+      "architecture": "Dual system: VLM backbone (Cosmos-Reason2-2B) + flow-matching diffusion action head",
+      "backbone": "Cosmos-Reason2-2B / Qwen3-VL",
+      "action_head": "Flow Matching continuous action chunks",
+      "training_data": "Bimanual, semi-humanoid, expansive humanoid data + 20K hours EgoScale human video",
+      "embodiments": "General humanoid robots and bimanual manipulators",
+      "cross_embodiment": "Strong; supports fine-tuning transfer in LeRobot format",
+      "benchmark_note": "With TensorRT: ~40 Hz on RTX PRO 6000, ~35.9 Hz on H100, ~28 Hz on Jetson AGX Thor",
+      "deploy_note": "Requires ≥16 GB VRAM for inference; ≥40 GB VRAM recommended for fine-tuning"
+    }
+  },
+  "molmoact2": {
+    "description": "MolmoAct2 is a fully open VLA model released by Ai2 in May 2026. It grafts a flow-matching continuous-action expert onto the Molmo2-ER embodied-reasoning VLM via per-layer KV conditioning, open-sourcing weights, code, 720 hours of bimanual YAM data, and OpenFAST Tokenizer while outperforming π0.5.",
+    "highlights": [
+      "Fully open weights, training code, 720-hour bimanual dataset and tokenizer",
+      "Built on Molmo2-ER, leading across 13 embodied-reasoning benchmarks",
+      "Zero-shot out-of-the-box deployment on DROID and SO-100/101",
+      "MolmoAct2-Think adaptive depth variant lowers inference latency"
+    ],
+    "applications": [
+      "Bimanual dexterous manipulation",
+      "Zero-shot deployment on low-cost robot arms",
+      "Embodied spatial reasoning and open research"
+    ],
+    "specs": {
+      "architecture": "Molmo2-ER autoregressive VLM + per-layer KV-conditioned flow-matching action expert",
+      "backbone": "Molmo2-ER (SigLIP2 ViT + LLM)",
+      "action_head": "Flow Matching continuous action expert",
+      "training_data": "720h bimanual YAM + DROID + SO-100/101 + multimodal web and reasoning data",
+      "embodiments": "Franka DROID, bimanual YAM, SO-100/101, etc.",
+      "cross_embodiment": "Strong; DROID and SO-100/101 checkpoints deploy zero-shot out of the box",
+      "benchmark_note": "Significantly outperforms π0.5 on LIBERO, RoboEval and 8 real-world bimanual tasks",
+      "deploy_note": "Offers MolmoAct2-Think adaptive-depth reasoning variant for lower latency"
+    }
+  },
+  "nvidia-cosmos-3": {
+    "description": "NVIDIA Cosmos 3 is an omnimodal Physical AI world foundation model released in June 2026. It unifies language reasoning, video world simulation and robot action tokens in one framework, with open weights in 16B Nano and 64B Super sizes.",
+    "highlights": [
+      "Unifies VLM, video world simulator and world-action model (WAM) in a single architecture",
+      "Open weights available in 16B Nano and 64B Super sizes",
+      "Released under Linux Foundation OpenMDW-1.1 license with datasets and benchmarks",
+      "Closes the Physical AI loop across synthetic data generation and policy evaluation"
+    ],
+    "applications": [
+      "Unified world-action robot policies",
+      "Physics-accurate synthetic data generation",
+      "Embodied AI and autonomous driving simulation"
+    ],
+    "specs": {
+      "architecture": "Omnimodal world foundation model unifying understanding, world generation and action tokens",
+      "modality": "Text, image, video, audio and robot actions",
+      "action_conditioned": "Treats action as a core modality, outputting physically grounded control signals",
+      "training_data": "Large-scale real and synthetic Physical AI multimodal data",
+      "use_case": "Generalist embodied policies (WAM), synthetic training data and physics simulation",
+      "benchmark_note": "Available in 16B Nano and 64B Super; ranked #1 open policy model on RoboArena at report release"
+    }
+  },
+  "google-genie-3": {
+    "description": "Genie 3 is a real-time interactive world model launched by Google DeepMind in 2026. Using a latent action model, it is the first to generate persistent, physically coherent explorable 3D environments at 24 fps in real time, available as a closed API.",
+    "highlights": [
+      "Breaks through to 24 fps real-time generation for truly interactive exploration",
+      "Generated 3D environments maintain stronger spatial and temporal persistence",
+      "Learns a compressed latent action space from video without labeled actions",
+      "Provides high-fidelity online interactive environments for generalist AI agents"
+    ],
+    "applications": [
+      "Real-time interactive agent training",
+      "Online embodied environment simulation",
+      "Frontier world model research"
+    ],
+    "specs": {
+      "architecture": "Latent action model + real-time interactive 3D world generation",
+      "modality": "Real-time interactive 3D environment video",
+      "horizon": "Persistent real-time interactive 3D environments",
+      "action_conditioned": "Supports real-time user and agent action control with physical coherence",
+      "training_data": "Large-scale unlabeled video data",
+      "use_case": "Real-time interactive agent training and embodied environment simulation",
+      "benchmark_note": "First world model to generate persistent interactive 3D environments at 24 fps in real time"
+    }
   }
 }

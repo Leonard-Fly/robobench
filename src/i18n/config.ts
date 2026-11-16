@@ -31,11 +31,11 @@ export const LOCALE_META: Record<Locale, LocaleMeta> = Object.fromEntries(
 /** 参考汇率（1 USD 兑各货币），更新数据库时一并核对 */
 export const USD_RATES: Record<LocaleMeta['currency'], number> = {
   USD: 1,
-  CNY: 7.1,
-  JPY: 155,
-  KRW: 1390,
-  EUR: 0.92,
+  CNY: 6.71,
+  JPY: 160,
+  KRW: 1337,
+  EUR: 0.9,
 };
 
 /** 汇率参考日期（显示在换算价格的提示中） */
-export const RATES_DATE = '2025-11';
+export const RATES_DATE = '2026-11';

@@ -591,5 +591,152 @@
     "description": "UniSim 是谷歌 DeepMind 联合伯克利等于 2023 年提出的通用交互式世界模拟器，用视频扩散模型根据文本或动作生成后续画面，可在其中训练策略并迁移到真实机器人，奠定了世界模型作仿真器的思路。",
     "paperUrl": "https://arxiv.org/abs/2310.06114",
     "dataUpdated": "2025-11"
+  },
+  {
+    "id": "nvidia-gr00t-n1-7",
+    "name": "NVIDIA Isaac GR00T N1.7",
+    "kind": "vla",
+    "org": "NVIDIA",
+    "orgZh": "英伟达",
+    "country": "美国",
+    "releaseDate": "2026-04",
+    "openSource": true,
+    "license": "Apache-2.0（代码）/ NVIDIA Open Model License（权重，可商用）",
+    "specs": {
+      "params_b": 3,
+      "architecture": "双系统：VLM 主干（Cosmos-Reason2-2B）+ 流匹配扩散动作头",
+      "backbone": "Cosmos-Reason2-2B / Qwen3-VL",
+      "action_head": "Flow Matching 连续动作块",
+      "control_freq_hz": 40,
+      "training_data": "双臂、半人形、大规模人形数据 + 2 万小时 EgoScale 人类视频",
+      "embodiments": "通用人形机器人与多种双臂机械臂",
+      "cross_embodiment": "强，支持 LeRobot 格式微调迁移",
+      "benchmark_note": "TensorRT 加速下 RTX PRO 6000 约 40Hz、H100 约 35.9Hz、Jetson AGX Thor 约 28Hz",
+      "deploy_note": "推理需 ≥16GB 显存，微调建议 ≥40GB 显存"
+    },
+    "highlights": [
+      "3B 参数可商用开放人形基础模型，2026 年 11 月进入 GA 正式版",
+      "引入 2 万小时 EgoScale 人类视频预训练，指令遵循与泛化更强",
+      "Jetson AGX Thor 上可达 28Hz 端侧推理",
+      "全面适配 LeRobot 数据格式与后训练工作流"
+    ],
+    "applications": [
+      "人形机器人通用操作",
+      "商用部署与产品化基座",
+      "跨本体后训练微调"
+    ],
+    "description": "NVIDIA Isaac GR00T N1.7 是英伟达于 2026 年推出的 3B 开放人形 VLA 模型，采用 Cosmos-Reason2-2B 主干与流匹配动作头，加入 2 万小时人类视频预训练并在 Jetson Thor 上实现约 28Hz 推理，支持商用。",
+    "paperUrl": "https://arxiv.org/abs/2503.14734",
+    "codeUrl": "https://github.com/NVIDIA/Isaac-GR00T",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "molmoact2",
+    "name": "MolmoAct2",
+    "kind": "vla",
+    "org": "Allen Institute for AI (Ai2)",
+    "orgZh": "艾伦人工智能研究所 (Ai2)",
+    "country": "美国",
+    "releaseDate": "2026-05",
+    "openSource": true,
+    "license": "全开源（权重、代码与训练数据）",
+    "specs": {
+      "params_b": null,
+      "architecture": "Molmo2-ER 自回归 VLM + 逐层 KV 条件流匹配动作专家",
+      "backbone": "Molmo2-ER（SigLIP2 ViT + LLM）",
+      "action_head": "Flow Matching 连续动作专家",
+      "control_freq_hz": null,
+      "training_data": "720 小时双臂 YAM 数据 + DROID + SO-100/101 + 多模态网页与推理数据",
+      "embodiments": "Franka DROID、双臂 YAM、SO-100/101 等",
+      "cross_embodiment": "强，DROID 与 SO-100/101 检查点支持开箱即用零样本部署",
+      "benchmark_note": "在 LIBERO、RoboEval 与 8 项双臂真机任务上显著超越 π0.5",
+      "deploy_note": "提供 MolmoAct2-Think 自适应深度推理变体以降低延迟"
+    },
+    "highlights": [
+      "权重、训练代码、720 小时双臂数据与分词器全面开源",
+      "基于 Molmo2-ER 强具身推理基座，跨 13 项具身推理基准领先",
+      "DROID 与 SO-100/101 无需额外微调即可开箱即用",
+      "提出 MolmoAct2-Think 仅对变化区域重预测深度以降低延迟"
+    ],
+    "applications": [
+      "双臂灵巧操作",
+      "低成本桌面机械臂零样本部署",
+      "具身空间推理与开源研究"
+    ],
+    "description": "MolmoAct2 是 Ai2 于 2026 年 5 月发布的全开源 VLA 模型，将 Molmo2-ER 具身推理基座与逐层 KV 条件的流匹配动作专家结合，并开源了 720 小时双臂 YAM 数据集与 OpenFAST 分词器，真机表现超越 π0.5。",
+    "paperUrl": "https://arxiv.org/abs/2605.02881",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "nvidia-cosmos-3",
+    "name": "NVIDIA Cosmos 3",
+    "kind": "world-model",
+    "org": "NVIDIA",
+    "orgZh": "英伟达",
+    "country": "美国",
+    "releaseDate": "2026-06",
+    "openSource": true,
+    "license": "OpenMDW-1.1 License",
+    "specs": {
+      "params_b": 16,
+      "architecture": "全模态世界基础模型，统一理解、世界生成与动作 token 生成",
+      "modality": "文本、图像、视频、音频与机器人动作",
+      "resolution": null,
+      "horizon": null,
+      "action_conditioned": "将动作作为核心模态，直接输出物理接地的控制信号",
+      "training_data": "大规模真实与合成物理 AI 多模态数据",
+      "use_case": "通用具身策略（World-Action Model）、合成训练数据与物理仿真",
+      "benchmark_note": "提供 16B Nano 与 64B Super 版本；在 RoboArena 策略评测中曾获开源第一"
+    },
+    "highlights": [
+      "将 VLM、视频世界模拟与动作模型（WAM）统一为单一架构",
+      "提供 16B Nano 与 64B Super 开放权重",
+      "采用 Linux 基金会 OpenMDW-1.1 开放协议，含数据与评测基准",
+      "在合成数据生成与策略评估上实现物理 AI 闭环"
+    ],
+    "applications": [
+      "世界-动作统一策略",
+      "物理一致合成数据生成",
+      "具身智能与自动驾驶仿真"
+    ],
+    "description": "NVIDIA Cosmos 3 是英伟达于 2026 年 6 月发布的全模态物理 AI 世界基础模型，把语言推理、视频世界模拟与机器人动作 token 统一在单一框架中，提供 16B Nano 与 64B Super 开放权重。",
+    "paperUrl": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf",
+    "codeUrl": "https://github.com/nvidia/cosmos",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "google-genie-3",
+    "name": "Genie 3",
+    "kind": "world-model",
+    "org": "Google DeepMind",
+    "orgZh": "谷歌 DeepMind",
+    "country": "美国",
+    "releaseDate": "2026-01",
+    "openSource": false,
+    "license": "未开源（闭源 API）",
+    "specs": {
+      "params_b": null,
+      "architecture": "隐空间动作模型 + 实时交互式 3D 世界生成",
+      "modality": "实时可交互 3D 环境视频",
+      "resolution": null,
+      "horizon": "持久化的实时交互式 3D 环境",
+      "action_conditioned": "支持用户与智能体实时动作控制并保持物理连贯",
+      "training_data": "大规模无动作标注视频数据",
+      "use_case": "实时交互式智能体训练与具身环境仿真",
+      "benchmark_note": "首个实现 24fps 实时生成持久交互式 3D 环境的世界模型"
+    },
+    "highlights": [
+      "突破至 24fps 实时生成，具备真正可交互的实时体验",
+      "生成的 3D 环境具备更强的空间与时序持久性",
+      "无监督从视频中学习压缩隐动作空间",
+      "为通用具身智能体提供高保真在线交互环境"
+    ],
+    "applications": [
+      "实时交互式智能体训练",
+      "具身环境在线仿真",
+      "世界模型前沿研究"
+    ],
+    "description": "Genie 3 是谷歌 DeepMind 于 2026 年推出的实时交互式世界模型，基于隐空间动作建模，首次实现以 24fps 实时生成持久且物理连贯的可探索 3D 环境，目前以闭源方式提供能力。",
+    "dataUpdated": "2026-11"
   }
 ]

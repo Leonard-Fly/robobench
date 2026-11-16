@@ -375,5 +375,98 @@
       "use_case": "ポリシーの学習、長期計画、視覚言語モデルのためのインタラクティブなシミュレーション",
       "benchmark_note": "その中で学習したポリシーを実ロボットに転移でき、ワールドモデルをシミュレータとして使う実現可能性を検証しました"
     }
+  },
+  "nvidia-gr00t-n1-7": {
+    "description": "NVIDIA Isaac GR00T N1.7 は 2026 年に公開された 3B パラメータの商用利用可能なオープン・ヒューマノイド VLA モデルです。Cosmos-Reason2-2B VLM とフローマッチング行動ヘッドに 2 万時間の人手映像事前学習を組み合わせ、Jetson Thor 上で約 28 Hz 動作します。",
+    "highlights": [
+      "商用利用可能な 3B オープン・ヒューマノイド基盤モデル（2026 年 11 月 GA 版）",
+      "2 万時間の EgoScale 人間動画事前学習により指示追従性と汎化を強化",
+      "Jetson AGX Thor 上で約 28 Hz のエッジ推論を達成",
+      "LeRobot データ形式と事後学習ワークフローに完全対応"
+    ],
+    "applications": [
+      "汎用ヒューマノイド操作",
+      "商用ロボットの基盤モデル",
+      "異種本体への事後学習適応"
+    ],
+    "specs": {
+      "architecture": "デュアルシステム：VLM バックボーン（Cosmos-Reason2-2B）+ フローマッチング拡散行動ヘッド",
+      "backbone": "Cosmos-Reason2-2B / Qwen3-VL",
+      "action_head": "Flow Matching 連続行動チャンク",
+      "training_data": "双腕・半人型・大規模ヒューマノイドデータ + 2 万時間 EgoScale 人間動画",
+      "embodiments": "汎用ヒューマノイドおよび各種双腕マニピュレータ",
+      "cross_embodiment": "高い適応性；LeRobot 形式でのファインチューニング転移に対応",
+      "benchmark_note": "TensorRT 最適化で RTX PRO 6000 約 40 Hz、H100 約 35.9 Hz、Jetson AGX Thor 約 28 Hz",
+      "deploy_note": "推論に 16 GB 以上の VRAM、ファインチューニングに 40 GB 以上を推奨"
+    }
+  },
+  "molmoact2": {
+    "description": "MolmoAct2 は Ai2 が 2026 年 5 月に公開した完全オープンソースの VLA モデルです。Molmo2-ER 身体性推論 VLM に層別 KV 条件付きフローマッチング行動エキスパートを結合し、720 時間の双腕 YAM データや OpenFAST トークナイザーも公開して π0.5 を上回る性能を示しました。",
+    "highlights": [
+      "重み・学習コード・720 時間双腕データセット・トークナイザーを完全公開",
+      "13 の身体性推論ベンチマークで首位級の Molmo2-ER を基盤に採用",
+      "DROID および SO-100/101 で追加学習なしのゼロショット実機動作が可能",
+      "変化領域のみ深度を再予測する MolmoAct2-Think で推論遅延を削減"
+    ],
+    "applications": [
+      "双腕器用操作",
+      "低コスト卓上アームへのゼロショット展開",
+      "身体性空間推論・オープン研究"
+    ],
+    "specs": {
+      "architecture": "Molmo2-ER 自己回帰 VLM + 層別 KV 条件付きフローマッチング行動エキスパート",
+      "backbone": "Molmo2-ER（SigLIP2 ViT + LLM）",
+      "action_head": "Flow Matching 連続行動エキスパート",
+      "training_data": "720 時間双腕 YAM + DROID + SO-100/101 + マルチモーダル Web・推論データ",
+      "embodiments": "Franka DROID、双腕 YAM、SO-100/101 など",
+      "cross_embodiment": "強力；DROID と SO-100/101 チェックポイントはそのまま展開可能",
+      "benchmark_note": "LIBERO、RoboEval、および 8 種の双腕実機タスクで π0.5 を大きく上回る",
+      "deploy_note": "低遅延向けの適応的深度推論バリアント MolmoAct2-Think を提供"
+    }
+  },
+  "nvidia-cosmos-3": {
+    "description": "NVIDIA Cosmos 3 は 2026 年 6 月に公開された全モダリティ対応の物理 AI 世界基盤モデルです。言語推論・動画世界シミュレーション・ロボット行動トークンを単一フレームワークに統合し、16B Nano と 64B Super のオープン重みを提供します。",
+    "highlights": [
+      "VLM・動画世界シミュレータ・世界行動モデル（WAM）を単一構造に統合",
+      "16B Nano と 64B Super のオープンウェイトを提供",
+      "Linux Foundation OpenMDW-1.1 ライセンスでデータ・ベンチマークを公開",
+      "合成データ生成から方策評価まで物理 AI のループを完結"
+    ],
+    "applications": [
+      "統合型世界-行動ロボット方策",
+      "物理整合性の高い合成データ生成",
+      "身体性 AI・自動運転シミュレーション"
+    ],
+    "specs": {
+      "architecture": "理解・世界生成・行動トークン生成を統合したオムニモーダル世界基盤モデル",
+      "modality": "テキスト・画像・動画・音声およびロボット行動",
+      "action_conditioned": "行動を中核モダリティとして扱い、物理に接地した制御信号を直接出力",
+      "training_data": "大規模な実世界および合成の物理 AI マルチモーダルデータ",
+      "use_case": "汎用身体性方策（WAM）、合成学習データ生成、物理シミュレーション",
+      "benchmark_note": "16B Nano / 64B Super を提供；公開時の RoboArena 方策評価でオープンモデル首位を獲得"
+    }
+  },
+  "google-genie-3": {
+    "description": "Genie 3 は Google DeepMind が 2026 年に発表したリアルタイム対話型世界モデルです。潜在行動モデルを用い、24 fps で持続的かつ物理的に一貫した探索可能 3D 環境をリアルタイム生成する初のモデルで、クローズド API として提供されます。",
+    "highlights": [
+      "24 fps のリアルタイム生成を実現し、真の対話的探索が可能",
+      "生成された 3D 環境の空間的・時間的な持続性が大幅に向上",
+      "行動ラベルなしの動画から圧縮潜在行動空間を教師なしで学習",
+      "汎用 AI エージェント向けの高精細オンライン対話環境を提供"
+    ],
+    "applications": [
+      "リアルタイム対話型エージェント学習",
+      "オンライン身体性環境シミュレーション",
+      "最先端の世界モデル研究"
+    ],
+    "specs": {
+      "architecture": "潜在行動モデル + リアルタイム対話型 3D 世界生成",
+      "modality": "リアルタイム対話型 3D 環境動画",
+      "horizon": "持続的なリアルタイム対話型 3D 環境",
+      "action_conditioned": "ユーザーおよびエージェントのリアルタイム行動制御と物理整合性を維持",
+      "training_data": "大規模な行動ラベルなし動画データ",
+      "use_case": "リアルタイム対話型エージェント学習と身体性環境シミュレーション",
+      "benchmark_note": "24 fps で持続的な対話型 3D 環境をリアルタイム生成した初の世界モデル"
+    }
   }
 }

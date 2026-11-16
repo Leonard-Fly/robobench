@@ -1858,5 +1858,425 @@
     "description": "Jetson AGX Orin 是英伟达面向机器人的边缘 AI 计算平台，64GB 版算力最高约 275 TOPS，功耗可在 15-60W 之间调节，配套 JetPack 与 Isaac 生态，是人形与四足机器人常用主控。",
     "officialUrl": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
     "dataUpdated": "2025-11"
+  },
+  {
+    "id": "unitree-r1",
+    "name": "Unitree R1",
+    "nameZh": "宇树 R1",
+    "manufacturer": "Unitree Robotics",
+    "manufacturerZh": "宇树科技",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": 39999,
+      "usd": 4900,
+      "note": "R1 AIR 起售价 4,900 美元，标准版 5,900 美元（国内参考价约 3.99 万元），EDU 版约 10,500 美元"
+    },
+    "specs": {
+      "height_cm": 123,
+      "weight_kg": 29,
+      "dof_total": 26,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 2,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 1,
+      "swappable_battery": "支持快换电池",
+      "compute_tops": null,
+      "compute_platform": "内置语音与图像多模态大模型交互",
+      "sensors": "双目视觉 + 麦克风阵列 + 双六轴 IMU",
+      "sdk": "R1 EDU 版支持二次开发与开放关节/传感器接口"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "Unitree 官方商城",
+        "url": "https://shop.unitree.com/products/unitree-r1",
+        "regions": [
+          "global"
+        ]
+      },
+      {
+        "type": "official",
+        "name": "宇树官网",
+        "url": "https://www.unitree.com/R1",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
+    "highlights": [
+      "R1 AIR 起售价低至 4,900 美元，大幅降低双足人形入门门槛",
+      "身高约 123cm、含电池约 29kg，轻巧便携",
+      "26 自由度高动态关节，可完成奔跑、侧手翻与倒立等动作",
+      "提供 R1 EDU 版支持科研与二次开发"
+    ],
+    "applications": [
+      "高校科研与教学",
+      "运动控制与强化学习验证",
+      "人机交互展示",
+      "二次开发"
+    ],
+    "description": "宇树 R1 是宇树科技推出的轻量化入门级人形机器人，身高约 123cm、重量约 29kg，具备 26 个自由度并支持高动态运动，R1 AIR 起售价低至 4,900 美元，EDU 版提供开放开发接口。",
+    "officialUrl": "https://www.unitree.com/R1",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "unitree-h2",
+    "name": "Unitree H2",
+    "nameZh": "宇树 H2",
+    "manufacturer": "Unitree Robotics",
+    "manufacturerZh": "宇树科技",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 29900,
+      "note": "官方参考价 29,900 美元起（商业/EDU 渠道价更高）；H2 Plus 配 Jetson Thor 约 10 万美元"
+    },
+    "specs": {
+      "height_cm": 182,
+      "weight_kg": 70,
+      "dof_total": 31,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 15,
+      "arm_payload_kg": 7,
+      "joint_torque_nm": 360,
+      "battery_wh": 972,
+      "runtime_h": 3,
+      "swappable_battery": null,
+      "compute_tops": 2070,
+      "compute_platform": "Intel Core i5 / i7 + 可选 NVIDIA Jetson Thor（2070 TOPS）",
+      "sensors": "仿生人脸 + 多目视觉 + 激光雷达",
+      "sdk": "H2 EDU 版开放 SDK，支持二次开发与灵巧手选配"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "Unitree 官方商城",
+        "url": "https://shop.unitree.com/",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "182cm 全尺寸仿生人形，配备仿生人脸提升交互感",
+      "全身 31 自由度，膝关节峰值扭矩达 360N·m",
+      "H2 EDU / H2 Plus 可选配 2070 TOPS 算力的 NVIDIA Jetson Thor",
+      "972Wh 电池，最长续航约 3 小时"
+    ],
+    "applications": [
+      "具身智能前沿科研",
+      "全身移动操作",
+      "商业服务与展示",
+      "二次开发"
+    ],
+    "description": "宇树 H2 是宇树科技新一代 182cm 全尺寸人形机器人，全身 31 个自由度、重约 70kg，膝关节扭矩达 360N·m，手臂额定负载 7kg，高配版可搭载 NVIDIA Jetson Thor 并选配五指触觉灵巧手。",
+    "officialUrl": "https://www.unitree.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "unitree-a2",
+    "name": "Unitree A2",
+    "nameZh": "宇树 A2",
+    "manufacturer": "Unitree Robotics",
+    "manufacturerZh": "宇树科技",
+    "country": "中国",
+    "category": "quadruped",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 31800,
+      "note": "海外参考价：A2 约 31,800 美元，A2 Pro 约 40,800 美元，轮足版 A2-W 约 36,800 美元起"
+    },
+    "specs": {
+      "length_cm": 82,
+      "weight_kg": 37,
+      "dof_total": 12,
+      "max_speed_ms": 5,
+      "payload_kg": 25,
+      "max_payload_kg": 100,
+      "climb_deg": null,
+      "stair_cm": null,
+      "ip_rating": "IP56 / IP67（依版本而定）",
+      "battery_wh": null,
+      "runtime_h": 3,
+      "compute_tops": null,
+      "sensors": "激光雷达 + 深度相机（支持 A2 Pro / A2-W 扩展）",
+      "sdk": "开放 SDK，支持 ROS 与工业二次开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "Unitree 官方商城",
+        "url": "https://shop.unitree.com/products/unitree-a2",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "新一代工业级四足平台，最高速度可达 5m/s",
+      "持续行走负载约 25kg，站立最大承重可达 100kg",
+      "支持热插拔双电池，综合续航约 20km",
+      "提供轮足版 A2-W 与 Pro 版满足不同巡检需求"
+    ],
+    "applications": [
+      "电力与工业巡检",
+      "复杂地形测绘",
+      "应急救援",
+      "科研与负载运输"
+    ],
+    "description": "宇树 A2 是宇树科技面向工业巡检与重载场景推出的新一代四足机器人，含电池重约 37kg，最高速度 5m/s，持续负载 25kg、续航里程约 20km，并提供轮足版 A2-W 与高防护版可选。",
+    "officialUrl": "https://shop.unitree.com/products/unitree-a2",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "booster-k1",
+    "name": "Booster K1",
+    "nameZh": "加速进化 K1",
+    "manufacturer": "Booster Robotics",
+    "manufacturerZh": "加速进化",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 7500,
+      "note": "Geek 版约 7,500 美元，EDU 版约 9,999 美元，Professional 版约 11,998-12,500 美元"
+    },
+    "specs": {
+      "height_cm": 95,
+      "weight_kg": 19.5,
+      "dof_total": 22,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": 200,
+      "compute_platform": "提供 48 / 117 / 200 TOPS 三档板载 AI 算力",
+      "sensors": "深度视觉 + 麦克风阵列",
+      "sdk": "开放 API 与 Booster GYM 2.0，支持 ROS2 与仿真"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "加速进化官网",
+        "url": "https://www.booster.tech/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "95cm 高、19.5kg 重，单手可拎的便携人形开发平台",
+      "22 自由度，专为教育、RoboCup 竞赛与强化学习入门设计",
+      "提供最高 200 TOPS 的板载算力选项",
+      "配套 Booster GYM 2.0 与开放 SDK"
+    ],
+    "applications": [
+      "高校教学与实验室入门",
+      "机器人竞赛",
+      "强化学习运动控制",
+      "展览展示"
+    ],
+    "description": "加速进化 K1 是面向教学、竞赛与具身开发入门的紧凑型人形机器人，身高约 95cm、重 19.5kg，拥有 22 个自由度，提供最高 200 TOPS 的三档算力配置与完善的仿真开发工具链。",
+    "officialUrl": "https://www.booster.tech/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "booster-t2",
+    "name": "Booster T2",
+    "nameZh": "加速进化 T2",
+    "manufacturer": "Booster Robotics",
+    "manufacturerZh": "加速进化",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 32999,
+      "note": "Edu 版约 32,999-38,850 美元起，Pro 版（配 Jetson Thor）约 37,999-48,999 美元起"
+    },
+    "specs": {
+      "height_cm": 140,
+      "weight_kg": 42,
+      "dof_total": 31,
+      "dof_hand": null,
+      "walk_speed_ms": 3,
+      "max_speed_ms": 3,
+      "payload_kg": 10,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": 480,
+      "runtime_h": 2,
+      "swappable_battery": null,
+      "compute_tops": 2070,
+      "compute_platform": "Edu 版 ARM（375 TOPS）/ Pro 版 NVIDIA Jetson Thor T5000（2070 TOPS）",
+      "sensors": "深度相机 + 多传感器融合",
+      "sdk": "全关节力矩控制与底层开放 SDK，支持夹爪及灵巧手选配"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "加速进化 Booster T2 官网",
+        "url": "https://www.booster.tech/booster-t2/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "140cm 身高、31 自由度（7 自由度双臂 + 3 自由度腰部）",
+      "全关节力矩控制，行走速度可达 3m/s，双臂负载 10kg",
+      "Pro 版搭载 NVIDIA Jetson Thor T5000，算力达 2070 TOPS",
+      "支持夹爪及多种触觉灵巧手扩展"
+    ],
+    "applications": [
+      "移动操作与具身智能科研",
+      "高动态全身控制",
+      "灵巧手与 VLA 真机验证",
+      "二次开发"
+    ],
+    "description": "加速进化 T2 是 2026 年发布的旗舰级具身开发人形机器人，身高 140cm、重 42kg，具备 31 自由度与全关节力矩控制，Pro 版搭载 NVIDIA Jetson Thor（2070 TOPS），面向移动操作与 VLA 真机研究。",
+    "officialUrl": "https://www.booster.tech/booster-t2/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "agibot-x2",
+    "name": "AgiBot X2",
+    "nameZh": "智元灵犀 X2",
+    "manufacturer": "AgiBot",
+    "manufacturerZh": "智元机器人",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 25600,
+      "note": "X2 Neo 官方商城参考价约 25,600 美元（部分渠道 27,999 美元起），另有 EDU 与 Ultra 版"
+    },
+    "specs": {
+      "height_cm": 131,
+      "weight_kg": 35,
+      "dof_total": 25,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 2,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "多目视觉 + 交互语音模组",
+      "sdk": "提供开发者文档，支持交互与运动控制二次开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "智元官方商城",
+        "url": "https://store.agibot.com",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "身高约 131cm、重约 35kg，兼具高动态运动与交互表现力",
+      "基础版 25 自由度，X2 Ultra 版可扩展至 30 自由度",
+      "续航约 2 小时，适合展厅接待、科研与商业交互",
+      "提供 Neo / EDU / Ultra 多档配置"
+    ],
+    "applications": [
+      "商业接待与展演",
+      "具身交互科研",
+      "高校教育",
+      "二次开发"
+    ],
+    "description": "智元灵犀 X2 是智元机器人推出的紧凑型高交互人形机器人，身高约 131cm、重约 35kg（基础版 25 自由度，Ultra 版 30 自由度），主打灵动交互与运动能力，面向展演、科研与教育市场。",
+    "officialUrl": "https://www.zhiyuan-robot.com",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "tesla-optimus-gen3",
+    "name": "Tesla Optimus Gen 3",
+    "nameZh": "特斯拉 Optimus Gen 3",
+    "manufacturer": "Tesla",
+    "manufacturerZh": "特斯拉",
+    "country": "美国",
+    "category": "humanoid",
+    "releaseYear": 2026,
+    "status": "research",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开；2026 年 7 月已在弗里蒙特工厂安装首批产线，远期目标价 2-3 万美元"
+    },
+    "specs": {
+      "height_cm": 173,
+      "weight_kg": 57,
+      "dof_total": null,
+      "dof_hand": 22,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 20,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "特斯拉自研 AI5 芯片平台",
+      "sensors": "纯视觉感知 + 全新 22 自由度手部触觉",
+      "sdk": "未开放，内部产线部署"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Tesla 官网",
+        "url": "https://www.tesla.com/AI",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "手部升级至 22 自由度，精细操作能力大幅提升",
+      "2026 年 7 月在弗里蒙特工厂部署首批产线准备规模制造",
+      "搭载特斯拉下一代 AI5 芯片平台",
+      "目标负载约 20kg，聚焦工厂产线与未来家庭服务"
+    ],
+    "applications": [
+      "汽车工厂产线作业",
+      "物料搬运与装配",
+      "长期面向家庭服务"
+    ],
+    "description": "特斯拉 Optimus Gen 3 于 2026 年推进弗里蒙特首批产线部署，重点升级了 22 自由度灵巧手与 AI5 芯片架构，整机细节与最终量产售价尚未完整公布，目前仍以特斯拉内部工厂测试为主。",
+    "officialUrl": "https://www.tesla.com/AI",
+    "dataUpdated": "2026-11"
   }
 ]
