@@ -1,0 +1,52 @@
+{
+  "robotera-xhand1-prou-gr00t2-2026-11-16": {
+    "title": "ROBOTERA Launches XHAND 1 Pro-U, Featured in NVIDIA's GR00T 2 DexUMI Demo",
+    "summary": "On Nov 16, 2026, ROBOTERA unveiled the XHAND 1 Pro-U dexterous hand and showcased its high-dexterity manipulation capabilities inside NVIDIA's GR00T 2 DexUMI demonstration at CoRL.",
+    "tags": ["Dexterous Hand", "GR00T 2", "CoRL 2026", "DexUMI"]
+  },
+  "china-embodied-ai-funding-shakeout-2026-11-16": {
+    "title": "China Embodied AI Tops RMB 90B Funding in H1 2026 Amid Industry Shakeout",
+    "summary": "According to TMTPost and ITJuzi, Chinese embodied AI startups raised over RMB 90 billion in H1 2026 (including RMB 1B+ rounds for chipmakers like D-Robotics in September), while over ten robotics firms entered liquidation or shutdown due to broken unit economics.",
+    "tags": ["Funding", "Commercialization", "D-Robotics", "Shakeout"]
+  },
+  "agile-robots-500m-series-f-2026-11-15": {
+    "title": "Agile Robots Hits $8.5B Valuation with $500M Series F Backed by SoftBank & NVIDIA",
+    "summary": "Munich-based Physical AI company Agile Robots raised $500 million in a Series F round led by SoftBank Group with NVIDIA, Hitachi, and T.Capital participating, reaching an $8.5 billion valuation and $2 billion in total funding to scale industrial deployment.",
+    "tags": ["$500M Series F", "$8.5B Valuation", "SoftBank", "NVIDIA"]
+  },
+  "asus-gallop-humanoid-thor-2026-11-13": {
+    "title": "ASUS Unveils Gallop Factory Humanoid Powered by a Single NVIDIA Jetson AGX Thor",
+    "summary": "ASUS detailed its Gallop humanoid robot project designed for factory automation, running its entire vision and Physical AI stack onboard a single NVIDIA Jetson AGX Thor computer.",
+    "tags": ["Humanoid", "Jetson AGX Thor", "Smart Manufacturing"]
+  },
+  "gxo-apptronik-expand-partnership-2026-11-12": {
+    "title": "GXO and Apptronik Sign LOI to Expand Commercial Apollo Humanoid Deployment",
+    "summary": "Contract logistics giant GXO and Apptronik signed a letter of intent on Nov 12, 2026 to expand operational trials and commercial deployment of Apollo humanoid robots through a Robotics-as-a-Service (RaaS) model.",
+    "tags": ["Logistics", "RaaS", "Apollo", "Commercial Rollout"]
+  },
+  "beijing-embodied-ai-action-plan-2026-11-11": {
+    "title": "Beijing Issues 2026–2028 Action Plan for High-Quality Embodied AI Robotics",
+    "summary": "The Beijing Municipal Bureau of Economy and Information Technology released its 2026–2028 action plan on Nov 11 to accelerate core component R&D, open-source embodied foundation models, and real-world commercial deployment.",
+    "tags": ["Policy", "Beijing", "2026–2028", "Commercialization"]
+  },
+  "robbyant-lingbot-touch-2026-11-10": {
+    "title": "Robbyant Open-Sources LingBot-Touch Tactile Model, Boosting Dexterous Success by 13.9%+",
+    "summary": "Ant Group's Robbyant open-sourced the LingBot-Touch tactile foundation model, lifting mean success rates for Diffusion Policy, π0.5, and LingBot-VLA by over 13.9 percentage points across 26 real-robot dexterous hand tasks.",
+    "tags": ["Tactile Model", "Open Source", "LingBot-VLA", "Dexterous Hand"]
+  },
+  "nvidia-corl-2026-gr00t2-isaac-lab-3-2026-11-09": {
+    "title": "NVIDIA Introduces Isaac GR00T 2, Isaac Lab 3.0 & Open Benchmarks at CoRL 2026",
+    "summary": "At the Conference on Robot Learning (CoRL 2026), NVIDIA and ecosystem partners unveiled Isaac GR00T 2, Isaac Lab 3.0, and new open evaluation benchmarks to accelerate Physical AI simulation and sim-to-real transfer.",
+    "tags": ["GR00T 2", "Isaac Lab 3.0", "CoRL 2026", "Benchmarks"]
+  },
+  "agility-robotics-nasdaq-aglt-2026-11-05": {
+    "title": "Agility Robotics Lists on Nasdaq as 'AGLT' Following SPAC Merger (~$465M Gross Capital)",
+    "summary": "Agility Robotics closed its SPAC merger on Nov 4, 2026 and began trading on Nasdaq under ticker AGLT on Nov 5 with approximately $465 million in gross capital, becoming one of the first publicly traded humanoid companies.",
+    "tags": ["Nasdaq IPO", "SPAC", "$465M", "Digit"]
+  },
+  "sharpa-funding-and-dexterous-hands-2026-11-03": {
+    "title": "Sharpa Discloses RMB 4.5B+ Round at ~RMB 22B Valuation Behind 22-DoF Wave Hand",
+    "summary": "Visuotactile hand maker Sharpa raised over RMB 4.5 billion ($618M–$669M) at a ~RMB 22 billion ($3.0B–$3.3B) valuation in August 2026, scaling its 22-DoF Wave hand and humanoid robotics stack.",
+    "tags": ["RMB 4.5B+ Funding", "Dexterous Hand", "Visuotactile", "Sharpa Wave"]
+  }
+}

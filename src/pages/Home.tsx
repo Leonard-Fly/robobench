@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
-import { AI_MODELS, COLLECTION_DEVICES, CONTACT_EMAIL, DATA_VERSION, DATASETS, ROBOTS, SITE_NAME } from '../data';
+import { AI_MODELS, COLLECTION_DEVICES, CONTACT_EMAIL, DATA_VERSION, DATASETS, LATEST_NEWS_DATE, ROBOTS, SITE_NAME } from '../data';
 import { CATEGORY_ICONS } from '../data/specFields';
 import { CATEGORIES } from '../components/format';
 import { useLocalData } from '../components/useLocalData';
-import { displayName } from '../i18n/localizeData';
+import { displayManufacturer, displayName } from '../i18n/localizeData';
 import { useLocale } from '../i18n/useLocale';
 import { ArrowRightIcon } from '../components/Icons';
 
 export default function Home() {
   const { locale, t } = useLocale();
-  const { robots } = useLocalData();
+  const { robots, news } = useLocalData();
+  const latestNews = news.slice(0, 3);
   const stats = [
     { label: t('home.stats.robots'), value: ROBOTS.length },
     { label: t('home.stats.models'), value: AI_MODELS.length },
@@ -121,6 +122,40 @@ export default function Home() {
               {t('home.datasets.enter')} <ArrowRightIcon />
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto mt-16 max-w-7xl px-4 sm:px-6">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <h2 className="text-2xl font-bold text-white">{t('home.news.title')}</h2>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-2.5 py-0.5 font-mono text-xs text-emerald-300">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+              {t('news.dailyBadge').replace('{d}', LATEST_NEWS_DATE)}
+            </span>
+          </div>
+          <Link to="/news" className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline">
+            {t('home.news.enter')} <ArrowRightIcon />
+          </Link>
+        </div>
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          {latestNews.map((item) => (
+            <a key={item.id} href={item.sourceUrl} target="_blank" rel="noreferrer" className="card group flex flex-col justify-between p-5 hover:-translate-y-0.5">
+              <div>
+                <div className="flex items-center justify-between gap-2 text-xs text-slate-400">
+                  <span className="text-accent">{t(`newscat.${item.category}`)}</span>
+                  <span className="font-mono">{item.publishedAt}</span>
+                </div>
+                <h3 className="mt-2.5 line-clamp-2 font-semibold text-white transition-colors group-hover:text-accent">
+                  {item.title}
+                </h3>
+                <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-slate-400">{item.summary}</p>
+              </div>
+              <p className="mt-4 text-xs text-slate-500">
+                {displayManufacturer({ manufacturer: item.company, manufacturerZh: item.companyZh }, locale)} · {item.sourceName}
+              </p>
+            </a>
+          ))}
         </div>
       </section>
 

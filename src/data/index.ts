@@ -1,23 +1,30 @@
-import type { AiModel, CollectionDevice, EmbodiedDataset, Robot } from '../types';
+import type { AiModel, CollectionDevice, EmbodiedDataset, NewsItem, Robot } from '../types';
 import robotsJson from './robots.json';
 import aiModelsJson from './aiModels.json';
 import datasetsJson from './datasets.json';
 import collectionDevicesJson from './collectionDevices.json';
+import newsJson from './news.json';
 
 // ============ 数据加载入口 ============
-// 每月更新：直接编辑 *.json，重新构建即可。
+// 机器人/模型/数据集每月更新，新闻模块每日更新：直接编辑 *.json，重新构建即可。
 
 export const ROBOTS: Robot[] = robotsJson as unknown as Robot[];
 export const AI_MODELS: AiModel[] = aiModelsJson as unknown as AiModel[];
 export const DATASETS: EmbodiedDataset[] = datasetsJson as unknown as EmbodiedDataset[];
 export const COLLECTION_DEVICES: CollectionDevice[] =
   collectionDevicesJson as unknown as CollectionDevice[];
+export const NEWS: NewsItem[] = [...(newsJson as unknown as NewsItem[])].sort((a, b) =>
+  b.publishedAt.localeCompare(a.publishedAt),
+);
 
 /** 全站数据版本（取所有条目中最新的 dataUpdated） */
-export const DATA_VERSION: string = [...ROBOTS, ...AI_MODELS, ...DATASETS, ...COLLECTION_DEVICES]
+export const DATA_VERSION: string = [...ROBOTS, ...AI_MODELS, ...DATASETS, ...COLLECTION_DEVICES, ...NEWS]
   .map((x) => x.dataUpdated)
   .sort()
   .at(-1) ?? '';
+
+/** 最新新闻日期 */
+export const LATEST_NEWS_DATE: string = NEWS[0]?.publishedAt ?? DATA_VERSION;
 
 export function getRobotById(id: string): Robot | undefined {
   return ROBOTS.find((r) => r.id === id);

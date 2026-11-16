@@ -1,9 +1,10 @@
-import type { AiModel, CollectionDevice, EmbodiedDataset, Robot } from '../types';
+import type { AiModel, CollectionDevice, EmbodiedDataset, NewsItem, Robot } from '../types';
 import type { Locale } from './config';
 import enRobots from './data/en/robots.json';
 import enModels from './data/en/models.json';
 import enDatasets from './data/en/datasets.json';
 import enDevices from './data/en/devices.json';
+import enNews from './data/en/news.json';
 import jaRobots from './data/ja/robots.json';
 import jaModels from './data/ja/models.json';
 import koRobots from './data/ko/robots.json';
@@ -97,6 +98,28 @@ export function localizeDataset(d: EmbodiedDataset, locale: Locale): EmbodiedDat
 
 export function localizeCollectionDevice(c: CollectionDevice, locale: Locale): CollectionDevice {
   return applyOverride(c, locale, DEVICE_OVERRIDES);
+}
+
+export interface NewsOverride {
+  title?: string;
+  summary?: string;
+  tags?: string[];
+}
+
+const NEWS_OVERRIDES: Partial<Record<Locale, Record<string, NewsOverride>>> = {
+  en: enNews as Record<string, NewsOverride>,
+};
+
+export function localizeNewsItem(n: NewsItem, locale: Locale): NewsItem {
+  if (locale === 'zh') return n;
+  const ov = NEWS_OVERRIDES[locale]?.[n.id] ?? NEWS_OVERRIDES.en?.[n.id];
+  if (!ov) return n;
+  return {
+    ...n,
+    title: ov.title ?? n.title,
+    summary: ov.summary ?? n.summary,
+    tags: ov.tags ?? n.tags,
+  };
 }
 
 /** 条目显示名：中文环境用 nameZh，其余用 name */

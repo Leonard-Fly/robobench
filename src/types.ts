@@ -165,3 +165,23 @@ export interface CollectionDevice {
   codeUrl?: string;
   dataUpdated: string;
 }
+
+/** 新闻分类：商业落地 / 技术发布 / 投融资与并购 / 行业政策 */
+export type NewsCategory = 'commercial' | 'technical' | 'funding' | 'policy';
+
+/** 机器人厂商新闻条目（预计每日更新） */
+export interface NewsItem {
+  id: string;
+  title: string;
+  summary: string;
+  company: string;
+  companyZh?: string;
+  country: string;
+  category: NewsCategory;
+  publishedAt: string; // "YYYY-MM-DD"
+  sourceName: string;
+  sourceUrl: string;
+  tags: string[];
+  relatedRobotIds?: string[];
+  dataUpdated: string; // "YYYY-MM"
+}
