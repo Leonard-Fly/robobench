@@ -4342,5 +4342,406 @@
     "description": "PSYONIC Ability Hand 是美国 PSYONIC 推出的高速触觉仿生五指灵巧手，重约 490g、具备 IP64 防护与抗冲击柔顺手指，6 颗无刷电机支持 0.2 秒闭合与 78N 握力，集成 30 路触觉传感并开放 ROS 2 与 Isaac Lab 接口。",
     "officialUrl": "https://www.psyonic.io/robots",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "xpeng-iron",
+    "name": "XPENG IRON",
+    "nameZh": "小鹏 IRON 人形机器人",
+    "manufacturer": "XPENG Robotics",
+    "manufacturerZh": "小鹏汽车（鹏行智能）",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "announced",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（计划 2026 年底开启量产交付）"
+    },
+    "specs": {
+      "height_cm": 173,
+      "weight_kg": 70,
+      "dof_total": 82,
+      "dof_hand": 22,
+      "walk_speed_ms": null,
+      "max_speed_ms": 1.61,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "小鹏自研图灵 AI 芯片（Turing AI）",
+      "sensors": "720° AI 鹰眼视觉系统 + 灵巧手触觉",
+      "sdk": "未开放，优先面向汽车工厂与商业零售落地"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "小鹏汽车官网",
+        "url": "https://www.xiaopeng.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "身高 173cm、体重 70kg 的全尺寸仿人比例，全身主动自由度达 82 个",
+      "单手配备 22 个自由度拟人灵巧手，支持精细工业与零售操作",
+      "搭载小鹏自研图灵 AI 芯片与 720° 鹰眼视觉感知架构",
+      "已在小鹏汽车产线实训，计划 2026 年推进规模化量产落地"
+    ],
+    "applications": [
+      "汽车产线装配与质检",
+      "商业门店导览与零售服务",
+      "车企具身智能协同"
+    ],
+    "description": "小鹏 IRON 是小鹏汽车推出的全尺寸仿人机器人，身高 173cm、重约 70kg，拥有 82 个自由度（含 22 自由度灵巧手），搭载自研图灵 AI 芯片与 720° 视觉系统，面向工厂自动化与商业零售场景。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "neura-4ne-1",
+    "name": "NEURA Robotics 4NE-1",
+    "nameZh": "NEURA Robotics 4NE-1 认知人形机器人",
+    "manufacturer": "NEURA Robotics",
+    "manufacturerZh": "NEURA Robotics",
+    "country": "德国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "announced",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（已发布 Gen 3 / Gen 3.5 量产型设计）"
+    },
+    "specs": {
+      "height_cm": 180,
+      "weight_kg": 80,
+      "dof_total": null,
+      "dof_hand": null,
+      "walk_speed_ms": 0.83,
+      "max_speed_ms": null,
+      "payload_kg": 15,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "Neuraverse 认知计算平台",
+      "sensors": "全向视觉 + 专利非接触式人机安全皮肤传感",
+      "sdk": "支持 Neuraverse 技能生态与工业/家居应用开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "NEURA Robotics 官网",
+        "url": "https://neura-robotics.com/",
+        "regions": [
+          "eu",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "德国认知机器人代表企业 NEURA 旗舰人形，Gen 3 由保时捷设计工作室参与造型",
+      "身高 180cm、重约 80kg，常规负载 15kg，具备高强度作业潜力",
+      "集成专利安全电子皮肤与力控，支持人机零距离安全协同",
+      "接入 Neuraverse 云端技能平台，覆盖工业制造与家庭服务场景"
+    ],
+    "applications": [
+      "工业制造与精密产线协同",
+      "物流搬运与设备巡检",
+      "家庭服务与护理辅助"
+    ],
+    "description": "4NE-1 是德国 NEURA Robotics 推出的全尺寸认知人形机器人，身高 180cm、重约 80kg、负载 15kg，集成安全皮肤与多模态感知并接入 Neuraverse 技能平台，面向工业与家庭双场景落地。",
+    "officialUrl": "https://neura-robotics.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "sanctuary-phoenix",
+    "name": "Sanctuary AI Phoenix",
+    "nameZh": "Sanctuary AI Phoenix 通用人形机器人",
+    "manufacturer": "Sanctuary AI",
+    "manufacturerZh": "Sanctuary AI",
+    "country": "加拿大",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "research",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开对外零售（已迭代至 Gen 8，侧重 Carbon AI 软件与商业试点）"
+    },
+    "specs": {
+      "height_cm": 170,
+      "weight_kg": 70,
+      "dof_total": 48,
+      "dof_hand": 20,
+      "walk_speed_ms": null,
+      "max_speed_ms": 1.34,
+      "payload_kg": 25,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "Carbon™ 认知 AI 控制系统",
+      "sensors": "视觉感知 + 专利液压触觉反馈灵巧手",
+      "sdk": "内部 Carbon AI 平台与行业合作伙伴试点"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Sanctuary AI 官网",
+        "url": "https://www.sanctuary.ai/",
+        "regions": [
+          "us",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "北美通用人形先行者，身高 170cm、重约 70kg，全身 48 自由度、最大负载 25kg",
+      "标志性 20 自由度专利液压驱动触觉灵巧手，精细操作与触觉反馈业内领先",
+      "搭载 Carbon™ 认知 AI 系统，支持自然语言理解与自主任务规划",
+      "曾在零售与汽车制造（麦格纳）真实产线开展多轮商业试点"
+    ],
+    "applications": [
+      "汽车制造与零部件分拣",
+      "零售门店打包与理货",
+      "高灵巧度触觉操作研究"
+    ],
+    "description": "Phoenix 是加拿大 Sanctuary AI 推出的通用人形机器人，身高 170cm、重 70kg、负载 25kg，以 20 自由度液压触觉灵巧手和 Carbon™ 认知 AI 系统为核心特色，已在汽车制造和零售场景开展试点。",
+    "officialUrl": "https://www.sanctuary.ai/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "tesollo-dg-5f-s",
+    "name": "Tesollo DG-5F-S",
+    "nameZh": "Tesollo DG-5F-S 轻量化五指灵巧手",
+    "manufacturer": "Tesollo",
+    "manufacturerZh": "Tesollo",
+    "country": "韩国",
+    "category": "hand",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 23000,
+      "note": "海外科研与商用渠道参考价约 23,000 美元（另有工业重型版 DG-5F-M）"
+    },
+    "specs": {
+      "dof_total": 20,
+      "doa": 20,
+      "fingers": 5,
+      "weight_g": 880,
+      "payload_kg": 12,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": "500 Hz 高频实时控制",
+      "drive_type": "20 独立直驱关节（每指 4 自由度，配绝对值编码器）",
+      "tactile": "支持触觉传感器集成",
+      "tactile_points": null,
+      "interface": "EtherNet (TCP/IP) / Modbus (TCP)",
+      "sdk": "提供 500 Hz 实时控制 SDK 与人形末端集成支持"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Tesollo 官网",
+        "url": "https://www.tesollo.com/",
+        "regions": [
+          "kr",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "专为人形机器人优化的成人手掌尺寸设计，整手仅重 880g（较 M 版减重一半）",
+      "20 个全独立主动自由度（每指 4 自由度），配备绝对值编码器",
+      "控制频率高达 500 Hz，强力抓握最大负载 12kg（额定 7kg），捏持负载 2kg",
+      "采用通用工业以太网（TCP/IP / Modbus TCP）24V 供电，易于快速部署"
+    ],
+    "applications": [
+      "人形机器人高自由度末端",
+      "500 Hz 高频力位灵巧操作研究",
+      "工业精密装配与服务机器人"
+    ],
+    "description": "Tesollo DG-5F-S 是韩国灵巧手厂商 Tesollo 于 2026 年推出的轻量化五指灵巧手，重 880g、具备 20 个全独立直驱自由度与 500 Hz 控制频率，最大抓握负载达 12kg，专为人形机器人平台优化。",
+    "officialUrl": "https://www.tesollo.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "orca-hand",
+    "name": "ORCA Hand v1",
+    "nameZh": "ORCA Hand v1（ETH 开源腱绳灵巧手）",
+    "manufacturer": "ETH Zurich (SRL)",
+    "manufacturerZh": "苏黎世联邦理工学院 (ETH SRL)",
+    "country": "瑞士",
+    "category": "hand",
+    "releaseYear": 2025,
+    "status": "research",
+    "price": {
+      "cny": null,
+      "usd": 2200,
+      "note": "全开源 3D 打印方案，BOM 物料成本低于 2,000 瑞士法郎（约 2,200 美元）"
+    },
+    "specs": {
+      "dof_total": 17,
+      "doa": 17,
+      "fingers": 5,
+      "weight_g": null,
+      "payload_kg": null,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "腱绳传动（自标定中心走线 + 防断脱扣关节）",
+      "tactile": "集成自研紧凑型模块化指尖触觉传感器",
+      "tactile_points": null,
+      "interface": "USB / 串口控制",
+      "sdk": "STL 结构、核心控制代码与装配文档全面开源，8 小时内可装配"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "ETH ORCA Hand 项目主页",
+        "url": "https://srl.ethz.ch/orcahand.html",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "ETH 苏黎世开源的 17 自由度仿人五指腱绳手（16 指关节 + 1 腕关节）",
+      "全套 3D 打印+标准件方案 BOM 成本低于 2,000 CHF，单人 8 小时内即可组装",
+      "首创防断脱扣关节（popping joints）与自动标定腱绳走线，连续运行超 10,000 次无故障",
+      "支持零样本 Sim-to-Real 强化学习与模仿学习，集成自研触觉传感"
+    ],
+    "applications": [
+      "低成本拟人腱绳手科研",
+      "零样本 Sim-to-Real 强化学习",
+      "高校教学与遥操作"
+    ],
+    "description": "ORCA Hand v1 是苏黎世联邦理工学院（ETH）开源的 17 自由度拟人五指腱绳灵巧手，集成触觉传感器与防断脱扣关节设计，BOM 成本低于 2,000 瑞郎且 8 小时即可组装，连续测试超万次无故障。",
+    "officialUrl": "https://srl.ethz.ch/orcahand.html",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "robosense-airy",
+    "name": "RoboSense Airy",
+    "nameZh": "速腾聚创 Airy 半球形激光雷达",
+    "manufacturer": "RoboSense",
+    "manufacturerZh": "速腾聚创",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "lidar",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 799,
+      "note": "海外官方/代理参考价约 799 美元（另有 192 线等规格可选）"
+    },
+    "specs": {
+      "component_type": "数字式半球形 3D 激光雷达（内置 IMU）",
+      "model_series": "Airy（96 线 / 192 线）",
+      "weight_g": 240,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": "360°×90° 半球形全向视场角",
+      "voltage_v": null,
+      "interface": "以太网",
+      "key_params": "96 线单回波约 86 万点/秒，内置 IMU，不含线缆重量 <240g，体积小巧"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "RoboSense 官方商城",
+        "url": "https://store.robosense.ai/products/airy",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "360°×90° 超广半球形视场角，单颗即可覆盖机器人周边立体空间",
+      "不含线缆重量低于 240g，紧凑尺寸极易嵌入人形头部或四足机身",
+      "96 线单回波点频约 86 万点/秒并内置 IMU，直接服务 SLAM 建图与避障",
+      "速腾聚创面向具身智能与移动机器人推出的主力小体积数字雷达"
+    ],
+    "applications": [
+      "人形与四足机器人 SLAM 导航",
+      "移动底盘立体避障",
+      "无人机与空间感知"
+    ],
+    "description": "速腾聚创 Airy 是面向具身机器人设计的紧凑型半球形 3D 激光雷达，重量低于 240g，拥有 360°×90° 半球视场角、约 86 万点/秒（96 线）点频与内置 IMU，适合人形、四足与 AMR 导航避障。",
+    "officialUrl": "https://store.robosense.ai/products/airy",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "hesai-jt128",
+    "name": "Hesai JT128",
+    "nameZh": "禾赛科技 JT128 超半球形激光雷达",
+    "manufacturer": "Hesai Technology",
+    "manufacturerZh": "禾赛科技",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "lidar",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（JT 系列面向机器人规模交付）"
+    },
+    "specs": {
+      "component_type": "迷你超半球形 128 线 3D 激光雷达（内置 IMU）",
+      "model_series": "JT128",
+      "weight_g": 250,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "角分辨率 0.4°(H) × 0.74°(V)",
+      "range_note": "40m @ 10% 反射率（最远 60m），360°×189° 零盲区视场",
+      "voltage_v": null,
+      "interface": "100Base-TX 以太网",
+      "key_params": "128 线通道，115 万点/秒（单回波），尺寸 Φ62.5×73mm，内置 IMU，10/20Hz 扫描"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "禾赛科技官网",
+        "url": "https://www.hesaitech.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "360°×189° 超半球零盲区视场，贴近机身无死角近距感知",
+      "128 线高密度点云达 115 万点/秒，体积较同类缩小约 70%（重约 250g）",
+      "内置 IMU 与 100Base-TX 以太网接口，支持 10Hz/20Hz 扫描频率",
+      "已被广泛用于人形机器人、AMR 与无人割草/农业机器人"
+    ],
+    "applications": [
+      "人形与四足机器人近距零盲区感知",
+      "AGV/AMR 工业移动导航",
+      "户外无人设备与建图"
+    ],
+    "description": "禾赛 JT128 是专为具身机器人打造的迷你超半球形 128 线 3D 激光雷达，重仅 250g，具备 360°×189° 零盲区视场与 115 万点/秒高密度点云并内置 IMU，有效解决机器人近身盲区难题。",
+    "officialUrl": "https://www.hesaitech.com/",
+    "dataUpdated": "2026-11"
   }
 ]

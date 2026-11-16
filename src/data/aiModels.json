@@ -959,5 +959,119 @@
     "description": "开悟世界模型 3.0 是大晓机器人推出的开源商业落地具身世界模型，采用多模态理解-生成-预测一体化架构，支持力学信息输入与 Puffin 空间视角感知，并与环境数采引擎共同构成具身智能数据闭环。",
     "paperUrl": "https://hub.baai.ac.cn/view/50923",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "hybridvla",
+    "name": "HybridVLA",
+    "kind": "vla",
+    "org": "Peking University (HMI Lab)",
+    "orgZh": "北京大学 HMI 实验室",
+    "country": "中国",
+    "releaseDate": "2025-03",
+    "openSource": true,
+    "license": "开源（GitHub Hybrid-VLA）",
+    "specs": {
+      "params_b": 7,
+      "architecture": "单一 LLM 内融合协同扩散去噪与自回归动作预测（7B / 2.7B 双规格）",
+      "backbone": "Prismatic VLM (DINOv2 + SigLIP + 7B/2.7B LLM)",
+      "action_head": "协同扩散 + 自回归动作集成机制",
+      "control_freq_hz": null,
+      "training_data": "35 个开源机器人数据集约 76 万条轨迹（3300 万帧）预训练 + 自采真机微调",
+      "embodiments": "单臂与双臂机械臂平台",
+      "cross_embodiment": "强，跨 35 个数据集预训练并在未见物体与光照下稳定泛化",
+      "benchmark_note": "仿真与真机平均成功率分别超越同期 SOTA VLA 基线 14% 与 19%",
+      "deploy_note": "开源权重与训练推理代码，支持单视角与多视角下游微调"
+    },
+    "highlights": [
+      "在单一 LLM 框架内协同融合扩散连续动作与自回归推理能力",
+      "提出协同动作集成机制，在仿真与真机任务上分别领先同期基线 14% 与 19%",
+      "基于 35 个开源数据集共 76 万条轨迹（3300 万帧）预训练",
+      "提供 7B 与轻量 2.7B 双规格开源代码与权重"
+    ],
+    "applications": [
+      "单臂与双臂精密操作",
+      "跨本体 VLA 预训练",
+      "具身推理与连续控制融合研究"
+    ],
+    "description": "HybridVLA 是北京大学团队提出的统一视觉-语言-动作模型，在单一 LLM 中协同融合连续扩散去噪与自回归推理，基于 76 万条轨迹预训练并在真机任务上较同期基线平均成功率提升 19%。",
+    "paperUrl": "https://arxiv.org/html/2503.10631",
+    "codeUrl": "https://github.com/PKU-HMI-Lab/Hybrid-VLA",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "opengalaxea-g05",
+    "name": "Galaxea G0.5",
+    "kind": "vla",
+    "org": "Galaxea AI",
+    "orgZh": "星海图",
+    "country": "中国",
+    "releaseDate": "2026-05",
+    "openSource": true,
+    "license": "开源（OpenGalaxea/GalaxeaVLA）",
+    "specs": {
+      "params_b": null,
+      "architecture": "VLM-as-Actor 单一自回归流（原生思维链推理 + 动作 token 联合输出）",
+      "backbone": "Qwen3 VLM 主干 + 时空因子化视觉记忆",
+      "action_head": "Cross-embodiment 27 维 ActionCodec RVQ 动作分词器",
+      "control_freq_hz": null,
+      "training_data": "大规模机器人数据集 + VQA 图文推理联合预训练",
+      "embodiments": "星海图 R1-Lite / R1-Pro 轮式双臂、Franka DROID 等",
+      "cross_embodiment": "强，27 维统一动作编码自动跳过空闲自由度",
+      "benchmark_note": "LIBERO 98.9%、RoboTwin 2.0 93.3%、DROID 零样本 82.5%、BEHAVIOR-1K 31.4%（均领先 π0.5 与 GR00T N1.7）",
+      "deploy_note": "已集成至 Hugging Face LeRobot 框架，支持开箱即用提示词调控动作粒度"
+    },
+    "highlights": [
+      "从 VLM-as-Encoder 转向 VLM-as-Actor：单一 Transformer 解码器统一输出推理与动作流",
+      "提出 27 维跨本体 ActionCodec，真机 R1-Lite/Pro 微调成功率达 76.7%（大幅领先 π0.5）",
+      "在 LIBERO (98.9%)、RoboTwin 2.0 (93.3%)、BEHAVIOR-1K (31.4%) 等 7 大基准全面刷新 SOTA",
+      "全栈开源并已接入 Hugging Face LeRobot 生态"
+    ],
+    "applications": [
+      "轮式双臂全身移动操作",
+      "长程推理与指令可控动作生成",
+      "LeRobot 生态开源 VLA 基座"
+    ],
+    "description": "Galaxea G0.5 是星海图于 2026 年开源的新一代统一自回归 VLA 模型，在单一解码流中原生联合输出具身思维链推理与 27 维 ActionCodec 动作 token，在 LIBERO、RoboTwin 2.0 及真机任务上全面领先同期基线。",
+    "paperUrl": "https://arxiv.org/html/2608.11739v1",
+    "codeUrl": "https://github.com/OpenGalaxea/GalaxeaVLA",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "eo-1",
+    "name": "EO-1",
+    "kind": "vla",
+    "org": "EO-Robotics",
+    "orgZh": "EO-Robotics",
+    "country": "中国",
+    "releaseDate": "2025-08",
+    "openSource": true,
+    "license": "开源（EO-Robotics/EO & LeRobot）",
+    "specs": {
+      "params_b": 3,
+      "architecture": "单一纯解码器 Transformer（离散语言建模头 + 连续流匹配动作头）",
+      "backbone": "Qwen2.5-VL (3B)",
+      "action_head": "Flow Matching 连续动作生成",
+      "control_freq_hz": null,
+      "training_data": "交错视觉-文本-动作多模态具身预训练语料",
+      "embodiments": "单臂、双臂及仿真基准平台",
+      "cross_embodiment": "强，统一交错预训练实现具身推理与动作控制无缝切换",
+      "benchmark_note": "在 CALVIN 等长程操作与多模态具身推理基准上达到领先水平",
+      "deploy_note": "3B 轻量级规模且已接入 LeRobot 生态，易于本地微调部署"
+    },
+    "highlights": [
+      "3B 参数轻量统一具身基础模型，基于 Qwen2.5-VL 初始化",
+      "采用交错视觉-文本-动作（Interleaved VTA）预训练范式，兼顾具身推理与高频动作",
+      "在同一解码器架构下结合下一词预测与流匹配目标",
+      "代码与权重开源，并已集成进 Hugging Face LeRobot"
+    ],
+    "applications": [
+      "多模态具身推理与控制",
+      "CALVIN 等长程桌面操作",
+      "3B 级轻量端侧 VLA 部署"
+    ],
+    "description": "EO-1 是开源的 3B 参数统一具身基础模型，基于 Qwen2.5-VL 并通过交错视觉-文本-动作（VTA）联合预训练，在单一解码器中融合语言推理与流匹配动作生成，已正式接入 LeRobot 生态。",
+    "paperUrl": "https://arxiv.org/html/2508.21112v3",
+    "codeUrl": "https://github.com/EO-Robotics/EO",
+    "dataUpdated": "2026-11"
   }
 ]

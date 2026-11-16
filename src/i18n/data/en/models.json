@@ -610,5 +610,77 @@
       "use_case": "Embodied physical simulation, virtual trial-and-error & commercial closed loop",
       "benchmark_note": "Co-developed Puffin with NTU to give world models 3D camera spatial awareness"
     }
+  },
+  "hybridvla": {
+    "description": "HybridVLA from Peking University unifies continuous diffusion denoising and autoregressive reasoning inside a single LLM (7B & 2.7B). Pretrained on 760K trajectories across 35 datasets, it outperforms prior SOTA VLAs by 14% in simulation and 19% on real-robot tasks.",
+    "highlights": [
+      "Unifies diffusion continuous actions and autoregressive reasoning inside one LLM",
+      "Collaborative action ensemble beats prior SOTA by 14% (sim) and 19% (real)",
+      "Pretrained on 760K robot trajectories (33M frames) across 35 open datasets",
+      "Open-source code and weights in both 7B and 2.7B sizes"
+    ],
+    "applications": [
+      "Single-arm & bimanual precision manipulation",
+      "Cross-embodiment VLA pretraining",
+      "Hybrid reasoning & continuous control research"
+    ],
+    "specs": {
+      "architecture": "Collaborative diffusion denoising + autoregression inside a single LLM (7B / 2.7B)",
+      "backbone": "Prismatic VLM (DINOv2 + SigLIP + 7B/2.7B LLM)",
+      "action_head": "Collaborative diffusion + autoregressive action ensemble",
+      "training_data": "760K trajectories (33M frames) from 35 open datasets + real-world fine-tuning",
+      "embodiments": "Single-arm and bimanual robot platforms",
+      "cross_embodiment": "Strong; generalizes across unseen objects, backgrounds and lighting",
+      "benchmark_note": "+14% mean success in sim and +19% in real-world tasks over prior SOTA VLAs",
+      "deploy_note": "Open-source weights and code supporting single- and multi-view fine-tuning"
+    }
+  },
+  "opengalaxea-g05": {
+    "description": "Galaxea G0.5 from Galaxea AI is an open-source unified autoregressive VLA that emits embodied chain-of-thought reasoning and 27-DoF ActionCodec tokens in a single transformer stream, achieving SOTA across LIBERO (98.9%), RoboTwin 2.0 (93.3%), and real-world R1-Lite/Pro.",
+    "highlights": [
+      "Shifts from VLM-as-Encoder to VLM-as-Actor with one unified autoregressive stream",
+      "27-DoF cross-embodiment ActionCodec reaches 76.7% on real R1-Lite/Pro (vs 53.3% π0.5)",
+      "SOTA across 7 regimes: LIBERO (98.9%), RoboTwin 2.0 (93.3%), BEHAVIOR-1K (31.4%), DROID (82.5%)",
+      "Fully open-sourced and integrated into Hugging Face LeRobot"
+    ],
+    "applications": [
+      "Wheeled bimanual mobile manipulation",
+      "Prompt-steered long-horizon reasoning & control",
+      "Open-source LeRobot VLA foundation model"
+    ],
+    "specs": {
+      "architecture": "VLM-as-Actor single autoregressive stream (native CoT + action tokens)",
+      "backbone": "Qwen3 VLM backbone + factorized spatial-temporal visual memory",
+      "action_head": "Cross-embodiment 27-DoF ActionCodec RVQ action tokenizer",
+      "training_data": "Large-scale multi-embodiment robot datasets + VQA co-training",
+      "embodiments": "Galaxea R1-Lite / R1-Pro, Franka DROID, etc.",
+      "cross_embodiment": "Strong; 27-DoF ActionCodec skips idle degrees of freedom",
+      "benchmark_note": "98.9% LIBERO, 93.3% RoboTwin 2.0, 82.5% DROID zero-shot, 31.4% BEHAVIOR-1K",
+      "deploy_note": "Integrated into LeRobot; prompts steer action granularity without extra training"
+    }
+  },
+  "eo-1": {
+    "description": "EO-1 is an open-source 3B unified embodied foundation model initialized from Qwen2.5-VL. Trained on interleaved vision-text-action data with both next-token prediction and flow-matching objectives, it achieves strong multimodal reasoning and CALVIN control.",
+    "highlights": [
+      "Lightweight 3B open unified embodied model initialized from Qwen2.5-VL",
+      "Interleaved vision-text-action pretraining bridges embodied reasoning and control",
+      "Single decoder-only transformer combining discrete LM head and continuous flow matching",
+      "Open-sourced and integrated into Hugging Face LeRobot"
+    ],
+    "applications": [
+      "Multimodal embodied reasoning & control",
+      "Long-horizon manipulation (CALVIN benchmarks)",
+      "Lightweight 3B edge VLA deployment"
+    ],
+    "specs": {
+      "architecture": "Single decoder-only transformer (discrete LM head + continuous flow-matching head)",
+      "backbone": "Qwen2.5-VL (3B)",
+      "action_head": "Flow Matching continuous action generation",
+      "training_data": "Interleaved vision-text-action embodied pretraining corpus",
+      "embodiments": "Single-arm, bimanual and simulation benchmark platforms",
+      "cross_embodiment": "Strong; interleaved pretraining aligns reasoning and acting",
+      "benchmark_note": "Leading performance on CALVIN and multimodal embodied reasoning benchmarks",
+      "deploy_note": "Compact 3B footprint integrated with LeRobot for accessible fine-tuning"
+    }
   }
 }

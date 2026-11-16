@@ -1535,5 +1535,153 @@
       "sdk": "Open API supporting Python, C++, ROS 2 and NVIDIA Isaac Lab"
     },
     "priceNote": "Approx. 20,000 USD in robotics channels; quote on request"
+  },
+  "xpeng-iron": {
+    "description": "XPENG IRON is XPENG's full-size humanoid robot standing 173 cm tall and weighing ~70 kg with 82 total DOF (including 22-DOF dexterous hands), powered by XPENG's proprietary Turing AI chip and 720° Eagle-Eye vision for factory and retail deployment.",
+    "highlights": [
+      "173 cm tall and 70 kg human proportions with 82 total DOF across the body",
+      "22-DOF anthropomorphic dexterous hands for fine industrial and retail manipulation",
+      "Powered by XPENG's in-house Turing AI chip and 720° Eagle-Eye vision stack",
+      "Trained on XPENG automotive assembly lines with mass production targeted for late 2026"
+    ],
+    "applications": [
+      "Automotive factory assembly & inspection",
+      "Retail store guidance & commercial services",
+      "EV-robotics ecosystem collaboration"
+    ],
+    "specs": {
+      "compute_platform": "XPENG in-house Turing AI chip",
+      "sensors": "720° AI Eagle-Eye vision + tactile dexterous hands",
+      "sdk": "Not open; focused on automotive factory and retail deployment"
+    },
+    "priceNote": "Not disclosed / quote on request (mass production targeted late 2026)"
+  },
+  "neura-4ne-1": {
+    "description": "NEURA Robotics 4NE-1 is a full-size cognitive humanoid robot from Germany standing 180 cm tall and weighing ~80 kg with 15 kg payload, featuring patented safety skin, force control, and integration with the Neuraverse skill platform.",
+    "highlights": [
+      "Flagship German cognitive humanoid; Gen 3 co-designed with Studio F.A. Porsche",
+      "180 cm tall, ~80 kg weight and 15 kg payload for industrial and domestic tasks",
+      "Integrates patented contactless safety skin and force sensing for safe HRI",
+      "Connected to the Neuraverse cloud skill ecosystem"
+    ],
+    "applications": [
+      "Industrial manufacturing & line collaboration",
+      "Logistics handling & equipment inspection",
+      "Home service & care assistance"
+    ],
+    "specs": {
+      "compute_platform": "Neuraverse cognitive computing platform",
+      "sensors": "Omnidirectional vision + patented contactless human-safety skin",
+      "sdk": "Supports Neuraverse skill ecosystem for industrial & home apps"
+    },
+    "priceNote": "Not disclosed / quote on request (Gen 3 / Gen 3.5 production designs unveiled)"
+  },
+  "sanctuary-phoenix": {
+    "description": "Sanctuary AI Phoenix is a general-purpose humanoid robot from Canada (170 cm, 70 kg, 48 total DOF, 25 kg payload) distinguished by its 20-DOF hydraulic haptic hands and Carbon™ cognitive AI system, piloted in retail and automotive manufacturing.",
+    "highlights": [
+      "North American general-purpose humanoid pioneer: 170 cm, 70 kg, 48 DOF, 25 kg payload",
+      "Signature 20-DOF hydraulic dexterous hands with proprietary haptic feedback",
+      "Powered by the Carbon™ cognitive AI system for language-driven autonomy",
+      "Piloted in real retail stores and Magna automotive manufacturing lines"
+    ],
+    "applications": [
+      "Automotive parts sorting & assembly",
+      "Retail store packing & shelf stocking",
+      "High-dexterity tactile manipulation research"
+    ],
+    "specs": {
+      "compute_platform": "Carbon™ cognitive AI control system",
+      "sensors": "Vision perception + proprietary hydraulic haptic dexterous hands",
+      "sdk": "Internal Carbon AI platform & enterprise pilots"
+    },
+    "priceNote": "Not sold at retail (iterated to Gen 8; commercial focus on Carbon AI & pilots)"
+  },
+  "tesollo-dg-5f-s": {
+    "description": "Tesollo DG-5F-S (2026) is a lightweight adult-hand-sized 5-finger dexterous hand from South Korea weighing 880 g with 20 independently driven DOF, 500 Hz control frequency, and up to 12 kg power-grip payload optimized for humanoid platforms.",
+    "highlights": [
+      "Adult-hand proportions weighing just 880 g (half the weight of the industrial DG-5F-M)",
+      "20 independently actuated DOF (4 DOF per finger) with absolute encoders",
+      "500 Hz real-time control frequency; 12 kg max power grip (7 kg rated) & 2 kg pinch",
+      "Standard 24V power with EtherNet (TCP/IP) and Modbus (TCP) interfaces"
+    ],
+    "applications": [
+      "Humanoid robot high-DOF end effector",
+      "500 Hz high-frequency force-position research",
+      "Precision industrial assembly & service robots"
+    ],
+    "specs": {
+      "speed_note": "500 Hz high-frequency real-time control",
+      "drive_type": "20 independent direct-drive joints (4 DOF/finger, absolute encoders)",
+      "tactile": "Tactile sensor integration supported",
+      "interface": "EtherNet (TCP/IP) / Modbus (TCP)",
+      "sdk": "500 Hz real-time SDK and humanoid integration support"
+    },
+    "priceNote": "Approx. 23,000 USD in robotics channels (heavier industrial DG-5F-M also available)"
+  },
+  "orca-hand": {
+    "description": "ORCA Hand v1 from ETH Zurich (SRL) is an open-source, 3D-printable 17-DOF anthropomorphic tendon-driven hand (16 finger + 1 wrist DOF) with integrated tactile sensors, buildable in under 8 hours for under 2,000 CHF (~2,200 USD) BoM cost.",
+    "highlights": [
+      "ETH Zurich open-source 17-DOF anthropomorphic tendon hand (16 finger + 1 wrist)",
+      "3D-printable design under 2,000 CHF BoM cost, assembled in under 8 hours",
+      "Popping joints and auto-calibrating tendon routing survive 10,000+ continuous cycles",
+      "Validated for zero-shot sim-to-real RL and imitation learning with integrated tactile sensors"
+    ],
+    "applications": [
+      "Low-cost anthropomorphic tendon-hand research",
+      "Zero-shot sim-to-real RL manipulation",
+      "University teaching & teleoperation"
+    ],
+    "specs": {
+      "drive_type": "Tendon-driven (center-routed auto-calibration + popping joints)",
+      "tactile": "Integrated compact modular fingertip tactile sensors",
+      "interface": "USB / serial control",
+      "sdk": "Fully open-source STLs, control code & assembly docs (<8h build)"
+    },
+    "priceNote": "Open-source 3D-printable BoM cost under 2,000 CHF (~2,200 USD)"
+  },
+  "robosense-airy": {
+    "description": "RoboSense Airy is a compact hemispherical 3D digital LiDAR (<240 g) featuring a 360°×90° hemispherical FOV, ~860,000 pts/s (96-beam single return), and a built-in IMU for humanoid, quadruped, and AMR navigation.",
+    "highlights": [
+      "360°×90° hemispherical FOV covers full surroundings with a single compact sensor",
+      "Under 240 g (without cables) for easy mounting on humanoid heads or quadrupeds",
+      "~860,000 pts/s (96-beam) with built-in IMU for SLAM and obstacle avoidance",
+      "Flagship compact digital robotic LiDAR from RoboSense"
+    ],
+    "applications": [
+      "Humanoid & quadruped SLAM navigation",
+      "Mobile robot 3D obstacle avoidance",
+      "UAV & spatial perception"
+    ],
+    "specs": {
+      "component_type": "Digital hemispherical 3D LiDAR (built-in IMU)",
+      "model_series": "Airy (96-beam / 192-beam)",
+      "range_note": "360°×90° hemispherical full-field FOV",
+      "interface": "Ethernet",
+      "key_params": "~860,000 pts/s (96-beam single return), built-in IMU, <240 g weight"
+    },
+    "priceNote": "Global retail/distributor reference approx. 799 USD"
+  },
+  "hesai-jt128": {
+    "description": "Hesai JT128 is a mini hyper-hemispherical 128-channel 3D LiDAR weighing 250 g with a zero-blind-zone 360°×189° FOV, 1.15M pts/s point rate, 40 m range (@10% reflectivity), and built-in IMU tailored for embodied robotics.",
+    "highlights": [
+      "360°×189° hyper-hemispherical FOV eliminates close-range blind zones around robots",
+      "128 channels delivering 1.15M pts/s in a 250 g package (70% smaller than peers)",
+      "Built-in IMU and 100Base-TX Ethernet supporting 10 Hz / 20 Hz scanning",
+      "Widely adopted on humanoids, AMRs and outdoor autonomous robots"
+    ],
+    "applications": [
+      "Zero-blind-zone humanoid & quadruped perception",
+      "AGV/AMR industrial mobile navigation",
+      "Outdoor autonomous mapping"
+    ],
+    "specs": {
+      "component_type": "Mini hyper-hemispherical 128-ch 3D LiDAR (built-in IMU)",
+      "model_series": "JT128",
+      "precision": "0.4° (H) × 0.74° (V) angular resolution",
+      "range_note": "40 m @ 10% reflectivity (60 m max), 360°×189° zero-blind-zone FOV",
+      "interface": "100Base-TX Ethernet",
+      "key_params": "128 channels, 1.15M pts/s, Φ62.5×73 mm, built-in IMU, 10/20 Hz"
+    },
+    "priceNote": "Not disclosed / quote on request"
   }
 }

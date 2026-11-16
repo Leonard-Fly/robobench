@@ -328,5 +328,49 @@
       "collection_method": "OmniGibson physics simulation + human VR teleoperation",
       "data_format": "OmniGibson / HDF5"
     }
+  },
+  "libero": {
+    "description": "LIBERO is a foundational benchmark and dataset for lifelong robot learning and language-conditioned manipulation, comprising 130 tasks across four suites (LIBERO-Spatial, Object, Goal, and 100) and serving as a standard evaluation benchmark for modern VLAs.",
+    "highlights": [
+      "Standard benchmark for evaluating VLAs across 4 suites (Spatial, Object, Goal, 100) and 130 tasks",
+      "Tests spatial relations, object generalization, goal shifts, and lifelong knowledge transfer",
+      "Used by virtually all leading VLAs including OpenVLA-OFT, π0, MolmoAct2, and Galaxea G0.5",
+      "Community-converted to LeRobot v3 format with extensions like LIBERO-Industry"
+    ],
+    "applications": [
+      "Standard VLA benchmark comparison",
+      "Multitask & lifelong robot learning",
+      "Spatial/object/goal generalization ablations"
+    ],
+    "specs": {
+      "tasks_count": "130 tasks across 4 suites (Spatial, Object, Goal, 100)",
+      "embodiments": "Franka Emika Panda simulated arm",
+      "modalities": "Dual-view RGB (third-person + wrist) + joint states & actions",
+      "annotations": "Natural language instructions & procedural task generation pipeline",
+      "collection_method": "Human teleoperation demos + procedural task generation",
+      "data_format": "HDF5 / LeRobot v3"
+    }
+  },
+  "ego4d": {
+    "description": "Ego4D from Meta AI and 13 universities is the largest egocentric daily-life video dataset, spanning 3,670 hours (~7.1 TB) from 931 participants across 74 locations in 9 countries with hand-object contact, narration, gaze, and 3D mesh annotations.",
+    "highlights": [
+      "Largest open egocentric daily-life video dataset at 3,670 hours (~7.1 TB)",
+      "Captured across 74 locations in 9 countries covering rich everyday hand-object interactions",
+      "Five benchmark tracks: episodic memory, hand-object interaction, AV diarization, social, forecasting",
+      "Core human-video pretraining foundation alongside Ego-Exo4D and EgoDex"
+    ],
+    "applications": [
+      "World model & physical commonsense video pretraining",
+      "Hand-object interaction & action forecasting",
+      "Human-to-robot skill transfer"
+    ],
+    "specs": {
+      "tasks_count": "74 global locations / 9 countries / 5 benchmark suites",
+      "embodiments": "931 human camera wearers (egocentric POV)",
+      "modalities": "Egocentric RGB video + audio + 3D environment meshes + gaze + stereo",
+      "annotations": "Dense narrations, hand-object contact, object boxes & episodic memory",
+      "collection_method": "Unscripted daily-life capture by 931 participants across consortium labs",
+      "data_format": "MP4 + JSON annotations (~7.1 TB total)"
+    }
   }
 }

@@ -552,5 +552,79 @@
     "paperUrl": "https://arxiv.org/abs/2403.09227",
     "datasetUrl": "https://behavior.stanford.edu/",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "libero",
+    "name": "LIBERO",
+    "nameZh": "LIBERO（终身机器人学习与 VLA 标准基准）",
+    "org": "UT Austin / NVIDIA et al.",
+    "orgZh": "得克萨斯大学奥斯汀分校 / NVIDIA 等",
+    "country": "美国",
+    "releaseDate": "2023-06",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "trajectories_k": null,
+      "hours": null,
+      "tasks_count": "130 项核心任务（Spatial / Object / Goal / 100 四大套件）",
+      "storage_tb": null,
+      "embodiments": "Franka Emika Panda 仿真机械臂",
+      "modalities": "双视角 RGB（第三视角 + 腕部）+ 关节状态与动作",
+      "annotations": "自然语言指令与程序化任务生成管线",
+      "collection_method": "人类遥操作示范 + 程序化无限任务生成管线",
+      "data_format": "HDF5 / LeRobot v3"
+    },
+    "highlights": [
+      "当前 VLA 领域引用率最高的标准评测基准，包含 Spatial、Object、Goal、100 四大套件共 130 项任务",
+      "支持空间关系、物体泛化、目标切换与长程知识迁移（LIBERO-100）多维度评估",
+      "已被 OpenVLA-OFT、π0、MolmoAct2、Galaxea G0.5 等几乎所有主流 VLA 用作必测基准",
+      "社区已将其完整转换为 LeRobot v3 格式，并衍生出 LIBERO-Industry 等工业扩展"
+    ],
+    "applications": [
+      "VLA 策略标准横向评测",
+      "多任务与终身机器人学习",
+      "空间/物体/目标泛化消融实验"
+    ],
+    "description": "LIBERO 是面向终身机器人学习与语言条件操作的核心仿真基准与数据集，包含 Spatial、Object、Goal 和 100 四大套件共 130 项任务，已成为检验 VLA 泛化能力的行业必测标准。",
+    "paperUrl": "https://arxiv.org/html/2306.03310v2",
+    "datasetUrl": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "ego4d",
+    "name": "Ego4D",
+    "nameZh": "Ego4D（全球最大第一视角人类日常视频数据集）",
+    "org": "Meta AI & 13 Universities",
+    "orgZh": "Meta AI 及全球 13 所高校",
+    "country": "美国",
+    "releaseDate": "2021-10",
+    "openSource": true,
+    "license": "Ego4D License（注册审批免费下载）",
+    "specs": {
+      "trajectories_k": null,
+      "hours": 3670,
+      "tasks_count": "74 个全球地点 / 9 个国家 / 5 大基准任务赛道",
+      "storage_tb": 7.1,
+      "embodiments": "931 名人类佩戴者第一视角穿戴相机",
+      "modalities": "第一视角 RGB 视频 + 音频 + 3D 环境网格 + 眼动追踪 + 立体双目",
+      "annotations": "海量自然语言旁白、手-物接触标注、物体检测与情景记忆标签",
+      "collection_method": "国际联盟 931 名参与者日常非剧本第一视角实拍",
+      "data_format": "MP4 + JSON 标注（全量约 7.1 TB）"
+    },
+    "highlights": [
+      "全球规模最大的第一视角日常活动视频数据集，总时长达 3,670 小时（约 7.1 TB）",
+      "跨越 9 个国家 74 个真实地点，覆盖烹饪、手工、购物、办公等海量手-物交互",
+      "提供情景记忆、手-物交互、视听分离、社交互动与未来预测五大基准",
+      "与 Ego-Exo4D、EgoDex 共同构成机器人从人类视频预训练的核心基石"
+    ],
+    "applications": [
+      "世界模型与物理常识视频预训练",
+      "手-物交互与动作预测",
+      "人类第一视角向机器人技能迁移"
+    ],
+    "description": "Ego4D 由 Meta AI 联合全球 13 所高校发布，包含 9 个国家 74 个地点的 3,670 小时第一视角日常活动视频（约 7.1 TB），附带手-物接触、旁白与 3D 环境标注，是具身世界模型预训练的重要人类视频数据源。",
+    "paperUrl": "https://arxiv.org/abs/2110.07058",
+    "datasetUrl": "https://ego4d-data.org/",
+    "dataUpdated": "2026-11"
   }
 ]
