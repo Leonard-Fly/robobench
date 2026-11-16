@@ -4,15 +4,6 @@ import { CATEGORY_LABELS } from '../data/specFields';
 export const CATEGORIES = Object.keys(CATEGORY_LABELS) as RobotCategory[];
 export const MAX_COMPARE = 4;
 
-const trim = (n: number) => Number(n.toFixed(2)).toString();
-
-export function formatPrice(p: PriceInfo): string {
-  if (p.cny != null) {
-    return p.cny >= 10000 ? `¥${trim(p.cny / 10000)}万` : `¥${p.cny.toLocaleString('en-US')}`;
-  }
-  if (p.usd != null) return `$${p.usd.toLocaleString('en-US')}`;
-  return '价格未公开';
-}
 
 /** 排序用价格（统一折算为人民币），未公开返回 null */
 export function priceSortValue(p: PriceInfo): number | null {
@@ -51,4 +42,12 @@ export const STATUS_CLASS: Record<string, string> = {
 };
 export const STATUS_CLASS_DEFAULT = 'bg-slate-400/15 text-slate-300 border-slate-400/30';
 
-export const KIND_LABELS = { vla: 'VLA 模型', 'world-model': '具身世界模型' } as const;
+/** 国家显示名：词典中无对应条目时回退原文 */
+export function countryLabel(t: (k: string) => string, country: string): string {
+  const k = `country.${country}`;
+  const v = t(k);
+  return v === k ? country : v;
+}
+
+/** 规格词典命名空间：分类 → spec.<ns>.<key> */
+export const MODEL_SPEC_NS = { vla: 'vla', 'world-model': 'wm' } as const;

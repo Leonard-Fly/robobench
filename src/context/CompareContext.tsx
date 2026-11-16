@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { CompareContext, type CompareState, type CompareType } from './compareStore';
-import { CATEGORY_LABELS } from '../data/specFields';
-import { KIND_LABELS, MAX_COMPARE } from '../components/format';
+import { useLocale } from '../i18n/useLocale';
+import { MAX_COMPARE } from '../components/format';
 import { getAiModelById, getRobotById } from '../data';
 
 const KEY = 'robobench-compare-v1';
@@ -22,12 +22,14 @@ function load(): CompareState {
   }
 }
 
-function groupLabel(type: CompareType, group: string): string {
-  if (type === 'model') return KIND_LABELS[group as keyof typeof KIND_LABELS] ?? group;
-  return CATEGORY_LABELS[group as keyof typeof CATEGORY_LABELS] ?? group;
+function groupLabel(t: (k: string) => string, type: CompareType, group: string): string {
+  const key = `${type === 'model' ? 'kind' : 'cat'}.${group}`;
+  const v = t(key);
+  return v === key ? group : v;
 }
 
 export function CompareProvider({ children }: { children: ReactNode }) {
+  const { t } = useLocale();
   const [state, setState] = useState<CompareState>(load);
   const [toast, setToast] = useState<string | null>(null);
   const timer = useRef<number | undefined>(undefined);
@@ -54,16 +56,16 @@ export function CompareProvider({ children }: { children: ReactNode }) {
       }
       if (state.ids.length > 0 && (state.type !== type || state.group !== group)) {
         setState({ type, group, ids: [id] });
-        showToast(`已切换为「${groupLabel(type, group)}」对比，之前的选择已清空`);
+        showToast(t('toast.switched').replace('{label}', groupLabel(t, type, group)));
         return;
       }
       if (state.ids.length >= MAX_COMPARE) {
-        showToast(`最多同时对比 ${MAX_COMPARE} 个`);
+        showToast(t('toast.max').replace('{n}', String(MAX_COMPARE)));
         return;
       }
       setState({ type, group, ids: [...state.ids, id] });
     },
-    [state, showToast],
+    [state, showToast, t],
   );
 
   const remove = useCallback(

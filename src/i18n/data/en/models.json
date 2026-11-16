@@ -1,0 +1,379 @@
+{
+  "pi0": {
+    "description": "π0 is a general-purpose robot foundation model released by Physical Intelligence. Its architecture of a VLM plus a flow matching action expert achieves 50Hz continuous control, and since being open-sourced it has become one of the most commonly used VLA fine-tuning bases in academia and industry.",
+    "highlights": [
+      "The first general-purpose VLA to validate flow matching action generation at scale",
+      "Open-sourced weights and fine-tuning code, with an active community ecosystem",
+      "A benchmark performer on long-horizon dexterous manipulation (such as folding clothes)",
+      "High-frequency continuous control with smooth motion"
+    ],
+    "applications": [
+      "Bimanual dexterous manipulation",
+      "Home / commercial service tasks",
+      "Research fine-tuning base"
+    ],
+    "specs": {
+      "architecture": "VLM backbone + action expert (flow matching)",
+      "backbone": "PaliGemma 3B",
+      "action_head": "Flow Matching continuous action chunks",
+      "training_data": "Large-scale in-house data from 7 robots across 68 task types + open-source data",
+      "embodiments": "Single-arm / bimanual robot arms, mobile manipulation platforms and other embodiments",
+      "cross_embodiment": "Strong; pre-training covers multiple embodiments and can be fine-tuned for transfer",
+      "benchmark_note": "Significantly ahead of contemporaneous baselines on long-horizon dexterous tasks such as folding clothes and clearing tables",
+      "deploy_note": "Inference on a single consumer-grade GPU; the official openpi provides a fine-tuning workflow"
+    }
+  },
+  "nvidia-cosmos": {
+    "description": "Cosmos is NVIDIA's world foundation model platform for physical AI. Trained on approx. 20 million hours of video, it offers both diffusion and autoregressive models, is widely used for robot data synthesis and policy evaluation, and is currently the most mainstream open-source world model family.",
+    "highlights": [
+      "An open-source, commercially usable family of world foundation models with a complete ecosystem",
+      "Deeply integrated with the Isaac/Omniverse simulation pipeline",
+      "Supports generation from text, image and video conditions",
+      "Specifically optimized for physical consistency in physical AI scenarios"
+    ],
+    "applications": [
+      "Synthetic training data generation",
+      "Offline policy evaluation",
+      "Sim-to-real transfer"
+    ],
+    "specs": {
+      "architecture": "Video world foundation models with two technical routes: diffusion + autoregressive",
+      "modality": "Video generation (text / image / video conditioned)",
+      "resolution": "Up to 1280×704",
+      "horizon": "Video clips of several seconds",
+      "action_conditioned": "Supports action/trajectory conditioned control (Cosmos Transfer/Reason series extensions)",
+      "training_data": "Approx. 20 million hours of real-world video",
+      "use_case": "Robot/autonomous driving synthetic data generation, policy evaluation, simulation augmentation",
+      "benchmark_note": "Physical consistency is in the top tier among open-source world models"
+    }
+  },
+  "rt-2": {
+    "description": "RT-2 is a vision-language-action model proposed by Google DeepMind in 2023. It represents actions as text tokens and is co-trained with internet image-text data, giving robots semantic reasoning and generalization. It is the pioneering work of the VLA paradigm, but is not open source.",
+    "highlights": [
+      "First to propose and validate the vision-language-action (VLA) paradigm",
+      "Transfers web knowledge to robot control, with semantic reasoning ability",
+      "Generalizes markedly better than RT-1 on unseen objects and instructions",
+      "Spawned follow-up work such as OpenVLA"
+    ],
+    "applications": [
+      "Mobile manipulation robots",
+      "Semantics-driven object manipulation",
+      "VLA research baseline"
+    ],
+    "specs": {
+      "architecture": "Vision-language model directly outputs action tokens (actions discretized as text)",
+      "backbone": "PaLI-X (up to 55B) / PaLM-E (12B)",
+      "action_head": "Discrete action token autoregressive output",
+      "training_data": "Co-trained on internet image-text data + Everyday Robots demonstration data",
+      "embodiments": "Everyday Robots mobile manipulator arm",
+      "cross_embodiment": "Not a focus of validation in the paper",
+      "benchmark_note": "Generalization success rate on unseen objects, backgrounds and instructions is approx. twice that of RT-1",
+      "deploy_note": "The large model relies on cloud TPU inference, with a low control frequency"
+    }
+  },
+  "openvla": {
+    "description": "OpenVLA is an open-source 7B VLA model jointly released by Stanford, Berkeley and Toyota Research Institute, among others. Based on Llama 2 and trained on Open X-Embodiment data, it outperforms the 55B RT-2-X, supports low-cost fine-tuning, and is a commonly used community baseline.",
+    "highlights": [
+      "The first open-source 7B general-purpose VLA model",
+      "Only about 1/7 the parameters of RT-2-X yet performs better",
+      "Supports LoRA and quantization, and can be fine-tuned on consumer GPUs",
+      "One of the VLAs most widely reproduced and built upon by the community"
+    ],
+    "applications": [
+      "Single-arm manipulation",
+      "VLA fine-tuning base",
+      "Academic research baseline"
+    ],
+    "specs": {
+      "architecture": "VLA with a vision encoder + Llama 2 language model",
+      "backbone": "Llama 2 7B + DINOv2 + SigLIP",
+      "action_head": "Discrete action token autoregressive output",
+      "training_data": "Approx. 970,000 robot trajectories from the Open X-Embodiment dataset",
+      "embodiments": "Mainly robot arms such as WidowX and Google Robot; can be fine-tuned to adapt to new embodiments",
+      "cross_embodiment": "Supported; can adapt to new embodiments via LoRA fine-tuning",
+      "benchmark_note": "The paper reports a success rate approx. 16.5 percentage points higher than the 55B RT-2-X, with only about 1/7 of its parameters",
+      "deploy_note": "Approx. 6Hz on an RTX 4090; supports quantization and LoRA fine-tuning"
+    }
+  },
+  "pi05": {
+    "description": "π0.5 is a VLA model from Physical Intelligence built on π0. Through co-training on multi-source data and high-level subtask prediction, it lets robots complete long-horizon tidying tasks in real homes never seen during training; its weights were later released via openpi.",
+    "highlights": [
+      "Emphasizes open-world generalization, performing tasks in brand-new home environments",
+      "Predicts a high-level subtask first and then outputs actions, making long-horizon tasks more robust",
+      "Co-trained on multi-source data to improve semantic understanding",
+      "Weights released through openpi"
+    ],
+    "applications": [
+      "Home tidying and cleaning",
+      "Mobile manipulation",
+      "Research fine-tuning base"
+    ],
+    "specs": {
+      "architecture": "Hierarchical reasoning + action expert, supporting high-level subtask prediction",
+      "backbone": "PaliGemma-series VLM",
+      "action_head": "Flow Matching continuous action chunks",
+      "training_data": "Co-trained on multiple robot datasets, internet vision-language data and high-level semantic annotation data",
+      "embodiments": "Mobile manipulation robots, bimanual robots and other embodiments",
+      "cross_embodiment": "Strong, with emphasis on open-world generalization in unseen home environments",
+      "benchmark_note": "Can complete long-horizon tasks such as tidying kitchens and bedrooms in real homes absent from training",
+      "deploy_note": "Requires a higher-end GPU for inference; openpi provides a fine-tuning workflow"
+    }
+  },
+  "octo": {
+    "description": "Octo is an open-source general-purpose robot policy released by Berkeley, Stanford and Carnegie Mellon, among others. With only approx. 93 million parameters, it is pre-trained on Open X-Embodiment data with a diffusion action head and can be quickly fine-tuned to new robot embodiments, making it suitable for low-compute scenarios.",
+    "highlights": [
+      "Lightweight general-purpose robot policy with only 27M to 93M parameters",
+      "Supports both language and goal image task specification",
+      "Low cost and fast fine-tuning to new embodiments",
+      "Fully open source, including training code and weights"
+    ],
+    "applications": [
+      "Rapid fine-tuning for new robots",
+      "Low-compute deployment",
+      "Academic baseline research"
+    ],
+    "specs": {
+      "architecture": "Transformer policy with a diffusion action head",
+      "backbone": "Transformer trained from scratch (Small 27M / Base 93M)",
+      "action_head": "Diffusion model generates actions",
+      "training_data": "Approx. 800,000 robot trajectories from Open X-Embodiment",
+      "embodiments": "Pre-training data from 9 robot platforms; can be fine-tuned to new embodiments",
+      "cross_embodiment": "Supported; makes it easy to quickly fine-tune to new sensors and action spaces",
+      "benchmark_note": "Outperformed the open-source baselines of the time in zero-shot and fine-tuned performance across multiple robots",
+      "deploy_note": "The model is very small and can be fine-tuned and run on consumer-grade GPUs"
+    }
+  },
+  "rdt-1b": {
+    "description": "RDT-1B is a bimanual manipulation diffusion foundation model with approx. 1.2 billion parameters released by a Tsinghua University team. Based on a Diffusion Transformer with a unified action space, it is pre-trained on multi-robot data, has strong few-shot ability, and its weights and code are open source.",
+    "highlights": [
+      "One of the largest diffusion foundation models for bimanual manipulation, with approx. 1.2 billion parameters",
+      "A unified action space designed for bimanual coordinated manipulation",
+      "Strong few-shot and zero-shot generalization",
+      "Tsinghua open-sourced the weights and training code"
+    ],
+    "applications": [
+      "Bimanual manipulation",
+      "Few-shot task learning",
+      "Chinese VLA research baseline"
+    ],
+    "specs": {
+      "architecture": "Diffusion Transformer foundation model",
+      "backbone": "Language encoder T5-XXL + vision encoder SigLIP",
+      "action_head": "Diffusion model generates action chunks",
+      "training_data": "Pre-trained on multi-robot datasets, and fine-tuned on in-house collected ALOHA bimanual data",
+      "embodiments": "Mainly ALOHA bimanual robots",
+      "cross_embodiment": "Proposes a unified action space to merge multi-embodiment data",
+      "benchmark_note": "Outperforms baselines such as Octo and OpenVLA on real bimanual tasks, with few-shot ability",
+      "deploy_note": "Pre-training and fine-tuning code provided; training requires large GPU memory"
+    }
+  },
+  "nvidia-gr00t-n1": {
+    "description": "GR00T N1 is an open humanoid robot foundation model released by NVIDIA in 2025, with approx. 2.2 billion parameters. It uses a dual-system architecture of a vision-language module plus a diffusion Transformer action module, is trained on a mix of real, video and synthetic data, and can be adapted to different robots through post-training.",
+    "highlights": [
+      "One of the world's first open foundation models for general-purpose humanoid robots",
+      "Dual-system architecture balancing language understanding and high-frequency action",
+      "Trained on a mix of real, video and synthetic data",
+      "Forms a data loop together with Isaac Lab and Cosmos"
+    ],
+    "applications": [
+      "General humanoid manipulation",
+      "Post-training adaptation to new embodiments",
+      "Simulation and synthetic-data-driven training"
+    ],
+    "specs": {
+      "architecture": "Dual system: vision-language module (slow thinking) + diffusion Transformer action module (fast execution)",
+      "backbone": "Eagle-2 vision-language model",
+      "action_head": "Diffusion Transformer generates action chunks",
+      "training_data": "Mix of real robot trajectories, human videos and synthetic simulation data",
+      "embodiments": "Targets humanoid robots, and also adapts to various robot arms",
+      "cross_embodiment": "Supported; can adapt to different embodiments via post-training",
+      "benchmark_note": "Outperforms imitation learning baselines on simulation benchmarks and real humanoid tasks",
+      "deploy_note": "Post-training workflow provided; deployed with the Isaac and Jetson platforms"
+    }
+  },
+  "figure-helix": {
+    "description": "Helix is a humanoid robot VLA released by Figure AI in 2025. It combines an approx. 7B slow language-vision system with an approx. 80M, 200Hz fast control policy, can control the entire upper body and supports two-robot collaboration. It runs on an onboard GPU and is not open source.",
+    "highlights": [
+      "The first VLA to control a humanoid's entire upper body, including the fingers",
+      "Dual-system design balancing semantic understanding and 200Hz high-frequency control",
+      "Supports multi-robot collaboration, demonstrated with two robots tidying items together",
+      "Runs entirely on an onboard embedded GPU"
+    ],
+    "applications": [
+      "Home and logistics manipulation",
+      "Multi-robot collaboration",
+      "Humanoid upper-body control"
+    ],
+    "specs": {
+      "architecture": "Dual system: slow VLM (System 2) + fast visuomotor policy (System 1)",
+      "backbone": "Approx. 7B open-source VLM",
+      "action_head": "Approx. 80M-parameter fast policy outputs continuous actions",
+      "training_data": "Approx. 500 hours of multi-robot, multi-operator teleoperation data",
+      "embodiments": "Figure humanoid robot (35 DOF in the upper body)",
+      "cross_embodiment": "Mainly targets Figure's own embodiment",
+      "benchmark_note": "Demonstrated two robots collaboratively putting away groceries and other tasks, and can grasp arbitrary household items zero-shot",
+      "deploy_note": "Runs on an onboard low-power GPU"
+    }
+  },
+  "gemini-robotics": {
+    "description": "Gemini Robotics is a VLA model launched by Google DeepMind in 2025 based on Gemini 2.0. It can directly control robots to perform dexterous tasks such as folding origami and zipping zippers. The family also includes an embodied reasoning model, and it is developed with partners such as Apptronik, but the model is not open source.",
+    "highlights": [
+      "A multimodal robot foundation model based on Gemini 2.0",
+      "Stronger language understanding and generalization",
+      "Supports highly dexterous tasks such as folding origami and zipping zippers",
+      "Later followed by an On-Device version that runs locally"
+    ],
+    "applications": [
+      "Bimanual dexterous manipulation",
+      "Humanoid robots",
+      "Embodied reasoning and task planning"
+    ],
+    "specs": {
+      "architecture": "VLA based on Gemini 2.0, plus an embodied reasoning version, Gemini Robotics-ER",
+      "backbone": "Gemini 2.0",
+      "action_head": "Continuous action output (cloud model + on-device action decoding)",
+      "training_data": "Large-scale robot teleoperation data + multimodal internet data",
+      "embodiments": "ALOHA 2 bimanual, Apptronik Apollo humanoid, etc.",
+      "cross_embodiment": "Strong; can adapt to different robot configurations",
+      "benchmark_note": "Showed strong generalization and language understanding on dexterous tasks such as folding paper and zipping zippers",
+      "deploy_note": "An On-Device version that runs locally on the robot was also released"
+    }
+  },
+  "agibot-go-1": {
+    "description": "GO-1 is a general-purpose embodied foundation model released by AgiBot in 2025. It uses the ViLLA architecture, composed of a latent action planner and an action expert, is trained on AgiBot World's million-scale real trajectories, comes with an open dataset, and is used for AgiBot's robot series.",
+    "highlights": [
+      "Proposes the ViLLA architecture, introducing latent action representations",
+      "Trained on AgiBot World's million-scale real trajectories",
+      "Dataset and part of the code are publicly available",
+      "Paired with AgiBot Genie G1 and the Expedition series"
+    ],
+    "applications": [
+      "Industrial and commercial manipulation",
+      "Multi-embodiment data-driven training",
+      "Chinese VLA baseline"
+    ],
+    "specs": {
+      "architecture": "ViLLA (Vision-Language-Latent-Action): latent action planner + action expert",
+      "backbone": "Vision-language model backbone + latent action planning",
+      "action_head": "Action expert generates continuous actions",
+      "training_data": "AgiBot World dataset (over 1 million real robot trajectories)",
+      "embodiments": "AgiBot Genie G1 and others",
+      "cross_embodiment": "Claimed to transfer to different embodiments",
+      "benchmark_note": "The official report shows a clear improvement in success rate on complex tasks over previous open-source baselines",
+      "deploy_note": "Paired with the AgiBot World dataset and development platform"
+    }
+  },
+  "smolvla": {
+    "description": "SmolVLA is a lightweight open-source VLA released by Hugging Face in 2025, with only approx. 450 million parameters. Based on SmolVLM and a flow matching action expert, it is trained entirely on publicly available community data, runs on consumer-grade hardware, and targets LeRobot low-cost robot arms.",
+    "highlights": [
+      "A lightweight VLA with only approx. 450 million parameters",
+      "Trained entirely on publicly available community data, open and transparent",
+      "Can be trained and run on a consumer GPU or laptop",
+      "Deeply integrated with the LeRobot low-cost robot arm ecosystem"
+    ],
+    "applications": [
+      "Low-cost robot arms",
+      "Personal and educational projects",
+      "Edge deployment"
+    ],
+    "specs": {
+      "architecture": "Lightweight VLM + action expert",
+      "backbone": "SmolVLM-2",
+      "action_head": "Flow Matching continuous action chunks",
+      "training_data": "Public robot datasets from the LeRobot community (approx. 23,000 trajectories)",
+      "embodiments": "Low-cost robot arms such as SO-100 / SO-101",
+      "cross_embodiment": "Mainly targets low-cost desktop robot arms",
+      "benchmark_note": "Comparable to larger models on simulated and real tasks",
+      "deploy_note": "Runs on consumer GPUs and even a MacBook; supports asynchronous inference"
+    }
+  },
+  "google-genie-2": {
+    "description": "Genie 2 is a foundation world model released by Google DeepMind in late 2024. It can generate an interactive 3D environment from a single image, supports keyboard and mouse action control, and maintains temporal consistency for about a minute. It is mainly used to provide training environments for AI agents and is not open source.",
+    "highlights": [
+      "Generates an interactive 3D world from a single image",
+      "Supports keyboard and mouse action control while maintaining some temporal consistency",
+      "Can provide unlimited training environments for agents such as SIMA",
+      "Demonstrated emergent physics, lighting and reflections"
+    ],
+    "applications": [
+      "Agent training environment generation",
+      "Game and interactive content prototyping",
+      "Embodied AI research"
+    ],
+    "specs": {
+      "architecture": "Autoregressive latent-space diffusion world model",
+      "modality": "Generates interactive 3D environment video from a single image",
+      "horizon": "Typically tens of seconds, up to approx. 1 minute",
+      "action_conditioned": "Supports real-time control via keyboard/mouse action input",
+      "training_data": "Large-scale video dataset",
+      "use_case": "Generating open-ended training environments for AI agents",
+      "benchmark_note": "Demonstrated long-term consistency in object interaction, lighting and physics"
+    }
+  },
+  "wayve-gaia-2": {
+    "description": "GAIA-2 is a generative world model for autonomous driving released by Wayve of the UK. It can generate multi-camera consistent driving video and supports controlling conditions such as ego-vehicle actions, traffic participants and weather. It is used to synthesize long-tail scenarios and evaluate driving policies, and is not open source.",
+    "highlights": [
+      "Multi-camera consistent driving video generation",
+      "Can control ego-vehicle actions and the behavior of traffic participants",
+      "Supports editing conditions such as weather, lighting and road type",
+      "Used to generate rare safety-critical scenarios"
+    ],
+    "applications": [
+      "Autonomous driving data synthesis",
+      "Safety-critical scenario simulation",
+      "Driving policy evaluation"
+    ],
+    "specs": {
+      "architecture": "Latent-space diffusion world model",
+      "modality": "Multi-camera driving video generation",
+      "action_conditioned": "Supports control of ego-vehicle actions, other traffic participants and environmental conditions",
+      "training_data": "Real driving data from multiple countries including the UK, US and Germany",
+      "use_case": "Autonomous driving scenario synthesis and long-tail scenario simulation",
+      "benchmark_note": "Can generate multi-camera consistent driving scenes and supports conditions such as weather and time of day"
+    }
+  },
+  "1x-world-model": {
+    "description": "The 1X World Model is an action-conditioned video world model trained by 1X Technologies on real data from its own humanoid robots. It can predict the visual outcome after a robot action, is used for policy evaluation and iteration to reduce real-robot testing costs, and serves the NEO home robot.",
+    "highlights": [
+      "Trained on data collected from real robots, closely matching its own embodiment",
+      "Policies can be evaluated inside the world model, reducing real-robot testing",
+      "Action-conditioned prediction, simulating the consequences of interactions",
+      "Supports iteration of the NEO home robot"
+    ],
+    "applications": [
+      "Robot policy evaluation",
+      "Humanoid household task research",
+      "Simulation data generation"
+    ],
+    "specs": {
+      "architecture": "Action-conditioned world model based on video generation",
+      "modality": "Action-conditioned video prediction",
+      "action_conditioned": "Generates future video conditioned on robot actions",
+      "training_data": "Large-scale data collected by 1X humanoid robots in real homes and offices",
+      "use_case": "Evaluating robot policies, replacing part of real-world testing",
+      "benchmark_note": "Officially shown to correlate highly with real-world policy performance"
+    }
+  },
+  "unisim": {
+    "description": "UniSim is a universal interactive world simulator proposed in 2023 by Google DeepMind together with Berkeley and others. It uses a video diffusion model to generate subsequent frames from text or actions, lets policies be trained within it and transferred to real robots, and established the idea of world models as simulators.",
+    "highlights": [
+      "Among the first to propose using a video generation model as a universal interactive simulator",
+      "Unifies multiple data sources, covering robots, human activity and simulation",
+      "Supports two levels of conditioning: high-level instructions and low-level control",
+      "Selected as an Outstanding Paper at ICLR 2024"
+    ],
+    "applications": [
+      "Policy training and evaluation",
+      "Long-horizon task planning",
+      "Embodied AI research"
+    ],
+    "specs": {
+      "architecture": "Action-conditioned video diffusion model",
+      "modality": "Video generation conditioned on text or low-level actions",
+      "action_conditioned": "Supports high-level text instructions and low-level motion control",
+      "training_data": "Multi-source data: simulation renderings, real robots, human activity videos and image-text data",
+      "use_case": "Interactive simulation for training policies, long-horizon planning and vision-language models",
+      "benchmark_note": "Policies trained within it transfer to real robots, validating the feasibility of world models as simulators"
+    }
+  }
+}

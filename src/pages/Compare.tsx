@@ -1,9 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ROBOTS, getRobotById } from '../data';
-import { CATEGORY_ICONS, CATEGORY_LABELS, SPEC_FIELDS_BY_CATEGORY } from '../data/specFields';
+import { CATEGORY_ICONS, SPEC_FIELDS_BY_CATEGORY } from '../data/specFields';
+import { displayManufacturer, displayName } from '../i18n/localizeData';
+import { useLocale } from '../i18n/useLocale';
+import { useLocalData } from '../components/useLocalData';
+import PriceText from '../components/PriceText';
 import type { Robot, RobotCategory } from '../types';
-import { CATEGORIES, MAX_COMPARE, formatPrice } from '../components/format';
+import { CATEGORIES, MAX_COMPARE } from '../components/format';
 import { useCompare } from '../context/useCompare';
 import CompareTable from '../components/CompareTable';
 import AddPicker from '../components/AddPicker';
@@ -11,6 +14,8 @@ import { robotBasicRows } from './robotRows';
 import { CheckIcon, PlusIcon, XIcon } from '../components/Icons';
 
 export default function Compare() {
+  const { locale, t } = useLocale();
+  const { robots: ROBOTS, getRobot: getRobotById } = useLocalData();
   const [sp, setSp] = useSearchParams();
   const { state, setAll } = useCompare();
   const [pickCat, setPickCat] = useState<RobotCategory>('humanoid');
@@ -26,7 +31,7 @@ export default function Compare() {
       .filter((r): r is Robot => !!r);
     const cat = list[0]?.category;
     return list.filter((r) => r.category === cat).slice(0, MAX_COMPARE);
-  }, [idsParam]);
+  }, [idsParam, getRobotById]);
 
   const ids = items.map((r) => r.id);
   const cat = items[0]?.category;
@@ -51,12 +56,12 @@ export default function Compare() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
-      <h1 className="text-3xl font-bold text-white">参数对比</h1>
-      <p className="mt-2 text-sm text-slate-400">仅支持同一分类内对比，最多同时对比 {MAX_COMPARE} 个。数值型参数中最优值以绿色 ▲ 标出，横条表示相对该行最大值的比例。</p>
+      <h1 className="text-3xl font-bold text-white">{t('compare.title')}</h1>
+      <p className="mt-2 text-sm text-slate-400">{t('compare.desc').replace('{n}', String(MAX_COMPARE))}</p>
 
       {items.length === 0 ? (
         <div className="card mt-8 p-6 sm:p-8">
-          <h2 className="font-semibold text-white">选择分类，开始对比</h2>
+          <h2 className="font-semibold text-white">{t('compare.pickCat')}</h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {CATEGORIES.map((c) => (
               <button
@@ -67,11 +72,11 @@ export default function Compare() {
                   pickCat === c ? 'border-accent bg-accent/15 text-accent' : 'border-line text-slate-300 hover:border-accent/40'
                 }`}
               >
-                {CATEGORY_ICONS[c]} {CATEGORY_LABELS[c]}
+                {CATEGORY_ICONS[c]} {t(`cat.${c}`)}
               </button>
             ))}
           </div>
-          <p className="mt-6 text-sm text-slate-500">热门条目（点击勾选，选 2 个以上即可对比）</p>
+          <p className="mt-6 text-sm text-slate-500">{t('compare.popular')}</p>
           <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {ROBOTS.filter((r) => r.category === pickCat).slice(0, 9).map((r) => (
               <button
@@ -82,8 +87,8 @@ export default function Compare() {
               >
                 <PlusIcon className="text-accent" />
                 <span className="min-w-0">
-                  <span className="block truncate text-sm font-medium text-white">{r.nameZh}</span>
-                  <span className="block truncate text-xs text-slate-500">{r.manufacturerZh} · {formatPrice(r.price)}</span>
+                  <span className="block truncate text-sm font-medium text-white">{displayName(r, locale)}</span>
+                  <span className="block truncate text-xs text-slate-500">{displayManufacturer(r, locale)} · <PriceText price={r.price} /></span>
                 </span>
               </button>
             ))}
@@ -93,16 +98,16 @@ export default function Compare() {
         <>
           <div className="sticky top-16 z-30 -mx-4 mt-6 border-b border-line bg-bg/85 px-4 py-3 backdrop-blur-xl sm:-mx-6 sm:px-6">
             <p className="mb-2 text-xs text-slate-500">
-              {CATEGORY_ICONS[items[0].category]} {CATEGORY_LABELS[items[0].category]} · 已选 <span className="font-mono">{items.length}</span>/{MAX_COMPARE}
+              {CATEGORY_ICONS[items[0].category]} {t(`cat.${items[0].category}`)} · {t('compare.selected')} <span className="font-mono">{items.length}</span>/{MAX_COMPARE}
             </p>
             <div className="grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-4">
               {items.map((r) => (
                 <div key={r.id} className="relative rounded-xl border border-accent/30 bg-surface-2 p-3 pr-8">
-                  <p className="truncate text-sm font-semibold text-white">{r.nameZh}</p>
-                  <p className="truncate text-xs text-slate-500">{r.manufacturerZh}</p>
+                  <p className="truncate text-sm font-semibold text-white">{displayName(r, locale)}</p>
+                  <p className="truncate text-xs text-slate-500">{displayManufacturer(r, locale)}</p>
                   <button
                     type="button"
-                    aria-label={`移除 ${r.nameZh}`}
+                    aria-label={t('common.removeItem').replace('{name}', displayName(r, locale))}
                     onClick={() => update(ids.filter((x) => x !== r.id))}
                     className="absolute top-2 right-2 rounded-md p-1 text-slate-500 hover:bg-white/10 hover:text-white"
                   >
@@ -116,24 +121,25 @@ export default function Compare() {
                   onClick={() => setPicking(true)}
                   className="flex items-center justify-center gap-1.5 rounded-xl border border-dashed border-line p-3 text-sm text-slate-400 transition-colors hover:border-accent/60 hover:text-accent"
                 >
-                  <PlusIcon /> 添加
+                  <PlusIcon /> {t('compare.add')}
                 </button>
               )}
             </div>
           </div>
 
           {items.length < 2 && (
-            <p className="mt-4 flex items-center gap-1.5 text-sm text-amber-300"><CheckIcon /> 再添加至少 1 个同类条目即可看到对比效果。</p>
+            <p className="mt-4 flex items-center gap-1.5 text-sm text-amber-300"><CheckIcon /> {t('compare.needMore')}</p>
           )}
 
           <div className="mt-6">
             <CompareTable
-              columns={items.map((r) => ({ id: r.id, name: r.nameZh, sub: r.name, to: `/robots/${r.id}`, specs: r.specs }))}
+              columns={items.map((r) => ({ id: r.id, name: displayName(r, locale), sub: displayName(r, locale) !== r.name ? r.name : undefined, to: `/robots/${r.id}`, specs: r.specs }))}
               fields={fields}
-              basicRows={robotBasicRows(items)}
+              specNs={cat ?? ''}
+              basicRows={robotBasicRows(items, locale, t)}
               listRows={[
-                { label: '核心优势', lists: items.map((r) => r.highlights) },
-                { label: '应用场景', lists: items.map((r) => r.applications) },
+                { label: t('row.highlights'), lists: items.map((r) => r.highlights) },
+                { label: t('row.applications'), lists: items.map((r) => r.applications) },
               ]}
               onRemove={(id) => update(ids.filter((x) => x !== id))}
             />
@@ -142,12 +148,12 @@ export default function Compare() {
       )}
 
       <p className="mt-6 text-xs leading-relaxed text-slate-500">
-        免责声明：参数来自公开资料整理，仅供参考，具体以厂商官方发布为准；不同厂商的测试条件与口径可能不同。
+        {t('compare.disclaimer')}
       </p>
 
       {picking && (
         <AddPicker
-          title={`添加${cat ? CATEGORY_LABELS[cat] : ''}`}
+          title={t('picker.title').replace('{cat}', cat ? t(`cat.${cat}`) : '')}
           candidates={candidates}
           onClose={() => setPicking(false)}
           onPick={(id) => {

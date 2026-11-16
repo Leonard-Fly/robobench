@@ -1,6 +1,7 @@
 import type { MouseEvent } from 'react';
 import { useCompare } from '../context/useCompare';
 import type { CompareType } from '../context/compareStore';
+import { useLocale } from '../i18n/useLocale';
 import { CheckIcon, PlusIcon } from './Icons';
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
 }
 
 export default function CompareToggle({ type, group, id, className = '' }: Props) {
+  const { t } = useLocale();
   const { state, toggle } = useCompare();
   const on = state.type === type && state.ids.includes(id);
   const onClick = (e: MouseEvent) => {
@@ -30,7 +32,7 @@ export default function CompareToggle({ type, group, id, className = '' }: Props
       } ${className}`}
     >
       {on ? <CheckIcon width={13} height={13} /> : <PlusIcon width={13} height={13} />}
-      {on ? '已加入对比' : '对比'}
+      {on ? t('common.compared') : t('common.compare')}
     </button>
   );
 }

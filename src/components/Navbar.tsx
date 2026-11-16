@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { SITE_NAME, SITE_NAME_ZH } from '../data';
+import { SITE_NAME } from '../data';
 import { NAV_LINKS } from './navLinks';
 import { MenuIcon, XIcon } from './Icons';
+import { useLocale } from '../i18n/useLocale';
+import LanguageSwitcher, { LanguageList } from './LanguageSwitcher';
 
 export default function Navbar() {
+  const { t } = useLocale();
   const [open, setOpen] = useState(false);
   const cls = ({ isActive }: { isActive: boolean }) =>
     `rounded-lg px-3 py-2 text-sm transition-colors ${
@@ -18,18 +21,19 @@ export default function Navbar() {
             {SITE_NAME.slice(0, 4)}
             <span className="text-gradient">{SITE_NAME.slice(4)}</span>
           </span>
-          <span className="hidden text-xs text-slate-500 sm:inline">{SITE_NAME_ZH}</span>
+          <span className="hidden text-xs text-slate-500 sm:inline">{t('site.tagline')}</span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
           {NAV_LINKS.map((l) => (
-            <NavLink key={l.to} to={l.to} end={l.to === '/'} className={cls}>{l.label}</NavLink>
+            <NavLink key={l.to} to={l.to} end={l.to === '/'} className={cls}>{t(l.key)}</NavLink>
           ))}
+          <LanguageSwitcher />
         </nav>
         <button
           type="button"
           className="rounded-lg p-2 text-slate-300 hover:bg-white/5 md:hidden"
           onClick={() => setOpen(!open)}
-          aria-label="菜单"
+          aria-label={t('nav.menu')}
         >
           {open ? <XIcon width={22} height={22} /> : <MenuIcon width={22} height={22} />}
         </button>
@@ -38,9 +42,10 @@ export default function Navbar() {
         <nav className="flex flex-col gap-1 border-t border-line bg-bg/95 px-4 py-3 md:hidden">
           {NAV_LINKS.map((l) => (
             <NavLink key={l.to} to={l.to} end={l.to === '/'} className={cls} onClick={() => setOpen(false)}>
-              {l.label}
+              {t(l.key)}
             </NavLink>
           ))}
+          <LanguageList onPick={() => setOpen(false)} />
         </nav>
       )}
     </header>

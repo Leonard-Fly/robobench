@@ -1,0 +1,660 @@
+{
+  "unitree-g1": {
+    "description": "Unitree G1 is currently the world's leading research-grade humanoid robot by shipment volume. With a starting price under 100,000 RMB and excellent motion control, it has become the mainstream choice for universities and research institutions, and supports full-pipeline reinforcement learning development.",
+    "highlights": [
+      "Starting at 99,000 RMB, greatly lowering the barrier to humanoid robots",
+      "Powerful joints enable highly dynamic motions such as running, jumping and rolling over",
+      "Compact when folded and can be carried by one person",
+      "Mature development ecosystem with a large number of research citations"
+    ],
+    "applications": [
+      "Research and education",
+      "Algorithm development platform",
+      "Exhibitions and demos",
+      "Custom development"
+    ],
+    "specs": {
+      "swappable_battery": "Quick-swap battery supported",
+      "compute_platform": "NVIDIA Jetson Orin (EDU version)",
+      "sensors": "3D LiDAR + depth camera + microphone array",
+      "sdk": "Open SDK, supports ROS2 / reinforcement learning simulation"
+    },
+    "priceNote": "Starting price for the base version; the EDU version costs more"
+  },
+  "unitree-go2": {
+    "description": "Unitree Go2 is the benchmark product among consumer-grade quadruped robots. It offers LiDAR-based autonomous obstacle avoidance and highly dynamic motion at a price of around 10,000 RMB, and is also one of the most widely used quadruped platforms in research.",
+    "highlights": [
+      "Consumer price at around 10,000 RMB, with world-leading shipment volume",
+      "Standard 4D LiDAR with strong autonomous obstacle avoidance",
+      "Excellent motion performance, supporting moves such as backflips",
+      "Comprehensive accessories and development ecosystem"
+    ],
+    "applications": [
+      "Consumer entertainment",
+      "Research and education",
+      "Inspection and security",
+      "Custom development"
+    ],
+    "specs": {
+      "ip_rating": "IP54 (splash-resistant body)",
+      "sensors": "4D LiDAR L1 + depth camera",
+      "sdk": "Open SDK, supports ROS / Python"
+    },
+    "priceNote": "Starting price for the Air version; Pro/EDU versions cost more"
+  },
+  "inspire-rh56": {
+    "description": "The Inspire RH56 series is one of the most commercially mature dexterous hands in China. Using a miniature linear servo drive, it balances weight, cost and reliability, and is widely integrated into various humanoid robot bodies.",
+    "highlights": [
+      "A commercial dexterous hand with leading shipment volume in China",
+      "Size and weight close to an adult human hand, easy to integrate",
+      "6 active DOF covering common grasping tasks",
+      "Chosen as the default end effector by multiple humanoid robot makers"
+    ],
+    "applications": [
+      "Humanoid robot end effector",
+      "Research and education",
+      "Prosthetics research",
+      "Teleoperation"
+    ],
+    "specs": {
+      "speed_note": "Single finger flexion in approx. 1 second",
+      "drive_type": "Miniature linear servo drive",
+      "tactile": "Optional fingertip pressure sensors",
+      "interface": "RS485 / CAN",
+      "sdk": "SDK and ROS driver provided"
+    },
+    "priceNote": "Price varies by version"
+  },
+  "unitree-h1-2": {
+    "description": "Unitree H1-2 is a full-size humanoid robot from Unitree Robotics for research and performance scenarios. Upgraded from the H1, it stands approx. 180 cm tall, has high joint torque and excellent motion performance, and provides open development interfaces. It is commonly used in motion control and reinforcement learning research.",
+    "highlights": [
+      "Full-size 180 cm humanoid with high joint torque, suited to highly dynamic research",
+      "Whole-body DOF upgraded over the H1, with more agile legs and arms",
+      "Official motion control is open, making it easy to validate reinforcement learning algorithms",
+      "Has repeatedly demonstrated highly dynamic performances such as running and dancing"
+    ],
+    "applications": [
+      "Research and education",
+      "Motion control algorithm research",
+      "Exhibitions and performances",
+      "Custom development"
+    ],
+    "specs": {
+      "swappable_battery": "Quick-swap battery supported",
+      "compute_platform": "Intel Core i7 + optional NVIDIA Jetson Orin (subject to official configuration)",
+      "sensors": "3D LiDAR + depth camera",
+      "sdk": "Open SDK, supports ROS2 / reinforcement learning"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "tesla-optimus-gen2": {
+    "description": "Tesla Optimus Gen 2 was unveiled in late 2023. Compared with the first generation, it is approx. 10 kg lighter, walks faster, and its hands have 11 DOF with tactile sensing. It is currently tested mainly inside Tesla factories and is not sold externally; mass-production timing and pricing are subject to official announcements.",
+    "highlights": [
+      "About 10 kg lighter than the previous generation, with faster walking speed",
+      "Approx. 28 actuators across the body, 11 DOF per hand",
+      "Fingers integrate tactile sensing, enabling fine-grained grasping",
+      "Built on Tesla's FSD vision and in-house chip stack"
+    ],
+    "applications": [
+      "Internal factory material handling",
+      "Production line assistance",
+      "Long-term target of household services"
+    ],
+    "specs": {
+      "compute_platform": "Tesla in-house FSD computing platform",
+      "sensors": "Primarily vision-based, with tactile sensors in the fingertips",
+      "sdk": "Not open, internal use only"
+    },
+    "priceNote": "Not disclosed; officially a long-term target price of approx. 20,000-30,000 USD has been mentioned, but no mass-production quote yet"
+  },
+  "figure-02": {
+    "description": "Figure 02 is the second-generation commercial humanoid robot released by Figure AI in 2024. It stands approx. 170 cm tall, has 16-DOF dexterous hands and 6 cameras, has been piloted in automotive factories, and is paired with the Helix model for language-driven manipulation tasks.",
+    "highlights": [
+      "Pilot deployment at a BMW factory",
+      "16 DOF per hand with strong fingertip load capacity",
+      "Built-in 2.25 kWh battery, approx. 5 hours of runtime",
+      "Paired with the Helix VLA model, supporting natural language interaction"
+    ],
+    "applications": [
+      "Automotive factory parts handling",
+      "Logistics and warehousing",
+      "Manufacturing line assistance"
+    ],
+    "specs": {
+      "compute_platform": "Onboard GPU inference, with approx. 3x the compute of the previous generation",
+      "sensors": "6 RGB cameras + onboard microphones and speakers",
+      "sdk": "Not open, targeted commercial partnerships"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "figure-03": {
+    "description": "Figure 03 was released in October 2025 as the third-generation humanoid robot from Figure AI, designed for home and commercial scenarios. It is lighter with a softer exterior, has cameras in the palms and tactile sensing in the fingertips, and is planned for large-scale mass production through its own factory.",
+    "highlights": [
+      "Designed for both home and commercial use, with a soft fabric-covered exterior",
+      "Cameras built into the palms and tactile sensing in the fingertips",
+      "Supports wireless charging, improving continuous operation efficiency",
+      "Redesigned specifically for Helix and large-scale mass production"
+    ],
+    "applications": [
+      "Household chores",
+      "Commercial and logistics operations",
+      "Factory line assistance"
+    ],
+    "specs": {
+      "compute_platform": "Onboard GPU for Helix model inference",
+      "sensors": "Head and palm cameras + fingertip tactile sensors",
+      "sdk": "Not open, targeted commercial partnerships"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "boston-dynamics-atlas": {
+    "description": "In April 2024, Boston Dynamics released the new all-electric Atlas, replacing the hydraulic version. Its joints can rotate through a wide range, it stands approx. 150 cm tall, and it is mainly being developed with Hyundai for factory applications, alongside research on whole-body manipulation based on large models.",
+    "highlights": [
+      "All-electric version released in 2024, replacing the hydraulic Atlas",
+      "Wide joint rotation range enables superhuman twisting motions",
+      "Developed with Hyundai for factory scenarios",
+      "Collaborating with Toyota Research Institute on large behavior model research"
+    ],
+    "applications": [
+      "Automotive factory material handling",
+      "Industrial manufacturing",
+      "Frontier research validation"
+    ],
+    "specs": {
+      "sensors": "Multiple head cameras and depth sensing",
+      "sdk": "Not open"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "agility-digit": {
+    "description": "Digit is a bipedal humanoid robot from Agility Robotics with a bird-like leg structure. It stands approx. 175 cm tall and can carry totes weighing approx. 16 kg. It is one of the earliest commercial humanoid robots to enter real warehouse settings and is offered as Robots-as-a-Service.",
+    "highlights": [
+      "One of the first bipedal humanoid robots in the world to be commercially deployed",
+      "Performs real work in logistics warehouses such as GXO",
+      "Bipedal with bird-like legs, suited to carrying totes",
+      "Paired with the Arc cloud platform, which integrates with warehouse management systems"
+    ],
+    "applications": [
+      "Logistics and warehouse tote handling",
+      "Goods transfer",
+      "Industrial material flow"
+    ],
+    "specs": {
+      "swappable_battery": "Supports autonomous battery swapping and charging",
+      "sensors": "LiDAR + multiple depth cameras",
+      "sdk": "Integrated via the Agility Arc cloud platform"
+    },
+    "priceNote": "Offered as Robots-as-a-Service (RaaS); quote on request"
+  },
+  "fourier-gr2": {
+    "description": "Fourier GR-2 is the second-generation general-purpose humanoid robot released by Fourier Intelligence in 2024. It has 53 DOF across the body and 12 DOF per hand, high joint torque, and open development interfaces, and targets embodied AI research and service scenarios such as rehabilitation and care.",
+    "highlights": [
+      "Up to 53 DOF across the body, with 12 DOF per hand",
+      "High joint peak torque and ample lower-limb power",
+      "Open interfaces for embodied AI development",
+      "Fourier has deep actuator expertise in rehabilitation robotics"
+    ],
+    "applications": [
+      "Embodied AI research",
+      "Medical rehabilitation and care",
+      "Service scenario exploration",
+      "Custom development"
+    ],
+    "specs": {
+      "swappable_battery": "Quick-swap battery supported",
+      "sensors": "Depth camera + tactile sensing (subject to official configuration)",
+      "sdk": "Open SDK, aimed at embodied AI development"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "ubtech-walker-s1": {
+    "description": "UBTECH Walker S1 is a humanoid robot for industrial scenarios with approx. 41 DOF across the body. It has entered training programs in several automaker factories, exploring parts handling, quality inspection and multi-robot collaboration, and is one of the earliest humanoid products in China to advance factory training.",
+    "highlights": [
+      "Has entered factories of automakers such as NIO and BYD for training",
+      "41 DOF across the body, designed for industrial scenarios",
+      "Supports multi-robot collaborative operation",
+      "UBTECH has many years of experience in service robotics"
+    ],
+    "applications": [
+      "Automotive factory training",
+      "Industrial handling and sorting",
+      "Multi-robot collaborative manufacturing"
+    ],
+    "specs": {
+      "sensors": "Stereo vision + force sensing (subject to official configuration)",
+      "sdk": "Targeted cooperation with industrial customers"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "agibot-a2": {
+    "description": "AgiBot Expedition A2 is a commercial humanoid robot from AgiBot, positioned for guided tours, reception and industrial assistance. Backed by AgiBot's data collection platform and the GO-1 embodied foundation model, it is already being delivered to and explored by multiple customers in China.",
+    "highlights": [
+      "A general-purpose commercial humanoid in AgiBot's Expedition series",
+      "Paired with the AgiBot World dataset and the GO-1 model",
+      "Targets deployment in guided tours, explanations and industrial scenarios",
+      "Backed by AgiBot's mass production and data collection systems"
+    ],
+    "applications": [
+      "Commercial guided tours and reception",
+      "Industrial manufacturing assistance",
+      "Research and education"
+    ],
+    "specs": {
+      "swappable_battery": "Battery swap supported",
+      "sensors": "Multi-camera vision + LiDAR (subject to official configuration)",
+      "sdk": "Development platform and GO-1 embodied model support provided"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "engineai-pm01": {
+    "description": "EngineAI PM01 is a small, highly dynamic humanoid robot released by EngineAI in late 2024. It is 138 cm tall, weighs approx. 40 kg, has 24 DOF and high joint torque, is priced at approx. 88,000 RMB, and targets university research and the developer ecosystem.",
+    "highlights": [
+      "A research-grade humanoid starting at approx. 88,000 RMB, with an affordable price",
+      "138 cm tall and 40 kg, portable and easy to deploy",
+      "Joint peak torque of approx. 164 N·m with good dynamic performance",
+      "Open for custom development by universities and developers"
+    ],
+    "applications": [
+      "University research and education",
+      "Motion control algorithm validation",
+      "Exhibitions and performances",
+      "Custom development"
+    ],
+    "specs": {
+      "compute_platform": "Intel N97, optional NVIDIA Jetson Orin (subject to official information)",
+      "sensors": "Depth camera + IMU",
+      "sdk": "Open SDK, for research and developers"
+    },
+    "priceNote": "Official reference price of approx. 88,000 RMB; specific versions subject to official information"
+  },
+  "1x-neo": {
+    "description": "1X NEO is a home humanoid robot from 1X Technologies that opened pre-orders in October 2025. It weighs approx. 30 kg, uses a soft exterior and tendon-driven actuation, is low-noise, has a pre-order price of approx. 20,000 USD, and is planned for delivery to US households in 2026.",
+    "highlights": [
+      "A consumer humanoid designed for the home, with a pre-order price of 20,000 USD",
+      "Approx. 30 kg with a soft fabric exterior and tendon drive, running quietly",
+      "Can carry objects weighing approx. 25 kg",
+      "Paired with the 1X world model, supporting household task learning and remote assistance"
+    ],
+    "applications": [
+      "Home tidying and cleaning",
+      "Everyday home companionship",
+      "Item carrying"
+    ],
+    "specs": {
+      "sensors": "Cameras + microphones + tactile sensing",
+      "sdk": "Not open, a home product"
+    },
+    "priceNote": "Pre-order price 20,000 USD, or subscription at approx. 499 USD/month; delivery planned for 2026"
+  },
+  "galbot-g1": {
+    "description": "Galbot G1 from Galbot is a wheeled dual-arm general-purpose robot with a mobile base, lifting column and dual arms. Backed by an embodied foundation model trained on large-scale synthetic data, it is being piloted in scenarios such as retail and pharmacies.",
+    "highlights": [
+      "Wheeled base + dual arms + lifting structure, suited to shelf work",
+      "Embodied foundation model trained on large-scale synthetic data",
+      "Already deployed in scenarios such as retail pharmacies",
+      "Secured multiple large funding rounds, with fast commercialization"
+    ],
+    "applications": [
+      "Retail store restocking and picking",
+      "Pharmacies and warehousing",
+      "Industrial material handling"
+    ],
+    "specs": {
+      "sensors": "Head and wrist cameras + LiDAR (subject to official information)",
+      "sdk": "Development interfaces provided, supporting integration of embodied foundation models"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "astribot-s1": {
+    "description": "Astribot S1 from Astribot is a wheeled dual-arm AI assistant robot. It uses a rope-driven structure for fast, flexible dual-arm manipulation, has been demonstrated folding clothes and tidying items, targets home service and general assistant scenarios, and is currently available mainly through targeted partnerships.",
+    "highlights": [
+      "Fast and highly dexterous dual arms, demonstrated folding clothes, pouring tea and more",
+      "Rope-driven structure gives human-like manipulation with quick response",
+      "Positioned for home service and general assistant use",
+      "Data collection combines teleoperation and imitation learning"
+    ],
+    "applications": [
+      "Home services",
+      "Commercial reception",
+      "Embodied AI research"
+    ],
+    "specs": {
+      "sensors": "Head camera + wrist cameras",
+      "sdk": "Targeted cooperation, supports imitation learning"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "agibot-genie-g1": {
+    "description": "AgiBot Genie G1 is a wheeled dual-arm manipulation robot from AgiBot with a mobile base and dual-arm configuration. It is mainly used for embodied data collection and industrial logistics operations, and comes with the open-source AgiBot World dataset and the GO-1 embodied foundation model.",
+    "highlights": [
+      "Wheeled dual-arm configuration combining mobility and bimanual manipulation",
+      "Designed for data collection and embodied model training",
+      "Paired with the open-source AgiBot World dataset",
+      "Supports the GO-1 embodied foundation model"
+    ],
+    "applications": [
+      "Data collection",
+      "Industrial and logistics operations",
+      "Embodied AI research"
+    ],
+    "specs": {
+      "sensors": "Head and wrist cameras, multimodal perception",
+      "sdk": "Paired with AgiBot World data collection and the GO-1 model"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "mobile-aloha": {
+    "description": "Mobile ALOHA is a low-cost open-source mobile bimanual manipulation system proposed by Stanford University in early 2024. Adding a mobile base to the ALOHA bimanual teleoperation setup, it can complete complex household tasks such as cooking and opening cabinet doors with only a small amount of demonstration data, and has become a popular academic platform.",
+    "highlights": [
+      "A low-cost, open-source mobile bimanual manipulation platform",
+      "Whole-body teleoperation for data collection, combined with ACT for imitation learning",
+      "Learns tasks such as cooking shrimp and opening cabinets from only a few dozen demonstrations",
+      "Advanced the open-source embodied data collection ecosystem"
+    ],
+    "applications": [
+      "Imitation learning research",
+      "Household task exploration",
+      "Low-cost research platform"
+    ],
+    "specs": {
+      "compute_platform": "Onboard consumer-grade laptop GPU",
+      "sensors": "Wrist cameras + front-facing camera",
+      "sdk": "Hardware and code are open source, paired with ACT imitation learning"
+    },
+    "priceNote": "The paper reports a total hardware cost of approx. 32,000 USD (including onboard power and compute)"
+  },
+  "unitree-b2": {
+    "description": "Unitree B2 is a large quadruped robot from Unitree Robotics for industrial scenarios. It has a top speed of approx. 6 m/s, a sustained payload of approx. 40 kg, and IP67 protection for the whole unit, making it suitable for industrial tasks such as power inspection, emergency rescue and outdoor payload transport.",
+    "highlights": [
+      "Industrial-grade quadruped with a top speed of up to 6 m/s",
+      "Sustained walking payload of approx. 40 kg, with higher static load capacity",
+      "IP67 protection for the whole unit, suited to harsh outdoor environments",
+      "Unitree's mature motion control and development ecosystem"
+    ],
+    "applications": [
+      "Power and industrial inspection",
+      "Emergency rescue",
+      "Research platform",
+      "Payload transport"
+    ],
+    "specs": {
+      "ip_rating": "IP67",
+      "sensors": "LiDAR + depth camera (varies by version)",
+      "sdk": "Open SDK, supports ROS / Python"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "boston-dynamics-spot": {
+    "description": "Spot is Boston Dynamics' commercial quadruped robot. It weighs approx. 32.5 kg, has a sustained payload of approx. 14 kg, can carry sensors through its payload ports for autonomous inspection, and comes with a mature SDK and mission orchestration software. It is widely used in the energy, construction and security industries.",
+    "highlights": [
+      "One of the longest-commercialized and most widely deployed commercial quadruped robots",
+      "Expandable payload ports support thermal imaging, gas detection and more",
+      "Mature autonomous navigation and mission orchestration software, Autowalk",
+      "Well-documented Spot SDK and a rich ecosystem"
+    ],
+    "applications": [
+      "Industrial facility inspection",
+      "Construction site mapping",
+      "Security and emergency response",
+      "Research and education"
+    ],
+    "specs": {
+      "ip_rating": "IP54",
+      "sensors": "5 stereo camera pairs + optional pan-tilt camera and LiDAR payloads",
+      "sdk": "Spot SDK provided, supports Python / ROS"
+    },
+    "priceNote": "Base version starts at approx. 74,500 USD; accessories are extra"
+  },
+  "anybotics-anymal-d": {
+    "description": "ANYmal D is an industrial inspection quadruped robot from ANYbotics of Switzerland. It weighs approx. 50 kg, has IP67 protection and autonomous charging, and its X version is explosion-proof certified, making it suitable for autonomous inspection in hazardous environments such as oil and gas, chemical plants and substations.",
+    "highlights": [
+      "For industrial inspection in oil and gas, chemicals and more, with IP67 protection",
+      "The ANYmal X version holds explosion-proof (ATEX) certification",
+      "Autonomous charging and long-term autonomous inspection",
+      "Originated from ETH Zurich robotics research, with deep academic expertise"
+    ],
+    "applications": [
+      "Oil, gas and chemical facility inspection",
+      "Explosion-proof hazardous environments",
+      "Power and substation inspection"
+    ],
+    "specs": {
+      "ip_rating": "IP67",
+      "sensors": "LiDAR + depth camera + thermal imaging and acoustic inspection",
+      "sdk": "ANYmal software and research interfaces provided"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "deeprobotics-x30": {
+    "description": "Jueying X30 is an industrial-grade quadruped robot from DEEP Robotics. It weighs approx. 56 kg, has IP67 protection and strong rough-terrain capability, and has been deployed in scenarios such as power inspection, emergency rescue and security patrol, making it a representative Chinese industrial quadruped.",
+    "highlights": [
+      "A Chinese industrial-grade quadruped for power and emergency scenarios",
+      "IP67 protection, adapted to complex outdoor environments",
+      "Can climb stairs and steep slopes",
+      "DEEP Robotics has many deployments in power inspection and other fields in China"
+    ],
+    "applications": [
+      "Power and substation inspection",
+      "Emergency rescue",
+      "Security patrol",
+      "Research and education"
+    ],
+    "specs": {
+      "ip_rating": "IP67",
+      "sensors": "LiDAR + depth camera (subject to official configuration)",
+      "sdk": "Custom development interfaces provided"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "ghost-vision-60": {
+    "description": "Vision 60 is an all-terrain quadruped robot from Ghost Robotics. It weighs approx. 51 kg, uses a direct-drive leg structure and a highly protected design, has many applications in US military, police and security, and can carry various sensor payloads for patrol and reconnaissance missions.",
+    "highlights": [
+      "Designed for demanding environments such as military, police and security",
+      "Direct-drive legs, mechanically simple and durable",
+      "High ingress protection, suited to deserts, snow and other environments",
+      "A variety of optional payload expansions"
+    ],
+    "applications": [
+      "Military and police security patrol",
+      "Border and base inspection",
+      "Field and extreme environment missions"
+    ],
+    "specs": {
+      "ip_rating": "IP67",
+      "sensors": "Optional cameras and radar payloads",
+      "sdk": "Payload interfaces and development support provided"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "shadow-dexterous-hand": {
+    "description": "The Shadow Dexterous Hand from Shadow Robot of the UK is an anthropomorphic dexterous hand with 24 DOF, 20 of them actuated. It has long been the benchmark platform for robotic dexterous manipulation research, was used in OpenAI's Rubik's Cube experiment, and is expensive, with pricing on request.",
+    "highlights": [
+      "Anthropomorphic structure with 24 DOF, 20 of them actuated",
+      "A benchmark dexterous hand long used in research",
+      "Used in classic work such as OpenAI's Rubik's Cube experiment",
+      "ROS drivers and simulation models provided"
+    ],
+    "applications": [
+      "Dexterous manipulation research",
+      "Teleoperation",
+      "Reinforcement learning and imitation learning"
+    ],
+    "specs": {
+      "drive_type": "Motor-driven tendons (E series)",
+      "tactile": "Optional fingertip tactile sensors such as BioTac",
+      "interface": "EtherCAT / ROS",
+      "sdk": "ROS drivers and simulation models provided"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "unitree-dex3-1": {
+    "description": "Unitree Dex3-1 is a three-fingered dexterous hand developed by Unitree Robotics for the G1 humanoid robot. It has 7 DOF in total and an integrated tactile sensor array, and is mainly used for dexterous manipulation research and teleoperation data collection on the G1 EDU. It is the force-sensing dexterous hand of the Unitree ecosystem.",
+    "highlights": [
+      "Three fingers with 7 DOF, designed for the Unitree G1 humanoid robot",
+      "Integrated tactile sensor array, supporting force feedback",
+      "Can be used for teleoperation data collection",
+      "The companion dexterous hand for the Unitree G1 EDU"
+    ],
+    "applications": [
+      "Humanoid robot end effector",
+      "Teleoperation data collection",
+      "Research and education"
+    ],
+    "specs": {
+      "drive_type": "Multi-joint direct-drive miniature motors",
+      "tactile": "Tactile sensor arrays on fingertips and finger segments",
+      "sdk": "Companion to the G1 EDU, SDK provided"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "wonik-allegro-hand": {
+    "description": "The Allegro Hand from Wonik Robotics of South Korea is a four-fingered, 16-DOF, fully actuated dexterous hand. It has a compact structure and comprehensive simulation model and ROS support, and is one of the most widely used research dexterous hands in reinforcement learning, grasping and dexterous manipulation research.",
+    "highlights": [
+      "Four fingers, 16 DOF, fully actuated structure",
+      "A classic dexterous hand widely used in the research community",
+      "Comprehensive open-source simulation models, convenient for reinforcement learning",
+      "Priced lower than comparable anthropomorphic dexterous hands"
+    ],
+    "applications": [
+      "Reinforcement learning dexterous manipulation research",
+      "Grasping and retargeting research",
+      "Research and education"
+    ],
+    "specs": {
+      "drive_type": "DC motors + gear transmission",
+      "tactile": "Optional tactile sensors",
+      "interface": "CAN",
+      "sdk": "ROS and simulation support provided"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "leap-hand": {
+    "description": "LEAP Hand is a low-cost dexterous hand open-sourced by Carnegie Mellon University in 2023. It uses Dynamixel servos to drive four fingers with 16 DOF, costs approx. 2,000 USD for the whole hand, has fully open-source hardware and code, and has become an entry-level platform for dexterous manipulation research.",
+    "highlights": [
+      "Open-source low-cost dexterous hand, approx. 2,000 USD for the whole hand",
+      "Four fingers with 16 DOF, open-source structure that is easy to reproduce",
+      "Supports sim-to-real dexterous manipulation research",
+      "Widely reproduced by the community, convenient for getting started in research"
+    ],
+    "applications": [
+      "Dexterous manipulation research",
+      "Sim-to-real transfer",
+      "Low-cost research platform"
+    ],
+    "specs": {
+      "drive_type": "Dynamixel servo drive",
+      "tactile": "No built-in tactile sensing",
+      "interface": "USB / serial bus",
+      "sdk": "Open-source hardware and Python / ROS code"
+    },
+    "priceNote": "The paper reports a whole-hand cost of approx. 2,000 USD (open-source, self-built)"
+  },
+  "leaderdrive-harmonic-reducer": {
+    "description": "Leaderdrive is a leading Chinese harmonic gear (strain wave gear) manufacturer. Its products cover multiple series and reduction ratios and are widely used in industrial robots, collaborative robots and humanoid robot joints. It is a representative company in the domestic substitution of core robot transmission components.",
+    "highlights": [
+      "A leading Chinese harmonic gear maker, supplying core components for robot joints",
+      "Products cover multiple series and reduction ratios",
+      "Widely adopted in humanoid robot joints and collaborative robots",
+      "A representative company in the domestic substitution drive"
+    ],
+    "applications": [
+      "Humanoid robot joints",
+      "Collaborative and industrial robots",
+      "Precision transmission"
+    ],
+    "specs": {
+      "component_type": "Harmonic gear (strain wave gear)",
+      "model_series": "LCS / LHS and other series (specific models per the official manual)",
+      "gear_ratio": "Common ratios: 50 / 80 / 100 / 120 / 160",
+      "key_params": "Parameters vary widely between models; please refer to the official selection manual"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "livox-mid-360": {
+    "description": "Livox Mid-360 is a compact 3D LiDAR from Livox Technology, a DJI-affiliated company. It has a 360° horizontal field of view, weighs approx. 265 g, delivers approx. 200,000 points per second and has a built-in IMU. It is commonly used for SLAM mapping and obstacle avoidance navigation on quadruped, humanoid and mobile robots.",
+    "highlights": [
+      "360° horizontal field of view, suited to mobile robot mapping and obstacle avoidance",
+      "Small size and approx. 265 g weight, easy to integrate",
+      "Built-in IMU, supports SLAM algorithms",
+      "Adopted by multiple robot makers including Unitree"
+    ],
+    "applications": [
+      "Mobile robot SLAM",
+      "Quadruped and humanoid robot navigation",
+      "Drone surveying and mapping"
+    ],
+    "specs": {
+      "component_type": "3D LiDAR (hybrid solid-state)",
+      "model_series": "Mid-360",
+      "range_note": "Detection range approx. 40 m (10% reflectivity), field of view 360° × 59°",
+      "interface": "Ethernet",
+      "key_params": "Point rate 200,000 points/s, built-in IMU, IP67 ingress protection"
+    },
+    "priceNote": "Overseas official reference price approx. 749 USD; subject to the channel"
+  },
+  "intel-realsense-d435i": {
+    "description": "The Intel RealSense D435i is a widely used stereo depth camera with a global shutter depth sensor and built-in IMU, and comprehensive SDK and ROS support. It is commonly used for robot obstacle avoidance, visual SLAM and grasp perception, and is a classic choice for research and development.",
+    "highlights": [
+      "Global shutter depth sensing, suited to robots in motion",
+      "Built-in IMU, supports visual-inertial SLAM",
+      "Mature ecosystem with comprehensive SDK and ROS support",
+      "Adopted by a large number of research and development projects"
+    ],
+    "applications": [
+      "Robot visual perception",
+      "Visual SLAM and obstacle avoidance",
+      "Grasping and manipulation"
+    ],
+    "specs": {
+      "component_type": "Active infrared stereo depth camera (with IMU)",
+      "model_series": "D435i",
+      "range_note": "Depth resolution up to 1280×720, field of view approx. 87° × 58°",
+      "interface": "USB 3.1",
+      "key_params": "Global shutter depth sensor, built-in IMU, up to 90 fps"
+    },
+    "priceNote": "Price fluctuates by channel, approx. a few hundred USD; please refer to channel quotes"
+  },
+  "ati-mini45": {
+    "description": "The ATI Mini45 is a compact 6-axis force/torque sensor from ATI of the US. With a diameter of approx. 45 mm and a weight of approx. 92 g, it is widely used for robot wrist force control, precision assembly and research testing, and is one of the industry benchmarks in 6-axis force sensing. Pricing on request.",
+    "highlights": [
+      "An industry-benchmark brand in 6-axis force sensing",
+      "Small, weighing approx. 92 g, easy to integrate on the wrist",
+      "Multiple measurement ranges available, from precision assembly to heavy loads",
+      "Widely used in force control research and industrial applications"
+    ],
+    "applications": [
+      "Robot wrist force control",
+      "Precision assembly and grinding",
+      "Research and testing"
+    ],
+    "specs": {
+      "component_type": "6-axis force/torque sensor",
+      "model_series": "Mini45 (including range specifications such as SI-145-5)",
+      "range_note": "SI-145-5 specification: Fx/Fy 145 N, Fz 290 N, torque approx. 5 N·m",
+      "interface": "Net F/T / DAQ, etc. (depending on options)",
+      "key_params": "Outer diameter approx. 45 mm, strain-gauge-based 6-axis measurement, multiple ranges also available"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "nvidia-jetson-agx-orin": {
+    "description": "Jetson AGX Orin is NVIDIA's edge AI computing platform for robotics. The 64GB version delivers up to approx. 275 TOPS, power is adjustable between 15 and 60 W, and it comes with the JetPack and Isaac ecosystem. It is a commonly used main controller for humanoid and quadruped robots.",
+    "highlights": [
+      "The 64GB version offers up to approx. 275 TOPS of edge AI compute",
+      "Full ecosystem support for JetPack, Isaac and ROS",
+      "A widely adopted main controller platform for humanoid and quadruped robots",
+      "Adjustable power, balancing performance and efficiency"
+    ],
+    "applications": [
+      "Humanoid and quadruped robot main controller",
+      "Autonomous mobile robots",
+      "Edge AI inference"
+    ],
+    "specs": {
+      "component_type": "Edge AI computing module",
+      "model_series": "AGX Orin 32GB / 64GB",
+      "interface": "PCIe / Ethernet / USB / CAN, etc.",
+      "key_params": "Up to approx. 275 TOPS (64GB version), 12-core Arm CPU, Ampere GPU, power approx. 15-60 W"
+    },
+    "priceNote": "Developer kit reference price approx. 1,999 USD; module pricing is separate"
+  }
+}

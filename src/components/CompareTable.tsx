@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import type { SpecField, SpecValue } from '../types';
+import { useLocale } from '../i18n/useLocale';
 import { formatSpec, groupFields } from './format';
 import { XIcon } from './Icons';
 
@@ -23,6 +24,8 @@ export interface ListRow {
 interface Props {
   columns: CompareColumn[];
   fields: SpecField[];
+  /** 规格词典命名空间：分类 key，或 vla / wm（对应 spec.<ns>.<fieldKey>） */
+  specNs: string;
   basicRows?: BasicRow[];
   listRows?: ListRow[];
   onRemove?: (id: string) => void;
@@ -33,14 +36,15 @@ const LABEL_CELL =
   'sticky left-0 z-10 w-32 min-w-32 border-b border-line bg-surface px-4 py-3 text-sm text-slate-400 md:w-44 md:min-w-44';
 const CELL = 'min-w-48 border-b border-line px-4 py-3 align-top text-sm text-slate-200';
 
-export default function CompareTable({ columns, fields, basicRows = [], listRows = [], onRemove }: Props) {
+export default function CompareTable({ columns, fields, specNs, basicRows = [], listRows = [], onRemove }: Props) {
+  const { t } = useLocale();
   const span = columns.length + 1;
   return (
     <div className="card overflow-x-auto">
       <table className="w-full border-separate border-spacing-0">
         <thead>
           <tr>
-            <th className={`${LABEL_CELL} text-left font-normal`}>对比项</th>
+            <th className={`${LABEL_CELL} text-left font-normal`}>{t('table.item')}</th>
             {columns.map((c) => (
               <th key={c.id} className={`${CELL} bg-surface-2/60 text-left`}>
                 <div className="flex items-start justify-between gap-2">
@@ -56,7 +60,7 @@ export default function CompareTable({ columns, fields, basicRows = [], listRows
                     <button
                       type="button"
                       onClick={() => onRemove(c.id)}
-                      aria-label={`移除 ${c.name}`}
+                      aria-label={t('common.removeItem').replace('{name}', c.name)}
                       className="rounded-md p-1 text-slate-500 transition-colors hover:bg-white/10 hover:text-white"
                     >
                       <XIcon width={14} height={14} />
@@ -77,7 +81,7 @@ export default function CompareTable({ columns, fields, basicRows = [], listRows
             </tr>
           ))}
           {groupFields(fields).map(([group, gf]) => (
-            <GroupRows key={group} group={group} fields={gf} columns={columns} span={span} />
+            <GroupRows key={group} group={group} fields={gf} columns={columns} span={span} specNs={specNs} />
           ))}
           {listRows.map((r) => (
             <tr key={r.label}>
@@ -86,10 +90,10 @@ export default function CompareTable({ columns, fields, basicRows = [], listRows
                 <td key={c.id} className={CELL}>
                   {r.lists[i]?.length ? (
                     <ul className="space-y-1.5">
-                      {r.lists[i].map((t) => (
-                        <li key={t} className="flex gap-1.5 text-slate-300">
+                      {r.lists[i].map((item) => (
+                        <li key={item} className="flex gap-1.5 text-slate-300">
                           <span className="text-accent">•</span>
-                          <span>{t}</span>
+                          <span>{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -111,17 +115,20 @@ function GroupRows({
   fields,
   columns,
   span,
+  specNs,
 }: {
   group: string;
   fields: SpecField[];
   columns: CompareColumn[];
   span: number;
+  specNs: string;
 }) {
+  const { t } = useLocale();
   return (
     <>
       <tr>
         <td colSpan={span} className="border-b border-line bg-surface-2 px-4 py-2 text-xs font-semibold tracking-wider text-accent">
-          {group}
+          {t(`specgroup.${group}`)}
         </td>
       </tr>
       {fields.map((f) => {
@@ -134,7 +141,7 @@ function GroupRows({
         return (
           <tr key={f.key} className="transition-colors hover:bg-white/[0.02]">
             <th className={`${LABEL_CELL} text-left font-normal`}>
-              {f.label}
+              {t(`spec.${specNs}.${f.key}`)}
               {f.unit && <span className="ml-1 text-xs text-slate-600">({f.unit})</span>}
             </th>
             {columns.map((c, i) => {

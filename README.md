@@ -30,6 +30,17 @@ npm run lint
 3. **新增分类**：在 `types.ts` 的 `RobotCategory` 加枚举值，在 `specFields.ts` 加字段注册表与中文名/图标映射即可。
 4. 重新 `npm run build`，部署 `dist/`。
 
+## 多语言与货币
+
+支持 7 种语言：中文（默认）、英、日、韩、法、德、西，导航栏可切换，首次访问按浏览器语言自动选择。各语言显示当地货币价格（zh=CNY，en=USD，ja=JPY，ko=KRW，fr/de/es=EUR）：与厂商定价货币一致时显示原价，否则按参考汇率换算并加 "≈"。
+
+维护要点：
+
+- **UI 文案**：词典在 `src/i18n/locales/{zh,en,ja,ko,fr,de,es}.ts`，7 个文件 key 完全同构（当前 277 个）。新增 UI 文案要同时加到 7 个词典（缺失时回退 en → zh）。
+- **数据条目译文**：`src/i18n/data/<语言>/{robots,models}.json`，按条目 id 存放 description/highlights/applications/字符串型 specs/priceNote 的译文（格式见 `src/i18n/localizeData.ts` 的 `EntryOverride`）。每月新增条目后，为 6 种语言补对应译文；缺失时非中文环境回退英文，再回退中文原文。
+- **汇率**：`src/i18n/config.ts` 的 `USD_RATES` 与 `RATES_DATE`，每月更新数据时一并核对。
+- **新增规格字段**：在 `specFields.ts` 注册后，还需在 7 个词典中补 `spec.<分类>.<key>` 标签（新分组再补 `specgroup.<中文组名>`）。
+
 ## 部署
 
 纯静态站（HashRouter，无需服务端路由配置），`dist/` 可直接部署到 Vercel / Netlify / Cloudflare Pages / GitHub Pages / 任意静态托管或对象存储。

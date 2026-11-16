@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ROBOTS } from '../data';
-import { CATEGORY_ICONS, CATEGORY_LABELS, STATUS_LABELS } from '../data/specFields';
+import { CATEGORY_ICONS } from '../data/specFields';
+import { displayManufacturer } from '../i18n/localizeData';
+import { useLocale } from '../i18n/useLocale';
+import { useLocalData } from '../components/useLocalData';
 import type { RobotCategory } from '../types';
 import { CATEGORIES, priceSortValue } from '../components/format';
 import RobotCard from '../components/RobotCard';
@@ -12,6 +14,8 @@ const SELECT =
   'rounded-lg border border-line bg-surface-2 px-3 py-2 text-sm text-slate-200 outline-none focus:border-accent/60';
 
 export default function Robots() {
+  const { locale, t } = useLocale();
+  const { robots: ROBOTS } = useLocalData();
   const [sp, setSp] = useSearchParams();
   const catParam = sp.get('cat');
   const cat = CATEGORIES.find((c) => c === catParam) ?? null;
@@ -20,10 +24,10 @@ export default function Robots() {
   const [q, setQ] = useState('');
   const [sort, setSort] = useState<Sort>('default');
 
-  const inCat = useMemo(() => ROBOTS.filter((r) => !cat || r.category === cat), [cat]);
+  const inCat = useMemo(() => ROBOTS.filter((r) => !cat || r.category === cat), [ROBOTS, cat]);
   const manufacturers = useMemo(
-    () => [...new Map(inCat.map((r) => [r.manufacturer, r.manufacturerZh])).entries()],
-    [inCat],
+    () => [...new Map(inCat.map((r) => [r.manufacturer, displayManufacturer(r, locale)])).entries()],
+    [inCat, locale],
   );
   const statuses = useMemo(() => [...new Set(inCat.map((r) => r.status))], [inCat]);
 
@@ -57,16 +61,16 @@ export default function Robots() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
-      <h1 className="text-3xl font-bold text-white">机器人库</h1>
-      <p className="mt-2 text-slate-400">按分类、厂商、状态筛选，勾选「对比」即可横向比较参数。</p>
+      <h1 className="text-3xl font-bold text-white">{t('robots.title')}</h1>
+      <p className="mt-2 text-slate-400">{t('robots.desc')}</p>
 
       <div className="mt-6 flex gap-2 overflow-x-auto pb-2">
         <button type="button" className={tab(!cat)} onClick={() => setCat(null)}>
-          全部 <span className="ml-1 font-mono text-xs opacity-70">{ROBOTS.length}</span>
+          {t('robots.all')} <span className="ml-1 font-mono text-xs opacity-70">{ROBOTS.length}</span>
         </button>
         {CATEGORIES.map((c) => (
           <button key={c} type="button" className={tab(cat === c)} onClick={() => setCat(c)}>
-            {CATEGORY_ICONS[c]} {CATEGORY_LABELS[c]}
+            {CATEGORY_ICONS[c]} {t(`cat.${c}`)}
             <span className="ml-1 font-mono text-xs opacity-70">{ROBOTS.filter((r) => r.category === c).length}</span>
           </button>
         ))}
@@ -78,32 +82,32 @@ export default function Robots() {
           <input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="搜索名称 / 厂商"
+            placeholder={t('robots.search')}
             className={`${SELECT} w-full pl-9`}
           />
         </div>
-        <select className={SELECT} value={mfr} onChange={(e) => setMfr(e.target.value)} aria-label="厂商">
-          <option value="">全部厂商</option>
+        <select className={SELECT} value={mfr} onChange={(e) => setMfr(e.target.value)} aria-label={t('robots.mfr')}>
+          <option value="">{t('robots.allMfr')}</option>
           {manufacturers.map(([en, zh]) => <option key={en} value={en}>{zh}</option>)}
         </select>
-        <select className={SELECT} value={status} onChange={(e) => setStatus(e.target.value)} aria-label="状态">
-          <option value="">全部状态</option>
-          {statuses.map((s) => <option key={s} value={s}>{STATUS_LABELS[s] ?? s}</option>)}
+        <select className={SELECT} value={status} onChange={(e) => setStatus(e.target.value)} aria-label={t('robots.status')}>
+          <option value="">{t('robots.allStatus')}</option>
+          {statuses.map((s) => <option key={s} value={s}>{t(`status.${s}`)}</option>)}
         </select>
-        <select className={`${SELECT} sm:ml-auto`} value={sort} onChange={(e) => setSort(e.target.value as Sort)} aria-label="排序">
-          <option value="default">默认排序</option>
-          <option value="year-desc">发布年份：新到旧</option>
-          <option value="year-asc">发布年份：旧到新</option>
-          <option value="price-asc">价格：低到高</option>
-          <option value="price-desc">价格：高到低</option>
+        <select className={`${SELECT} sm:ml-auto`} value={sort} onChange={(e) => setSort(e.target.value as Sort)} aria-label={t('robots.sort')}>
+          <option value="default">{t('robots.sort.default')}</option>
+          <option value="year-desc">{t('robots.sort.yearDesc')}</option>
+          <option value="year-asc">{t('robots.sort.yearAsc')}</option>
+          <option value="price-asc">{t('robots.sort.priceAsc')}</option>
+          <option value="price-desc">{t('robots.sort.priceDesc')}</option>
         </select>
       </div>
 
-      <p className="mt-5 text-sm text-slate-500">共 <span className="font-mono text-slate-300">{list.length}</span> 个结果</p>
+      <p className="mt-5 text-sm text-slate-500">{t('robots.results').split('{n}').flatMap((part, i) => (i === 0 ? [part] : [<span key={i} className="font-mono text-slate-300">{list.length}</span>, part]))}</p>
       <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {list.map((r) => <RobotCard key={r.id} robot={r} />)}
       </div>
-      {list.length === 0 && <div className="card mt-6 p-12 text-center text-slate-500">没有符合条件的条目，试试调整筛选条件。</div>}
+      {list.length === 0 && <div className="card mt-6 p-12 text-center text-slate-500">{t('robots.empty')}</div>}
     </div>
   );
 }
