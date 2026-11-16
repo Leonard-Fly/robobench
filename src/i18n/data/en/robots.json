@@ -802,5 +802,271 @@
       "sdk": "Not open, internal production line deployment"
     },
     "priceNote": "Not disclosed; initial Fremont lines installed July 2026, long-term target 20,000-30,000 USD"
+  },
+  "noetix-n2": {
+    "description": "Noetix N2 is a high-burst bipedal humanoid platform for developers from Noetix Robotics. Standing 120 cm tall and weighing 30 kg with 18 DOF, it reaches 3.2 m/s running speed and performs consecutive backflips, starting around 39,900 RMB.",
+    "highlights": [
+      "High-burst bipedal platform starting around 39,900 RMB",
+      "120 cm tall and 30 kg using 18 high-performance joints for agile motion",
+      "First bipedal humanoid to demonstrate consecutive multi-scene backflips, running up to 3.2 m/s",
+      "Supports LLM voice interaction and rapid custom development"
+    ],
+    "applications": [
+      "University research and locomotion validation",
+      "Cultural tourism and exhibitions",
+      "Entertainment companionship",
+      "Custom development"
+    ],
+    "specs": {
+      "sensors": "Vision obstacle avoidance + voice interaction module",
+      "sdk": "Multiple control interfaces included for research and rapid development"
+    },
+    "priceNote": "Official launch starting price approx. 39,900 RMB; subject to configuration"
+  },
+  "noetix-bumi": {
+    "description": "Noetix Bumi (Xiao Bu Mi) launched in October 2025 at 9,998 RMB as the world's first high-performance consumer humanoid under 10,000 RMB. Standing approx. 94 cm tall and weighing approx. 12 kg with 21+ DOF, it targets home companionship and STEM education.",
+    "highlights": [
+      "Priced at 9,998 RMB, bringing high-performance humanoids under 10,000 RMB",
+      "Approx. 94 cm tall and 12 kg, lightweight and safe for home settings",
+      "21+ DOF supporting running, dancing and dynamic motions",
+      "Designed for home companionship and youth coding education"
+    ],
+    "applications": [
+      "Home companionship and entertainment",
+      "Youth STEM and coding education",
+      "Entry-level humanoid prototyping"
+    ],
+    "specs": {
+      "sensors": "Voice and vision interaction module",
+      "sdk": "Geared toward consumer companionship and lightweight educational programming"
+    },
+    "priceNote": "Official price 9,998 RMB"
+  },
+  "magiclab-magicbot": {
+    "description": "MagicLab MagicBot is a general-purpose full-size humanoid robot with 42 DOF across the body, up to 20 kg bimanual carrying payload, 40 kg total payload, and up to 5 hours of continuous mixed locomotion and manipulation runtime.",
+    "highlights": [
+      "42 DOF across the body; up to 20 kg bimanual payload and 40 kg total payload",
+      "Up to 5 hours of combined walking and manipulation runtime",
+      "In-house torque-motor joints, drivers, controllers and dexterous hands",
+      "Deployed in pilot industrial production lines and commercial service scenarios"
+    ],
+    "applications": [
+      "Industrial manufacturing and material handling",
+      "Commercial service and guidance",
+      "Household service exploration"
+    ],
+    "specs": {
+      "sensors": "Multimodal visual perception",
+      "sdk": "Full-stack in-house actuators, drivers, controllers and dexterous hand ecosystem"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "kepler-k2": {
+    "description": "Kepler K2 Bumblebee is an industrial blue-collar humanoid standing 175 cm tall and weighing 75 kg with 52 DOF. Built with in-house planetary roller-screw linear actuators, it lifts 30 kg with dual arms and runs 8 hours on a 1-hour charge.",
+    "highlights": [
+      "52 DOF powered by in-house planetary roller-screw and rotary actuators",
+      "30 kg dual-arm lifting capacity built for heavy blue-collar industrial work",
+      "1-hour charge for 8 hours of continuous operation",
+      "Equipped with NimbleMaster hands (11 DOF per hand, 25-point micro-force control)"
+    ],
+    "applications": [
+      "Industrial material handling and logistics sorting",
+      "Smart manufacturing lines",
+      "Heavy-payload industrial tasks"
+    ],
+    "specs": {
+      "compute_platform": "KeplerBrain system (100 TOPS)",
+      "sensors": "Multi-camera vision + 25-point micro-force tactile per hand",
+      "sdk": "Targeted industrial partnerships"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "qinglong-humanoid": {
+    "description": "Qinglong, developed by the National and Local Co-Built Humanoid Robotics Innovation Center in Shanghai, is the world's first full-size open-source reference humanoid (185 cm, 85 kg) featuring 43 active DOF, 400 N·m peak joint torque and 400 TOPS compute.",
+    "highlights": [
+      "World's first full-size open-source reference humanoid (185 cm, 85 kg)",
+      "43 active DOF with up to 400 N·m peak joint torque",
+      "400 TOPS onboard compute for multimodal locomotion and manipulation",
+      "Hardware and software open-sourced through the OpenLoong community"
+    ],
+    "applications": [
+      "Core humanoid robotics R&D",
+      "Industry-academia reference validation",
+      "Open-source embodied foundation model testing"
+    ],
+    "specs": {
+      "compute_platform": "400 TOPS onboard embodied compute platform",
+      "sensors": "Multimodal vision and force sensing",
+      "sdk": "Full-size open-source hardware/software via OpenLoong community"
+    },
+    "priceNote": "Open-source reference design; contact the innovation center for full-unit orders"
+  },
+  "wuji-hand": {
+    "description": "Wuji Hand (Gen 1) from Wuji Technology is a 20-active-DOF, fully direct-drive 5-finger anthropomorphic hand weighing approx. 550 g. Each finger joint is independently actuated without coupling, holding up to 20 kg static load with 1000 Hz USB 2.0 control.",
+    "highlights": [
+      "20 active DOF with uncoupled, independent per-joint direct-drive actuation",
+      "Weighs 550 g with ~15 N fingertip force and ~20 kg static holding load",
+      "1000 Hz control via USB 2.0 with transparent force-current feedback",
+      "Optional piezoresistive tactile glove adds 400+ pressure sensors and cushioning"
+    ],
+    "applications": [
+      "High-DOF dexterous manipulation research",
+      "Force-control and tactile imitation learning",
+      "High-end humanoid end effector"
+    ],
+    "specs": {
+      "drive_type": "In-house motor serial direct-drive + self-locking joints (uncoupled)",
+      "tactile": "Optional 400+ point piezoresistive tactile glove",
+      "interface": "USB 2.0 (1000 Hz control rate)",
+      "sdk": "Compatible with ROS 2 and simulation environments"
+    },
+    "priceNote": "Bare hand reference price approx. 50,000 RMB; tactile glove optional"
+  },
+  "wuji-hand-2": {
+    "description": "Wuji Hand 2 (2026) is Wuji Technology's second-generation 20-DOF fully direct-drive 5-finger hand (~570 g), significantly improving thermal management (<50°C) and continuous reliability over Gen 1.",
+    "highlights": [
+      "Retains 20-DOF uncoupled direct-drive architecture at ~570 g",
+      "Solves Gen 1 motor heating, keeping operating temperature below 50°C",
+      "Substantially improved reliability for sustained manipulation",
+      "Integrated as a high-end hand option on platforms like Booster T2"
+    ],
+    "applications": [
+      "High-DOF humanoid end effector",
+      "Sustained continuous dexterous manipulation",
+      "RL and VLA real-robot validation"
+    ],
+    "specs": {
+      "drive_type": "In-house micro-motor full direct-drive",
+      "tactile": "Optional tactile sensing",
+      "interface": "USB / bus interface",
+      "sdk": "ROS 2 and simulation ecosystem support"
+    },
+    "priceNote": "Approx. 40,000-50,000 RMB tier (quote on request)"
+  },
+  "brainco-revo-2": {
+    "description": "BrainCo Revo 2 is a lightweight bionic dexterous hand weighing just 383 g (160 mm tall) yet supporting ≥20 kg single-hand load. It features 11 DOF (6 active joints), 0.1° control precision, ≥50 N grip force and multi-bus industrial support.",
+    "highlights": [
+      "Ultra-light 383 g and 160 mm height while carrying ≥20 kg single-hand load",
+      "11 DOF with 6 active joints and 0.1° control precision",
+      "≥50 N five-finger grip force and ≥15 N pinch force",
+      "12-64 V wide voltage with RS485 / CAN FD / EtherCAT (up to 1 kHz)"
+    ],
+    "applications": [
+      "Lightweight humanoid end effector",
+      "Industrial handling and precision assembly",
+      "Research and assistive robotics"
+    ],
+    "specs": {
+      "drive_type": "Bionic linkage & precision joint actuation (0.1° accuracy)",
+      "tactile": "Tactile edition available",
+      "interface": "RS485 / CAN FD / EtherCAT (up to 1 kHz)",
+      "sdk": "Supports custom development and OTA updates"
+    },
+    "priceNote": "Not disclosed / quote on request (Basic / Pro / Tactile editions)"
+  },
+  "linkerhand-o6": {
+    "description": "Linker Hand O6 from LinkerBot is an ultra-lightweight, high-value 5-finger dexterous hand weighing only 370 g while supporting up to 50 kg structural load, with the O6 Lite starting as low as 3,999 RMB after subsidies.",
+    "highlights": [
+      "Only 370 g total weight—among the lightest mass-produced hands for compact humanoids",
+      "Supports up to 50 kg structural load despite ultra-low weight",
+      "O6 Lite starts at 3,999 RMB (subsidized), sharply lowering adoption cost",
+      "Part of LinkerBot's full lineup spanning linkage, tendon and direct-drive (up to 42 DOF)"
+    ],
+    "applications": [
+      "Compact & mid-size humanoid end effector",
+      "Cost-effective research and education",
+      "Industrial grasping and service robots"
+    ],
+    "specs": {
+      "drive_type": "Compact lightweight linkage mechanism",
+      "tactile": "Optional tactile sensors",
+      "interface": "CAN / RS485",
+      "sdk": "Open SDK and LinkerSkillNet skill library support"
+    },
+    "priceNote": "O6 Lite approx. 3,999 RMB (subsidized); higher-DOF L20/L30/O30 series priced higher"
+  },
+  "d-robotics-rdk-x5": {
+    "description": "D-Robotics RDK X5 is an entry-level robotics developer kit powered by the Sunrise 5 chip, delivering 10 TOPS BPU compute from 549 RMB with single-cable Type-C full-stack development and TogetheROS.Bot middleware.",
+    "highlights": [
+      "From 549 RMB with 10 TOPS BPU compute for makers and education",
+      "Single Type-C cable full-stack workflow for minimal setup friction",
+      "Paired with TogetheROS.Bot middleware and rich open-source examples",
+      "Widely used in open-source mini bipeds, AMRs and desktop arms"
+    ],
+    "applications": [
+      "Maker and university robotics teaching",
+      "Lightweight mobile and mini bipedal robots",
+      "Edge lightweight vision/voice inference"
+    ],
+    "specs": {
+      "component_type": "Edge AI computing developer kit",
+      "model_series": "RDK X5 (Sunrise 5 SoC)",
+      "interface": "Type-C dev / MIPI Camera / USB 3.0 / CAN / Ethernet",
+      "key_params": "10 TOPS BPU, 8-core Arm CPU, ultra-low power, TogetheROS.Bot middleware"
+    },
+    "priceNote": "Official developer kit from 549 RMB"
+  },
+  "d-robotics-rdk-s100": {
+    "description": "D-Robotics RDK S100 / S100P is an embodied AI edge compute platform delivering 80 TOPS (S100) or 128 TOPS (S100P) BPU inference with 6-core Arm Cortex-A78AE, starting around 2,499 RMB and evaluated by 50+ robot makers.",
+    "highlights": [
+      "80 / 128 TOPS edge BPU compute paired with 6-core Arm Cortex-A78AE",
+      "Built-in real-time MCU for brain-cerebellum cooperative control",
+      "High-value 100-TOPS-class embodied kit starting from 2,499 RMB",
+      "Evaluated and adopted by 50+ robotics companies"
+    ],
+    "applications": [
+      "Humanoid and quadruped main controller",
+      "Edge embodied AI model deployment",
+      "AMR and multi-sensor fusion navigation"
+    ],
+    "specs": {
+      "component_type": "Embodied AI edge computing platform",
+      "model_series": "RDK S100 (80 TOPS) / RDK S100P (128 TOPS)",
+      "interface": "2x MIPI Camera / 4x USB 3.0 / 2x PCIe 3.0 / CAN FD / GbE",
+      "key_params": "80 TOPS (S100) / 128 TOPS (S100P) BPU + 6-core Arm A78AE + real-time MCU"
+    },
+    "priceNote": "RDK S100 dev kit from approx. 2,499 RMB; S100P priced higher"
+  },
+  "d-robotics-rdk-s600": {
+    "description": "D-Robotics RDK S600 is a flagship embodied computing platform delivering 560 TOPS edge inference with an 18-core Arm Cortex-A78AE CPU, 6x MIPI cameras and 4x PCIe 3.0 for onboard VLA inference.",
+    "highlights": [
+      "Flagship 560 TOPS edge AI compute for onboard VLA models",
+      "18-core Arm Cortex-A78AE for general compute and real-time control",
+      "6x MIPI cameras and 4x PCIe 3.0 for full-body multi-sensor I/O",
+      "Full TogetheROS.Bot and toolchain compatibility"
+    ],
+    "applications": [
+      "Full-size humanoid main controller",
+      "Real-time onboard VLA inference",
+      "High-compute embodied workstations"
+    ],
+    "specs": {
+      "component_type": "Flagship embodied computing platform",
+      "model_series": "RDK S600",
+      "interface": "6x MIPI Camera / 6x USB 3.0 / 4x PCIe 3.0",
+      "key_params": "560 TOPS edge inference + 18-core Arm Cortex-A78AE for onboard VLA"
+    },
+    "priceNote": "Not disclosed / contact D-Robotics ecosystem center"
+  },
+  "nvidia-jetson-agx-thor": {
+    "description": "NVIDIA Jetson AGX Thor (T5000 module) is NVIDIA's flagship Blackwell-based Physical AI platform delivering up to 2,070 TFLOPS (FP4 sparse) and 128 GB unified memory, running models like GR00T N1.7 onboard at ~28 Hz.",
+    "highlights": [
+      "Blackwell GPU delivers up to 2,070 TFLOPS (FP4) edge Physical AI compute",
+      "128 GB LPDDR5X (273 GB/s) runs VLAs like GR00T N1.7 onboard at ~28 Hz",
+      "Configurable 70W/90W/120W/MAXN power modes",
+      "Adopted by flagship humanoids including Unitree H2 Plus and Booster T2 Pro"
+    ],
+    "applications": [
+      "Flagship humanoid main controller",
+      "Onboard VLA and multimodal foundation model inference",
+      "High-precision surgical and industrial robotics"
+    ],
+    "specs": {
+      "component_type": "Flagship Physical AI edge module",
+      "model_series": "Jetson T5000 / T4000",
+      "interface": "PCIe / multi-GbE / USB / CAN / Holoscan Sensor Bridge",
+      "key_params": "Up to 2,070 TFLOPS (FP4 sparse), 2560-core Blackwell GPU, 128GB LPDDR5X (273 GB/s), 70-130W"
+    },
+    "priceNote": "Developer kit approx. 5,499 USD; T5000 module approx. 4,999 USD; T4000 approx. 2,999 USD"
   }
 }

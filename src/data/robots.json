@@ -2278,5 +2278,743 @@
     "description": "特斯拉 Optimus Gen 3 于 2026 年推进弗里蒙特首批产线部署，重点升级了 22 自由度灵巧手与 AI5 芯片架构，整机细节与最终量产售价尚未完整公布，目前仍以特斯拉内部工厂测试为主。",
     "officialUrl": "https://www.tesla.com/AI",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "noetix-n2",
+    "name": "Noetix N2",
+    "nameZh": "松延动力 N2",
+    "manufacturer": "Noetix Robotics",
+    "manufacturerZh": "松延动力",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": 39900,
+      "usd": null,
+      "note": "官方发布起售价约 3.99 万元起，具体配置以官方为准"
+    },
+    "specs": {
+      "height_cm": 120,
+      "weight_kg": 30,
+      "dof_total": 18,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": 3.2,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "视觉避障 + 语音交互模组",
+      "sdk": "标配多种控制接口，支持科研与快速二次开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "松延动力官网",
+        "url": "https://www.noetixrobotics.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "3.99 万元起的高爆发力双足运动平台",
+      "身高 120cm、体重 30kg，仅 18 个高性能关节实现高动态运动",
+      "全球首个实现多场景连续空翻的双足人形机器人，奔跑速度达 3.2m/s",
+      "支持大模型语音交互与快速二次开发"
+    ],
+    "applications": [
+      "高校科研与运动控制验证",
+      "文旅导览展示",
+      "陪伴娱乐",
+      "二次开发"
+    ],
+    "description": "松延动力 N2 是一款面向开发者的高爆发力双足人形机器人，身高 120cm、重 30kg，拥有 18 个自由度，实测奔跑速度可达 3.2m/s 并可完成连续空翻，起售价约 3.99 万元，适合科研教育与展演。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "noetix-bumi",
+    "name": "Noetix Bumi",
+    "nameZh": "松延动力 Bumi 小布米",
+    "manufacturer": "Noetix Robotics",
+    "manufacturerZh": "松延动力",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": 9998,
+      "usd": null,
+      "note": "官方定价 9,998 元，首款万元以内高性能消费级人形机器人"
+    },
+    "specs": {
+      "height_cm": 94,
+      "weight_kg": 12,
+      "dof_total": 21,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "语音与视觉交互模块",
+      "sdk": "面向消费陪伴与轻量编程教学"
+    },
+    "purchaseChannels": [
+      {
+        "type": "marketplace",
+        "name": "京东 / 官方渠道",
+        "url": "https://www.noetixrobotics.com/",
+        "regions": [
+          "cn"
+        ]
+      }
+    ],
+    "highlights": [
+      "9,998 元定价首次将高性能人形机器人下探至万元以内",
+      "身高约 94cm、重约 12kg，轻量安全适合家庭场景",
+      "具备 21+ 自由度，支持奔跑与舞蹈等动态动作",
+      "主打家庭陪伴与青少年编程教育场景"
+    ],
+    "applications": [
+      "家庭陪伴与娱乐",
+      "青少年编程教育",
+      "轻量人形开发入门"
+    ],
+    "description": "松延动力 Bumi 小布米于 2025 年 10 月发布，定价 9,998 元，是全球首款万元以内的高性能消费级人形机器人，身高约 94cm、重约 12kg，具备 21 个以上自由度，主打家庭陪伴与教育场景。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "magiclab-magicbot",
+    "name": "MagicLab MagicBot",
+    "nameZh": "魔法原子 MagicBot",
+    "manufacturer": "MagicLab",
+    "manufacturerZh": "魔法原子",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 174,
+      "weight_kg": 67.5,
+      "dof_total": 42,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 40,
+      "arm_payload_kg": 10,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 5,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "多模态视觉感知",
+      "sdk": "全自研关节、驱动器、控制器与灵巧手生态"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "魔法原子官网",
+        "url": "https://www.magiclab.top/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "全身 42 自由度，双臂搬运负重最高 20kg、全身负重达 40kg",
+      "连续行走与操作综合续航最高可达 5 小时",
+      "力矩电机关节、驱动器、控制器及灵巧手全栈自研",
+      "已在工业产线与商业服务场景开展实训落地"
+    ],
+    "applications": [
+      "工业制造与物料搬运",
+      "商业服务与导览",
+      "家庭服务探索"
+    ],
+    "description": "魔法原子 MagicBot 是魔法原子推出的通用全尺寸人形机器人，全身拥有 42 个自由度，双臂搬运负重最高 20kg、全身负重达 40kg，连续作业综合续航最高可达 5 小时，核心关节与灵巧手全栈自研。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "kepler-k2",
+    "name": "Kepler K2 Bumblebee",
+    "nameZh": "开普勒 K2 大黄蜂",
+    "manufacturer": "Kepler Robotics",
+    "manufacturerZh": "开普勒机器人",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 175,
+      "weight_kg": 75,
+      "dof_total": 52,
+      "dof_hand": 11,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 30,
+      "arm_payload_kg": 15,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 8,
+      "swappable_battery": null,
+      "compute_tops": 100,
+      "compute_platform": "KeplerBrain 类脑系统（100 TOPS）",
+      "sensors": "多目视觉 + 单手 25 点微力触控",
+      "sdk": "面向工业蓝领作业定向合作"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "开普勒机器人官网",
+        "url": "https://www.gotokepler.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "全身 52 自由度，搭载自研行星滚柱丝杠执行器与旋转执行器",
+      "双臂可抬起 30kg 重物，主打重负载蓝领工业作业",
+      "实现「充电 1 小时、连干 8 小时」的长续航表现",
+      "配备 NimbleMaster 巧手大师，单手 11 自由度与 25 点微力控制"
+    ],
+    "applications": [
+      "工业搬运与物流分拣",
+      "智能制造产线",
+      "特种与高负载作业"
+    ],
+    "description": "开普勒 K2 大黄蜂是专注工业蓝领场景的全尺寸人形机器人，身高 175cm、重 75kg，全身 52 自由度，采用自研行星滚柱丝杠与旋转执行器，双臂负载达 30kg 并支持充电 1 小时连续工作 8 小时。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "qinglong-humanoid",
+    "name": "Qinglong Open-Source Humanoid",
+    "nameZh": "青龙（开源公版全尺寸人形）",
+    "manufacturer": "Humanoid Robot (Shanghai) Co., Ltd.",
+    "manufacturerZh": "国家地方共建人形机器人创新中心",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "research",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "开源公版硬件架构，整机采购需联系创新中心"
+    },
+    "specs": {
+      "height_cm": 185,
+      "weight_kg": 85,
+      "dof_total": 43,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": 400,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": 400,
+      "compute_platform": "400 TOPS 端侧具身计算平台",
+      "sensors": "多模态视觉与力觉感知",
+      "sdk": "全尺寸公版开源，支持 OpenLoong 社区"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "OpenLoong 开源社区",
+        "url": "https://www.openloong.org.cn/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "全球首款全尺寸开源公版人形机器人，身高 185cm、体重 85kg",
+      "全身 43 个主动自由度，最大关节峰值扭矩高达 400 N·m",
+      "板载 400 TOPS 算力，支持多模态机动与操控",
+      "硬件与软件依托 OpenLoong 社区向行业开放"
+    ],
+    "applications": [
+      "人形机器人共性技术研发",
+      "产学研公版验证平台",
+      "开源具身大模型测试"
+    ],
+    "description": "青龙是由国家地方共建人形机器人创新中心推出的全球首款全尺寸开源公版人形机器人，身高 185cm、重 85kg，具备 43 个主动自由度、400 N·m 峰值关节扭矩与 400 TOPS 算力，面向行业开源赋能。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "wuji-hand",
+    "name": "Wuji Hand",
+    "nameZh": "舞肌 Wuji Hand（一代）",
+    "manufacturer": "Wuji Technology",
+    "manufacturerZh": "舞肌科技",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": 50000,
+      "usd": null,
+      "note": "裸机官方参考价约 5 万元人民币，触觉手套为选配件"
+    },
+    "specs": {
+      "dof_total": 20,
+      "doa": 20,
+      "fingers": 5,
+      "weight_g": 550,
+      "payload_kg": 20,
+      "fingertip_force_n": 15,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "纯自研电机串联全直驱 + 自锁关节（无耦合）",
+      "tactile": "可选配 400+ 压力传感器压阻式触觉手套",
+      "tactile_points": 400,
+      "interface": "USB 2.0（1000 Hz 控制频率）",
+      "sdk": "兼容 ROS 2 与仿真环境"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "舞肌科技官网",
+        "url": "https://www.wuji.tech/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "国产全直驱高自由度代表：20 个主动自由度无耦合关节独立控制",
+      "整手仅重 550g，单指指尖力约 15N、静态握持载荷约 20kg",
+      "USB 2.0 支持 1000Hz 高频控制与直接力-电透明反馈",
+      "外包压阻式触觉手套方案兼顾 400+ 触觉点与柔性缓冲"
+    ],
+    "applications": [
+      "高自由度灵巧操作科研",
+      "力控与触觉模仿学习",
+      "人形机器人高端末端"
+    ],
+    "description": "Wuji Hand 是舞肌科技推出的第一代 20 主动自由度全直驱仿人五指灵巧手，重约 550g，每个指间关节均可独立控制，静态握持载荷约 20kg，支持 1000Hz 控制频率与选配 400+ 点压阻触觉手套。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "wuji-hand-2",
+    "name": "Wuji Hand 2",
+    "nameZh": "舞肌 Wuji Hand 2（二代）",
+    "manufacturer": "Wuji Technology",
+    "manufacturerZh": "舞肌科技",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "约 4-5 万元档位（具体配置以官方报价为准）"
+    },
+    "specs": {
+      "dof_total": 20,
+      "doa": 20,
+      "fingers": 5,
+      "weight_g": 570,
+      "payload_kg": null,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "自研微电机全直驱方案",
+      "tactile": "支持触觉选配方案",
+      "tactile_points": null,
+      "interface": "USB / 总线接口",
+      "sdk": "支持 ROS 2 与仿真生态"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "舞肌科技官网",
+        "url": "https://www.wuji.tech/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "延续 20 自由度全直驱独立关节架构，整手约 570g",
+      "大幅改进一代自研电机温升问题，工作温度控制在 50°C 以下",
+      "可靠性与连续作业稳定性较一代显著提升",
+      "已被加速进化 Booster T2 等整机厂商列入高阶手部选配"
+    ],
+    "applications": [
+      "人形机器人高自由度末端",
+      "长时连续灵巧操作",
+      "强化学习与 VLA 真机验证"
+    ],
+    "description": "Wuji Hand 2 是舞肌科技于 2026 年迭代的第二代 20 自由度全直驱五指灵巧手，重约 570g，重点优化了自研电机散热与可靠性（温升控制在 50°C 以下），适合长时连续灵巧操作与人形本体集成。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "brainco-revo-2",
+    "name": "BrainCo Revo 2",
+    "nameZh": "强脑科技 Revo 2 仿生灵巧手",
+    "manufacturer": "BrainCo",
+    "manufacturerZh": "强脑科技",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（有基础版/Pro/触觉版）"
+    },
+    "specs": {
+      "dof_total": 11,
+      "doa": 6,
+      "fingers": 5,
+      "weight_g": 383,
+      "payload_kg": 20,
+      "fingertip_force_n": 15,
+      "grip_force_n": 50,
+      "speed_note": null,
+      "drive_type": "仿生连杆与精密关节驱动（0.1° 控制精度）",
+      "tactile": "提供触觉版可选",
+      "tactile_points": null,
+      "interface": "RS485 / CAN FD / EtherCAT（最高 1kHz）",
+      "sdk": "支持二次开发与 OTA 升级"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "强脑科技官网",
+        "url": "https://www.brainco.cn/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "整手仅重 383g、高度 160mm，单手承载却达 20kg 以上",
+      "11 自由度搭配 6 个主动关节，控制精度达 0.1°",
+      "五指握力 ≥50N、单指捏力 ≥15N，兼顾轻量化与高负载",
+      "支持 12-64V 宽电压与 RS485/CAN FD/EtherCAT 多协议"
+    ],
+    "applications": [
+      "人形机器人轻量化末端",
+      "工业搬运与精密装配",
+      "科研与医疗辅具"
+    ],
+    "description": "强脑科技 Revo 2 是依托十年仿生假肢技术打造的轻量化灵巧手，整手仅重 383g，具备 11 自由度（6 主动关节）与 0.1° 控制精度，五指握力 ≥50N、单手承载 ≥20kg，兼容多种工业总线协议。",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "linkerhand-o6",
+    "name": "Linker Hand O6",
+    "nameZh": "灵心巧手 Linker Hand O6",
+    "manufacturer": "LinkerBot",
+    "manufacturerZh": "灵心巧手",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": 3999,
+      "usd": null,
+      "note": "O6 Lite 补贴后约 3,999 元，高自由度 L20/L30/O30 系列售价更高"
+    },
+    "specs": {
+      "dof_total": 11,
+      "doa": 6,
+      "fingers": 5,
+      "weight_g": 370,
+      "payload_kg": 50,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "小型化轻量化连杆结构",
+      "tactile": "可选配触觉传感器",
+      "tactile_points": null,
+      "interface": "CAN / RS485",
+      "sdk": "提供开放 SDK 与 LinkerSkillNet 技能库支持"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "灵心巧手官网",
+        "url": "https://www.linkerhand.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "全手仅重 370g，量产级超轻量化设计适配中小型人形",
+      "结构承载最高可达 50kg，打破轻量化与高负载矛盾",
+      "O6 Lite 补贴后 3,999 元大幅降低灵巧手普及门槛",
+      "同系列覆盖 L20/L30/O30 等连杆、腱绳、直驱全路线"
+    ],
+    "applications": [
+      "中小型人形机器人末端",
+      "高性价比科研与教育",
+      "工业抓取与服务机器人"
+    ],
+    "description": "Linker Hand O6 是灵心巧手推出的超轻量化高性价比五指灵巧手，全手仅重 370g、最高负载可达 50kg，补贴后入门门槛低至 3,999 元，适合各类中小型人形机器人与低成本科研普及。",
+    "officialUrl": "https://www.linkerhand.com/details/LinkerHandO6/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "d-robotics-rdk-x5",
+    "name": "D-Robotics RDK X5",
+    "nameZh": "地瓜机器人 RDK X5 开发套件",
+    "manufacturer": "D-Robotics",
+    "manufacturerZh": "地瓜机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "controller",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": 549,
+      "usd": null,
+      "note": "官方开发者套件参考价 549 元起"
+    },
+    "specs": {
+      "component_type": "边缘 AI 计算开发套件",
+      "model_series": "RDK X5（搭载旭日 5 智能计算芯片）",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": null,
+      "voltage_v": 5,
+      "interface": "Type-C 一线开发 / MIPI Camera / USB 3.0 / CAN / 以太网",
+      "key_params": "10 TOPS BPU 算力，8 核 Arm CPU，极低功耗，配套 TogetheROS.Bot 中间件"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "地瓜机器人开发者社区",
+        "url": "https://developer.d-robotics.cc/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "549 元起高性价比，10 TOPS BPU 算力面向中小创客与教育",
+      "支持单根 Type-C 线完成全栈开发流程，上手门槛极低",
+      "配套 TogetheROS.Bot 机器人中间件与丰富开源机器人案例",
+      "已被广泛用于开源小型双足、AMR 与轻量桌面机械臂"
+    ],
+    "applications": [
+      "创客与高校机器人教学",
+      "轻量级移动与小型双足机器人",
+      "端侧轻量视觉/语音推理"
+    ],
+    "description": "地瓜机器人 RDK X5 是基于旭日 5 智能计算芯片的入门级机器人开发套件，提供 10 TOPS BPU 算力，售价仅 549 元起，支持一根 Type-C 线完成全栈开发并配套 TogetheROS.Bot 中间件。",
+    "officialUrl": "https://developer.d-robotics.cc/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "d-robotics-rdk-s100",
+    "name": "D-Robotics RDK S100 / S100P",
+    "nameZh": "地瓜机器人 RDK S100 / S100P",
+    "manufacturer": "D-Robotics",
+    "manufacturerZh": "地瓜机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "controller",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": 2499,
+      "usd": null,
+      "note": "RDK S100 开发套件参考价约 2,499 元起，S100P 价格更高"
+    },
+    "specs": {
+      "component_type": "具身智能端侧计算平台",
+      "model_series": "RDK S100 (80 TOPS) / RDK S100P (128 TOPS)",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": null,
+      "voltage_v": null,
+      "interface": "2× MIPI Camera / 4× USB 3.0 / 2× PCIe 3.0 / CAN FD / 千兆以太网",
+      "key_params": "80 TOPS (S100) / 128 TOPS (S100P) BPU 算力 + 6 核 Arm Cortex-A78AE + 实时 MCU"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "地瓜机器人开发者社区",
+        "url": "https://developer.d-robotics.cc/rdk_s_doc/RDK",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "提供 80 / 128 TOPS 端侧 BPU 算力与 6 核 Arm A78AE 处理器",
+      "内置实时 MCU 与大小脑协同架构，专为具身智能全场景优化",
+      "2,499 元起的高性价比国产百 TOPS 级具身计算套件",
+      "已获超 50 家机器人本体厂商测评并导入量产方案"
+    ],
+    "applications": [
+      "人形与四足机器人大小脑主控",
+      "具身大模型端侧部署",
+      "AMR 与多传感器融合导航"
+    ],
+    "description": "地瓜机器人 RDK S100 / S100P 是面向具身智能全场景的端侧计算平台，分别提供 80 TOPS 与 128 TOPS 的 BPU 推理算力及 6 核 Arm A78AE 处理能力，2,499 元起的开发套件已被众多国产机器人厂商采用。",
+    "officialUrl": "https://developer.d-robotics.cc/rdk_s_doc/RDK",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "d-robotics-rdk-s600",
+    "name": "D-Robotics RDK S600",
+    "nameZh": "地瓜机器人 RDK S600",
+    "manufacturer": "D-Robotics",
+    "manufacturerZh": "地瓜机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "controller",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需联系地瓜生态对接中心"
+    },
+    "specs": {
+      "component_type": "旗舰级具身计算平台",
+      "model_series": "RDK S600",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": null,
+      "voltage_v": null,
+      "interface": "6× MIPI Camera / 6× USB 3.0 / 4× PCIe 3.0",
+      "key_params": "560 TOPS 端侧推理算力 + 18 核 Arm Cortex-A78AE，适配高自由度 VLA 端侧推理"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "地瓜机器人开发者社区",
+        "url": "https://developer.d-robotics.cc/rdk_s_doc/RDK",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "国产旗舰级 560 TOPS 端侧推理算力，对标高端人形大模型需求",
+      "18 核 Arm Cortex-A78AE 提供充沛通用计算与实时控制能力",
+      "支持 6 路 MIPI 相机与 4 路 PCIe 3.0 扩展，满足全身多传感器接入",
+      "延续 TogetheROS.Bot 与全套工具链生态"
+    ],
+    "applications": [
+      "全尺寸人形机器人主控",
+      "端侧 VLA 大模型实时推理",
+      "高算力具身工作站与集群"
+    ],
+    "description": "地瓜机器人 RDK S600 是地瓜机器人 Super 系列旗舰计算平台，提供高达 560 TOPS 端侧推理算力与 18 核 Arm A78AE 处理器，并支持 6 路 MIPI 相机与 4 路 PCIe 3.0，专为复杂 VLA 端侧推理打造。",
+    "officialUrl": "https://developer.d-robotics.cc/rdk_s_doc/RDK",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "nvidia-jetson-agx-thor",
+    "name": "NVIDIA Jetson AGX Thor (T5000)",
+    "nameZh": "NVIDIA Jetson AGX Thor (T5000)",
+    "manufacturer": "NVIDIA",
+    "manufacturerZh": "英伟达",
+    "country": "美国",
+    "category": "component",
+    "subcategory": "controller",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 5499,
+      "note": "开发者套件参考价约 5,499 美元，T5000 模组约 4,999 美元，T4000 约 2,999 美元"
+    },
+    "specs": {
+      "component_type": "物理 AI 旗舰边缘计算模组",
+      "model_series": "Jetson T5000 / T4000",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": null,
+      "voltage_v": null,
+      "interface": "PCIe / 多路高速以太网 / USB / CAN / Holoscan 传感器桥接",
+      "key_params": "最高 2070 TFLOPS (FP4 sparse)，2560 核 Blackwell GPU，128GB LPDDR5X (273 GB/s)，功耗 70-130W"
+    },
+    "purchaseChannels": [
+      {
+        "type": "official",
+        "name": "NVIDIA Jetson Thor 官网",
+        "url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "Blackwell 架构提供高达 2070 TFLOPS (FP4) 的端侧物理 AI 算力",
+      "128GB 大内存与 273 GB/s 带宽，可直接在端侧运行 GR00T N1.7 等 VLA（约 28Hz）",
+      "70W/90W/120W/MAXN 多档功耗模式，兼顾端侧推理与散热",
+      "已被宇树 H2 Plus、Booster T2 Pro 等旗舰人形采用"
+    ],
+    "applications": [
+      "旗舰人形机器人主控",
+      "端侧 VLA 与多模态大模型推理",
+      "手术/工业高精度实时具身控制"
+    ],
+    "description": "NVIDIA Jetson AGX Thor（T5000 模组）是英伟达基于 Blackwell 架构的旗舰物理 AI 计算平台，提供最高 2070 TFLOPS (FP4) 算力与 128GB 统一内存，可在机器人端侧直接高速运行 GR00T N1.7 等大模型。",
+    "officialUrl": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/",
+    "dataUpdated": "2026-11"
   }
 ]
