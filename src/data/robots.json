@@ -9,7 +9,11 @@
     "category": "humanoid",
     "releaseYear": 2024,
     "status": "available",
-    "price": { "cny": 99000, "usd": 16000, "note": "基础版起售价，EDU 版更高" },
+    "price": {
+      "cny": 99000,
+      "usd": 16000,
+      "note": "基础版起售价，EDU 版更高"
+    },
     "specs": {
       "height_cm": 132,
       "weight_kg": 35,
@@ -34,7 +38,12 @@
       "折叠体积小，单人可搬运",
       "开发生态成熟，科研引用量大"
     ],
-    "applications": ["科研教育", "算法开发平台", "展览展示", "二次开发"],
+    "applications": [
+      "科研教育",
+      "算法开发平台",
+      "展览展示",
+      "二次开发"
+    ],
     "description": "宇树 G1 是目前全球出货量领先的科研级人形机器人，以不到十万元的起售价和出色的运动控制能力成为高校与研究机构的主流选择，支持强化学习全流程开发。",
     "officialUrl": "https://www.unitree.com/cn/g1",
     "dataUpdated": "2025-11"
@@ -49,7 +58,11 @@
     "category": "quadruped",
     "releaseYear": 2023,
     "status": "available",
-    "price": { "cny": 9997, "usd": 1600, "note": "Air 版起售价，Pro/EDU 版更高" },
+    "price": {
+      "cny": 9997,
+      "usd": 1600,
+      "note": "Air 版起售价，Pro/EDU 版更高"
+    },
     "specs": {
       "length_cm": 70,
       "weight_kg": 15,
@@ -72,7 +85,12 @@
       "运动性能出色，支持后空翻等动作",
       "配件与开发生态完善"
     ],
-    "applications": ["消费娱乐", "科研教育", "巡检安防", "二次开发"],
+    "applications": [
+      "消费娱乐",
+      "科研教育",
+      "巡检安防",
+      "二次开发"
+    ],
     "description": "宇树 Go2 是消费级四足机器人的标杆产品，以万元级价格提供激光雷达自主避障与高动态运动能力，同时是科研领域使用最广泛的四足平台之一。",
     "officialUrl": "https://www.unitree.com/cn/go2",
     "dataUpdated": "2025-11"
@@ -87,7 +105,11 @@
     "category": "hand",
     "releaseYear": 2023,
     "status": "available",
-    "price": { "cny": 29800, "usd": 4500, "note": "不同版本价格不同" },
+    "price": {
+      "cny": 29800,
+      "usd": 4500,
+      "note": "不同版本价格不同"
+    },
     "specs": {
       "dof_total": 12,
       "doa": 6,
@@ -109,8 +131,1371 @@
       "6 个主动自由度覆盖常见抓取任务",
       "被多家人形机器人厂商选为默认末端"
     ],
-    "applications": ["人形机器人末端", "科研教育", "假肢研究", "遥操作"],
+    "applications": [
+      "人形机器人末端",
+      "科研教育",
+      "假肢研究",
+      "遥操作"
+    ],
     "description": "因时 RH56 系列是国内商用化程度最高的灵巧手之一，采用微型直线伺服驱动方案，在重量、成本与可靠性之间取得平衡，被广泛集成于各类人形机器人本体。",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "unitree-h1-2",
+    "name": "Unitree H1-2",
+    "nameZh": "宇树 H1-2",
+    "manufacturer": "Unitree Robotics",
+    "manufacturerZh": "宇树科技",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "limited",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 180,
+      "weight_kg": 70,
+      "dof_total": 27,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": 3.3,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": 360,
+      "battery_wh": 864,
+      "runtime_h": null,
+      "swappable_battery": "支持快换电池",
+      "compute_tops": null,
+      "compute_platform": "Intel Core i7 + 可选 NVIDIA Jetson Orin（以官方配置为准）",
+      "sensors": "3D 激光雷达 + 深度相机",
+      "sdk": "开放 SDK，支持 ROS2 / 强化学习"
+    },
+    "highlights": [
+      "全尺寸 180cm 人形，关节扭矩大，适合高动态研究",
+      "在 H1 基础上升级全身自由度，腿部与臂部更灵活",
+      "官方运动控制开放，便于强化学习算法验证",
+      "多次展示奔跑、跳舞等高动态表演"
+    ],
+    "applications": [
+      "科研教育",
+      "运动控制算法研究",
+      "展览表演",
+      "二次开发"
+    ],
+    "description": "宇树 H1-2 是宇树科技面向科研与表演场景的全尺寸人形机器人，由 H1 升级而来，身高约 180cm，关节扭矩大，运动性能出色，并提供开放的开发接口，常用于运动控制与强化学习研究。",
+    "officialUrl": "https://www.unitree.com/cn/h1",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "tesla-optimus-gen2",
+    "name": "Tesla Optimus Gen 2",
+    "nameZh": "特斯拉 Optimus Gen 2",
+    "manufacturer": "Tesla",
+    "manufacturerZh": "特斯拉",
+    "country": "美国",
+    "category": "humanoid",
+    "releaseYear": 2023,
+    "status": "research",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开；官方曾表示远期目标售价约 2-3 万美元，尚无量产报价"
+    },
+    "specs": {
+      "height_cm": 173,
+      "weight_kg": 57,
+      "dof_total": 28,
+      "dof_hand": 11,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 9,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": 2300,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "特斯拉自研 FSD 计算平台",
+      "sensors": "视觉感知为主，指尖带触觉传感器",
+      "sdk": "未开放，内部使用"
+    },
+    "highlights": [
+      "整机较上一代减重约 10kg，行走速度更快",
+      "全身约 28 个执行器，单手 11 自由度",
+      "手指集成触觉传感，可完成精细抓取",
+      "依托特斯拉 FSD 视觉与自研芯片体系"
+    ],
+    "applications": [
+      "工厂内部物料搬运",
+      "生产线辅助作业",
+      "长期面向家庭服务"
+    ],
+    "description": "特斯拉 Optimus Gen 2 于 2023 年底发布，较初代减重约 10kg，行走速度提升，手部具备 11 自由度与触觉感知。目前主要在特斯拉工厂内测试，尚未对外销售，量产时间和价格以官方发布为准。",
+    "officialUrl": "https://www.tesla.com/AI",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "figure-02",
+    "name": "Figure 02",
+    "nameZh": "Figure 02",
+    "manufacturer": "Figure AI",
+    "manufacturerZh": "Figure AI",
+    "country": "美国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "limited",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 170,
+      "weight_kg": 70,
+      "dof_total": null,
+      "dof_hand": 16,
+      "walk_speed_ms": 1.2,
+      "max_speed_ms": null,
+      "payload_kg": 20,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": 2250,
+      "runtime_h": 5,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "机载 GPU 推理，算力约为上一代 3 倍",
+      "sensors": "6 个 RGB 摄像头 + 机载麦克风与扬声器",
+      "sdk": "未开放，商业定向合作"
+    },
+    "highlights": [
+      "在宝马工厂开展试点部署",
+      "单手 16 自由度，指尖负载能力强",
+      "内置 2.25kWh 电池，续航约 5 小时",
+      "与 Helix VLA 模型搭配，支持自然语言交互"
+    ],
+    "applications": [
+      "汽车工厂零部件搬运",
+      "物流仓储",
+      "制造业产线辅助"
+    ],
+    "description": "Figure 02 是 Figure AI 于 2024 年发布的第二代商用人形机器人，身高约 170cm，配备 16 自由度灵巧手与 6 路摄像头，已在汽车工厂开展试点，并搭配 Helix 模型实现语言驱动的操作任务。",
+    "officialUrl": "https://www.figure.ai",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "figure-03",
+    "name": "Figure 03",
+    "nameZh": "Figure 03",
+    "manufacturer": "Figure AI",
+    "manufacturerZh": "Figure AI",
+    "country": "美国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "announced",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 168,
+      "weight_kg": 61,
+      "dof_total": null,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 20,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": 2300,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "机载 GPU，面向 Helix 模型推理",
+      "sensors": "头部与手掌摄像头 + 指尖触觉传感器",
+      "sdk": "未开放，商业定向合作"
+    },
+    "highlights": [
+      "面向家庭与商业双场景设计，外观采用软质织物包覆",
+      "手掌内置摄像头，指尖带触觉传感",
+      "支持无线充电，提升连续作业效率",
+      "专为 Helix 与规模化量产重新设计"
+    ],
+    "applications": [
+      "家庭家务",
+      "商业与物流作业",
+      "工厂产线辅助"
+    ],
+    "description": "Figure 03 于 2025 年 10 月发布，是 Figure AI 面向家庭与商业场景设计的第三代人形机器人，整机更轻、外观更柔和，手掌带摄像头、指尖带触觉传感，并规划通过自建工厂实现规模化量产。",
+    "officialUrl": "https://www.figure.ai",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "boston-dynamics-atlas",
+    "name": "Boston Dynamics Atlas (Electric)",
+    "nameZh": "波士顿动力 Atlas（电动版）",
+    "manufacturer": "Boston Dynamics",
+    "manufacturerZh": "波士顿动力",
+    "country": "美国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "research",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 150,
+      "weight_kg": 89,
+      "dof_total": null,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "头部多相机与深度感知",
+      "sdk": "未开放"
+    },
+    "highlights": [
+      "2024 年发布全电驱版本，取代液压 Atlas",
+      "关节旋转范围大，可做出超人类的转体动作",
+      "与现代汽车合作，面向工厂场景",
+      "与丰田研究院合作开展大行为模型研究"
+    ],
+    "applications": [
+      "汽车工厂物料搬运",
+      "工业制造",
+      "科研前沿验证"
+    ],
+    "description": "波士顿动力于 2024 年 4 月发布全电驱动的新一代 Atlas，替代液压版本。其关节可大范围旋转，身高约 150cm，主要与现代汽车合作面向工厂应用，同时开展基于大模型的全身操作研究。",
+    "officialUrl": "https://bostondynamics.com/atlas/",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "agility-digit",
+    "name": "Agility Robotics Digit",
+    "nameZh": "Agility Robotics Digit",
+    "manufacturer": "Agility Robotics",
+    "manufacturerZh": "Agility Robotics",
+    "country": "美国",
+    "category": "humanoid",
+    "releaseYear": 2023,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "以机器人即服务（RaaS）方式提供，需询价"
+    },
+    "specs": {
+      "height_cm": 175,
+      "weight_kg": 65,
+      "dof_total": null,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 16,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": 1500,
+      "runtime_h": 4,
+      "swappable_battery": "支持自主换电与充电",
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "激光雷达 + 多路深度相机",
+      "sdk": "通过 Agility Arc 云平台集成"
+    },
+    "highlights": [
+      "全球较早实现商业部署的双足人形机器人",
+      "在 GXO 等物流仓库参与实际作业",
+      "双足加类鸟腿结构，适合搬运周转箱",
+      "配套 Arc 云平台，对接仓库管理系统"
+    ],
+    "applications": [
+      "物流仓储周转箱搬运",
+      "货物转运",
+      "工业物料流转"
+    ],
+    "description": "Digit 是 Agility Robotics 的双足人形机器人，采用类鸟腿结构，身高约 175cm，可搬运约 16kg 的料箱。它是较早进入真实仓储场景的商用人形机器人，并以机器人即服务的方式提供。",
+    "officialUrl": "https://www.agilityrobotics.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "fourier-gr2",
+    "name": "Fourier GR-2",
+    "nameZh": "傅利叶 GR-2",
+    "manufacturer": "Fourier Intelligence",
+    "manufacturerZh": "傅利叶",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 175,
+      "weight_kg": 63,
+      "dof_total": 53,
+      "dof_hand": 12,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": 3,
+      "joint_torque_nm": 380,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": "支持快换电池",
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "深度相机 + 触觉传感（以官方配置为准）",
+      "sdk": "开放 SDK，面向具身智能研发"
+    },
+    "highlights": [
+      "全身自由度高达 53，手部 12 自由度",
+      "关节峰值扭矩大，下肢动力充足",
+      "面向具身智能研发提供开放接口",
+      "傅利叶在康复机器人领域有深厚的执行器积累"
+    ],
+    "applications": [
+      "具身智能科研",
+      "医疗康复与陪护",
+      "服务场景探索",
+      "二次开发"
+    ],
+    "description": "傅利叶 GR-2 是傅利叶智能 2024 年发布的第二代通用人形机器人，全身自由度达 53，手部 12 自由度，关节扭矩大，并提供开放开发接口，主要面向具身智能科研与康复陪护等服务场景。",
+    "officialUrl": "https://www.fourierintelligence.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "ubtech-walker-s1",
+    "name": "UBTECH Walker S1",
+    "nameZh": "优必选 Walker S1",
+    "manufacturer": "UBTECH Robotics",
+    "manufacturerZh": "优必选科技",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "limited",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 172,
+      "weight_kg": 76,
+      "dof_total": 41,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "双目视觉 + 力觉感知（以官方配置为准）",
+      "sdk": "面向工业客户定向合作"
+    },
+    "highlights": [
+      "已进入蔚来、比亚迪等车企工厂开展实训",
+      "全身 41 自由度，面向工业场景设计",
+      "支持多机协同作业",
+      "优必选在服务机器人领域积累多年"
+    ],
+    "applications": [
+      "汽车工厂实训",
+      "工业搬运与分拣",
+      "多机协同制造"
+    ],
+    "description": "优必选 Walker S1 是面向工业场景的人形机器人，全身约 41 自由度，已进入多家车企工厂开展实训，探索零部件搬运、质检与多机协同作业，是国内较早推进工厂实训的人形产品之一。",
+    "officialUrl": "https://www.ubtrobot.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "agibot-a2",
+    "name": "AgiBot A2",
+    "nameZh": "智元远征 A2",
+    "manufacturer": "AgiBot",
+    "manufacturerZh": "智元机器人",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 169,
+      "weight_kg": 69,
+      "dof_total": null,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": "支持换电",
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "多目视觉 + 激光雷达（以官方配置为准）",
+      "sdk": "提供开发平台与 GO-1 具身模型支持"
+    },
+    "highlights": [
+      "智元远征系列面向商用的通用人形机器人",
+      "配套 AgiBot World 数据集与 GO-1 模型",
+      "面向导览、讲解与工业场景落地",
+      "依托智元的量产与数据采集体系"
+    ],
+    "applications": [
+      "商业导览与接待",
+      "工业制造辅助",
+      "科研教育"
+    ],
+    "description": "智元远征 A2 是智元机器人推出的商用人形机器人，定位于导览、接待与工业辅助等场景，依托智元的数据采集平台与 GO-1 具身基础模型，在国内已有多家客户展开交付和应用探索。",
+    "officialUrl": "https://www.zhiyuan-robot.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "engineai-pm01",
+    "name": "EngineAI PM01",
+    "nameZh": "众擎 PM01",
+    "manufacturer": "EngineAI Robotics",
+    "manufacturerZh": "众擎机器人",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": 88000,
+      "usd": null,
+      "note": "官方公布参考价约 8.8 万元，具体版本以官方为准"
+    },
+    "specs": {
+      "height_cm": 138,
+      "weight_kg": 40,
+      "dof_total": 24,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": 164,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "Intel N97，可选配 NVIDIA Jetson Orin（以官方为准）",
+      "sensors": "深度相机 + IMU",
+      "sdk": "开放 SDK，面向科研与开发者"
+    },
+    "highlights": [
+      "约 8.8 万元起的科研级人形，价格亲民",
+      "身高 138cm、重 40kg，便携易部署",
+      "关节峰值扭矩约 164N·m，动态性能好",
+      "面向高校与开发者开放二次开发"
+    ],
+    "applications": [
+      "高校科研教育",
+      "运动控制算法验证",
+      "展览表演",
+      "二次开发"
+    ],
+    "description": "众擎 PM01 是众擎机器人于 2024 年底发布的小型高动态人形机器人，身高 138cm、重约 40kg，具备 24 自由度与较高的关节扭矩，价格约 8.8 万元，面向高校科研与开发者生态。",
+    "officialUrl": "https://www.engineai.com.cn",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "1x-neo",
+    "name": "1X NEO",
+    "nameZh": "1X NEO",
+    "manufacturer": "1X Technologies",
+    "manufacturerZh": "1X Technologies",
+    "country": "美国/挪威",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "preorder",
+    "price": {
+      "cny": null,
+      "usd": 20000,
+      "note": "预订价 2 万美元，或订阅约 499 美元/月；计划 2026 年交付"
+    },
+    "specs": {
+      "height_cm": 168,
+      "weight_kg": 30,
+      "dof_total": null,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": 25,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 4,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "摄像头 + 麦克风 + 触觉感知",
+      "sdk": "未开放，家庭产品"
+    },
+    "highlights": [
+      "面向家庭设计的消费级人形，预订价 2 万美元",
+      "整机约 30kg，柔软织物外观与肌腱驱动，运行安静",
+      "可搬运约 25kg 物品",
+      "搭配 1X 世界模型，支持家务任务学习与远程辅助"
+    ],
+    "applications": [
+      "家庭整理与清洁",
+      "家居日常陪伴",
+      "物品搬运"
+    ],
+    "description": "1X NEO 是 1X Technologies 于 2025 年 10 月开启预订的家用人形机器人，整机约 30kg，采用柔软外观与肌腱式驱动，噪音低，预订价约 2 万美元，计划 2026 年向美国家庭交付。",
+    "officialUrl": "https://www.1x.tech",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "galbot-g1",
+    "name": "Galbot G1",
+    "nameZh": "银河通用 Galbot G1",
+    "manufacturer": "Galbot",
+    "manufacturerZh": "银河通用",
+    "country": "中国",
+    "category": "wheeled",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": null,
+      "weight_kg": null,
+      "dof_total": null,
+      "dof_hand": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_reach_cm": null,
+      "lift_range_cm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "头部与腕部相机 + 激光雷达（以官方为准）",
+      "sdk": "提供开发接口，支持具身大模型接入"
+    },
+    "highlights": [
+      "轮式底盘 + 双臂 + 升降结构，适合货架作业",
+      "依托大规模合成数据训练具身大模型",
+      "已在零售药房等场景开展落地",
+      "获多轮大额融资，商业化推进较快"
+    ],
+    "applications": [
+      "零售门店补货与拣选",
+      "药房与仓储",
+      "工业物料搬运"
+    ],
+    "description": "银河通用 Galbot G1 是银河通用推出的轮式双臂通用机器人，采用移动底盘加升降与双臂结构，依托大规模合成数据训练的具身大模型，在零售、药房等场景开展试点落地。",
+    "officialUrl": "https://www.galbot.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "astribot-s1",
+    "name": "Astribot S1",
+    "nameZh": "星尘智能 Astribot S1",
+    "manufacturer": "Astribot",
+    "manufacturerZh": "星尘智能",
+    "country": "中国",
+    "category": "wheeled",
+    "releaseYear": 2024,
+    "status": "limited",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": null,
+      "weight_kg": null,
+      "dof_total": null,
+      "dof_hand": null,
+      "max_speed_ms": null,
+      "payload_kg": 10,
+      "arm_reach_cm": null,
+      "lift_range_cm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "头部相机 + 腕部相机",
+      "sdk": "定向合作，支持模仿学习"
+    },
+    "highlights": [
+      "双臂高速高灵活，演示中完成叠衣、倒茶等任务",
+      "采用绳驱结构，拟人化操作响应快",
+      "主打家庭服务与通用助手定位",
+      "数据采集结合遥操作与模仿学习"
+    ],
+    "applications": [
+      "家庭服务",
+      "商业接待",
+      "具身智能科研"
+    ],
+    "description": "星尘智能 Astribot S1 是一款轮式双臂 AI 助理机器人，采用绳驱结构实现快速灵活的双臂操作，演示中完成过叠衣服、整理物品等任务，面向家庭服务与通用助手场景，目前以定向合作为主。",
+    "officialUrl": "https://www.astribot.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "agibot-genie-g1",
+    "name": "AgiBot Genie G1",
+    "nameZh": "智元精灵 G1",
+    "manufacturer": "AgiBot",
+    "manufacturerZh": "智元机器人",
+    "country": "中国",
+    "category": "wheeled",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": null,
+      "weight_kg": null,
+      "dof_total": null,
+      "dof_hand": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_reach_cm": null,
+      "lift_range_cm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "头部与腕部相机，多模态感知",
+      "sdk": "配套 AgiBot World 数采与 GO-1 模型"
+    },
+    "highlights": [
+      "轮式双臂构型，兼顾移动与双臂操作",
+      "面向数据采集与具身模型训练设计",
+      "配套 AgiBot World 开源数据集",
+      "支持 GO-1 具身基础模型"
+    ],
+    "applications": [
+      "数据采集",
+      "工业与物流作业",
+      "具身智能科研"
+    ],
+    "description": "智元精灵 G1 是智元机器人的轮式双臂作业机器人，采用移动底盘加双臂构型，主要用于具身数据采集与工业物流作业，并配套 AgiBot World 开源数据集与 GO-1 具身基础模型。",
+    "officialUrl": "https://www.zhiyuan-robot.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "mobile-aloha",
+    "name": "Mobile ALOHA",
+    "nameZh": "Mobile ALOHA（斯坦福）",
+    "manufacturer": "Stanford University",
+    "manufacturerZh": "斯坦福大学",
+    "country": "美国",
+    "category": "wheeled",
+    "releaseYear": 2024,
+    "status": "research",
+    "price": {
+      "cny": null,
+      "usd": 32000,
+      "note": "论文披露整套硬件成本约 3.2 万美元（含机载电源与计算）"
+    },
+    "specs": {
+      "height_cm": null,
+      "weight_kg": null,
+      "dof_total": null,
+      "dof_hand": null,
+      "max_speed_ms": 1.4,
+      "payload_kg": null,
+      "arm_reach_cm": null,
+      "lift_range_cm": null,
+      "battery_wh": 1260,
+      "runtime_h": null,
+      "compute_tops": null,
+      "compute_platform": "机载消费级笔记本 GPU",
+      "sensors": "腕部相机 + 前向相机",
+      "sdk": "硬件与代码开源，配套 ACT 模仿学习"
+    },
+    "highlights": [
+      "低成本开源的移动双臂操作平台",
+      "全身遥操作采集数据，配合 ACT 做模仿学习",
+      "仅数十次示范即可学会炒虾、开柜门等任务",
+      "推动了开源具身数据采集生态"
+    ],
+    "applications": [
+      "模仿学习研究",
+      "家庭任务探索",
+      "低成本科研平台"
+    ],
+    "description": "Mobile ALOHA 是斯坦福大学于 2024 年初提出的低成本开源移动双臂操作系统，在 ALOHA 双臂遥操作基础上加入移动底盘，用较少示范数据即可完成炒菜、开柜门等复杂家务，成为学界热门平台。",
+    "officialUrl": "https://mobile-aloha.github.io",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "unitree-b2",
+    "name": "Unitree B2",
+    "nameZh": "宇树 B2",
+    "manufacturer": "Unitree Robotics",
+    "manufacturerZh": "宇树科技",
+    "country": "中国",
+    "category": "quadruped",
+    "releaseYear": 2023,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "length_cm": null,
+      "weight_kg": null,
+      "dof_total": 12,
+      "max_speed_ms": 6,
+      "payload_kg": 40,
+      "max_payload_kg": 120,
+      "climb_deg": null,
+      "stair_cm": null,
+      "ip_rating": "IP67",
+      "battery_wh": null,
+      "runtime_h": null,
+      "compute_tops": null,
+      "sensors": "激光雷达 + 深度相机（以版本为准）",
+      "sdk": "开放 SDK，支持 ROS / Python"
+    },
+    "highlights": [
+      "工业级四足，最高速度可达 6m/s",
+      "行走持续负载约 40kg，静态承重更高",
+      "整机 IP67 防护，适合户外恶劣环境",
+      "宇树成熟的运动控制与开发生态"
+    ],
+    "applications": [
+      "电力与工业巡检",
+      "应急救援",
+      "科研平台",
+      "负载运输"
+    ],
+    "description": "宇树 B2 是宇树科技面向工业场景的大型四足机器人，最高速度约 6m/s，持续负载约 40kg，整机达到 IP67 防护，适用于电力巡检、应急救援与户外负载运输等工业任务。",
+    "officialUrl": "https://www.unitree.com/cn/b2",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "boston-dynamics-spot",
+    "name": "Boston Dynamics Spot",
+    "nameZh": "波士顿动力 Spot",
+    "manufacturer": "Boston Dynamics",
+    "manufacturerZh": "波士顿动力",
+    "country": "美国",
+    "category": "quadruped",
+    "releaseYear": 2020,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 74500,
+      "note": "基础版起售价约 7.45 万美元，配件另计"
+    },
+    "specs": {
+      "length_cm": 110,
+      "weight_kg": 32.5,
+      "dof_total": 12,
+      "max_speed_ms": 1.6,
+      "payload_kg": 14,
+      "max_payload_kg": null,
+      "climb_deg": null,
+      "stair_cm": null,
+      "ip_rating": "IP54",
+      "battery_wh": 605,
+      "runtime_h": 1.5,
+      "compute_tops": null,
+      "sensors": "5 组立体相机 + 可选云台相机与激光雷达载荷",
+      "sdk": "提供 Spot SDK，支持 Python / ROS"
+    },
+    "highlights": [
+      "商业化时间最长、部署量最大的商用四足机器人之一",
+      "可扩展载荷接口，支持热成像、气体检测等",
+      "自主导航与任务编排软件 Autowalk 成熟",
+      "Spot SDK 文档完善，生态丰富"
+    ],
+    "applications": [
+      "工业设施巡检",
+      "建筑工地测绘",
+      "安防与应急",
+      "科研教育"
+    ],
+    "description": "Spot 是波士顿动力的商用四足机器人，重约 32.5kg，持续负载约 14kg，可通过载荷接口搭载传感器执行自主巡检，并提供成熟的 SDK 与任务编排软件，广泛用于能源、建筑与安防行业。",
+    "officialUrl": "https://bostondynamics.com/products/spot/",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "anybotics-anymal-d",
+    "name": "ANYbotics ANYmal D / X",
+    "nameZh": "ANYbotics ANYmal D / X",
+    "manufacturer": "ANYbotics",
+    "manufacturerZh": "ANYbotics",
+    "country": "瑞士",
+    "category": "quadruped",
+    "releaseYear": 2021,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "length_cm": 93,
+      "weight_kg": 50,
+      "dof_total": 12,
+      "max_speed_ms": 1.3,
+      "payload_kg": 10,
+      "max_payload_kg": null,
+      "climb_deg": null,
+      "stair_cm": null,
+      "ip_rating": "IP67",
+      "battery_wh": 932,
+      "runtime_h": 1.5,
+      "compute_tops": null,
+      "sensors": "激光雷达 + 深度相机 + 热成像与声学检测",
+      "sdk": "提供 ANYmal 软件与科研接口"
+    },
+    "highlights": [
+      "面向油气、化工等工业巡检，IP67 防护",
+      "ANYmal X 版本取得防爆（ATEX）认证",
+      "可自主充电与长期自主巡检",
+      "源于 ETH 苏黎世机器人研究，学术积累深厚"
+    ],
+    "applications": [
+      "油气与化工设施巡检",
+      "防爆危险环境",
+      "电力与变电站巡检"
+    ],
+    "description": "ANYmal D 是瑞士 ANYbotics 的工业巡检四足机器人，重约 50kg，具备 IP67 防护与自主充电能力，其 X 版本取得防爆认证，适用于油气、化工和变电站等危险环境的自主巡检。",
+    "officialUrl": "https://www.anybotics.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "deeprobotics-x30",
+    "name": "DEEP Robotics X30",
+    "nameZh": "云深处 绝影 X30",
+    "manufacturer": "DEEP Robotics",
+    "manufacturerZh": "云深处科技",
+    "country": "中国",
+    "category": "quadruped",
+    "releaseYear": 2023,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "length_cm": null,
+      "weight_kg": 56,
+      "dof_total": 12,
+      "max_speed_ms": 4,
+      "payload_kg": null,
+      "max_payload_kg": null,
+      "climb_deg": 45,
+      "stair_cm": 20,
+      "ip_rating": "IP67",
+      "battery_wh": null,
+      "runtime_h": null,
+      "compute_tops": null,
+      "sensors": "激光雷达 + 深度相机（以官方配置为准）",
+      "sdk": "提供二次开发接口"
+    },
+    "highlights": [
+      "国产工业级四足，面向电力与应急场景",
+      "IP67 防护，适应复杂户外环境",
+      "可爬楼梯与大角度坡面",
+      "云深处在国内电力巡检等领域落地较多"
+    ],
+    "applications": [
+      "电力与变电站巡检",
+      "应急救援",
+      "安防巡逻",
+      "科研教育"
+    ],
+    "description": "绝影 X30 是云深处科技的工业级四足机器人，整机约 56kg，具备 IP67 防护与较强的复杂地形通过能力，已在电力巡检、应急救援与安防巡逻等场景落地，是国产工业四足的代表产品。",
+    "officialUrl": "https://www.deeprobotics.cn",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "ghost-vision-60",
+    "name": "Ghost Robotics Vision 60",
+    "nameZh": "Ghost Robotics Vision 60",
+    "manufacturer": "Ghost Robotics",
+    "manufacturerZh": "Ghost Robotics",
+    "country": "美国",
+    "category": "quadruped",
+    "releaseYear": 2019,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "length_cm": null,
+      "weight_kg": 51,
+      "dof_total": 12,
+      "max_speed_ms": 3,
+      "payload_kg": 10,
+      "max_payload_kg": null,
+      "climb_deg": null,
+      "stair_cm": null,
+      "ip_rating": "IP67",
+      "battery_wh": null,
+      "runtime_h": 3,
+      "compute_tops": null,
+      "sensors": "可选配多种相机与雷达载荷",
+      "sdk": "提供载荷接口与开发支持"
+    },
+    "highlights": [
+      "面向军警与安防等严苛环境设计",
+      "腿部直驱结构，机械简洁耐用",
+      "防护等级高，适应沙漠、雪地等环境",
+      "提供多种可选载荷扩展"
+    ],
+    "applications": [
+      "军警安防巡逻",
+      "边境与基地巡检",
+      "野外与极端环境任务"
+    ],
+    "description": "Vision 60 是 Ghost Robotics 的全地形四足机器人，整机约 51kg，采用直驱腿部结构与高防护设计，在美国军警和安防领域有较多应用，可搭载多种传感器载荷执行巡逻与侦察任务。",
+    "officialUrl": "https://www.ghostrobotics.io",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "shadow-dexterous-hand",
+    "name": "Shadow Dexterous Hand",
+    "nameZh": "Shadow 灵巧手",
+    "manufacturer": "Shadow Robot Company",
+    "manufacturerZh": "Shadow Robot",
+    "country": "英国",
+    "category": "hand",
+    "releaseYear": null,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "dof_total": 24,
+      "doa": 20,
+      "fingers": 5,
+      "weight_g": null,
+      "payload_kg": null,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "电机驱动肌腱（E 系列）",
+      "tactile": "可选配 BioTac 等指尖触觉传感器",
+      "tactile_points": null,
+      "interface": "EtherCAT / ROS",
+      "sdk": "提供 ROS 驱动与仿真模型"
+    },
+    "highlights": [
+      "拟人结构，24 自由度，20 个主动自由度",
+      "科研领域长期使用的标杆灵巧手",
+      "OpenAI 魔方实验等经典工作采用",
+      "提供 ROS 驱动与仿真模型"
+    ],
+    "applications": [
+      "灵巧操作科研",
+      "遥操作",
+      "强化学习与模仿学习"
+    ],
+    "description": "Shadow Dexterous Hand 是英国 Shadow Robot 的拟人灵巧手，拥有 24 个自由度、20 个主动自由度，长期是机器人灵巧操作研究的标杆平台，OpenAI 的魔方实验即采用该手，价格昂贵需询价。",
+    "officialUrl": "https://www.shadowrobot.com/dexterous-hand-series/",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "unitree-dex3-1",
+    "name": "Unitree Dex3-1",
+    "nameZh": "宇树 Dex3-1",
+    "manufacturer": "Unitree Robotics",
+    "manufacturerZh": "宇树科技",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "dof_total": 7,
+      "doa": 7,
+      "fingers": 3,
+      "weight_g": null,
+      "payload_kg": null,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "多关节直驱微型电机",
+      "tactile": "指尖与指节触觉传感阵列",
+      "tactile_points": 33,
+      "interface": null,
+      "sdk": "配套 G1 EDU，提供 SDK"
+    },
+    "highlights": [
+      "三指 7 自由度，适配宇树 G1 人形机器人",
+      "集成触觉传感阵列，支持力觉反馈",
+      "可用于遥操作数据采集",
+      "宇树 G1 EDU 的配套灵巧手"
+    ],
+    "applications": [
+      "人形机器人末端",
+      "遥操作数据采集",
+      "科研教育"
+    ],
+    "description": "宇树 Dex3-1 是宇树科技为 G1 人形机器人开发的三指灵巧手，共 7 个自由度，集成触觉传感阵列，主要用于 G1 EDU 的灵巧操作研究与遥操作数据采集，是宇树生态下的力觉灵巧手。",
+    "officialUrl": "https://www.unitree.com/cn/Dex3-1",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "wonik-allegro-hand",
+    "name": "Wonik Allegro Hand",
+    "nameZh": "Wonik Allegro 灵巧手",
+    "manufacturer": "Wonik Robotics",
+    "manufacturerZh": "Wonik Robotics",
+    "country": "韩国",
+    "category": "hand",
+    "releaseYear": null,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "dof_total": 16,
+      "doa": 16,
+      "fingers": 4,
+      "weight_g": null,
+      "payload_kg": null,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "直流电机 + 齿轮传动",
+      "tactile": "可选配触觉传感器",
+      "tactile_points": null,
+      "interface": "CAN",
+      "sdk": "提供 ROS 与仿真支持"
+    },
+    "highlights": [
+      "四指 16 自由度，全驱动结构",
+      "科研界广泛使用的经典灵巧手",
+      "开源仿真模型完善，便于强化学习",
+      "价格低于同级拟人灵巧手"
+    ],
+    "applications": [
+      "强化学习灵巧操作研究",
+      "抓取与重定向研究",
+      "科研教育"
+    ],
+    "description": "Allegro Hand 是韩国 Wonik Robotics 的四指 16 自由度全驱动灵巧手，结构紧凑，仿真模型和 ROS 支持完善，是强化学习、抓取与灵巧操作研究中使用最广泛的科研灵巧手之一。",
+    "officialUrl": "https://www.wonikrobotics.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "leap-hand",
+    "name": "LEAP Hand",
+    "nameZh": "LEAP Hand（CMU）",
+    "manufacturer": "Carnegie Mellon University",
+    "manufacturerZh": "卡内基梅隆大学",
+    "country": "美国",
+    "category": "hand",
+    "releaseYear": 2023,
+    "status": "research",
+    "price": {
+      "cny": null,
+      "usd": 2000,
+      "note": "论文披露整手成本约 2000 美元（开源自制）"
+    },
+    "specs": {
+      "dof_total": 16,
+      "doa": 16,
+      "fingers": 4,
+      "weight_g": null,
+      "payload_kg": null,
+      "fingertip_force_n": null,
+      "grip_force_n": null,
+      "speed_note": null,
+      "drive_type": "Dynamixel 舵机驱动",
+      "tactile": "无内置触觉",
+      "tactile_points": null,
+      "interface": "USB / 串口总线",
+      "sdk": "开源硬件与 Python / ROS 代码"
+    },
+    "highlights": [
+      "开源低成本灵巧手，整手成本约 2000 美元",
+      "四指 16 自由度，结构开源易复现",
+      "支持仿真到真机迁移的灵巧操作研究",
+      "社区复现广泛，便于科研入门"
+    ],
+    "applications": [
+      "灵巧操作科研",
+      "仿真到真机迁移",
+      "低成本科研平台"
+    ],
+    "description": "LEAP Hand 是卡内基梅隆大学 2023 年开源的低成本灵巧手，采用 Dynamixel 舵机驱动四指 16 自由度，整手成本约 2000 美元，硬件与代码全开源，成为灵巧操作研究的入门平台。",
+    "officialUrl": "https://leaphand.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "leaderdrive-harmonic-reducer",
+    "name": "Leaderdrive Harmonic Reducer",
+    "nameZh": "绿的谐波 谐波减速器",
+    "manufacturer": "Leaderdrive",
+    "manufacturerZh": "绿的谐波",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "reducer",
+    "releaseYear": null,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "component_type": "谐波减速器",
+      "model_series": "LCS / LHS 等系列（具体型号以官方手册为准）",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": "常见 50 / 80 / 100 / 120 / 160",
+      "precision": null,
+      "range_note": null,
+      "voltage_v": null,
+      "interface": null,
+      "key_params": "各型号参数差异较大，请以官方选型手册为准"
+    },
+    "highlights": [
+      "国内谐波减速器龙头，机器人关节核心部件",
+      "产品覆盖多个系列与减速比",
+      "人形机器人关节与协作机器人广泛采用",
+      "国产替代进程中的代表企业"
+    ],
+    "applications": [
+      "人形机器人关节",
+      "协作与工业机器人",
+      "精密传动"
+    ],
+    "description": "绿的谐波是国内领先的谐波减速器制造商，产品覆盖多个系列和减速比，广泛用于工业机器人、协作机器人及人形机器人关节，是机器人核心传动部件实现国产替代进程中的代表企业。",
+    "officialUrl": "https://www.leaderdrive.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "livox-mid-360",
+    "name": "Livox Mid-360",
+    "nameZh": "览沃 Mid-360 激光雷达",
+    "manufacturer": "Livox (DJI)",
+    "manufacturerZh": "览沃科技",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "lidar",
+    "releaseYear": 2023,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 749,
+      "note": "海外官方参考价约 749 美元，以渠道为准"
+    },
+    "specs": {
+      "component_type": "3D 激光雷达（混合固态）",
+      "model_series": "Mid-360",
+      "weight_g": 265,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": "探测距离约 40m（10% 反射率），视场 360°×59°",
+      "voltage_v": null,
+      "interface": "以太网",
+      "key_params": "点频 20 万点/秒，内置 IMU，防护等级 IP67"
+    },
+    "highlights": [
+      "360° 水平视场，适合移动机器人建图与避障",
+      "体积小、重量约 265g，便于集成",
+      "内置 IMU，支持 SLAM 算法",
+      "宇树等多家机器人厂商采用"
+    ],
+    "applications": [
+      "移动机器人 SLAM",
+      "四足与人形机器人导航",
+      "无人机测绘"
+    ],
+    "description": "览沃 Mid-360 是大疆旗下览沃科技的小型 3D 激光雷达，水平视场 360°，重量约 265g，点频约 20 万点/秒并内置 IMU，常用于四足、人形与移动机器人的 SLAM 建图与避障导航。",
+    "officialUrl": "https://www.livoxtech.com/mid-360",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "intel-realsense-d435i",
+    "name": "Intel RealSense D435i",
+    "nameZh": "Intel RealSense D435i 深度相机",
+    "manufacturer": "Intel RealSense",
+    "manufacturerZh": "英特尔 RealSense",
+    "country": "美国",
+    "category": "component",
+    "subcategory": "camera",
+    "releaseYear": 2019,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "价格随渠道浮动，约数百美元，请以渠道报价为准"
+    },
+    "specs": {
+      "component_type": "主动红外立体深度相机（含 IMU）",
+      "model_series": "D435i",
+      "weight_g": 72,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": "深度分辨率最高 1280×720，视场约 87°×58°",
+      "voltage_v": null,
+      "interface": "USB 3.1",
+      "key_params": "全局快门深度传感器，内置 IMU，最高 90fps"
+    },
+    "highlights": [
+      "全局快门深度传感，适合运动中的机器人",
+      "内置 IMU，支持视觉惯性 SLAM",
+      "生态成熟，SDK 与 ROS 支持完善",
+      "被大量科研与开发项目采用"
+    ],
+    "applications": [
+      "机器人视觉感知",
+      "视觉 SLAM 与避障",
+      "抓取与操作"
+    ],
+    "description": "Intel RealSense D435i 是广泛使用的立体深度相机，具备全局快门深度传感与内置 IMU，SDK 与 ROS 支持完善，常用于机器人避障、视觉 SLAM 与抓取感知，是科研与开发的经典选择。",
+    "officialUrl": "https://www.intelrealsense.com/depth-camera-d435i/",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "ati-mini45",
+    "name": "ATI Mini45 F/T Sensor",
+    "nameZh": "ATI Mini45 六维力传感器",
+    "manufacturer": "ATI Industrial Automation",
+    "manufacturerZh": "ATI Industrial Automation",
+    "country": "美国",
+    "category": "component",
+    "subcategory": "sensor-force",
+    "releaseYear": null,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "component_type": "六维力/力矩传感器",
+      "model_series": "Mini45（含 SI-145-5 等量程规格）",
+      "weight_g": 92,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": "SI-145-5 规格：Fx/Fy 145N、Fz 290N、扭矩约 5N·m",
+      "voltage_v": null,
+      "interface": "Net F/T / DAQ 等（视选配）",
+      "key_params": "外径约 45mm，应变片式六维测量，另有多种量程可选"
+    },
+    "highlights": [
+      "六维力传感领域的行业标杆品牌",
+      "体积小重量约 92g，易集成于腕部",
+      "多种量程可选，覆盖精密装配到重载",
+      "广泛用于力控科研与工业应用"
+    ],
+    "applications": [
+      "机器人腕部力控",
+      "精密装配与打磨",
+      "科研与测试"
+    ],
+    "description": "ATI Mini45 是美国 ATI 的紧凑型六维力/力矩传感器，直径约 45mm、重约 92g，被广泛用于机器人腕部力控、精密装配与科研测试，是六维力传感领域的行业标杆之一，价格需询价。",
+    "officialUrl": "https://www.ati-ia.com",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "nvidia-jetson-agx-orin",
+    "name": "NVIDIA Jetson AGX Orin",
+    "nameZh": "NVIDIA Jetson AGX Orin",
+    "manufacturer": "NVIDIA",
+    "manufacturerZh": "英伟达",
+    "country": "美国",
+    "category": "component",
+    "subcategory": "controller",
+    "releaseYear": 2022,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 1999,
+      "note": "开发者套件参考价约 1999 美元，模组价格另计"
+    },
+    "specs": {
+      "component_type": "边缘 AI 计算模组",
+      "model_series": "AGX Orin 32GB / 64GB",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": null,
+      "voltage_v": null,
+      "interface": "PCIe / 以太网 / USB / CAN 等",
+      "key_params": "最高约 275 TOPS（64GB 版），12 核 Arm CPU，Ampere GPU，功耗约 15-60W"
+    },
+    "highlights": [
+      "64GB 版最高约 275 TOPS 的边缘 AI 算力",
+      "支持 JetPack、Isaac 与 ROS 完整生态",
+      "人形与四足机器人广泛采用的主控平台",
+      "功耗可调，兼顾性能与能效"
+    ],
+    "applications": [
+      "人形与四足机器人主控",
+      "自主移动机器人",
+      "边缘 AI 推理"
+    ],
+    "description": "Jetson AGX Orin 是英伟达面向机器人的边缘 AI 计算平台，64GB 版算力最高约 275 TOPS，功耗可在 15-60W 之间调节，配套 JetPack 与 Isaac 生态，是人形与四足机器人常用主控。",
+    "officialUrl": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
     "dataUpdated": "2025-11"
   }
 ]

@@ -27,7 +27,11 @@
       "长程灵巧操作（叠衣服等）表现标杆",
       "高频连续控制，动作流畅"
     ],
-    "applications": ["双臂灵巧操作", "家庭/商业服务任务", "科研微调基座"],
+    "applications": [
+      "双臂灵巧操作",
+      "家庭/商业服务任务",
+      "科研微调基座"
+    ],
     "description": "π0 是 Physical Intelligence 发布的通用机器人基础模型，以 VLM 加流匹配动作专家的架构实现 50Hz 连续控制，开源后成为学界与业界最常用的 VLA 微调基座之一。",
     "codeUrl": "https://github.com/Physical-Intelligence/openpi",
     "dataUpdated": "2025-11"
@@ -59,9 +63,533 @@
       "支持从文本、图像、视频多种条件生成",
       "面向物理 AI 场景专门优化物理一致性"
     ],
-    "applications": ["合成训练数据生成", "策略离线评估", "仿真到现实迁移"],
+    "applications": [
+      "合成训练数据生成",
+      "策略离线评估",
+      "仿真到现实迁移"
+    ],
     "description": "Cosmos 是英伟达面向物理 AI 的世界基础模型平台，用约 2000 万小时视频训练，提供扩散与自回归两类模型，广泛用于机器人数据合成与策略评估，是目前最主流的开源世界模型体系。",
     "codeUrl": "https://github.com/NVIDIA/Cosmos",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "rt-2",
+    "name": "RT-2",
+    "kind": "vla",
+    "org": "Google DeepMind",
+    "orgZh": "谷歌 DeepMind",
+    "country": "美国",
+    "releaseDate": "2023-07",
+    "openSource": false,
+    "license": "未开源",
+    "specs": {
+      "params_b": null,
+      "architecture": "视觉语言模型直接输出动作 token（动作离散化为文本）",
+      "backbone": "PaLI-X（最高 55B）/ PaLM-E（12B）",
+      "action_head": "离散动作 token 自回归输出",
+      "control_freq_hz": null,
+      "training_data": "互联网图文数据 + Everyday Robots 机器人示范数据联合训练",
+      "embodiments": "Everyday Robots 移动操作机械臂",
+      "cross_embodiment": "论文未重点验证",
+      "benchmark_note": "在未见物体、背景与指令上的泛化成功率约为 RT-1 的两倍",
+      "deploy_note": "大模型依赖云端 TPU 推理，控制频率较低"
+    },
+    "highlights": [
+      "首次提出并验证视觉-语言-动作（VLA）范式",
+      "把网络知识迁移到机器人控制，具备语义推理能力",
+      "在未见物体与指令上泛化明显强于 RT-1",
+      "催生后续 OpenVLA 等一系列工作"
+    ],
+    "applications": [
+      "移动操作机器人",
+      "语义理解驱动的物体操作",
+      "VLA 研究基线"
+    ],
+    "description": "RT-2 是谷歌 DeepMind 于 2023 年提出的视觉-语言-动作模型，把动作表示成文本 token，与互联网图文数据联合训练，使机器人获得语义推理与泛化能力，是 VLA 范式的开创性工作，但未开源。",
+    "paperUrl": "https://arxiv.org/abs/2307.15818",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "openvla",
+    "name": "OpenVLA",
+    "kind": "vla",
+    "org": "Stanford / UC Berkeley / TRI 等",
+    "orgZh": "斯坦福/伯克利/丰田研究院等",
+    "country": "美国",
+    "releaseDate": "2024-06",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "params_b": 7,
+      "architecture": "视觉编码器 + Llama 2 语言模型的 VLA",
+      "backbone": "Llama 2 7B + DINOv2 + SigLIP",
+      "action_head": "离散动作 token 自回归输出",
+      "control_freq_hz": 6,
+      "training_data": "Open X-Embodiment 数据集中约 97 万条机器人轨迹",
+      "embodiments": "以 WidowX、Google Robot 等机械臂为主，可微调适配新本体",
+      "cross_embodiment": "支持，可通过 LoRA 微调适配新本体",
+      "benchmark_note": "论文报告其成功率较 55B 的 RT-2-X 高约 16.5 个百分点，参数量仅约其 1/7",
+      "deploy_note": "RTX 4090 上约 6Hz，支持量化与 LoRA 微调"
+    },
+    "highlights": [
+      "首个开源的 7B 通用 VLA 模型",
+      "参数量仅为 RT-2-X 的约 1/7 却表现更好",
+      "支持 LoRA 与量化，消费级 GPU 可微调",
+      "社区复现与二次研究最广泛的 VLA 之一"
+    ],
+    "applications": [
+      "单臂机械臂操作",
+      "VLA 微调基座",
+      "学术研究基线"
+    ],
+    "description": "OpenVLA 是由斯坦福、伯克利与丰田研究院等联合发布的开源 7B VLA 模型，基于 Llama 2 并在 Open X-Embodiment 数据上训练，性能超过 55B 的 RT-2-X，并支持低成本微调，是社区常用基线。",
+    "paperUrl": "https://arxiv.org/abs/2406.09246",
+    "codeUrl": "https://github.com/openvla/openvla",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "pi05",
+    "name": "π0.5 (pi-zero-point-five)",
+    "kind": "vla",
+    "org": "Physical Intelligence",
+    "orgZh": "Physical Intelligence",
+    "country": "美国",
+    "releaseDate": "2025-04",
+    "openSource": true,
+    "license": "Apache-2.0（openpi 权重与代码）",
+    "specs": {
+      "params_b": null,
+      "architecture": "分层推理 + 动作专家，支持高层子任务预测",
+      "backbone": "PaliGemma 系列 VLM",
+      "action_head": "Flow Matching 连续动作块",
+      "control_freq_hz": 50,
+      "training_data": "多种机器人数据、互联网视觉语言数据与高层语义标注数据联合训练",
+      "embodiments": "移动操作机器人、双臂等多种本体",
+      "cross_embodiment": "强，强调在未见家庭环境中的开放世界泛化",
+      "benchmark_note": "可在训练中未出现的真实家庭中完成厨房、卧室整理等长程任务",
+      "deploy_note": "需较高端 GPU 推理，openpi 提供微调流程"
+    },
+    "highlights": [
+      "强调开放世界泛化，可在全新家庭环境中执行任务",
+      "先预测高层子任务，再输出动作，长程任务更稳健",
+      "联合多源数据共同训练，提升语义理解",
+      "权重通过 openpi 开放"
+    ],
+    "applications": [
+      "家庭整理与清洁",
+      "移动操作",
+      "科研微调基座"
+    ],
+    "description": "π0.5 是 Physical Intelligence 在 π0 基础上推出的 VLA 模型，通过多源数据联合训练与高层子任务预测，使机器人能在训练中未见过的真实家庭中完成长程整理任务，后续权重经 openpi 开放。",
+    "paperUrl": "https://www.physicalintelligence.company/blog/pi05",
+    "codeUrl": "https://github.com/Physical-Intelligence/openpi",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "octo",
+    "name": "Octo",
+    "kind": "vla",
+    "org": "UC Berkeley / Stanford / CMU 等",
+    "orgZh": "伯克利/斯坦福/卡内基梅隆等",
+    "country": "美国",
+    "releaseDate": "2024-05",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "params_b": 0.093,
+      "architecture": "Transformer 策略，扩散动作头",
+      "backbone": "从零训练的 Transformer（Small 27M / Base 93M）",
+      "action_head": "扩散模型生成动作",
+      "control_freq_hz": null,
+      "training_data": "Open X-Embodiment 中约 80 万条机器人轨迹",
+      "embodiments": "9 种机器人平台的预训练数据，可微调到新本体",
+      "cross_embodiment": "支持，便于快速微调到新传感器与动作空间",
+      "benchmark_note": "在多个机器人上的零样本与微调表现优于当时开源基线",
+      "deploy_note": "模型很小，可在消费级 GPU 上微调与推理"
+    },
+    "highlights": [
+      "轻量级通用机器人策略，仅 2700 万至 9300 万参数",
+      "支持语言与目标图像两种任务指定方式",
+      "微调到新本体成本低、速度快",
+      "全开源，含训练代码与权重"
+    ],
+    "applications": [
+      "快速微调新机器人",
+      "低算力部署",
+      "学术基线研究"
+    ],
+    "description": "Octo 是由伯克利、斯坦福与卡内基梅隆等发布的开源通用机器人策略，参数量仅约 9300 万，在 Open X-Embodiment 数据上预训练并采用扩散动作头，可快速微调到新机器人本体，适合低算力场景。",
+    "paperUrl": "https://arxiv.org/abs/2405.12213",
+    "codeUrl": "https://github.com/octo-models/octo",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "rdt-1b",
+    "name": "RDT-1B",
+    "kind": "vla",
+    "org": "Tsinghua University",
+    "orgZh": "清华大学",
+    "country": "中国",
+    "releaseDate": "2024-10",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "params_b": 1.2,
+      "architecture": "扩散 Transformer（Diffusion Transformer）基础模型",
+      "backbone": "语言编码器 T5-XXL + 视觉编码器 SigLIP",
+      "action_head": "扩散模型生成动作块",
+      "control_freq_hz": null,
+      "training_data": "多机器人数据集预训练，并使用自采 ALOHA 双臂数据微调",
+      "embodiments": "以 ALOHA 双臂机器人为主",
+      "cross_embodiment": "提出统一动作空间以融合多本体数据",
+      "benchmark_note": "在真实双臂任务中优于 Octo、OpenVLA 等基线，并具备少样本能力",
+      "deploy_note": "提供预训练与微调代码，需较大显存训练"
+    },
+    "highlights": [
+      "最大的面向双臂操作的扩散基础模型之一，约 12 亿参数",
+      "针对双臂协同操作设计统一动作空间",
+      "具备较强的少样本与零样本泛化",
+      "清华开源权重与训练代码"
+    ],
+    "applications": [
+      "双臂操作",
+      "少样本任务学习",
+      "国产 VLA 研究基线"
+    ],
+    "description": "RDT-1B 是清华大学团队发布的约 12 亿参数双臂操作扩散基础模型，基于扩散 Transformer 并设计统一动作空间，在多机器人数据上预训练，具备较强少样本能力，并开源了权重与代码。",
+    "paperUrl": "https://arxiv.org/abs/2410.07864",
+    "codeUrl": "https://github.com/thu-ml/RoboticsDiffusionTransformer",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "nvidia-gr00t-n1",
+    "name": "NVIDIA GR00T N1",
+    "kind": "vla",
+    "org": "NVIDIA",
+    "orgZh": "英伟达",
+    "country": "美国",
+    "releaseDate": "2025-03",
+    "openSource": true,
+    "license": "开放权重（条款以 NVIDIA 官方许可为准）",
+    "specs": {
+      "params_b": 2.2,
+      "architecture": "双系统：视觉语言模块（慢思考）+ 扩散 Transformer 动作模块（快执行）",
+      "backbone": "Eagle-2 视觉语言模型",
+      "action_head": "扩散 Transformer 生成动作块",
+      "control_freq_hz": 120,
+      "training_data": "真实机器人轨迹、人类视频与合成仿真数据混合",
+      "embodiments": "面向人形机器人，也适配多种机械臂",
+      "cross_embodiment": "支持，可通过后训练适配不同本体",
+      "benchmark_note": "在仿真基准与真实人形任务上优于模仿学习基线",
+      "deploy_note": "提供后训练流程，配合 Isaac 与 Jetson 平台部署"
+    },
+    "highlights": [
+      "全球首个面向通用人形机器人的开放基础模型之一",
+      "双系统架构，兼顾语言理解与高频动作",
+      "结合真实、视频与合成数据训练",
+      "与 Isaac Lab 和 Cosmos 配合形成数据闭环"
+    ],
+    "applications": [
+      "人形机器人通用操作",
+      "后训练适配新本体",
+      "仿真与合成数据驱动训练"
+    ],
+    "description": "GR00T N1 是英伟达 2025 年发布的开放人形机器人基础模型，约 22 亿参数，采用视觉语言模块加扩散 Transformer 动作模块的双系统架构，结合真实、视频与合成数据训练，并可通过后训练适配不同机器人。",
+    "paperUrl": "https://arxiv.org/abs/2503.14734",
+    "codeUrl": "https://github.com/NVIDIA/Isaac-GR00T",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "figure-helix",
+    "name": "Figure Helix",
+    "kind": "vla",
+    "org": "Figure AI",
+    "orgZh": "Figure AI",
+    "country": "美国",
+    "releaseDate": "2025-02",
+    "openSource": false,
+    "license": "未开源",
+    "specs": {
+      "params_b": 7,
+      "architecture": "双系统：慢速 VLM（System 2）+ 高速视觉运动策略（System 1）",
+      "backbone": "约 7B 开源 VLM",
+      "action_head": "约 80M 参数的快速策略输出连续动作",
+      "control_freq_hz": 200,
+      "training_data": "约 500 小时多机器人、多操作员遥操作数据",
+      "embodiments": "Figure 人形机器人（上半身 35 自由度）",
+      "cross_embodiment": "主要针对 Figure 自家本体",
+      "benchmark_note": "演示了两台机器人协同整理杂货等任务，可零样本抓取任意家居物品",
+      "deploy_note": "在机载低功耗 GPU 上运行"
+    },
+    "highlights": [
+      "首个可控制人形机器人整个上半身的 VLA，含手指",
+      "双系统设计，兼顾语义理解与 200Hz 高频控制",
+      "支持多机协同，演示两台机器人共同整理物品",
+      "完全在机载嵌入式 GPU 上运行"
+    ],
+    "applications": [
+      "家庭与物流场景操作",
+      "多机协同",
+      "人形机器人上半身控制"
+    ],
+    "description": "Helix 是 Figure AI 于 2025 年发布的人形机器人 VLA，采用约 7B 的慢速语言视觉系统与约 80M 的 200Hz 快速控制策略相结合，可控制整个上半身并支持双机协同，在机载 GPU 上运行但未开源。",
+    "paperUrl": "https://www.figure.ai/news/helix",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "gemini-robotics",
+    "name": "Gemini Robotics",
+    "kind": "vla",
+    "org": "Google DeepMind",
+    "orgZh": "谷歌 DeepMind",
+    "country": "美国",
+    "releaseDate": "2025-03",
+    "openSource": false,
+    "license": "未开源",
+    "specs": {
+      "params_b": null,
+      "architecture": "基于 Gemini 2.0 的 VLA，另有具身推理版本 Gemini Robotics-ER",
+      "backbone": "Gemini 2.0",
+      "action_head": "连续动作输出（云端模型 + 端侧动作解码）",
+      "control_freq_hz": null,
+      "training_data": "大规模机器人遥操作数据 + 多模态互联网数据",
+      "embodiments": "ALOHA 2 双臂、Apptronik Apollo 人形等",
+      "cross_embodiment": "强，可适配不同机器人构型",
+      "benchmark_note": "在叠纸、拉拉链等灵巧任务上展示出较强的泛化和语言理解",
+      "deploy_note": "另发布可在机器人本地运行的 On-Device 版本"
+    },
+    "highlights": [
+      "基于 Gemini 2.0 的多模态机器人基础模型",
+      "具备更强的语言理解与泛化能力",
+      "支持折纸、拉拉链等高灵巧度任务",
+      "后续推出端侧运行的 On-Device 版本"
+    ],
+    "applications": [
+      "双臂灵巧操作",
+      "人形机器人",
+      "具身推理与任务规划"
+    ],
+    "description": "Gemini Robotics 是谷歌 DeepMind 于 2025 年基于 Gemini 2.0 推出的 VLA 模型，能直接控制机器人完成折纸、拉拉链等灵巧任务，同系列还有具身推理模型，并与 Apptronik 等合作，但模型未开源。",
+    "paperUrl": "https://arxiv.org/abs/2503.20020",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "agibot-go-1",
+    "name": "AgiBot GO-1",
+    "kind": "vla",
+    "org": "AgiBot",
+    "orgZh": "智元机器人",
+    "country": "中国",
+    "releaseDate": "2025-03",
+    "openSource": null,
+    "license": "数据集与部分代码开放（以官方许可为准）",
+    "specs": {
+      "params_b": null,
+      "architecture": "ViLLA（视觉-语言-隐式动作）：隐式动作规划器 + 动作专家",
+      "backbone": "视觉语言模型主干 + 隐式动作规划",
+      "action_head": "动作专家生成连续动作",
+      "control_freq_hz": null,
+      "training_data": "AgiBot World 数据集（超过 100 万条真实机器人轨迹）",
+      "embodiments": "智元精灵 G1 等",
+      "cross_embodiment": "宣称可迁移到不同本体",
+      "benchmark_note": "官方报告在复杂任务上较此前开源基线成功率有明显提升",
+      "deploy_note": "配套 AgiBot World 数据集与开发平台"
+    },
+    "highlights": [
+      "提出 ViLLA 架构，引入隐式动作表示",
+      "依托 AgiBot World 百万级真实轨迹训练",
+      "数据集与部分代码对外开放",
+      "与智元精灵 G1、远征系列配套"
+    ],
+    "applications": [
+      "工业与商业场景操作",
+      "多本体数据驱动训练",
+      "国产 VLA 基线"
+    ],
+    "description": "GO-1 是智元机器人于 2025 年发布的通用具身基础模型，采用 ViLLA 架构，由隐式动作规划器与动作专家构成，依托 AgiBot World 百万级真实轨迹训练，并配套开放数据集，用于智元系列机器人。",
+    "paperUrl": "https://arxiv.org/abs/2503.06669",
+    "codeUrl": "https://github.com/OpenDriveLab/AgiBot-World",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "smolvla",
+    "name": "SmolVLA",
+    "kind": "vla",
+    "org": "Hugging Face",
+    "orgZh": "Hugging Face",
+    "country": "美国/法国",
+    "releaseDate": "2025-06",
+    "openSource": true,
+    "license": "Apache-2.0",
+    "specs": {
+      "params_b": 0.45,
+      "architecture": "轻量 VLM + 动作专家",
+      "backbone": "SmolVLM-2",
+      "action_head": "Flow Matching 连续动作块",
+      "control_freq_hz": null,
+      "training_data": "LeRobot 社区公开的机器人数据集（约 2.3 万条轨迹）",
+      "embodiments": "低成本机械臂如 SO-100 / SO-101",
+      "cross_embodiment": "主要面向低成本桌面机械臂",
+      "benchmark_note": "在模拟与真实任务上可与更大模型相近",
+      "deploy_note": "可在消费级 GPU 乃至 MacBook 上运行，支持异步推理"
+    },
+    "highlights": [
+      "仅约 4.5 亿参数的轻量 VLA",
+      "完全使用社区公开数据训练，开放透明",
+      "消费级 GPU 或笔记本即可训练和推理",
+      "与 LeRobot 低成本机械臂生态深度整合"
+    ],
+    "applications": [
+      "低成本机械臂",
+      "个人与教育项目",
+      "边缘端部署"
+    ],
+    "description": "SmolVLA 是 Hugging Face 于 2025 年发布的轻量开源 VLA，仅约 4.5 亿参数，基于 SmolVLM 与流匹配动作专家，完全使用社区公开数据训练，可在消费级硬件上运行，面向 LeRobot 低成本机械臂。",
+    "paperUrl": "https://arxiv.org/abs/2506.01844",
+    "codeUrl": "https://github.com/huggingface/lerobot",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "google-genie-2",
+    "name": "Genie 2",
+    "kind": "world-model",
+    "org": "Google DeepMind",
+    "orgZh": "谷歌 DeepMind",
+    "country": "美国",
+    "releaseDate": "2024-12",
+    "openSource": false,
+    "license": "未开源",
+    "specs": {
+      "params_b": null,
+      "architecture": "自回归潜空间扩散世界模型",
+      "modality": "由单张图像生成可交互的 3D 环境视频",
+      "resolution": null,
+      "horizon": "通常数十秒，最长约 1 分钟",
+      "action_conditioned": "支持键盘/鼠标等动作输入实时控制",
+      "training_data": "大规模视频数据集",
+      "use_case": "为 AI 智能体生成开放式训练环境",
+      "benchmark_note": "展示了物体交互、光照与物理的长时一致性"
+    },
+    "highlights": [
+      "单张图像即可生成可交互的 3D 世界",
+      "支持键鼠动作控制并保持一定时序一致性",
+      "可为 SIMA 等智能体提供无限训练环境",
+      "展示了物理、光照与反射的涌现"
+    ],
+    "applications": [
+      "智能体训练环境生成",
+      "游戏与交互内容原型",
+      "具身智能研究"
+    ],
+    "description": "Genie 2 是谷歌 DeepMind 于 2024 年底发布的基础世界模型，可由一张图像生成可交互的 3D 环境，支持键盘鼠标动作控制，并保持约一分钟的时序一致，主要用于为 AI 智能体提供训练环境，未开源。",
+    "paperUrl": "https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "wayve-gaia-2",
+    "name": "Wayve GAIA-2",
+    "kind": "world-model",
+    "org": "Wayve",
+    "orgZh": "Wayve",
+    "country": "英国",
+    "releaseDate": "2025-03",
+    "openSource": false,
+    "license": "未开源",
+    "specs": {
+      "params_b": null,
+      "architecture": "潜空间扩散世界模型",
+      "modality": "多摄像头驾驶视频生成",
+      "resolution": null,
+      "horizon": null,
+      "action_conditioned": "支持自车动作、其他交通参与者与环境条件控制",
+      "training_data": "英国、美国、德国多国真实驾驶数据",
+      "use_case": "自动驾驶场景合成与长尾场景仿真",
+      "benchmark_note": "可生成多相机一致的驾驶场景，并支持天气、时间等条件"
+    },
+    "highlights": [
+      "多摄像头一致的驾驶视频生成",
+      "可控制自车动作与交通参与者行为",
+      "支持天气、光照与道路类型等条件编辑",
+      "用于生成罕见安全关键场景"
+    ],
+    "applications": [
+      "自动驾驶数据合成",
+      "安全关键场景仿真",
+      "驾驶策略评估"
+    ],
+    "description": "GAIA-2 是英国 Wayve 发布的面向自动驾驶的生成式世界模型，能生成多摄像头一致的驾驶视频，并支持控制自车动作、交通参与者与天气等条件，用于合成长尾场景和评估驾驶策略，未开源。",
+    "paperUrl": "https://arxiv.org/abs/2503.20523",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "1x-world-model",
+    "name": "1X World Model",
+    "kind": "world-model",
+    "org": "1X Technologies",
+    "orgZh": "1X Technologies",
+    "country": "美国/挪威",
+    "releaseDate": "2025-06",
+    "openSource": false,
+    "license": "未开源",
+    "specs": {
+      "params_b": null,
+      "architecture": "基于视频生成的动作条件世界模型",
+      "modality": "动作条件视频预测",
+      "resolution": null,
+      "horizon": null,
+      "action_conditioned": "以机器人动作为条件生成未来视频",
+      "training_data": "1X 人形机器人在真实家庭与办公室采集的大规模数据",
+      "use_case": "评估机器人策略，替代部分真实世界测试",
+      "benchmark_note": "官方展示与真实世界策略表现具有较高相关性"
+    },
+    "highlights": [
+      "以机器人真实采集数据训练，贴合自家本体",
+      "可在世界模型内评估策略，减少真机测试",
+      "动作条件预测，模拟交互后果",
+      "支撑 NEO 家用机器人的迭代"
+    ],
+    "applications": [
+      "机器人策略评估",
+      "人形机器人家务任务研究",
+      "仿真数据生成"
+    ],
+    "description": "1X World Model 是 1X Technologies 基于自家人形机器人真实数据训练的动作条件视频世界模型，可预测机器人动作后的画面结果，用于策略评估与迭代，减少真机测试成本，并服务于 NEO 家用机器人。",
+    "dataUpdated": "2025-11"
+  },
+  {
+    "id": "unisim",
+    "name": "UniSim",
+    "kind": "world-model",
+    "org": "Google DeepMind / UC Berkeley 等",
+    "orgZh": "谷歌 DeepMind/伯克利等",
+    "country": "美国",
+    "releaseDate": "2023-10",
+    "openSource": false,
+    "license": "未开源",
+    "specs": {
+      "params_b": 5.6,
+      "architecture": "动作条件视频扩散模型",
+      "modality": "以文本或低层动作为条件的视频生成",
+      "resolution": null,
+      "horizon": null,
+      "action_conditioned": "支持高层文本指令与低层运动控制",
+      "training_data": "多源数据：模拟渲染、真实机器人、人类活动视频与图文数据",
+      "use_case": "训练策略、长程规划与视觉语言模型的交互式仿真",
+      "benchmark_note": "在其中训练的策略可迁移到真实机器人，验证了世界模型作为仿真器的可行性"
+    },
+    "highlights": [
+      "较早提出把视频生成模型用作通用交互式仿真器",
+      "统一多种数据源，涵盖机器人、人类活动与仿真",
+      "支持高层指令与低层控制双层条件",
+      "入选 ICLR 2024 杰出论文"
+    ],
+    "applications": [
+      "策略训练与评估",
+      "长程任务规划",
+      "具身智能研究"
+    ],
+    "description": "UniSim 是谷歌 DeepMind 联合伯克利等于 2023 年提出的通用交互式世界模拟器，用视频扩散模型根据文本或动作生成后续画面，可在其中训练策略并迁移到真实机器人，奠定了世界模型作仿真器的思路。",
+    "paperUrl": "https://arxiv.org/abs/2310.06114",
     "dataUpdated": "2025-11"
   }
 ]

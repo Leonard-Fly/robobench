@@ -5,8 +5,8 @@ import aiModelsJson from './aiModels.json';
 // ============ 数据加载入口 ============
 // 每月更新：直接编辑 robots.json / aiModels.json，重新构建即可。
 
-export const ROBOTS: Robot[] = robotsJson as Robot[];
-export const AI_MODELS: AiModel[] = aiModelsJson as AiModel[];
+export const ROBOTS: Robot[] = robotsJson as unknown as Robot[];
+export const AI_MODELS: AiModel[] = aiModelsJson as unknown as AiModel[];
 
 /** 全站数据版本（取所有条目中最新的 dataUpdated） */
 export const DATA_VERSION: string = [...ROBOTS, ...AI_MODELS]
