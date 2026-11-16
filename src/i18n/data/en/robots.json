@@ -1683,5 +1683,27 @@
       "key_params": "128 channels, 1.15M pts/s, Φ62.5×73 mm, built-in IMU, 10/20 Hz"
     },
     "priceNote": "Not disclosed / quote on request"
+  },
+  "ace-superbrain-a1": {
+    "description": "Embodied Superbrain Module A1 from ACE Robotics is an edge compute and perception module designed for 'one brain, many forms' generalization. By combining ACE Ego Matrix and URDF embodiment descriptions with 360° panoramic vision and the Kairos world model, it adapts across quadruped, wheeled, and humanoid platforms and has been demonstrated on AgiBot quadrupeds.",
+    "highlights": [
+      "Breaks 'one brain, one form' limits via ACE Ego Matrix and URDF for plug-and-play transfer across quadruped, wheeled, and humanoid bodies",
+      "Integrates 360° panoramic vision and onboard Kairos world model inference",
+      "Demonstrated on real AgiBot quadruped platforms",
+      "Targets power inspection, cultural tourism guidance, and smart-city patrol deployments"
+    ],
+    "applications": [
+      "Cross-embodiment main controller (quadruped / wheeled / humanoid)",
+      "Autonomous power & smart-city inspection",
+      "Commercial guidance & multi-scenario deployment"
+    ],
+    "specs": {
+      "component_type": "Cross-embodiment embodied AI edge compute & perception module",
+      "model_series": "Embodied Superbrain Module A1",
+      "range_note": "Integrated 360° panoramic visual perception",
+      "interface": "URDF embodiment compatibility & multi-chassis robot interfaces",
+      "key_params": "Built-in ACE Ego Matrix (spatial/body/timing alignment) & Kairos world model for one-brain-many-forms generalization"
+    },
+    "priceNote": "Not disclosed / quote on request (commercial integration)"
   }
 }

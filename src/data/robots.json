@@ -4743,5 +4743,62 @@
     "description": "禾赛 JT128 是专为具身机器人打造的迷你超半球形 128 线 3D 激光雷达，重仅 250g，具备 360°×189° 零盲区视场与 115 万点/秒高密度点云并内置 IMU，有效解决机器人近身盲区难题。",
     "officialUrl": "https://www.hesaitech.com/",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "ace-superbrain-a1",
+    "name": "ACE Robotics Embodied Superbrain Module A1",
+    "nameZh": "大晓机器人 具身超级大脑模组 A1",
+    "manufacturer": "ACE Robotics",
+    "manufacturerZh": "大晓机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "controller",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（商业定向集成）"
+    },
+    "specs": {
+      "component_type": "一脑多形具身智能端侧计算与感知模组",
+      "model_series": "具身超级大脑模组 A1",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": null,
+      "range_note": "集成 360° 全景视觉感知",
+      "voltage_v": null,
+      "interface": "兼容 URDF 本体描述与多形态机器人底盘接口",
+      "key_params": "内置 ACE Ego Matrix 空间/构型/时序统一矩阵与开悟（Kairos）世界模型，支持跨四足、轮式、人形「一脑多形」泛化"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "大晓机器人 / 商汤科技相关发布",
+        "url": "https://www.ithome.com/1/025/658.htm",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "突破传统「一脑一形」限制，基于 ACE Ego Matrix 与 URDF 实现跨四足、轮式与人形的即插即用泛化",
+      "端侧集成 360° 全景视觉与开悟（Kairos）世界模型推理能力",
+      "已在智元机器狗等真实本体上完成搭载验证",
+      "面向电力巡检、文旅导览与智慧城市巡检等商业场景落地"
+    ],
+    "applications": [
+      "四足/轮式/人形跨形态具身主控",
+      "电力与智慧城市自主巡检",
+      "商业导览与多场景通用作业"
+    ],
+    "description": "具身超级大脑模组 A1 是大晓机器人推出的「一脑多形」端侧计算与感知模组，通过 ACE Ego Matrix 与 URDF 统一空间坐标、本体构型与动作时序，并集成 360° 全景视觉与开悟世界模型，已搭载于智元机器狗演示电力巡检与智慧城市等任务。",
+    "officialUrl": "https://www.ithome.com/1/025/658.htm",
+    "dataUpdated": "2026-11"
   }
 ]

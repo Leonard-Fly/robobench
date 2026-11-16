@@ -589,12 +589,12 @@
     }
   },
   "ace-kaiwu-3": {
-    "description": "Kaiwu World Model 3.0 from ACE Robotics is an open-source, commercially deployed embodied world model featuring a unified multimodal understanding-generation-prediction architecture, direct force-mechanics input, and Puffin camera-aware 3D spatial perception.",
+    "description": "Kaiwu World Model 3.0-4B (Kairos 3.0 / 3.1) from ACE Robotics is an open-source, commercially deployed 4B embodied world model supporting up to 7-minute video generation, force-mechanics input, and Puffin 3D camera perception, ranking #1 on WorldModelBench Robot (9.30), LIBERO-Plus (89.0), and RoboTwin 2.0 (96.1%).",
     "highlights": [
-      "Developed by ACE Robotics (led by SenseTime co-founder Xiaogang Wang) as an open commercial world model",
-      "Unified multimodal understanding-generation-prediction architecture with mechanics input & static/dynamic separation",
-      "Integrates Puffin technology (with NTU) to solve missing 3D camera-pose awareness in video models",
-      "Forms a closed 'See-Think-Act' data loop with ACE Ambient Capture and embodied robots"
+      "Developed by ACE Robotics (led by SenseTime co-founder Xiaogang Wang); compact 4B parameters supporting 7-minute video generation (evolved to Kairos 3.1)",
+      "Ranked #1 globally on WorldModelBench Robot (9.30, beating 28B LingBot & 16B Cosmos 3), LIBERO-Plus (89.0), RoboTwin 2.0 (96.1%), and DreamGen",
+      "Trained on 100,000+ hours of human-centric real-world interaction data with Day-0 adaptation for domestic GPUs (MetaX, Biren, Hygon)",
+      "Forms a closed 'See-Think-Act' data loop with ACE Ambient Capture and Embodied Superbrain A1"
     ],
     "applications": [
       "Physical commonsense learning & virtual robot training",
@@ -604,11 +604,11 @@
     "specs": {
       "architecture": "Unified multimodal understanding-generation-prediction + Puffin spatial perception",
       "modality": "3D spatial view perception, dynamic physical interaction & mechanics input",
-      "horizon": "Dynamic physical interaction & commonsense simulation",
+      "horizon": "Supports up to 7-minute long-horizon video generation & physics simulation",
       "action_conditioned": "Supports direct mechanics input and static/dynamic object separation",
-      "training_data": "Real-world physical interaction data via ACE Ambient Capture engine",
+      "training_data": "100,000+ hours human-centric physical interaction data + millions of hours internet video",
       "use_case": "Embodied physical simulation, virtual trial-and-error & commercial closed loop",
-      "benchmark_note": "Co-developed Puffin with NTU to give world models 3D camera spatial awareness"
+      "benchmark_note": "#1 on WorldModelBench Robot (9.30), LIBERO-Plus (89.0), RoboTwin 2.0 (96.1%) & DreamGen; Day-0 domestic GPU support"
     }
   },
   "hybridvla": {
@@ -681,6 +681,101 @@
       "cross_embodiment": "Strong; interleaved pretraining aligns reasoning and acting",
       "benchmark_note": "Leading performance on CALVIN and multimodal embodied reasoning benchmarks",
       "deploy_note": "Compact 3B footprint integrated with LeRobot for accessible fine-tuning"
+    }
+  },
+  "lingbot-vla-2": {
+    "description": "LingBot-VLA 2.0 is Robbyant's (Ant Group) next-gen open-source VLA foundation model released in July 2026. Pairing a Qwen3-VL-4B backbone with a sparse MoE Qwen2 action expert (32 experts, top-4 routing) pretrained on 60,000 hours of data, it is integrated into Hugging Face LeRobot as lingbot_vla_v2.",
+    "highlights": [
+      "Scales pretraining to 60,000 hours of curated data including 50,000 hours of real robot trajectories",
+      "Qwen3-VL-4B backbone paired with a sparse MoE Qwen2 action expert (32 experts, top-4 routing)",
+      "Uses Flow Matching over a 55-D canonical shared state/action space with dual-query depth & video distillation",
+      "Fully open-sourced code and weights, integrated into Hugging Face LeRobot (lingbot_vla_v2)"
+    ],
+    "applications": [
+      "Cross-embodiment industrial & service manipulation",
+      "Large-scale LeRobot VLA fine-tuning base",
+      "Long-horizon bimanual & mobile manipulation"
+    ],
+    "specs": {
+      "architecture": "Qwen3-VL-4B backbone + sparse MoE Qwen2 action expert (32 experts, top-4 routing)",
+      "backbone": "Qwen3-VL-4B",
+      "action_head": "Flow Matching continuous action chunks (55-D canonical shared space)",
+      "training_data": "60,000 hours curated pretraining data (including 50,000 hours real robot data)",
+      "embodiments": "Single-arm, dual-arm and mobile manipulation platforms",
+      "cross_embodiment": "Strong; 55-D canonical shared space + dual-query depth/video distillation",
+      "benchmark_note": "Substantial gains over LingBot-VLA v1 and concurrent open-source baselines across sim & real tasks",
+      "deploy_note": "Integrated into Hugging Face LeRobot as lingbot_vla_v2 for accessible fine-tuning"
+    }
+  },
+  "lingbot-world": {
+    "description": "LingBot-World is Robbyant's open-source interactive video world model (arXiv:2601.20540) supporting versatile physical interactions and fast generation, expanding into lingbot-world-fast and the interactive lingbot-world-v2.",
+    "highlights": [
+      "Open-source interactive video world model from Robbyant, alongside fast and v2 variants",
+      "Supports versatile action/viewpoint interactions with long-horizon spatial consistency",
+      "Open weights and inference code available on GitHub and ModelScope",
+      "Pairs with LingBot-VLA in Robbyant's embodied foundation model stack"
+    ],
+    "applications": [
+      "Interactive embodied AI simulation",
+      "Offline robot policy evaluation & data synthesis",
+      "Fast world-model generation research"
+    ],
+    "specs": {
+      "architecture": "Open-source real-time interactive video world model (fast & v2 variants)",
+      "modality": "Interactive 3D scene & physical dynamics video generation",
+      "horizon": "Long-horizon spatially consistent interactive generation",
+      "action_conditioned": "Supports versatile action and viewpoint conditioning",
+      "training_data": "Large-scale physical world & interactive video data",
+      "use_case": "Interactive embodied simulation, fast generation & policy evaluation",
+      "benchmark_note": "Includes high-speed lingbot-world-fast and interactive lingbot-world-v2 releases"
+    }
+  },
+  "lingbot-touch": {
+    "description": "LingBot-Touch is an open-source generalist tactile foundation model released by Robbyant in Nov 2026. By encoding contact-rich signals into plug-and-play tactile tokens, it boosts mean success across Diffusion Policy, π0.5, LingBot-VLA, and T-Rex by 13.9+ percentage points across 26 real-robot dexterous hand tasks.",
+    "highlights": [
+      "Open-source generalist tactile foundation model released by Robbyant in November 2026",
+      "Outputs plug-and-play tactile tokens compatible with mainstream VLA and imitation policies",
+      "Raises mean success across Diffusion Policy, π0.5, LingBot-VLA, and T-Rex by 13.9+ pts on 26 dexterous hand tasks",
+      "Bridges vision-only policy blind spots in occluded grasping and contact-rich manipulation"
+    ],
+    "applications": [
+      "Contact-rich dexterous hand manipulation",
+      "Visuotactile VLA policy augmentation",
+      "Industrial insertion, assembly & deformable object handling"
+    ],
+    "specs": {
+      "architecture": "Generalist tactile representation & control foundation model for dexterous hands",
+      "backbone": "Generalist tactile encoder & multimodal alignment module",
+      "action_head": "Plug-and-play tactile tokens injected into downstream VLAs",
+      "training_data": "Cross-hand contact-rich real-robot tactile manipulation data",
+      "embodiments": "Compatible with multiple high-DOF dexterous hands",
+      "cross_embodiment": "Strong; plugs into Diffusion Policy, π0.5, LingBot-VLA & T-Rex",
+      "benchmark_note": "+13.9+ percentage points mean success across 26 real-robot tasks on two dexterous hands",
+      "deploy_note": "Lightweight tactile-token interface for existing VLA policies"
+    }
+  },
+  "ace-ego": {
+    "description": "ACE-Ego is a human-centric embodied pretraining framework and model released by ACE Robotics in June 2026. Using dual-level reliability-adaptive objectives (full-weight robot sensor supervision + 3-tier filtered human video action reconstruction), it unifies VLA and WAM to bridge retail toward flexible industrial manufacturing.",
+    "highlights": [
+      "Core pretraining framework of ACE Robotics' human-centric ACE paradigm",
+      "Dual-level reliability-adaptive objectives: full-weight robot supervision + 3-tier filtered human video action reconstruction",
+      "Unifies Vision-Language-Action (VLA) and World Action Model (WAM) capabilities",
+      "Accelerates transfer from commercial retail toward industrial and flexible manufacturing"
+    ],
+    "applications": [
+      "First-person human video to robot skill transfer",
+      "Commercial retail & flexible industrial manufacturing",
+      "Unified VLA + WAM pretraining research"
+    ],
+    "specs": {
+      "architecture": "Human-centric embodied pretraining framework unifying VLA and WAM",
+      "backbone": "ACE unified representation backbone (vision, egocentric action & world dynamics)",
+      "action_head": "Dual-level reliability-adaptive objectives",
+      "training_data": "Large-scale egocentric human video (Ambient Capture) + real robot sensor data",
+      "embodiments": "Cross-embodiment retail & flexible manufacturing robots",
+      "cross_embodiment": "Strong; unified egocentric representation bridges human demos and robot bodies",
+      "benchmark_note": "Fuses VLA generalization with WAM dynamics prediction for industrial expansion",
+      "deploy_note": "Co-operates with ACE Ambient Capture and Kairos world model"
     }
   }
 }

@@ -926,7 +926,7 @@
   },
   {
     "id": "ace-kaiwu-3",
-    "name": "Kaiwu World Model 3.0",
+    "name": "Kaiwu World Model 3.0-4B (Kairos 3.0 / 3.1)",
     "kind": "world-model",
     "org": "ACE Robotics",
     "orgZh": "大晓机器人",
@@ -935,29 +935,30 @@
     "openSource": true,
     "license": "开源（全球首个开源商业落地世界模型）",
     "specs": {
-      "params_b": null,
+      "params_b": 4,
       "architecture": "多模态理解-生成-预测一体化架构 + Puffin 视角空间感知",
       "modality": "3D 空间视角感知、动态物理交互模拟与力学信息输入",
       "resolution": null,
-      "horizon": "支持动态交互与物理常识模拟",
+      "horizon": "支持长达 7 分钟超长视频生成与动态物理常识模拟",
       "action_conditioned": "支持直接输入力学信息并分离静态/动态物体交互",
-      "training_data": "联合 ACE 环境数据引擎（Ambient Capture）采集的真实物理交互数据",
+      "training_data": "10万+小时以人为中心真实物理交互数据 + 数百万小时互联网视频（含 Ambient Capture）",
       "use_case": "具身智能物理模拟、虚拟试错训练与商业机器人世界模型闭环",
-      "benchmark_note": "联合南洋理工大学等提出 Puffin 技术，解决传统视频模型缺乏相机空间视角感的问题"
+      "benchmark_note": "登顶 WorldModelBench Robot (9.30，超越 28B LingBot 与 16B Cosmos 3)、LIBERO-Plus (89.0)、RoboTwin 2.0 (96.1%) 与 DreamGen 四大榜首；Day-0 适配沐曦/壁仞/海光国产 GPU"
     },
     "highlights": [
-      "商汤联合创始人王晓刚领衔的大晓机器人发布，定位开源可商业落地世界模型",
-      "采用「多模态理解-生成-预测」一体化架构，直接引入力学信息与动静分离",
-      "集成与南洋理工大学联合研发的 Puffin 技术，赋予模型相机视角与 3D 空间感",
-      "与大晓环境式数采引擎、机器人本体形成「看-想-做」数据闭环"
+      "商汤联合创始人王晓刚领衔的大晓机器人发布，4B 轻量化参数实现长程 7 分钟视频世界模拟（已演进至 Kairos 3.1）",
+      "登顶 WorldModelBench Robot (9.30)、LIBERO-Plus (89.0)、RoboTwin 2.0 (96.1%) 与 DreamGen 四大全球榜首",
+      "基于 10万+小时以人为中心真实交互数据训练，支持力学输入、Puffin 相机视角感知与国产 GPU Day-0 适配",
+      "与大晓环境式数采引擎、具身超级大脑 A1 形成「看-想-做」数据闭环"
     ],
     "applications": [
       "具身智能物理常识学习与虚拟训练",
       "真实环境数据闭环增强",
       "商业机器人与四足/通用本体决策"
     ],
-    "description": "开悟世界模型 3.0 是大晓机器人推出的开源商业落地具身世界模型，采用多模态理解-生成-预测一体化架构，支持力学信息输入与 Puffin 空间视角感知，并与环境数采引擎共同构成具身智能数据闭环。",
+    "description": "开悟世界模型 3.0-4B（Kairos 3.0 / 3.1）是大晓机器人推出的 4B 开源商业落地具身世界模型，支持长达 7 分钟视频生成与力学/空间视角感知，并在 WorldModelBench Robot (9.30)、LIBERO-Plus (89.0) 与 RoboTwin 2.0 (96.1%) 等四大榜单夺得第一。",
     "paperUrl": "https://hub.baai.ac.cn/view/50923",
+    "codeUrl": "https://www.sensetime.com/cn/research/51170557/",
     "dataUpdated": "2026-11"
   },
   {
@@ -1072,6 +1073,155 @@
     "description": "EO-1 是开源的 3B 参数统一具身基础模型，基于 Qwen2.5-VL 并通过交错视觉-文本-动作（VTA）联合预训练，在单一解码器中融合语言推理与流匹配动作生成，已正式接入 LeRobot 生态。",
     "paperUrl": "https://arxiv.org/html/2508.21112v3",
     "codeUrl": "https://github.com/EO-Robotics/EO",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "lingbot-vla-2",
+    "name": "LingBot-VLA 2.0",
+    "kind": "vla",
+    "org": "Robbyant (Ant Group)",
+    "orgZh": "蚂蚁灵波科技（蚂蚁集团）",
+    "country": "中国",
+    "releaseDate": "2026-07",
+    "openSource": true,
+    "license": "开源（开放代码与权重，已集成至 Hugging Face LeRobot）",
+    "specs": {
+      "params_b": 4,
+      "architecture": "Qwen3-VL-4B 视觉语言主干 + 稀疏 MoE Qwen2 动作专家（32 专家 Top-4 路由）",
+      "backbone": "Qwen3-VL-4B",
+      "action_head": "Flow Matching 连续动作块（55 维规范共享状态/动作空间）",
+      "control_freq_hz": null,
+      "training_data": "60,000 小时精选预训练数据（含 50,000 小时真实机器人数据）",
+      "embodiments": "跨多种单臂、双臂与移动操作机器人本体",
+      "cross_embodiment": "强，通过 55 维规范共享空间与双查询深度/视频蒸馏实现跨本体稳定迁移",
+      "benchmark_note": "在多平台真机与仿真基准较初代 LingBot-VLA 及同期开源基线显著提升",
+      "deploy_note": "已正式集成至 Hugging Face LeRobot（lingbot_vla_v2），支持高效微调部署"
+    },
+    "highlights": [
+      "将训练数据规模从 2 万小时跃升至 60,000 小时（含 50,000 小时真机数据）",
+      "采用 Qwen3-VL-4B 主干 + 稀疏 MoE Qwen2 动作专家（32 专家 Top-4 路由），兼顾容量与推理效率",
+      "引入 55 维规范共享状态/动作空间及双查询深度与视频蒸馏机制",
+      "代码与权重全开源，并已作为 lingbot_vla_v2 集成进 Hugging Face LeRobot"
+    ],
+    "applications": [
+      "跨本体通用工业与服务操作",
+      "LeRobot 生态大规模 VLA 微调基座",
+      "双臂与移动操作长程任务"
+    ],
+    "description": "LingBot-VLA 2.0 是蚂蚁灵波科技于 2026 年 7 月开源的新一代 VLA 基础模型，基于 Qwen3-VL-4B 与稀疏 MoE 动作专家（32 专家 Top-4 路由），在 60,000 小时数据上预训练，并已集成进 Hugging Face LeRobot。",
+    "paperUrl": "https://arxiv.org/html/2607.06403v1",
+    "codeUrl": "https://github.com/robbyant/lingbot-vla-v2",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "lingbot-world",
+    "name": "LingBot-World",
+    "kind": "world-model",
+    "org": "Robbyant (Ant Group)",
+    "orgZh": "蚂蚁灵波科技（蚂蚁集团）",
+    "country": "中国",
+    "releaseDate": "2026-01",
+    "openSource": true,
+    "license": "开源（GitHub & ModelScope 开放权重，含 Fast 与 v2 版本）",
+    "specs": {
+      "params_b": null,
+      "architecture": "开放源码实时交互式视频世界基础模型（演进至 lingbot-world-fast 与 v2）",
+      "modality": "交互式 3D 场景与物理动态视频世界生成",
+      "resolution": null,
+      "horizon": "支持长时程、高一致性交互式视频生成",
+      "action_conditioned": "支持多样化交互与动作/视角控制",
+      "training_data": "大规模物理世界与交互视频数据",
+      "use_case": "具身智能交互式仿真、世界模型快速生成与策略评测",
+      "benchmark_note": "提供高速推理变体 lingbot-world-fast 与交互式升级版 lingbot-world-v2"
+    },
+    "highlights": [
+      "蚂蚁灵波开源的通用交互式视频世界模型，同步发布 Fast 加速版与 v2 交互版",
+      "支持多样化动作交互与长时程空间一致性生成",
+      "在 GitHub 与魔搭社区（ModelScope）全面开源模型权重与推理代码",
+      "与 LingBot-VLA 构成蚂蚁灵波具身基础模型矩阵"
+    ],
+    "applications": [
+      "具身智能交互式世界仿真",
+      "机器人策略离线评测与数据合成",
+      "世界模型加速推理研究"
+    ],
+    "description": "LingBot-World 是蚂蚁灵波科技开源的交互式视频世界模型（arXiv:2601.20540），支持多样化物理交互与快速生成，并陆续推出 lingbot-world-fast 与 lingbot-world-v2，服务于具身仿真与策略评测。",
+    "paperUrl": "https://arxiv.org/abs/2601.20540",
+    "codeUrl": "https://github.com/robbyant/lingbot-world",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "lingbot-touch",
+    "name": "LingBot-Touch",
+    "kind": "vla",
+    "org": "Robbyant (Ant Group)",
+    "orgZh": "蚂蚁灵波科技（蚂蚁集团）",
+    "country": "中国",
+    "releaseDate": "2026-11",
+    "openSource": true,
+    "license": "开源通用触觉基础模型",
+    "specs": {
+      "params_b": null,
+      "architecture": "面向灵巧手与 VLA 的通用触觉表征与控制基础模型",
+      "backbone": "通用触觉编码与多模态对齐模块",
+      "action_head": "输出可即插即用注入主流 VLA 的触觉 token",
+      "control_freq_hz": null,
+      "training_data": "跨多种灵巧手与接触密集型真机触觉数据",
+      "embodiments": "适配多款高自由度灵巧手本体",
+      "cross_embodiment": "强，可即插即用赋能 Diffusion Policy、π0.5、LingBot-VLA 与 T-Rex",
+      "benchmark_note": "在两款灵巧手的 26 项真机接触密集型任务上，使四大基线策略平均成功率提升 13.9+ 个百分点",
+      "deploy_note": "以触觉 token 形式轻量化接入现有视觉-语言-动作策略"
+    },
+    "highlights": [
+      "蚂蚁灵波于 2026 年 11 月开源的通用触觉基础模型",
+      "将触觉信号转化为可泛化的触觉 token，直接赋能多种现有 VLA 与模仿学习策略",
+      "在两款灵巧手 26 项真机任务上，让 Diffusion Policy、π0.5、LingBot-VLA 与 T-Rex 平均成功率提升 13.9+ 个百分点",
+      "补齐灵巧手在遮挡抓取与精细接触任务中纯视觉策略的短板"
+    ],
+    "applications": [
+      "灵巧手接触密集型精细操作",
+      "视触觉融合 VLA 增强",
+      "工业插拔、装配与柔性物体抓取"
+    ],
+    "description": "LingBot-Touch 是蚂蚁灵波科技于 2026 年 11 月开源的通用触觉基础模型，通过提取通用触觉 token 赋能主流 VLA 策略，在两款灵巧手的 26 项真机任务上使四大策略平均成功率提升超过 13.9 个百分点。",
+    "paperUrl": "https://www.humanoidsdaily.com/news/robbyant-lingbot-touch-open-source-tactile-model",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "ace-ego",
+    "name": "ACE-Ego",
+    "kind": "vla",
+    "org": "ACE Robotics",
+    "orgZh": "大晓机器人",
+    "country": "中国",
+    "releaseDate": "2026-06",
+    "openSource": null,
+    "license": "未明确开源权重（技术方案发布）",
+    "specs": {
+      "params_b": null,
+      "architecture": "以人为中心（Human-Centric）具身预训练框架，融合 VLA 与世界动作模型（WAM）",
+      "backbone": "ACE 统一表征主干（融合视觉、第一视角动作与世界动态）",
+      "action_head": "双层可靠性自适应目标（全权重机器人传感监督 + 三级过滤人类视频动作重建）",
+      "control_freq_hz": null,
+      "training_data": "大规模第一视角人类操作视频（ACE Ambient Capture）+ 真实机器人传感数据",
+      "embodiments": "跨零售服务与工业/柔性制造多形态机器人",
+      "cross_embodiment": "强，通过统一视角表征桥接人类示范与多形态机器本体",
+      "benchmark_note": "将 VLA 语义泛化与 WAM 物理动态预测融合，加速从商业零售向工业柔性制造拓展",
+      "deploy_note": "与大晓环境式数采平台及 Kairos 世界模型协同工作"
+    },
+    "highlights": [
+      "大晓机器人提出的以人为中心具身预训练范式（ACE Paradigm）核心模型",
+      "首创双层可靠性自适应目标：全权重监督真机数据 + 三级过滤人类视频动作重建",
+      "打通视觉-语言-动作（VLA）与世界动作模型（WAM）的统一预训练",
+      "支撑机器人从商超零售向工业及柔性制造场景快速迁移"
+    ],
+    "applications": [
+      "人类第一视角视频驱动的机器人技能迁移",
+      "商业零售与工业柔性制造操作",
+      "VLA + WAM 融合预训练研究"
+    ],
+    "description": "ACE-Ego 是大晓机器人于 2026 年 6 月发布的以人为中心具身预训练框架与模型，通过双层可靠性自适应目标融合真机传感监督与三级过滤人类视频动作重建，打通 VLA 与 WAM 并拓展工业柔性制造落地。",
+    "paperUrl": "https://cn.chinadaily.com.cn/a/202606/17/WS6a321de4a310d709c2fb8921.html",
     "dataUpdated": "2026-11"
   }
 ]
