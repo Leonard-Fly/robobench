@@ -1,5 +1,6 @@
 import type { AiModel, CollectionDevice, EmbodiedDataset, NewsItem, Robot } from '../types';
 import robotsJson from './robots.json';
+import robotImagesJson from './robotImages.json';
 import aiModelsJson from './aiModels.json';
 import datasetsJson from './datasets.json';
 import collectionDevicesJson from './collectionDevices.json';
@@ -8,7 +9,12 @@ import newsJson from './news.json';
 // ============ 数据加载入口 ============
 // 机器人/模型/数据集每月更新，新闻模块每日更新：直接编辑 *.json，重新构建即可。
 
-export const ROBOTS: Robot[] = robotsJson as unknown as Robot[];
+const ROBOT_IMAGES = robotImagesJson as Record<string, string>;
+
+export const ROBOTS: Robot[] = (robotsJson as unknown as Robot[]).map((r) => ({
+  ...r,
+  imageUrl: r.imageUrl ?? ROBOT_IMAGES[r.id],
+}));
 export const AI_MODELS: AiModel[] = aiModelsJson as unknown as AiModel[];
 export const DATASETS: EmbodiedDataset[] = datasetsJson as unknown as EmbodiedDataset[];
 export const COLLECTION_DEVICES: CollectionDevice[] =
