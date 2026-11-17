@@ -1,4 +1,24 @@
 {
+  "tarsbot-aptiv-100-unit-deployment-2026-11-16": {
+    "title": "TARSBOT and Aptiv Deepen Embodied AI Collaboration with 100-Unit Factory Deployment",
+    "summary": "On Nov 16, 2026, TARSBOT and Aptiv signed a strategic agreement at CIIE to deploy 100 TARSBOT A-Series industrial embodied AI robots by year-end across 8 manufacturing categories and 33 scenarios, integrating Aptiv compute platforms toward a 1,000-unit fleet and iterating TARSBOT's AWE foundation model.",
+    "tags": ["Industrial Rollout", "100-Unit Fleet", "AWE Model", "CIIE"]
+  },
+  "siemens-agibot-agentic-ai-gripper-2026-11-16": {
+    "title": "Siemens and AgiBot Showcase Agentic AI Workflow for Automated Gripper Design & Simulation",
+    "summary": "On Nov 16, 2026, Siemens announced an end-to-end industrial AI and additive manufacturing workflow in partnership with AgiBot, enabling users to describe target objects and tasks in text so AI automatically selects grippers, adjusts geometry, validates via simulation, and outputs 3D-printing data.",
+    "tags": ["Agentic AI", "Simulation", "AgiBot", "Siemens"]
+  },
+  "leju-15-humanoids-auto-parts-line-2026-11-16": {
+    "title": "Leju Robotics Operates 15 Humanoid Robots Trouble-Free for Over 2 Months on Auto Parts Line",
+    "summary": "According to a Nov 16, 2026 Securities Daily field report, 15 wheeled humanoid robots from Leju Robotics have operated continuously without failure for over two months on a listed automaker supplier's production line, handling bearing recognition, grasping, and line feeding.",
+    "tags": ["Auto Line", "Commercialization", "Leju Robotics", "Uptime"]
+  },
+  "figure-adcock-memory-bottleneck-helix3-2026-11-16": {
+    "title": "Figure AI CEO Says Memory—Not Chips—Is the Bottleneck, Details Helix 3 & Figure 4",
+    "summary": "Speaking on Nov 16, 2026, Figure AI CEO Brett Adcock warned that high-bandwidth memory capacity—rather than chips alone—is the binding constraint on humanoid scaling, disclosing a $3B+ (100,000-GPU) Nscale deal for Helix 3 pretraining, zero-shot Helix 2.5 home tests across 30 unseen houses, and Figure 4 designed for lights-out manufacturing.",
+    "tags": ["Helix 3", "Figure 4", "Memory Bottleneck", "Zero-Shot"]
+  },
   "robotera-xhand1-prou-gr00t2-2026-11-16": {
     "title": "ROBOTERA Launches XHAND 1 Pro-U, Featured in NVIDIA's GR00T 2 DexUMI Demo",
     "summary": "On Nov 16, 2026, ROBOTERA unveiled the XHAND 1 Pro-U dexterous hand and showcased its high-dexterity manipulation capabilities inside NVIDIA's GR00T 2 DexUMI demonstration at CoRL.",
