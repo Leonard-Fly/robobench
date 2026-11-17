@@ -1866,5 +1866,133 @@
       "key_params": "27x20x18 mm / 27x15.5x15 mm, up to 120 Hz, 0–50°C, 5M-cycle durability"
     },
     "priceNote": "Not disclosed / quote on request (Thumb & 4-finger editions)"
+  },
+  "ubtech-walker-s2": {
+    "description": "UBTECH Walker S2 (2025) is a full-size industrial humanoid robot (176 cm, 70 kg, 52 DOF) featuring the world's first 3-minute autonomous hot-swappable dual-battery system for 24/7 operation and 15 kg full-workspace (0–1.8 m) handling.",
+    "highlights": [
+      "World's first 3-minute autonomous hot-swappable dual-battery system for 24/7 continuous factory work",
+      "176 cm tall, 70 kg weight and 52 DOF with Gen-4 bionic hands and compliant joints",
+      "High-DOF waist (±162° rotation, 125° pitch) handles 15 kg payloads across a 0–1.8 m workspace",
+      "Pure-RGB human-eye stereo vision paired with BrainNet 2.0 and industrial Co-Agent"
+    ],
+    "applications": [
+      "Automotive final assembly & SPS kitting",
+      "24/7 lights-out industrial manufacturing",
+      "Swarm multi-humanoid collaborative work"
+    ],
+    "specs": {
+      "swappable_battery": "3-minute autonomous hot-swap dual-battery system (24/7 continuous operation)",
+      "compute_platform": "UBTECH Industrial Co-Agent & BrainNet 2.0 swarm intelligence",
+      "sensors": "Pure-RGB passive stereo vision + whole-body force control",
+      "sdk": "MES/WMS factory integration and multi-robot swarm scheduling"
+    },
+    "priceNote": "Not disclosed / quote on request (commercial delivery to automotive & manufacturing lines)"
+  },
+  "pudu-d9": {
+    "description": "PUDU D9 is Pudu Robotics' first full-size bipedal humanoid robot (170 cm, 65 kg, 42 DOF) equipped with dual 7-DOF arms and Pudu DH11 11-DOF dexterous hands, reaching 2 m/s walking speed and >20 kg payload for commercial services.",
+    "highlights": [
+      "First full-size bipedal humanoid from commercial service robotics leader Pudu (170 cm, 65 kg)",
+      "42 total DOF with dual 7-DOF arms and in-house Pudu DH11 5-finger hands (11 DOF/hand)",
+      "Up to 2 m/s walking speed, >20 kg payload, and climbs 25 cm stairs and slopes",
+      "Combines cross-floor navigation with general manipulation for retail, hospitality and delivery"
+    ],
+    "applications": [
+      "Commercial reception & guided tours",
+      "Cross-floor last-mile delivery & handling",
+      "Commercial cleaning & general facility services"
+    ],
+    "specs": {
+      "compute_platform": "High-compute onboard embodied navigation and manipulation planning",
+      "sensors": "High-precision 3D vision + LiDAR + force & 5-finger tactile sensing",
+      "sdk": "Commercial service and cross-scenario task planning integration"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "fourier-n1": {
+    "description": "Fourier N1, launched in April 2025, is Fourier Intelligence's first open-source compact humanoid robot (130 cm, 38 kg, 23 DOF), built with an aluminum-alloy and engineering-plastic frame and open-sourced with drawings, BoM, and control code.",
+    "highlights": [
+      "First open-source compact humanoid in Fourier's Open-Source Ecosystem Matrix (launched April 2025)",
+      "130 cm tall and 38 kg weight with 23 total degrees of freedom",
+      "Lightweight aluminum-alloy and engineering-plastic composite structure",
+      "Open-sources CAD drawings, BoM, and low-level control stack for researchers and developers"
+    ],
+    "applications": [
+      "University embodied AI teaching & research",
+      "Open-source bipedal locomotion validation",
+      "Hardware reproduction & custom development"
+    ],
+    "specs": {
+      "sensors": "Visual and proprioceptive inertial sensing",
+      "sdk": "Open-source CAD, BoM, control algorithms and developer toolchain"
+    },
+    "priceNote": "Open-source ecosystem model (open blueprints/code + full-unit research orders)"
+  },
+  "robotera-xhand1": {
+    "description": "RobotEra XHAND1 is a 5-finger, 12-active-DOF quasi-direct-drive dexterous hand (~1.1 kg) delivering 80 N grip force, 25 kg max hand lift, 10 clicks/s (<10 ms latency), and 270° wrap-around 3D tactile arrays (600 taxels, 0.05 N resolution) with temperature sensing.",
+    "highlights": [
+      "12 fully independent active DOF (3 thumb, 3 index, 2 each on other fingers) with gear quasi-direct drive",
+      "80 N grip force, >5 kg single-finger load and 25 kg max hand lift at ~1.1 kg weight",
+      "Up to 10 clicks/second with <10 ms latency and back-drivable impact resistance",
+      "270° wrap-around 3D tactile array on each fingertip (120 taxels/finger, 600 total, 0.05 N resolution + temperature)"
+    ],
+    "applications": [
+      "High-dexterity humanoid & bimanual end effector",
+      "High-dynamic force-position control & RL research",
+      "Fine tool use (pipettes, tweezers, caps) & tactile teleop"
+    ],
+    "specs": {
+      "speed_note": "Up to 10 clicks/s, response latency <10 ms",
+      "drive_type": "12-active-DOF full-gear quasi-direct drive (0 passive DOF, back-drivable)",
+      "tactile": "270° wrap-around 3D tactile array per fingertip (120 pts/finger, 0.05 N, temperature)",
+      "interface": "High-speed real-time control bus",
+      "sdk": "Ubuntu / C++ / Python / ROS1&2 with VR & mocap-glove teleop and sim models"
+    },
+    "priceNote": "Not disclosed / quote on request (21-DOF XHAND 1 Pro and XHAND 1 Lite also available)"
+  },
+  "daimon-dm-tac-w2": {
+    "description": "Daimon DM-Tac W2 from HKUST-incubated Daimon Robotics is a multimodal visuotactile sensor with 110,592 effective sensing points (384x288), 120 Hz sampling, IP67 protection, and 5M-press durability, outputting 3D geometry, deformation, distributed force, and 6-axis resultant force.",
+    "highlights": [
+      "110,592 effective sensing taxels (384x288 tactile resolution) developed by HKUST-incubated Daimon Robotics",
+      "120 Hz sampling of micron-scale surface geometry, 3D deformation field, 3D force distribution & 6-DOF force",
+      "Industrial durability: IP67 waterproof/dustproof, EMI-resistant, tested to 5M presses and 200K rubs",
+      "Only 0.5 W active power (0.1 W standby) and 72 g (W2M) / 131 g (W2L) over USB 2.0"
+    ],
+    "applications": [
+      "Precision force-controlled parallel gripping (raw eggs, wafers, chips)",
+      "3C & automotive flexible cable harness insertion",
+      "Daimon-Infinity multimodal visuotactile data collection"
+    ],
+    "specs": {
+      "component_type": "High-resolution multimodal general visuotactile sensor",
+      "model_series": "DM-Tac W2L (36x27 mm) / DM-Tac W2M (24x18 mm)",
+      "precision": "110,592 sensing points (384x288 resolution, 640x480 camera), <1% FS sensitivity & drift",
+      "range_note": "Sensing area W2L 36x27 mm / W2M 24x18 mm; size W2L 76.5x46x31 mm / W2M 64x36x20 mm",
+      "interface": "USB 2.0 (0.5 W active, 0.1 W standby)",
+      "key_params": "120 Hz sampling, IP67, 5M presses & 200K rubs, outputs geometry, 3D deformation, 3D & 6D force"
+    },
+    "priceNote": "Not disclosed / quote on request (available in W2L and W2M sizes)"
+  },
+  "daimon-dm-tac-f": {
+    "description": "Daimon DM-Tac F is a compact fingertip multimodal visuotactile sensor (23x18x18 mm) covering the finger pad, side, and tip with 320x240 sensing resolution (tens of thousands of taxels/cm²) and 60 Hz (customizable to 180 Hz) sampling.",
+    "highlights": [
+      "Compact bionic fingertip sensor (23x18x18 mm) with curved sensing across finger pad, sides and tip",
+      "320x240 tactile sensing resolution (76,800 sensing units; tens of thousands per cm²)",
+      "60 Hz standard sampling (customizable up to 180 Hz) for real-time slip and micro-geometry detection",
+      "Natively paired with Daimon's DM-Hand1 dexterous hand and DM-DataMaster wearable exoskeleton"
+    ],
+    "applications": [
+      "5-finger dexterous hand fingertip tactile sensing",
+      "Blind grasping, slip prevention & fine pinching",
+      "Isomorphic hand teleoperation & tactile foundation model capture"
+    ],
+    "specs": {
+      "component_type": "Dexterous hand fingertip multimodal visuotactile sensor",
+      "model_series": "DM-Tac F / DM-Tac FM",
+      "precision": "320x240 tactile resolution (640x480 camera), tens of thousands of taxels/cm²",
+      "range_note": "23(H)x18(W)x18(D) mm, curved sensing covering pad + sides + tip",
+      "interface": "USB 2.0",
+      "key_params": "60 Hz standard (180 Hz custom), outputs contact geometry, 3D deformation, 3D & 6D force"
+    },
+    "priceNote": "Not disclosed / quote on request (supports full-hand integration & 180 Hz custom edition)"
   }
 }

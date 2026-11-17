@@ -372,5 +372,49 @@
       "collection_method": "Unscripted daily-life capture by 931 participants across consortium labs",
       "data_format": "MP4 + JSON annotations (~7.1 TB total)"
     }
+  },
+  "robocasa": {
+    "description": "RoboCasa (RSS 2024) from UT Austin and NVIDIA is a large-scale simulation framework and dataset featuring 120 kitchen scenes, 2,500+ 3D objects, 100 tasks, and 100,000+ trajectories, serving as a core benchmark for humanoid VLAs like NVIDIA Isaac GR00T.",
+    "highlights": [
+      "Co-developed by UT Austin and NVIDIA with 120 realistic kitchen scenes and 2,500+ interactive 3D objects",
+      "Provides 100,000+ trajectories (human teleoperation + MimicGen synthetic expansion) across 100 kitchen tasks",
+      "Standard evaluation suite for humanoid foundation models including NVIDIA Isaac GR00T N1 / N1.7",
+      "Permissive MIT license with dedicated humanoid suites such as robocasa-gr1-tabletop-tasks"
+    ],
+    "applications": [
+      "Humanoid & mobile manipulation VLA benchmarking",
+      "MimicGen synthetic data scaling",
+      "Long-horizon kitchen & household task learning"
+    ],
+    "specs": {
+      "tasks_count": "100 tasks (25 atomic skills + 75 composite tasks across 120 kitchen scenes)",
+      "embodiments": "Mobile manipulators (Franka), legged manipulators & humanoids (Fourier GR-1, etc.)",
+      "modalities": "Multi-view RGB-D + robot proprioception + language instructions + 3D scene meshes",
+      "annotations": "Natural language instructions, subtask segmentation & ground-truth physics",
+      "collection_method": "Human teleoperation demos + MimicGen automated trajectory scaling",
+      "data_format": "HDF5 / robosuite / LeRobot"
+    }
+  },
+  "daimon-infinity": {
+    "description": "Daimon-Infinity from Daimon Robotics is a multimodal embodied dataset enriched with high-resolution visuotactile sensing, with a 10,000-hour subset (1M+ trajectories across 17+ scenarios) open-sourced on Alibaba ModelScope.",
+    "highlights": [
+      "Open-sources 10,000 hours (1M+ trajectories) of high-resolution visuotactile multimodal data on ModelScope",
+      "Captures normal force, shear force, torque, micron-scale 3D contact geometry, and slip alongside vision and action",
+      "Integrates 5 sources: robot-free tactile grippers, 5-finger tactile gloves, egocentric POV, real-robot teleop & sim",
+      "Spans 17+ real scenarios across manufacturing, restaurants, retail, homes, and labs for VTLA pretraining"
+    ],
+    "applications": [
+      "Visuotactile-Language-Action (VTLA) foundation model pretraining",
+      "Contact-rich precision assembly & deformable grasping",
+      "Robot-free tactile gripper/glove to robot transfer"
+    ],
+    "specs": {
+      "tasks_count": "17+ core scenarios across industry, dining, retail, home, supermarket & labs",
+      "embodiments": "5 sources: robot-free 2-finger gripper, 5-finger tactile glove, Ego camera, teleop robot & sim",
+      "modalities": "High-res visuotactile (normal/shear force, torque, 3D geometry, slip) + multi-view vision + action + text",
+      "annotations": "Synchronized contact force-deformation alignment & natural language labels",
+      "collection_method": "Distributed lightweight capture network (DM-DataClaw / DM-DataMaster / Ego)",
+      "data_format": "Synchronized multimodal time series (hosted on ModelScope)"
+    }
   }
 }

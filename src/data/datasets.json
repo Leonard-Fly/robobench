@@ -626,5 +626,78 @@
     "paperUrl": "https://arxiv.org/abs/2110.07058",
     "datasetUrl": "https://ego4d-data.org/",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "robocasa",
+    "name": "RoboCasa",
+    "nameZh": "RoboCasa（大规模家居与厨房仿真基准与数据集）",
+    "org": "UT Austin & NVIDIA",
+    "orgZh": "得克萨斯大学奥斯汀分校 & 英伟达",
+    "country": "美国",
+    "releaseDate": "2024-06",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "trajectories_k": 100,
+      "hours": null,
+      "tasks_count": "100 项任务（25 项原子技能 + 75 项生成式复合家务任务，覆盖 120 个厨房场景）",
+      "storage_tb": null,
+      "embodiments": "移动操作机械臂（Franka 等）、四足带臂与双臂人形机器人（Fourier GR-1 等）",
+      "modalities": "多视角 RGB-D + 本体关节状态 + 自然语言指令 + 3D 场景网格",
+      "annotations": "自然语言指令、子任务切分与物理真值状态",
+      "collection_method": "人类遥操作示范 + MimicGen 大规模自动轨迹扩增生成",
+      "data_format": "HDF5 / robosuite / LeRobot"
+    },
+    "highlights": [
+      "由 UT Austin 与 NVIDIA 联合发布，包含 120 个高保真厨房场景与 2,500+ 个 3D 交互物体",
+      "提供超 100,000 条操作轨迹（含人类遥操作与 MimicGen 自动合成数据），覆盖 100 项家居与厨房任务",
+      "已被 NVIDIA Isaac GR00T N1 / N1.7 等主流人形基础模型列为官方标准桌面与操作评测套件",
+      "MIT 开源协议，衍生出专用于人形测评的 robocasa-gr1-tabletop-tasks 基准"
+    ],
+    "applications": [
+      "人形与移动操作 VLA 标准评测",
+      "MimicGen 合成数据扩展训练",
+      "家庭厨房长程复合任务研究"
+    ],
+    "description": "RoboCasa 是得克萨斯大学奥斯汀分校与英伟达联合开源的大规模家居仿真框架与数据集（RSS 2024），涵盖 120 个厨房场景、2,500+ 3D 物体与 100 项任务，提供超 10 万条轨迹，是 GR00T 等主流人形 VLA 的核心仿真评测基准。",
+    "paperUrl": "https://arxiv.org/abs/2406.02523",
+    "datasetUrl": "https://datasets.bot/datasets/robocasa",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "daimon-infinity",
+    "name": "Daimon-Infinity (Open 10K Hours)",
+    "nameZh": "戴盟 Daimon-Infinity 含触觉全模态数据集（开源万小时子集）",
+    "org": "Daimon Robotics",
+    "orgZh": "戴盟机器人",
+    "country": "中国",
+    "releaseDate": "2026-06",
+    "openSource": true,
+    "license": "开源 10,000 小时子集（已上线阿里魔搭社区 ModelScope）",
+    "specs": {
+      "trajectories_k": 1000,
+      "hours": 10000,
+      "tasks_count": "覆盖工业、餐厅、零售、居家、商超、实验室等 17+ 核心场景",
+      "storage_tb": null,
+      "embodiments": "五源异构：无本体二指夹爪、无本体五指触觉手套、头戴式 Ego 相机、遥操作真机与仿真",
+      "modalities": "高分辨率视触觉（正压力/切向力/力矩/三维形貌/滑移）+ 多视角视觉 + 动作轨迹 + 语音文本",
+      "annotations": "精细接触力-形变同步对齐与自然语言任务标注",
+      "collection_method": "全球外发式分布式轻量化数采网络（DM-DataClaw / DM-DataMaster / Ego）",
+      "data_format": "多模态对齐时间序列（ModelScope 托管）"
+    },
+    "highlights": [
+      "全球罕见的万小时级含高分辨率视触觉开源数据集：已率先向社区开源 10,000 小时（超百万条轨迹）并上线魔搭社区",
+      "同步采集正压力、切向力、力矩、微米级三维形貌与滑移等真实物理交互触觉模态",
+      "汇集无本体二指触觉夹爪、五指触觉手套、第一视角 Ego、真机遥操作与仿真五大数据源",
+      "覆盖工业、餐厅、零售、实验室等 17+ 真实商业与生活场景，直接赋能 VTLA（视-触-言-动）大模型预训练"
+    ],
+    "applications": [
+      "视触觉融合大模型（VTLA）预训练",
+      "接触密集型精密装配与柔性抓取学习",
+      "无真机触觉夹爪/手套向机器人迁移"
+    ],
+    "description": "Daimon-Infinity 是戴盟机器人构建的含高分辨率视触觉全模态具身数据集，目前已向社区开源 10,000 小时（超百万条轨迹）并上线阿里魔搭社区，覆盖 17+ 场景与五类数据源，填补了大规模开源数据集缺乏真实接触力与三维形貌模态的空白。",
+    "datasetUrl": "https://www.dmrobot.com/daas/daimon-infinity.html",
+    "dataUpdated": "2026-11"
   }
 ]

@@ -777,5 +777,101 @@
       "benchmark_note": "Fuses VLA generalization with WAM dynamics prediction for industrial expansion",
       "deploy_note": "Co-operates with ACE Ambient Capture and Kairos world model"
     }
+  },
+  "graspvla": {
+    "description": "GraspVLA (CoRL 2025) from Peking University (EPIC Lab) and Galbot is a billion-frame grasp VLA foundation model trained entirely on 1B synthetic grasp frames (SynGrasp-1B) co-trained with internet image-text data, combining autoregressive perception CoT with flow-matching action generation for zero-shot sim-to-real grasping.",
+    "highlights": [
+      "First grasp VLA foundation model pretrained entirely on billion-scale synthetic action data (SynGrasp-1B)",
+      "Progressive Action Generation bridges autoregressive 2D/3D bbox & grasp-pose perception with flow-matching actions",
+      "Achieves 90%+ zero-shot real-world open-vocabulary grasping across transparent, reflective and cluttered objects",
+      "Open-sources pretrained weights, evaluation code and the 1B-frame SynGrasp-1B dataset"
+    ],
+    "applications": [
+      "Open-vocabulary retail & pharmacy grasping",
+      "Pure synthetic-to-real zero-shot deployment",
+      "Closed-loop disturbance-resilient dexterous grasping"
+    ],
+    "specs": {
+      "architecture": "Progressive Action Generation (CoT): autoregressive perception (2D/3D boxes & grasp pose) + Flow Matching actions",
+      "backbone": "Multimodal VLM backbone + spatially grounded CoT intermediate representation",
+      "action_head": "Flow Matching continuous action chunks",
+      "training_data": "1 billion frames of synthetic grasp action data (SynGrasp-1B) co-trained with internet vision-language data",
+      "embodiments": "Single-arm and dual-arm manipulators across varied camera views",
+      "cross_embodiment": "Strong; direct zero-shot sim-to-real transfer plus few-shot human preference post-training",
+      "benchmark_note": "90%+ real-world success on transparent/cluttered/long-tail objects (accepted at CoRL 2025)",
+      "deploy_note": "Open-sources both SynGrasp-1B dataset and pretrained model checkpoints"
+    }
+  },
+  "crossformer": {
+    "description": "CrossFormer from UC Berkeley (RAIL) and CMU is a scalable 130M-parameter cross-embodiment transformer policy trained on 900,000 trajectories across 20–30 robots, controlling single/dual arms, wheeled navigators, quadrupeds (Go1), and quadcopters with the same shared weights.",
+    "highlights": [
+      "Single 130M-parameter policy controls single/dual arms, Unitree Go1 quadrupeds, wheeled bases, and quadcopters",
+      "Requires no manual alignment of observation spaces, action dimensions, or control frequencies",
+      "Trained on 900K trajectories across ~30 robots, reaching 73% mean real-robot success (beating 67% single-robot specialists)",
+      "Fully open-source MIT code and 130M pretrained checkpoint"
+    ],
+    "applications": [
+      "Unified policy across arms, quadrupeds & drones",
+      "Zero-shot & fine-tuned multi-embodiment control",
+      "Compact (130M) cross-morphology policy research"
+    ],
+    "specs": {
+      "architecture": "Scalable cross-embodiment Transformer policy (no manual observation/action alignment)",
+      "backbone": "ResNet-26 visual encoders + variable-length multimodal sequence Transformer",
+      "action_head": "Multi-embodiment continuous readout heads (arms, bimanual, quadruped, navigation, quadcopter)",
+      "training_data": "900,000 trajectories across 20–30 heterogeneous robot embodiments",
+      "embodiments": "Franka/WidowX arms, ALOHA bimanual, Unitree Go1 quadruped, wheeled robots & quadcopters",
+      "cross_embodiment": "Very strong; single shared network weights control manipulation, locomotion, navigation & flight",
+      "benchmark_note": "73% mean success across 6 diverse real robots (vs 67% specialist policies and 51% prior cross-embodiment SOTA)",
+      "deploy_note": "Compact 130M footprint runs at each robot's native control frequency on consumer GPUs"
+    }
+  },
+  "cogact": {
+    "description": "CogACT from Microsoft Research is a componentized VLA architecture (~7.7B) that decouples VLM cognition from continuous action generation via a specialized Diffusion Action Transformer (DiT) and Adaptive Action Ensemble, outperforming 7B OpenVLA by >35% and beating 55B RT-2-X.",
+    "highlights": [
+      "Decouples VLM cognition from continuous control using a specialized Diffusion Action Transformer (DiT)",
+      "Introduces Adaptive Action Ensemble (AAE) to smoothly aggregate multi-step action chunks",
+      "Outperforms 7B OpenVLA by >35 percentage points and beats 55B RT-2-X in simulation and real-robot evaluations",
+      "Open-sources Small, Base, and Large DiT action checkpoints and code under the MIT license"
+    ],
+    "applications": [
+      "High-precision continuous robot arm manipulation",
+      "VLA action-head architecture research & fine-tuning",
+      "Few-shot cross-robot adaptation"
+    ],
+    "specs": {
+      "architecture": "Componentized VLM cognition backbone + conditioned Diffusion Action Transformer (DiT)",
+      "backbone": "Prismatic-7B VLM (DINOv2 + SigLIP + Llama-2 7B)",
+      "action_head": "Conditioned Diffusion Action Transformer (DiT-Small/Base/Large) + Adaptive Action Ensemble (AAE)",
+      "training_data": "Open X-Embodiment large-scale multi-robot trajectories",
+      "embodiments": "Google Robot, WidowX, Franka, bimanual and tabletop arms",
+      "cross_embodiment": "Strong; rapid few-shot adaptation to new embodiments and unseen objects",
+      "benchmark_note": "Beats 7B OpenVLA by >35% mean success and surpasses 55B RT-2-X on SIMPLER & real arms",
+      "deploy_note": "MIT open-source weights available with DiT-Small, DiT-Base, and DiT-Large action modules"
+    }
+  },
+  "spatialvla": {
+    "description": "SpatialVLA from Shanghai AI Lab is an open-source 4B spatially enhanced VLA model pretrained on 1.1 million real-robot episodes, introducing calibration-free Ego3D Position Encoding and Adaptive Action Grids for strong 3D zero-shot and fine-tuned manipulation.",
+    "highlights": [
+      "Introduces calibration-free Ego3D Position Encoding to inject 3D spatial context into a 2D VLM",
+      "Proposes Adaptive Action Grids to discretize continuous 3D actions into transferable spatial action tokens",
+      "Pretrained on 1.1 million real-world robot episodes for strong zero-shot cross-view robustness",
+      "Lightweight 4B footprint with MIT-licensed code and Hugging Face checkpoints (spatialvla-4b-224-pt)"
+    ],
+    "applications": [
+      "3D spatial-reasoning manipulation tasks",
+      "Cross-viewpoint zero-shot & few-shot robot control",
+      "Accessible 4B open-source VLA fine-tuning base"
+    ],
+    "specs": {
+      "architecture": "Spatially enhanced VLA: Ego3D Position Encoding + Adaptive Action Grids",
+      "backbone": "SigLIP + Gemma-2 (PaliGemma-2 4B architecture)",
+      "action_head": "Adaptive spatial action grid tokens",
+      "training_data": "1.1 million real-robot manipulation episodes",
+      "embodiments": "Multiple single-arm and mobile manipulation platforms",
+      "cross_embodiment": "Strong; camera-centric Ego3D and adaptive grids enable zero-shot & fast fine-tuning",
+      "benchmark_note": "Significantly outperforms OpenVLA and Octo across SIMPLER, LIBERO and real-robot evaluations",
+      "deploy_note": "4B parameters; open checkpoints on Hugging Face (IPEC-COMMUNITY/spatialvla-4b-224-pt)"
+    }
   }
 }

@@ -5199,5 +5199,352 @@
     "description": "VT-GF515 是纬钛机器人面向灵巧手指尖推出的 120Hz 高频视触觉传感器，提供大拇指与其余四指两种紧凑封装，具备 240×240 触觉点阵（10,000 点/cm²）、0.01N 最小识别力与 500 万次耐久寿命。",
     "officialUrl": "https://vit.ai/product/vt-gf515",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "ubtech-walker-s2",
+    "name": "UBTECH Walker S2",
+    "nameZh": "优必选 Walker S2",
+    "manufacturer": "UBTECH Robotics",
+    "manufacturerZh": "优必选科技",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（已面向车企与智能制造产线批量商业交付）"
+    },
+    "specs": {
+      "height_cm": 176,
+      "weight_kg": 70,
+      "dof_total": 52,
+      "dof_hand": null,
+      "walk_speed_ms": 2,
+      "max_speed_ms": 2,
+      "payload_kg": 15,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": 2,
+      "swappable_battery": "全球首创 3 分钟热插拔自主换电系统（双电池无缝切换，支持 7×24 小时连续作业）",
+      "compute_tops": null,
+      "compute_platform": "搭载优必选自研工业人形协作智能体 Co-Agent 与群脑网络 2.0（BrainNet 2.0）",
+      "sensors": "国内首个纯 RGB「类人眼」被动双目立体视觉系统 + 全身力控感知",
+      "sdk": "支持工业产线 MES/WMS 对接与多机协同群脑调度"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "优必选官网",
+        "url": "https://www.ubtrobot.com/cn/humanoid/products/walker-s2",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "全球首创 3 分钟热插拔自主换电系统，双电池动态平衡实现 7×24 小时不间断工业作业",
+      "身高 176cm、重 70kg、全身 52 自由度，搭载第 4 代仿生灵巧手与刚柔结合异构关节",
+      "高自由度腰部支持 ±162° 自由旋转与 125° 俯仰，可在 0–1.8m 全空间范围稳定搬运 15kg 重物",
+      "搭载纯 RGB「类人眼」双目立体视觉、群脑网络 2.0 与工业协作智能体 Co-Agent"
+    ],
+    "applications": [
+      "汽车总装与SPS物料分拣搬运",
+      "7×24 小时无人化工业产线",
+      "多机协同群体智能制造"
+    ],
+    "description": "优必选 Walker S2 是优必选于 2025 年推出的新一代全尺寸工业人形机器人，身高 176cm、重 70kg、全身 52 自由度，首创 3 分钟热插拔自主换电系统支持 7×24 小时连续作业，可在 0–1.8m 全空间范围搬运 15kg 重物。",
+    "officialUrl": "https://www.ubtrobot.com/cn/humanoid/products/walker-s2",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "pudu-d9",
+    "name": "PUDU D9",
+    "nameZh": "普渡 PUDU D9",
+    "manufacturer": "Pudu Robotics",
+    "manufacturerZh": "普渡机器人",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2024,
+    "status": "announced",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "height_cm": 170,
+      "weight_kg": 65,
+      "dof_total": 42,
+      "dof_hand": 11,
+      "walk_speed_ms": 2,
+      "max_speed_ms": 2,
+      "payload_kg": 20,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": "高算力端侧具身导航与操作规划架构",
+      "sensors": "高精度 3D 视觉 + 激光雷达 + 力觉与五指触觉传感",
+      "sdk": "面向商业服务与跨场景任务规划集成"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "普渡机器人官网",
+        "url": "https://www.pudutech.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "商用服务机器人龙头普渡推出的首款全尺寸双足人形机器人，身高 170cm、重 65kg",
+      "整机高达 42 个自由度，搭配双 7 自由度机械臂与自研 Pudu DH11 五指灵巧手（单手 11 自由度）",
+      "最高行走速度可达 2m/s，双臂负载超过 20kg，可直立行走并通过 25cm 楼梯与斜坡",
+      "结合普渡清洁/配送全场景经验，具备端到端跨楼层导航与泛化操作能力"
+    ],
+    "applications": [
+      "商业综合体迎宾与导览",
+      "跨楼层终端配送与搬运",
+      "商业清洁与通用服务作业"
+    ],
+    "description": "PUDU D9 是普渡机器人发布的全尺寸商用双足人形机器人，身高 170cm、体重 65kg，整机拥有 42 个自由度并搭载自研 Pudu DH11 灵巧手，平地行走速度达 2m/s、负载超 20kg，主打商业迎宾、配送与跨楼层通用服务。",
+    "officialUrl": "https://www.pudutech.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "fourier-n1",
+    "name": "Fourier N1",
+    "nameZh": "傅利叶 Fourier N1（开源人形）",
+    "manufacturer": "Fourier Intelligence",
+    "manufacturerZh": "傅利叶",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "开源生态机型（提供开源图纸、代码与整机科研采购）"
+    },
+    "specs": {
+      "height_cm": 130,
+      "weight_kg": 38,
+      "dof_total": 23,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": null,
+      "payload_kg": null,
+      "arm_payload_kg": null,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": null,
+      "compute_platform": null,
+      "sensors": "视觉与本体惯性感知",
+      "sdk": "开源硬件结构、BOM 清单、控制算法与开发工具链"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "傅利叶官网",
+        "url": "https://www.fourierintelligence.com",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "傅利叶「开源生态矩阵」首款开源紧凑型人形机器人，于 2025 年 4 月正式发布",
+      "身高 130cm、体重 38kg，全身具备 23 个自由度",
+      "采用铝合金与工程塑料复合轻量化结构，兼顾高动态结构强度与整机轻便性",
+      "向全球开发者与高校开放本体图纸、物料清单与底层控制代码"
+    ],
+    "applications": [
+      "高校具身智能教学与科研",
+      "开源双足运动控制算法验证",
+      "开发者硬件复现与二次开发"
+    ],
+    "description": "Fourier N1 是傅利叶于 2025 年 4 月推出的首款开源紧凑型人形机器人，身高 130cm、重 38kg、全身 23 自由度，采用铝合金与工程塑料复合结构，作为傅利叶开源生态矩阵的首发平台向社区开放图纸与代码。",
+    "officialUrl": "https://www.fourierintelligence.com",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "robotera-xhand1",
+    "name": "RobotEra XHAND1",
+    "nameZh": "星动纪元 星动 XHAND1 全直驱灵巧手",
+    "manufacturer": "RobotEra",
+    "manufacturerZh": "星动纪元",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2024,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（同系列已拓展出 21 自由度 XHAND 1 Pro 与轻量化 XHAND 1 Lite）"
+    },
+    "specs": {
+      "dof_total": 12,
+      "doa": 12,
+      "fingers": 5,
+      "weight_g": 1100,
+      "payload_kg": 25,
+      "fingertip_force_n": null,
+      "grip_force_n": 80,
+      "speed_note": "每秒可完成 10 次精准点击，响应延迟 <10ms",
+      "drive_type": "12 主动自由度全齿轮准直驱（0 被动自由度，支持反驱）",
+      "tactile": "每指指尖 270° 环绕高分辨率三维力触觉阵列（单指 120 点，0.05N 精度，含温度感知）",
+      "tactile_points": 600,
+      "interface": "高速实时控制总线",
+      "sdk": "支持 Ubuntu / C++ / Python / ROS1&2，配套 VR 与动捕手套遥操作及仿真模型"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "星动纪元官网",
+        "url": "https://www.robotera.com/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "五指 12 个全主动自由度（拇指 3、食指 3、其余三指各 2），采用全齿轮准直驱无腱绳/连杆耦合",
+      "最大握力达 80N、单指负载 >5kg、整手最大举升负载达 25kg，重约 1.1kg",
+      "每秒可完成 10 次高速点击、响应延迟低于 10ms，关节可反驱并抵抗外部冲击",
+      "五指指尖集成 270° 环绕高密度三维触觉阵列（单指 120 点、整手 600 点，分辨率 0.05N）及温度传感器"
+    ],
+    "applications": [
+      "人形与双臂机器人高灵巧度末端",
+      "高动态力位混合控制与强化学习科研",
+      "使用精细工具（拧瓶盖、拿镊子、倒水）与触觉遥操作"
+    ],
+    "description": "星动 XHAND1 是星动纪元推出的五指 12 主动自由度全齿轮准直驱灵巧手，重约 1.1kg，具备 80N 握力与 25kg 整手举升能力，每秒可点击 10 次，指尖集成 270° 环绕三维力触觉阵列（整手 600 点、0.05N 精度）与温度感知。",
+    "officialUrl": "https://www.robotera.com/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "daimon-dm-tac-w2",
+    "name": "Daimon DM-Tac W2",
+    "nameZh": "戴盟 DM-Tac W2 通用多模态视触觉传感器",
+    "manufacturer": "Daimon Robotics",
+    "manufacturerZh": "戴盟机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "sensor-tactile",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（提供 W2L 大尺寸与 W2M 中尺寸两款规格）"
+    },
+    "specs": {
+      "component_type": "高分辨率多模态通用视触觉传感器",
+      "model_series": "DM-Tac W2L (36×27mm) / DM-Tac W2M (24×18mm)",
+      "weight_g": 72,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "110,592 个有效感知点（384×288 感知分辨率，相机 640×480），灵敏度 <1%FS，零漂 <1%FS",
+      "range_note": "有效感知面积 W2L 36×27mm / W2M 24×18mm；外形尺寸 W2L 76.5×46×31mm / W2M 64×36×20mm",
+      "voltage_v": 5,
+      "interface": "USB 2.0（工作功耗 0.5W，待机功耗 0.1W）",
+      "key_params": "120Hz 高频采样，IP67 防尘防水，强抗电磁干扰，通过 500 万次按压与 20 万次摩擦测试，输出接触形貌、三维形变场、三维分布力与六维集中力"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "戴盟机器人官网",
+        "url": "https://www.dmrobot.com/devices/dm-tac-w2.html",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "香港科技大学孵化团队研发，单传感器具备 110,592 个有效感知点（384×288 感知分辨率）",
+      "支持 120Hz 高频采样，同步输出表面微米级形貌、全分辨率三维形变场、三维分布力与六维集中力",
+      "工业级高可靠设计：具备 IP67 防护、强抗电磁干扰，通过 500 万次按压与 20 万次摩擦耐久测试",
+      "功耗仅 0.5W（待机 0.1W），W2M 仅重 72g（W2L 131g），适配各类平行夹爪与 DM-DataClaw 数采末端"
+    ],
+    "applications": [
+      "平行夹爪高精密力控抓取（如生鸡蛋、薄脆片、芯片）",
+      "3C 与汽车产线柔性线束插拔装配",
+      "Daimon-Infinity 全模态视触觉数据采集"
+    ],
+    "description": "DM-Tac W2 是戴盟机器人推出的高分辨率多模态通用视触觉传感器，拥有 110,592 个有效感知点（384×288）与 120Hz 采样率，可同步输出三维形变场、分布力与六维集中力，具备 IP67 防护并通过 500 万次按压测试。",
+    "officialUrl": "https://www.dmrobot.com/devices/dm-tac-w2.html",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "daimon-dm-tac-f",
+    "name": "Daimon DM-Tac F",
+    "nameZh": "戴盟 DM-Tac F 灵巧手指尖视触觉传感器",
+    "manufacturer": "Daimon Robotics",
+    "manufacturerZh": "戴盟机器人",
+    "country": "中国",
+    "category": "component",
+    "subcategory": "sensor-tactile",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（支持灵巧手整手集成与 180Hz 高频版定制）"
+    },
+    "specs": {
+      "component_type": "灵巧手指尖多模态视触觉传感器",
+      "model_series": "DM-Tac F / DM-Tac FM",
+      "weight_g": null,
+      "rated_torque_nm": null,
+      "peak_torque_nm": null,
+      "rated_speed_rpm": null,
+      "torque_density": null,
+      "gear_ratio": null,
+      "precision": "感知分辨率 320×240（相机分辨率 640×480），每平方厘米集成数万个感知单元",
+      "range_note": "外形尺寸 23(H)×18(W)×18(D) mm，曲面有效感知区覆盖指腹 + 指侧 + 指尖",
+      "voltage_v": 5,
+      "interface": "USB 2.0",
+      "key_params": "采样频率标品 60Hz（可定制 180Hz），同步输出接触形貌、全分辨率三维形变场、三维分布力与六维集中力"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "戴盟机器人官网",
+        "url": "https://www.dmrobot.com/devices/dm-tac-f.html",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "专为五指灵巧手打造的紧凑仿生指尖视触觉传感器（23×18×18mm），曲面覆盖指腹、指侧与指尖",
+      "感知分辨率达 320×240（76,800 个有效感知单元），每平方厘米具备数万级感知点",
+      "标品 60Hz、最高可定制 180Hz 超高频采样，实时捕捉微米级形貌与切向滑移趋势",
+      "与戴盟 DM-Hand1 视触觉灵巧手及 DM-DataMaster 穿戴式外骨骼同源配套"
+    ],
+    "applications": [
+      "五指灵巧手指尖多维触觉感知",
+      "盲抓、防滑自适应控制与精细捏持",
+      "灵巧手同构遥操作与触觉大模型数采"
+    ],
+    "description": "DM-Tac F 是戴盟机器人面向五指灵巧手指尖推出的紧凑型多模态视触觉传感器，尺寸仅 23×18×18mm，感知区覆盖指腹、指侧与指尖，具备 320×240 感知分辨率与最高 180Hz 定制采样率。",
+    "officialUrl": "https://www.dmrobot.com/devices/dm-tac-f.html",
+    "dataUpdated": "2026-11"
   }
 ]

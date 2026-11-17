@@ -1223,5 +1223,157 @@
     "description": "ACE-Ego 是大晓机器人于 2026 年 6 月发布的以人为中心具身预训练框架与模型，通过双层可靠性自适应目标融合真机传感监督与三级过滤人类视频动作重建，打通 VLA 与 WAM 并拓展工业柔性制造落地。",
     "paperUrl": "https://cn.chinadaily.com.cn/a/202606/17/WS6a321de4a310d709c2fb8921.html",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "graspvla",
+    "name": "GraspVLA",
+    "kind": "vla",
+    "org": "Peking University (EPIC Lab) & Galbot",
+    "orgZh": "北京大学 EPIC 实验室 & 银河通用",
+    "country": "中国",
+    "releaseDate": "2025-05",
+    "openSource": true,
+    "license": "开源（开放 SynGrasp-1B 数据集、预训练权重与评测代码）",
+    "specs": {
+      "params_b": null,
+      "architecture": "渐进式动作生成（Progressive Action Generation / CoT）：自回归感知（2D/3D 框与抓点预测）+ Flow Matching 连续动作生成",
+      "backbone": "多模态 VLM 主干 + 空间锚定思维链中间表征",
+      "action_head": "Flow Matching 连续动作块",
+      "control_freq_hz": null,
+      "training_data": "完全基于 10 亿帧（Billion-scale）合成抓取动作数据（SynGrasp-1B）与互联网图文语义数据联合训练",
+      "embodiments": "多种单臂/双臂机械臂与不同相机视角配置",
+      "cross_embodiment": "强，纯合成动作预训练直接零样本 Sim-to-Real 迁移至真机，并支持少样本人类偏好适配",
+      "benchmark_note": "在开放词表真实世界透明/反光/杂乱物体抓取与长尾语义指令测试中高达 90%+ 成功率（入选 CoRL 2025）",
+      "deploy_note": "同步开源 10 亿帧 SynGrasp-1B 数据集与预训练模型权重"
+    },
+    "highlights": [
+      "首个完全依赖十亿帧级合成动作数据（SynGrasp-1B）完成预训练的抓取基础 VLA 模型",
+      "提出渐进式动作生成（Progressive Action Generation），将自回归 2D/3D 空间抓点感知与流匹配动作结合",
+      "打破合成与互联网图文数据鸿沟，实现真实世界零样本开放词表抓取与抗干扰闭环重抓取",
+      "仅需少量示范即可快速后训练适配特定人类抓握偏好，已开源权重与 SynGrasp-1B 数据集"
+    ],
+    "applications": [
+      "商超零售与药房全品类开放词表抓取",
+      "纯合成数据 Sim-to-Real 零样本部署",
+      "抗动态干扰闭环灵巧抓取"
+    ],
+    "description": "GraspVLA 是北京大学 EPIC 实验室联合银河通用发布的十亿帧级抓取 VLA 基础模型（CoRL 2025），通过渐进式思维链将自回归空间感知与流匹配动作生成结合，完全利用 10 亿帧合成动作数据（SynGrasp-1B）与图文数据训练即实现高成功率零样本真机抓取。",
+    "paperUrl": "https://arxiv.org/html/2505.03233v1",
+    "codeUrl": "https://github.com/PKU-EPIC/GraspVLA",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "crossformer",
+    "name": "CrossFormer",
+    "kind": "vla",
+    "org": "UC Berkeley (RAIL) & CMU",
+    "orgZh": "加州大学伯克利分校 & 卡内基梅隆大学",
+    "country": "美国",
+    "releaseDate": "2024-08",
+    "openSource": true,
+    "license": "MIT（开放 130M 预训练权重与训练代码）",
+    "specs": {
+      "params_b": 0.13,
+      "architecture": "可扩展跨构型 Transformer 策略（无需手动对齐观测或动作空间）",
+      "backbone": "ResNet-26 视觉编码器 + 可变长度多模态序列 Transformer",
+      "action_head": "多构型专用连续动作读出头（同时支持单臂、双臂、轮式导航、四足与四旋翼不同维度与频率）",
+      "control_freq_hz": null,
+      "training_data": "90 万条（900K）跨 20–30 种异构机器人的操作、导航、四足运动与飞行轨迹",
+      "embodiments": "单臂机械臂（Franka/WidowX）、双臂 ALOHA、四足机器狗（Unitree Go1）、轮式导航机器人与四旋翼无人机",
+      "cross_embodiment": "极强，同一套 130M 网络权重无需微调即可直接控制单臂、双臂、四足、轮式底盘与无人机",
+      "benchmark_note": "跨 6 大真实异构机器人评测平均成功率达 73%（超越单本体专家策略 67% 与此前最优跨本体模仿学习基线 51%）",
+      "deploy_note": "仅 1.3 亿参数，可在消费级硬件上实时高频运行全部构型"
+    },
+    "highlights": [
+      "突破操作与移动的构型壁垒：单一套 130M 权重同时控制单臂、双臂 ALOHA、Unitree Go1 四足、轮式导航与无人机",
+      "无需强行对齐不同机器人的相机视角、本体状态维度或控制频率（从几 Hz 到数十 Hz）",
+      "在 90 万条跨 30 种机器人轨迹上训练，真机评测平均成功率（73%）反超单本体专门训练策略（67%）",
+      "全开源代码与 130M 预训练权重，为极异构跨本体学习树立经典范式"
+    ],
+    "applications": [
+      "单臂/双臂/四足/无人机单一模型统一控制",
+      "异构机器人多任务零样本与微调部署",
+      "轻量级（130M）跨构型策略研究"
+    ],
+    "description": "CrossFormer 是加州大学伯克利分校（RAIL）团队开源的 1.3 亿参数跨构型通用机器人策略，在 90 万条异构轨迹上训练，无需手动对齐观测或动作空间即可用同一套权重控制单臂、双臂、四足机器狗、轮式导航与四旋翼无人机，真机平均成功率达 73%。",
+    "paperUrl": "https://arxiv.org/html/2408.11812v1",
+    "codeUrl": "https://github.com/rail-berkeley/crossformer",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "cogact",
+    "name": "CogACT",
+    "kind": "vla",
+    "org": "Microsoft Research",
+    "orgZh": "微软亚洲研究院 (MSRA)",
+    "country": "中国/美国",
+    "releaseDate": "2024-11",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "params_b": 7.7,
+      "architecture": "认知与动作解耦协同架构：VLM 认知主干 + 条件化扩散动作 Transformer (DiT)",
+      "backbone": "Prismatic-7B VLM (DINOv2 + SigLIP + Llama-2 7B)",
+      "action_head": "专项条件扩散动作模块（DiT-Small/Base/Large，最高约 0.7B）+ 自适应动作集成（AAE）",
+      "control_freq_hz": null,
+      "training_data": "Open X-Embodiment 大规模多机器人轨迹预训练",
+      "embodiments": "Google Robot、WidowX、Franka、双臂等通用操作机械臂",
+      "cross_embodiment": "强，对新机器人与未见物体具备快速少样本微调泛化能力",
+      "benchmark_note": "在 SIMPLER 仿真基准与真实机械臂评测中，平均成功率超越同为 7B 的 OpenVLA 逾 35 个百分点，并超越 55B 的 RT-2-X",
+      "deploy_note": "提供 DiT-Small / Base / Large 三档动作模块开源权重与代码"
+    },
+    "highlights": [
+      "系统论证 VLM 直接离散输出动作的局限，提出将「认知（VLM）」与「连续动作生成（DiT）」组件化解耦",
+      "引入自适应动作集成（Adaptive Action Ensemble）机制平滑时序多步动作块",
+      "在仿真与真实机械臂测试中大幅超越 7B OpenVLA，并以约 1/7 参数量超越 55B RT-2-X",
+      "MIT 协议开源全部训练评测代码及 Small/Base/Large 三档预训练模型权重"
+    ],
+    "applications": [
+      "高精度连续机械臂操作",
+      "VLA 动作头架构消融与微调基座",
+      "少样本跨机器人迁移"
+    ],
+    "description": "CogACT 是微软亚洲研究院提出的组件化视觉-语言-动作模型，将 7B VLM 的语义认知输出作为条件驱动专用扩散动作 Transformer（DiT）并配合自适应动作集成，在仿真与真机评测中大幅超越 OpenVLA 与 55B RT-2-X。",
+    "paperUrl": "https://arxiv.org/html/2411.19650v1",
+    "codeUrl": "https://github.com/microsoft/CogACT",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "spatialvla",
+    "name": "SpatialVLA",
+    "kind": "vla",
+    "org": "Shanghai AI Lab / IPEC Community",
+    "orgZh": "上海人工智能实验室等",
+    "country": "中国",
+    "releaseDate": "2025-01",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "params_b": 4,
+      "architecture": "空间增强视觉-语言-动作模型：Ego3D 位置编码 + 自适应动作网格（Adaptive Action Grids）",
+      "backbone": "SigLIP + Gemma-2 (PaliGemma-2 4B 架构)",
+      "action_head": "自适应空间动作网格离散化空间动作 token",
+      "control_freq_hz": null,
+      "training_data": "110 万条（1.1M）真实机器人操作轨迹预训练",
+      "embodiments": "跨多种单臂与移动操作机械臂平台",
+      "cross_embodiment": "强，通过以相机为中心的 Ego3D 表征与自适应动作网格实现跨本体零样本与高效微调",
+      "benchmark_note": "在 SIMPLER、LIBERO 与多平台真机零样本/微调评测中显著优于 OpenVLA 与 Octo",
+      "deploy_note": "4B 轻量参数规模，Hugging Face 开放预训练与微调权重（spatialvla-4b-224-pt）"
+    },
+    "highlights": [
+      "针对传统 2D VLM 缺乏三维空间感的问题，提出无需标定外参的 Ego3D 位置编码注入 3D 空间信息",
+      "设计自适应动作网格（Adaptive Action Grids），将不同机器人的连续动作统一映射为可学习的 3D 空间动作 token",
+      "在 110 万条真实机器人轨迹上完成预训练，零样本跨环境与跨视角鲁棒性突出",
+      "4B 参数轻量高效，代码与 Hugging Face 模型权重以 MIT 协议全面开源"
+    ],
+    "applications": [
+      "3D 空间感知密集型机械臂操作",
+      "跨相机视角零样本/少样本控制",
+      "4B 级高效开源 VLA 微调基座"
+    ],
+    "description": "SpatialVLA 是上海人工智能实验室等机构开源的 4B 空间增强 VLA 基础模型，通过引入 Ego3D 位置编码与自适应空间动作网格并在 110 万条真机轨迹上预训练，显著提升了机器人在三维空间操作中的零样本与微调泛化能力。",
+    "paperUrl": "https://arxiv.org/html/2501.15830v5",
+    "codeUrl": "https://github.com/SpatialVLA/SpatialVLA",
+    "dataUpdated": "2026-11"
   }
 ]
