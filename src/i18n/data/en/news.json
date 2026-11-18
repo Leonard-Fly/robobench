@@ -1,4 +1,24 @@
 {
+  "genesis-ai-500m-series-a-2026-11-17": {
+    "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Scale General-Purpose Robot Eno",
+    "summary": "On Nov 17, 2026, general-purpose robotics startup Genesis AI announced a $500 million Series A at a $3.5 billion post-money valuation co-led by Premji Invest, Khosla Ventures, and Eclipse with NVIDIA, AMD Ventures, HSG, and Eric Schmidt participating, fueling GENE model training and commercial deployment of its Eno robot.",
+    "tags": ["$500M Series A", "$3.5B Valuation", "GENE Model", "General-Purpose Robot"]
+  },
+  "fourier-meta-humanoid-collaboration-2026-11-17": {
+    "title": "Fourier CEO Pledges Focus on Hardware Over Brains Amid Reported Meta Humanoid Partnership",
+    "summary": "In a November 2026 Huxiu interview, Fourier Intelligence founder Gu Jie emphasized staying focused on robot hardware rather than building foundation brains; the report also revealed that Meta and Fourier co-developed a 1.5 m, 48 kg humanoid prototype powered by NVIDIA Jetson Thor in roughly three months.",
+    "tags": ["Meta Partnership", "Fourier", "Jetson Thor", "Prototype"]
+  },
+  "xiaomi-humanoid-8h-factory-trial-2026-11-17": {
+    "title": "Lei Jun Discloses Xiaomi Humanoid Completed 8-Hour Factory Trial With Two Autonomous Charges",
+    "summary": "Speaking at the 2026 APEC CEO Summit in Shenzhen on Nov 17, Xiaomi founder Lei Jun revealed that Xiaomi's embodied AI humanoid has completed an 8-hour factory internship including two autonomous recharges—alongside earlier 30-minute apartment chores powered by Xiaomi-Robotics-1—predicting robotics will surpass EVs in market potential.",
+    "tags": ["Auto Factory", "8h Trial", "Xiaomi Humanoid", "APEC 2026"]
+  },
+  "qianhai-embodied-ai-showcase-apec-2026-11-17": {
+    "title": "Shenzhen Embodied AI Cluster Showcases Commercial Deployments During 2026 APEC Summit",
+    "summary": "During the 2026 APEC Summit on Nov 17, Shenzhen's Qianhai tech showcase featured Galbot G1 making breakfast, X Square Robot sorting parts on an 11 m/min conveyor, and DexForce running an autonomous retail kiosk; the report also noted UBTECH's nearly RMB 1.4B 2025 humanoid orders and H1 2026 revenue of RMB 1.27B (+104.2% YoY) with Walker S2 entering Airbus and TI plants.",
+    "tags": ["Commercialization", "Shenzhen Cluster", "APEC 2026", "Global Orders"]
+  },
   "tarsbot-aptiv-100-unit-deployment-2026-11-16": {
     "title": "TARSBOT and Aptiv Deepen Embodied AI Collaboration with 100-Unit Factory Deployment",
     "summary": "On Nov 16, 2026, TARSBOT and Aptiv signed a strategic agreement at CIIE to deploy 100 TARSBOT A-Series industrial embodied AI robots by year-end across 8 manufacturing categories and 33 scenarios, integrating Aptiv compute platforms toward a 1,000-unit fleet and iterating TARSBOT's AWE foundation model.",
