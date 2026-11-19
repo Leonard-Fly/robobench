@@ -873,5 +873,76 @@
       "benchmark_note": "Significantly outperforms OpenVLA and Octo across SIMPLER, LIBERO and real-robot evaluations",
       "deploy_note": "4B parameters; open checkpoints on Hugging Face (IPEC-COMMUNITY/spatialvla-4b-224-pt)"
     }
+  },
+  "gemini-robotics-1-5": {
+    "description": "Gemini Robotics 1.5 & ER 1.5 (Sept 2025) from Google DeepMind form a dual-model embodied agentic system pairing the GR-ER 1.5 orchestrator VLM with the GR 1.5 Thinking VLA and cross-embodiment Motion Transfer, halving long-horizon failure rates to 22%.",
+    "highlights": [
+      "Agentic dual-model loop: GR-ER 1.5 handles planning/tool use while GR 1.5 executes with natural-language internal thinking",
+      "Motion Transfer generalizes skills across heterogeneous embodiments (ALOHA, bi-arm Franka, Apptronik Apollo)",
+      "GR-ER 1.5 scores 59.6 ER avg across 15 academic benchmarks (80.7 MMMU, 83.3 GPQA)",
+      "Cuts long-horizon failure rate from 44.5% to 22% across 230 evaluation tasks"
+    ],
+    "applications": [
+      "Long-horizon multi-step embodied planning",
+      "Cross-embodiment humanoid & bimanual transfer",
+      "Tool use & open-world manipulation"
+    ],
+    "specs": {
+      "architecture": "Dual-model agentic system: GR-ER 1.5 VLM orchestrator + GR 1.5 Thinking VLA",
+      "backbone": "Gemini 2.5 multimodal reasoning family",
+      "action_head": "Thinking-augmented continuous action generation + Motion Transfer",
+      "training_data": "Large-scale multi-embodiment teleop + cross-embodiment motion transfer + web multimodal data",
+      "embodiments": "ALOHA, Bi-arm Franka, Apptronik Apollo humanoid",
+      "cross_embodiment": "Strong; transfers behaviors across heterogeneous morphologies",
+      "benchmark_note": "59.6 ER score across 15 benchmarks; halves long-horizon failure rate from 44.5% to 22%",
+      "deploy_note": "Trained on TPU v4/v5p/v6e with JAX; closed-source commercial & partner deployment"
+    }
+  },
+  "internw0": {
+    "description": "InternW0 (Sept 2026) from Shanghai AI Laboratory is an asymmetric Mixture-of-Transformers (MoT) World Action Model coupling a Video-DiT with a lightweight Action-DiT via asynchronous duplex inference (60.73 ms / 16.47 Hz on RTX 5090D), achieving 98.6% on LIBERO and 93.12% on RoboTwin 2.0-Full.",
+    "highlights": [
+      "Asymmetric MoT WAM with asynchronous duplex inference and layerwise chunk K/V editor",
+      "60.73 ms critical-path latency (16.47 Hz) on RTX 5090D—3.13x faster than Fast-WAM",
+      "98.6% on LIBERO, 93.12% on RoboTwin 2.0-Full, and #1 (75.60%) on Clean2Random",
+      "68.4% progress rate on real-world wet-lab MoF experiments and 65.3% on 20-DoF quantitative pipetting"
+    ],
+    "applications": [
+      "16 Hz real-time world-action control",
+      "Domain-randomized bimanual manipulation",
+      "Wet-lab precision dexterous robotics"
+    ],
+    "specs": {
+      "architecture": "Asymmetric MoT WAM: Video-DiT (Wan VAE) + lightweight Action-DiT (DINOv3) with async duplex inference",
+      "modality": "Video world prediction + 37-D unified action/state + optional force/tactile post-training",
+      "horizon": "Asynchronous duplex closed-loop control with layerwise chunk K/V editor",
+      "action_conditioned": "Bidirectional Video-DiT and Action-DiT coupling with tactile/force post-training",
+      "training_data": "7,233.5 hours (811,969 episodes) across 7 datasets (InternData-A1, AgiBotWorld, RoboCOIN, Galaxea, EgoLab, etc.)",
+      "use_case": "Real-time closed-loop world-action control and long-horizon dexterous manipulation",
+      "benchmark_note": "16.47 Hz on RTX 5090D; LIBERO 98.6%, RoboTwin 2.0-Full 93.12%, Clean2Random 75.60% (#1)"
+    }
+  },
+  "diffusion-policy": {
+    "description": "Diffusion Policy (March 2023) from Columbia, Stanford, and TRI formulates visuomotor robot control as conditional denoising diffusion (DDPM) with receding-horizon action chunking, improving mean success by 46.9% across 15 tasks and founding the modern diffusion/flow VLA action head.",
+    "highlights": [
+      "Pioneered conditional DDPM action generation for visuomotor robot policies",
+      "Naturally captures multimodal action distributions with stable training and receding-horizon control",
+      "46.9% average improvement across 15 tasks from 4 benchmarks; 95% on real-world Push-T",
+      "MIT open-source baseline underlying modern diffusion and flow-matching VLA action heads"
+    ],
+    "applications": [
+      "Single/bimanual precision imitation learning",
+      "Multimodal & non-rigid object manipulation",
+      "Core robot learning baseline"
+    ],
+    "specs": {
+      "architecture": "Conditional DDPM + receding-horizon action chunking (CNN FiLM / Diffusion Transformer)",
+      "backbone": "ResNet-18 vision encoder + 1D temporal U-Net or Diffusion Transformer",
+      "action_head": "DDPM / DDIM action-sequence denoising (100 train / 10–16 eval steps)",
+      "training_data": "Robomimic, Push-T, BlockPush, Franka Kitchen, and real single/bimanual teleop demos",
+      "embodiments": "UR5, Franka Panda single-arm and bimanual platforms",
+      "cross_embodiment": "Foundational single/multi-task paradigm inspiring modern VLA action heads",
+      "benchmark_note": "+46.9% average improvement across 15 tasks; 95% real Push-T and 90% Mug Flip",
+      "deploy_note": "0.1 s latency on RTX 3080 via 10-step DDIM; classic MIT open-source baseline"
+    }
   }
 }

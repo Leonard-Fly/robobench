@@ -1994,5 +1994,69 @@
       "key_params": "60 Hz standard (180 Hz custom), outputs contact geometry, 3D deformation, 3D & 6D force"
     },
     "priceNote": "Not disclosed / quote on request (supports full-hand integration & 180 Hz custom edition)"
+  },
+  "tiangong-2": {
+    "description": "Embodied Tiangong 2.0 is an open-source general-purpose humanoid robot platform from the Beijing Innovation Center of Humanoid Robotics (163 cm, 56 kg, 42 DOF), featuring 16 kg dual-arm payload (0.1 mm precision), 12 km/h (3.33 m/s) running speed, and 550 TOPS onboard compute.",
+    "highlights": [
+      "Open-source humanoid platform from the Beijing Innovation Center of Humanoid Robotics (163 cm, 56 kg)",
+      "42 total DOF with 16 kg dual-arm payload and 0.1 mm precision",
+      "12 km/h (3.33 m/s) anthropomorphic running speed with rough-terrain stability",
+      "550 TOPS onboard compute for embodied foundation models and custom development"
+    ],
+    "applications": [
+      "Embodied AI research",
+      "Industrial precision manipulation & handling",
+      "Open-source humanoid custom dev"
+    ],
+    "specs": {
+      "compute_platform": "550 TOPS onboard embodied compute platform",
+      "sensors": "Multimodal vision and high-precision force perception",
+      "sdk": "Open-source reference platform for research and industrial development"
+    },
+    "priceNote": "Not disclosed / quote on request (open-source humanoid platform)"
+  },
+  "dexrobot-dexhand021": {
+    "description": "DexHand021 Mass Production from DexRobot is a 19-DOF (12 active + 7 passive) tendon-driven 5-finger bionic hand weighing 1 kg with 5 kg payload, ≥38 N grasp force, 5-modality perception (0.1 N resolution), and >1,000,000 cycle lifespan.",
+    "highlights": [
+      "5-finger 19-DOF (12 active + 7 passive) tendon-driven hand weighing 1 kg",
+      "≥38 N grasp force, ≥12 N fingertip force, 5 kg hand load, and >1M cycle lifespan",
+      "Integrates 5 modalities: position, normal force (0–20 N, 0.1 N res), shear force, proximity & temp",
+      "Active 2.38 cfm cooling enables 24/7 continuous operation"
+    ],
+    "applications": [
+      "Humanoid 5-finger end effector",
+      "Industrial & logistics grasping",
+      "Multimodal tactile manipulation research"
+    ],
+    "specs": {
+      "speed_note": "Tactile sampling rate ≥50 Hz",
+      "drive_type": "Tendon-driven bionic design (12 active + 7 passive DOF)",
+      "tactile": "5 modalities: position, normal force (0–20 N / 0.1 N res), shear, proximity & temperature",
+      "interface": "CAN FD",
+      "sdk": "Supports 24/7 operation (2.38 cfm cooling, >1M cycles) with open SDK"
+    },
+    "priceNote": "Not disclosed / quote on request"
+  },
+  "dexrobot-dexhand021-s": {
+    "description": "DexHand021 S from DexRobot is an ultra-lightweight 600 g, 3-finger, 8-DOF industrial dexterous hand with 2.5 kg rated (5 kg max) payload, standard 5 MP palm RGB camera, optional 0.1 N capacitive tactile sensing, and open-source SDK.",
+    "highlights": [
+      "Ultra-light 600 g 3-finger 8-DOF hand covering ~80% of 5-finger grasping tasks",
+      "2.5 kg rated (5 kg max) load, >10 N fingertip force, ≥100 N root grasp, ±0.5 mm repeatability",
+      "Standard 5 MP 30 FPS autofocus palm RGB camera for visual-servo grasping under occlusion",
+      "Optional 0.1 N capacitive normal/shear tactile & ≥1 cm proximity sensing over CAN FD / RS485"
+    ],
+    "applications": [
+      "Industrial sorting & compliant assembly",
+      "Agricultural harvesting & unstructured grasping",
+      "Visuotactile research & education"
+    ],
+    "specs": {
+      "speed_note": "±0.5 mm repeatability; ≥50 Hz tactile sampling",
+      "drive_type": "Gear + tendon rope + linkage hybrid transmission",
+      "tactile": "Standard position & 5 MP palm vision; optional capacitive 3D force (0.1 N) & proximity (≥1 cm)",
+      "interface": "CAN FD / RS485",
+      "sdk": "Open-source SDK + multi-protocol support (200,000-cycle lifespan)"
+    },
+    "priceNote": "Entry-level cost tier (quote on request)"
   }
 }

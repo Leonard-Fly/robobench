@@ -416,5 +416,71 @@
       "collection_method": "Distributed lightweight capture network (DM-DataClaw / DM-DataMaster / Ego)",
       "data_format": "Synchronized multimodal time series (hosted on ModelScope)"
     }
+  },
+  "interndata-a1": {
+    "description": "InternData-A1 (Nov 2025) from Shanghai AI Lab and Peking University is a high-fidelity synthetic manipulation dataset with 637,498 trajectories (401.4M frames, 7,433.91 hours) across 4 embodiments, 70 tasks, and 227 scenes, matching the closed-source π-dataset when pretraining π0 purely from simulation.",
+    "highlights": [
+      "637,498 trajectories (401.4M frames, 7,433.91 hours) covering 3,185 rigid, 321 articulated, and 20 garment assets",
+      "First synthetic-only dataset shown to match closed-source π-dataset pretraining across 49 sim and 9 real tasks",
+      "Produces 209.7 hours/day on 8x RTX 4090s (<$0.003/episode) with >50% zero-shot sim-to-real on 10 tasks",
+      "Open-sources dataset in LeRobot format alongside the autonomous synthesis pipeline"
+    ],
+    "applications": [
+      "Synthetic-only VLA pretraining",
+      "Rigid, articulated, deformable & fluid manipulation",
+      "Zero-shot sim-to-real transfer"
+    ],
+    "specs": {
+      "tasks_count": "70 tasks / 18 skills / 227 indoor scenes",
+      "embodiments": "4 single/dual-arm embodiments (Franka Panda, Genie-1, Split ALOHA, ARX Lift-2)",
+      "modalities": "Photorealistic multi-view RGB + depth/grounding + joint states & actions (rigid/articulated/deformable/fluid)",
+      "annotations": "Language instructions, object metadata, failure recovery & multi-skill composition",
+      "collection_method": "Decoupled autonomous simulation pipeline (CuRobo + Stack Render, 209.7h/day on 8x4090)",
+      "data_format": "LeRobot format"
+    }
+  },
+  "egolab": {
+    "description": "EgoLab (Sept 2026), released by Shanghai AI Lab alongside InternW0, is a real-world wet-laboratory bimanual egocentric dataset comprising 275.4 hours (3,192 episodes) of 2.5K 50 fps RGB video with 3D camera/hand motion reconstruction (HaWoR) and VLM subtask labels.",
+    "highlights": [
+      "275.4 hours (3,192 episodes) of real wet-lab bimanual egocentric manipulation",
+      "Recorded at 2.5K resolution and 50 fps covering pipetting, weighing, titration, filtration, and stirring",
+      "Includes 50 fps 3D camera & hand motion reconstruction (HaWoR) and VLM subtask partitioning",
+      "Core training corpus powering InternW0's real-world MoF experiments and 20-DoF quantitative pipetting"
+    ],
+    "applications": [
+      "Scientific wet-lab automation",
+      "Egocentric 3D hand-to-dexterous-hand transfer",
+      "Long-horizon precision world-model training"
+    ],
+    "specs": {
+      "tasks_count": "Wet-lab pipetting, weighing, titration, filtration, grinding, stirring & rinsing",
+      "embodiments": "Human head-mounted egocentric bimanual (with 3D hand & camera reconstruction)",
+      "modalities": "2.5K @ 50 fps egocentric RGB video + 50 fps 3D camera/hand reconstruction (HaWoR)",
+      "annotations": "VLM-partitioned subtasks & fine-grained lab procedure labels",
+      "collection_method": "Head-mounted DJI Action capture in real wet laboratories",
+      "data_format": "Multimodal video + 3D hand motion trajectories"
+    }
+  },
+  "touchthinker-1m": {
+    "description": "TouchThinker-1M (June 2026) is a million-scale, multi-source tactile-language dataset built for open-world tactile commonsense reasoning across diverse tactile sensors, paired with the TouchThinker-Bench evaluation suite.",
+    "highlights": [
+      "Million-scale (1M) multi-source tactile dataset for open-world tactile-language commonsense reasoning",
+      "Spans diverse tactile sensor modalities to mitigate single-sensor domain gaps",
+      "Paired with TouchThinker-Bench covering varied tactile tasks and physical property reasoning",
+      "Supports cross-sensor tactile representation alignment for VTL / VTLA foundation models"
+    ],
+    "applications": [
+      "Tactile-language model (VTL) pretraining",
+      "Cross-sensor open-world tactile generalization",
+      "Physical property & material commonsense reasoning"
+    ],
+    "specs": {
+      "tasks_count": "Open-world tactile property & cross-sensor reasoning (incl. TouchThinker-Bench)",
+      "embodiments": "Diverse heterogeneous visuotactile & array tactile sensors",
+      "modalities": "Multi-source tactile signals/images + natural language QA & reasoning",
+      "annotations": "Physical properties, material attributes & open-world commonsense reasoning labels",
+      "collection_method": "Multi-source heterogeneous tactile aggregation & reasoning annotation",
+      "data_format": "Multimodal tactile-language dataset"
+    }
   }
 }

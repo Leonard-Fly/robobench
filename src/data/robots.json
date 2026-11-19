@@ -5546,5 +5546,176 @@
     "description": "DM-Tac F 是戴盟机器人面向五指灵巧手指尖推出的紧凑型多模态视触觉传感器，尺寸仅 23×18×18mm，感知区覆盖指腹、指侧与指尖，具备 320×240 感知分辨率与最高 180Hz 定制采样率。",
     "officialUrl": "https://www.dmrobot.com/devices/dm-tac-f.html",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "tiangong-2",
+    "name": "Embodied Tiangong 2.0",
+    "nameZh": "具身天工 2.0",
+    "manufacturer": "Beijing Innovation Center of Humanoid Robotics",
+    "manufacturerZh": "北京人形机器人创新中心",
+    "country": "中国",
+    "category": "humanoid",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价（开源人形母平台）"
+    },
+    "specs": {
+      "height_cm": 163,
+      "weight_kg": 56,
+      "dof_total": 42,
+      "dof_hand": null,
+      "walk_speed_ms": null,
+      "max_speed_ms": 3.33,
+      "payload_kg": 16,
+      "arm_payload_kg": 16,
+      "joint_torque_nm": null,
+      "battery_wh": null,
+      "runtime_h": null,
+      "swappable_battery": null,
+      "compute_tops": 550,
+      "compute_platform": "550 TOPS 端侧具身计算平台",
+      "sensors": "多模态视觉与高精度力控感知",
+      "sdk": "开源母平台，支持科研与行业二次开发"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "具身天工 2.0 介绍页",
+        "url": "https://aixzd.com/robot/jstg",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "北京人形机器人创新中心推出的开源人形母平台，身高 163cm、重 56kg",
+      "全身 42 自由度，双臂最大负载 16kg（操作精度 0.1mm）",
+      "最高拟人奔跑速度可达 12 km/h（3.33 m/s），兼具复杂地形稳定性",
+      "搭载 550 TOPS 端侧算力，面向具身大模型与行业场景二次开发"
+    ],
+    "applications": [
+      "具身智能科研",
+      "工业精密操作与搬运",
+      "开源母平台二次开发"
+    ],
+    "description": "具身天工 2.0 是北京人形机器人创新中心推出的开源通用人形机器人母平台，身高 163cm、重 56kg、全身 42 自由度，双臂最大负载 16kg（精度 0.1mm），最高奔跑速度 12km/h（3.33m/s）并具备 550 TOPS 算力。",
+    "officialUrl": "https://aixzd.com/robot/jstg",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "dexrobot-dexhand021",
+    "name": "DexHand021 Mass Production",
+    "nameZh": "灵巧智能 DexHand021（量产版五指灵巧手）",
+    "manufacturer": "DexRobot",
+    "manufacturerZh": "灵巧智能",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "未公开/需询价"
+    },
+    "specs": {
+      "dof_total": 19,
+      "doa": 12,
+      "fingers": 5,
+      "weight_g": 1000,
+      "payload_kg": 5,
+      "fingertip_force_n": 12,
+      "grip_force_n": 38,
+      "speed_note": "多模态触觉采样率 ≥50Hz",
+      "drive_type": "绳驱仿生设计（12 主动 + 7 被动自由度）",
+      "tactile": "集成位置、法向力（0–20N / 0.1N 分辨率）、切向力、接近觉与温度五模态感知",
+      "tactile_points": null,
+      "interface": "CAN FD",
+      "sdk": "支持 24/7 连续运行（2.38 cfm 主动散热，>100 万次寿命）与开放 SDK"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "DexHand021 规格页",
+        "url": "https://robozaps.com/products/dexrobot-dexhand021",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "五指 19 自由度（12 主动 + 7 被动）绳驱仿生灵巧手，整重 1kg",
+      "抓握力 ≥38N、指尖力 ≥12N、整手负载 5kg，耐用寿命超过 100 万次",
+      "集成位置、法向力、切向力、接近觉与温度 5 种感知模态（0.1N 分辨率）",
+      "内置 2.38 cfm 主动散热设计，支持工业与科研 7×24 小时连续作业"
+    ],
+    "applications": [
+      "人形机器人五指末端",
+      "工业与物流灵巧抓取",
+      "多模态触觉操作科研"
+    ],
+    "description": "DexHand021 量产版是灵巧智能推出的 19 自由度（12 主动 + 7 被动）绳驱仿生五指灵巧手，重 1kg、负载 5kg、抓握力 ≥38N，集成五模态触觉感知并具备 >100 万次循环寿命。",
+    "officialUrl": "https://robozaps.com/products/dexrobot-dexhand021",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "dexrobot-dexhand021-s",
+    "name": "DexHand021 S",
+    "nameZh": "灵巧智能 DexHand021 S（超轻量工业三指手）",
+    "manufacturer": "DexRobot",
+    "manufacturerZh": "灵巧智能",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2025,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "千元级高性价比定位（具体报价需询官方）"
+    },
+    "specs": {
+      "dof_total": 8,
+      "doa": 8,
+      "fingers": 3,
+      "weight_g": 600,
+      "payload_kg": 5,
+      "fingertip_force_n": 10,
+      "grip_force_n": 20,
+      "speed_note": "重复定位精度 ±0.5mm，触觉采样率 ≥50Hz",
+      "drive_type": "齿轮 + 腱绳 + 连杆混合传动",
+      "tactile": "标配位置与 5MP 掌心视觉，可选电容式三维力（0.1N 分辨率）与接近觉（≥1cm）",
+      "tactile_points": null,
+      "interface": "CAN FD / RS485",
+      "sdk": "开源 SDK + 多协议兼容，寿命 20 万次"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "灵巧智能 DexHand021 S 官网",
+        "url": "https://www.dex-robot.com/en/dexhand021S",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "超轻量 600g 工业三指 8 自由度灵巧手，覆盖约 80% 五指常见抓取功能",
+      "额定负载 2.5kg（最大 5kg），指尖力 >10N、指根抓握力 ≥100N，重复精度 ±0.5mm",
+      "标配掌心 500 万像素 30FPS 自动对焦 RGB 相机，支持遮挡下视觉伺服抓取",
+      "可选配 0.1N 分辨率电容式多维触觉与接近觉，支持 CAN FD / RS485 与开源 SDK"
+    ],
+    "applications": [
+      "工业分拣与柔顺装配",
+      "农业采摘与非结构化抓取",
+      "具身视觉-触觉科研教学"
+    ],
+    "description": "DexHand021 S 是灵巧智能推出的超轻量三指 8 自由度工业灵巧手，重仅 0.6kg、最大负载 5kg，标配掌心 5MP 相机与开源 SDK，并可选配 0.1N 分辨率电容多维触觉与接近觉传感器。",
+    "officialUrl": "https://www.dex-robot.com/en/dexhand021S",
+    "dataUpdated": "2026-11"
   }
 ]

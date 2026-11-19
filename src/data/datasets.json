@@ -699,5 +699,116 @@
     "description": "Daimon-Infinity 是戴盟机器人构建的含高分辨率视触觉全模态具身数据集，目前已向社区开源 10,000 小时（超百万条轨迹）并上线阿里魔搭社区，覆盖 17+ 场景与五类数据源，填补了大规模开源数据集缺乏真实接触力与三维形貌模态的空白。",
     "datasetUrl": "https://www.dmrobot.com/daas/daimon-infinity.html",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "interndata-a1",
+    "name": "InternData-A1",
+    "nameZh": "InternData-A1（高保真合成预训练数据集）",
+    "org": "Shanghai AI Laboratory & Peking University",
+    "orgZh": "上海人工智能实验室 / 北京大学",
+    "country": "中国",
+    "releaseDate": "2025-11",
+    "openSource": true,
+    "license": "CC BY 4.0 / 开源生成管线",
+    "specs": {
+      "trajectories_k": 637.5,
+      "hours": 7433.91,
+      "tasks_count": "70 项任务 / 18 技能 / 227 室内场景",
+      "storage_tb": null,
+      "embodiments": "4 种单/双臂本体（Franka Panda、Genie-1、Split ALOHA、ARX Lift-2）",
+      "modalities": "照片级多视角 RGB + 深度/标注 + 关节状态与动作（支持刚性/铰接/柔性织物/流体）",
+      "annotations": "自然语言指令、物体级标注、失败恢复与多技能长程组合",
+      "collection_method": "解耦式自主仿真合成管线（CuRobo 规划 + 堆叠渲染，8×4090 日产 209.7 小时）",
+      "data_format": "LeRobot 格式"
+    },
+    "highlights": [
+      "包含 637,498 条轨迹、4.014 亿帧与 7,433.91 小时交互数据，覆盖 3,185 刚性体、321 铰接体与 20 件柔性织物",
+      "首次证明纯合成数据预训练的 π0 模型可在 49 项仿真与 9 项真机任务上追平甚至超越闭源 π-dataset",
+      "单集合成成本低于 0.003 美元，8 张 RTX 4090 每日可产 209.7 小时数据，且 10 项任务实现 >50% 零样本 Sim-to-Real",
+      "全面开源数据集与 LeRobot 转换及合成管线"
+    ],
+    "applications": [
+      "纯合成数据 VLA 大规模预训练",
+      "刚性/铰接/柔性体/流体多物理交互",
+      "零样本 Sim-to-Real 迁移"
+    ],
+    "description": "InternData-A1 是上海人工智能实验室与北京大学联合开源的大规模高保真合成操作数据集，包含 637,498 条轨迹（7,433.91 小时）、70 项任务与 227 个场景，首次验证纯合成数据预训练 VLA 可追平闭源真机 π-dataset。",
+    "paperUrl": "https://arxiv.org/html/2511.16651v1",
+    "datasetUrl": "https://huggingface.co/datasets/InternRobotics/InternData-A1",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "egolab",
+    "name": "EgoLab",
+    "nameZh": "EgoLab（湿实验室第一视角双手数据集）",
+    "org": "Shanghai AI Laboratory",
+    "orgZh": "上海人工智能实验室",
+    "country": "中国",
+    "releaseDate": "2026-09",
+    "openSource": true,
+    "license": "CC BY 4.0（随 InternW0 发布）",
+    "specs": {
+      "trajectories_k": 3.19,
+      "hours": 275.4,
+      "tasks_count": "湿实验室移液、称量、滴定、过滤、研磨、搅拌与器皿清洗等任务",
+      "storage_tb": null,
+      "embodiments": "人类头戴第一视角双手操作（含 3D 手部与相机运动重建）",
+      "modalities": "2.5K @ 50 fps 第一视角 RGB 视频 + 50 fps 3D 相机/手部运动重建（HaWoR）",
+      "annotations": "VLM 子任务自动切分与精细实验步骤标注",
+      "collection_method": "真实化学/生物湿实验室头戴 DJI Action 系列相机实拍",
+      "data_format": "多模态视频 + 3D 手部运动轨迹"
+    },
+    "highlights": [
+      "专注真实科研湿实验室场景的第一视角双手数据集，总计 275.4 小时（3,192 条轨迹）",
+      "采用 2.5K 高清 50 fps 高帧率录制，精准捕捉移液、滴定、过滤与研磨等精细动作",
+      "配有 50 fps 3D 相机与双手运动重建（HaWoR）及 VLM 子任务切分标注",
+      "作为 InternW0 核心训练语料之一，直接支撑真机 MoF 实验与 20-DoF 定量移液"
+    ],
+    "applications": [
+      "科学实验室自动化操作",
+      "第一视角手部 3D 轨迹向灵巧手迁移",
+      "长程精密实验世界模型训练"
+    ],
+    "description": "EgoLab 是上海人工智能实验室随 InternW0 发布的真实湿实验室第一视角双手数据集，包含 275.4 小时（3,192 条轨迹）的 2.5K 50fps 视频及 3D 手部运动重建标注，覆盖移液、称量、滴定与过滤等精密操作。",
+    "paperUrl": "https://arxiv.org/html/2609.27656v1",
+    "datasetUrl": "https://internrobotics.github.io/internw0",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "touchthinker-1m",
+    "name": "TouchThinker-1M",
+    "nameZh": "TouchThinker-1M（百万级触觉-语言推理数据集）",
+    "org": "TouchThinker Research Team",
+    "orgZh": "TouchThinker 研究团队",
+    "country": "中国",
+    "releaseDate": "2026-06",
+    "openSource": true,
+    "license": "开源（科研/社区开放）",
+    "specs": {
+      "trajectories_k": 1000,
+      "hours": null,
+      "tasks_count": "开放世界触觉属性识别与跨传感器常识推理（含 TouchThinker-Bench）",
+      "storage_tb": null,
+      "embodiments": "多类异构视触觉与阵列式触觉传感器",
+      "modalities": "多源触觉图像/信号 + 自然语言问答与推理链",
+      "annotations": "触觉物理属性、材质与开放世界常识推理标注",
+      "collection_method": "多源异构触觉数据整合与推理标注构建",
+      "data_format": "多模态触觉-语言数据集"
+    },
+    "highlights": [
+      "面向开放世界触觉-语言常识推理的百万级（1M）多源触觉数据集",
+      "覆盖多类不同物理原理的触觉传感器，缓解单一传感器域偏移问题",
+      "同步构建 TouchThinker-Bench 评测基准，系统检验触觉大模型的材质、力觉与推理能力",
+      "为视触觉大模型（VTL / VTLA）的跨传感器泛化提供大规模语义对齐语料"
+    ],
+    "applications": [
+      "触觉-语言大模型（VTL）预训练",
+      "跨触觉传感器开放世界泛化",
+      "具身物理属性与材质常识推理"
+    ],
+    "description": "TouchThinker-1M 是于 2026 年 6 月发布的百万级多源触觉-语言数据集，汇聚多种异构触觉传感器数据以支撑开放世界触觉常识推理，并配套 TouchThinker-Bench 评测基准。",
+    "paperUrl": "https://arxiv.org/html/2606.11637v3",
+    "datasetUrl": "https://arxiv.org/html/2606.11637v3",
+    "dataUpdated": "2026-11"
   }
 ]

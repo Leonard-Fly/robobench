@@ -1375,5 +1375,117 @@
     "paperUrl": "https://arxiv.org/html/2501.15830v5",
     "codeUrl": "https://github.com/SpatialVLA/SpatialVLA",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "gemini-robotics-1-5",
+    "name": "Gemini Robotics 1.5 & ER 1.5",
+    "kind": "vla",
+    "org": "Google DeepMind",
+    "orgZh": "谷歌 DeepMind",
+    "country": "美国",
+    "releaseDate": "2025-09",
+    "openSource": false,
+    "license": "未开源",
+    "specs": {
+      "params_b": null,
+      "architecture": "双模型 Agentic 架构：GR-ER 1.5 具身推理编排 VLM + GR 1.5 带自然语言内部思考链（Thinking）的 VLA",
+      "backbone": "Gemini 2.5 系列多模态推理基座",
+      "action_head": "带内部思考链的连续动作生成 + 跨本体 Motion Transfer",
+      "control_freq_hz": null,
+      "training_data": "大规模多本体遥操作数据 + 跨本体运动迁移与网页多模态知识",
+      "embodiments": "ALOHA、双臂 Franka、Apptronik Apollo 人形机器人等",
+      "cross_embodiment": "强，支持异构本体间跨形态动作迁移（Motion Transfer）",
+      "benchmark_note": "15 项学术基准 GR-ER 1.5 综合 ER 分数 59.6（MMMU 80.7、GPQA 83.3）；在 230 项长程任务中将失败率由 44.5% 降至 22%",
+      "deploy_note": "基于 TPU v4/v5p/v6e 与 JAX 训练，闭源商业与合作部署"
+    },
+    "highlights": [
+      "首创具身 Agentic 双模型协同：GR-ER 1.5 负责多步规划/工具调用，GR 1.5 负责边想边做（Thinking VLA）",
+      "支持跨本体 Motion Transfer，可将在 ALOHA 习得的技能迁移至双臂 Franka 与 Apollo 人形",
+      "GR-ER 1.5 在 15 项具身推理基准取得 59.6 分（Spatial 52.6、QA 66.5、MMMU 80.7）",
+      "Agentic 协同将长程任务总失败率从 44.5% 砍半至 22%，进度得分逼近 80%"
+    ],
+    "applications": [
+      "长程多步具身任务规划",
+      "异构人形与双臂跨本体迁移",
+      "工具使用与开放世界操作"
+    ],
+    "description": "Gemini Robotics 1.5 与 ER 1.5 是谷歌 DeepMind 于 2025 年 9 月发布的双模型具身 Agentic 框架，结合具备空间推理与编排能力的 GR-ER 1.5 和带思考链与跨本体迁移能力的 GR 1.5，将长程任务失败率降至 22%。",
+    "paperUrl": "https://arxiv.org/html/2510.03342v3",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "internw0",
+    "name": "InternW0",
+    "kind": "world-model",
+    "org": "Shanghai AI Laboratory",
+    "orgZh": "上海人工智能实验室",
+    "country": "中国",
+    "releaseDate": "2026-09",
+    "openSource": true,
+    "license": "CC BY 4.0（技术报告与项目开源）",
+    "specs": {
+      "params_b": null,
+      "architecture": "非对称 Mixture-of-Transformers (MoT) 世界动作模型：高容量 Video-DiT + 轻量 Action-DiT 异步双工推理",
+      "modality": "视频世界预测 + 37 维统一动作/状态 + 可选力/触觉接触感知后训练",
+      "resolution": null,
+      "horizon": "异步双工闭环控制，逐层块级 K/V 编辑器对齐时空特征",
+      "action_conditioned": "Video-DiT 与 Action-DiT 双向耦合，支持力/触觉后训练",
+      "training_data": "7,233.5 小时（811,969 条轨迹）跨越 InternData-A1、AgiBot World、RoboCOIN、Galaxea、EgoLab 等 7 大数据集",
+      "use_case": "高频实时世界-动作闭环控制、长程灵巧操作与湿实验室精密作业",
+      "benchmark_note": "RTX 5090D 延迟 60.73 ms (16.47 Hz，提速 3.13×)；LIBERO 98.6%、RoboTwin 2.0-Full 93.12%、Clean2Random 75.60% (#1)"
+    },
+    "highlights": [
+      "非对称 MoT 世界动作模型（WAM），以异步双工与块级 K/V 编辑器解决传统 WAM 推理慢的痛点",
+      "单卡 RTX 5090D 关键路径延迟仅 60.73 ms（16.47 Hz），较 Fast-WAM 提速 3.13 倍",
+      "在 LIBERO 获 98.6%、RoboTwin 2.0-Full 获 93.12%、Clean2Random 获 75.60%（超越 GigaBrain-0.7 的 67.3%）",
+      "真机湿实验室 MoF 实验进度率达 68.4%，20-DoF 灵巧手定量移液进度率达 65.3%"
+    ],
+    "applications": [
+      "16Hz 实时世界动作控制",
+      "高难度域随机化双臂操作",
+      "化学湿实验室精密灵巧作业"
+    ],
+    "description": "InternW0 是上海人工智能实验室于 2026 年 9 月发布的非对称 MoT 世界动作模型，将高容量 Video-DiT 与轻量 Action-DiT 异步耦合，在 RTX 5090D 实现 60.73ms (16.47Hz) 实时控制并刷新 LIBERO (98.6%) 与 RoboTwin 2.0 榜单。",
+    "paperUrl": "https://arxiv.org/html/2609.27656v1",
+    "codeUrl": "https://internrobotics.github.io/internw0",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "diffusion-policy",
+    "name": "Diffusion Policy",
+    "kind": "vla",
+    "org": "Columbia University / Stanford / TRI",
+    "orgZh": "哥伦比亚大学 / 斯坦福 / TRI",
+    "country": "美国",
+    "releaseDate": "2023-03",
+    "openSource": true,
+    "license": "MIT",
+    "specs": {
+      "params_b": 0.1,
+      "architecture": "条件去噪扩散概率模型（DDPM）+ 后退视域动作序列预测（CNN FiLM / Time-series Diffusion Transformer）",
+      "backbone": "ResNet-18 视觉编码器 + 1D 时序 U-Net 或 Diffusion Transformer",
+      "action_head": "DDPM / DDIM 动作序列扩散去噪（100 步训练 / 10–16 步实时推理）",
+      "control_freq_hz": 10,
+      "training_data": "Robomimic、Push-T、BlockPush、Franka Kitchen 及真实单臂/双臂遥操作示范",
+      "embodiments": "UR5、Franka Panda 单臂与双臂平台",
+      "cross_embodiment": "单任务/多任务基础范式，奠定后续几乎所有扩散/流匹配 VLA 动作头基础",
+      "benchmark_note": "4 大基准 15 项任务平均成功率较当时 SOTA 提升 46.9%；真机 Push-T 达 95%、Mug Flip 达 90%",
+      "deploy_note": "DDIM 10 步推理在 RTX 3080 上仅需 0.1s，是机器人模仿学习最经典开源基线"
+    },
+    "highlights": [
+      "开创性地将机器人视觉运动策略建模为动作空间的条件扩散去噪过程（DDPM）",
+      "天然表达多模态动作分布并支持高维动作序列预测，训练极其稳定",
+      "在 4 个基准 15 项任务上较此前 SOTA 平均提升 46.9%，真机 Push-T 达 95%",
+      "MIT 协议全面开源，成为后续 RDT、π0、CogACT 等 VLA 动作头设计的核心基石"
+    ],
+    "applications": [
+      "单臂与双臂高精模仿学习",
+      "多模态轨迹与非刚体操作",
+      "具身策略基础研究基线"
+    ],
+    "description": "Diffusion Policy 是哥伦比亚大学、斯坦福与丰田研究院于 2023 年提出的基础视觉运动策略模型，将动作生成建模为条件扩散去噪过程并结合后退视域控制，在 15 项任务上平均提升 46.9%，奠定了扩散/流匹配 VLA 动作头范式。",
+    "paperUrl": "https://arxiv.org/html/2303.04137v5",
+    "codeUrl": "https://github.com/real-stanford/diffusion_policy",
+    "dataUpdated": "2026-11"
   }
 ]
