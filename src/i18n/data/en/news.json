@@ -1,4 +1,29 @@
 {
+  "keenon-xman-r1-collaborative-cleaning-2026-11-19": {
+    "title": "KEENON Showcases XMAN-R1 Humanoid Collaborative Cleaning Workflow",
+    "summary": "At ISSA Show North America 2026 in Las Vegas on Nov 19, KEENON Robotics demonstrated multi-robot collaboration between cleaning robots (KLEENBOT C55/C40/C30), delivery robots, and the XMAN-R1 humanoid—exploring an embodied AI deployment model where humanoids tidy clutter and surfaces before dedicated cleaners handle floors.",
+    "tags": ["Multi-Robot Collaboration", "Humanoid Cleaning", "ISSA 2026", "Embodied AI Deployment"]
+  },
+  "black-sesame-embodied-ai-hq-qianhai-2026-11-19": {
+    "title": "Black Sesame Technologies Establishes Embodied AI HQ in Shenzhen Qianhai",
+    "summary": "On Nov 19, Black Sesame officially opened its Embodied AI headquarters in Qianhai and announced strategic partnerships with Midea, AUBO, COSCO Shipping, and Joyson Electronics, securing mass-production orders from multiple leading robot makers across humanoids, wheeled, quadruped, and industrial arms.",
+    "tags": ["Embodied AI HQ", "Strategic Partnerships", "Mass Production Orders", "Qianhai"]
+  },
+  "foundation-phantom-mkii-cortex-ii-2026-11-19": {
+    "title": "Foundation Unveils Phantom MKII Humanoid with Cortex II AI",
+    "summary": "Foundation revealed the Phantom MKII (claimed 200 lb / 91 kg walking payload, targeting early 2027 production) and Cortex II control AI. The founder also denied a formal procurement contract with the Israeli military, stating only early exploratory talks occurred.",
+    "tags": ["Phantom MKII", "Cortex II", "200 lb Payload", "2027 Production"]
+  },
+  "circus-ca1-hospital-deployment-2026-11-19": {
+    "title": "Circus SE Deploys CA-1 Autonomous Food Robot in Hospital Setting",
+    "summary": "On Nov 19, Circus SE announced a partnership with Germany's Schoen Clinic Group to launch the CA-1 autonomous meal production system at Harlaching Hospital in Munich, providing 24/7 freshly prepared meals for patients and night-shift staff.",
+    "tags": ["Autonomous Food Service", "Hospital Deployment", "CA-1", "Germany"]
+  },
+  "motion-galbot-s1-motionos-slush-2026-11-19": {
+    "title": "Motion Demonstrates Galbot S1 Palletizing & MotionOS at Slush",
+    "summary": "At the Industrial Renaissance Summit in Helsinki on Nov 19, Motion Robotics showcased the Galbot S1 (320 kg self-weight, 50 kg payload) and its MotionOS orchestration platform built on Google Cloud and Gemini, unveiling a €100k–150k European rental model and shipment to a Belgian warehouse next week.",
+    "tags": ["Galbot S1", "Palletizing", "MotionOS", "European Rental Model"]
+  },
   "genesis-ai-500m-series-a-2026-11-17": {
     "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Scale General-Purpose Robot Eno",
     "summary": "On Nov 17, 2026, general-purpose robotics startup Genesis AI announced a $500 million Series A at a $3.5 billion post-money valuation co-led by Premji Invest, Khosla Ventures, and Eclipse with NVIDIA, AMD Ventures, HSG, and Eric Schmidt participating, fueling GENE model training and commercial deployment of its Eno robot.",
