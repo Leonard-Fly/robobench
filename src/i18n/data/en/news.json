@@ -1,4 +1,29 @@
 {
+  "boston-dynamics-atlas-globalfoundries-2026-11-20": {
+    "title": "Boston Dynamics' Atlas Humanoid Secures First Semiconductor Fab Customer at GlobalFoundries",
+    "summary": "Boston Dynamics and GlobalFoundries announced an expanded robotics partnership: alongside scaling Spot quadruped inspections across U.S., European, and Asian fabs (after two Spot units in Singapore logged ~900 km and 90,000+ inspections at a 99% success rate since April), GlobalFoundries will begin on-site trials of the all-electric Atlas humanoid in early 2027 as Atlas's first non-automotive customer.",
+    "tags": ["Atlas", "Spot", "Semiconductor Fab", "Commercial Trial"]
+  },
+  "unitree-sochen-embodied-ai-lab-2026-11-20": {
+    "title": "Unitree Robotics and Sochen Co-Found Embodied AI Experimental Base Company in Hangzhou",
+    "summary": "Corporate registry filings on Nov 20 show Hangzhou Qianyi Embodied AI Experimental Base Co., Ltd. has been established with RMB 10 million registered capital, jointly held by Unitree Robotics' wholly owned subsidiary and Shanghai Sochen Digital Technology, covering AI software, algorithm development, and smart robot sales.",
+    "tags": ["Unitree Robotics", "Sochen", "Embodied AI Base", "Hangzhou"]
+  },
+  "taisei-150m-ai-robotics-fund-2026-11-20": {
+    "title": "Japanese Construction Giant Taisei Bankrolls $150M Fund for AI and Robotics Startups",
+    "summary": "On Nov 20, 153-year-old Japanese construction firm Taisei Corp. launched a $150 million fund managed by Silicon Valley's Pegasus Tech Ventures to invest in AI, automation, and robotics startups through 2036 to address Japan's shrinking construction workforce.",
+    "tags": ["$150M Fund", "Construction Robotics", "CVC", "Japan"]
+  },
+  "ubtech-hesai-hang-seng-tech-index-2026-11-20": {
+    "title": "UBTECH and Hesai Added to Hang Seng Tech Index in First-Ever Expansion to 50 Constituents",
+    "summary": "On Nov 20, Hang Seng Indexes announced the first-ever expansion of the Hang Seng Tech Index from 30 to 50 constituents, adding humanoid maker UBTECH and LiDAR supplier Hesai-W effective Dec 7, 2026, raising index weighting for embodied AI and robotics hardware.",
+    "tags": ["Hang Seng Tech Index", "UBTECH", "Hesai", "Index Inclusion"]
+  },
+  "armenia-national-center-robotics-physical-ai-2026-11-20": {
+    "title": "Armenia Launches National Center for Robotics and Physical AI (ARPI Center)",
+    "summary": "Unveiled on Nov 20 at DigiTec in Yerevan, Armenia's ARPI Center starts with a $500,000 robotics lab equipped with robotic arms, mobile robots, and NVIDIA GPUs, partnering with local universities to train 50 physical AI engineers annually and exploring collaboration with Agile Robots and FieldAI.",
+    "tags": ["Physical AI Center", "National Policy", "Talent Training", "NVIDIA"]
+  },
   "keenon-xman-r1-collaborative-cleaning-2026-11-19": {
     "title": "KEENON Showcases XMAN-R1 Humanoid Collaborative Cleaning Workflow",
     "summary": "At ISSA Show North America 2026 in Las Vegas on Nov 19, KEENON Robotics demonstrated multi-robot collaboration between cleaning robots (KLEENBOT C55/C40/C30), delivery robots, and the XMAN-R1 humanoid—exploring an embodied AI deployment model where humanoids tidy clutter and surfaces before dedicated cleaners handle floors.",
