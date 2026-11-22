@@ -1,5 +1,33 @@
 [
   {
+    "id": "un-geneva-autonomous-weapons-pact-2026-11-21",
+    "title": "联合国日内瓦会议开启「自主武器系统」国际监管协议谈判路径",
+    "summary": "11 月 21 日，在日内瓦举行的联合国《特定常规武器公约》框架下五天谈判结束后，多国同意在未来两年内推进制定针对致命性自主武器系统（LAWS）的国际协议；尽管非政府组织认为协议节奏不够迅速且缺乏即时法律约束力，但标志着全球对 AI 自主机器人武器化监管迈出关键一步。",
+    "company": "United Nations (CCW)",
+    "companyZh": "联合国",
+    "country": "瑞士/全球",
+    "category": "policy",
+    "publishedAt": "2026-11-21",
+    "sourceName": "The Japan Times",
+    "sourceUrl": "https://www.japantimes.co.jp/news/2026/11/21/world/science-health/killer-robots-pact/",
+    "tags": ["自主武器监管", "联合国", "机器人伦理", "国际政策"],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "china-embodied-ai-apec-export-surge-2026-11-21",
+    "title": "前三季度深圳对 APEC 经济体出口机器人同比暴增 7.5 倍，国产具身智能加速出海与产线落地",
+    "summary": "据 IT之家 11 月 21 日报道，APEC 峰会前夕深圳 151 台人形机器人齐舞创吉尼斯世界纪录；深圳海关数据显示今年前三季度深圳对 APEC 其他经济体出口各类机器人达 48.6 亿元、同比增长 7.5 倍。同期仙工智能（06106.HK）机器人大脑出货超 5 万台、千寻智能 Moz1 在宁德时代产线实现全年零故障运行、云深处科创板 IPO 获受理拟募资 25.03 亿元。",
+    "company": "UBTECH / Galbot / SEER / DEEP Robotics",
+    "companyZh": "优必选 / 银河通用 / 仙工智能 / 云深处",
+    "country": "中国",
+    "category": "commercial",
+    "publishedAt": "2026-11-21",
+    "sourceName": "IT之家",
+    "sourceUrl": "https://www.ithome.com/1/030/436.htm",
+    "tags": ["机器人出海", "商业落地", "APEC 2026", "国产具身智能"],
+    "dataUpdated": "2026-11"
+  },
+  {
     "id": "boston-dynamics-atlas-globalfoundries-2026-11-20",
     "title": "波士顿动力 Atlas 人形机器人首获晶圆厂客户，将在格芯启动非汽车场景实测",
     "summary": "波士顿动力与半导体制造商格芯（GlobalFoundries）宣布扩大合作：除在美、欧、亚多座晶圆厂扩大部署 Spot 四足机器人巡检（新加坡两台 Spot 自 4 月以来累计巡检近 900 公里、完成超 9 万次任务且成功率达 99%）外，格芯将于 2027 年初启动全电动 Atlas 人形机器人现场测试，成为汽车行业以外首个验证 Atlas 的芯片制造客户。",
@@ -70,6 +98,20 @@
     "dataUpdated": "2026-11"
   },
   {
+    "id": "medtronic-hugo-fda-general-surgery-2026-11-20",
+    "title": "美敦力 Hugo 手术机器人获美国 FDA 扩展批准，正式切入普外科软组织手术市场",
+    "summary": "美敦力宣布其 Hugo 机器人辅助手术系统获得美国 FDA 扩展 510(k) 许可，适应症从泌尿外科拓展至胆囊切除、胃旁路、疝修补及阑尾切除等普通外科手术（覆盖美国每年约 350 万例软组织手术），目前 Hugo 已进入全球 35 个以上国家和地区，预计 2027 财年底全球累计手术量将突破 5 万例。",
+    "company": "Medtronic",
+    "companyZh": "美敦力",
+    "country": "美国/爱尔兰",
+    "category": "policy",
+    "publishedAt": "2026-11-20",
+    "sourceName": "The Robot Report",
+    "sourceUrl": "https://www.therobotreport.com/medtronics-hugo-surgical-robot-ready-for-bigger-operation/",
+    "tags": ["医疗机器人", "FDA批准", "Hugo RAS", "普通外科"],
+    "dataUpdated": "2026-11"
+  },
+  {
     "id": "keenon-xman-r1-collaborative-cleaning-2026-11-19",
     "title": "擎朗智能展示 XMAN-R1 人形机器人协同清洁方案",
     "summary": "11 月 19 日在拉斯维加斯 ISSA Show North America 2026 上，擎朗智能展示了清洁机器人（KLEENBOT C55/C40/C30）、配送机器人与 XMAN-R1 人形机器人的多机协同工作流，探索由人形机器人先整理杂物与桌面、再由专用清洁机器人完成地面清扫的具身智能落地模式。",
@@ -137,6 +179,20 @@
     "sourceName": "Humanoid.guide",
     "sourceUrl": "https://humanoid.guide/motion-demonstrates-galbot-s1-palletizing-at-slush-summit/",
     "tags": ["Galbot S1", "码垛", "MotionOS", "欧洲租赁模式"],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "humyn-labs-47m-series-a-robotics-data-2026-11-18",
+    "title": "机器人数据公司 Humyn Labs 完成 4700 万美元 A 轮融资，Accel 领投加速真实场景数采",
+    "summary": "专注于机器人真实世界训练数据采集的初创公司 Humyn Labs 宣布完成 4700 万美元 A 轮融资（含 Accel 领投的 2600 万美元股权与 Lighthouse Canton 领投的 2100 万美元风险债权），通过自研双目硬件在全球 20 余国采集视觉、声音、触觉与运动四模态人类操作数据，并计划拓展至旧金山、伦敦和首尔。",
+    "company": "Humyn Labs",
+    "companyZh": "Humyn Labs",
+    "country": "印度/美国",
+    "category": "funding",
+    "publishedAt": "2026-11-18",
+    "sourceName": "The Robot Report",
+    "sourceUrl": "https://www.therobotreport.com/humyn-labs-raises-47m-to-collect-real-world-data-for-robotics/",
+    "tags": ["4700万美元融资", "机器人数据", "多模态数采", "Accel"],
     "dataUpdated": "2026-11"
   },
   {

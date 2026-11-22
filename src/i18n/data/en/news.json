@@ -1,4 +1,14 @@
 {
+  "un-geneva-autonomous-weapons-pact-2026-11-21": {
+    "title": "UN Talks in Geneva Open Two-Year Path Toward International Pact on Autonomous Weapons",
+    "summary": "On Nov 21, after five days of talks in Geneva, states agreed to work over the next two years toward an international agreement regulating lethal autonomous weapons systems—a step welcomed as progress toward AI robotics governance, though NGOs criticized the lack of immediate binding rules.",
+    "tags": ["Autonomous Weapons", "United Nations", "Robotics Ethics", "Global Policy"]
+  },
+  "china-embodied-ai-apec-export-surge-2026-11-21": {
+    "title": "Shenzhen Robot Exports to APEC Economies Surge 7.5x YoY in Q1–Q3 2026 Amid Commercial Rollouts",
+    "summary": "According to a Nov 21 IT Home report, Shenzhen exported RMB 4.86B in robots to other APEC economies in Q1–Q3 2026 (+7.5x YoY), while 151 humanoids set a Guinness World Record ahead of APEC. Highlights include SEER Robotics (06106.HK) shipping 50,000+ robot brains, Spirit AI's Moz1 running zero-fault for a year at CATL, and DEEP Robotics' RMB 2.503B STAR Market IPO filing.",
+    "tags": ["Robot Exports", "Commercialization", "APEC 2026", "China Embodied AI"]
+  },
   "boston-dynamics-atlas-globalfoundries-2026-11-20": {
     "title": "Boston Dynamics' Atlas Humanoid Secures First Semiconductor Fab Customer at GlobalFoundries",
     "summary": "Boston Dynamics and GlobalFoundries announced an expanded robotics partnership: alongside scaling Spot quadruped inspections across U.S., European, and Asian fabs (after two Spot units in Singapore logged ~900 km and 90,000+ inspections at a 99% success rate since April), GlobalFoundries will begin on-site trials of the all-electric Atlas humanoid in early 2027 as Atlas's first non-automotive customer.",
@@ -24,6 +34,11 @@
     "summary": "Unveiled on Nov 20 at DigiTec in Yerevan, Armenia's ARPI Center starts with a $500,000 robotics lab equipped with robotic arms, mobile robots, and NVIDIA GPUs, partnering with local universities to train 50 physical AI engineers annually and exploring collaboration with Agile Robots and FieldAI.",
     "tags": ["Physical AI Center", "National Policy", "Talent Training", "NVIDIA"]
   },
+  "medtronic-hugo-fda-general-surgery-2026-11-20": {
+    "title": "Medtronic's Hugo Surgical Robot Wins Expanded U.S. FDA Clearance for General Surgery",
+    "summary": "Medtronic secured expanded FDA 510(k) clearance for its Hugo robotic-assisted surgery (RAS) system across upper and lower abdominal general surgery procedures—representing ~3.5 million U.S. surgeries annually—expanding beyond urology as Hugo enters 35+ countries and targets 50,000+ cumulative procedures by FY2027 end.",
+    "tags": ["Surgical Robotics", "FDA Clearance", "Hugo RAS", "General Surgery"]
+  },
   "keenon-xman-r1-collaborative-cleaning-2026-11-19": {
     "title": "KEENON Showcases XMAN-R1 Humanoid Collaborative Cleaning Workflow",
     "summary": "At ISSA Show North America 2026 in Las Vegas on Nov 19, KEENON Robotics demonstrated multi-robot collaboration between cleaning robots (KLEENBOT C55/C40/C30), delivery robots, and the XMAN-R1 humanoid—exploring an embodied AI deployment model where humanoids tidy clutter and surfaces before dedicated cleaners handle floors.",
@@ -48,6 +63,11 @@
     "title": "Motion Demonstrates Galbot S1 Palletizing & MotionOS at Slush",
     "summary": "At the Industrial Renaissance Summit in Helsinki on Nov 19, Motion Robotics showcased the Galbot S1 (320 kg self-weight, 50 kg payload) and its MotionOS orchestration platform built on Google Cloud and Gemini, unveiling a €100k–150k European rental model and shipment to a Belgian warehouse next week.",
     "tags": ["Galbot S1", "Palletizing", "MotionOS", "European Rental Model"]
+  },
+  "humyn-labs-47m-series-a-robotics-data-2026-11-18": {
+    "title": "Humyn Labs Raises $47M Series A Backed by Accel to Collect Real-World Robotics Training Data",
+    "summary": "Real-world robotics data startup Humyn Labs raised $47 million ($26M equity led by Accel plus $21M venture debt led by Lighthouse Canton) to scale its custom two-camera capture hardware across 20+ countries—collecting vision, audio, touch, and motion data—and open offices in San Francisco, London, and Seoul.",
+    "tags": ["$47M Series A", "Robotics Data", "Multimodal Capture", "Accel"]
   },
   "genesis-ai-500m-series-a-2026-11-17": {
     "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Scale General-Purpose Robot Eno",
