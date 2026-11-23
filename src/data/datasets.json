@@ -810,5 +810,113 @@
     "paperUrl": "https://arxiv.org/html/2606.11637v3",
     "datasetUrl": "https://arxiv.org/html/2606.11637v3",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "galaxea-open-world",
+    "name": "Galaxea Open-World Dataset",
+    "nameZh": "Galaxea Open-World Dataset（星海图开放世界单本体数据集）",
+    "org": "Galaxea AI / Tsinghua IIIS",
+    "orgZh": "星海图 / 清华大学交叉信息研究院",
+    "country": "中国",
+    "releaseDate": "2025-08",
+    "openSource": true,
+    "license": "开源（RLDS / LeRobot 格式公开）",
+    "specs": {
+      "trajectories_k": null,
+      "hours": 500,
+      "tasks_count": "住宅、厨房、零售与办公等开放世界长程移动操作任务",
+      "storage_tb": null,
+      "embodiments": "星海图统一轮式双臂移动操作本体（Single Uniform Embodiment）",
+      "modalities": "多视角 RGB + 本体关节状态 + 动作轨迹 + 精细子任务语言标注",
+      "annotations": "精确至子任务粒度的自然语言指令标注",
+      "collection_method": "真实人居与工作场景真机遥操作采集",
+      "data_format": "RLDS 与 LeRobot 双格式"
+    },
+    "highlights": [
+      "超过 500 小时在真实人居、厨房、零售与办公环境下采集的开放世界真机数据",
+      "全量采用单一统一机器人本体采集，避免异构本体分布漂移，显著提升单本体预训练效果",
+      "提供精细子任务级语言标注与 RLDS / LeRobot 标准格式，直接支撑 G0 双系统 VLA 模型"
+    ],
+    "applications": [
+      "单本体 VLA 预训练与微调",
+      "长程移动操作与桌面整理学习",
+      "双系统 VLM+VLA 分层控制研究"
+    ],
+    "description": "Galaxea Open-World Dataset 是星海图与清华团队于 2025 年 8 月开源的 500+ 小时真实开放世界机器人数据集，采用统一移动双臂本体在家庭、零售与办公场景采集并附带精细子任务语言标注。",
+    "paperUrl": "https://arxiv.org/abs/2509.00576",
+    "datasetUrl": "https://github.com/OpenGalaxea/GalaxeaVLA",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "dexmimicgen",
+    "name": "DexMimicGen",
+    "nameZh": "DexMimicGen（双臂灵巧人形自动数据生成集）",
+    "org": "NVIDIA Research / Stanford",
+    "orgZh": "NVIDIA Research / 斯坦福大学",
+    "country": "美国",
+    "releaseDate": "2024-10",
+    "openSource": true,
+    "license": "开源（科研/仿真环境公开）",
+    "specs": {
+      "trajectories_k": 21,
+      "hours": null,
+      "tasks_count": "多协调模式双臂灵巧操作仿真任务（基准含 21K 示范，可扩展至 780K 轨迹）",
+      "storage_tb": null,
+      "embodiments": "多款双臂机械臂与灵巧手人形平台（含真机罐装分拣迁移）",
+      "modalities": "双视角/多视角视觉 + 双臂灵巧手关节轨迹 + 物体中心子任务分段",
+      "annotations": "物体中心子任务协同约束与运动规划标注",
+      "collection_method": "仅用 60 条人类示范自动合成 21,000+ 双臂灵巧轨迹（11 小时可扩增 78 万条）",
+      "data_format": "MimicGen / Robosuite 兼容格式"
+    },
+    "highlights": [
+      "将 MimicGen 自动化合成范式拓展至高维双臂与多指灵巧手人形机器人操作",
+      "仅基于 60 条人类源示范即可自动生成 21,000 条高质量双臂灵巧示范轨迹",
+      "11 小时内可生成相当于 6,500 小时（约 9 个月）人工采集规模的 78 万条仿真轨迹，并验证真机迁移"
+    ],
+    "applications": [
+      "人形机器人双臂灵巧手模仿学习",
+      "高维双臂协同约束合成数据扩增",
+      "Real-to-Sim-to-Real 灵巧操作迁移"
+    ],
+    "description": "DexMimicGen 是 NVIDIA 与斯坦福于 2024 年 10 月推出的双臂灵巧人形自动化数据生成系统与数据集，仅凭 60 条人类示范即可合成 2.1 万条双臂灵巧轨迹并支持真机迁移。",
+    "paperUrl": "https://arxiv.org/abs/2410.24185",
+    "datasetUrl": "https://arxiv.org/abs/2410.24185",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "mimicgen",
+    "name": "MimicGen",
+    "nameZh": "MimicGen（大规模人类示范自动化扩增数据集）",
+    "org": "NVIDIA Seattle Robotics Lab / UT Austin",
+    "orgZh": "NVIDIA 西雅图机器人实验室 / UT Austin",
+    "country": "美国",
+    "releaseDate": "2023-10",
+    "openSource": true,
+    "license": "NVIDIA Source Code License（开源）",
+    "specs": {
+      "trajectories_k": 50,
+      "hours": null,
+      "tasks_count": "18 项长程与高精度操作任务（装配、堆叠、穿线、咖啡制作等）",
+      "storage_tb": null,
+      "embodiments": "Franka Panda、Sawyer、KUKA IIWA、UR5e（跨 2 个仿真器及真机机械臂）",
+      "modalities": "多视角 RGB + 低维状态 + 末端执行器/关节动作轨迹",
+      "annotations": "物体中心子任务分段与跨本体/跨场景适配轨迹",
+      "collection_method": "仅基于约 200 条人类遥操作示范实现约 250 倍自动化合成扩增",
+      "data_format": "Robomimic / HDF5 标准格式"
+    },
+    "highlights": [
+      "CoRL 2023 经典数据合成基石：仅用约 200 条人类示范即自动生成 50,000+ 条跨场景与跨本体轨迹",
+      "实现约 250 倍数据放大倍数，且等量 MimicGen 合成数据训练效果可媲美真实人类示范",
+      "直接催生了 RoboCasa（10 万条）、DexMimicGen、SoftMimicGen 等后续大规模合成数据集生态"
+    ],
+    "applications": [
+      "高精度装配与长程模仿学习训练",
+      "跨机械臂本体技能迁移",
+      "少样本人工示范百倍级数据放大"
+    ],
+    "description": "MimicGen 是 NVIDIA 与 UT Austin 于 CoRL 2023 提出的可扩展机器人数据生成系统与数据集，利用约 200 条人类示范自动合成超 5 万条跨场景、跨物体与跨机械臂的高精度轨迹。",
+    "paperUrl": "https://arxiv.org/abs/2310.17596",
+    "datasetUrl": "https://arxiv.org/abs/2310.17596",
+    "dataUpdated": "2026-11"
   }
 ]

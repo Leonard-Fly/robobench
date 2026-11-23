@@ -5717,5 +5717,174 @@
     "description": "DexHand021 S 是灵巧智能推出的超轻量三指 8 自由度工业灵巧手，重仅 0.6kg、最大负载 5kg，标配掌心 5MP 相机与开源 SDK，并可选配 0.1N 分辨率电容多维触觉与接近觉传感器。",
     "officialUrl": "https://www.dex-robot.com/en/dexhand021S",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "embodied-ai-air",
+    "name": "Embodied AI AIR",
+    "nameZh": "Embodied AI AIR（柔顺腱绳驱动工厂人形）",
+    "manufacturer": "Embodied AI",
+    "manufacturerZh": "Embodied AI",
+    "country": "瑞士",
+    "category": "wheeled",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 50000,
+      "note": "第三方报道估算售价约 50,000 美元（按现场评估与试点订单交付）"
+    },
+    "specs": {
+      "height_cm": 160,
+      "weight_kg": 65,
+      "dof_total": null,
+      "payload_kg": 5,
+      "speed_ms": 0.83,
+      "battery_hours": null,
+      "compute": "机载实时物理 AI 推理（NVIDIA 生态合作）",
+      "sensors": "高频力/碰撞安全感知，支持无安全围栏人机协同",
+      "actuators": "躯干集中式电机 + 柔顺腱绳传动双臂（单臂自重约 2kg，负载 5kg）",
+      "dexterous_hand": "柔顺双臂末端夹爪/抓取机构"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "Embodied AI AIR 产品页（Origin of Bots）",
+        "url": "https://www.originofbots.com/robot/embodied-ai-air-embodied-ai",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "EPFL 衍生企业 Embodied AI 于 Humanoid Europe 2026 发布，从立项到整机仅用 9 个月",
+      "电机与减速器集中于躯干，2kg 轻量化腱绳双臂遇人或障碍物可被动让步，无需安全围栏",
+      "采用先远程遥操作上岗、再约 1 个月内自主掌握产线任务的渐进式部署模式，技能可跨机共享",
+      "工业场景实测可靠性达 98%，计划 2027 年完成欧盟 CE 认证"
+    ],
+    "applications": [
+      "电子与汽车零部件分拣配料（Kitting）",
+      "SMT 产线上下料与包装",
+      "无围栏人机混线协同装配"
+    ],
+    "description": "Embodied AI AIR 是瑞士 EPFL 衍生团队推出的轮式双臂工业人形机器人（高 160cm、重 65kg、单臂负载 5kg），通过躯干集中驱动与轻量化腱绳手臂实现无需安全围栏的人机近距协作。",
+    "officialUrl": "https://www.originofbots.com/robot/embodied-ai-air-embodied-ai",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "deeprobotics-x50",
+    "name": "DEEP Robotics X50",
+    "nameZh": "云深处 绝影 X50（重载工业四足机器人）",
+    "manufacturer": "DEEP Robotics",
+    "manufacturerZh": "云深处科技",
+    "country": "中国",
+    "category": "quadruped",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": null,
+      "note": "行业级定制报价（需联系云深处官方）"
+    },
+    "specs": {
+      "height_cm": null,
+      "weight_kg": null,
+      "dof_total": 12,
+      "payload_kg": 50,
+      "speed_ms": 3.0,
+      "battery_hours": 3.5,
+      "compute": "机载感控融合与强化学习运动控制计算单元",
+      "sensors": "激光雷达点云 + IMU 多源实时融合感知",
+      "actuators": "高刚性、高响应关节模组（支持强抗扰与热平衡连续做功）",
+      "dexterous_hand": "支持消防水炮、机械臂及多类巡检/破拆模块挂载"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "云深处科技四足机器人官网",
+        "url": "https://www.deeprobotics.cn/index.php/products/index/2.html",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "打破负载-速度-通过性“不可能三角”：50kg 持续运行负载下仍能以 3m/s 连续奔跑 2 公里",
+      "20kg 负载下续航达 3.5 小时，支持翻越 35° 斜坡与 25cm 连续楼梯及无踢面镂空钢梯",
+      "激光雷达点云与 IMU 感控融合预判落脚点，可在化工厂管廊与电厂多层钢梯稳定通行",
+      "高刚性关节与新一代姿态控制算法可主动消解消防高压水炮后坐力与碰撞扰动"
+    ],
+    "applications": [
+      "应急消防灭火与废墟救援装备投送",
+      "高海拔电力塔基与变电站多点位巡检",
+      "化工装置区及多层厂房复杂地形作业"
+    ],
+    "description": "绝影 X50 是云深处科技于 2026 年 11 月发布的重载行业四足机器人，在不增加机身尺寸的前提下实现 50kg 持续运行负载、满载 3m/s 奔跑 2 公里及 20kg 负载下 3.5 小时续航。",
+    "officialUrl": "https://hainan.ifeng.com/c/8y9K53BCimj",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "robotera-xhand1-pro",
+    "name": "ROBOTERA XHAND 1 Pro",
+    "nameZh": "星动纪元 XHAND 1 Pro（21 自由度全反驱灵巧手）",
+    "manufacturer": "RobotEra",
+    "manufacturerZh": "星动纪元",
+    "country": "中国",
+    "category": "hand",
+    "releaseYear": 2026,
+    "status": "available",
+    "price": {
+      "cny": null,
+      "usd": 30000,
+      "note": "海外公开渠道参考价 $30,000（支持左右手版本）"
+    },
+    "specs": {
+      "dof_total": 21,
+      "doa": 21,
+      "fingers": 5,
+      "weight_g": 884,
+      "payload_kg": null,
+      "fingertip_force_n": 15,
+      "grip_force_n": null,
+      "speed_note": "重复开合速度 >5Hz，俯仰重复精度 ±0.1mm / 侧摆 ±0.2mm",
+      "drive_type": "全关节可反向驱动（Fully Backdrivable），支持 MIT/前馈力控/示教模式",
+      "tactile": "5 指尖三维力 + 10 指腹 + 3 掌心触觉（0.1–25N，0.01N 分辨率）+ 10mm 接近觉",
+      "tactile_points": 18,
+      "interface": "EtherCAT / RS-485 / CAN FD（24V–72V 宽压输入）",
+      "sdk": "实时全手触觉可视化与动态 URDF，兼容 Manus Pro / IO-Tech 遥操作"
+    },
+    "purchaseChannels": [
+      {
+        "type": "inquiry",
+        "name": "星动纪元英文官网",
+        "url": "https://www.robotera.com/en/",
+        "regions": [
+          "cn",
+          "global"
+        ]
+      },
+      {
+        "type": "distributor",
+        "name": "AIFITLAB 渠道页",
+        "url": "https://aifitlab.com/products/robotera-xhand-1-pro",
+        "regions": [
+          "global"
+        ]
+      }
+    ],
+    "highlights": [
+      "整手仅重 884g 却集成 21 个全反驱主动自由度，最大抓握直径达 160mm，指尖力 15N",
+      "覆盖 5 指尖三维力、10 指腹与 3 掌心区域（0.01N 分辨率）及 10mm 非接触接近觉",
+      "重复开合频率 >5Hz，俯仰关节重复定位精度 ±0.1mm，带载寿命超 20 万次",
+      "支持 EtherCAT / RS-485 / CAN FD 与 MIT 力控、前馈力控及动觉示教模式"
+    ],
+    "applications": [
+      "人形机器人高灵巧双手操作",
+      "精细装配与柔性物体抓取",
+      "遥操作数采与触觉强化学习研究"
+    ],
+    "description": "XHAND 1 Pro 是星动纪元推出的高自由度旗舰灵巧手，重量仅 884g 并具备 21 个全反驱主动自由度、18 处多维触觉/接近觉覆盖及 15N 指尖力，面向高精工业与具身智能科研场景。",
+    "officialUrl": "https://aifitlab.com/products/robotera-xhand-1-pro",
+    "dataUpdated": "2026-11"
   }
 ]

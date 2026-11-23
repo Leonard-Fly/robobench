@@ -1487,5 +1487,119 @@
     "paperUrl": "https://arxiv.org/html/2303.04137v5",
     "codeUrl": "https://github.com/real-stanford/diffusion_policy",
     "dataUpdated": "2026-11"
+  },
+  {
+    "id": "fast-wam",
+    "name": "Fast-WAM",
+    "kind": "world_model",
+    "org": "Tsinghua University (IIIS)",
+    "orgZh": "清华大学交叉信息研究院",
+    "country": "中国",
+    "releaseDate": "2026-03",
+    "openSource": true,
+    "license": "开源（论文与权重公开）",
+    "specs": {
+      "params_b": 6.02,
+      "architecture": "视频扩散 Transformer + 动作专家解耦去噪（训练期视频联合监督、推理期跳过未来帧生成）",
+      "backbone": "预训练视频生成扩散模型（~6.02B 可训练参数）",
+      "action_head": "流匹配/扩散动作专家块（直接基于当前帧缓存特征去噪输出动作块）",
+      "control_freq_hz": 5,
+      "training_data": "LIBERO（每套件 500 条示范）与 RoboTwin（2,500 条纯净 + 25,000 条域随机化示范）",
+      "embodiments": "单臂桌面平台与 RoboTwin 双臂仿真/真机平台",
+      "cross_embodiment": "无需大规模具身预训练即可在多任务桌面操作取得 SOTA 级表现",
+      "benchmark_note": "无具身预训练下 LIBERO 四套件均值 97.6%（Spatial 98.2%、Object 100%、Goal 97.0%、Long 95.2%），RoboTwin 达 91.8%",
+      "deploy_note": "单次推理延迟仅 190ms，较同类先想象后执行 WAM（Fast-WAM-IDM 810ms）提速超 4 倍"
+    },
+    "highlights": [
+      "系统解耦并验证了世界动作模型（WAM）的核心收益来自训练期视频联合建模，而非推理期显式视频想象",
+      "推理时跳过未来视频帧去噪，延迟降至 190ms（比想象-执行基线快 4 倍以上）",
+      "无需具身预训练即在 LIBERO 取得 97.6% 平均成功率、RoboTwin 达 91.8%",
+      "成为 2026 年 Light-WAM、Faster-WAM、LoopedWAM 等高效 WAM 架构的重要开源基线"
+    ],
+    "applications": [
+      "低延迟桌面与双臂操作控制",
+      "世界动作模型（WAM）高效训练范式研究",
+      "无具身预训练快速微调部署"
+    ],
+    "description": "Fast-WAM 是清华大学交叉信息研究院于 2026 年 3 月提出的高效世界动作模型，保留训练期视频预测监督并在推理时跳过未来帧生成，将延迟降至 190ms（提速超 4 倍），在 LIBERO 取得 97.6% 平均成功率。",
+    "paperUrl": "https://arxiv.org/abs/2603.16666",
+    "codeUrl": "https://yuantianyuan01.github.io/FastWAM/",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "supermimic",
+    "name": "SuperMimic",
+    "kind": "world_model",
+    "org": "UC Berkeley",
+    "orgZh": "加州大学伯克利分校",
+    "country": "美国",
+    "releaseDate": "2026-10",
+    "openSource": true,
+    "license": "开源（GitHub 公开）",
+    "specs": {
+      "params_b": null,
+      "architecture": "共享可微世界模型（Differentiable World Model）+ 短程想象展开 BPTT 解析梯度全身控制",
+      "backbone": "基于刚体仿真转移日志拟合的统一可微动力学世界模型（基于 mjlab 构建）",
+      "action_head": "与世界模型同步联合训练的人形全身动作跟踪策略网络",
+      "control_freq_hz": 50,
+      "training_data": "大规模人体动作数据集（1–264 小时运动数据，涵盖 129,514 条基准动作）",
+      "embodiments": "Unitree G1 等全尺寸/中尺寸双足人形机器人",
+      "cross_embodiment": "单策略跨海量动作统一摊销训练，无需逐动作专家蒸馏",
+      "benchmark_note": "单卡训练 3 小时即超越 128 卡 7 天基线（GPU 小时减少 >1000×）；129,514 条动作仅失败 25 条（基线 179 条），双卡 9.8 小时零失败",
+      "deploy_note": "支持直接真机迁移至宇树 G1，完成多样化及高难度杂技动作控制"
+    },
+    "highlights": [
+      "荣获 CoRL 2026 Oral 与 Best Paper Award，重写人形全身运动跟踪训练算力账本",
+      "单张 GPU 训练 3 小时即击败 128 卡 7 天的 SOTA 基线，GPU 小时数降低 1000 倍以上",
+      "在 129,514 条基准动作上将失败数从 179 条降至 25 条，双卡训练 9.8 小时实现零失败",
+      "开源完整代码库（基于 mjlab），支持直接迁移至宇树 G1 真机执行高动态动作"
+    ],
+    "applications": [
+      "人形机器人全身高动态动作模仿与杂技控制",
+      "极低算力成本人形全身控制规模化训练",
+      "可微世界模型解析梯度强化学习"
+    ],
+    "description": "SuperMimic 是 UC Berkeley 获 CoRL 2026 最佳论文奖的人形全身控制架构，通过共享可微世界模型与解析梯度在单卡 3 小时内超越 128 卡 7 天基线，并成功迁移至宇树 G1 真机。",
+    "paperUrl": "https://arxiv.org/abs/2610.28480",
+    "codeUrl": "https://github.com/hybridrobotics/supermimic",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "mobilewam",
+    "name": "MobileWAM",
+    "kind": "world_model",
+    "org": "Tsinghua AIR / HKUST-GZ / SJTU / Li Auto",
+    "orgZh": "清华 AIR / 港科大（广州）/ 上交 / 理想汽车",
+    "country": "中国",
+    "releaseDate": "2026-08",
+    "openSource": true,
+    "license": "开源计划中（arXiv 论文已发布）",
+    "specs": {
+      "params_b": 6.5,
+      "architecture": "Mixture-of-Transformers（30 层 Wan 视频 DiT + 3 专家 Mobile MoE 动作专家）+ Chain-of-Foresight 训练辅助链",
+      "backbone": "30 层 Wan 预训练文/图生视频扩散 Transformer（宽度 3072）+ 冻结 T5 编码器与 3D VAE",
+      "action_head": "宽度 1024 动作专家（共享/移动/操作三专家软路由 MoE，流匹配 20 步去噪输出 13 维全身动作块）",
+      "control_freq_hz": null,
+      "training_data": "ManiSkill-HAB（每子任务 1,000 条过滤示范）及 ARX Lift2 遥操作真机数据",
+      "embodiments": "Fetch 仿真移动操作平台、ARX Lift2 轮式升降双臂机器人",
+      "cross_embodiment": "纯 RGB 双视角（头部+腕部）输入，无需点云或特权分割即可统一移动与操作",
+      "benchmark_note": "ManiSkill-HAB SetTable 平均成功率达 73.0%（领先 AC-DiT +17.4 个百分点）；真机 ARX Lift2 长程复合任务达 15%（π0.5 为 0%）",
+      "deploy_note": "推理期剔除视频生成与 CoF 分支，单卡 A800 延迟 938ms，较 Motus（4950ms）快 5.3×、较 LingBot-VA（8126ms）快 8.7×"
+    },
+    "highlights": [
+      "首个系统性将视频生成世界动作模型（WAM）拓展至全身移动操作（Mobile Manipulation）的架构",
+      "提出 Chain-of-Foresight（CoF）循环潜在未来预测监督，在推理期零额外开销下显著提升长程因果一致性",
+      "动作专家内置共享/移动/操作三专家 Mobile MoE 软路由，消除移动底盘与机械臂抓取的梯度冲突",
+      "纯 RGB 单阶段训练即在 ManiSkill-HAB 达 73.0% SOTA，推理速度较想象-执行 WAM 快 5–8 倍"
+    ],
+    "applications": [
+      "轮式人形/移动双臂长程家庭与仓储作业",
+      "移动视角下的全身协同抓取与导航",
+      "高效单阶段世界动作模型部署"
+    ],
+    "description": "MobileWAM 是清华 AIR 等联合提出的面向全身移动操作的世界动作模型（约 6.5B），结合三专家 Mobile MoE 与零推理开销的 Chain-of-Foresight 监督，在 ManiSkill-HAB 取得 73.0% 平均成功率并在 ARX Lift2 真机超越 π0.5。",
+    "paperUrl": "https://arxiv.org/html/2608.04657",
+    "codeUrl": "https://arxiv.org/html/2608.04657",
+    "dataUpdated": "2026-11"
   }
 ]

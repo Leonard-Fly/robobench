@@ -944,5 +944,86 @@
       "benchmark_note": "+46.9% average improvement across 15 tasks; 95% real Push-T and 90% Mug Flip",
       "deploy_note": "0.1 s latency on RTX 3080 via 10-step DDIM; classic MIT open-source baseline"
     }
+  },
+  "fast-wam": {
+    "orgZh": "Tsinghua University (IIIS)",
+    "country": "China",
+    "license": "Open Source (paper & weights released)",
+    "specs": {
+      "architecture": "Video diffusion transformer + decoupled action expert (retains video co-training, skips test-time future generation)",
+      "backbone": "Pretrained video generation diffusion transformer (~6.02B trainable params)",
+      "action_head": "Flow-matching/diffusion action expert denoising directly on cached current-frame features",
+      "training_data": "LIBERO (500 demos/suite) & RoboTwin (2,500 clean + 25,000 domain-randomized demos)",
+      "embodiments": "Single-arm tabletop & RoboTwin bimanual simulation/real platforms",
+      "cross_embodiment": "Achieves SOTA-competitive manipulation without large-scale embodied pretraining",
+      "benchmark_note": "97.6% mean across 4 LIBERO suites (Spatial 98.2%, Object 100%, Goal 97.0%, Long 95.2%) & 91.8% on RoboTwin without pretraining",
+      "deploy_note": "190 ms real-time latency, >4× faster than imagine-then-execute WAMs (Fast-WAM-IDM at 810 ms)"
+    },
+    "highlights": [
+      "Disentangles video co-training from test-time imagination, showing WAM gains mainly stem from training-time video supervision",
+      "Skips test-time future-frame generation to achieve 190 ms latency (>4× faster than imagine-then-execute baselines)",
+      "Hits 97.6% mean success on LIBERO and 91.8% on RoboTwin without embodied pretraining",
+      "Serves as the foundational open baseline for Light-WAM, Faster-WAM, and LoopedWAM"
+    ],
+    "applications": [
+      "Low-latency tabletop & bimanual manipulation",
+      "Efficient World Action Model (WAM) training research",
+      "Rapid fine-tuning without embodied pretraining"
+    ],
+    "description": "Fast-WAM (Tsinghua IIIS, March 2026) is a World Action Model (~6.02B params) that retains video co-training during training but skips test-time future generation, cutting latency to 190 ms (>4× faster) with 97.6% mean LIBERO success."
+  },
+  "supermimic": {
+    "orgZh": "UC Berkeley",
+    "country": "USA",
+    "license": "Open Source (GitHub)",
+    "specs": {
+      "architecture": "Shared differentiable world model + analytic gradients (BPTT over short imagined rollouts) for whole-body control",
+      "backbone": "Unified differentiable dynamics world model fit from rigid-body simulator transitions (built on mjlab)",
+      "action_head": "Humanoid whole-body motion-tracking policy co-trained with the world model",
+      "training_data": "Large human motion datasets (1–264 hours of motion, covering 129,514 benchmark motions)",
+      "embodiments": "Unitree G1 and humanoid bipedal platforms",
+      "cross_embodiment": "Single policy amortized across all motions without per-motion specialist distillation",
+      "benchmark_note": "Surpasses 128-GPU 7-day baseline in 3 hours on 1 GPU (>1000× fewer GPU-hours); 25 failures vs. 179 on 129,514 motions, 0 failures in 9.8h on 2 GPUs",
+      "deploy_note": "Transfers directly to physical Unitree G1 for diverse and acrobatic whole-body motions"
+    },
+    "highlights": [
+      "CoRL 2026 Oral & Best Paper Award winner, slashing humanoid motion-tracking compute by >1000×",
+      "Outperforms a 128-GPU 7-day baseline in just 3 hours on a single GPU",
+      "Cuts failures on 129,514 benchmark motions from 179 to 25 (and reaches 0 failures in 9.8 hours on 2 GPUs)",
+      "Open-source mjlab implementation with verified sim-to-real transfer on Unitree G1"
+    ],
+    "applications": [
+      "Whole-body humanoid motion tracking & acrobatic control",
+      "Low-compute scalable humanoid RL training",
+      "Differentiable world-model analytic policy optimization"
+    ],
+    "description": "SuperMimic (UC Berkeley, CoRL 2026 Best Paper Award) trains a unified humanoid whole-body motion-tracking policy using a shared differentiable world model, beating a 128-GPU 7-day baseline in 3 hours on a single GPU and transferring to Unitree G1."
+  },
+  "mobilewam": {
+    "orgZh": "Tsinghua AIR / HKUST-GZ / SJTU / Li Auto",
+    "country": "China",
+    "license": "Open Release Planned (arXiv)",
+    "specs": {
+      "architecture": "Mixture-of-Transformers (30-block Wan video DiT + 3-expert Mobile MoE action expert) + training-only Chain-of-Foresight",
+      "backbone": "Pretrained 30-block Wan video diffusion transformer (width 3072) + frozen T5 & 3D VAE",
+      "action_head": "Width-1024 action expert with soft-routed shared/locomotion/manipulation MoE (20 flow-matching steps, 13-DoF chunks)",
+      "training_data": "ManiSkill-HAB (1,000 filtered demos/subtask) & real ARX Lift2 teleoperation demos",
+      "embodiments": "Fetch simulated mobile manipulator & real ARX Lift2 wheeled dual-arm robot",
+      "cross_embodiment": "RGB-only two-view (head + wrist) whole-body control without point clouds or privileged segmentation",
+      "benchmark_note": "73.0% mean S.R. on ManiSkill-HAB SetTable (+17.4 pts over AC-DiT); 15% on longest real ARX Lift2 compound task (vs. 0% for π0.5)",
+      "deploy_note": "Drops video branch & CoF at inference for 938 ms latency on A800 (5.3× faster than Motus, 8.7× faster than LingBot-VA)"
+    },
+    "highlights": [
+      "First systematic adaptation of video-generation World Action Models to whole-body mobile manipulation",
+      "Chain-of-Foresight (CoF) chains future-latent beliefs during training for causal consistency at zero inference cost",
+      "Three-expert Mobile MoE (shared, locomotion, manipulation) resolves destructive gradient interference",
+      "Achieves 73.0% SOTA on ManiSkill-HAB with RGB-only one-stage training and 5–8× speedup over generate-then-act WAMs"
+    ],
+    "applications": [
+      "Long-horizon wheeled humanoid & mobile bimanual household tasks",
+      "Coordinated base-arm navigation and manipulation under moving viewpoints",
+      "Efficient single-stage WAM deployment"
+    ],
+    "description": "MobileWAM (~6.5B, Tsinghua AIR et al.) adapts video-generation World Action Models to whole-body mobile manipulation via a 3-expert Mobile MoE and zero-inference-cost Chain-of-Foresight, reaching 73.0% on ManiSkill-HAB and beating π0.5 on a real ARX Lift2."
   }
 }

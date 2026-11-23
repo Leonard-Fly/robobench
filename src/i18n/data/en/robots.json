@@ -2058,5 +2058,78 @@
       "sdk": "Open-source SDK + multi-protocol support (200,000-cycle lifespan)"
     },
     "priceNote": "Entry-level cost tier (quote on request)"
+  },
+  "embodied-ai-air": {
+    "nameZh": "Embodied AI AIR",
+    "manufacturerZh": "Embodied AI",
+    "country": "Switzerland",
+    "priceNote": "Estimated ~$50,000 via third-party coverage (ordered via site assessment & pilot)",
+    "specs": {
+      "compute": "Onboard real-time physical AI inference (NVIDIA partner ecosystem)",
+      "sensors": "High-frequency contact/safety sensing for cage-free human collaboration",
+      "actuators": "Torso-mounted motors + compliant tendon-driven arms (~2 kg each, 5 kg payload per arm)",
+      "dexterous_hand": "Compliant dual-arm grippers/manipulators"
+    },
+    "highlights": [
+      "Unveiled at Humanoid Europe 2026 by EPFL spin-out Embodied AI; built in 9 months",
+      "Heavy motors sit in the torso while 2 kg tendon-driven arms yield on contact for cage-free factory work",
+      "Starts via remote teleoperation and learns autonomous execution in ~1 month with fleet skill sharing",
+      "98% reliability benchmarked in industrial deployments; EU CE marking planned for 2027"
+    ],
+    "applications": [
+      "Electronics & automotive kitting",
+      "SMT line tending & packaging",
+      "Cage-free human-robot factory collaboration"
+    ],
+    "description": "Embodied AI AIR is a wheeled dual-arm industrial humanoid (160 cm, 65 kg, 5 kg per arm) from Swiss EPFL spin-out Embodied AI, using torso-mounted motors and lightweight tendon-driven arms for safe cage-free collaboration."
+  },
+  "deeprobotics-x50": {
+    "nameZh": "DEEP Robotics X50",
+    "manufacturerZh": "DEEP Robotics",
+    "country": "China",
+    "priceNote": "Enterprise custom quote via DEEP Robotics",
+    "specs": {
+      "compute": "Onboard perception-control fusion & RL locomotion unit",
+      "sensors": "Real-time LiDAR point-cloud + IMU multi-sensor fusion",
+      "actuators": "High-rigidity, fast-response joints with thermal-balanced continuous output",
+      "dexterous_hand": "Supports firefighting water cannons, arms, and rescue payloads"
+    },
+    "highlights": [
+      "Breaks the payload-speed-mobility trilemma: 50 kg continuous operating payload with 3 m/s running for 2 km",
+      "3.5-hour endurance at 20 kg load; climbs 35° slopes, 25 cm stairs, and open-riser steel grates",
+      "Perception-control fusion anticipates footholds on rubble, chemical pipe racks, and multi-floor stairs",
+      "High-rigidity joints and new attitude control counteract high-pressure water-cannon recoil and impacts"
+    ],
+    "applications": [
+      "Emergency firefighting & rubble rescue delivery",
+      "High-altitude power tower & substation inspection",
+      "Petrochemical plant & multi-story industrial patrol"
+    ],
+    "description": "DEEP Robotics X50 is a heavy-duty industrial quadruped launched in November 2026, delivering a 50 kg continuous operating payload, 3 m/s speed over 2 km at full load, and 3.5-hour runtime at 20 kg."
+  },
+  "robotera-xhand1-pro": {
+    "nameZh": "ROBOTERA XHAND 1 Pro",
+    "manufacturerZh": "RobotEra",
+    "country": "China",
+    "priceNote": "$30,000 listed reference price (left/right versions)",
+    "specs": {
+      "speed_note": ">5 Hz open/close speed; ±0.1 mm pitch / ±0.2 mm lateral repeatability",
+      "drive_type": "Fully backdrivable 21 active DoF supporting MIT & feedforward force control",
+      "tactile": "5× 3D fingertip + 10× finger pad + 3× palm tactile (0.1–25 N, 0.01 N res) + 10 mm proximity",
+      "interface": "EtherCAT / RS-485 / CAN FD (24V–72V wide-voltage input)",
+      "sdk": "Real-time full-hand haptic UI & dynamic URDF; Manus Pro / IO-Tech teleop"
+    },
+    "highlights": [
+      "21 fully backdrivable active DoF in an 884 g package with 160 mm max grasp diameter and 15 N fingertip force",
+      "18 tactile zones (5 3D fingertips, 10 finger pads, 3 palm) at 0.01 N resolution plus 10 mm proximity sensing",
+      ">5 Hz open/close speed, ±0.1 mm pitch repeatability, and >200,000 cycles under load",
+      "Supports EtherCAT, RS-485, CAN FD, MIT mode, feedforward force control, and kinesthetic teaching"
+    ],
+    "applications": [
+      "High-dexterity bimanual humanoid manipulation",
+      "Precision assembly & compliant object handling",
+      "Teleoperation data collection & tactile RL research"
+    ],
+    "description": "ROBOTERA XHAND 1 Pro is a flagship 21-active-DoF fully backdrivable dexterous hand weighing 884 g with 15 N fingertip force, 18 multi-dimensional tactile/proximity zones, and EtherCAT/CAN FD support."
   }
 }

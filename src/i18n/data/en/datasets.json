@@ -482,5 +482,80 @@
       "collection_method": "Multi-source heterogeneous tactile aggregation & reasoning annotation",
       "data_format": "Multimodal tactile-language dataset"
     }
+  },
+  "galaxea-open-world": {
+    "nameZh": "Galaxea Open-World Dataset",
+    "orgZh": "Galaxea AI / Tsinghua IIIS",
+    "country": "China",
+    "license": "Open Source (RLDS & LeRobot)",
+    "specs": {
+      "tasks_count": "Open-world long-horizon mobile manipulation across residential, kitchen, retail & office settings",
+      "embodiments": "Galaxea single uniform wheeled bimanual mobile manipulator",
+      "modalities": "Multi-view RGB + proprioception + action trajectories + subtask language annotations",
+      "annotations": "Fine-grained subtask-level natural language instructions",
+      "collection_method": "Real-world teleoperation in authentic living & working environments",
+      "data_format": "RLDS and LeRobot formats"
+    },
+    "highlights": [
+      "500+ hours of real-world mobile manipulation data gathered in authentic homes, kitchens, retail, and offices",
+      "Collected on a single uniform robotic embodiment to eliminate cross-embodiment shift during pretraining",
+      "Ships in both RLDS and LeRobot formats with fine-grained subtask annotations powering the G0 dual-system VLA"
+    ],
+    "applications": [
+      "Single-embodiment VLA pretraining & fine-tuning",
+      "Long-horizon mobile manipulation & bussing",
+      "Dual-system VLM+VLA hierarchical control research"
+    ],
+    "description": "Galaxea Open-World Dataset (Aug 2025) provides 500+ hours of real-world mobile manipulation trajectories collected on one uniform embodiment across residential, retail, and office settings in RLDS and LeRobot formats."
+  },
+  "dexmimicgen": {
+    "nameZh": "DexMimicGen",
+    "orgZh": "NVIDIA Research / Stanford",
+    "country": "USA",
+    "license": "Open Source",
+    "specs": {
+      "tasks_count": "Bimanual dexterous manipulation suites (21K benchmark demos; scalable to 780K trajectories)",
+      "embodiments": "Bimanual arms & dexterous humanoid hands (with real-world humanoid can-sorting transfer)",
+      "modalities": "Multi-view vision + bimanual dexterous joint trajectories + object-centric segments",
+      "annotations": "Bimanual coordination constraints & motion-planning segments",
+      "collection_method": "Synthesizes 21,000+ bimanual dexterous demos from just 60 source human demos (780K in 11h)",
+      "data_format": "MimicGen / Robosuite compatible"
+    },
+    "highlights": [
+      "Extends MimicGen automated data synthesis to high-DoF bimanual arms and multi-fingered dexterous humanoid hands",
+      "Generates 21,000 bimanual dexterous demonstrations from only 60 source human demos",
+      "Produces up to 780,000 simulation trajectories (6,500 human-demo equivalent hours) in 11 hours with real-world transfer"
+    ],
+    "applications": [
+      "Bimanual dexterous humanoid imitation learning",
+      "High-DoF coordinated synthetic data scaling",
+      "Real-to-sim-to-real dexterous manipulation"
+    ],
+    "description": "DexMimicGen (NVIDIA & Stanford, Oct 2024) is an automated bimanual dexterous data generation system and dataset that synthesizes 21,000+ humanoid manipulation demos from just 60 human demonstrations."
+  },
+  "mimicgen": {
+    "nameZh": "MimicGen",
+    "orgZh": "NVIDIA Seattle Robotics Lab / UT Austin",
+    "country": "USA",
+    "license": "NVIDIA Source Code License",
+    "specs": {
+      "tasks_count": "18 long-horizon & high-precision tasks (assembly, stacking, threading, coffee prep)",
+      "embodiments": "Franka Panda, Sawyer, KUKA IIWA, UR5e across 2 simulators & physical arms",
+      "modalities": "Multi-view RGB + low-dim state + end-effector/joint trajectories",
+      "annotations": "Object-centric subtask segments & cross-embodiment adapted trajectories",
+      "collection_method": "~250× automated synthesis amplification from ~200 human teleoperation demos",
+      "data_format": "Robomimic / HDF5"
+    },
+    "highlights": [
+      "CoRL 2023 foundational data engine generating 50,000+ diverse demonstrations from ~200 human demos (~250×)",
+      "Agents trained on MimicGen synthetic data match performance on an equal number of human demonstrations",
+      "Serves as the core data-generation backbone behind RoboCasa (100K), DexMimicGen, and SoftMimicGen"
+    ],
+    "applications": [
+      "High-precision assembly & long-horizon imitation learning",
+      "Cross-arm skill transfer across robot embodiments",
+      "Low-cost 250× scaling of small teleoperation datasets"
+    ],
+    "description": "MimicGen (NVIDIA & UT Austin, CoRL 2023) automatically synthesizes 50,000+ diverse demonstrations across 18 high-precision tasks and multiple robot arms from roughly 200 source human demonstrations."
   }
 }
