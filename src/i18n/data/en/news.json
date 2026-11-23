@@ -1,4 +1,29 @@
 {
+  "ucb-supermimic-agibot-life-2026-11-23": {
+    "title": "UC Berkeley's SuperMimic Beats 128-GPU 7-Day Training in 3 Hours on 1 GPU; AgiBot Debuts LIFE",
+    "summary": "Reported Nov 23, UC Berkeley unveiled SuperMimic at CoRL 2026 using a differentiable world model—outperforming a 128-GPU 7-day baseline in ~3 hours on a single GPU with real-world transfer to Unitree G1. Separately, AgiBot introduced lifelong embodied framework LIFE, lifting FindingDory success from 37.5% to 65.8%.",
+    "tags": ["SuperMimic", "World Model", "AgiBot LIFE", "CoRL 2026"]
+  },
+  "newstart-reducer-ipo-embodied-ai-2026-11-23": {
+    "title": "Planetary Reducer Maker Newstart Files ChiNext IPO Registration, Disclosing AgiBot & UBTECH Orders",
+    "summary": "Newstart has submitted ChiNext IPO registration to raise RMB 823M. Its prospectus shows embodied AI revenue surged from RMB 307K in 2023 to RMB 96.63M in 2025 (RMB 59.39M in H1 2026), led by AgiBot (RMB 37.02M) and UBTECH (RMB 24.48M), while average unit prices halved from RMB 1,256 to RMB 598 over two years.",
+    "tags": ["Planetary Reducer", "ChiNext IPO", "AgiBot", "UBTECH"]
+  },
+  "dobot-cinema-14h-nvidia-support-2026-11-23": {
+    "title": "DOBOT Humanoid Works 14 Hours Daily in Shenzhen Cinema; NVIDIA Reassures Robotics Portfolio",
+    "summary": "DOBOT's humanoid robot works 14 hours a day selling 1,000+ cups of popcorn at a Shenzhen K11 cinema. Meanwhile, NVIDIA and NVentures contacted multiple portfolio robotics startups to confirm ongoing support after executive changes (with PitchBook tracking 35+ NVIDIA robotics/physical AI investments).",
+    "tags": ["DOBOT Atom", "Retail Deployment", "NVIDIA", "NVentures"]
+  },
+  "china-embodied-ai-national-data-standards-2026-11-22": {
+    "title": "China Launches National Embodied AI Data Standards Initiative Targeting 20+ Standards",
+    "summary": "China's National Data Administration announced on Nov 22 the launch of national embodied AI data standards development, aiming to establish over 20 dedicated standards and pilot validations during the 15th Five-Year Plan to support humanoids, special-ops robots, and industrial cobots.",
+    "tags": ["Embodied AI Data", "National Standards", "NDA China", "Policy"]
+  },
+  "world-computing-conference-humanoid-deployment-2026-11-22": {
+    "title": "2026 World Computing Conference Shifts Focus to Real-World Humanoid Deployment & Safety",
+    "summary": "At the 2026 World Computing Conference closing in Changsha on Nov 21, industry leaders noted capital is shifting from stunt demos to real-world deployment and physical safety governance, with Hunan targeting RMB 100B+ robotics revenue by 2028 and RMB 200B by 2030.",
+    "tags": ["World Computing Conference", "Commercialization", "Physical Safety", "Hunan"]
+  },
   "un-geneva-autonomous-weapons-pact-2026-11-21": {
     "title": "UN Talks in Geneva Open Two-Year Path Toward International Pact on Autonomous Weapons",
     "summary": "On Nov 21, after five days of talks in Geneva, states agreed to work over the next two years toward an international agreement regulating lethal autonomous weapons systems—a step welcomed as progress toward AI robotics governance, though NGOs criticized the lack of immediate binding rules.",
