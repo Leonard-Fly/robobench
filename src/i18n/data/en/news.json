@@ -1,4 +1,29 @@
 {
+  "x-square-wall-oss-1-0-2026-11-23": {
+    "title": "X Square Robot Launches Native VLA Model WALL-OSS-1.0 With 55.1% Zero-Shot Success Across 312 Tasks",
+    "summary": "Released Nov 23, X Square Robot's natively-pretrained WALL-OSS-1.0 (built on Qwen3.5 with a flow-matching Action Expert, plus 4B Lite and 2B Nano variants) achieved 55.1% zero-shot success across 312 real-robot tasks and scored 67.55 on X2Real (+65% over LingBot-VLA-2.0), alongside the XR Harness agentic framework and WALL-API-1.0.",
+    "tags": ["WALL-OSS-1.0", "VLA Model", "Zero-Shot", "X Square Robot"]
+  },
+  "simplexity-100m-ant-group-ix-humanoid-2026-11-23": {
+    "title": "Simplexity Robotics Raises $100M Led by Ant Group at $1.6B Valuation, Unveils iX Humanoid",
+    "summary": "Reported by Bloomberg on Nov 23, Suzhou-based Simplexity Robotics (founded by former Li Auto executives) raised $100M in pre-Series A funding led by Ant Group at a $1.6B valuation with Alibaba, Tencent, HongShan, and Lanchi joining. It also unveiled its wheeled iX humanoid alongside CNC deployments at Leaderdrive and warehouse sorting with Hangcha.",
+    "tags": ["$100M Funding", "$1.6B Valuation", "Ant Group", "Simplexity"]
+  },
+  "weiyizhizao-03275-hk-ipo-relaunch-2026-11-23": {
+    "title": "Industrial Physical AI Firm Weiyi Smart (03275.HK) Relaunches Hong Kong IPO Targeting Dec 4 Listing",
+    "summary": "On Nov 23, industrial embodied AI robotics (EIIR) provider Weiyi Smart relaunched its Hong Kong IPO offering 37.28M H-shares at HK$12.07–15.69 ahead of a Dec 4 listing, backed by RMB 796M in 2025 revenue and 23TB+ (1.6B+ records) of annotated industrial data.",
+    "tags": ["HKEX IPO", "Industrial Physical AI", "Weiyi Smart", "Industrial Data"]
+  },
+  "nvidia-reinstates-jensen-huang-ceo-2026-11-23": {
+    "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO, and Board Director",
+    "summary": "On Nov 23, NVIDIA's board formally reinstated Jensen Huang as President, CEO, and Board Director, restoring executive continuity for its Physical AI stack (Isaac, GR00T, Cosmos) and 35+ portfolio robotics startups.",
+    "tags": ["NVIDIA", "Jensen Huang", "Physical AI", "Leadership"]
+  },
+  "miit-5-humanoid-standards-tesla-fremont-2026-11-23": {
+    "title": "China MIIT Issues 5 Humanoid Robot Standards; Tesla Clears Fremont Line for Optimus Factory",
+    "summary": "Reported Nov 23, China's MIIT issued five humanoid standards covering capability testing, training facilities, data management, integrated joints, and dexterous hands. Meanwhile, Tesla dismantled its Fremont Model S/X line in 46 days to clear space for planned Optimus humanoid production.",
+    "tags": ["Industry Standards", "MIIT China", "Tesla Optimus", "Manufacturing"]
+  },
   "ucb-supermimic-agibot-life-2026-11-23": {
     "title": "UC Berkeley's SuperMimic Beats 128-GPU 7-Day Training in 3 Hours on 1 GPU; AgiBot Debuts LIFE",
     "summary": "Reported Nov 23, UC Berkeley unveiled SuperMimic at CoRL 2026 using a differentiable world model—outperforming a 128-GPU 7-day baseline in ~3 hours on a single GPU with real-world transfer to Unitree G1. Separately, AgiBot introduced lifelong embodied framework LIFE, lifting FindingDory success from 37.5% to 65.8%.",
