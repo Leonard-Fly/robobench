@@ -1,5 +1,48 @@
 [
   {
+    "id": "xpeng-worldgpt-iron-foundation-model-2026-11-24",
+    "title": "小鹏发布物理世界基础模型 WorldGPT，一模型跨汽车、76 自由度 IRON 人形与飞行器",
+    "summary": "11 月 24 日（广州 AI Day 前夕），小鹏正式发布物理世界基础模型 WorldGPT，通过云端教师模型蒸馏统一赋能汽车、76 自由度 IRON 人形机器人与无人机等 6 类实体，宣称在 12 项基准测试位居第一。IRON 量产线已于 9 月 8 日下线首台，搭载 3 颗图灵 AI 芯片（最高 2,250 TOPS）实现机载全自主运行。",
+    "company": "XPENG",
+    "companyZh": "小鹏",
+    "country": "中国",
+    "category": "technical",
+    "publishedAt": "2026-11-24",
+    "sourceName": "HumanoidMegaHub",
+    "sourceUrl": "https://www.humanoidmegahub.com/news/xpeng-worldgpt",
+    "tags": ["WorldGPT", "小鹏IRON", "物理AI基座模型", "跨本体蒸馏"],
+    "relatedRobotIds": ["xpeng-iron"],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "x-square-pos-malaysia-3000-hubs-2026-11-24",
+    "title": "自变量机器人与马来西亚国家邮政 Pos Malaysia 合作，探索超 3,000 个网点具身包裹分拣",
+    "summary": "11 月 24 日，深圳自变量机器人（X Square Robot）与马来西亚国家邮政 Pos Malaysia 签署合作备忘录，将在其覆盖 1,100 万地址、超 3,000 个服务网点的物流网络中评估通用具身大模型与物理机器人硬件，重点攻克异形、软包及不同重量包裹的动态分拣自动化。",
+    "company": "X Square Robot & Pos Malaysia",
+    "companyZh": "自变量机器人 & 马来西亚邮政",
+    "country": "中国/马来西亚",
+    "category": "commercial",
+    "publishedAt": "2026-11-24",
+    "sourceName": "AF.NET (GlobeNewswire)",
+    "sourceUrl": "https://af.net/realtime/pos-malaysia-and-x-square-robot-partner-on-ai-across-3000-hubs/",
+    "tags": ["自变量机器人", "物流分拣", "马来西亚邮政", "具身出海"],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "yingtuo-sensing-angel-force-actuators-2026-11-24",
+    "title": "盈拓传感获清控银杏领投数千万元天使轮融资，打造「力觉-驱动」一体化机器人关节",
+    "summary": "11 月 24 日披露，深圳盈拓传感完成清控银杏领投的数千万元天使轮融资。公司将基于非接触磁弹技术的六维力传感与行星传动、电机及控制器集成于同一执行器模组，面向具身智能、外骨骼及工业力控实现批量制造与客户验证。",
+    "company": "Yingtuo Sensing",
+    "companyZh": "盈拓传感",
+    "country": "中国",
+    "category": "funding",
+    "publishedAt": "2026-11-24",
+    "sourceName": "Dealroom News",
+    "sourceUrl": "https://dealroom.co/news/175411-yingtuo-sensing-raises-tens-of-millions-of-yuan-for-force-sensing-robot-/",
+    "tags": ["六维力传感器", "一体化关节", "天使轮融资", "盈拓传感"],
+    "dataUpdated": "2026-11"
+  },
+  {
     "id": "x-square-wall-oss-1-0-2026-11-23",
     "title": "自变量机器人发布原生 VLA 模型 WALL-OSS-1.0，312 项真机任务零样本成功率达 55.1%",
     "summary": "11 月 23 日，自变量机器人（X Square Robot）正式发布原生预训练 VLA 基础模型 WALL-OSS-1.0（基于 Qwen3.5 底座与流匹配动作专家，含 4B Lite 与 2B Nano 版本），在 312 项真机任务取得 55.1% 零样本成功率，在 X2Real 基准获 67.55 分（较 LingBot-VLA-2.0 提升 65%），并推出 XR Harness 智能体框架与 WALL-API-1.0 接口。",

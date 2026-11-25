@@ -1,4 +1,19 @@
 {
+  "xpeng-worldgpt-iron-foundation-model-2026-11-24": {
+    "title": "XPENG Unveils WorldGPT: One Foundation Model Across Cars, 76-DoF IRON Humanoid & Drones",
+    "summary": "Unveiled Nov 24 ahead of XPENG AI Day, WorldGPT distills a cloud physical-world teacher model onto cars, drones, and the 76-DoF IRON humanoid (first production unit rolled off Sept 8 with 3 Turing AI chips delivering 2,250 TOPS), claiming 12 benchmark first places.",
+    "tags": ["WorldGPT", "XPENG IRON", "Physical AI Model", "Cross-Embodiment"]
+  },
+  "x-square-pos-malaysia-3000-hubs-2026-11-24": {
+    "title": "Pos Malaysia and X Square Robot Partner to Test Embodied AI Parcel Sorting Across 3,000+ Hubs",
+    "summary": "On Nov 24, Shenzhen-based X Square Robot and Pos Malaysia signed an MoC to evaluate general-purpose embodied AI foundation models and robotic hardware across Pos Malaysia's 3,000+ touchpoints serving 11M addresses, targeting irregular and soft parcel sorting.",
+    "tags": ["X Square Robot", "Logistics Sorting", "Pos Malaysia", "Global Rollout"]
+  },
+  "yingtuo-sensing-angel-force-actuators-2026-11-24": {
+    "title": "Yingtuo Sensing Raises Tens of Millions of Yuan in Angel Round for Force-Sensing Robot Actuators",
+    "summary": "Disclosed Nov 24, Shenzhen's Yingtuo Sensing raised an angel round led by Tsinghua Holdings Capital to scale actuators integrating non-contact magnetoelastic 6-axis force sensing, planetary transmission, motors, and controllers for embodied AI and exoskeletons.",
+    "tags": ["6-Axis Force Sensor", "Integrated Actuator", "Angel Round", "Yingtuo Sensing"]
+  },
   "x-square-wall-oss-1-0-2026-11-23": {
     "title": "X Square Robot Launches Native VLA Model WALL-OSS-1.0 With 55.1% Zero-Shot Success Across 312 Tasks",
     "summary": "Released Nov 23, X Square Robot's natively-pretrained WALL-OSS-1.0 (built on Qwen3.5 with a flow-matching Action Expert, plus 4B Lite and 2B Nano variants) achieved 55.1% zero-shot success across 312 real-robot tasks and scored 67.55 on X2Real (+65% over LingBot-VLA-2.0), alongside the XR Harness agentic framework and WALL-API-1.0.",
