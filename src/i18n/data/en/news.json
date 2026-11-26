@@ -1,227 +1,521 @@
 {
+  "oymotion-series-d-dexterous-hands-2026-11-25": {
+    "title": "OYMotion Raises Hundreds of Millions of Yuan in Series D After Crossing 10,000 Dexterous Hand Orders",
+    "summary": "Reported Nov 24–25, Shanghai-based dexterous hand maker OYMotion closed a Series D round of hundreds of millions of yuan backed by China North Industries' Zhongbing Shunjing and Hubei's RMB 10B humanoid fund. With a 10,000-unit/year Zhuhai factory, OYMotion crossed 10,000 hand orders in H1 2026 across ~200 embodied AI clients as it prepares for an IPO.",
+    "tags": [
+      "Series D",
+      "Dexterous Hand",
+      "OYMotion",
+      "10,000+ Orders"
+    ]
+  },
+  "zoomlion-z01-humanoid-embodied-ai-2026-11-25": {
+    "title": "Zoomlion Unveils Z01 Bipedal Humanoid & 120-Station Training Ground, Plans Independent Embodied AI Financing",
+    "summary": "At bauma CHINA 2026 (Nov 24–25), heavy-equipment giant Zoomlion showcased its in-house Z01 bipedal humanoid among 10 embodied robots, its Robot Ops OS, and a 120-station training facility with 180,000 industrial trajectories. Dozens of robots are piloting across ~20 factory scenarios ahead of a late-2026 humanoid factory launch and planned independent financing.",
+    "tags": [
+      "Z01 Humanoid",
+      "Zoomlion",
+      "Industrial Training",
+      "Spin-Out Financing"
+    ]
+  },
+  "yyforce-six-seven-novotel-singapore-2026-11-25": {
+    "title": "YYForce Deploys 'Six Seven' Concierge Humanoid Powered by NVIDIA Jetson at Novotel Singapore",
+    "summary": "Reported Nov 25, YYForce Inc. launched 'Six Seven,' a hospitality concierge humanoid built on NVIDIA Jetson and Isaac Sim, deploying at Novotel Singapore on Stevens to deliver natural conversation and real-time guest assistance.",
+    "tags": [
+      "Hospitality",
+      "NVIDIA Jetson",
+      "Isaac Sim",
+      "Singapore"
+    ]
+  },
+  "xpeng-ai-day-2026-turing-iron-q2-2027-2026-11-25": {
+    "title": "XPENG Unveils Turing Physical AI Architecture (VLA 3.0), Sets Q2 2027 Launch for IRON Humanoid",
+    "summary": "At 2026 AI Day on Nov 25, XPENG introduced its 3-layer Turing Physical AI Architecture (System 0/1/2). Its 170 cm, 62 kg, 76-DoF IRON humanoid (3 Turing chips, 1,500+ tactile points, >300 Wh/kg solid-state battery yielding 1.5h work per 20-min charge) will enter mass production in Jan 2027, retail-store training in Q1, and public launch in Q2 2027.",
+    "tags": [
+      "XPENG AI Day",
+      "Turing Physical AI",
+      "IRON Launch",
+      "VLA 3.0"
+    ]
+  },
+  "roscosmos-teledroid-iss-launch-2026-11-25": {
+    "title": "Roscosmos Launches Teledroid Humanoid Toward ISS for Exterior Spacewalk Support Tests",
+    "summary": "Launched aboard Progress MS-36 on Nov 24–25 (docking scheduled Nov 26), Roscosmos's Teledroid humanoid—developed by NPO Android Technics and RSC Energia—combines exoskeleton teleoperation from the ISS or ground control with autonomous tasks to prepare exterior worksites ahead of spacewalks.",
+    "tags": [
+      "Space Robotics",
+      "ISS",
+      "Teledroid",
+      "Teleoperation"
+    ]
+  },
+  "oversonic-robee-angelini-investment-2026-11-25": {
+    "title": "Angelini Technologies Takes Strategic Stake in Oversonic to Scale RoBee Humanoid Globally",
+    "summary": "Disclosed Nov 25, Italian industrial group Angelini Technologies acquired a stake in Oversonic Robotics—joining STMicroelectronics on its cap table and board—to leverage 50+ years of automation supply-chain reach for scaling the certified RoBee humanoid in Europe and the U.S.",
+    "tags": [
+      "Strategic Investment",
+      "RoBee Humanoid",
+      "Europe Robotics",
+      "Oversonic"
+    ]
+  },
+  "black-ai-japan-seed-incubate-fund-2026-11-25": {
+    "title": "University of Tokyo Spinout Black AI Raises Seed Round Led by Incubate Fund for Factory Humanoids",
+    "summary": "Disclosed Nov 25, Tokyo-based Black AI raised a seed round led by Incubate Fund to build full-stack humanoid hardware and zero-shot whole-body control models targeting Japan's deepening manufacturing labor shortage.",
+    "tags": [
+      "Seed Round",
+      "Japan Humanoids",
+      "Zero-Shot Control",
+      "Black AI"
+    ]
+  },
   "xpeng-worldgpt-iron-foundation-model-2026-11-24": {
     "title": "XPENG Unveils WorldGPT: One Foundation Model Across Cars, 76-DoF IRON Humanoid & Drones",
     "summary": "Unveiled Nov 24 ahead of XPENG AI Day, WorldGPT distills a cloud physical-world teacher model onto cars, drones, and the 76-DoF IRON humanoid (first production unit rolled off Sept 8 with 3 Turing AI chips delivering 2,250 TOPS), claiming 12 benchmark first places.",
-    "tags": ["WorldGPT", "XPENG IRON", "Physical AI Model", "Cross-Embodiment"]
+    "tags": [
+      "WorldGPT",
+      "XPENG IRON",
+      "Physical AI Model",
+      "Cross-Embodiment"
+    ]
   },
   "x-square-pos-malaysia-3000-hubs-2026-11-24": {
     "title": "Pos Malaysia and X Square Robot Partner to Test Embodied AI Parcel Sorting Across 3,000+ Hubs",
     "summary": "On Nov 24, Shenzhen-based X Square Robot and Pos Malaysia signed an MoC to evaluate general-purpose embodied AI foundation models and robotic hardware across Pos Malaysia's 3,000+ touchpoints serving 11M addresses, targeting irregular and soft parcel sorting.",
-    "tags": ["X Square Robot", "Logistics Sorting", "Pos Malaysia", "Global Rollout"]
+    "tags": [
+      "X Square Robot",
+      "Logistics Sorting",
+      "Pos Malaysia",
+      "Global Rollout"
+    ]
   },
   "yingtuo-sensing-angel-force-actuators-2026-11-24": {
     "title": "Yingtuo Sensing Raises Tens of Millions of Yuan in Angel Round for Force-Sensing Robot Actuators",
     "summary": "Disclosed Nov 24, Shenzhen's Yingtuo Sensing raised an angel round led by Tsinghua Holdings Capital to scale actuators integrating non-contact magnetoelastic 6-axis force sensing, planetary transmission, motors, and controllers for embodied AI and exoskeletons.",
-    "tags": ["6-Axis Force Sensor", "Integrated Actuator", "Angel Round", "Yingtuo Sensing"]
+    "tags": [
+      "6-Axis Force Sensor",
+      "Integrated Actuator",
+      "Angel Round",
+      "Yingtuo Sensing"
+    ]
   },
   "x-square-wall-oss-1-0-2026-11-23": {
     "title": "X Square Robot Launches Native VLA Model WALL-OSS-1.0 With 55.1% Zero-Shot Success Across 312 Tasks",
     "summary": "Released Nov 23, X Square Robot's natively-pretrained WALL-OSS-1.0 (built on Qwen3.5 with a flow-matching Action Expert, plus 4B Lite and 2B Nano variants) achieved 55.1% zero-shot success across 312 real-robot tasks and scored 67.55 on X2Real (+65% over LingBot-VLA-2.0), alongside the XR Harness agentic framework and WALL-API-1.0.",
-    "tags": ["WALL-OSS-1.0", "VLA Model", "Zero-Shot", "X Square Robot"]
+    "tags": [
+      "WALL-OSS-1.0",
+      "VLA Model",
+      "Zero-Shot",
+      "X Square Robot"
+    ]
   },
   "simplexity-100m-ant-group-ix-humanoid-2026-11-23": {
     "title": "Simplexity Robotics Raises $100M Led by Ant Group at $1.6B Valuation, Unveils iX Humanoid",
     "summary": "Reported by Bloomberg on Nov 23, Suzhou-based Simplexity Robotics (founded by former Li Auto executives) raised $100M in pre-Series A funding led by Ant Group at a $1.6B valuation with Alibaba, Tencent, HongShan, and Lanchi joining. It also unveiled its wheeled iX humanoid alongside CNC deployments at Leaderdrive and warehouse sorting with Hangcha.",
-    "tags": ["$100M Funding", "$1.6B Valuation", "Ant Group", "Simplexity"]
+    "tags": [
+      "$100M Funding",
+      "$1.6B Valuation",
+      "Ant Group",
+      "Simplexity"
+    ]
   },
   "weiyizhizao-03275-hk-ipo-relaunch-2026-11-23": {
     "title": "Industrial Physical AI Firm Weiyi Smart (03275.HK) Relaunches Hong Kong IPO Targeting Dec 4 Listing",
     "summary": "On Nov 23, industrial embodied AI robotics (EIIR) provider Weiyi Smart relaunched its Hong Kong IPO offering 37.28M H-shares at HK$12.07–15.69 ahead of a Dec 4 listing, backed by RMB 796M in 2025 revenue and 23TB+ (1.6B+ records) of annotated industrial data.",
-    "tags": ["HKEX IPO", "Industrial Physical AI", "Weiyi Smart", "Industrial Data"]
+    "tags": [
+      "HKEX IPO",
+      "Industrial Physical AI",
+      "Weiyi Smart",
+      "Industrial Data"
+    ]
   },
   "nvidia-reinstates-jensen-huang-ceo-2026-11-23": {
     "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO, and Board Director",
     "summary": "On Nov 23, NVIDIA's board formally reinstated Jensen Huang as President, CEO, and Board Director, restoring executive continuity for its Physical AI stack (Isaac, GR00T, Cosmos) and 35+ portfolio robotics startups.",
-    "tags": ["NVIDIA", "Jensen Huang", "Physical AI", "Leadership"]
+    "tags": [
+      "NVIDIA",
+      "Jensen Huang",
+      "Physical AI",
+      "Leadership"
+    ]
   },
   "miit-5-humanoid-standards-tesla-fremont-2026-11-23": {
     "title": "China MIIT Issues 5 Humanoid Robot Standards; Tesla Clears Fremont Line for Optimus Factory",
     "summary": "Reported Nov 23, China's MIIT issued five humanoid standards covering capability testing, training facilities, data management, integrated joints, and dexterous hands. Meanwhile, Tesla dismantled its Fremont Model S/X line in 46 days to clear space for planned Optimus humanoid production.",
-    "tags": ["Industry Standards", "MIIT China", "Tesla Optimus", "Manufacturing"]
+    "tags": [
+      "Industry Standards",
+      "MIIT China",
+      "Tesla Optimus",
+      "Manufacturing"
+    ]
   },
   "ucb-supermimic-agibot-life-2026-11-23": {
     "title": "UC Berkeley's SuperMimic Beats 128-GPU 7-Day Training in 3 Hours on 1 GPU; AgiBot Debuts LIFE",
     "summary": "Reported Nov 23, UC Berkeley unveiled SuperMimic at CoRL 2026 using a differentiable world model—outperforming a 128-GPU 7-day baseline in ~3 hours on a single GPU with real-world transfer to Unitree G1. Separately, AgiBot introduced lifelong embodied framework LIFE, lifting FindingDory success from 37.5% to 65.8%.",
-    "tags": ["SuperMimic", "World Model", "AgiBot LIFE", "CoRL 2026"]
+    "tags": [
+      "SuperMimic",
+      "World Model",
+      "AgiBot LIFE",
+      "CoRL 2026"
+    ]
   },
   "newstart-reducer-ipo-embodied-ai-2026-11-23": {
     "title": "Planetary Reducer Maker Newstart Files ChiNext IPO Registration, Disclosing AgiBot & UBTECH Orders",
     "summary": "Newstart has submitted ChiNext IPO registration to raise RMB 823M. Its prospectus shows embodied AI revenue surged from RMB 307K in 2023 to RMB 96.63M in 2025 (RMB 59.39M in H1 2026), led by AgiBot (RMB 37.02M) and UBTECH (RMB 24.48M), while average unit prices halved from RMB 1,256 to RMB 598 over two years.",
-    "tags": ["Planetary Reducer", "ChiNext IPO", "AgiBot", "UBTECH"]
+    "tags": [
+      "Planetary Reducer",
+      "ChiNext IPO",
+      "AgiBot",
+      "UBTECH"
+    ]
   },
   "dobot-cinema-14h-nvidia-support-2026-11-23": {
     "title": "DOBOT Humanoid Works 14 Hours Daily in Shenzhen Cinema; NVIDIA Reassures Robotics Portfolio",
     "summary": "DOBOT's humanoid robot works 14 hours a day selling 1,000+ cups of popcorn at a Shenzhen K11 cinema. Meanwhile, NVIDIA and NVentures contacted multiple portfolio robotics startups to confirm ongoing support after executive changes (with PitchBook tracking 35+ NVIDIA robotics/physical AI investments).",
-    "tags": ["DOBOT Atom", "Retail Deployment", "NVIDIA", "NVentures"]
+    "tags": [
+      "DOBOT Atom",
+      "Retail Deployment",
+      "NVIDIA",
+      "NVentures"
+    ]
   },
   "china-embodied-ai-national-data-standards-2026-11-22": {
     "title": "China Launches National Embodied AI Data Standards Initiative Targeting 20+ Standards",
     "summary": "China's National Data Administration announced on Nov 22 the launch of national embodied AI data standards development, aiming to establish over 20 dedicated standards and pilot validations during the 15th Five-Year Plan to support humanoids, special-ops robots, and industrial cobots.",
-    "tags": ["Embodied AI Data", "National Standards", "NDA China", "Policy"]
+    "tags": [
+      "Embodied AI Data",
+      "National Standards",
+      "NDA China",
+      "Policy"
+    ]
   },
   "world-computing-conference-humanoid-deployment-2026-11-22": {
     "title": "2026 World Computing Conference Shifts Focus to Real-World Humanoid Deployment & Safety",
     "summary": "At the 2026 World Computing Conference closing in Changsha on Nov 21, industry leaders noted capital is shifting from stunt demos to real-world deployment and physical safety governance, with Hunan targeting RMB 100B+ robotics revenue by 2028 and RMB 200B by 2030.",
-    "tags": ["World Computing Conference", "Commercialization", "Physical Safety", "Hunan"]
+    "tags": [
+      "World Computing Conference",
+      "Commercialization",
+      "Physical Safety",
+      "Hunan"
+    ]
   },
   "un-geneva-autonomous-weapons-pact-2026-11-21": {
     "title": "UN Talks in Geneva Open Two-Year Path Toward International Pact on Autonomous Weapons",
     "summary": "On Nov 21, after five days of talks in Geneva, states agreed to work over the next two years toward an international agreement regulating lethal autonomous weapons systems—a step welcomed as progress toward AI robotics governance, though NGOs criticized the lack of immediate binding rules.",
-    "tags": ["Autonomous Weapons", "United Nations", "Robotics Ethics", "Global Policy"]
+    "tags": [
+      "Autonomous Weapons",
+      "United Nations",
+      "Robotics Ethics",
+      "Global Policy"
+    ]
   },
   "china-embodied-ai-apec-export-surge-2026-11-21": {
     "title": "Shenzhen Robot Exports to APEC Economies Surge 7.5x YoY in Q1–Q3 2026 Amid Commercial Rollouts",
     "summary": "According to a Nov 21 IT Home report, Shenzhen exported RMB 4.86B in robots to other APEC economies in Q1–Q3 2026 (+7.5x YoY), while 151 humanoids set a Guinness World Record ahead of APEC. Highlights include SEER Robotics (06106.HK) shipping 50,000+ robot brains, Spirit AI's Moz1 running zero-fault for a year at CATL, and DEEP Robotics' RMB 2.503B STAR Market IPO filing.",
-    "tags": ["Robot Exports", "Commercialization", "APEC 2026", "China Embodied AI"]
+    "tags": [
+      "Robot Exports",
+      "Commercialization",
+      "APEC 2026",
+      "China Embodied AI"
+    ]
   },
   "boston-dynamics-atlas-globalfoundries-2026-11-20": {
     "title": "Boston Dynamics' Atlas Humanoid Secures First Semiconductor Fab Customer at GlobalFoundries",
     "summary": "Boston Dynamics and GlobalFoundries announced an expanded robotics partnership: alongside scaling Spot quadruped inspections across U.S., European, and Asian fabs (after two Spot units in Singapore logged ~900 km and 90,000+ inspections at a 99% success rate since April), GlobalFoundries will begin on-site trials of the all-electric Atlas humanoid in early 2027 as Atlas's first non-automotive customer.",
-    "tags": ["Atlas", "Spot", "Semiconductor Fab", "Commercial Trial"]
+    "tags": [
+      "Atlas",
+      "Spot",
+      "Semiconductor Fab",
+      "Commercial Trial"
+    ]
   },
   "unitree-sochen-embodied-ai-lab-2026-11-20": {
     "title": "Unitree Robotics and Sochen Co-Found Embodied AI Experimental Base Company in Hangzhou",
     "summary": "Corporate registry filings on Nov 20 show Hangzhou Qianyi Embodied AI Experimental Base Co., Ltd. has been established with RMB 10 million registered capital, jointly held by Unitree Robotics' wholly owned subsidiary and Shanghai Sochen Digital Technology, covering AI software, algorithm development, and smart robot sales.",
-    "tags": ["Unitree Robotics", "Sochen", "Embodied AI Base", "Hangzhou"]
+    "tags": [
+      "Unitree Robotics",
+      "Sochen",
+      "Embodied AI Base",
+      "Hangzhou"
+    ]
   },
   "taisei-150m-ai-robotics-fund-2026-11-20": {
     "title": "Japanese Construction Giant Taisei Bankrolls $150M Fund for AI and Robotics Startups",
     "summary": "On Nov 20, 153-year-old Japanese construction firm Taisei Corp. launched a $150 million fund managed by Silicon Valley's Pegasus Tech Ventures to invest in AI, automation, and robotics startups through 2036 to address Japan's shrinking construction workforce.",
-    "tags": ["$150M Fund", "Construction Robotics", "CVC", "Japan"]
+    "tags": [
+      "$150M Fund",
+      "Construction Robotics",
+      "CVC",
+      "Japan"
+    ]
   },
   "ubtech-hesai-hang-seng-tech-index-2026-11-20": {
     "title": "UBTECH and Hesai Added to Hang Seng Tech Index in First-Ever Expansion to 50 Constituents",
     "summary": "On Nov 20, Hang Seng Indexes announced the first-ever expansion of the Hang Seng Tech Index from 30 to 50 constituents, adding humanoid maker UBTECH and LiDAR supplier Hesai-W effective Dec 7, 2026, raising index weighting for embodied AI and robotics hardware.",
-    "tags": ["Hang Seng Tech Index", "UBTECH", "Hesai", "Index Inclusion"]
+    "tags": [
+      "Hang Seng Tech Index",
+      "UBTECH",
+      "Hesai",
+      "Index Inclusion"
+    ]
   },
   "armenia-national-center-robotics-physical-ai-2026-11-20": {
     "title": "Armenia Launches National Center for Robotics and Physical AI (ARPI Center)",
     "summary": "Unveiled on Nov 20 at DigiTec in Yerevan, Armenia's ARPI Center starts with a $500,000 robotics lab equipped with robotic arms, mobile robots, and NVIDIA GPUs, partnering with local universities to train 50 physical AI engineers annually and exploring collaboration with Agile Robots and FieldAI.",
-    "tags": ["Physical AI Center", "National Policy", "Talent Training", "NVIDIA"]
+    "tags": [
+      "Physical AI Center",
+      "National Policy",
+      "Talent Training",
+      "NVIDIA"
+    ]
   },
   "medtronic-hugo-fda-general-surgery-2026-11-20": {
     "title": "Medtronic's Hugo Surgical Robot Wins Expanded U.S. FDA Clearance for General Surgery",
     "summary": "Medtronic secured expanded FDA 510(k) clearance for its Hugo robotic-assisted surgery (RAS) system across upper and lower abdominal general surgery procedures—representing ~3.5 million U.S. surgeries annually—expanding beyond urology as Hugo enters 35+ countries and targets 50,000+ cumulative procedures by FY2027 end.",
-    "tags": ["Surgical Robotics", "FDA Clearance", "Hugo RAS", "General Surgery"]
+    "tags": [
+      "Surgical Robotics",
+      "FDA Clearance",
+      "Hugo RAS",
+      "General Surgery"
+    ]
   },
   "keenon-xman-r1-collaborative-cleaning-2026-11-19": {
     "title": "KEENON Showcases XMAN-R1 Humanoid Collaborative Cleaning Workflow",
     "summary": "At ISSA Show North America 2026 in Las Vegas on Nov 19, KEENON Robotics demonstrated multi-robot collaboration between cleaning robots (KLEENBOT C55/C40/C30), delivery robots, and the XMAN-R1 humanoid—exploring an embodied AI deployment model where humanoids tidy clutter and surfaces before dedicated cleaners handle floors.",
-    "tags": ["Multi-Robot Collaboration", "Humanoid Cleaning", "ISSA 2026", "Embodied AI Deployment"]
+    "tags": [
+      "Multi-Robot Collaboration",
+      "Humanoid Cleaning",
+      "ISSA 2026",
+      "Embodied AI Deployment"
+    ]
   },
   "black-sesame-embodied-ai-hq-qianhai-2026-11-19": {
     "title": "Black Sesame Technologies Establishes Embodied AI HQ in Shenzhen Qianhai",
     "summary": "On Nov 19, Black Sesame officially opened its Embodied AI headquarters in Qianhai and announced strategic partnerships with Midea, AUBO, COSCO Shipping, and Joyson Electronics, securing mass-production orders from multiple leading robot makers across humanoids, wheeled, quadruped, and industrial arms.",
-    "tags": ["Embodied AI HQ", "Strategic Partnerships", "Mass Production Orders", "Qianhai"]
+    "tags": [
+      "Embodied AI HQ",
+      "Strategic Partnerships",
+      "Mass Production Orders",
+      "Qianhai"
+    ]
   },
   "foundation-phantom-mkii-cortex-ii-2026-11-19": {
     "title": "Foundation Unveils Phantom MKII Humanoid with Cortex II AI",
     "summary": "Foundation revealed the Phantom MKII (claimed 200 lb / 91 kg walking payload, targeting early 2027 production) and Cortex II control AI. The founder also denied a formal procurement contract with the Israeli military, stating only early exploratory talks occurred.",
-    "tags": ["Phantom MKII", "Cortex II", "200 lb Payload", "2027 Production"]
+    "tags": [
+      "Phantom MKII",
+      "Cortex II",
+      "200 lb Payload",
+      "2027 Production"
+    ]
   },
   "circus-ca1-hospital-deployment-2026-11-19": {
     "title": "Circus SE Deploys CA-1 Autonomous Food Robot in Hospital Setting",
     "summary": "On Nov 19, Circus SE announced a partnership with Germany's Schoen Clinic Group to launch the CA-1 autonomous meal production system at Harlaching Hospital in Munich, providing 24/7 freshly prepared meals for patients and night-shift staff.",
-    "tags": ["Autonomous Food Service", "Hospital Deployment", "CA-1", "Germany"]
+    "tags": [
+      "Autonomous Food Service",
+      "Hospital Deployment",
+      "CA-1",
+      "Germany"
+    ]
   },
   "motion-galbot-s1-motionos-slush-2026-11-19": {
     "title": "Motion Demonstrates Galbot S1 Palletizing & MotionOS at Slush",
     "summary": "At the Industrial Renaissance Summit in Helsinki on Nov 19, Motion Robotics showcased the Galbot S1 (320 kg self-weight, 50 kg payload) and its MotionOS orchestration platform built on Google Cloud and Gemini, unveiling a €100k–150k European rental model and shipment to a Belgian warehouse next week.",
-    "tags": ["Galbot S1", "Palletizing", "MotionOS", "European Rental Model"]
+    "tags": [
+      "Galbot S1",
+      "Palletizing",
+      "MotionOS",
+      "European Rental Model"
+    ]
   },
   "humyn-labs-47m-series-a-robotics-data-2026-11-18": {
     "title": "Humyn Labs Raises $47M Series A Backed by Accel to Collect Real-World Robotics Training Data",
     "summary": "Real-world robotics data startup Humyn Labs raised $47 million ($26M equity led by Accel plus $21M venture debt led by Lighthouse Canton) to scale its custom two-camera capture hardware across 20+ countries—collecting vision, audio, touch, and motion data—and open offices in San Francisco, London, and Seoul.",
-    "tags": ["$47M Series A", "Robotics Data", "Multimodal Capture", "Accel"]
+    "tags": [
+      "$47M Series A",
+      "Robotics Data",
+      "Multimodal Capture",
+      "Accel"
+    ]
   },
   "genesis-ai-500m-series-a-2026-11-17": {
     "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Scale General-Purpose Robot Eno",
     "summary": "On Nov 17, 2026, general-purpose robotics startup Genesis AI announced a $500 million Series A at a $3.5 billion post-money valuation co-led by Premji Invest, Khosla Ventures, and Eclipse with NVIDIA, AMD Ventures, HSG, and Eric Schmidt participating, fueling GENE model training and commercial deployment of its Eno robot.",
-    "tags": ["$500M Series A", "$3.5B Valuation", "GENE Model", "General-Purpose Robot"]
+    "tags": [
+      "$500M Series A",
+      "$3.5B Valuation",
+      "GENE Model",
+      "General-Purpose Robot"
+    ]
   },
   "fourier-meta-humanoid-collaboration-2026-11-17": {
     "title": "Fourier CEO Pledges Focus on Hardware Over Brains Amid Reported Meta Humanoid Partnership",
     "summary": "In a November 2026 Huxiu interview, Fourier Intelligence founder Gu Jie emphasized staying focused on robot hardware rather than building foundation brains; the report also revealed that Meta and Fourier co-developed a 1.5 m, 48 kg humanoid prototype powered by NVIDIA Jetson Thor in roughly three months.",
-    "tags": ["Meta Partnership", "Fourier", "Jetson Thor", "Prototype"]
+    "tags": [
+      "Meta Partnership",
+      "Fourier",
+      "Jetson Thor",
+      "Prototype"
+    ]
   },
   "xiaomi-humanoid-8h-factory-trial-2026-11-17": {
     "title": "Lei Jun Discloses Xiaomi Humanoid Completed 8-Hour Factory Trial With Two Autonomous Charges",
     "summary": "Speaking at the 2026 APEC CEO Summit in Shenzhen on Nov 17, Xiaomi founder Lei Jun revealed that Xiaomi's embodied AI humanoid has completed an 8-hour factory internship including two autonomous recharges—alongside earlier 30-minute apartment chores powered by Xiaomi-Robotics-1—predicting robotics will surpass EVs in market potential.",
-    "tags": ["Auto Factory", "8h Trial", "Xiaomi Humanoid", "APEC 2026"]
+    "tags": [
+      "Auto Factory",
+      "8h Trial",
+      "Xiaomi Humanoid",
+      "APEC 2026"
+    ]
   },
   "qianhai-embodied-ai-showcase-apec-2026-11-17": {
     "title": "Shenzhen Embodied AI Cluster Showcases Commercial Deployments During 2026 APEC Summit",
     "summary": "During the 2026 APEC Summit on Nov 17, Shenzhen's Qianhai tech showcase featured Galbot G1 making breakfast, X Square Robot sorting parts on an 11 m/min conveyor, and DexForce running an autonomous retail kiosk; the report also noted UBTECH's nearly RMB 1.4B 2025 humanoid orders and H1 2026 revenue of RMB 1.27B (+104.2% YoY) with Walker S2 entering Airbus and TI plants.",
-    "tags": ["Commercialization", "Shenzhen Cluster", "APEC 2026", "Global Orders"]
+    "tags": [
+      "Commercialization",
+      "Shenzhen Cluster",
+      "APEC 2026",
+      "Global Orders"
+    ]
   },
   "tarsbot-aptiv-100-unit-deployment-2026-11-16": {
     "title": "TARSBOT and Aptiv Deepen Embodied AI Collaboration with 100-Unit Factory Deployment",
     "summary": "On Nov 16, 2026, TARSBOT and Aptiv signed a strategic agreement at CIIE to deploy 100 TARSBOT A-Series industrial embodied AI robots by year-end across 8 manufacturing categories and 33 scenarios, integrating Aptiv compute platforms toward a 1,000-unit fleet and iterating TARSBOT's AWE foundation model.",
-    "tags": ["Industrial Rollout", "100-Unit Fleet", "AWE Model", "CIIE"]
+    "tags": [
+      "Industrial Rollout",
+      "100-Unit Fleet",
+      "AWE Model",
+      "CIIE"
+    ]
   },
   "siemens-agibot-agentic-ai-gripper-2026-11-16": {
     "title": "Siemens and AgiBot Showcase Agentic AI Workflow for Automated Gripper Design & Simulation",
     "summary": "On Nov 16, 2026, Siemens announced an end-to-end industrial AI and additive manufacturing workflow in partnership with AgiBot, enabling users to describe target objects and tasks in text so AI automatically selects grippers, adjusts geometry, validates via simulation, and outputs 3D-printing data.",
-    "tags": ["Agentic AI", "Simulation", "AgiBot", "Siemens"]
+    "tags": [
+      "Agentic AI",
+      "Simulation",
+      "AgiBot",
+      "Siemens"
+    ]
   },
   "leju-15-humanoids-auto-parts-line-2026-11-16": {
     "title": "Leju Robotics Operates 15 Humanoid Robots Trouble-Free for Over 2 Months on Auto Parts Line",
     "summary": "According to a Nov 16, 2026 Securities Daily field report, 15 wheeled humanoid robots from Leju Robotics have operated continuously without failure for over two months on a listed automaker supplier's production line, handling bearing recognition, grasping, and line feeding.",
-    "tags": ["Auto Line", "Commercialization", "Leju Robotics", "Uptime"]
+    "tags": [
+      "Auto Line",
+      "Commercialization",
+      "Leju Robotics",
+      "Uptime"
+    ]
   },
   "figure-adcock-memory-bottleneck-helix3-2026-11-16": {
     "title": "Figure AI CEO Says Memory—Not Chips—Is the Bottleneck, Details Helix 3 & Figure 4",
     "summary": "Speaking on Nov 16, 2026, Figure AI CEO Brett Adcock warned that high-bandwidth memory capacity—rather than chips alone—is the binding constraint on humanoid scaling, disclosing a $3B+ (100,000-GPU) Nscale deal for Helix 3 pretraining, zero-shot Helix 2.5 home tests across 30 unseen houses, and Figure 4 designed for lights-out manufacturing.",
-    "tags": ["Helix 3", "Figure 4", "Memory Bottleneck", "Zero-Shot"]
+    "tags": [
+      "Helix 3",
+      "Figure 4",
+      "Memory Bottleneck",
+      "Zero-Shot"
+    ]
   },
   "robotera-xhand1-prou-gr00t2-2026-11-16": {
     "title": "ROBOTERA Launches XHAND 1 Pro-U, Featured in NVIDIA's GR00T 2 DexUMI Demo",
     "summary": "On Nov 16, 2026, ROBOTERA unveiled the XHAND 1 Pro-U dexterous hand and showcased its high-dexterity manipulation capabilities inside NVIDIA's GR00T 2 DexUMI demonstration at CoRL.",
-    "tags": ["Dexterous Hand", "GR00T 2", "CoRL 2026", "DexUMI"]
+    "tags": [
+      "Dexterous Hand",
+      "GR00T 2",
+      "CoRL 2026",
+      "DexUMI"
+    ]
   },
   "china-embodied-ai-funding-shakeout-2026-11-16": {
     "title": "China Embodied AI Tops RMB 90B Funding in H1 2026 Amid Industry Shakeout",
     "summary": "According to TMTPost and ITJuzi, Chinese embodied AI startups raised over RMB 90 billion in H1 2026 (including RMB 1B+ rounds for chipmakers like D-Robotics in September), while over ten robotics firms entered liquidation or shutdown due to broken unit economics.",
-    "tags": ["Funding", "Commercialization", "D-Robotics", "Shakeout"]
+    "tags": [
+      "Funding",
+      "Commercialization",
+      "D-Robotics",
+      "Shakeout"
+    ]
   },
   "agile-robots-500m-series-f-2026-11-15": {
     "title": "Agile Robots Hits $8.5B Valuation with $500M Series F Backed by SoftBank & NVIDIA",
     "summary": "Munich-based Physical AI company Agile Robots raised $500 million in a Series F round led by SoftBank Group with NVIDIA, Hitachi, and T.Capital participating, reaching an $8.5 billion valuation and $2 billion in total funding to scale industrial deployment.",
-    "tags": ["$500M Series F", "$8.5B Valuation", "SoftBank", "NVIDIA"]
+    "tags": [
+      "$500M Series F",
+      "$8.5B Valuation",
+      "SoftBank",
+      "NVIDIA"
+    ]
   },
   "asus-gallop-humanoid-thor-2026-11-13": {
     "title": "ASUS Unveils Gallop Factory Humanoid Powered by a Single NVIDIA Jetson AGX Thor",
     "summary": "ASUS detailed its Gallop humanoid robot project designed for factory automation, running its entire vision and Physical AI stack onboard a single NVIDIA Jetson AGX Thor computer.",
-    "tags": ["Humanoid", "Jetson AGX Thor", "Smart Manufacturing"]
+    "tags": [
+      "Humanoid",
+      "Jetson AGX Thor",
+      "Smart Manufacturing"
+    ]
   },
   "gxo-apptronik-expand-partnership-2026-11-12": {
     "title": "GXO and Apptronik Sign LOI to Expand Commercial Apollo Humanoid Deployment",
     "summary": "Contract logistics giant GXO and Apptronik signed a letter of intent on Nov 12, 2026 to expand operational trials and commercial deployment of Apollo humanoid robots through a Robotics-as-a-Service (RaaS) model.",
-    "tags": ["Logistics", "RaaS", "Apollo", "Commercial Rollout"]
+    "tags": [
+      "Logistics",
+      "RaaS",
+      "Apollo",
+      "Commercial Rollout"
+    ]
   },
   "beijing-embodied-ai-action-plan-2026-11-11": {
     "title": "Beijing Issues 2026–2028 Action Plan for High-Quality Embodied AI Robotics",
     "summary": "The Beijing Municipal Bureau of Economy and Information Technology released its 2026–2028 action plan on Nov 11 to accelerate core component R&D, open-source embodied foundation models, and real-world commercial deployment.",
-    "tags": ["Policy", "Beijing", "2026–2028", "Commercialization"]
+    "tags": [
+      "Policy",
+      "Beijing",
+      "2026–2028",
+      "Commercialization"
+    ]
   },
   "robbyant-lingbot-touch-2026-11-10": {
     "title": "Robbyant Open-Sources LingBot-Touch Tactile Model, Boosting Dexterous Success by 13.9%+",
     "summary": "Ant Group's Robbyant open-sourced the LingBot-Touch tactile foundation model, lifting mean success rates for Diffusion Policy, π0.5, and LingBot-VLA by over 13.9 percentage points across 26 real-robot dexterous hand tasks.",
-    "tags": ["Tactile Model", "Open Source", "LingBot-VLA", "Dexterous Hand"]
+    "tags": [
+      "Tactile Model",
+      "Open Source",
+      "LingBot-VLA",
+      "Dexterous Hand"
+    ]
   },
   "nvidia-corl-2026-gr00t2-isaac-lab-3-2026-11-09": {
     "title": "NVIDIA Introduces Isaac GR00T 2, Isaac Lab 3.0 & Open Benchmarks at CoRL 2026",
     "summary": "At the Conference on Robot Learning (CoRL 2026), NVIDIA and ecosystem partners unveiled Isaac GR00T 2, Isaac Lab 3.0, and new open evaluation benchmarks to accelerate Physical AI simulation and sim-to-real transfer.",
-    "tags": ["GR00T 2", "Isaac Lab 3.0", "CoRL 2026", "Benchmarks"]
+    "tags": [
+      "GR00T 2",
+      "Isaac Lab 3.0",
+      "CoRL 2026",
+      "Benchmarks"
+    ]
   },
   "agility-robotics-nasdaq-aglt-2026-11-05": {
     "title": "Agility Robotics Lists on Nasdaq as 'AGLT' Following SPAC Merger (~$465M Gross Capital)",
     "summary": "Agility Robotics closed its SPAC merger on Nov 4, 2026 and began trading on Nasdaq under ticker AGLT on Nov 5 with approximately $465 million in gross capital, becoming one of the first publicly traded humanoid companies.",
-    "tags": ["Nasdaq IPO", "SPAC", "$465M", "Digit"]
+    "tags": [
+      "Nasdaq IPO",
+      "SPAC",
+      "$465M",
+      "Digit"
+    ]
   },
   "sharpa-funding-and-dexterous-hands-2026-11-03": {
     "title": "Sharpa Discloses RMB 4.5B+ Round at ~RMB 22B Valuation Behind 22-DoF Wave Hand",
     "summary": "Visuotactile hand maker Sharpa raised over RMB 4.5 billion ($618M–$669M) at a ~RMB 22 billion ($3.0B–$3.3B) valuation in August 2026, scaling its 22-DoF Wave hand and humanoid robotics stack.",
-    "tags": ["RMB 4.5B+ Funding", "Dexterous Hand", "Visuotactile", "Sharpa Wave"]
+    "tags": [
+      "RMB 4.5B+ Funding",
+      "Dexterous Hand",
+      "Visuotactile",
+      "Sharpa Wave"
+    ]
   }
 }

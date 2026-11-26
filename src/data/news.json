@@ -1,5 +1,141 @@
 [
   {
+    "id": "oymotion-series-d-dexterous-hands-2026-11-25",
+    "title": "傲意科技完成数亿元 D 轮融资，灵巧手上半年订单破万台并冲刺上市",
+    "summary": "11 月 24–25 日报道，上海傲意科技官宣完成数亿元 D 轮融资（年内第二轮），由中兵顺景与湖北百亿人形机器人产业母基金（长江资本、光谷产投）等投资。公司在珠海自建年产能万台级工厂，2026 上半年灵巧手订单已跨过万台、服务全球近 200 家具身智能企业；同期章鱼动力、英汉思动力也先后完成亿元级融资。",
+    "company": "OYMotion",
+    "companyZh": "傲意科技",
+    "country": "中国",
+    "category": "funding",
+    "publishedAt": "2026-11-25",
+    "sourceName": "36氪",
+    "sourceUrl": "https://m.36kr.com/p/4083520759600768",
+    "tags": [
+      "D轮融资",
+      "灵巧手",
+      "傲意科技",
+      "万台订单"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "zoomlion-z01-humanoid-embodied-ai-2026-11-25",
+    "title": "中联重科发布 Z01 双足人形机器人与 120 工位训练场，具身智能规划独立投融资",
+    "summary": "11 月 24–25 日 bauma CHINA 2026 期间，中联重科发布自研 Z01 双足人形机器人等 10 款具身产品及 Robot Ops 操作系统，打造 120 工位具身智能训练场并沉淀 18 万条工业训练数据；数十台机器人已进入近 20 个工业场景试运行，人形机器人工厂拟 2026 年底建成投产，具身智能业务规划独立开展投融资。",
+    "company": "Zoomlion",
+    "companyZh": "中联重科",
+    "country": "中国",
+    "category": "commercial",
+    "publishedAt": "2026-11-25",
+    "sourceName": "经济参考报（新华网）",
+    "sourceUrl": "http://jjckb.xinhuanet.com/20261125/0b3eab953d3b4c55a756f2609cd2fee3/c.html",
+    "tags": [
+      "Z01人形机器人",
+      "中联重科",
+      "工业训练场",
+      "独立融资规划"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "yyforce-six-seven-novotel-singapore-2026-11-25",
+    "title": "YYForce 在新加坡 Novotel 酒店部署「Six Seven」人形礼宾机器人（基于 Jetson 与 Isaac Sim）",
+    "summary": "11 月 25 日报道，YYForce Inc. 推出基于 NVIDIA Jetson 与 Isaac Sim 开发的「Six Seven」酒店礼宾人形机器人，并在新加坡史蒂文斯诺富特酒店（Novotel Singapore on Stevens）正式上岗，为住客提供自然对话与实时酒店信息导览服务。",
+    "company": "YYForce Inc.",
+    "companyZh": "YYForce",
+    "country": "新加坡/美国",
+    "category": "commercial",
+    "publishedAt": "2026-11-25",
+    "sourceName": "Pluang",
+    "sourceUrl": "https://pluang.com/en/news-feed/yyforce-luncurkan-robot-humanoid-untuk-resepsi-hotel-berbasis-nvidia-jetson",
+    "tags": [
+      "酒店服务",
+      "NVIDIA Jetson",
+      "Isaac Sim",
+      "新加坡"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "xpeng-ai-day-2026-turing-iron-q2-2027-2026-11-25",
+    "title": "小鹏 2026 AI Day 发布图灵物理 AI 架构（VLA 3.0），IRON 人形定档 2027 年 Q2 正式发售",
+    "summary": "11 月 25 日广州 AI Day 上，小鹏发布打通 System 0/1/2 三层协同的图灵物理 AI 架构（VLA 3.0）；身高 170cm、重 62kg、76 自由度的 IRON 人形机器人现场自主登台演讲并自主返回充电（搭载 3 颗图灵芯片与 >300 Wh/kg 固态电池，快充 20 分钟工作 1.5 小时），将于 2027 年 1 月开启量产、Q1 进驻国内门店实训、Q2 正式发售。",
+    "company": "XPENG",
+    "companyZh": "小鹏",
+    "country": "中国",
+    "category": "technical",
+    "publishedAt": "2026-11-25",
+    "sourceName": "CnEVPost",
+    "sourceUrl": "https://cnevpost.com/2026/11/25/xpeng-ramps-up-physical-ai-push-2026-ai-day/",
+    "tags": [
+      "小鹏AI Day",
+      "图灵物理AI",
+      "IRON量产",
+      "VLA 3.0"
+    ],
+    "relatedRobotIds": [
+      "xpeng-iron"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "roscosmos-teledroid-iss-launch-2026-11-25",
+    "title": "俄罗斯航天局发射 Teledroid 人形机器人前往国际空间站，验证舱外作业辅助",
+    "summary": "11 月 24–25 日，俄罗斯航天局（Roscosmos）通过进步 MS-36 货运飞船将 Teledroid 人形机器人发射前往国际空间站（预计 11 月 26 日对接）。该项目由 NPO Android Technics 与 RSC Energia 联合研制，结合舱内/地面外骨骼遥操作复制与部分自主执行，协助宇航员完成舱外设备安装等太空行走前置任务。",
+    "company": "Roscosmos / NPO Android Technics",
+    "companyZh": "俄罗斯航天局 / Android Technics",
+    "country": "俄罗斯",
+    "category": "commercial",
+    "publishedAt": "2026-11-25",
+    "sourceName": "Humanoid.guide",
+    "sourceUrl": "https://humanoid.guide/roscosmos-launches-teledroid-humanoid-for-iss-exterior-work/",
+    "tags": [
+      "太空机器人",
+      "国际空间站",
+      "Teledroid",
+      "遥操作"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "oversonic-robee-angelini-investment-2026-11-25",
+    "title": "工业巨头 Angelini 战略入股意大利 Oversonic，加速 RoBee 认知人形机器人出海",
+    "summary": "11 月 25 日披露，意大利工业自动化集团 Angelini Technologies 战略入股人形机器人公司 Oversonic Robotics，并联合此前入股的意法半导体（STMicroelectronics）等重塑董事会，借助其全球自动化供应链推动工业认证人形机器人 RoBee 进军欧美工厂与医疗场景。",
+    "company": "Oversonic Robotics & Angelini",
+    "companyZh": "Oversonic & Angelini",
+    "country": "意大利",
+    "category": "funding",
+    "publishedAt": "2026-11-25",
+    "sourceName": "Dealroom News",
+    "sourceUrl": "https://dealroom.co/news/175743-angelini-joins-oversonic-s-cap-table-to-scale-robee-humanoid-abroad/",
+    "tags": [
+      "战略投资",
+      "RoBee人形",
+      "欧洲制造",
+      "Oversonic"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "black-ai-japan-seed-incubate-fund-2026-11-25",
+    "title": "东京大学衍生人形机器人企业 Black AI 获 Incubate Fund 领投种子轮融资",
+    "summary": "11 月 25 日披露，东京大学衍生初创企业 Black AI 完成 Incubate Fund 领投的种子轮融资，全栈自研机器人本体硬件与全身控制模型，旨在攻克未知工厂环境下的零样本通用操作，缓解日本制造业深度劳动力短缺。",
+    "company": "Black AI",
+    "companyZh": "Black AI",
+    "country": "日本",
+    "category": "funding",
+    "publishedAt": "2026-11-25",
+    "sourceName": "Dealroom News",
+    "sourceUrl": "https://dealroom.co/news/175482-black-ai-raises-seed-from-incubate-fund-for-japanese-humanoids/",
+    "tags": [
+      "种子轮融资",
+      "日本人形机器人",
+      "零样本控制",
+      "Black AI"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
     "id": "xpeng-worldgpt-iron-foundation-model-2026-11-24",
     "title": "小鹏发布物理世界基础模型 WorldGPT，一模型跨汽车、76 自由度 IRON 人形与飞行器",
     "summary": "11 月 24 日（广州 AI Day 前夕），小鹏正式发布物理世界基础模型 WorldGPT，通过云端教师模型蒸馏统一赋能汽车、76 自由度 IRON 人形机器人与无人机等 6 类实体，宣称在 12 项基准测试位居第一。IRON 量产线已于 9 月 8 日下线首台，搭载 3 颗图灵 AI 芯片（最高 2,250 TOPS）实现机载全自主运行。",
@@ -10,8 +146,15 @@
     "publishedAt": "2026-11-24",
     "sourceName": "HumanoidMegaHub",
     "sourceUrl": "https://www.humanoidmegahub.com/news/xpeng-worldgpt",
-    "tags": ["WorldGPT", "小鹏IRON", "物理AI基座模型", "跨本体蒸馏"],
-    "relatedRobotIds": ["xpeng-iron"],
+    "tags": [
+      "WorldGPT",
+      "小鹏IRON",
+      "物理AI基座模型",
+      "跨本体蒸馏"
+    ],
+    "relatedRobotIds": [
+      "xpeng-iron"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -25,7 +168,12 @@
     "publishedAt": "2026-11-24",
     "sourceName": "AF.NET (GlobeNewswire)",
     "sourceUrl": "https://af.net/realtime/pos-malaysia-and-x-square-robot-partner-on-ai-across-3000-hubs/",
-    "tags": ["自变量机器人", "物流分拣", "马来西亚邮政", "具身出海"],
+    "tags": [
+      "自变量机器人",
+      "物流分拣",
+      "马来西亚邮政",
+      "具身出海"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -39,7 +187,12 @@
     "publishedAt": "2026-11-24",
     "sourceName": "Dealroom News",
     "sourceUrl": "https://dealroom.co/news/175411-yingtuo-sensing-raises-tens-of-millions-of-yuan-for-force-sensing-robot-/",
-    "tags": ["六维力传感器", "一体化关节", "天使轮融资", "盈拓传感"],
+    "tags": [
+      "六维力传感器",
+      "一体化关节",
+      "天使轮融资",
+      "盈拓传感"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -53,7 +206,12 @@
     "publishedAt": "2026-11-23",
     "sourceName": "Emergent",
     "sourceUrl": "https://emergent.sh/news/wall-oss-1-0-hits-55-1-zero-shot-success-312",
-    "tags": ["WALL-OSS-1.0", "VLA大模型", "零样本", "自变量机器人"],
+    "tags": [
+      "WALL-OSS-1.0",
+      "VLA大模型",
+      "零样本",
+      "自变量机器人"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -67,7 +225,12 @@
     "publishedAt": "2026-11-23",
     "sourceName": "The Japan Times (Bloomberg)",
     "sourceUrl": "https://www.japantimes.co.jp/business/2026/11/23/tech/ant-group-simplexity-china-humanoid/",
-    "tags": ["1亿美元融资", "16亿美元估值", "蚂蚁集团", "至简动力"],
+    "tags": [
+      "1亿美元融资",
+      "16亿美元估值",
+      "蚂蚁集团",
+      "至简动力"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -81,7 +244,12 @@
     "publishedAt": "2026-11-23",
     "sourceName": "凤凰网财经",
     "sourceUrl": "https://finance.ifeng.com/c/8yHmpysmxLR",
-    "tags": ["港股IPO", "工业具身智能", "微亿智造", "工业数据"],
+    "tags": [
+      "港股IPO",
+      "工业具身智能",
+      "微亿智造",
+      "工业数据"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -95,7 +263,12 @@
     "publishedAt": "2026-11-23",
     "sourceName": "NVIDIA Newsroom",
     "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-    "tags": ["NVIDIA", "黄仁勋", "物理AI生态", "管理层动态"],
+    "tags": [
+      "NVIDIA",
+      "黄仁勋",
+      "物理AI生态",
+      "管理层动态"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -109,8 +282,15 @@
     "publishedAt": "2026-11-23",
     "sourceName": "东方财富网 / Humanoid.guide",
     "sourceUrl": "https://finance.eastmoney.com/a/202611233937215717.html",
-    "tags": ["行业标准", "工信部", "Tesla Optimus", "产线量产"],
-    "relatedRobotIds": ["tesla-optimus-gen3"],
+    "tags": [
+      "行业标准",
+      "工信部",
+      "Tesla Optimus",
+      "产线量产"
+    ],
+    "relatedRobotIds": [
+      "tesla-optimus-gen3"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -124,7 +304,12 @@
     "publishedAt": "2026-11-23",
     "sourceName": "凤凰网财经",
     "sourceUrl": "https://finance.ifeng.com/c/8yHIh6EG5Qb",
-    "tags": ["SuperMimic", "可微世界模型", "智元LIFE", "CoRL 2026"],
+    "tags": [
+      "SuperMimic",
+      "可微世界模型",
+      "智元LIFE",
+      "CoRL 2026"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -138,7 +323,12 @@
     "publishedAt": "2026-11-23",
     "sourceName": "凤凰网财经",
     "sourceUrl": "https://finance.ifeng.com/c/8yHIh6EG5Qb",
-    "tags": ["行星减速器", "创业板IPO", "智元机器人", "优必选"],
+    "tags": [
+      "行星减速器",
+      "创业板IPO",
+      "智元机器人",
+      "优必选"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -152,8 +342,15 @@
     "publishedAt": "2026-11-23",
     "sourceName": "凤凰网财经",
     "sourceUrl": "https://finance.ifeng.com/c/8yHIh6EG5Qb",
-    "tags": ["越疆Atom", "零售落地", "英伟达", "NVentures"],
-    "relatedRobotIds": ["dobot-atom"],
+    "tags": [
+      "越疆Atom",
+      "零售落地",
+      "英伟达",
+      "NVentures"
+    ],
+    "relatedRobotIds": [
+      "dobot-atom"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -167,7 +364,12 @@
     "publishedAt": "2026-11-22",
     "sourceName": "国家数据局",
     "sourceUrl": "https://www.nda.gov.cn/sjj/swdt/mtsy/1122/20261122201646034268538_pc.html",
-    "tags": ["具身智能数据", "国家标准", "国家数据局", "产业政策"],
+    "tags": [
+      "具身智能数据",
+      "国家标准",
+      "国家数据局",
+      "产业政策"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -181,7 +383,12 @@
     "publishedAt": "2026-11-22",
     "sourceName": "东方财富网（央广网）",
     "sourceUrl": "https://finance.eastmoney.com/a/202611223936945273.html",
-    "tags": ["世界计算大会", "商业落地", "物理安全", "湖南产业目标"],
+    "tags": [
+      "世界计算大会",
+      "商业落地",
+      "物理安全",
+      "湖南产业目标"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -195,7 +402,12 @@
     "publishedAt": "2026-11-21",
     "sourceName": "The Japan Times",
     "sourceUrl": "https://www.japantimes.co.jp/news/2026/11/21/world/science-health/killer-robots-pact/",
-    "tags": ["自主武器监管", "联合国", "机器人伦理", "国际政策"],
+    "tags": [
+      "自主武器监管",
+      "联合国",
+      "机器人伦理",
+      "国际政策"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -209,7 +421,12 @@
     "publishedAt": "2026-11-21",
     "sourceName": "IT之家",
     "sourceUrl": "https://www.ithome.com/1/030/436.htm",
-    "tags": ["机器人出海", "商业落地", "APEC 2026", "国产具身智能"],
+    "tags": [
+      "机器人出海",
+      "商业落地",
+      "APEC 2026",
+      "国产具身智能"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -223,7 +440,12 @@
     "publishedAt": "2026-11-20",
     "sourceName": "Gasgoo",
     "sourceUrl": "https://autonews.gasgoo.com/articles/news/boston-dynamics-humanoid-robot-secures-first-chip-plant-customer-2123775609070927872",
-    "tags": ["Atlas", "Spot", "半导体晶圆厂", "商业验证"],
+    "tags": [
+      "Atlas",
+      "Spot",
+      "半导体晶圆厂",
+      "商业验证"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -237,7 +459,12 @@
     "publishedAt": "2026-11-20",
     "sourceName": "凤凰网财经（证券时报）",
     "sourceUrl": "https://finance.ifeng.com/c/8yCjltUsVxL",
-    "tags": ["宇树科技", "索辰科技", "具身智能实验基地", "杭州"],
+    "tags": [
+      "宇树科技",
+      "索辰科技",
+      "具身智能实验基地",
+      "杭州"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -251,7 +478,12 @@
     "publishedAt": "2026-11-20",
     "sourceName": "Dealroom News",
     "sourceUrl": "https://dealroom.co/news/174719-taisei-bankrolls-150m-fund-for-ai-and-robotics-startups/",
-    "tags": ["1.5亿美元基金", "建筑机器人", "产业资本", "日本"],
+    "tags": [
+      "1.5亿美元基金",
+      "建筑机器人",
+      "产业资本",
+      "日本"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -265,7 +497,12 @@
     "publishedAt": "2026-11-20",
     "sourceName": "凤凰网财经",
     "sourceUrl": "https://finance.ifeng.com/c/8yDHogeUt0d",
-    "tags": ["恒生科技指数", "优必选", "禾赛科技", "港股扩容"],
+    "tags": [
+      "恒生科技指数",
+      "优必选",
+      "禾赛科技",
+      "港股扩容"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -279,7 +516,12 @@
     "publishedAt": "2026-11-20",
     "sourceName": "Public Radio of Armenia",
     "sourceUrl": "https://en.armradio.am/2026/11/20/armenia-launches-national-center-for-robotics-and-physical-ai/",
-    "tags": ["物理AI中心", "产业政策", "人才培养", "NVIDIA"],
+    "tags": [
+      "物理AI中心",
+      "产业政策",
+      "人才培养",
+      "NVIDIA"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -293,7 +535,12 @@
     "publishedAt": "2026-11-20",
     "sourceName": "The Robot Report",
     "sourceUrl": "https://www.therobotreport.com/medtronics-hugo-surgical-robot-ready-for-bigger-operation/",
-    "tags": ["医疗机器人", "FDA批准", "Hugo RAS", "普通外科"],
+    "tags": [
+      "医疗机器人",
+      "FDA批准",
+      "Hugo RAS",
+      "普通外科"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -307,7 +554,12 @@
     "publishedAt": "2026-11-19",
     "sourceName": "PR Newswire",
     "sourceUrl": "https://www.prnewswire.com/news-releases/keenon-robotics-showcases-multi-robot-collaboration-and-explores-humanoid-assisted-cleaning-at-issa-2026-302945381.html",
-    "tags": ["多机协同", "人形机器人清洁", "ISSA 2026", "具身智能落地"],
+    "tags": [
+      "多机协同",
+      "人形机器人清洁",
+      "ISSA 2026",
+      "具身智能落地"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -321,7 +573,12 @@
     "publishedAt": "2026-11-19",
     "sourceName": "凤凰网财经",
     "sourceUrl": "https://finance.ifeng.com/c/8yBTo01Kmxl",
-    "tags": ["具身智能总部", "战略合作", "量产订单", "前海"],
+    "tags": [
+      "具身智能总部",
+      "战略合作",
+      "量产订单",
+      "前海"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -335,7 +592,12 @@
     "publishedAt": "2026-11-19",
     "sourceName": "Fast Company / 36Kr Europe",
     "sourceUrl": "https://www.fastcompany.com/91643258/foundation-future-industries-humanoid-robot-war",
-    "tags": ["Phantom MKII", "Cortex II", "200磅负载", "2027年投产"],
+    "tags": [
+      "Phantom MKII",
+      "Cortex II",
+      "200磅负载",
+      "2027年投产"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -349,7 +611,12 @@
     "publishedAt": "2026-11-19",
     "sourceName": "EQS News",
     "sourceUrl": "https://www.eqs-news.com/news/corporate/circus-brings-autonomous-robotics-into-hospital-nutrition-launched-with-schoen-clinic-group/01ee239e-b973-42dd-9be6-ef0cfdf483e7_en",
-    "tags": ["自主餐饮", "医院场景", "CA-1", "德国"],
+    "tags": [
+      "自主餐饮",
+      "医院场景",
+      "CA-1",
+      "德国"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -363,7 +630,12 @@
     "publishedAt": "2026-11-19",
     "sourceName": "Humanoid.guide",
     "sourceUrl": "https://humanoid.guide/motion-demonstrates-galbot-s1-palletizing-at-slush-summit/",
-    "tags": ["Galbot S1", "码垛", "MotionOS", "欧洲租赁模式"],
+    "tags": [
+      "Galbot S1",
+      "码垛",
+      "MotionOS",
+      "欧洲租赁模式"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -377,7 +649,12 @@
     "publishedAt": "2026-11-18",
     "sourceName": "The Robot Report",
     "sourceUrl": "https://www.therobotreport.com/humyn-labs-raises-47m-to-collect-real-world-data-for-robotics/",
-    "tags": ["4700万美元融资", "机器人数据", "多模态数采", "Accel"],
+    "tags": [
+      "4700万美元融资",
+      "机器人数据",
+      "多模态数采",
+      "Accel"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -391,7 +668,12 @@
     "publishedAt": "2026-11-17",
     "sourceName": "RoboticsTomorrow",
     "sourceUrl": "https://www.roboticstomorrow.com/news/2026/11/17/genesis-ai-raises-500m-series-a-at-35b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale/27402",
-    "tags": ["5亿美元融资", "35亿美元估值", "GENE模型", "通用机器人"],
+    "tags": [
+      "5亿美元融资",
+      "35亿美元估值",
+      "GENE模型",
+      "通用机器人"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -405,8 +687,17 @@
     "publishedAt": "2026-11-17",
     "sourceName": "新浪财经（虎嗅APP）",
     "sourceUrl": "https://k.sina.com.cn/article_7857201856_1d45362c001908v9ca.html?from=tech",
-    "tags": ["Meta合作", "傅利叶", "Jetson Thor", "原型开发"],
-    "relatedRobotIds": ["fourier-gr2", "fourier-n1", "nvidia-jetson-agx-thor"],
+    "tags": [
+      "Meta合作",
+      "傅利叶",
+      "Jetson Thor",
+      "原型开发"
+    ],
+    "relatedRobotIds": [
+      "fourier-gr2",
+      "fourier-n1",
+      "nvidia-jetson-agx-thor"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -420,7 +711,12 @@
     "publishedAt": "2026-11-17",
     "sourceName": "快科技",
     "sourceUrl": "https://news.mydrivers.com/1/1166/1166483.htm",
-    "tags": ["汽车工厂", "8小时实训", "小米机器人", "APEC 2026"],
+    "tags": [
+      "汽车工厂",
+      "8小时实训",
+      "小米机器人",
+      "APEC 2026"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -434,8 +730,17 @@
     "publishedAt": "2026-11-17",
     "sourceName": "21财经",
     "sourceUrl": "https://m.21jingji.com/article/20261117/herald/49753a8cdc409133994aae9db6845208.html",
-    "tags": ["商业落地", "深圳机器人谷", "APEC 2026", "出海订单"],
-    "relatedRobotIds": ["ubtech-walker-s2", "galbot-g1", "dobot-atom"],
+    "tags": [
+      "商业落地",
+      "深圳机器人谷",
+      "APEC 2026",
+      "出海订单"
+    ],
+    "relatedRobotIds": [
+      "ubtech-walker-s2",
+      "galbot-g1",
+      "dobot-atom"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -449,7 +754,12 @@
     "publishedAt": "2026-11-16",
     "sourceName": "PR Newswire",
     "sourceUrl": "https://www.prnewswire.co.uk/news-releases/tarsbot-and-aptiv-deepen-strategic-collaboration-on-embodied-ai-302939142.html",
-    "tags": ["工业落地", "100台部署", "AWE模型", "进博会"],
+    "tags": [
+      "工业落地",
+      "100台部署",
+      "AWE模型",
+      "进博会"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -463,8 +773,16 @@
     "publishedAt": "2026-11-16",
     "sourceName": "每日经济新闻",
     "sourceUrl": "https://www.mrjjxw.com/articles/2026-11-16/4649322.html",
-    "tags": ["智能体AI", "工业仿真", "智元机器人", "西门子"],
-    "relatedRobotIds": ["agibot-a2", "agibot-genie-g1"],
+    "tags": [
+      "智能体AI",
+      "工业仿真",
+      "智元机器人",
+      "西门子"
+    ],
+    "relatedRobotIds": [
+      "agibot-a2",
+      "agibot-genie-g1"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -478,8 +796,15 @@
     "publishedAt": "2026-11-16",
     "sourceName": "新浪财经（证券日报）",
     "sourceUrl": "https://k.sina.com.cn/article_7857201856_1d45362c001908uzl0.html",
-    "tags": ["汽车产线", "商业落地", "乐聚智能", "连续运行"],
-    "relatedRobotIds": ["leju-kuavo-4pro"],
+    "tags": [
+      "汽车产线",
+      "商业落地",
+      "乐聚智能",
+      "连续运行"
+    ],
+    "relatedRobotIds": [
+      "leju-kuavo-4pro"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -493,8 +818,15 @@
     "publishedAt": "2026-11-16",
     "sourceName": "BigGo Finance",
     "sourceUrl": "https://finance.biggo.com/news/529cef7b6b5c6050",
-    "tags": ["Helix 3", "Figure 4", "算力内存", "零样本测试"],
-    "relatedRobotIds": ["figure-03"],
+    "tags": [
+      "Helix 3",
+      "Figure 4",
+      "算力内存",
+      "零样本测试"
+    ],
+    "relatedRobotIds": [
+      "figure-03"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -508,8 +840,15 @@
     "publishedAt": "2026-11-16",
     "sourceName": "RoboticsTomorrow",
     "sourceUrl": "https://www.roboticstomorrow.com/news/2026/11/16/robotera-launches-xhand-1-pro-u-featured-in-nvidias-gr00t-2-dexumi-demonstration/27389/",
-    "tags": ["灵巧手", "GR00T 2", "CoRL 2026", "DexUMI"],
-    "relatedRobotIds": ["robotera-l7"],
+    "tags": [
+      "灵巧手",
+      "GR00T 2",
+      "CoRL 2026",
+      "DexUMI"
+    ],
+    "relatedRobotIds": [
+      "robotera-l7"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -523,8 +862,16 @@
     "publishedAt": "2026-11-16",
     "sourceName": "钛媒体",
     "sourceUrl": "https://www.tmtpost.com/8206266.html",
-    "tags": ["行业融资", "商业闭环", "地瓜机器人", "洗牌分化"],
-    "relatedRobotIds": ["d-robotics-rdk-s100", "d-robotics-rdk-s600"],
+    "tags": [
+      "行业融资",
+      "商业闭环",
+      "地瓜机器人",
+      "洗牌分化"
+    ],
+    "relatedRobotIds": [
+      "d-robotics-rdk-s100",
+      "d-robotics-rdk-s600"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -538,7 +885,12 @@
     "publishedAt": "2026-11-15",
     "sourceName": "StartupValley News",
     "sourceUrl": "https://startupvalley.news/uk/agile-robots-8-5bn-valuation-softbank-nvidia/",
-    "tags": ["5亿美元融资", "85亿美元估值", "软银", "NVIDIA"],
+    "tags": [
+      "5亿美元融资",
+      "85亿美元估值",
+      "软银",
+      "NVIDIA"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -552,8 +904,14 @@
     "publishedAt": "2026-11-13",
     "sourceName": "ASUS Press",
     "sourceUrl": "https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/",
-    "tags": ["人形机器人", "Jetson AGX Thor", "智能制造"],
-    "relatedRobotIds": ["nvidia-jetson-agx-thor"],
+    "tags": [
+      "人形机器人",
+      "Jetson AGX Thor",
+      "智能制造"
+    ],
+    "relatedRobotIds": [
+      "nvidia-jetson-agx-thor"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -567,8 +925,15 @@
     "publishedAt": "2026-11-12",
     "sourceName": "GXO Newsroom",
     "sourceUrl": "https://gxo.com/news_article/gxo-apptronik-expand-humanoid-robotics-partnership/",
-    "tags": ["仓储物流", "RaaS", "Apollo", "商业部署"],
-    "relatedRobotIds": ["apptronik-apollo"],
+    "tags": [
+      "仓储物流",
+      "RaaS",
+      "Apollo",
+      "商业部署"
+    ],
+    "relatedRobotIds": [
+      "apptronik-apollo"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -582,7 +947,12 @@
     "publishedAt": "2026-11-11",
     "sourceName": "数字中国建设峰会官网",
     "sourceUrl": "https://www.szzg.gov.cn/2026/szzg/xyzx/202611/t20261113_5392856.htm",
-    "tags": ["产业政策", "北京", "2026-2028", "商业落地"],
+    "tags": [
+      "产业政策",
+      "北京",
+      "2026-2028",
+      "商业落地"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -596,7 +966,12 @@
     "publishedAt": "2026-11-10",
     "sourceName": "Humanoids Daily",
     "sourceUrl": "https://www.humanoidsdaily.com/news/robbyant-lingbot-touch-open-source-tactile-model",
-    "tags": ["触觉大模型", "开源", "LingBot-VLA", "灵巧手"],
+    "tags": [
+      "触觉大模型",
+      "开源",
+      "LingBot-VLA",
+      "灵巧手"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -610,8 +985,16 @@
     "publishedAt": "2026-11-09",
     "sourceName": "NVIDIA Blog",
     "sourceUrl": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
-    "tags": ["GR00T 2", "Isaac Lab 3.0", "CoRL 2026", "仿真基准"],
-    "relatedRobotIds": ["nvidia-jetson-agx-thor", "nvidia-jetson-agx-orin"],
+    "tags": [
+      "GR00T 2",
+      "Isaac Lab 3.0",
+      "CoRL 2026",
+      "仿真基准"
+    ],
+    "relatedRobotIds": [
+      "nvidia-jetson-agx-thor",
+      "nvidia-jetson-agx-orin"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -625,8 +1008,15 @@
     "publishedAt": "2026-11-05",
     "sourceName": "New Market Pitch",
     "sourceUrl": "https://newmarketpitch.com/blogs/news/humanoid-robotics-ma-tracker",
-    "tags": ["纳斯达克上市", "SPAC", "4.65亿美元", "Digit"],
-    "relatedRobotIds": ["agility-digit"],
+    "tags": [
+      "纳斯达克上市",
+      "SPAC",
+      "4.65亿美元",
+      "Digit"
+    ],
+    "relatedRobotIds": [
+      "agility-digit"
+    ],
     "dataUpdated": "2026-11"
   },
   {
@@ -640,8 +1030,15 @@
     "publishedAt": "2026-11-03",
     "sourceName": "New Market Pitch",
     "sourceUrl": "https://newmarketpitch.com/blogs/news/humanoid-robotics-who-is-ahead-robot-hands",
-    "tags": ["45亿元融资", "灵巧手", "视触觉", "Sharpa Wave"],
-    "relatedRobotIds": ["sharpa-wave"],
+    "tags": [
+      "45亿元融资",
+      "灵巧手",
+      "视触觉",
+      "Sharpa Wave"
+    ],
+    "relatedRobotIds": [
+      "sharpa-wave"
+    ],
     "dataUpdated": "2026-11"
   }
 ]
