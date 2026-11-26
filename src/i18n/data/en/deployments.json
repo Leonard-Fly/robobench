@@ -1,52 +1,128 @@
 {
+  "dobot-atom-shenzhen-cinema": {
+    "title": "DOBOT Humanoid Operates 14 Hours Daily Selling 1,000+ Popcorn Cups at Shenzhen K11 Cinema",
+    "summary": "Reported by People's Daily, DOBOT's humanoid robot works 14-hour daily shifts as a popcorn attendant at a Shenzhen K11 shopping mall cinema, selling over 1,000 cups per day in continuous commercial retail operation.",
+    "metrics": [
+      "14 hours daily operation",
+      "1,000+ cups sold/day",
+      "Live commercial retail"
+    ]
+  },
+  "leju-kuavo-auto-parts-line": {
+    "title": "15 Leju Wheeled Humanoids Run Trouble-Free for Over 2 Months on Auto Parts Line",
+    "summary": "Per a Securities Daily field report, 15 wheeled humanoid robots from Leju Robotics have operated continuously without failure for over two months on a listed auto-parts supplier's production line, handling bearing recognition, grasping, and feeding.",
+    "metrics": [
+      "15-unit production fleet",
+      "2+ months trouble-free uptime",
+      "Bearing grasping & feeding"
+    ]
+  },
+  "spot-globalfoundries-singapore-fab": {
+    "title": "Boston Dynamics Spot Logs 900 km & 99% Success at GlobalFoundries Singapore Fab; Atlas Trials Next",
+    "summary": "Two Spot quadrupeds at GlobalFoundries' Singapore fab have logged ~900 km and 90,000+ inspection tasks at a 99% success rate since April, prompting expansion across U.S., European, and Asian fabs plus early-2027 Atlas humanoid trials.",
+    "metrics": [
+      "~900 km inspected",
+      "90,000+ tasks at 99% success",
+      "Early 2027 Atlas fab trials"
+    ]
+  },
+  "galbot-s1-motion-belgium-warehouse": {
+    "title": "Galbot S1 & Gemini-Powered MotionOS Deploy to Belgian Warehouse Under €100k–150k Rental Model",
+    "summary": "Showcased at Slush 2026 by Motion Robotics, the 320 kg Galbot S1 (50 kg payload) paired with Google Cloud and Gemini-based MotionOS is shipping to a Belgian warehouse for automated palletizing under a €100k–150k European rental model.",
+    "metrics": [
+      "50 kg palletizing payload",
+      "€100k–150k European rental",
+      "Gemini-powered MotionOS"
+    ]
+  },
   "digit-gxo-flowery-branch": {
     "title": "Agility Digit Moves 100,000+ Totes in Live GXO Warehouse RaaS Deployment",
     "summary": "Under the industry's first multi-year RaaS humanoid contract (2024), GXO deployed Agility Digit at its Flowery Branch, Georgia warehouse, moving over 100,000 totes onto conveyors and expanding in Oct 2026 to new U.S. sites in 2027.",
-    "metrics": ["100,000+ totes moved", "Multi-year RaaS contract", "2027 multi-site expansion"]
+    "metrics": [
+      "100,000+ totes moved",
+      "Multi-year RaaS contract",
+      "2027 multi-site expansion"
+    ]
   },
   "hmnd01-siemens-erlangen": {
     "title": "Humanoid HMND 01 Alpha Completes Two-Week PoC at Siemens Erlangen Electronics Plant",
     "summary": "Humanoid's wheeled HMND 01 Alpha ran a two-week proof of concept at Siemens' electronics plant in Erlangen, moving totes onto conveyors at 60 moves/hour with >8 hours uptime and >90% pick-and-place success.",
-    "metrics": ["60 tote moves/hour", ">90% pick-place success", ">8 hours daily uptime"]
+    "metrics": [
+      "60 tote moves/hour",
+      ">90% pick-place success",
+      ">8 hours daily uptime"
+    ]
   },
   "anymal-equinor-vigier": {
     "title": "ANYmal Surpasses 200+ Active Industrial Inspection Sites Across Equinor & Vigier Cement",
     "summary": "ANYbotics' Shift platform connects 200+ active quadruped deployments: Vigier Cement logged 33,000+ automated inspections saving $660,000 in maintenance costs, while ANYmal D deployed at Equinor's Northern Lights CO2 facility in March 2026.",
-    "metrics": ["200+ active deployments", "33,000+ inspections (Vigier)", "$660,000 avoided maintenance"]
+    "metrics": [
+      "200+ active deployments",
+      "33,000+ inspections (Vigier)",
+      "$660,000 avoided maintenance"
+    ]
   },
   "galbot-g1-pharmacy-retail": {
     "title": "Galbot G1 Operates 24/7 Smart Pharmacies (400–500 Orders/Day) & Scenic Retail Stores",
     "summary": "Galbot's G1 wheeled humanoid runs live autonomous pharmacy fulfillment at LBX Pharmacy in Shanghai (400–500 orders/day), Nepstar Beijing, and tourist sites including the Summer Palace, backed by 1,079 deliveries in 2025 and RMB 1.4B+ in orders.",
-    "metrics": ["400–500 orders/day per store", "1,079 units delivered (2025)", "RMB 1.4B+ total orders"]
+    "metrics": [
+      "400–500 orders/day per store",
+      "1,079 units delivered (2025)",
+      "RMB 1.4B+ total orders"
+    ]
   },
   "apollo-mercedes-berlin": {
     "title": "Apptronik Apollo Pilots at Mercedes-Benz Berlin & Hungary with Gemini Robotics 2.5",
     "summary": "Mercedes-Benz has piloted Apptronik Apollo for assembly kit delivery and part inspection in Berlin-Marienfelde and Kecskemét since 2024, adding a multi-million-euro investment in 2025 alongside Omniverse digital twins and Gemini Robotics 2.5.",
-    "metrics": ["Berlin & Hungary plant pilots", "Multi-million EUR investment", "Gemini Robotics 2.5 integration"]
+    "metrics": [
+      "Berlin & Hungary plant pilots",
+      "Multi-million EUR investment",
+      "Gemini Robotics 2.5 integration"
+    ]
   },
   "aeon-bmw-leipzig-schaeffler": {
     "title": "Hexagon AEON Launches Europe's First Factory Humanoid Pilot at BMW Leipzig & Schaeffler",
     "summary": "BMW Group began testing Hexagon's wheel-footed AEON at Plant Leipzig in Dec 2025 for high-voltage battery assembly and component manufacturing, followed by a 1,000-unit global factory deployment partnership with Schaeffler in April 2026.",
-    "metrics": ["Europe's first factory pilot", "HV battery assembly testing", "1,000-unit Schaeffler deal"]
+    "metrics": [
+      "Europe's first factory pilot",
+      "HV battery assembly testing",
+      "1,000-unit Schaeffler deal"
+    ]
   },
   "figure02-bmw-spartanburg": {
     "title": "Figure 02 Logs 1,250+ Hours & 90,000+ Parts in 11-Month BMW Spartanburg Deployment",
     "summary": "Across an 11-month body-shop deployment at BMW Group Plant Spartanburg, Figure 02 operated 10-hour Monday–Friday shifts, accumulating 1,250+ runtime hours, loading 90,000+ sheet-metal parts, and supporting 30,000+ BMW X3 vehicles.",
-    "metrics": ["1,250+ runtime hours", "90,000+ parts loaded", "30,000+ X3 cars supported"]
+    "metrics": [
+      "1,250+ runtime hours",
+      "90,000+ parts loaded",
+      "30,000+ X3 cars supported"
+    ]
   },
   "walkers1-zeekr-nio-byd": {
     "title": "UBTECH Walker S1/S2 Conducts World's First Multi-Humanoid Factory Training at Zeekr & BYD",
     "summary": "UBTECH deployed dozens of Walker S1 humanoids at Zeekr's 5G smart factory in Ningbo for multi-robot collaborative heavy box lifting and soft-material sorting, expanding with autonomous-battery-swapping Walker S2 units at BYD, NIO, and Foxconn.",
-    "metrics": ["Dozens of units in team training", "Zeekr / NIO / BYD / Foxconn", "Autonomous battery swap (S2)"]
+    "metrics": [
+      "Dozens of units in team training",
+      "Zeekr / NIO / BYD / Foxconn",
+      "Autonomous battery swap (S2)"
+    ]
   },
   "digit-amazon-seattle": {
     "title": "Agility Digit Achieves 98% Success in Empty-Tote Handling PoC at Amazon Seattle",
     "summary": "During a fulfillment-center PoC in Seattle, Amazon tested Agility Robotics' Digit moving empty totes from processing stations to staging areas, reaching a 98% task success rate at an estimated $10–12/hour RaaS operating cost.",
-    "metrics": ["98% task success rate", "$10–12/hr RaaS est. cost", "Empty-tote transfer PoC"]
+    "metrics": [
+      "98% task success rate",
+      "$10–12/hr RaaS est. cost",
+      "Empty-tote transfer PoC"
+    ]
   },
   "x30-sp-group-state-grid": {
     "title": "DEEP Robotics X30 Deploys in Singapore SP Group Power Tunnels & 26 Chinese Provinces",
     "summary": "DEEP Robotics' IP67 industrial quadruped X30 became the first Chinese quadruped deployed in an overseas power grid at Singapore SP Group's power tunnels, while operating across substations in 26 Chinese provinces.",
-    "metrics": ["First overseas grid deployment", "26 provinces in China", "IP67 all-weather inspection"]
+    "metrics": [
+      "First overseas grid deployment",
+      "26 provinces in China",
+      "IP67 all-weather inspection"
+    ]
   }
 }

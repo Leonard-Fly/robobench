@@ -1,5 +1,88 @@
 [
   {
+    "id": "dobot-atom-shenzhen-cinema",
+    "title": "越疆科技人形机器人在深圳 K11 影院担任爆米花店员，日连续工作 14 小时日销超千杯",
+    "summary": "《人民日报》等媒体报道，越疆科技人形机器人在深圳 K11 商场电影院正式上岗担任爆米花店员，每日连续稳定作业 14 小时、日均销售超 1,000 杯爆米花饮品，实现高频商业零售场景的真实营收运营验证。",
+    "client": "Shenzhen K11 Cinema",
+    "clientZh": "深圳 K11 商场影院",
+    "robotName": "DOBOT Atom",
+    "relatedRobotId": "dobot-atom",
+    "country": "中国",
+    "sector": "retail",
+    "stage": "commercial",
+    "date": "2026-11",
+    "metrics": [
+      "日连续作业 14 小时",
+      "日销 1,000+ 杯爆米花",
+      "高频零售常态化商业运营"
+    ],
+    "sourceName": "人民日报 / 凤凰网财经",
+    "sourceUrl": "https://finance.ifeng.com/c/8yHIh6EG5Qb",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "leju-kuavo-auto-parts-line",
+    "title": "乐聚智能 15 台轮式人形机器人在汽车零部件产线连续无故障运行超 2 个月",
+    "summary": "据《证券日报》实地探访，乐聚智能在某上市公司汽车零部件产线上规模化部署 15 台轮式人形机器人，已连续无故障执行轴承部件识别、抓取与流水线上料作业超过 2 个月。",
+    "client": "Listed Auto Parts Manufacturer",
+    "clientZh": "某上市公司汽车零部件产线",
+    "robotName": "Leju Kuavo Series",
+    "relatedRobotId": "leju-kuavo-4pro",
+    "country": "中国",
+    "sector": "automotive",
+    "stage": "commercial",
+    "date": "2026-11",
+    "metrics": [
+      "15 台集群产线协同",
+      "连续无故障运行 2 个月+",
+      "轴承抓取与上料节拍稳定"
+    ],
+    "sourceName": "证券日报（新浪财经）",
+    "sourceUrl": "https://k.sina.com.cn/article_7857201856_1d45362c001908uzl0.html",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "spot-globalfoundries-singapore-fab",
+    "title": "波士顿动力 Spot 在格芯新加坡晶圆厂巡检近 900 公里，成功率达 99% 并拓展全电动 Atlas 实测",
+    "summary": "半导体制造商格芯（GlobalFoundries）在新加坡晶圆厂部署两台波士顿动力 Spot 四足机器人，自 4 月以来累计巡检近 900 公里、完成超 9 万次巡检任务且成功率达 99%；双方宣布扩大至美欧亚多座晶圆厂，并于 2027 年初启动全电动 Atlas 现场实测。",
+    "client": "GlobalFoundries (Singapore & Global Fabs)",
+    "clientZh": "格芯 GlobalFoundries（新加坡及全球晶圆厂）",
+    "robotName": "Boston Dynamics Spot & Atlas",
+    "relatedRobotId": "boston-dynamics-spot",
+    "country": "新加坡/美国",
+    "sector": "inspection",
+    "stage": "commercial",
+    "date": "2026-11",
+    "metrics": [
+      "累计巡检近 900 公里",
+      "90,000+ 次任务 99% 成功率",
+      "2027 年初启动 Atlas 晶圆厂实测"
+    ],
+    "sourceName": "Gasgoo",
+    "sourceUrl": "https://autonews.gasgoo.com/articles/news/boston-dynamics-humanoid-robot-secures-first-chip-plant-customer-2123775609070927872",
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "galbot-s1-motion-belgium-warehouse",
+    "title": "Galbot S1 搭载 Gemini MotionOS 切入欧洲仓储码垛，发往比利时物流仓开展部署",
+    "summary": "Motion Robotics 在赫尔辛基 Slush 峰会展示了基于 Google Cloud 与 Gemini 构建的 MotionOS 调度平台及 Galbot S1 重载机器人（自重 320kg、负载 50kg），以 10 万–15 万欧元欧洲租赁模式发往比利时仓库执行自动化码垛。",
+    "client": "Belgian Logistics Warehouse (via Motion Robotics)",
+    "clientZh": "比利时物流仓库（Motion Robotics 部署）",
+    "robotName": "Galbot S1 + MotionOS",
+    "country": "比利时/芬兰",
+    "sector": "logistics",
+    "stage": "pilot",
+    "date": "2026-11",
+    "metrics": [
+      "50 kg 重载码垛能力",
+      "€100k–150k 欧洲租赁模式",
+      "基于 Gemini 的 MotionOS 调度"
+    ],
+    "sourceName": "Humanoid.guide",
+    "sourceUrl": "https://humanoid.guide/motion-demonstrates-galbot-s1-palletizing-at-slush-summit/",
+    "dataUpdated": "2026-11"
+  },
+  {
     "id": "digit-gxo-flowery-branch",
     "title": "Agility Digit 在 GXO 物流仓库实现 RaaS 商业部署，累计搬运超 10 万个料箱",
     "summary": "全球合同物流巨头 GXO 与 Agility Robotics 于 2024 年签署行业首个多年期 RaaS 商业协议，在佐治亚州 Flowery Branch 仓库常态化部署 Digit 人形机器人执行料箱转运，累计搬运超 10 万个料箱，并于 2026 年 10 月宣布 2027 年初扩展至北卡与田纳西多座履约中心。",
@@ -11,7 +94,11 @@
     "sector": "logistics",
     "stage": "commercial",
     "date": "2026-10",
-    "metrics": ["100,000+ 料箱搬运", "多年期 RaaS 商业合同", "2027 年扩展至多座新仓"],
+    "metrics": [
+      "100,000+ 料箱搬运",
+      "多年期 RaaS 商业合同",
+      "2027 年扩展至多座新仓"
+    ],
     "sourceName": "GXO Newsroom",
     "sourceUrl": "https://gxo.com/news_article/gxo-and-agility-robotics-expand-partnership-to-accelerate-deployment-of-humanoids-in-u-s-operations/",
     "dataUpdated": "2026-11"
@@ -27,7 +114,11 @@
     "sector": "logistics",
     "stage": "poc",
     "date": "2026-10",
-    "metrics": ["60 箱/小时搬运节拍", ">90% 抓放成功率", ">8 小时日运行时长"],
+    "metrics": [
+      "60 箱/小时搬运节拍",
+      ">90% 抓放成功率",
+      ">8 小时日运行时长"
+    ],
     "sourceName": "RoboPulse",
     "sourceUrl": "https://robopulse.net/guides/humanoid-robot-operating-hours-per-day-deployment/",
     "dataUpdated": "2026-11"
@@ -44,7 +135,11 @@
     "sector": "inspection",
     "stage": "commercial",
     "date": "2026-10",
-    "metrics": ["200+ 活跃巡检部署", "33,000+ 次自动巡检", "节省 $660,000 运维成本"],
+    "metrics": [
+      "200+ 活跃巡检部署",
+      "33,000+ 次自动巡检",
+      "节省 $660,000 运维成本"
+    ],
     "sourceName": "Mordor Intelligence",
     "sourceUrl": "https://www.mordorintelligence.com/industry-reports/physical-ai-for-industrial-inspection-and-robotic-intervention-market",
     "dataUpdated": "2026-11"
@@ -61,7 +156,11 @@
     "sector": "retail",
     "stage": "commercial",
     "date": "2026-09",
-    "metrics": ["日均履单 400–500 单", "1,079 台交付量", "14 亿元+ 累计订单"],
+    "metrics": [
+      "日均履单 400–500 单",
+      "1,079 台交付量",
+      "14 亿元+ 累计订单"
+    ],
     "sourceName": "医药健闻 / IT之家",
     "sourceUrl": "https://www.mhn24.com/41400.html",
     "dataUpdated": "2026-11"
@@ -78,7 +177,11 @@
     "sector": "automotive",
     "stage": "pilot",
     "date": "2026-11",
-    "metrics": ["柏林与匈牙利双工厂试点", "千万欧元级战略投资", "Gemini Robotics 2.5 协同"],
+    "metrics": [
+      "柏林与匈牙利双工厂试点",
+      "千万欧元级战略投资",
+      "Gemini Robotics 2.5 协同"
+    ],
     "sourceName": "RoboZaps / Humanoids Daily",
     "sourceUrl": "https://blog.robozaps.com/b/apptronik-apollo-review",
     "dataUpdated": "2026-11"
@@ -95,7 +198,11 @@
     "sector": "automotive",
     "stage": "pilot",
     "date": "2026-04",
-    "metrics": ["欧洲首个产线人形试点", "高压电池装配测试", "舍弗勒 1,000 台合作协议"],
+    "metrics": [
+      "欧洲首个产线人形试点",
+      "高压电池装配测试",
+      "舍弗勒 1,000 台合作协议"
+    ],
     "sourceName": "Hexagon Robotics",
     "sourceUrl": "https://robotics.hexagon.com/bmw-deploys-aeon-hexagon-robotics-humanoid/",
     "dataUpdated": "2026-11"
@@ -112,7 +219,11 @@
     "sector": "automotive",
     "stage": "pilot",
     "date": "2025-11",
-    "metrics": ["1,250+ 运行小时", "90,000+ 零部件抓取", "参与 30,000+ 辆 X3 生产"],
+    "metrics": [
+      "1,250+ 运行小时",
+      "90,000+ 零部件抓取",
+      "参与 30,000+ 辆 X3 生产"
+    ],
     "sourceName": "Figure AI 官方战报",
     "sourceUrl": "https://www.figure.ai/news/production-at-bmw",
     "dataUpdated": "2026-11"
@@ -129,7 +240,11 @@
     "sector": "automotive",
     "stage": "pilot",
     "date": "2025-11",
-    "metrics": ["数十台多机协同实训", "覆盖极氪/比亚迪/富士康", "支持自主换电 7×24 作业"],
+    "metrics": [
+      "数十台多机协同实训",
+      "覆盖极氪/比亚迪/富士康",
+      "支持自主换电 7×24 作业"
+    ],
     "sourceName": "南华早报 / 优必选官网",
     "sourceUrl": "https://www.scmp.com/tech/tech-trends/article/3300872/future-made-china-ubtech-robotics-deploys-first-humanoid-team-car-factory",
     "dataUpdated": "2026-11"
@@ -146,7 +261,11 @@
     "sector": "logistics",
     "stage": "poc",
     "date": "2025-06",
-    "metrics": ["98% 任务成功率", "$10–12/小时 RaaS 成本", "空料箱自动化转运"],
+    "metrics": [
+      "98% 任务成功率",
+      "$10–12/小时 RaaS 成本",
+      "空料箱自动化转运"
+    ],
     "sourceName": "TheresaRobotForThat",
     "sourceUrl": "https://theresarobotforthat.com/blog/humanoid-robot-factory-implementation-guide/",
     "dataUpdated": "2026-11"
@@ -163,7 +282,11 @@
     "sector": "inspection",
     "stage": "commercial",
     "date": "2025-02",
-    "metrics": ["国内首个海外电力落地四足", "覆盖全国 26 省变电站", "IP67 全天候隧道巡检"],
+    "metrics": [
+      "国内首个海外电力落地四足",
+      "覆盖全国 26 省变电站",
+      "IP67 全天候隧道巡检"
+    ],
     "sourceName": "天工大学新闻 / 云深处",
     "sourceUrl": "https://xyh.tiangong.edu.cn/2025/0303/c5327a101875/page.htm",
     "dataUpdated": "2026-11"
