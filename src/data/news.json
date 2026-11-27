@@ -1,5 +1,81 @@
 [
   {
+    "id": "tdk-635m-tmr-sensor-robotics-expansion-2026-11-26",
+    "title": "TDK 投资 6.35 亿美元扩产 TMR 传感器，瞄准人形机器人与 AI 数据中心需求",
+    "summary": "11 月 26 日，占据全球约 80% 隧道磁阻（TMR）传感器市场份额的 TDK 宣布投资 6.35 亿美元，计划在日本新潟县新建专用工厂以在 2031 年前将 TMR 传感器产能翻倍，重点满足人形机器人（每台需数十颗高精度定位/避障传感器）及 AI 数据中心液冷与电源监控需求。",
+    "company": "TDK Corp.",
+    "companyZh": "TDK",
+    "country": "日本",
+    "category": "commercial",
+    "publishedAt": "2026-11-26",
+    "sourceName": "Emergent",
+    "sourceUrl": "https://emergent.sh/news/tdk-bets-ai-data-centers-robots-sensor-growth",
+    "tags": [
+      "TMR传感器",
+      "6.35亿美元扩产",
+      "人形机器人供应链",
+      "TDK"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "entangle-wam-human-video-robotwin-2026-11-26",
+    "title": "Entangle 开源世界动作模型：基于人类视频上下文在 RoboTwin 未见任务取得 69.5% 成功率",
+    "summary": "11 月 26 日，Entangle 团队在 Hugging Face 发布 Mixture-of-Transformers 世界动作模型与论文，基于 21,269 条人类-机器人配对片段（含 16,000 条视频转译合成数据）及 InfoNCE 对比损失，在 RoboTwin 7 项未见任务取得 69.5% 平均成功率（较 Zero-WAM 提升 22.6 个百分点），并在 Astribot S1 真机 6 项未见任务取得 83.5/100 成功率。",
+    "company": "Entangle Robotics Group",
+    "companyZh": "Entangle 团队",
+    "country": "全球",
+    "category": "technical",
+    "publishedAt": "2026-11-26",
+    "sourceName": "Emergent",
+    "sourceUrl": "https://emergent.sh/news/entangle-hits-69-5-robotwin-human-video",
+    "tags": [
+      "世界动作模型",
+      "RoboTwin",
+      "人类视频学习",
+      "Astribot S1"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "noetix-boomy-kickstarter-3599-2026-11-26",
+    "title": "松延动力启动可编程人形机器人 Boomy 海外众筹，早鸟价 3,599 美元起",
+    "summary": "松延动力（NOETIX Robotics）在 Kickstarter 上线 97 cm、20.5 kg 可编程双足人形机器人 Boomy（21 自由度、最高 1 m/s 行走，支持图形化、Python 与 C++ 编程及 3D 打印外壳），标准版早鸟价 3,599 美元起，搭载 NVIDIA Jetson Orin NX（117 TOPS）与 RealSense D435i 的 Edu 版 5,999 美元起。",
+    "company": "NOETIX Robotics",
+    "companyZh": "松延动力",
+    "country": "中国",
+    "category": "commercial",
+    "publishedAt": "2026-11-26",
+    "sourceName": "Humanoid.guide",
+    "sourceUrl": "https://humanoid.guide/noetix-boomy-launches-crowdfunding-with-3599-entry-price/",
+    "tags": [
+      "松延动力",
+      "Boomy",
+      "3599美元",
+      "教育开发者"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "kiro-karex-m-antarctic-humanoid-2026-11-26",
+    "title": "韩国 KIRO 启动 60 亿韩元 KAREX-M 南极重载人形机器人研发计划，目标负载 100 公斤",
+    "summary": "11 月 26 日披露，韩国机器人融合研究院（KIRO）获政府 60 亿韩元资助推进 KAREX-M 南极特种人形项目（2026 年 8 月至 2030 年 12 月），采用轮履切换移动底座配液压双臂上肢，目标实现 200 公里续航、100 公斤重载作业及约 2030 年部署两台至南极开展观测基建运维。",
+    "company": "KIRO",
+    "companyZh": "韩国机器人融合研究院（KIRO）",
+    "country": "韩国",
+    "category": "policy",
+    "publishedAt": "2026-11-26",
+    "sourceName": "Humanoid.guide",
+    "sourceUrl": "https://humanoid.guide/kiro-plans-karex-m-humanoid-for-antarctic-heavy-lifting/",
+    "tags": [
+      "南极特种机器人",
+      "100公斤负载",
+      "韩国KIRO",
+      "政府资助"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
     "id": "oymotion-series-d-dexterous-hands-2026-11-25",
     "title": "傲意科技完成数亿元 D 轮融资，灵巧手上半年订单破万台并冲刺上市",
     "summary": "11 月 24–25 日报道，上海傲意科技官宣完成数亿元 D 轮融资（年内第二轮），由中兵顺景与湖北百亿人形机器人产业母基金（长江资本、光谷产投）等投资。公司在珠海自建年产能万台级工厂，2026 上半年灵巧手订单已跨过万台、服务全球近 200 家具身智能企业；同期章鱼动力、英汉思动力也先后完成亿元级融资。",

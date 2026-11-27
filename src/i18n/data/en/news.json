@@ -1,4 +1,44 @@
 {
+  "tdk-635m-tmr-sensor-robotics-expansion-2026-11-26": {
+    "title": "TDK Invests $635M to Double TMR Sensor Capacity for Humanoid Robots & AI Data Centers",
+    "summary": "Launched Nov 26, TDK (~80% global TMR sensor share) announced a $635 million investment to build a dedicated Niigata plant and double tunnel magnetoresistance sensor output by 2031, targeting humanoid robots (each requiring dozens of precision positioning sensors) and AI data-center cooling.",
+    "tags": [
+      "TMR Sensors",
+      "$635M CapEx",
+      "Humanoid Supply Chain",
+      "TDK"
+    ]
+  },
+  "entangle-wam-human-video-robotwin-2026-11-26": {
+    "title": "Entangle Releases World-Action Model Scoring 69.5% on Unseen RoboTwin Tasks via Human Video Context",
+    "summary": "Posted to Hugging Face on Nov 26, Entangle's Mixture-of-Transformers world-action model—trained on 21,269 paired human-robot episodes (including 16,000 synthetic video-to-video pairs) with InfoNCE loss—scored 69.5% on 7 unseen RoboTwin tasks (+22.6 pts over Zero-WAM) and 83.5/100 on 6 unseen Astribot S1 real-robot tasks.",
+    "tags": [
+      "World-Action Model",
+      "RoboTwin",
+      "Human Video",
+      "Astribot S1"
+    ]
+  },
+  "noetix-boomy-kickstarter-3599-2026-11-26": {
+    "title": "NOETIX Robotics Launches Boomy Programmable Humanoid on Kickstarter Starting at $3,599",
+    "summary": "NOETIX Robotics opened Kickstarter crowdfunding for the 97 cm, 20.5 kg, 21-DoF Boomy bipedal robot (up to 1 m/s walk, block/Python/C++ programming, 3D-printable shells) starting at $3,599, with an Edu version adding NVIDIA Jetson Orin NX (117 TOPS) and RealSense D435i from $5,999.",
+    "tags": [
+      "NOETIX",
+      "Boomy",
+      "$3,599",
+      "Developer Humanoid"
+    ]
+  },
+  "kiro-karex-m-antarctic-humanoid-2026-11-26": {
+    "title": "Korea's KIRO Launches KRW 6B KAREX-M Antarctic Heavy-Lifting Humanoid Program",
+    "summary": "Disclosed Nov 26, the Korea Institute of Robotics & Technology Convergence (KIRO) is advancing the KRW 6 billion government-funded KAREX-M project (Aug 2026–Dec 2030), pairing a wheel-and-track base with hydraulic dual arms targeting 100 kg lifting and 200 km range for Antarctic infrastructure work by 2030.",
+    "tags": [
+      "Antarctic Robotics",
+      "100 kg Payload",
+      "KIRO Korea",
+      "Government R&D"
+    ]
+  },
   "oymotion-series-d-dexterous-hands-2026-11-25": {
     "title": "OYMotion Raises Hundreds of Millions of Yuan in Series D After Crossing 10,000 Dexterous Hand Orders",
     "summary": "Reported Nov 24–25, Shanghai-based dexterous hand maker OYMotion closed a Series D round of hundreds of millions of yuan backed by China North Industries' Zhongbing Shunjing and Hubei's RMB 10B humanoid fund. With a 10,000-unit/year Zhuhai factory, OYMotion crossed 10,000 hand orders in H1 2026 across ~200 embodied AI clients as it prepares for an IPO.",
