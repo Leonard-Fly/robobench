@@ -1,4 +1,44 @@
 {
+  "volvo-hexagon-aeon-ghent-pilot-2026-11-27": {
+    "title": "Volvo Trains Hexagon's AEON Humanoids at Ghent Plant Ahead of H1 2027 Factory Pilot",
+    "summary": "Reported Nov 27, Volvo Cars is training Hexagon's 60 kg, 10 kg-payload wheeled AEON humanoids via imitation learning at its Ghent, Belgium plant to place components into high-precision fixtures, targeting an H1 2027 factory pilot and mid-2027 production use.",
+    "tags": [
+      "Hexagon AEON",
+      "Volvo Cars",
+      "Imitation Learning",
+      "Automotive"
+    ]
+  },
+  "tm-malaysia-agibot-swancor-robotics-2026-11-27": {
+    "title": "Telekom Malaysia Partners With AGIBOT and Swancor to Scale Sovereign Robotics in Malaysia",
+    "summary": "On Nov 27, Telekom Malaysia (TM) partnered with AGIBOT and Swancor to serve as AGIBOT's exclusive sovereign robotics platform provider via TM Cloud Alpha Edge, targeting enterprise/data-center inspection alongside consumer companion robots across 3.2M broadband households.",
+    "tags": [
+      "AGIBOT",
+      "Telekom Malaysia",
+      "Southeast Asia",
+      "Sovereign Platform"
+    ]
+  },
+  "korben-10-2m-eur-seed-robotics-software-2026-11-27": {
+    "title": "French Robotics Software Startup Korben Raises €10.2M Seed Round at €36.2M Valuation",
+    "summary": "On Nov 27, Korben raised €10.2M led by Tiresias Angels with €2M from Bpifrance to build AI agents that autonomously write and adapt software for coordinated service-robot fleets across Europe using French-hosted OVHcloud infrastructure.",
+    "tags": [
+      "€10.2M Seed",
+      "Robotics Software",
+      "Fleet Autonomy",
+      "France"
+    ]
+  },
+  "china-13-humanoid-ipo-commercial-progress-2026-11-27": {
+    "title": "100 Days After Unitree's STAR Market IPO: Listing & Delivery Progress Across 13 Chinese Humanoid Leaders",
+    "summary": "A Nov 27 36Kr roundup tracks 13 leading Chinese humanoid makers 100 days post-Unitree's STAR Market debut: DEEP Robotics is in STAR Market inquiry, AgiBot hit 20,000 cumulative units with ~RMB 2B H1 2026 revenue, Noetix delivered 5,000+ Bumibots, and RobotEra operates across 10+ China Post/SF sorting hubs.",
+    "tags": [
+      "STAR Market",
+      "HKEX IPO",
+      "Commercial Deliveries",
+      "China Humanoids"
+    ]
+  },
   "tdk-635m-tmr-sensor-robotics-expansion-2026-11-26": {
     "title": "TDK Invests $635M to Double TMR Sensor Capacity for Humanoid Robots & AI Data Centers",
     "summary": "Launched Nov 26, TDK (~80% global TMR sensor share) announced a $635 million investment to build a dedicated Niigata plant and double tunnel magnetoresistance sensor output by 2031, targeting humanoid robots (each requiring dozens of precision positioning sensors) and AI data-center cooling.",

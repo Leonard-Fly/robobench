@@ -1,5 +1,88 @@
 [
   {
+    "id": "volvo-hexagon-aeon-ghent-pilot-2026-11-27",
+    "title": "沃尔沃在比利时根特工厂训练 Hexagon AEON 人形机器人，2027 年上半年启动产线试点",
+    "summary": "11 月 27 日报道，沃尔沃汽车在比利时根特工厂采用模仿学习训练 Hexagon 轮式人形机器人 AEON（重 60 kg、负载 10 kg、最高 2.4 m/s），重点验证高精度工装夹具部件放置，计划 2027 年上半年开展正式工厂试点并于年中投入产线。",
+    "company": "Volvo Cars & Hexagon",
+    "companyZh": "沃尔沃汽车 & Hexagon",
+    "country": "比利时/瑞典",
+    "category": "commercial",
+    "publishedAt": "2026-11-27",
+    "sourceName": "Humanoid.guide",
+    "sourceUrl": "https://humanoid.guide/volvo-tests-aeon-humanoids-at-ghent-ahead-of-2027-factory-pilot/",
+    "tags": [
+      "Hexagon AEON",
+      "沃尔沃工厂",
+      "模仿学习",
+      "汽车制造"
+    ],
+    "relatedRobotIds": [
+      "hexagon-aeon"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "tm-malaysia-agibot-swancor-robotics-2026-11-27",
+    "title": "马来西亚电信携手智元机器人与上纬推进本地具身智能部署，打造主权级机器人平台",
+    "summary": "11 月 27 日，马来西亚电信（TM）宣布与智元机器人（AGIBOT）及上纬新材达成战略合作，依托 TM Cloud Alpha Edge 成为智元在马独家主权级机器人平台伙伴，推进企业安防巡检与数据中心运维，并面向 320 万宽带用户引入家庭陪伴机器人。",
+    "company": "Telekom Malaysia & AGIBOT",
+    "companyZh": "马来西亚电信 & 智元机器人",
+    "country": "马来西亚/中国",
+    "category": "commercial",
+    "publishedAt": "2026-11-27",
+    "sourceName": "The Star",
+    "sourceUrl": "https://www.thestar.com.my/business/business-news/2026/11/27/tm-partners-agibot-swancor-to-drive-robotics-adoption-in-malaysia",
+    "tags": [
+      "智元机器人",
+      "马来西亚电信",
+      "出海生态",
+      "主权AI平台"
+    ],
+    "relatedRobotIds": [
+      "agibot-a2",
+      "agibot-genie-g1"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "korben-10-2m-eur-seed-robotics-software-2026-11-27",
+    "title": "法国机器人软件商 Korben 完成 1,020 万欧元种子轮融资，研发自主编程多机协同平台",
+    "summary": "11 月 27 日，法国机器人软件初创公司 Korben 宣布以 3,620 万欧元估值完成 1,020 万欧元种子轮融资，由 Tiresias Angels 领投、Bpifrance 出资 200 万欧元跟投，用于研发可自主编写与修改多机协同代码的 AI 智能体并拓展欧洲公共与商业服务机器人车队。",
+    "company": "Korben",
+    "companyZh": "Korben",
+    "country": "法国",
+    "category": "funding",
+    "publishedAt": "2026-11-27",
+    "sourceName": "AI Insider",
+    "sourceUrl": "https://theaiinsider.tech/2026/11/27/korben-raises-e10-2m-in-seed-funding-to-expand-robotics-software-across-europe/",
+    "tags": [
+      "1020万欧元融资",
+      "机器人软件",
+      "多机协同",
+      "法国"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
+    "id": "china-13-humanoid-ipo-commercial-progress-2026-11-27",
+    "title": "宇树科技登陆科创板满百日：13 家国产头部人形机器人企业上市与交付进度盘点",
+    "summary": "11 月 27 日 36氪梳理 13 家头部人形机器人企业最新进展：宇树登陆科创板已满百日，云深处科创板 IPO 处于问询阶段（拟募资 25.03 亿元），智元累计下线达 2 万台且上半年营收近 20 亿元，松延动力 Bumibot 交付超 5,000 台，星动纪元已在邮政、顺丰等 10 余个分拣中心常态化运行。",
+    "company": "Unitree / AgiBot / DEEP Robotics / RobotEra",
+    "companyZh": "宇树 / 智元 / 云深处 / 星动纪元等",
+    "country": "中国",
+    "category": "funding",
+    "publishedAt": "2026-11-27",
+    "sourceName": "36Kr Europe",
+    "sourceUrl": "https://eu.36kr.com/en/p/4087750298244745",
+    "tags": [
+      "科创板",
+      "港股IPO",
+      "量产交付",
+      "行业盘点"
+    ],
+    "dataUpdated": "2026-11"
+  },
+  {
     "id": "tdk-635m-tmr-sensor-robotics-expansion-2026-11-26",
     "title": "TDK 投资 6.35 亿美元扩产 TMR 传感器，瞄准人形机器人与 AI 数据中心需求",
     "summary": "11 月 26 日，占据全球约 80% 隧道磁阻（TMR）传感器市场份额的 TDK 宣布投资 6.35 亿美元，计划在日本新潟县新建专用工厂以在 2031 年前将 TMR 传感器产能翻倍，重点满足人形机器人（每台需数十颗高精度定位/避障传感器）及 AI 数据中心液冷与电源监控需求。",
